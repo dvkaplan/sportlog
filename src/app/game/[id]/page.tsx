@@ -24,6 +24,7 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
   const [all, setAll] = useState<RatingRow[]>([]);
+  const [names, setNames] = useState<Record<string, string>>({});
 
   const load = useCallback(async () => {
     const { data: userData } = await supabase.auth.getUser();
@@ -41,6 +42,16 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
       return;
     }
     setAll(rows ?? []);
+    const ids = Array.from(new Set((rows ?? []).map((r) => r.user_id)));
+    if (ids.length > 0) {
+      const { data: profs } = await supabase
+        .from("profiles")
+        .select("id, username")
+        .in("id", ids);
+      const map: Record<string, string> = {};
+      (profs ?? []).forEach((p) => (map[p.id] = p.username));
+      setNames(map);
+    }
     const mine = uid ? rows?.find((r) => r.user_id === uid) : null;
     if (mine) {
       setRating(Number(mine.rating));
@@ -163,7 +174,7 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
               {reviews.map((r) => (
                 <div key={r.id} className="rounded-xl border border-zinc-800 bg-zinc-900 p-4">
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-zinc-400">Fan-{r.user_id.slice(0, 4)}</span>
+                    <span className="text-zinc-400">@{names[r.user_id] ?? `Fan-${r.user_id.slice(0, 4)}`}</span>
                     <span className="font-bold text-emerald-400">{Number(r.rating).toFixed(1)}</span>
                   </div>
                   <p className="mt-2 text-sm text-zinc-300">{r.review}</p>
