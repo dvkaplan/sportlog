@@ -23,6 +23,7 @@ export const SPORTS: Sport[] = [
   { slug: "mma", name: "MMA", emoji: "🥋", leagues: ["UFC"] },
   { slug: "hockey", name: "Hockey", emoji: "🏒", leagues: ["NHL", "Olympics"] },
   { slug: "soccer", name: "Soccer", emoji: "⚽", leagues: ["Premier League", "Champions League", "World Cup"] },
+  { slug: "baseball", name: "Baseball", emoji: "⚾", leagues: ["MLB"] },
 ];
 
 export const GAMES: Game[] = [
@@ -47,6 +48,10 @@ export const GAMES: Game[] = [
   // SOCCER
   { id: "wc-2022-final", sportSlug: "soccer", league: "World Cup", title: "Argentina vs France — 2022 World Cup Final", date: "2022-12-18", score: "ARG 3–3 FRA (4–2 pens)", blurb: "Messi vs Mbappé. Widely called the greatest final ever played.", championship: true },
   { id: "ucl-2005-final", sportSlug: "soccer", league: "Champions League", title: "Liverpool vs Milan — 2005 UCL Final", date: "2005-05-25", score: "LIV 3–3 MIL (3–2 pens)", blurb: "The Miracle of Istanbul. Down 3–0 at half.", championship: true },
+  // BASEBALL
+  { id: "mlb-2016-ws-g7", sportSlug: "baseball", league: "MLB", title: "Cubs vs Indians — 2016 World Series, Game 7", date: "2016-11-02", score: "CHC 8–7 CLE (10 inn)", blurb: "The 108-year curse dies in extra innings, after a rain delay. Cinema.", championship: true },
+  { id: "mlb-1988-ws-g1", sportSlug: "baseball", league: "MLB", title: "Dodgers vs Athletics — 1988 World Series, Game 1", date: "1988-10-15", score: "LAD 5–4 OAK", blurb: "Kirk Gibson can barely walk. One swing. 'I don't believe what I just saw!'", championship: true },
+  { id: "mlb-2004-alcs-g4", sportSlug: "baseball", league: "MLB", title: "Red Sox vs Yankees — 2004 ALCS, Game 4", date: "2004-10-17", score: "BOS 6–4 NYY (12 inn)", blurb: "Down 0–3 in the series, down one in the 9th vs Rivera. The comeback begins.", championship: false },
 ];
 
 export function getSport(slug: string) {
