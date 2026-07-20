@@ -1862,5 +1862,149 @@
     "strSport": "Soccer",
     "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/yuvtsy1447594254.png",
     "strAlternate": ""
+  },
+  {
+    "idTeam": "133714",
+    "strTeam": "Paris Saint-Germain",
+    "strLeague": "French Ligue 1",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/rwqrrq1473504808.png",
+    "strAlternate": "Paris Saint-Germain Football Club, PSG, Paris Saint Germain, Paris St Germain, Paris SG"
+  },
+  {
+    "idTeam": "135280",
+    "strTeam": "St. Louis Cardinals",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/uvyvyr1424003273.png",
+    "strAlternate": "Cardinals"
+  },
+  {
+    "idTeam": "133636",
+    "strTeam": "West Ham United",
+    "strLeague": "English League Championship",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/yutyxs1467459956.png",
+    "strAlternate": "West Ham United Football Club"
+  },
+  {
+    "idTeam": "133599",
+    "strTeam": "Wolverhampton Wanderers",
+    "strLeague": "English League Championship",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/u9qr031621593327.png",
+    "strAlternate": "Wolverhampton Wanderers Football Club, Wolves, Wolverhapton"
+  },
+  {
+    "idTeam": "133720",
+    "strTeam": "Nottingham Forest",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/sar2y41781740886.png",
+    "strAlternate": "Nott Forest, Forest, NFFC"
+  },
+  {
+    "idTeam": "133623",
+    "strTeam": "Burnley",
+    "strLeague": "English League Championship",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/ql7nl31686893820.png",
+    "strAlternate": "Burnley FC"
+  },
+  {
+    "idTeam": "147062",
+    "strTeam": "St. Louis City SC",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/22wanp1674118724.png",
+    "strAlternate": "St. Louis City Soccer Club, St Louis City Soccer Club, SLCSC, STL CITY SC"
+  },
+  {
+    "idTeam": "134700",
+    "strTeam": "Girona",
+    "strLeague": "Spanish La Liga 2",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/kfu7zu1659897499.png",
+    "strAlternate": "Girona"
+  },
+  {
+    "idTeam": "133733",
+    "strTeam": "Mallorca",
+    "strLeague": "Spanish La Liga 2",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/ssptsx1473503730.png",
+    "strAlternate": "Real Mallorca"
+  },
+  {
+    "idTeam": "135455",
+    "strTeam": "Real Oviedo",
+    "strLeague": "Spanish La Liga 2",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/yuwqus1447590681.png",
+    "strAlternate": "Real Oviedo Club de Fútbol, Oviedo"
+  },
+  {
+    "idTeam": "133655",
+    "strTeam": "Wolfsburg",
+    "strLeague": "German 2. Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/ci9trv1778399557.png",
+    "strAlternate": "VfL Wolfsburg, Verein für Leibesübungen Wolfsburg"
+  },
+  {
+    "idTeam": "133813",
+    "strTeam": "St Pauli",
+    "strLeague": "German 2. Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/5qupxa1608237013.png",
+    "strAlternate": "FC St. Pauli"
+  },
+  {
+    "idTeam": "134696",
+    "strTeam": "Heidenheim",
+    "strLeague": "German 2. Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/lbj7g01608236988.png",
+    "strAlternate": "1. FC Heidenheim 1846"
+  },
+  {
+    "idTeam": "134784",
+    "strTeam": "Hellas Verona",
+    "strLeague": "Italian Serie B",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/p6camf1593457737.png",
+    "strAlternate": "Hellas Verona Football Club"
+  },
+  {
+    "idTeam": "133859",
+    "strTeam": "Pisa",
+    "strLeague": "Italian Serie B",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/2eso9w1579708309.png",
+    "strAlternate": "Pisa SC"
+  },
+  {
+    "idTeam": "134224",
+    "strTeam": "Cremonese",
+    "strLeague": "Italian Serie B",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/6ng2vy1579708291.png",
+    "strAlternate": "Unione Sportiva Cremonese, US Cremonese"
+  },
+  {
+    "idTeam": "133861",
+    "strTeam": "Nantes",
+    "strLeague": "French Ligue 2",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/mla9x61678808018.png",
+    "strAlternate": "FC Nantes"
+  },
+  {
+    "idTeam": "133883",
+    "strTeam": "Metz",
+    "strLeague": "French Ligue 2",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/1iuew61688452857.png",
+    "strAlternate": "FC Metz"
   }
 ]
