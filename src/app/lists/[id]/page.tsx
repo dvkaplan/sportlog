@@ -12,7 +12,15 @@ type ListRow = {
   sport_slug: string | null;
   created_at: string;
 };
-type ItemRow = { id: string; position: number; label: string; note: string | null };
+type ItemRow = {
+  id: string;
+  position: number;
+  label: string;
+  note: string | null;
+  entity_type: string | null;
+  entity_id: string | null;
+  image_url: string | null;
+};
 
 export default function ListPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
@@ -36,7 +44,7 @@ export default function ListPage({ params }: { params: Promise<{ id: string }> }
 
     const { data: its } = await supabase
       .from("list_items")
-      .select("id, position, label, note")
+      .select("id, position, label, note, entity_type, entity_id, image_url")
       .eq("list_id", id)
       .order("position");
     setItems(its ?? []);
@@ -84,7 +92,17 @@ export default function ListPage({ params }: { params: Promise<{ id: string }> }
               <span className="w-8 shrink-0 text-right text-xl font-bold text-emerald-400">
                 {it.position}
               </span>
-              <span className="font-medium">{it.label}</span>
+              {it.image_url ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={it.image_url} alt="" className="h-10 w-10 shrink-0 object-contain" />
+              ) : null}
+              {it.entity_type === "team" && it.entity_id ? (
+                <Link href={`/team/${it.entity_id}`} className="font-medium hover:text-emerald-400">
+                  {it.label}
+                </Link>
+              ) : (
+                <span className="font-medium">{it.label}</span>
+              )}
             </div>
           ))}
         </div>

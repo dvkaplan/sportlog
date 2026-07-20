@@ -1,27 +1,67 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase";
 import { SPORTS } from "@/lib/data";
+
+type Entry = { label: string; entityId?: string; image?: string };
+type Team = {
+  idTeam: string;
+  strTeam: string;
+  strLeague: string | null;
+  strBadge?: string | null;
+  strTeamBadge?: string | null;
+};
 
 export default function NewListPage() {
   const router = useRouter();
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [sportSlug, setSportSlug] = useState("");
-  const [items, setItems] = useState<string[]>(["", "", ""]);
-  const [msg, setMsg] = useState<string | null>(null);
   const [isPublic, setIsPublic] = useState(true);
+  const [items, setItems] = useState<Entry[]>([{ label: "" }, { label: "" }, { label: "" }]);
+  const [active, setActive] = useState<number | null>(null);
+  const [sugs, setSugs] = useState<Team[]>([]);
+  const [msg, setMsg] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
-  function setItem(i: number, v: string) {
-    setItems((prev) => prev.map((x, idx) => (idx === i ? v : x)));
+  const activeText = active !== null ? items[active]?.label ?? "" : "";
+
+  useEffect(() => {
+    if (active === null || activeText.trim().length < 2) {
+      setSugs([]);
+      return;
+    }
+    const t = setTimeout(async () => {
+      try {
+        const data = await fetch(
+          `/api/sportsdb?mode=findteams&q=${encodeURIComponent(activeText)}`
+        ).then((r) => r.json());
+        setSugs((data?.teams ?? []).slice(0, 10));
+      } catch {
+        setSugs([]);
+      }
+    }, 350);
+    return () => clearTimeout(t);
+  }, [activeText, active]);
+
+  function setItem(i: number, patch: Partial<Entry>) {
+    setItems((prev) => prev.map((x, idx) => (idx === i ? { ...x, ...patch } : x)));
+  }
+  function pick(i: number, t: Team) {
+    setItem(i, {
+      label: t.strTeam,
+      entityId: t.idTeam,
+      image: t.strBadge ?? t.strTeamBadge ?? undefined,
+    });
+    setSugs([]);
+    setActive(null);
   }
   function addItem() {
-    setItems((prev) => [...prev, ""]);
+    setItems((p) => [...p, { label: "" }]);
   }
   function removeItem(i: number) {
-    setItems((prev) => prev.filter((_, idx) => idx !== i));
+    setItems((p) => p.filter((_, idx) => idx !== i));
   }
   function move(i: number, dir: -1 | 1) {
     setItems((prev) => {
@@ -34,9 +74,11 @@ export default function NewListPage() {
   }
 
   async function save() {
-    const cleanItems = items.map((s) => s.trim()).filter(Boolean);
+    const clean = items
+      .map((e) => ({ ...e, label: e.label.trim() }))
+      .filter((e) => e.label.length > 0);
     if (title.trim().length < 3) return setMsg("Title needs at least 3 characters.");
-    if (cleanItems.length < 2) return setMsg("Add at least 2 entries to rank.");
+    if (clean.length < 2) return setMsg("Add at least 2 entries to rank.");
     setBusy(true);
     setMsg(null);
     const { data: userData } = await supabase.auth.getUser();
@@ -59,10 +101,13 @@ export default function NewListPage() {
       setBusy(false);
       return setMsg(error?.message ?? "Could not create list.");
     }
-    const rows = cleanItems.map((label, idx) => ({
+    const rows = clean.map((e, idx) => ({
       list_id: list.id,
       position: idx + 1,
-      label,
+      label: e.label,
+      entity_type: e.entityId ? "team" : null,
+      entity_id: e.entityId ?? null,
+      image_url: e.image ?? null,
     }));
     const { error: itemErr } = await supabase.from("list_items").insert(rows);
     setBusy(false);
@@ -75,7 +120,7 @@ export default function NewListPage() {
       <div className="mx-auto max-w-2xl px-6 py-12">
         <h1 className="text-2xl font-bold">New ranked list</h1>
         <p className="mt-1 text-sm text-zinc-400">
-          Rank anything: teams, eras, players, games. #1 goes on top.
+          Type a team name and pick from the dropdown to attach its badge — or free-type anything (eras, players, moments).
         </p>
         <div className="mt-8 space-y-4">
           <input
@@ -98,29 +143,55 @@ export default function NewListPage() {
           >
             <option value="">All sports / general</option>
             {SPORTS.map((s) => (
-              <option key={s.slug} value={s.slug}>
-                {s.name}
-              </option>
+              <option key={s.slug} value={s.slug}>{s.name}</option>
             ))}
           </select>
 
           <div className="space-y-2">
             {items.map((val, i) => (
-              <div key={i} className="flex items-center gap-2">
-                <span className="w-8 shrink-0 text-right font-bold text-emerald-400">
-                  {i + 1}.
-                </span>
-                <input
-                  value={val}
-                  onChange={(e) => setItem(i, e.target.value)}
-                  placeholder={
-                    i === 0 ? "1995–96 Bulls" : i === 1 ? "2016–17 Warriors" : "Add an entry…"
-                  }
-                  className="w-full rounded-lg border border-zinc-700 bg-zinc-900 p-2.5 text-sm outline-none focus:border-emerald-400"
-                />
-                <button onClick={() => move(i, -1)} className="rounded border border-zinc-700 px-2 py-1 text-xs hover:border-emerald-400">↑</button>
-                <button onClick={() => move(i, 1)} className="rounded border border-zinc-700 px-2 py-1 text-xs hover:border-emerald-400">↓</button>
-                <button onClick={() => removeItem(i)} className="rounded border border-zinc-700 px-2 py-1 text-xs hover:border-red-400">✕</button>
+              <div key={i} className="relative">
+                <div className="flex items-center gap-2">
+                  <span className="w-8 shrink-0 text-right font-bold text-emerald-400">{i + 1}.</span>
+                  {val.image ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={val.image} alt="" className="h-8 w-8 shrink-0 object-contain" />
+                  ) : (
+                    <div className="h-8 w-8 shrink-0" />
+                  )}
+                  <input
+                    value={val.label}
+                    onChange={(e) => setItem(i, { label: e.target.value, entityId: undefined, image: undefined })}
+                    onFocus={() => setActive(i)}
+                    placeholder={i === 0 ? "1995–96 Bulls" : "Add an entry…"}
+                    className="w-full rounded-lg border border-zinc-700 bg-zinc-900 p-2.5 text-sm outline-none focus:border-emerald-400"
+                  />
+                  <button onClick={() => move(i, -1)} className="rounded border border-zinc-700 px-2 py-1 text-xs hover:border-emerald-400">↑</button>
+                  <button onClick={() => move(i, 1)} className="rounded border border-zinc-700 px-2 py-1 text-xs hover:border-emerald-400">↓</button>
+                  <button onClick={() => removeItem(i)} className="rounded border border-zinc-700 px-2 py-1 text-xs hover:border-red-400">✕</button>
+                </div>
+                {active === i && sugs.length > 0 && (
+                  <div className="absolute left-10 right-24 z-10 mt-1 overflow-hidden rounded-lg border border-zinc-700 bg-zinc-900 shadow-xl">
+                    {sugs.map((t) => {
+                      const badge = t.strBadge ?? t.strTeamBadge ?? null;
+                      return (
+                        <button
+                          key={t.idTeam}
+                          onClick={() => pick(i, t)}
+                          className="flex w-full items-center gap-3 p-2 text-left text-sm hover:bg-zinc-800"
+                        >
+                          {badge ? (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img src={badge} alt="" className="h-6 w-6 object-contain" />
+                          ) : (
+                            <div className="h-6 w-6 rounded bg-zinc-800" />
+                          )}
+                          <span>{t.strTeam}</span>
+                          <span className="ml-auto text-xs text-zinc-500">{t.strLeague}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -128,18 +199,16 @@ export default function NewListPage() {
             + Add entry
           </button>
 
-<label className="flex cursor-pointer items-center gap-3 rounded-lg border border-zinc-800 bg-zinc-900 p-3 text-sm">
+          <label className="flex cursor-pointer items-center gap-3 rounded-lg border border-zinc-800 bg-zinc-900 p-3 text-sm">
             <input
               type="checkbox"
               checked={isPublic}
               onChange={(e) => setIsPublic(e.target.checked)}
               className="h-4 w-4 accent-emerald-400"
             />
-            <span>
-              {isPublic ? "Public — anyone can see this list" : "Private — only you can see this list"}
-            </span>
+            <span>{isPublic ? "Public — anyone can see this list" : "Private — only you can see this list"}</span>
           </label>
-          
+
           <button
             onClick={save}
             disabled={busy}

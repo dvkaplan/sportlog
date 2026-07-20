@@ -1,0 +1,1866 @@
+[
+  {
+    "idTeam": "134880",
+    "strTeam": "Atlanta Hawks",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/7o1noy1778226315.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134860",
+    "strTeam": "Boston Celtics",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/4j85bn1667936589.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134861",
+    "strTeam": "Brooklyn Nets",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/hkafe61739948361.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134881",
+    "strTeam": "Charlotte Hornets",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xqtvvp1422380623.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134870",
+    "strTeam": "Chicago Bulls",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/ehq8l31778197349.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134871",
+    "strTeam": "Cleveland Cavaliers",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/pch9ct1778195828.png",
+    "strAlternate": "Cavs"
+  },
+  {
+    "idTeam": "134875",
+    "strTeam": "Dallas Mavericks",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/s5dx7c1778197536.png",
+    "strAlternate": "Mavs"
+  },
+  {
+    "idTeam": "134885",
+    "strTeam": "Denver Nuggets",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/s8ch7m1778197814.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134872",
+    "strTeam": "Detroit Pistons",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/lg7qrc1621594751.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134865",
+    "strTeam": "Golden State Warriors",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xokycb1778197905.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134946",
+    "strTeam": "Arizona Cardinals",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xvuwtw1420646838.png",
+    "strAlternate": "Cardinals"
+  },
+  {
+    "idTeam": "134942",
+    "strTeam": "Atlanta Falcons",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/rrpvpr1420658174.png",
+    "strAlternate": "Falcons"
+  },
+  {
+    "idTeam": "134922",
+    "strTeam": "Baltimore Ravens",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/einz3p1546172463.png",
+    "strAlternate": "Ravens"
+  },
+  {
+    "idTeam": "134918",
+    "strTeam": "Buffalo Bills",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/6pb37b1515849026.png",
+    "strAlternate": "Bills"
+  },
+  {
+    "idTeam": "134943",
+    "strTeam": "Carolina Panthers",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xxyvvy1420940478.png",
+    "strAlternate": "Panthers"
+  },
+  {
+    "idTeam": "134938",
+    "strTeam": "Chicago Bears",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/ji22531698678538.png",
+    "strAlternate": "Bears"
+  },
+  {
+    "idTeam": "134923",
+    "strTeam": "Cincinnati Bengals",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/qqtwwv1420941670.png",
+    "strAlternate": "Bengals"
+  },
+  {
+    "idTeam": "134924",
+    "strTeam": "Cleveland Browns",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/squvxy1420942389.png",
+    "strAlternate": "Browns"
+  },
+  {
+    "idTeam": "134934",
+    "strTeam": "Dallas Cowboys",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/wrxssu1450018209.png",
+    "strAlternate": "Cowboys"
+  },
+  {
+    "idTeam": "134930",
+    "strTeam": "Denver Broncos",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/upsspx1421635647.png",
+    "strAlternate": "Broncos"
+  },
+  {
+    "idTeam": "135267",
+    "strTeam": "Arizona Diamondbacks",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xe5wlo1713861863.png",
+    "strAlternate": "Diamondbacks"
+  },
+  {
+    "idTeam": "135261",
+    "strTeam": "Athletics",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/cyvrv31741640777.png",
+    "strAlternate": "Oakland Athletics"
+  },
+  {
+    "idTeam": "135268",
+    "strTeam": "Atlanta Braves",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/yjs76e1617811496.png",
+    "strAlternate": "Braves"
+  },
+  {
+    "idTeam": "135251",
+    "strTeam": "Baltimore Orioles",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/ytywvu1431257088.png",
+    "strAlternate": "Orioles"
+  },
+  {
+    "idTeam": "135252",
+    "strTeam": "Boston Red Sox",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/stpsus1425120215.png",
+    "strAlternate": "Red Sox"
+  },
+  {
+    "idTeam": "135269",
+    "strTeam": "Chicago Cubs",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/wxbe071521892391.png",
+    "strAlternate": "Cubs"
+  },
+  {
+    "idTeam": "135253",
+    "strTeam": "Chicago White Sox",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/yyz5dh1554140884.png",
+    "strAlternate": "White Sox"
+  },
+  {
+    "idTeam": "135270",
+    "strTeam": "Cincinnati Reds",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/wspusr1431538832.png",
+    "strAlternate": "Reds"
+  },
+  {
+    "idTeam": "135254",
+    "strTeam": "Cleveland Guardians",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/3zvzao1640964590.png",
+    "strAlternate": "Guardians"
+  },
+  {
+    "idTeam": "135271",
+    "strTeam": "Colorado Rockies",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/r7q6ko1687608395.png",
+    "strAlternate": "Rockies"
+  },
+  {
+    "idTeam": "134846",
+    "strTeam": "Anaheim Ducks",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/1d465t1719573796.png",
+    "strAlternate": "Ducks"
+  },
+  {
+    "idTeam": "134830",
+    "strTeam": "Boston Bruins",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/b1r86e1720023232.png",
+    "strAlternate": "Bruins"
+  },
+  {
+    "idTeam": "134831",
+    "strTeam": "Buffalo Sabres",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/3m3jhp1619536655.png",
+    "strAlternate": "Sabres"
+  },
+  {
+    "idTeam": "134848",
+    "strTeam": "Calgary Flames",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/v8vkk11619536610.png",
+    "strAlternate": "Flames"
+  },
+  {
+    "idTeam": "134838",
+    "strTeam": "Carolina Hurricanes",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/v07m3x1547232585.png",
+    "strAlternate": "Hurricanes"
+  },
+  {
+    "idTeam": "134854",
+    "strTeam": "Chicago Blackhawks",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/tuwyvr1422041801.png",
+    "strAlternate": "Blackhawks"
+  },
+  {
+    "idTeam": "134855",
+    "strTeam": "Colorado Avalanche",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/wqutut1421173572.png",
+    "strAlternate": "Avalanche"
+  },
+  {
+    "idTeam": "134839",
+    "strTeam": "Columbus Blue Jackets",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/ssytwt1421792535.png",
+    "strAlternate": "Blue Jackets"
+  },
+  {
+    "idTeam": "134856",
+    "strTeam": "Dallas Stars",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/qrvywq1422042125.png",
+    "strAlternate": "Stars"
+  },
+  {
+    "idTeam": "134832",
+    "strTeam": "Detroit Red Wings",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/1c24ow1546544080.png",
+    "strAlternate": "Red Wings"
+  },
+  {
+    "idTeam": "133604",
+    "strTeam": "Arsenal",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/uyhbfe1612467038.png",
+    "strAlternate": "Arsenal Football Club, AFC, Arsenal FC"
+  },
+  {
+    "idTeam": "133601",
+    "strTeam": "Aston Villa",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/jykrpv1717309891.png",
+    "strAlternate": "Aston Villa FC"
+  },
+  {
+    "idTeam": "134301",
+    "strTeam": "Bournemouth",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/y08nak1534071116.png",
+    "strAlternate": "AFC Bournemouth, Athletic Football Club Bournemouth"
+  },
+  {
+    "idTeam": "134355",
+    "strTeam": "Brentford",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/grv1aw1546453779.png",
+    "strAlternate": "Brentford Football Club, Brentford FC, BFC"
+  },
+  {
+    "idTeam": "133619",
+    "strTeam": "Brighton and Hove Albion",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/ywypts1448810904.png",
+    "strAlternate": "Brighton & Hove Albion Football Club, Brighton , BHAFC"
+  },
+  {
+    "idTeam": "133610",
+    "strTeam": "Chelsea",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strBadge": "https://www.thesportsdb.com/images/media/team/badge/pbf4ul1782638263.png",
+    "strAlternate": "Chelsea FC"
+  },
+  {
+    "idTeam": "133632",
+    "strTeam": "Crystal Palace",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/ia6i3m1656014992.png",
+    "strAlternate": "Palace, CPFC"
+  },
+  {
+    "idTeam": "133615",
+    "strTeam": "Everton",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/eqayrf1523184794.png",
+    "strAlternate": "Everton FC"
+  },
+  {
+    "idTeam": "133600",
+    "strTeam": "Fulham",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xwwvyt1448811086.png",
+    "strAlternate": "Fulham FC"
+  },
+  {
+    "idTeam": "135851",
+    "strTeam": "Atlanta United",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/ej091x1602103070.png",
+    "strAlternate": "Atlanta Utd"
+  },
+  {
+    "idTeam": "140079",
+    "strTeam": "Austin FC",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/a3dlg61595434277.png",
+    "strAlternate": "Austin"
+  },
+  {
+    "idTeam": "134150",
+    "strTeam": "CF Montréal",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/livdl31679344925.png",
+    "strAlternate": "Montreal Impact, Club de Foot Montreal"
+  },
+  {
+    "idTeam": "140078",
+    "strTeam": "Charlotte FC",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/b6p4uz1595434047.png",
+    "strAlternate": "Charlotte Football Club"
+  },
+  {
+    "idTeam": "134154",
+    "strTeam": "Chicago Fire",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/8xuc781639493166.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134794",
+    "strTeam": "Colorado Rapids",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/uppupv1473536412.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134152",
+    "strTeam": "Columbus Crew",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/dzs8cp1629059854.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134145",
+    "strTeam": "DC United",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/uwvsyt1467462609.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "136688",
+    "strTeam": "FC Cincinnati",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/vvhsqc1707631046.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134146",
+    "strTeam": "FC Dallas",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/vxy8xy1602103187.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "133727",
+    "strTeam": "Athletic Bilbao",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/68w7fe1639408210.png",
+    "strAlternate": "Ath Bilbao, Athletic Club, Athletic"
+  },
+  {
+    "idTeam": "133729",
+    "strTeam": "Atlético Madrid",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/0ulh3q1719984315.png",
+    "strAlternate": "Club Atlético de Madrid, Atlético de Madrid, Atléti"
+  },
+  {
+    "idTeam": "133739",
+    "strTeam": "Barcelona",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/wq9sir1639406443.png",
+    "strAlternate": "FC Barcelona"
+  },
+  {
+    "idTeam": "133937",
+    "strTeam": "Celta Vigo",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xfjtku1690436219.png",
+    "strAlternate": "Celta de Vigo"
+  },
+  {
+    "idTeam": "134221",
+    "strTeam": "Deportivo Alavés",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/mfn99h1734673842.png",
+    "strAlternate": "Alavés"
+  },
+  {
+    "idTeam": "134384",
+    "strTeam": "Elche",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/e4vaw51655594332.png",
+    "strAlternate": "Elche CF"
+  },
+  {
+    "idTeam": "133734",
+    "strTeam": "Espanyol",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/867nzz1681703222.png",
+    "strAlternate": "Espanol, RCDE, RCD Espanyol"
+  },
+  {
+    "idTeam": "133731",
+    "strTeam": "Getafe",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/eyh2891655594452.png",
+    "strAlternate": "Getafe, Getafe Club de Fútbol, Getafe CF"
+  },
+  {
+    "idTeam": "133732",
+    "strTeam": "Levante",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xwtxsx1473503739.png",
+    "strAlternate": "Levante UD"
+  },
+  {
+    "idTeam": "133652",
+    "strTeam": "Augsburg",
+    "strLeague": "German Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xqyyvq1473453233.png",
+    "strAlternate": "Fußball-Club Augsburg 1907 e. V., FC Augsburg"
+  },
+  {
+    "idTeam": "133666",
+    "strTeam": "Bayer Leverkusen",
+    "strLeague": "German Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/3x9k851726760113.png",
+    "strAlternate": "Bayer, Bayer 04 Leverkusen, Bayer Leverkusen"
+  },
+  {
+    "idTeam": "133664",
+    "strTeam": "Bayern Munich",
+    "strLeague": "German Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/01ogkh1716960412.png",
+    "strAlternate": "FC Bayern München, FC Bayern, FC Bayern Munich, Bayern"
+  },
+  {
+    "idTeam": "133650",
+    "strTeam": "Borussia Dortmund",
+    "strLeague": "German Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/tqo8ge1716960353.png",
+    "strAlternate": "Dortmund"
+  },
+  {
+    "idTeam": "134779",
+    "strTeam": "Borussia Mönchengladbach",
+    "strLeague": "German Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/sysurw1473453380.png",
+    "strAlternate": "Mönchengladbach, Gladbach"
+  },
+  {
+    "idTeam": "133814",
+    "strTeam": "Eintracht Frankfurt",
+    "strLeague": "German Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/rurwpy1473453269.png",
+    "strAlternate": "Ein Frankfurt, Frankfurt, SGE"
+  },
+  {
+    "idTeam": "138411",
+    "strTeam": "Elversberg",
+    "strLeague": "German Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/z079go1677573926.png",
+    "strAlternate": "SpVgg 07 Elversberg, SV Elversberg"
+  },
+  {
+    "idTeam": "133653",
+    "strTeam": "Freiburg",
+    "strLeague": "German Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/urwtup1473453288.png",
+    "strAlternate": "Sport-Club Freiburg, SC Freiburg"
+  },
+  {
+    "idTeam": "133651",
+    "strTeam": "Hamburg",
+    "strLeague": "German Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/tvtppt1473453296.png",
+    "strAlternate": "Hamburger SV, HSV"
+  },
+  {
+    "idTeam": "133657",
+    "strTeam": "Hoffenheim",
+    "strLeague": "German Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/9hwvb21621593919.png",
+    "strAlternate": "TSG 1899 Hoffenheim, TSG Hoffenheim"
+  },
+  {
+    "idTeam": "133667",
+    "strTeam": "AC Milan",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/wvspur1448806617.png",
+    "strAlternate": "Milan"
+  },
+  {
+    "idTeam": "134782",
+    "strTeam": "Atalanta",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/qix5ku1780561327.png",
+    "strAlternate": "Orobici, Atalanta BC"
+  },
+  {
+    "idTeam": "134781",
+    "strTeam": "Bologna",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/2qi1u31655592366.png",
+    "strAlternate": "Bologna FC, Bologna FC 1909"
+  },
+  {
+    "idTeam": "134783",
+    "strTeam": "Cagliari",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/wvsvxt1447534471.png",
+    "strAlternate": "Cagliari Calcio, Cagliari FC, Casteddu, Il Sardi, Sardi"
+  },
+  {
+    "idTeam": "134243",
+    "strTeam": "Como",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/02x81t1627405841.png",
+    "strAlternate": "Como 1907"
+  },
+  {
+    "idTeam": "133674",
+    "strTeam": "Fiorentina",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/hc8nhu1656098030.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "133675",
+    "strTeam": "Genoa",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/52s8dn1655553600.png",
+    "strAlternate": "Genoa Cricket and Football Club, Genoa CFC"
+  },
+  {
+    "idTeam": "133681",
+    "strTeam": "Inter Milan",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/ryhu6d1617113103.png",
+    "strAlternate": "Inter, Internazionale Milano, Internazionale"
+  },
+  {
+    "idTeam": "133676",
+    "strTeam": "Juventus",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/uxf0gr1742983727.png",
+    "strAlternate": "Juve, Juventus FC, La Vecchia Signora, The Old Lady, Bianconeri"
+  },
+  {
+    "idTeam": "134709",
+    "strTeam": "Angers",
+    "strLeague": "French Ligue 1",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/ix6q4w1678808069.png",
+    "strAlternate": "Angers SCO"
+  },
+  {
+    "idTeam": "134788",
+    "strTeam": "Auxerre",
+    "strLeague": "French Ligue 1",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/lzdtbf1658753355.png",
+    "strAlternate": "AJ Auxerre, Association de la Jeunesse Auxerroise, AJA"
+  },
+  {
+    "idTeam": "133704",
+    "strTeam": "Brest",
+    "strLeague": "French Ligue 1",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/z69be41598797026.png",
+    "strAlternate": "Stade Brestois 29"
+  },
+  {
+    "idTeam": "133862",
+    "strTeam": "Le Havre",
+    "strLeague": "French Ligue 1",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/aikowk1546475003.png",
+    "strAlternate": "Havre Athletic Club, Le Havre AC"
+  },
+  {
+    "idTeam": "133822",
+    "strTeam": "Lens",
+    "strLeague": "French Ligue 1",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/3pxoum1598797195.png",
+    "strAlternate": "RC Lens"
+  },
+  {
+    "idTeam": "133711",
+    "strTeam": "Lille",
+    "strLeague": "French Ligue 1",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/2giize1534005340.png",
+    "strAlternate": "Lille OSC"
+  },
+  {
+    "idTeam": "133715",
+    "strTeam": "Lorient",
+    "strLeague": "French Ligue 1",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/sxsttw1473504748.png",
+    "strAlternate": "FC Lorient"
+  },
+  {
+    "idTeam": "133713",
+    "strTeam": "Lyon",
+    "strLeague": "French Ligue 1",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/blk9771656932845.png",
+    "strAlternate": "Olympique Lyonnais, Olympique Lyon, OL"
+  },
+  {
+    "idTeam": "133707",
+    "strTeam": "Marseille",
+    "strLeague": "French Ligue 1",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/c6bazh1779212287.png",
+    "strAlternate": "Olympique de Marseille"
+  },
+  {
+    "idTeam": "134873",
+    "strTeam": "Indiana Pacers",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/y3lutb1778226511.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134867",
+    "strTeam": "Los Angeles Lakers",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/d8uoxw1714254511.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134882",
+    "strTeam": "Miami Heat",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/b9tye31778226616.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134886",
+    "strTeam": "Minnesota Timberwolves",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/epenxg1781034811.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134862",
+    "strTeam": "New York Knicks",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/4k8obt1778226764.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134883",
+    "strTeam": "Orlando Magic",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/j0mpu81778198371.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134863",
+    "strTeam": "Philadelphia 76ers",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/j6rlbi1778226857.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134868",
+    "strTeam": "Phoenix Suns",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xfyknc1778198971.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134888",
+    "strTeam": "Portland Trail Blazers",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/umehtv1778226952.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134869",
+    "strTeam": "Sacramento Kings",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/k2buwo1778227426.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134889",
+    "strTeam": "Utah Jazz",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/trct8w1778198868.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134939",
+    "strTeam": "Detroit Lions",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/lgsgkr1546168257.png",
+    "strAlternate": "Lions"
+  },
+  {
+    "idTeam": "134926",
+    "strTeam": "Houston Texans",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/wqyryy1421436627.png",
+    "strAlternate": "Texans"
+  },
+  {
+    "idTeam": "135907",
+    "strTeam": "Los Angeles Rams",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/8e8v4i1599764614.png",
+    "strAlternate": "Rams"
+  },
+  {
+    "idTeam": "134944",
+    "strTeam": "New Orleans Saints",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/nd46c71537821337.png",
+    "strAlternate": "Saints"
+  },
+  {
+    "idTeam": "134935",
+    "strTeam": "New York Giants",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/vxppup1423669459.png",
+    "strAlternate": "Giants"
+  },
+  {
+    "idTeam": "134921",
+    "strTeam": "New York Jets",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/hz92od1607953467.png",
+    "strAlternate": "Jets"
+  },
+  {
+    "idTeam": "134929",
+    "strTeam": "Tennessee Titans",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/3td0f41779180767.png",
+    "strAlternate": "Titans"
+  },
+  {
+    "idTeam": "134937",
+    "strTeam": "Washington Commanders",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/rn0c7v1643826119.png",
+    "strAlternate": "Commanders"
+  },
+  {
+    "idTeam": "135255",
+    "strTeam": "Detroit Tigers",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/9dib6o1554032173.png",
+    "strAlternate": "Tigers"
+  },
+  {
+    "idTeam": "135258",
+    "strTeam": "Los Angeles Angels",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/vswsvx1432577476.png",
+    "strAlternate": "Angels"
+  },
+  {
+    "idTeam": "135272",
+    "strTeam": "Los Angeles Dodgers",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/32uxn21778269451.png",
+    "strAlternate": "Dodgers"
+  },
+  {
+    "idTeam": "135273",
+    "strTeam": "Miami Marlins",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/0722fs1546001701.png",
+    "strAlternate": "Marlins"
+  },
+  {
+    "idTeam": "135274",
+    "strTeam": "Milwaukee Brewers",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/08kh2a1595775193.png",
+    "strAlternate": "Brewers"
+  },
+  {
+    "idTeam": "135259",
+    "strTeam": "Minnesota Twins",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/necd5v1521905719.png",
+    "strAlternate": "Twins"
+  },
+  {
+    "idTeam": "135275",
+    "strTeam": "New York Mets",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/rxqspq1431540337.png",
+    "strAlternate": "Mets"
+  },
+  {
+    "idTeam": "135260",
+    "strTeam": "New York Yankees",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/wqwwxx1423478766.png",
+    "strAlternate": "Yankees"
+  },
+  {
+    "idTeam": "135276",
+    "strTeam": "Philadelphia Phillies",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/3xrldf1617528682.png",
+    "strAlternate": "Phillies"
+  },
+  {
+    "idTeam": "135278",
+    "strTeam": "San Diego Padres",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/6wt1cn1617527530.png",
+    "strAlternate": "Padres"
+  },
+  {
+    "idTeam": "135279",
+    "strTeam": "San Francisco Giants",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/ov3qi41778132254.png",
+    "strAlternate": "Giants"
+  },
+  {
+    "idTeam": "135263",
+    "strTeam": "Tampa Bay Rays",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/littyt1554031623.png",
+    "strAlternate": "Rays"
+  },
+  {
+    "idTeam": "135264",
+    "strTeam": "Texas Rangers",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/qt9qki1521893151.png",
+    "strAlternate": "Rangers"
+  },
+  {
+    "idTeam": "135265",
+    "strTeam": "Toronto Blue Jays",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/f9zk3l1617527686.png",
+    "strAlternate": "Blue Jays"
+  },
+  {
+    "idTeam": "135281",
+    "strTeam": "Washington Nationals",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/wpqrut1423694764.png",
+    "strAlternate": "Nationals"
+  },
+  {
+    "idTeam": "134833",
+    "strTeam": "Florida Panthers",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/8qtaz11547158220.png",
+    "strAlternate": "Panthers"
+  },
+  {
+    "idTeam": "134852",
+    "strTeam": "Los Angeles Kings",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/w408rg1719220748.png",
+    "strAlternate": "Kings"
+  },
+  {
+    "idTeam": "134857",
+    "strTeam": "Minnesota Wild",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/swtsxs1422042685.png",
+    "strAlternate": "Wild"
+  },
+  {
+    "idTeam": "134834",
+    "strTeam": "Montreal Canadiens",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/stpryx1421791753.png",
+    "strAlternate": "Canadiens"
+  },
+  {
+    "idTeam": "134840",
+    "strTeam": "New Jersey Devils",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/z4rsvp1619536740.png",
+    "strAlternate": "Devils"
+  },
+  {
+    "idTeam": "134842",
+    "strTeam": "New York Rangers",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/ts2nhq1763454676.png",
+    "strAlternate": "Rangers"
+  },
+  {
+    "idTeam": "134835",
+    "strTeam": "Ottawa Senators",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/2tc1qy1619536592.png",
+    "strAlternate": "Senators"
+  },
+  {
+    "idTeam": "134853",
+    "strTeam": "San Jose Sharks",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/yui7871546193006.png",
+    "strAlternate": "Sharks"
+  },
+  {
+    "idTeam": "140082",
+    "strTeam": "Seattle Kraken",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/zsx49m1595775836.png",
+    "strAlternate": "Kraken "
+  },
+  {
+    "idTeam": "134859",
+    "strTeam": "St. Louis Blues",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/rsqtwx1422053715.png",
+    "strAlternate": "Blues"
+  },
+  {
+    "idTeam": "134837",
+    "strTeam": "Toronto Maple Leafs",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/mxig4p1570129307.png",
+    "strAlternate": "Maple Leafs"
+  },
+  {
+    "idTeam": "134850",
+    "strTeam": "Vancouver Canucks",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xqxxpw1421875519.png",
+    "strAlternate": "Canucks"
+  },
+  {
+    "idTeam": "134851",
+    "strTeam": "Winnipeg Jets",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/bwn9hr1547233611.png",
+    "strAlternate": "Jets"
+  },
+  {
+    "idTeam": "133602",
+    "strTeam": "Liverpool",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/kfaher1737969724.png",
+    "strAlternate": "LFC, Liverpool FC"
+  },
+  {
+    "idTeam": "133613",
+    "strTeam": "Manchester City",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/vwpvry1467462651.png",
+    "strAlternate": "Man City"
+  },
+  {
+    "idTeam": "133612",
+    "strTeam": "Manchester United",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xzqdr11517660252.png",
+    "strAlternate": "Man Utd"
+  },
+  {
+    "idTeam": "133603",
+    "strTeam": "Sunderland",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/tprtus1448813498.png",
+    "strAlternate": "Sunderland Association Football Club"
+  },
+  {
+    "idTeam": "134144",
+    "strTeam": "Houston Dynamo",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/yvz9dq1707631352.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "137699",
+    "strTeam": "Inter Miami",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/m4it3e1602103647.png",
+    "strAlternate": "Inter Miami CF, Club Internacional de Fútbol Miami"
+  },
+  {
+    "idTeam": "134153",
+    "strTeam": "LA Galaxy",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/ysyysr1420227188.png",
+    "strAlternate": "Los Angeles Galaxy"
+  },
+  {
+    "idTeam": "136050",
+    "strTeam": "Los Angeles FC",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/7nbj2a1602103638.png",
+    "strAlternate": "LAFC"
+  },
+  {
+    "idTeam": "135852",
+    "strTeam": "Minnesota United",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/vl67t41492453433.png",
+    "strAlternate": "Minnesota Stars FC"
+  },
+  {
+    "idTeam": "134159",
+    "strTeam": "New England Revolution",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/1ula2l1639493143.png",
+    "strAlternate": "New England Revolution"
+  },
+  {
+    "idTeam": "134630",
+    "strTeam": "New York City FC",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/m9vis71735140655.png",
+    "strAlternate": "New York City, New York City Football Club, NYCFC"
+  },
+  {
+    "idTeam": "134156",
+    "strTeam": "New York Red Bulls",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/suytvy1473536462.png",
+    "strAlternate": "New Jersey Red Bulls"
+  },
+  {
+    "idTeam": "135292",
+    "strTeam": "Orlando City",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/qyppxw1423832326.png",
+    "strAlternate": "Orlando City SC"
+  },
+  {
+    "idTeam": "134142",
+    "strTeam": "Philadelphia Union",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/gyznyo1602103682.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134155",
+    "strTeam": "Portland Timbers",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/skm30j1557953559.png",
+    "strAlternate": "PTFC"
+  },
+  {
+    "idTeam": "134158",
+    "strTeam": "Real Salt Lake",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/kkjlfa1556488022.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134157",
+    "strTeam": "San Jose Earthquakes",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xyrqqt1420781048.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134149",
+    "strTeam": "Seattle Sounders",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/2dy5cx1706711036.png",
+    "strAlternate": "Seattle Sounders FC"
+  },
+  {
+    "idTeam": "134143",
+    "strTeam": "Sporting Kansas City",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/tqupxw1473536504.png",
+    "strAlternate": "Sporting KC"
+  },
+  {
+    "idTeam": "134148",
+    "strTeam": "Toronto FC",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/rsxyrr1473536512.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134147",
+    "strTeam": "Vancouver Whitecaps",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/tpwxpy1473536521.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "133722",
+    "strTeam": "Real Betis",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/2oqulv1663245386.png",
+    "strAlternate": "Betis"
+  },
+  {
+    "idTeam": "133730",
+    "strTeam": "Osasuna",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/rvspvt1473502960.png",
+    "strAlternate": "Osasuna, Club Atlético Osasuna, CA Osasuna"
+  },
+  {
+    "idTeam": "133738",
+    "strTeam": "Real Madrid",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/vwvwrw1473502969.png",
+    "strAlternate": "Real Madrid"
+  },
+  {
+    "idTeam": "133724",
+    "strTeam": "Real Sociedad",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/vptvpr1473502986.png",
+    "strAlternate": "Sociedad"
+  },
+  {
+    "idTeam": "133735",
+    "strTeam": "Sevilla",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/vpsqqx1473502977.png",
+    "strAlternate": "Sevilla Fútbol Club, SFC"
+  },
+  {
+    "idTeam": "133725",
+    "strTeam": "Valencia",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/dm8l6o1655594864.png",
+    "strAlternate": "Valencia CF, Valencia Club de Fútbol"
+  },
+  {
+    "idTeam": "133740",
+    "strTeam": "Villarreal",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/vrypqy1473503073.png",
+    "strAlternate": "Villareal, Villarreal Club de Fútbol, Villarreal CF, Vila-real, VCF"
+  },
+  {
+    "idTeam": "133660",
+    "strTeam": "Stuttgart",
+    "strLeague": "German Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/yppyux1473454085.png",
+    "strAlternate": "VfB Stuttgart"
+  },
+  {
+    "idTeam": "133665",
+    "strTeam": "Mainz",
+    "strLeague": "German Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/fhm9v51552134916.png",
+    "strAlternate": "FSV Mainz 05"
+  },
+  {
+    "idTeam": "133662",
+    "strTeam": "Werder Bremen",
+    "strLeague": "German Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/tkvqan1716960454.png",
+    "strAlternate": "SV Werder Bremen"
+  },
+  {
+    "idTeam": "134690",
+    "strTeam": "Union Berlin",
+    "strLeague": "German Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/q0o5001599679795.png",
+    "strAlternate": "1. FC Union Berlin"
+  },
+  {
+    "idTeam": "133654",
+    "strTeam": "Köln",
+    "strLeague": "German Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/2j1sc91566049407.png",
+    "strAlternate": "1. Fußball-Club Köln 01/07 e. V., FC Koeln, 1. FC Köln, Cologne"
+  },
+  {
+    "idTeam": "133670",
+    "strTeam": "Napoli",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/l8qyxv1742982541.png",
+    "strAlternate": "S.S.C. Napoli, SSC Napoli, Naples, Gli Azzurri"
+  },
+  {
+    "idTeam": "133682",
+    "strTeam": "Roma",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/jwro2s1760820674.png",
+    "strAlternate": "AS Roma, FC Roma, Rome FC, Giallorossi"
+  },
+  {
+    "idTeam": "133668",
+    "strTeam": "Lazio",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/rwqyvs1448806608.png",
+    "strAlternate": "SS Lazio, Società Sportiva Lazio, Biancocelesti"
+  },
+  {
+    "idTeam": "133687",
+    "strTeam": "Torino",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xxprty1448806802.png",
+    "strAlternate": "Torino Football Club, Torino FC"
+  },
+  {
+    "idTeam": "133679",
+    "strTeam": "Udinese",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/vwvstr1448806811.png",
+    "strAlternate": "Udinese Calcio, Bianconeri"
+  },
+  {
+    "idTeam": "133678",
+    "strTeam": "Lecce",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/j4vznr1567365249.png",
+    "strAlternate": "US Lecce, Apulia, Giallorossi"
+  },
+  {
+    "idTeam": "135728",
+    "strTeam": "Parma",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/6yiaxs1627406063.png",
+    "strAlternate": "Parma Calcio, AC Parma, Parma FC, Parma Calcio 1913"
+  },
+  {
+    "idTeam": "133701",
+    "strTeam": "Sassuolo",
+    "strLeague": "Italian Serie A",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xystvp1448806138.png",
+    "strAlternate": "U.S. Sassuolo Calcio, USSC"
+  },
+  {
+    "idTeam": "133823",
+    "strTeam": "Monaco",
+    "strLeague": "French Ligue 1",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/exjf5l1678808044.png",
+    "strAlternate": "AS Monaco"
+  },
+  {
+    "idTeam": "133712",
+    "strTeam": "Nice",
+    "strLeague": "French Ligue 1",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/msy7ly1621593859.png",
+    "strAlternate": "OGC Nice"
+  },
+  {
+    "idTeam": "133719",
+    "strTeam": "Rennes",
+    "strLeague": "French Ligue 1",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/ypturx1473504818.png",
+    "strAlternate": "Stade Rennais"
+  },
+  {
+    "idTeam": "133882",
+    "strTeam": "Strasbourg",
+    "strLeague": "French Ligue 1",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/b8k77w1766625501.png",
+    "strAlternate": "Racing Club de Strasbourg Alsace, RC Strasbourg, RC Strasbourg Alsace, R. Strasbourg"
+  },
+  {
+    "idTeam": "133703",
+    "strTeam": "Toulouse",
+    "strLeague": "French Ligue 1",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/17eqox1688449282.png",
+    "strAlternate": "Toulouse, TFC,Toulouse Football Club, Téfécé"
+  },
+  {
+    "idTeam": "134876",
+    "strTeam": "Houston Rockets",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/azoktf1780729261.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134866",
+    "strTeam": "Los Angeles Clippers",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/3gtb8s1719303125.png",
+    "strAlternate": "LA Clippers"
+  },
+  {
+    "idTeam": "134877",
+    "strTeam": "Memphis Grizzlies",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/v44qp21778197640.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134874",
+    "strTeam": "Milwaukee Bucks",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/olhug01621594702.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134878",
+    "strTeam": "New Orleans Pelicans",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xoxjsr1778226698.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134887",
+    "strTeam": "Oklahoma City Thunder",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/bkhj5p1778199006.png",
+    "strAlternate": "OKC Thunder"
+  },
+  {
+    "idTeam": "134879",
+    "strTeam": "San Antonio Spurs",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/yc5qfx1781459158.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134864",
+    "strTeam": "Toronto Raptors",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/lct96a1778227205.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134884",
+    "strTeam": "Washington Wizards",
+    "strLeague": "NBA",
+    "strSport": "Basketball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/dxac7a1778227278.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "134940",
+    "strTeam": "Green Bay Packers",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/rqpwtr1421434717.png",
+    "strAlternate": "Packers"
+  },
+  {
+    "idTeam": "134927",
+    "strTeam": "Indianapolis Colts",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/wqqvpx1421434058.png",
+    "strAlternate": "Colts"
+  },
+  {
+    "idTeam": "134928",
+    "strTeam": "Jacksonville Jaguars",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/0mrsd41546427902.png",
+    "strAlternate": "Jaguars"
+  },
+  {
+    "idTeam": "134931",
+    "strTeam": "Kansas City Chiefs",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/936t161515847222.png",
+    "strAlternate": "Chiefs"
+  },
+  {
+    "idTeam": "134932",
+    "strTeam": "Las Vegas Raiders",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xqusqy1421724291.png",
+    "strAlternate": "Raiders"
+  },
+  {
+    "idTeam": "135908",
+    "strTeam": "Los Angeles Chargers",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/vrqanp1687734910.png",
+    "strAlternate": "Chargers"
+  },
+  {
+    "idTeam": "134919",
+    "strTeam": "Miami Dolphins",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/trtusv1421435081.png",
+    "strAlternate": "Dolphins"
+  },
+  {
+    "idTeam": "134941",
+    "strTeam": "Minnesota Vikings",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/qstqqr1421609163.png",
+    "strAlternate": "Vikings"
+  },
+  {
+    "idTeam": "134920",
+    "strTeam": "New England Patriots",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/xtwxyt1421431860.png",
+    "strAlternate": "Patriots"
+  },
+  {
+    "idTeam": "134936",
+    "strTeam": "Philadelphia Eagles",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/pnpybf1515852421.png",
+    "strAlternate": "Eagles"
+  },
+  {
+    "idTeam": "134925",
+    "strTeam": "Pittsburgh Steelers",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/2975411515853129.png",
+    "strAlternate": "Steelers"
+  },
+  {
+    "idTeam": "134948",
+    "strTeam": "San Francisco 49ers",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/bqbtg61539537328.png",
+    "strAlternate": "49ers"
+  },
+  {
+    "idTeam": "134949",
+    "strTeam": "Seattle Seahawks",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/wwuqyr1421434817.png",
+    "strAlternate": "Seahawks"
+  },
+  {
+    "idTeam": "134945",
+    "strTeam": "Tampa Bay Buccaneers",
+    "strLeague": "NFL",
+    "strSport": "American Football",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/2dfpdl1537820969.png",
+    "strAlternate": "Buccaneers"
+  },
+  {
+    "idTeam": "135256",
+    "strTeam": "Houston Astros",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/miwigx1521893583.png",
+    "strAlternate": "Astros"
+  },
+  {
+    "idTeam": "135257",
+    "strTeam": "Kansas City Royals",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/ii3rz81554031260.png",
+    "strAlternate": "Royals"
+  },
+  {
+    "idTeam": "135277",
+    "strTeam": "Pittsburgh Pirates",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/kw6uqr1617527138.png",
+    "strAlternate": "Pirates"
+  },
+  {
+    "idTeam": "135262",
+    "strTeam": "Seattle Mariners",
+    "strLeague": "MLB",
+    "strSport": "Baseball",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/39x9ph1521903933.png",
+    "strAlternate": "Mariners"
+  },
+  {
+    "idTeam": "134849",
+    "strTeam": "Edmonton Oilers",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/uxxsyw1421618428.png",
+    "strAlternate": "Oilers"
+  },
+  {
+    "idTeam": "134858",
+    "strTeam": "Nashville Predators",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/twqyvy1422052908.png",
+    "strAlternate": "Predators"
+  },
+  {
+    "idTeam": "134841",
+    "strTeam": "New York Islanders",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/hqn8511619536714.png",
+    "strAlternate": "Islanders"
+  },
+  {
+    "idTeam": "134843",
+    "strTeam": "Philadelphia Flyers",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/qxxppp1421794965.png",
+    "strAlternate": "Flyers"
+  },
+  {
+    "idTeam": "134844",
+    "strTeam": "Pittsburgh Penguins",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/dsj3on1546192477.png",
+    "strAlternate": "Penguins"
+  },
+  {
+    "idTeam": "134836",
+    "strTeam": "Tampa Bay Lightning",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/swysut1421791822.png",
+    "strAlternate": "Lightning"
+  },
+  {
+    "idTeam": "148494",
+    "strTeam": "Utah Mammoth",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/w5m2ab1746690303.png",
+    "strAlternate": "Mammoth"
+  },
+  {
+    "idTeam": "135913",
+    "strTeam": "Vegas Golden Knights",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/7fd4521619536689.png",
+    "strAlternate": "Golden Knights"
+  },
+  {
+    "idTeam": "134845",
+    "strTeam": "Washington Capitals",
+    "strLeague": "NHL",
+    "strSport": "Ice Hockey",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/99ca9a1638974052.png",
+    "strAlternate": "Capitals"
+  },
+  {
+    "idTeam": "133616",
+    "strTeam": "Tottenham Hotspur",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/dfyfhl1604094109.png",
+    "strAlternate": "Tottenham Hotspur Football Club, Spurs, THFC, Tottenham"
+  },
+  {
+    "idTeam": "134777",
+    "strTeam": "Newcastle United",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/lhwuiz1621593302.png",
+    "strAlternate": "Newcastle United Football Club, NUFC"
+  },
+  {
+    "idTeam": "133635",
+    "strTeam": "Leeds United",
+    "strLeague": "English Premier League",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/jcgrml1756649030.png",
+    "strAlternate": "Leeds United Football Club, LUFC"
+  },
+  {
+    "idTeam": "150261",
+    "strTeam": "San Diego FC",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/7ka2xd1734621068.png",
+    "strAlternate": "San Diego Football Club"
+  },
+  {
+    "idTeam": "137700",
+    "strTeam": "Nashville SC",
+    "strLeague": "American Major League Soccer",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/znrwt71602103062.png",
+    "strAlternate": ""
+  },
+  {
+    "idTeam": "133728",
+    "strTeam": "Rayo Vallecano",
+    "strLeague": "Spanish La Liga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/nzhu941655595465.png",
+    "strAlternate": "Rayo Vallecano de Madrid"
+  },
+  {
+    "idTeam": "134695",
+    "strTeam": "RB Leipzig",
+    "strLeague": "German Bundesliga",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/zjgapo1594244951.png",
+    "strAlternate": "RasenBallsport Leipzig, Leipzig"
+  },
+  {
+    "idTeam": "135465",
+    "strTeam": "Paris FC",
+    "strLeague": "French Ligue 1",
+    "strSport": "Soccer",
+    "strBadge": "https://r2.thesportsdb.com/images/media/team/badge/yuvtsy1447594254.png",
+    "strAlternate": ""
+  }
+]

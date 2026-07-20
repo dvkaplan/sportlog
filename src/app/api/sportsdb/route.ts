@@ -1,0 +1,61 @@
+import { NextRequest, NextResponse } from "next/server";
+import teamsData from "@/lib/teams.json";
+
+const BASE = "https://www.thesportsdb.com/api/v1/json/3";
+
+type SlimTeam = {
+  idTeam: string;
+  strTeam: string;
+  strLeague: string | null;
+  strSport: string | null;
+  strBadge: string | null;
+  strAlternate: string | null;
+};
+
+const TEAMS = teamsData as SlimTeam[];
+
+
+export async function GET(req: NextRequest) {
+  const p = req.nextUrl.searchParams;
+  const mode = p.get("mode");
+
+  try {
+    if (mode === "findteams") {
+      const q = (p.get("q") ?? "").trim().toLowerCase();
+      if (q.length < 2) return NextResponse.json({ teams: [] });
+      const all = TEAMS;
+      const rank = (t: SlimTeam) => {
+        const name = t.strTeam.toLowerCase();
+        if (name === q) return 3;
+        if (name.startsWith(q)) return 2;
+        if (name.split(/\s+/).some((w) => w.startsWith(q))) return 1;
+        return 0;
+      };
+      const matches = all
+        .filter(
+          (t) =>
+            t.strTeam.toLowerCase().includes(q) ||
+            (t.strAlternate ?? "").toLowerCase().includes(q) ||
+            (t.strLeague ?? "").toLowerCase().includes(q)
+        )
+        .sort((a, b) => rank(b) - rank(a))
+        .slice(0, 25);
+      return NextResponse.json({ teams: matches });
+    }
+
+    let url = "";
+    if (mode === "team") url = `${BASE}/lookupteam.php?id=${encodeURIComponent(p.get("id") ?? "")}`;
+    else if (mode === "last") url = `${BASE}/eventslast.php?id=${encodeURIComponent(p.get("id") ?? "")}`;
+    else if (mode === "next") url = `${BASE}/eventsnext.php?id=${encodeURIComponent(p.get("id") ?? "")}`;
+    else if (mode === "players") url = `${BASE}/lookup_all_players.php?id=${encodeURIComponent(p.get("id") ?? "")}`;
+    else if (mode === "table")
+      url = `${BASE}/lookuptable.php?l=${encodeURIComponent(p.get("league") ?? "")}&s=${encodeURIComponent(p.get("season") ?? "")}`;
+    else return NextResponse.json({ error: "bad mode" }, { status: 400 });
+
+    const res = await fetch(url, { next: { revalidate: 300 } });
+    const data = await res.json();
+    return NextResponse.json(data);
+  } catch {
+    return NextResponse.json({ error: "upstream failed" }, { status: 502 });
+  }
+}

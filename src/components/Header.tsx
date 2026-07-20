@@ -46,6 +46,9 @@ export default function Header() {
           <Link href="/lists" className="text-sm text-zinc-400 hover:text-emerald-400">
             Lists
           </Link>
+          <Link href="/search" className="text-sm text-zinc-400 hover:text-emerald-400">
+            Search
+          </Link>
         </div>
         {userId ? (
           <div className="flex items-center gap-3 text-sm">
