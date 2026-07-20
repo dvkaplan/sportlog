@@ -63,3 +63,52 @@ export function getGamesBySport(slug: string) {
 export function getGame(id: string) {
   return GAMES.find((g) => g.id === id);
 }
+export type Era = {
+  slug: string;
+  sportSlug: string;
+  name: string;
+  years: string;
+  blurb: string;
+};
+
+export const ERAS: Era[] = [
+  // BASKETBALL
+  { slug: "nba-80s-magic-bird", sportSlug: "basketball", name: "The Magic–Bird Era", years: "1979–1988", blurb: "Lakers vs Celtics saved the league. Showtime fast breaks, garden wars, and the rivalry that built modern basketball." },
+  { slug: "nba-90s-jordan", sportSlug: "basketball", name: "The Jordan Era", years: "1991–1998", blurb: "Six titles, two three-peats, one man. The Bulls dynasty and the global explosion of the NBA." },
+  { slug: "nba-2000s-shaq-kobe", sportSlug: "basketball", name: "Shaq & Kobe / Spurs Era", years: "1999–2010", blurb: "Lakers three-peats, Spurs fundamentals, and the defensive grind years." },
+  { slug: "nba-2010s-superteams", sportSlug: "basketball", name: "The Superteam Era", years: "2010–2019", blurb: "The Decision, the Heatles, 73 wins, KD to Golden State. Player empowerment changed everything." },
+  { slug: "nba-pace-space", sportSlug: "basketball", name: "Pace & Space Era", years: "2015–present", blurb: "Three-point revolution, positionless basketball, offensive explosion." },
+  // FOOTBALL
+  { slug: "nfl-70s-steel", sportSlug: "football", name: "The Steel Curtain Era", years: "1970–1979", blurb: "Steelers dynasty, dominant defenses, and the birth of the modern NFL." },
+  { slug: "nfl-80s-west-coast", sportSlug: "football", name: "The West Coast Era", years: "1981–1994", blurb: "Walsh, Montana, Rice. The 49ers dynasty and offensive innovation." },
+  { slug: "nfl-brady-belichick", sportSlug: "football", name: "The Brady–Belichick Era", years: "2001–2019", blurb: "Six rings, the Patriot Way, and two decades of AFC domination." },
+  { slug: "nfl-modern-qb", sportSlug: "football", name: "The Modern QB Era", years: "2018–present", blurb: "Mahomes, mobile quarterbacks, and offense-first rule changes." },
+  // BOXING
+  { slug: "box-golden-heavyweights", sportSlug: "boxing", name: "The Golden Age of Heavyweights", years: "1964–1981", blurb: "Ali, Frazier, Foreman. The biggest fights in the sport's history." },
+  { slug: "box-four-kings", sportSlug: "boxing", name: "The Four Kings Era", years: "1980–1989", blurb: "Leonard, Hagler, Hearns, Durán. Nine fights against each other, all legendary." },
+  { slug: "box-tyson", sportSlug: "boxing", name: "The Tyson Era", years: "1985–1997", blurb: "The baddest man on the planet and heavyweight chaos." },
+  { slug: "box-mayweather-pacquiao", sportSlug: "boxing", name: "The Mayweather–Pacquiao Era", years: "2005–2015", blurb: "Pound-for-pound supremacy and the fight the world waited a decade for." },
+  // MMA
+  { slug: "ufc-pride-early", sportSlug: "mma", name: "The Pioneer Era", years: "1993–2005", blurb: "No weight classes, PRIDE in Japan, and the birth of a sport." },
+  { slug: "ufc-gsp-silva", sportSlug: "mma", name: "The GSP–Silva Era", years: "2006–2013", blurb: "Two untouchable champions and MMA's mainstream arrival." },
+  { slug: "ufc-conor", sportSlug: "mma", name: "The McGregor Era", years: "2013–2018", blurb: "Red panty night. The double champ and the sport's biggest star ever." },
+  // HOCKEY
+  { slug: "nhl-gretzky", sportSlug: "hockey", name: "The Gretzky Era", years: "1979–1999", blurb: "The Great One rewrites the record book; Oilers dynasty and firewagon hockey." },
+  { slug: "nhl-dead-puck", sportSlug: "hockey", name: "The Dead Puck Era", years: "1995–2004", blurb: "The trap, clutch-and-grab, and 2–1 finals." },
+  { slug: "nhl-crosby-ovechkin", sportSlug: "hockey", name: "The Crosby–Ovechkin Era", years: "2005–2020", blurb: "Two generational rivals define post-lockout hockey." },
+  // SOCCER
+  { slug: "soc-messi-ronaldo", sportSlug: "soccer", name: "The Messi–Ronaldo Era", years: "2008–2023", blurb: "Thirteen straight Ballons d'Or between two men. The greatest individual rivalry in sports history." },
+  { slug: "soc-tiki-taka", sportSlug: "soccer", name: "The Tiki-Taka Era", years: "2008–2012", blurb: "Barcelona and Spain perfect possession football." },
+  { slug: "soc-premier-modern", sportSlug: "soccer", name: "The Modern Premier League Era", years: "2016–present", blurb: "Pep vs Klopp, 100-point seasons, and tactical revolution." },
+  // BASEBALL
+  { slug: "mlb-yankees-dynasty", sportSlug: "baseball", name: "The Yankees Dynasty Era", years: "1996–2001", blurb: "Jeter, Rivera, four titles in five years." },
+  { slug: "mlb-steroid", sportSlug: "baseball", name: "The Steroid Era", years: "1994–2004", blurb: "McGwire–Sosa, 73 home runs, and baseball's most complicated chapter." },
+  { slug: "mlb-analytics", sportSlug: "baseball", name: "The Analytics Era", years: "2015–present", blurb: "Launch angles, openers, and the Moneyball endgame." },
+];
+
+export function getEra(slug: string) {
+  return ERAS.find((e) => e.slug === slug);
+}
+export function getErasBySport(sportSlug: string) {
+  return ERAS.filter((e) => e.sportSlug === sportSlug);
+}

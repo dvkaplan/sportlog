@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { getSport, getGamesBySport } from "@/lib/data";
+import { getSport, getGamesBySport, getErasBySport } from "@/lib/data";
 
 export default async function SportPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const sport = getSport(slug);
   const games = getGamesBySport(slug);
+  const eras = getErasBySport(slug);
   if (!sport) return <main className="p-10 text-zinc-100">Sport not found.</main>;
 
   return (
@@ -12,13 +13,26 @@ export default async function SportPage({ params }: { params: Promise<{ slug: st
       <div className="mx-auto max-w-5xl px-6 py-12">
         <Link href="/" className="text-sm text-zinc-400 hover:text-emerald-400">← All sports</Link>
         <h1 className="mt-4 text-3xl font-bold">{sport.emoji} {sport.name}</h1>
-        <div className="mt-6 flex gap-2 text-sm">
-          <span className="rounded-full bg-emerald-400 px-4 py-1.5 font-medium text-zinc-950">Iconic Games</span>
-          <span className="rounded-full border border-zinc-800 px-4 py-1.5 text-zinc-500">Teams (soon)</span>
-          <span className="rounded-full border border-zinc-800 px-4 py-1.5 text-zinc-500">Eras (soon)</span>
-          <span className="rounded-full border border-zinc-800 px-4 py-1.5 text-zinc-500">Players (soon)</span>
-        </div>
-        <div className="mt-8 space-y-3">
+
+        {eras.length > 0 && (
+          <>
+            <h2 className="mt-8 font-semibold">Eras</h2>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {eras.map((e) => (
+                <Link
+                  key={e.slug}
+                  href={`/era/${e.slug}`}
+                  className="rounded-full border border-zinc-700 px-4 py-1.5 text-sm transition hover:border-emerald-400 hover:text-emerald-400"
+                >
+                  {e.name} <span className="text-zinc-500">· {e.years}</span>
+                </Link>
+              ))}
+            </div>
+          </>
+        )}
+
+        <h2 className="mt-8 font-semibold">Iconic Games</h2>
+        <div className="mt-3 space-y-3">
           {games.map((g) => (
             <Link
               key={g.id}

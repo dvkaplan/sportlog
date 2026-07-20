@@ -1,6 +1,7 @@
 "use client";
 import { use, useEffect, useState } from "react";
 import Link from "next/link";
+import { supabase } from "@/lib/supabase";
 
 type Team = {
   idTeam: string;
@@ -32,6 +33,7 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
   const [record, setRecord] = useState<TableRow | null>(null);
   const [expanded, setExpanded] = useState(false);
   const [failed, setFailed] = useState(false);
+  const [fanLists, setFanLists] = useState<{ list_id: string; position: number; title: string }[]>([]);
 
   useEffect(() => {
     (async () => {
@@ -51,6 +53,17 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
         setLast(l?.results ?? []);
         setNext(n?.events ?? []);
         setPlayers(pl?.player ?? []);
+        const { data: hits } = await supabase
+          .from("list_items")
+          .select("list_id, position, lists!inner(id, title, is_public)")
+          .eq("lists.is_public", true)
+          .eq("entity_id", id);
+        setFanLists(
+          (hits ?? []).map((r) => {
+            const l = r.lists as unknown as { id: string; title: string };
+            return { list_id: l.id, position: r.position, title: l.title };
+          })
+        );
 
         // Try to find a current-season record: attempt "YYYY-YYYY+1", then "YYYY", then last year's pair
         if (tm.idLeague) {
@@ -149,14 +162,50 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
           </div>
         </div>
 
+<div className="mt-10 rounded-xl border border-zinc-800 bg-zinc-900 p-5">
+          <h2 className="font-semibold">Fan lists featuring this team</h2>
+          {fanLists.length > 0 ? (
+            <div className="mt-3 space-y-2">
+              {fanLists.map((h, i) => (
+                <Link
+                  key={i}
+                  href={`/lists/${h.list_id}`}
+                  className="flex items-center justify-between rounded-lg border border-zinc-800 bg-zinc-950 p-3 text-sm transition hover:border-emerald-400"
+                >
+                  <span>{h.title}</span>
+                  <span className="text-emerald-400">#{h.position}</span>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <p className="mt-2 text-sm text-zinc-500">
+              No fan lists rank this team yet.{" "}
+              <Link href="/lists/new" className="text-emerald-400 hover:underline">Start one</Link> — pick it from the dropdown so it links here.
+            </p>
+          )}
+        </div>
+        
         <h2 className="mt-10 font-semibold">Roster</h2>
         <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3">
           {players.map((p) => (
-            <div key={p.idPlayer} className="rounded-xl border border-zinc-800 bg-zinc-900 p-3 text-sm">
-              <div className="font-medium">{p.strPlayer}</div>
-              <div className="mt-0.5 text-xs text-zinc-500">{p.strPosition ?? ""}</div>
-            </div>
+            <Link
+              key={p.idPlayer}
+              href={`/player/${p.idPlayer}`}
+              className="flex items-center gap-3 rounded-xl border border-zinc-800 bg-zinc-900 p-3 text-sm transition hover:border-emerald-400"
+            >
+              {p.strCutout || p.strThumb ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={(p.strCutout ?? p.strThumb) as string} alt="" className="h-10 w-10 rounded-lg object-cover object-top" />
+              ) : (
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-800">👤</div>
+              )}
+              <div>
+                <div className="font-medium">{p.strPlayer}</div>
+                <div className="mt-0.5 text-xs text-zinc-500">{p.strPosition ?? ""}</div>
+              </div>
+            </Link>
           ))}
+          
           {players.length === 0 && (
             <p className="col-span-full text-sm text-zinc-500">
               Roster not available on the free data tier for this team.

@@ -48,6 +48,7 @@ export async function GET(req: NextRequest) {
     else if (mode === "last") url = `${BASE}/eventslast.php?id=${encodeURIComponent(p.get("id") ?? "")}`;
     else if (mode === "next") url = `${BASE}/eventsnext.php?id=${encodeURIComponent(p.get("id") ?? "")}`;
     else if (mode === "players") url = `${BASE}/lookup_all_players.php?id=${encodeURIComponent(p.get("id") ?? "")}`;
+    else if (mode === "player") url = `${BASE}/lookupplayer.php?id=${encodeURIComponent(p.get("id") ?? "")}`;
     else if (mode === "table")
       url = `${BASE}/lookuptable.php?l=${encodeURIComponent(p.get("league") ?? "")}&s=${encodeURIComponent(p.get("season") ?? "")}`;
     else return NextResponse.json({ error: "bad mode" }, { status: 400 });
