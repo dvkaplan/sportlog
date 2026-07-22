@@ -1,6 +1,6 @@
 import { writeFileSync, readFileSync, mkdirSync } from "fs";
 
-const BASE = "https://www.thesportsdb.com/api/v1/json/3";
+const BASE = `https://www.thesportsdb.com/api/v1/json/${process.env.SPORTSDB_KEY ?? "3"}`;
 const ALLOWED = new Set([
   "NBA", "NFL", "MLB", "NHL",
   "English Premier League", "American Major League Soccer",

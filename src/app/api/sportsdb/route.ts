@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import teamsData from "@/lib/teams.json";
 
-const BASE = "https://www.thesportsdb.com/api/v1/json/3";
+const BASE = `https://www.thesportsdb.com/api/v1/json/${process.env.SPORTSDB_KEY ?? "3"}`;
 
 type SlimTeam = {
   idTeam: string;

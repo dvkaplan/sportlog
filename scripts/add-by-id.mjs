@@ -1,6 +1,6 @@
 import { writeFileSync, readFileSync } from "fs";
 
-const BASE = "https://www.thesportsdb.com/api/v1/json/3";
+const BASE = `https://www.thesportsdb.com/api/v1/json/${process.env.SPORTSDB_KEY ?? "3"}`;
 
 const IDS = [
   "135280", // St. Louis Cardinals
