@@ -132,6 +132,10 @@ export const FIGHTERS: Fighter[] = [
   { slug: "ken-shamrock", name: "Ken Shamrock", sport: "mma", division: "Openweight", era: "1993–2000s", blurb: "The World's Most Dangerous Man. UFC 1 original." },
   { slug: "bas-rutten", name: "Bas Rutten", sport: "mma", division: "Heavyweight", era: "1990s", blurb: "El Guapo. Pancrase king, UFC heavyweight champion." },
   { slug: "don-frye", name: "Don Frye", sport: "mma", division: "Openweight", era: "1990s–2000s", blurb: "The Predator. Frye–Takayama is required viewing." },
+  { slug: "petr-yan", name: "Petr Yan", sport: "mma", division: "Bantamweight", era: "2010s–present", blurb: "No Mercy. Reclaimed the bantamweight throne from Merab at UFC 323." },
+  { slug: "joshua-van", name: "Joshua Van", sport: "mma", division: "Flyweight", era: "2020s", blurb: "Knocked out Pantoja for flyweight gold at UFC 323. The new king at 125." },
+  { slug: "kayla-harrison", name: "Kayla Harrison", sport: "mma", division: "Women's Bantamweight", era: "2010s–present", blurb: "2× Olympic judo gold. Submitted Peña for the bantamweight belt." },
+  { slug: "mackenzie-dern", name: "Mackenzie Dern", sport: "mma", division: "Women's Strawweight", era: "2010s–present", blurb: "World-champion grappler turned UFC strawweight champion." },
 ];
 
 export function getFighter(slug: string) {

@@ -1,3 +1,4 @@
+import fightGames from "./fight-games.json";
 export type Sport = {
   slug: string;
   name: string;
@@ -61,7 +62,7 @@ export function getGamesBySport(slug: string) {
   return GAMES.filter((g) => g.sportSlug === slug);
 }
 export function getGame(id: string) {
-  return GAMES.find((g) => g.id === id);
+  return GAMES.find((g) => g.id === id) ?? (fightGames as Game[]).find((g) => g.id === id);
 }
 export type Era = {
   slug: string;

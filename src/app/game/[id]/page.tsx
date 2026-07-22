@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getGame } from "@/lib/data";
 import { supabase } from "@/lib/supabase";
 import BackLink from "@/components/BackLink";
+import { ALL_FIGHTERS } from "@/lib/all-fighters";
 
 type RatingRow = {
   id: string;
@@ -93,6 +94,20 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
       <div className="mx-auto max-w-2xl px-6 py-12">
         <BackLink />
         <h1 className="mt-4 text-2xl font-bold">{game.title}</h1>
+        {game.id.startsWith("fight-") && (
+          <div className="mt-2 flex flex-wrap gap-2 text-sm">
+            {game.title.split(" vs ").map((n) => {
+              const f = ALL_FIGHTERS.find((x) => x.name.toLowerCase() === n.trim().toLowerCase());
+              return f ? (
+                <Link key={n} href={`/fighter/${f.slug}`} className="rounded-full border border-zinc-700 px-3 py-1 text-emerald-400 transition hover:border-emerald-400">
+                  {n.trim()}
+                </Link>
+              ) : (
+                <span key={n} className="rounded-full border border-zinc-800 px-3 py-1 text-zinc-500">{n.trim()}</span>
+              );
+            })}
+          </div>
+        )}
         <p className="mt-1 text-sm text-zinc-500">
           {game.league} · {game.date} {game.score ? `· ${game.score}` : ""}
         </p>

@@ -109,21 +109,33 @@ export const TITLES: Record<string, string> = {
   "ken-shamrock": "UFC Superfight Champion · Hall of Famer",
   "bas-rutten": "UFC Heavyweight Champion · 3× King of Pancrase",
   "takanori-gomi": "PRIDE Lightweight Champion",
+  "petr-yan": "2× UFC Bantamweight Champion",
+  "joshua-van": "UFC Flyweight Champion",
+  "kayla-harrison": "UFC Women's Bantamweight Champion · 2× Olympic gold",
+  "mackenzie-dern": "UFC Women's Strawweight Champion",
+  "jack-della-maddalena": "UFC Welterweight Champion (2025)",
+  "khamzat-chimaev": "UFC Middleweight Champion"
 };
 
 // Who currently holds a belt (early 2026 snapshot — EDIT as belts change)
 export const REIGNING = new Set<string>([
+  // Boxing
   "oleksandr-usyk",
   "terence-crawford",
   "naoya-inoue",
-  "islam-makhachev",
-  "tom-aspinall",
-  "alexander-volkanovski",
-  "alex-pereira",
   "david-benavidez",
+  // UFC — July 2026
+  "tom-aspinall",
+  "alex-pereira",
+  "khamzat-chimaev",
+  "islam-makhachev",
   "justin-gaethje",
-  "merab-dvalishvili",
-  "alexandre-pantoja",
+  "alexander-volkanovski",
+  "petr-yan",
+  "joshua-van",
+  "kayla-harrison",
+  "valentina-shevchenko",
+  "mackenzie-dern",
 ]);
 
 // Records for actives missing one (editorial, may lag reality)
