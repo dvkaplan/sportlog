@@ -2,6 +2,8 @@
 import { use, useEffect, useState } from "react";
 import Link from "next/link";
 import FollowButton from "@/components/FollowButton";
+import { cleanTeamLabel } from "@/lib/labels";
+import BackLink from "@/components/BackLink";
 
 type Player = {
   idPlayer: string;
@@ -50,13 +52,7 @@ export default function PlayerPage({ params }: { params: Promise<{ id: string }>
   return (
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
       <div className="mx-auto max-w-3xl px-6 py-12">
-        {player.idTeam ? (
-          <Link href={`/team/${player.idTeam}`} className="text-sm text-zinc-400 hover:text-emerald-400">
-            ← {player.strTeam ?? "Team"}
-          </Link>
-        ) : (
-          <Link href="/search" className="text-sm text-zinc-400 hover:text-emerald-400">← Search</Link>
-        )}
+        <BackLink />
         <div className="mt-6 flex items-center gap-6">
           {photo ? (
             // eslint-disable-next-line @next/next/no-img-element
@@ -70,9 +66,7 @@ export default function PlayerPage({ params }: { params: Promise<{ id: string }>
               <FollowButton entityType="player" entityId={player.idPlayer} entityName={player.strPlayer} />
             </div>
             <p className="mt-1 text-sm text-zinc-400">
-              {player.strPosition ?? ""}
-              {player.strTeam ? ` · ${player.strTeam}` : ""}
-              {player.strNationality ? ` · ${player.strNationality}` : ""}
+              {[player.strPosition, cleanTeamLabel(player.strTeam), player.strNationality].filter(Boolean).join(" · ")}
             </p>
             <p className="mt-1 text-xs text-zinc-500">
               {player.dateBorn ? `Born ${player.dateBorn}` : ""}

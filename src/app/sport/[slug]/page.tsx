@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getSport, getGamesBySport, getErasBySport } from "@/lib/data";
+import BackLink from "@/components/BackLink";
 
 export default async function SportPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -11,7 +12,7 @@ export default async function SportPage({ params }: { params: Promise<{ slug: st
   return (
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
       <div className="mx-auto max-w-5xl px-6 py-12">
-        <Link href="/" className="text-sm text-zinc-400 hover:text-emerald-400">← All sports</Link>
+        <BackLink fallback="/" />
         <h1 className="mt-4 text-3xl font-bold">{sport.emoji} {sport.name}</h1>
 
         {eras.length > 0 && (

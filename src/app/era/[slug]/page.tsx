@@ -3,6 +3,7 @@ import { use, useEffect, useState } from "react";
 import Link from "next/link";
 import { getEra, getSport } from "@/lib/data";
 import { supabase } from "@/lib/supabase";
+import BackLink from "@/components/BackLink";
 
 type ListHit = { list_id: string; position: number; title: string };
 
@@ -35,9 +36,7 @@ export default function EraPage({ params }: { params: Promise<{ slug: string }> 
   return (
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
       <div className="mx-auto max-w-3xl px-6 py-12">
-        <Link href={`/sport/${era.sportSlug}`} className="text-sm text-zinc-400 hover:text-emerald-400">
-          ← {sport?.name ?? "Sport"}
-        </Link>
+        <BackLink />
         <div className="mt-6">
           <div className="text-xs font-semibold uppercase tracking-widest text-emerald-400">
             {sport?.emoji} {era.years}

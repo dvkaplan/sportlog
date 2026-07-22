@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { cleanTeamLabel } from "@/lib/labels";
 
 type Team = {
   idTeam: string;
@@ -125,7 +126,7 @@ export default function SearchPage() {
                   <div>
                     <div className="font-medium">{p.strPlayer}</div>
                     <div className="text-xs text-zinc-500">
-                      {p.strTeam}{p.strPosition ? ` · ${p.strPosition}` : ""}{p.strLeague ? ` · ${p.strLeague}` : ""}
+                      {[cleanTeamLabel(p.strTeam), p.strPosition, cleanTeamLabel(p.strLeague ?? "")].filter(Boolean).join(" · ")}
                     </div>
                   </div>
                 </Link>

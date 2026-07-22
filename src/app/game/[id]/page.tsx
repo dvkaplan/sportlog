@@ -3,6 +3,7 @@ import { use, useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { getGame } from "@/lib/data";
 import { supabase } from "@/lib/supabase";
+import BackLink from "@/components/BackLink";
 
 type RatingRow = {
   id: string;
@@ -90,9 +91,7 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
   return (
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
       <div className="mx-auto max-w-2xl px-6 py-12">
-        <Link href={`/sport/${game.sportSlug}`} className="text-sm text-zinc-400 hover:text-emerald-400">
-          ← Back
-        </Link>
+        <BackLink />
         <h1 className="mt-4 text-2xl font-bold">{game.title}</h1>
         <p className="mt-1 text-sm text-zinc-500">
           {game.league} · {game.date} {game.score ? `· ${game.score}` : ""}

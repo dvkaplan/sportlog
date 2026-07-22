@@ -3,6 +3,7 @@ import { use, useEffect, useState } from "react";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 import FollowButton from "@/components/FollowButton";
+import BackLink from "@/components/BackLink";
 
 type Team = {
   idTeam: string;
@@ -95,7 +96,7 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
   return (
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
       <div className="mx-auto max-w-3xl px-6 py-12">
-        <Link href="/search" className="text-sm text-zinc-400 hover:text-emerald-400">← Search</Link>
+        <BackLink />
         <div className="mt-6 flex items-center gap-6">
           {badge && (
             // eslint-disable-next-line @next/next/no-img-element

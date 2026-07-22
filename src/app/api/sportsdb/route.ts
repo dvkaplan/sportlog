@@ -55,10 +55,12 @@ export async function GET(req: NextRequest) {
         .slice(0, 25);
         const prank = (p: SlimPlayer) => {
         const name = p.strPlayer.toLowerCase();
-        if (name === q) return 3;
-        if (name.startsWith(q)) return 2;
-        if (name.split(/\s+/).some((w) => w.startsWith(q))) return 1;
-        return 0;
+        let score = 0;
+        if (name === q) score = 30;
+        else if (name.startsWith(q)) score = 20;
+        else if (name.split(/\s+/).some((w) => w.startsWith(q))) score = 10;
+        if ((p.strTeam ?? "").startsWith("_")) score += 5;
+        return score;
       };
       const playerMatches = PLAYERS.filter((p) => p.strPlayer.toLowerCase().includes(q))
         .sort((a, b) => prank(b) - prank(a))
