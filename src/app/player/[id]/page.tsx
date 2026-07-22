@@ -4,6 +4,7 @@ import Link from "next/link";
 import FollowButton from "@/components/FollowButton";
 import { cleanTeamLabel } from "@/lib/labels";
 import BackLink from "@/components/BackLink";
+import { supabase } from "@/lib/supabase";
 
 type Player = {
   idPlayer: string;
@@ -26,7 +27,11 @@ export default function PlayerPage({ params }: { params: Promise<{ id: string }>
   const [player, setPlayer] = useState<Player | null>(null);
   const [expanded, setExpanded] = useState(false);
   const [failed, setFailed] = useState(false);
-
+useEffect(() => {
+    supabase.rpc("bump_click", { t: "player", i: id }).then(({ error }) => {
+      if (error) console.error("bump_click failed:", error.message);
+    });
+  }, [id]);
   useEffect(() => {
     (async () => {
       try {

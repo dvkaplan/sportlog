@@ -39,7 +39,13 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
   const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
+    supabase.rpc("bump_click", { t: "team", i: id }).then(({ error }) => {
+      if (error) console.error("bump_click failed:", error.message);
+    });
+  }, [id]);
+  useEffect(() => {
     (async () => {
+        
       try {
         const [t, l, n, pl] = await Promise.all([
           fetch(`/api/sportsdb?mode=team&id=${id}`).then((r) => r.json()),

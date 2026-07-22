@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { cleanTeamLabel } from "@/lib/labels";
+import { supabase } from "@/lib/supabase";
 
 type Team = {
   idTeam: string;
@@ -38,6 +39,19 @@ export default function SearchPage() {
         const data = await fetch(`/api/sportsdb?mode=findteams&q=${encodeURIComponent(q)}`).then((r) => r.json());
         setTeams(data?.teams ?? []);
         setPlayers(data?.players ?? []);
+        const ids = (data?.players ?? []).map((p: Player) => p.idPlayer);
+        if (ids.length > 0) {
+          const { data: clicks } = await supabase
+            .from("entity_clicks")
+            .select("entity_id, clicks")
+            .eq("entity_type", "player")
+            .in("entity_id", ids);
+          const map: Record<string, number> = {};
+          (clicks ?? []).forEach((c) => (map[c.entity_id] = Number(c.clicks)));
+          setPlayers((prev) =>
+            [...prev].sort((a, b) => (map[b.idPlayer] ?? 0) - (map[a.idPlayer] ?? 0))
+          );
+        }
       } catch {
         setTeams([]);
         setPlayers([]);
