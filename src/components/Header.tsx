@@ -49,6 +49,9 @@ export default function Header() {
           <Link href="/search" className="text-sm text-zinc-400 hover:text-emerald-400">
             Search
           </Link>
+          <Link href="/leagues" className="text-sm text-zinc-400 hover:text-emerald-400">
+            Leagues
+          </Link>
         </div>
         {userId ? (
           <div className="flex items-center gap-3 text-sm">

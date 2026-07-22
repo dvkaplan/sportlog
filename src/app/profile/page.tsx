@@ -6,11 +6,13 @@ import { getGame } from "@/lib/data";
 
 type RatingRow = { game_id: string; rating: number; review: string | null; updated_at: string };
 type ListRow = { id: string; title: string; is_public: boolean; created_at: string };
+type FollowRow = { entity_type: string; entity_id: string; entity_name: string; is_favorite: boolean };
 
 export default function ProfilePage() {
   const [username, setUsername] = useState<string | null>(null);
   const [ratings, setRatings] = useState<RatingRow[]>([]);
   const [lists, setLists] = useState<ListRow[]>([]);
+  const [follows, setFollows] = useState<FollowRow[]>([]);
   const [signedOut, setSignedOut] = useState(false);
 
   useEffect(() => {
@@ -38,6 +40,12 @@ export default function ProfilePage() {
         .eq("user_id", uid)
         .order("created_at", { ascending: false });
       setLists(ls ?? []);
+      const { data: fs } = await supabase
+        .from("follows")
+        .select("entity_type, entity_id, entity_name, is_favorite")
+        .eq("user_id", uid)
+        .order("is_favorite", { ascending: false });
+      setFollows(fs ?? []);
     })();
   }, []);
 
@@ -62,6 +70,52 @@ export default function ProfilePage() {
           <span><span className="font-bold text-emerald-400">{lists.length}</span> lists</span>
           {avg && <span>avg score <span className="font-bold text-emerald-400">{avg.toFixed(1)}</span></span>}
         </div>
+
+        {(() => {
+          const favs = follows.filter((f) => f.is_favorite);
+          const rest = follows.filter((f) => !f.is_favorite);
+          const href = (f: FollowRow) =>
+            f.entity_type === "team" ? `/team/${f.entity_id}` : f.entity_type === "player" ? `/player/${f.entity_id}` : `/leagues`;
+          const icon = (t: string) => (t === "team" ? "🛡️" : t === "player" ? "👤" : "🏆");
+          return (
+            <>
+              {favs.length > 0 && (
+                <>
+                  <h2 className="mt-10 font-semibold">Favorites</h2>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {favs.map((f, i) => (
+                      <Link
+                        key={i}
+                        href={href(f)}
+                        className="flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-400/10 px-4 py-1.5 text-sm text-amber-300 transition hover:border-amber-400"
+                      >
+                        <span>★</span> {f.entity_name}
+                        <span className="text-xs text-amber-400/60">{icon(f.entity_type)}</span>
+                      </Link>
+                    ))}
+                  </div>
+                </>
+              )}
+              {rest.length > 0 && (
+                <>
+                  <h2 className="mt-10 font-semibold">Following</h2>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {rest.map((f, i) => (
+                      <Link
+                        key={i}
+                        href={href(f)}
+                        className="flex items-center gap-2 rounded-full border border-zinc-700 px-4 py-1.5 text-sm text-zinc-300 transition hover:border-emerald-400"
+                      >
+                        {f.entity_name}
+                        <span className="text-xs text-zinc-500">{icon(f.entity_type)}</span>
+                      </Link>
+                    ))}
+                  </div>
+                </>
+              )}
+            </>
+          );
+        })()}
 
         <h2 className="mt-10 font-semibold">Your ratings</h2>
         <div className="mt-3 space-y-2">

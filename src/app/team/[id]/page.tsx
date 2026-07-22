@@ -2,6 +2,7 @@
 import { use, useEffect, useState } from "react";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
+import FollowButton from "@/components/FollowButton";
 
 type Team = {
   idTeam: string;
@@ -34,6 +35,7 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
   const [expanded, setExpanded] = useState(false);
   const [failed, setFailed] = useState(false);
   const [fanLists, setFanLists] = useState<{ list_id: string; position: number; title: string }[]>([]);
+  const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -100,7 +102,10 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
             <img src={badge} alt={team.strTeam} className="h-24 w-24 object-contain" />
           )}
           <div>
-            <h1 className="text-3xl font-bold">{team.strTeam}</h1>
+            <div className="flex items-center gap-4">
+              <h1 className="text-3xl font-bold">{team.strTeam}</h1>
+              <FollowButton entityType="team" entityId={team.idTeam} entityName={team.strTeam} />
+            </div>
             <p className="mt-1 text-sm text-zinc-400">
               {team.strLeague ?? ""}
               {team.strStadium ? ` · ${team.strStadium}` : ""}
@@ -184,10 +189,24 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
             </p>
           )}
         </div>
-        
-        <h2 className="mt-10 font-semibold">Roster</h2>
-        <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3">
-          {players.map((p) => (
+
+        {(() => {
+          const STAFF_WORDS = ["coach", "manager", "president", "chairman", "owner", "director", "general", "scout", "trainer", "executive", "associate"];
+          const isStaff = (pos: string | null) => {
+            const p = (pos ?? "").toLowerCase();
+            return STAFF_WORDS.some((w) => p.includes(w));
+          };
+          const staff = players.filter((p) => isStaff(p.strPosition));
+          const roster = players.filter((p) => !isStaff(p.strPosition));
+          const byPosition: Record<string, typeof roster> = {};
+          for (const p of roster) {
+            const key = p.strPosition ?? "Other";
+            (byPosition[key] ??= []).push(p);
+          }
+          const groups = Object.entries(byPosition).sort((a, b) => b[1].length - a[1].length);
+          const visibleGroups = showAll ? groups : groups.slice(0, 3);
+
+          const card = (p: (typeof players)[number]) => (
             <Link
               key={p.idPlayer}
               href={`/player/${p.idPlayer}`}
@@ -204,14 +223,37 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
                 <div className="mt-0.5 text-xs text-zinc-500">{p.strPosition ?? ""}</div>
               </div>
             </Link>
-          ))}
-          
-          {players.length === 0 && (
-            <p className="col-span-full text-sm text-zinc-500">
-              Roster not available on the free data tier for this team.
-            </p>
-          )}
-        </div>
+          );
+
+          return (
+            <>
+              <h2 className="mt-10 font-semibold">Roster</h2>
+              {roster.length === 0 && (
+                <p className="mt-2 text-sm text-zinc-500">Player data limited on the current data tier for this team.</p>
+              )}
+              {visibleGroups.map(([pos, ps]) => (
+                <div key={pos}>
+                  <h3 className="mt-5 text-xs font-semibold uppercase tracking-widest text-zinc-500">{pos}</h3>
+                  <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-3">{ps.map(card)}</div>
+                </div>
+              ))}
+              {groups.length > 3 && (
+                <button
+                  onClick={() => setShowAll(!showAll)}
+                  className="mt-4 rounded-lg border border-zinc-700 px-4 py-2 text-sm transition hover:border-emerald-400"
+                >
+                  {showAll ? "Show less" : `Show full roster (${roster.length} players)`}
+                </button>
+              )}
+              {staff.length > 0 && (
+                <>
+                  <h2 className="mt-10 font-semibold">Coaching & Front Office</h2>
+                  <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3">{staff.map(card)}</div>
+                </>
+              )}
+            </>
+          );
+        })()}
       </div>
     </main>
   );

@@ -1,6 +1,7 @@
 "use client";
 import { use, useEffect, useState } from "react";
 import Link from "next/link";
+import FollowButton from "@/components/FollowButton";
 
 type Player = {
   idPlayer: string;
@@ -64,7 +65,10 @@ export default function PlayerPage({ params }: { params: Promise<{ id: string }>
             <div className="flex h-28 w-28 items-center justify-center rounded-xl bg-zinc-900 text-3xl">👤</div>
           )}
           <div>
-            <h1 className="text-3xl font-bold">{player.strPlayer}</h1>
+           <div className="flex items-center gap-4">
+              <h1 className="text-3xl font-bold">{player.strPlayer}</h1>
+              <FollowButton entityType="player" entityId={player.idPlayer} entityName={player.strPlayer} />
+            </div>
             <p className="mt-1 text-sm text-zinc-400">
               {player.strPosition ?? ""}
               {player.strTeam ? ` · ${player.strTeam}` : ""}
