@@ -1,0 +1,407 @@
+{
+  "muhammad-ali": {
+    "idPlayer": "34163390",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9g16g41555409596.png",
+    "bio": null
+  },
+  "sugar-ray-robinson": {
+    "idPlayer": "34307433",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/5co2nn1740002624.jpg",
+    "bio": null
+  },
+  "joe-louis": {
+    "idPlayer": "34304216",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/q9y9x11739997736.jpg",
+    "bio": null
+  },
+  "rocky-marciano": {
+    "idPlayer": "34309029",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/fny15x1740004800.jpg",
+    "bio": null
+  },
+  "jack-dempsey": {
+    "idPlayer": "34308588",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/3o0ihr1740004401.jpg",
+    "bio": null
+  },
+  "joe-frazier": {
+    "idPlayer": "34308003",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/wrrkmn1740002827.jpg",
+    "bio": null
+  },
+  "george-foreman": {
+    "idPlayer": "34307070",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/s0q7pa1742632671.png",
+    "bio": null
+  },
+  "larry-holmes": {
+    "idPlayer": "34308595",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/mh1qdj1740004405.jpg",
+    "bio": null
+  },
+  "mike-tyson": {
+    "idPlayer": "34163389",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/260spy1593382897.png",
+    "bio": null
+  },
+  "evander-holyfield": {
+    "idPlayer": "34163397",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/dubvcz1594241536.png",
+    "bio": null
+  },
+  "lennox-lewis": {
+    "idPlayer": "34163388",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2myhe81611486474.png",
+    "bio": null
+  },
+  "marvin-hagler": {
+    "idPlayer": "34307392",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/03itzz1740002609.jpg",
+    "bio": null
+  },
+  "sugar-ray-leonard": {
+    "idPlayer": "34308584",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/8mmn9s1740004397.jpg",
+    "bio": null
+  },
+  "thomas-hearns": {
+    "idPlayer": "34171719",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5iy6k11594038484.png",
+    "bio": null
+  },
+  "roberto-duran": {
+    "idPlayer": "34307352",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/mxauvu1740002389.jpg",
+    "bio": null
+  },
+  "julio-cesar-chavez": {
+    "idPlayer": "34304186",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/4vwpo91739997712.jpg",
+    "bio": null
+  },
+  "pernell-whitaker": {
+    "idPlayer": "34309646",
+    "photo": null,
+    "bio": null
+  },
+  "oscar-de-la-hoya": {
+    "idPlayer": "34307030",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/8m6oi41740002251.jpg",
+    "bio": null
+  },
+  "felix-trinidad": {
+    "idPlayer": "34308046",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/zddyv51740002838.jpg",
+    "bio": null
+  },
+  "bernard-hopkins": {
+    "idPlayer": "34226578",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/123vjh1703410137.png",
+    "bio": null
+  },
+  "roy-jones-jr": {
+    "idPlayer": "34307773",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/t4h9m81740002709.jpg",
+    "bio": null
+  },
+  "floyd-mayweather": {
+    "idPlayer": "34161301",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ydgoz91611485359.png",
+    "bio": null
+  },
+  "manny-pacquiao": {
+    "idPlayer": "34161302",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/bwcr6s1590619107.png",
+    "bio": null
+  },
+  "juan-manuel-marquez": {
+    "idPlayer": "34308285",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/5fmm4d1740003015.jpg",
+    "bio": null
+  },
+  "erik-morales": {
+    "idPlayer": "34310081",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/bq3ew11740005403.jpg",
+    "bio": null
+  },
+  "marco-antonio-barrera": {
+    "idPlayer": "34308265",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/93svrd1740003003.jpg",
+    "bio": null
+  },
+  "miguel-cotto": {
+    "idPlayer": "34310054",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/dw2r9h1740005387.jpg",
+    "bio": null
+  },
+  "wladimir-klitschko": {
+    "idPlayer": "34160817",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/l0qkiu1703178799.png",
+    "bio": null
+  },
+  "vitali-klitschko": {
+    "idPlayer": "34310304",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/nic9851740005686.jpg",
+    "bio": null
+  },
+  "canelo-alvarez": {
+    "idPlayer": "34163395",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/awqckc1555409653.png",
+    "bio": null
+  },
+  "gennady-golovkin": {
+    "idPlayer": "34163386",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/mby9n81594326907.png",
+    "bio": null
+  },
+  "tyson-fury": {
+    "idPlayer": "34160816",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9bb2pn1706345610.png",
+    "bio": null
+  },
+  "deontay-wilder": {
+    "idPlayer": "34168463",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gdm01a1574862921.png",
+    "bio": null
+  },
+  "anthony-joshua": {
+    "idPlayer": "34163381",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/k6bx7r1772809393.png",
+    "bio": null
+  },
+  "oleksandr-usyk": {
+    "idPlayer": "34226366",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/d8yq0v1703056328.png",
+    "bio": null
+  },
+  "terence-crawford": {
+    "idPlayer": "34164157",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/bou8e01690816749.png",
+    "bio": null
+  },
+  "errol-spence-jr": {
+    "idPlayer": "34163396",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/vebqsu1594374514.png",
+    "bio": null
+  },
+  "naoya-inoue": {
+    "idPlayer": "34228477",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tmp5ob1706442914.png",
+    "bio": null
+  },
+  "gervonta-davis": {
+    "idPlayer": "34226913",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5mlgc61703871945.png",
+    "bio": null
+  },
+  "ryan-garcia": {
+    "idPlayer": "34307560",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/8rpssn1740002644.jpg",
+    "bio": null
+  },
+  "devin-haney": {
+    "idPlayer": "34307700",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/awy3211740002697.jpg",
+    "bio": null
+  },
+  "shakur-stevenson": {
+    "idPlayer": "34310135",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q1p9rn1740306460.png",
+    "bio": null
+  },
+  "david-benavidez": {
+    "idPlayer": "34228447",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0rfepj1706288709.png",
+    "bio": null
+  },
+  "dmitry-bivol": {
+    "idPlayer": "34197674",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/g9hf7x1720821304.png",
+    "bio": null
+  },
+  "artur-beterbiev": {
+    "idPlayer": "34309059",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/olw98m1740305623.png",
+    "bio": null
+  },
+  "royce-gracie": {
+    "idPlayer": "34218428",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9mp8v11684315327.png",
+    "bio": null
+  },
+  "fedor-emelianenko": {
+    "idPlayer": "34169576",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hg5iqo1736160814.png",
+    "bio": null
+  },
+  "chuck-liddell": {
+    "idPlayer": "34254391",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/yaa3qm1732795296.png",
+    "bio": null
+  },
+  "randy-couture": {
+    "idPlayer": "34256245",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/nmpfw41732796438.png",
+    "bio": null
+  },
+  "wanderlei-silva": {
+    "idPlayer": "34256880",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3maneb1732796581.png",
+    "bio": null
+  },
+  "bj-penn": {
+    "idPlayer": "34244851",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/685vhf1725786835.png",
+    "bio": null
+  },
+  "anderson-silva": {
+    "idPlayer": "34308594",
+    "photo": "https://r2.thesportsdb.com/images/media/player/thumb/50z9y61740004404.jpg",
+    "bio": null
+  },
+  "georges-st-pierre": {
+    "idPlayer": "34172103",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/dgoa591596825151.png",
+    "bio": null
+  },
+  "jon-jones": {
+    "idPlayer": "34160877",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/e2ra1u1750583573.png",
+    "bio": null
+  },
+  "khabib-nurmagomedov": {
+    "idPlayer": "34171670",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/f5f9a61604693056.png",
+    "bio": null
+  },
+  "daniel-cormier": {
+    "idPlayer": "34254510",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/e81fzg1732795326.png",
+    "bio": null
+  },
+  "stipe-miocic": {
+    "idPlayer": "34171674",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/aha4e11593612252.png",
+    "bio": null
+  },
+  "demetrious-johnson": {
+    "idPlayer": "34160872",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/c6hew61593721228.png",
+    "bio": null
+  },
+  "jose-aldo": {
+    "idPlayer": "34160691",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8rcum81728207096.png",
+    "bio": null
+  },
+  "dominick-cruz": {
+    "idPlayer": "34254660",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4lkozn1732796069.png",
+    "bio": null
+  },
+  "conor-mcgregor": {
+    "idPlayer": "34160690",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/08hp1u1604693310.png",
+    "bio": null
+  },
+  "nate-diaz": {
+    "idPlayer": "34256048",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xfcne71732641390.png",
+    "bio": null
+  },
+  "nick-diaz": {
+    "idPlayer": "34256074",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lhjsyn1732796402.png",
+    "bio": null
+  },
+  "amanda-nunes": {
+    "idPlayer": "34163195",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fj7d401680444418.png",
+    "bio": null
+  },
+  "ronda-rousey": {
+    "idPlayer": "34160689",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xwstyr1462010957.png",
+    "bio": null
+  },
+  "valentina-shevchenko": {
+    "idPlayer": "34171679",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/m7byug1726477092.png",
+    "bio": null
+  },
+  "joanna-jedrzejczyk": {
+    "idPlayer": "34255251",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/g0dfw81732796199.png",
+    "bio": null
+  },
+  "zhang-weili": {
+    "idPlayer": "34171678",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gmtyxk1593614518.png",
+    "bio": null
+  },
+  "israel-adesanya": {
+    "idPlayer": "34171673",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/x5kzjb1593611527.png",
+    "bio": null
+  },
+  "alex-pereira": {
+    "idPlayer": "34215679",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3a9h2j1728206945.png",
+    "bio": null
+  },
+  "alexander-volkanovski": {
+    "idPlayer": "34171669",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/cohkwk1593609654.png",
+    "bio": null
+  },
+  "islam-makhachev": {
+    "idPlayer": "34228363",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/h24pnq1705940288.png",
+    "bio": null
+  },
+  "kamaru-usman": {
+    "idPlayer": "34171671",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/693bru1593611045.png",
+    "bio": null
+  },
+  "leon-edwards": {
+    "idPlayer": "34228364",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/o9got21705940668.png",
+    "bio": null
+  },
+  "max-holloway": {
+    "idPlayer": "34171774",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gphp791594584009.png",
+    "bio": null
+  },
+  "dustin-poirier": {
+    "idPlayer": "34176451",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/bhr5nw1611487577.png",
+    "bio": null
+  },
+  "justin-gaethje": {
+    "idPlayer": "34219893",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/vstc9p1690818737.png",
+    "bio": null
+  },
+  "charles-oliveira": {
+    "idPlayer": "34171042",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5zm0ds1588786922.png",
+    "bio": null
+  },
+  "sean-omalley": {
+    "idPlayer": "34220148",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/cki55v1692640323.png",
+    "bio": null
+  },
+  "ilia-topuria": {
+    "idPlayer": "34228379",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/cz7spq1706003785.png",
+    "bio": null
+  },
+  "tom-aspinall": {
+    "idPlayer": "34245265",
+    "photo": "https://r2.thesportsdb.com/images/media/player/cutout/e53fep1725180232.png",
+    "bio": null
+  }
+}

@@ -2,14 +2,20 @@
 import { use, useEffect, useState } from "react";
 import Link from "next/link";
 import { getFighter, GAMES } from "@/lib/data-fighters-bridge";
+import { TITLES, REIGNING, RECORDS } from "@/lib/fighter-extras";
+import media from "@/lib/fighter-media.json";
 import { supabase } from "@/lib/supabase";
 import FollowButton from "@/components/FollowButton";
 import BackLink from "@/components/BackLink";
+
+type Media = Record<string, { idPlayer: string | null; photo: string | null; bio: string | null }>;
+const MEDIA = media as Media;
 
 export default function FighterPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
   const fighter = getFighter(slug);
   const [fanLists, setFanLists] = useState<{ list_id: string; position: number; title: string }[]>([]);
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     if (!fighter) return;
@@ -37,6 +43,11 @@ export default function FighterPage({ params }: { params: Promise<{ slug: string
 
   if (!fighter) return <main className="p-10 text-zinc-100">Fighter not found.</main>;
 
+  const m = MEDIA[fighter.slug] ?? { photo: null, bio: null, idPlayer: null };
+  const titles = TITLES[fighter.slug];
+  const record = fighter.record ?? RECORDS[fighter.slug];
+  const reigning = REIGNING.has(fighter.slug);
+  const bio = m.bio ?? "";
   const lastName = fighter.name.split(" ").slice(-1)[0].toLowerCase();
   const iconicFights = GAMES.filter(
     (g) => (g.sportSlug === "boxing" || g.sportSlug === "mma") && g.title.toLowerCase().includes(lastName)
@@ -46,21 +57,44 @@ export default function FighterPage({ params }: { params: Promise<{ slug: string
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
       <div className="mx-auto max-w-3xl px-6 py-12">
         <BackLink fallback="/search" />
-        <div className="mt-6">
-          <div className="text-xs font-semibold uppercase tracking-widest text-emerald-400">
-            {fighter.sport === "boxing" ? "🥊 Boxing" : "🥋 MMA"} · {fighter.era}
+        <div className="mt-6 flex items-start gap-6">
+          {m.photo ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={m.photo} alt={fighter.name} className="h-32 w-32 shrink-0 rounded-xl object-cover object-top" />
+          ) : (
+            <div className="flex h-32 w-32 shrink-0 items-center justify-center rounded-xl bg-zinc-900 text-4xl">
+              {fighter.sport === "boxing" ? "🥊" : "🥋"}
+            </div>
+          )}
+          <div>
+            <div className="text-xs font-semibold uppercase tracking-widest text-emerald-400">
+              {fighter.sport === "boxing" ? "🥊 Boxing" : "🥋 MMA"} · {fighter.era}
+            </div>
+            <div className="mt-1 flex flex-wrap items-center gap-4">
+              <h1 className="text-3xl font-bold">{fighter.name}</h1>
+              <FollowButton entityType="fighter" entityId={fighter.slug} entityName={fighter.name} />
+            </div>
+            <p className="mt-1 text-sm text-zinc-400">
+              {fighter.division}
+              {record ? ` · ${record}` : ""}
+              {reigning ? " · 🏆 Reigning Champion" : ""}
+            </p>
+            {titles && <p className="mt-2 text-sm font-medium text-amber-300">{titles}</p>}
           </div>
-          <div className="mt-1 flex items-center gap-4">
-            <h1 className="text-3xl font-bold">{fighter.name}</h1>
-            <FollowButton entityType="fighter" entityId={fighter.slug} entityName={fighter.name} />
-          </div>
-          <p className="mt-1 text-sm text-zinc-400">
-            {fighter.division}
-            {fighter.record ? ` · ${fighter.record}` : ""}
-            {fighter.champion ? " · 🏆 Champion" : ""}
-          </p>
-          <p className="mt-4 leading-relaxed text-zinc-300">{fighter.blurb}</p>
         </div>
+
+        <p className="mt-6 leading-relaxed text-zinc-300">{fighter.blurb}</p>
+
+        {bio && (
+          <div className="mt-4">
+            <p className={`text-sm leading-relaxed text-zinc-400 ${expanded ? "" : "line-clamp-5"}`}>{bio}</p>
+            {bio.length > 350 && (
+              <button onClick={() => setExpanded(!expanded)} className="mt-2 text-sm text-emerald-400 hover:underline">
+                {expanded ? "Show less" : "Read more…"}
+              </button>
+            )}
+          </div>
+        )}
 
         {iconicFights.length > 0 && (
           <>

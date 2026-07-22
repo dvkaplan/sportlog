@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import teamsData from "@/lib/teams.json";
 import playersData from "@/lib/players.json";
 import { FIGHTERS } from "@/lib/fighters";
+import { ALIASES } from "@/lib/fighter-extras";
 
 const BASE = `https://www.thesportsdb.com/api/v1/json/${process.env.SPORTSDB_KEY ?? "3"}`;
 
@@ -66,8 +67,14 @@ export async function GET(req: NextRequest) {
       const playerMatches = PLAYERS.filter((p) => p.strPlayer.toLowerCase().includes(q))
         .sort((a, b) => prank(b) - prank(a))
         .slice(0, 25);
-        const fighterMatches = FIGHTERS.filter(
-        (f) => f.name.toLowerCase().includes(q) || f.division.toLowerCase().includes(q)
+        const aliasHits = Object.entries(ALIASES)
+        .filter(([alias]) => alias.includes(q) || q.includes(alias))
+        .map(([, s]) => s);
+      const fighterMatches = FIGHTERS.filter(
+        (f) =>
+          f.name.toLowerCase().includes(q) ||
+          f.division.toLowerCase().includes(q) ||
+          aliasHits.includes(f.slug)
       ).slice(0, 15);
       return NextResponse.json({ teams: matches, players: playerMatches, fighters: fighterMatches });
       
