@@ -1,0 +1,104 @@
+export type Fighter = {
+  slug: string;
+  name: string;
+  sport: "boxing" | "mma";
+  division: string;
+  era: string;
+  record?: string; // stable final records for retired fighters; editorial
+  champion?: boolean;
+  blurb: string;
+};
+
+export const FIGHTERS: Fighter[] = [
+  // ===== BOXING =====
+  { slug: "muhammad-ali", name: "Muhammad Ali", sport: "boxing", division: "Heavyweight", era: "1960s–1970s", record: "56–5", champion: true, blurb: "The Greatest. Thrilla in Manila, Rumble in the Jungle." },
+  { slug: "sugar-ray-robinson", name: "Sugar Ray Robinson", sport: "boxing", division: "Welterweight/Middleweight", era: "1940s–1950s", record: "174–19–6", champion: true, blurb: "Pound-for-pound the original and maybe still the answer." },
+  { slug: "joe-louis", name: "Joe Louis", sport: "boxing", division: "Heavyweight", era: "1930s–1940s", record: "66–3", champion: true, blurb: "The Brown Bomber. 25 straight title defenses." },
+  { slug: "rocky-marciano", name: "Rocky Marciano", sport: "boxing", division: "Heavyweight", era: "1950s", record: "49–0", champion: true, blurb: "Retired undefeated. The original perfect record." },
+  { slug: "jack-dempsey", name: "Jack Dempsey", sport: "boxing", division: "Heavyweight", era: "1920s", record: "68–6–11", champion: true, blurb: "The Manassa Mauler, boxing's first superstar." },
+  { slug: "joe-frazier", name: "Joe Frazier", sport: "boxing", division: "Heavyweight", era: "1960s–1970s", record: "32–4–1", champion: true, blurb: "Smokin' Joe. Handed Ali his first loss." },
+  { slug: "george-foreman", name: "George Foreman", sport: "boxing", division: "Heavyweight", era: "1970s, 1990s", record: "76–5", champion: true, blurb: "Two reigns, twenty years apart. Oldest heavyweight champ ever." },
+  { slug: "larry-holmes", name: "Larry Holmes", sport: "boxing", division: "Heavyweight", era: "1978–1985", record: "69–6", champion: true, blurb: "The jab that ruled an era. 20 title defenses." },
+  { slug: "mike-tyson", name: "Mike Tyson", sport: "boxing", division: "Heavyweight", era: "1985–1997", record: "50–6", champion: true, blurb: "Youngest heavyweight champion ever. Iron Mike." },
+  { slug: "evander-holyfield", name: "Evander Holyfield", sport: "boxing", division: "Heavyweight", era: "1988–2000s", record: "44–10–2", champion: true, blurb: "The Real Deal. Four-time heavyweight champ." },
+  { slug: "lennox-lewis", name: "Lennox Lewis", sport: "boxing", division: "Heavyweight", era: "1990s–2003", record: "41–2–1", champion: true, blurb: "Beat everyone he ever faced. Last undisputed of his era." },
+  { slug: "marvin-hagler", name: "Marvelous Marvin Hagler", sport: "boxing", division: "Middleweight", era: "1980s", record: "62–3–2", champion: true, blurb: "The War with Hearns. Twelve title defenses." },
+  { slug: "sugar-ray-leonard", name: "Sugar Ray Leonard", sport: "boxing", division: "Welterweight–Light Heavy", era: "1977–1997", record: "36–3–1", champion: true, blurb: "Five divisions. Beat Hagler, Hearns, and Durán." },
+  { slug: "thomas-hearns", name: "Thomas Hearns", sport: "boxing", division: "Welterweight–Cruiser", era: "1980s", record: "61–5–1", champion: true, blurb: "The Hitman. Most terrifying right hand of the Four Kings." },
+  { slug: "roberto-duran", name: "Roberto Durán", sport: "boxing", division: "Lightweight–Middleweight", era: "1970s–1980s", record: "103–16", champion: true, blurb: "Hands of Stone. Four decades, four divisions." },
+  { slug: "julio-cesar-chavez", name: "Julio César Chávez", sport: "boxing", division: "Super Feather–Light Welter", era: "1980s–1990s", record: "107–6–2", champion: true, blurb: "Mexico's greatest. 87–0 start." },
+  { slug: "pernell-whitaker", name: "Pernell Whitaker", sport: "boxing", division: "Lightweight–Welterweight", era: "1990s", record: "40–4–1", champion: true, blurb: "Sweet Pea. The best defense ever seen." },
+  { slug: "oscar-de-la-hoya", name: "Oscar De La Hoya", sport: "boxing", division: "Six divisions", era: "1992–2008", record: "39–6", champion: true, blurb: "The Golden Boy. Faced everyone." },
+  { slug: "felix-trinidad", name: "Félix Trinidad", sport: "boxing", division: "Welterweight–Middleweight", era: "1990s–2000s", record: "42–3", champion: true, blurb: "Tito. Puerto Rico's knockout king." },
+  { slug: "bernard-hopkins", name: "Bernard Hopkins", sport: "boxing", division: "Middleweight–Light Heavy", era: "1990s–2016", record: "55–8–2", champion: true, blurb: "The Executioner. Champion at 49 years old." },
+  { slug: "roy-jones-jr", name: "Roy Jones Jr.", sport: "boxing", division: "Middleweight–Heavyweight", era: "1990s–2000s", record: "66–10", champion: true, blurb: "Prime Roy was untouchable. Middleweight to heavyweight champ." },
+  { slug: "floyd-mayweather", name: "Floyd Mayweather Jr.", sport: "boxing", division: "Five divisions", era: "1996–2017", record: "50–0", champion: true, blurb: "TBE by the numbers. Never lost." },
+  { slug: "manny-pacquiao", name: "Manny Pacquiao", sport: "boxing", division: "Eight divisions", era: "2000s–2020s", record: "62–8–2", champion: true, blurb: "Only eight-division champion in history." },
+  { slug: "juan-manuel-marquez", name: "Juan Manuel Márquez", sport: "boxing", division: "Feather–Welterweight", era: "2000s–2010s", record: "56–7–1", champion: true, blurb: "The counterpuncher who finally got Pacquiao." },
+  { slug: "erik-morales", name: "Erik Morales", sport: "boxing", division: "Bantam–Light Welter", era: "1990s–2000s", record: "52–9", champion: true, blurb: "El Terrible. The Barrera trilogy." },
+  { slug: "marco-antonio-barrera", name: "Marco Antonio Barrera", sport: "boxing", division: "Super Bantam–Super Feather", era: "1990s–2000s", record: "67–7", champion: true, blurb: "The Baby-Faced Assassin." },
+  { slug: "miguel-cotto", name: "Miguel Cotto", sport: "boxing", division: "Light Welter–Middleweight", era: "2000s–2017", record: "41–6", champion: true, blurb: "Puerto Rico's four-division warrior." },
+  { slug: "wladimir-klitschko", name: "Wladimir Klitschko", sport: "boxing", division: "Heavyweight", era: "2000s–2017", record: "64–5", champion: true, blurb: "Dr. Steelhammer. A decade of dominance." },
+  { slug: "vitali-klitschko", name: "Vitali Klitschko", sport: "boxing", division: "Heavyweight", era: "1990s–2013", record: "45–2", champion: true, blurb: "Dr. Ironfist. Never knocked down." },
+  { slug: "canelo-alvarez", name: "Canelo Álvarez", sport: "boxing", division: "Super Middleweight", era: "2010s–present", champion: true, blurb: "The face of boxing. Four-division, undisputed at 168." },
+  { slug: "gennady-golovkin", name: "Gennady Golovkin", sport: "boxing", division: "Middleweight", era: "2010s", record: "42–2–1", champion: true, blurb: "GGG. Big Drama Show and the Canelo trilogy." },
+  { slug: "tyson-fury", name: "Tyson Fury", sport: "boxing", division: "Heavyweight", era: "2010s–present", champion: true, blurb: "The Gypsy King. Rose from the canvas against Wilder." },
+  { slug: "deontay-wilder", name: "Deontay Wilder", sport: "boxing", division: "Heavyweight", era: "2010s–present", blurb: "The Bronze Bomber. The scariest right hand alive." },
+  { slug: "anthony-joshua", name: "Anthony Joshua", sport: "boxing", division: "Heavyweight", era: "2010s–present", champion: true, blurb: "AJ. Two-time unified heavyweight champion." },
+  { slug: "oleksandr-usyk", name: "Oleksandr Usyk", sport: "boxing", division: "Cruiser–Heavyweight", era: "2010s–present", champion: true, blurb: "Undisputed at cruiserweight AND heavyweight." },
+  { slug: "terence-crawford", name: "Terence Crawford", sport: "boxing", division: "Lightweight–Super Middle", era: "2010s–present", champion: true, blurb: "Bud. Undisputed in multiple divisions, beat Canelo." },
+  { slug: "errol-spence-jr", name: "Errol Spence Jr.", sport: "boxing", division: "Welterweight", era: "2010s–present", champion: true, blurb: "The Truth. Unified welterweight king before Crawford." },
+  { slug: "naoya-inoue", name: "Naoya Inoue", sport: "boxing", division: "Bantam–Super Bantam", era: "2010s–present", champion: true, blurb: "The Monster. Undisputed in two divisions." },
+  { slug: "gervonta-davis", name: "Gervonta Davis", sport: "boxing", division: "Lightweight", era: "2010s–present", champion: true, blurb: "Tank. Boxing's biggest ticket-seller." },
+  { slug: "ryan-garcia", name: "Ryan Garcia", sport: "boxing", division: "Lightweight", era: "2020s", blurb: "KingRy. The fastest hands and loudest headlines." },
+  { slug: "devin-haney", name: "Devin Haney", sport: "boxing", division: "Lightweight–Light Welter", era: "2020s", champion: true, blurb: "Undisputed at lightweight before moving up." },
+  { slug: "shakur-stevenson", name: "Shakur Stevenson", sport: "boxing", division: "Feather–Lightweight", era: "2020s", champion: true, blurb: "The slickest boxer of the new generation." },
+  { slug: "david-benavidez", name: "David Benavídez", sport: "boxing", division: "Super Middle–Light Heavy", era: "2020s", champion: true, blurb: "The Mexican Monster. The fight everyone wants." },
+  { slug: "dmitry-bivol", name: "Dmitry Bivol", sport: "boxing", division: "Light Heavyweight", era: "2010s–present", champion: true, blurb: "Beat Canelo. Master technician." },
+  { slug: "artur-beterbiev", name: "Artur Beterbiev", sport: "boxing", division: "Light Heavyweight", era: "2010s–present", champion: true, blurb: "100% knockout ratio as champion." },
+  // ===== MMA =====
+  { slug: "royce-gracie", name: "Royce Gracie", sport: "mma", division: "Openweight", era: "1993–2000s", champion: true, blurb: "Won UFC 1 in a gi. Proved jiu-jitsu to the world." },
+  { slug: "fedor-emelianenko", name: "Fedor Emelianenko", sport: "mma", division: "Heavyweight", era: "2000s", record: "40–6", champion: true, blurb: "The Last Emperor. A decade unbeaten in PRIDE." },
+  { slug: "chuck-liddell", name: "Chuck Liddell", sport: "mma", division: "Light Heavyweight", era: "2000s", record: "21–9", champion: true, blurb: "The Iceman. UFC's first mainstream star." },
+  { slug: "randy-couture", name: "Randy Couture", sport: "mma", division: "Heavy/Light Heavy", era: "1997–2011", record: "19–11", champion: true, blurb: "The Natural. Champion in two divisions, forever." },
+  { slug: "wanderlei-silva", name: "Wanderlei Silva", sport: "mma", division: "Middleweight (PRIDE)", era: "2000s", blurb: "The Axe Murderer. PRIDE's most violent icon." },
+  { slug: "mirko-cro-cop", name: "Mirko Cro Cop", sport: "mma", division: "Heavyweight", era: "2000s", blurb: "Right leg hospital, left leg cemetery." },
+  { slug: "bj-penn", name: "B.J. Penn", sport: "mma", division: "Lightweight/Welterweight", era: "2000s", champion: true, blurb: "The Prodigy. Two-division champion." },
+  { slug: "anderson-silva", name: "Anderson Silva", sport: "mma", division: "Middleweight", era: "2006–2013", record: "34–11", champion: true, blurb: "The Spider. 16-fight UFC win streak, longest title reign." },
+  { slug: "georges-st-pierre", name: "Georges St-Pierre", sport: "mma", division: "Welterweight", era: "2004–2017", record: "26–2", champion: true, blurb: "GSP. The most complete fighter ever. Two-division champ." },
+  { slug: "jon-jones", name: "Jon Jones", sport: "mma", division: "Light Heavy/Heavyweight", era: "2008–present", champion: true, blurb: "Bones. Never beaten in the cage. GOAT résumé." },
+  { slug: "khabib-nurmagomedov", name: "Khabib Nurmagomedov", sport: "mma", division: "Lightweight", era: "2012–2020", record: "29–0", champion: true, blurb: "The Eagle. Perfect record, retired on top." },
+  { slug: "daniel-cormier", name: "Daniel Cormier", sport: "mma", division: "Light Heavy/Heavyweight", era: "2010s", record: "22–3", champion: true, blurb: "DC. Double champ and everyone's favorite rival." },
+  { slug: "stipe-miocic", name: "Stipe Miocic", sport: "mma", division: "Heavyweight", era: "2010s–2020s", record: "20–5", champion: true, blurb: "Most heavyweight title defenses in UFC history." },
+  { slug: "demetrious-johnson", name: "Demetrious Johnson", sport: "mma", division: "Flyweight", era: "2010s", champion: true, blurb: "Mighty Mouse. 11 straight defenses, technical perfection." },
+  { slug: "jose-aldo", name: "José Aldo", sport: "mma", division: "Featherweight", era: "2009–2020s", champion: true, blurb: "The King of Rio. A decade unbeaten at 145." },
+  { slug: "dominick-cruz", name: "Dominick Cruz", sport: "mma", division: "Bantamweight", era: "2010s", champion: true, blurb: "Invented a movement style nobody could solve." },
+  { slug: "conor-mcgregor", name: "Conor McGregor", sport: "mma", division: "Feather/Lightweight", era: "2013–present", record: "22–6", champion: true, blurb: "The Notorious. First double champ, biggest star ever." },
+  { slug: "nate-diaz", name: "Nate Diaz", sport: "mma", division: "Lightweight/Welterweight", era: "2007–present", blurb: "Stockton's own. Shocked McGregor at UFC 196." },
+  { slug: "nick-diaz", name: "Nick Diaz", sport: "mma", division: "Welterweight", era: "2000s–2010s", blurb: "The original Diaz. Don't be scared, homie." },
+  { slug: "amanda-nunes", name: "Amanda Nunes", sport: "mma", division: "Bantam/Featherweight", era: "2010s–2020s", record: "23–5", champion: true, blurb: "The Lioness. Greatest women's fighter ever, two belts." },
+  { slug: "ronda-rousey", name: "Ronda Rousey", sport: "mma", division: "Bantamweight", era: "2012–2016", record: "12–2", champion: true, blurb: "Changed women's MMA forever. Armbar everything." },
+  { slug: "valentina-shevchenko", name: "Valentina Shevchenko", sport: "mma", division: "Flyweight", era: "2010s–present", champion: true, blurb: "Bullet. Flyweight dominance defined." },
+  { slug: "joanna-jedrzejczyk", name: "Joanna Jędrzejczyk", sport: "mma", division: "Strawweight", era: "2010s", champion: true, blurb: "The Zhang war at UFC 248 is an all-timer." },
+  { slug: "zhang-weili", name: "Zhang Weili", sport: "mma", division: "Strawweight", era: "2010s–present", champion: true, blurb: "China's first UFC champion. Magnum." },
+  { slug: "israel-adesanya", name: "Israel Adesanya", sport: "mma", division: "Middleweight", era: "2018–present", champion: true, blurb: "The Last Stylebender. Pereira saga for the ages." },
+  { slug: "alex-pereira", name: "Alex Pereira", sport: "mma", division: "Middle/Light Heavy", era: "2020s", champion: true, blurb: "Poatan. Two-division champ, left hook from hell." },
+  { slug: "alexander-volkanovski", name: "Alexander Volkanovski", sport: "mma", division: "Featherweight", era: "2010s–present", champion: true, blurb: "The Great. Featherweight GOAT conversation." },
+  { slug: "islam-makhachev", name: "Islam Makhachev", sport: "mma", division: "Lightweight/Welterweight", era: "2020s", champion: true, blurb: "Khabib's heir. Pound-for-pound king." },
+  { slug: "kamaru-usman", name: "Kamaru Usman", sport: "mma", division: "Welterweight", era: "2010s–2020s", champion: true, blurb: "The Nigerian Nightmare. 15 straight UFC wins." },
+  { slug: "leon-edwards", name: "Leon Edwards", sport: "mma", division: "Welterweight", era: "2010s–present", champion: true, blurb: "Rocky. The head kick heard around the world." },
+  { slug: "max-holloway", name: "Max Holloway", sport: "mma", division: "Feather/Lightweight", era: "2012–present", champion: true, blurb: "Blessed. BMF. The best boxing in MMA." },
+  { slug: "dustin-poirier", name: "Dustin Poirier", sport: "mma", division: "Lightweight", era: "2011–present", blurb: "The Diamond. Wars with everyone, heart of the era." },
+  { slug: "justin-gaethje", name: "Justin Gaethje", sport: "mma", division: "Lightweight", era: "2017–present", blurb: "The Highlight. Violence personified." },
+  { slug: "charles-oliveira", name: "Charles Oliveira", sport: "mma", division: "Lightweight", era: "2010–present", champion: true, blurb: "Do Bronx. Most finishes in UFC history." },
+  { slug: "sean-omalley", name: "Sean O'Malley", sport: "mma", division: "Bantamweight", era: "2020s", champion: true, blurb: "Suga. The new generation's showman." },
+  { slug: "ilia-topuria", name: "Ilia Topuria", sport: "mma", division: "Feather/Lightweight", era: "2020s", champion: true, blurb: "El Matador. Undefeated and ice cold." },
+  { slug: "tom-aspinall", name: "Tom Aspinall", sport: "mma", division: "Heavyweight", era: "2020s", champion: true, blurb: "The fastest heavyweight ever seen." },
+];
+
+export function getFighter(slug: string) {
+  return FIGHTERS.find((f) => f.slug === slug);
+}
+export function getFightersBySport(sport: "boxing" | "mma") {
+  return FIGHTERS.filter((f) => f.sport === sport);
+}

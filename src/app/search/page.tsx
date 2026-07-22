@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { cleanTeamLabel } from "@/lib/labels";
 import { supabase } from "@/lib/supabase";
+import { cleanTeamLabel } from "@/lib/labels";
 
 type Team = {
   idTeam: string;
@@ -19,18 +19,28 @@ type Player = {
   strPosition: string | null;
   strThumb: string | null;
 };
+type Fighter = {
+  slug: string;
+  name: string;
+  sport: string;
+  division: string;
+  era: string;
+  champion?: boolean;
+};
 
 export default function SearchPage() {
   const [q, setQ] = useState("");
   const [teams, setTeams] = useState<Team[]>([]);
   const [players, setPlayers] = useState<Player[]>([]);
+  const [fighters, setFighters] = useState<Fighter[]>([]);
   const [busy, setBusy] = useState(false);
-  const [tab, setTab] = useState<"all" | "teams" | "players">("all");
+  const [tab, setTab] = useState<"all" | "teams" | "players" | "fighters">("all");
 
   useEffect(() => {
     if (q.trim().length < 2) {
       setTeams([]);
       setPlayers([]);
+      setFighters([]);
       return;
     }
     const t = setTimeout(async () => {
@@ -39,6 +49,7 @@ export default function SearchPage() {
         const data = await fetch(`/api/sportsdb?mode=findteams&q=${encodeURIComponent(q)}`).then((r) => r.json());
         setTeams(data?.teams ?? []);
         setPlayers(data?.players ?? []);
+        setFighters(data?.fighters ?? []);
         const ids = (data?.players ?? []).map((p: Player) => p.idPlayer);
         if (ids.length > 0) {
           const { data: clicks } = await supabase
@@ -55,36 +66,41 @@ export default function SearchPage() {
       } catch {
         setTeams([]);
         setPlayers([]);
+        setFighters([]);
       }
       setBusy(false);
     }, 250);
     return () => clearTimeout(t);
   }, [q]);
 
-  const showTeams = tab !== "players";
-  const showPlayers = tab !== "teams";
-  const nothing = !busy && q.trim().length >= 2 && teams.length === 0 && players.length === 0;
+  const showTeams = tab === "all" || tab === "teams";
+  const showPlayers = tab === "all" || tab === "players";
+  const showFighters = tab === "all" || tab === "fighters";
+  const nothing =
+    !busy && q.trim().length >= 2 && teams.length === 0 && players.length === 0 && fighters.length === 0;
 
   return (
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
       <div className="mx-auto max-w-2xl px-6 py-12">
         <h1 className="text-2xl font-bold">Search</h1>
         <p className="mt-1 text-sm text-zinc-400">
-          Teams and players across NBA, NFL, MLB, NHL, and major soccer leagues.
+          Teams, players, and fighters across all major leagues.
         </p>
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
-          placeholder="james, chicago, lakers, judge…"
+          placeholder="james, chicago, ali, khabib…"
           className="mt-6 w-full rounded-lg border border-zinc-700 bg-zinc-900 p-3 text-sm outline-none focus:border-emerald-400"
         />
         <div className="mt-4 flex gap-2 text-sm">
-          {(["all", "teams", "players"] as const).map((t) => (
+          {(["all", "teams", "players", "fighters"] as const).map((t) => (
             <button
               key={t}
               onClick={() => setTab(t)}
               className={`rounded-full px-4 py-1.5 capitalize transition ${
-                tab === t ? "bg-emerald-400 font-semibold text-zinc-950" : "border border-zinc-700 text-zinc-400 hover:border-emerald-400"
+                tab === t
+                  ? "bg-emerald-400 font-semibold text-zinc-950"
+                  : "border border-zinc-700 text-zinc-400 hover:border-emerald-400"
               }`}
             >
               {t}
@@ -112,7 +128,7 @@ export default function SearchPage() {
                   <div>
                     <div className="font-medium">{t.strTeam}</div>
                     <div className="text-xs text-zinc-500">
-                      {t.strSport ?? ""}{t.strLeague ? ` · ${t.strLeague}` : ""}
+                      {[t.strSport, t.strLeague].filter(Boolean).join(" · ")}
                     </div>
                   </div>
                 </Link>
@@ -140,7 +156,9 @@ export default function SearchPage() {
                   <div>
                     <div className="font-medium">{p.strPlayer}</div>
                     <div className="text-xs text-zinc-500">
-                      {[cleanTeamLabel(p.strTeam), p.strPosition, cleanTeamLabel(p.strLeague ?? "")].filter(Boolean).join(" · ")}
+                      {[cleanTeamLabel(p.strTeam), p.strPosition, cleanTeamLabel(p.strLeague ?? "")]
+                        .filter(Boolean)
+                        .join(" · ")}
                     </div>
                   </div>
                 </Link>
@@ -149,7 +167,33 @@ export default function SearchPage() {
           </>
         )}
 
-        {nothing && <p className="mt-6 text-sm text-zinc-500">No teams or players found.</p>}
+        {showFighters && fighters.length > 0 && (
+          <>
+            <h2 className="mt-6 text-xs font-semibold uppercase tracking-widest text-zinc-500">Fighters</h2>
+            <div className="mt-2 space-y-2">
+              {fighters.map((f) => (
+                <Link
+                  key={f.slug}
+                  href={`/fighter/${f.slug}`}
+                  className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-emerald-400"
+                >
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-800">
+                    {f.sport === "boxing" ? "🥊" : "🥋"}
+                  </div>
+                  <div>
+                    <div className="font-medium">
+                      {f.name}
+                      {f.champion ? " 🏆" : ""}
+                    </div>
+                    <div className="text-xs text-zinc-500">{f.division} · {f.era}</div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </>
+        )}
+
+        {nothing && <p className="mt-6 text-sm text-zinc-500">No results found.</p>}
       </div>
     </main>
   );
