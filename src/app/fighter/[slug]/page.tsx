@@ -95,6 +95,11 @@ export default function FighterPage({ params }: { params: Promise<{ slug: string
             )}
           </div>
         )}
+        {bio && (
+          <p className="mt-1 text-xs text-zinc-600">
+            Bio from <a href={`https://en.wikipedia.org/wiki/${encodeURIComponent(fighter.name)}`} className="underline hover:text-zinc-400" target="_blank" rel="noreferrer">Wikipedia</a>, CC BY-SA
+          </p>
+        )}
 
         {iconicFights.length > 0 && (
           <>

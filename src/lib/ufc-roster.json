@@ -1,0 +1,3395 @@
+[
+  {
+    "slug": "derrick-lewis",
+    "name": "Derrick Lewis",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "20–12",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "curtis-blaydes",
+    "name": "Curtis Blaydes",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "14–6",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "marcin-tybura",
+    "name": "Marcin Tybura",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "14–10",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "alexander-volkov",
+    "name": "Alexander Volkov",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "14–5",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "tai-tuivasa",
+    "name": "Tai Tuivasa",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "8–10",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "ryan-spann",
+    "name": "Ryan Spann",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "10–6",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "sergei-pavlovich",
+    "name": "Sergei Pavlovich",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "9–3",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "kennedy-nzechukwu",
+    "name": "Kennedy Nzechukwu",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "8–6–1",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "serghei-spivac",
+    "name": "Serghei Spivac",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "9–6",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "ciryl-gane",
+    "name": "Ciryl Gane",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "10–2",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "tanner-boser",
+    "name": "Tanner Boser",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "5–6",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "waldo-cortes-acosta",
+    "name": "Waldo Cortes-Acosta",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "10–3",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "vitor-petrino",
+    "name": "Vitor Petrino",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "7–2",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "mick-parkin",
+    "name": "Mick Parkin",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "4–1",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "shamil-gaziev",
+    "name": "Shamil Gaziev",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "3–3",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "ufc-fight-night-282",
+    "name": "UFC Fight Night 282",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "3–3",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "valter-walker",
+    "name": "Valter Walker",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "4–1",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "jhonata-diniz",
+    "name": "Jhonata Diniz",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "3–2",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "ufc-fight-night-275",
+    "name": "UFC Fight Night 275",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "0–2",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "tallison-teixeira",
+    "name": "Tallison Teixeira",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "2–2",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "ufc-fight-night-287",
+    "name": "UFC Fight Night 287",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "3–0",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "rizvan-kuniev",
+    "name": "Rizvan Kuniev",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "1–1",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "ufc-fight-night-281",
+    "name": "UFC Fight Night 281",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "0–2",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "marcus-buchecha",
+    "name": "Marcus Buchecha",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "0–2–1",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "ante-delija",
+    "name": "Ante Delija",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "1–2",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "brando-pericic",
+    "name": "Brando Peričić",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "3–0",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "ufc-329",
+    "name": "UFC 329",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "0–2",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "ufc-fight-night-284",
+    "name": "UFC Fight Night 284",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "1–2",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "josh-hokit",
+    "name": "Josh Hokit",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "4–0",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "ufc-fight-night-283",
+    "name": "UFC Fight Night 283",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "0–1",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "ufc-324",
+    "name": "UFC 324",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "1–1",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "tyrell-fortune",
+    "name": "Tyrell Fortune",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "1–0",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "gable-steveson",
+    "name": "Gable Steveson",
+    "sport": "mma",
+    "division": "Heavyweight",
+    "era": "Active",
+    "record": "1–0",
+    "blurb": "Active UFC heavyweight."
+  },
+  {
+    "slug": "dustin-jacoby",
+    "name": "Dustin Jacoby",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "10–6–1",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "nikita-krylov",
+    "name": "Nikita Krylov",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "12–10",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "jan-b-achowicz",
+    "name": "Jan Błachowicz",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "12–8–2",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "ion-cutelaba",
+    "name": "Ion Cuțelaba",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "9–11–1",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "khalil-rountree-jr",
+    "name": "Khalil Rountree Jr.",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "10–7",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "volkan-oezdemir",
+    "name": "Volkan Oezdemir",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "9–7",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "paulo-costa",
+    "name": "Paulo Costa",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "8–4",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "dominick-reyes",
+    "name": "Dominick Reyes",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "10–5",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "aleksandar-rakic",
+    "name": "Aleksandar Rakić",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "6–5",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "magomed-ankalaev",
+    "name": "Magomed Ankalaev",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "12–2–1",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "johnny-walker",
+    "name": "Johnny Walker",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "8–7",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "jimmy-crute",
+    "name": "Jimmy Crute",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "6–4–2",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "alonzo-menifield",
+    "name": "Alonzo Menifield",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "11–6–1",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "jamahal-hill",
+    "name": "Jamahal Hill",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "7–3",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "jiri-prochazka",
+    "name": "Jiří Procházka",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "6–3",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "modestas-bukauskas",
+    "name": "Modestas Bukauskas",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "8–5",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "carlos-ulberg",
+    "name": "Carlos Ulberg",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "10–1",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "azamat-murzakanov",
+    "name": "Azamat Murzakanov",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "6–1",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "junior-tafa",
+    "name": "Junior Tafa",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "3–6",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "bogdan-guskov",
+    "name": "Bogdan Guskov",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "4–1–1",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "ufc-fight-night-276",
+    "name": "UFC Fight Night 276",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "2–1–1",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "zhang-mingyang",
+    "name": "Zhang Mingyang",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "3–2",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "ibo-aslan",
+    "name": "İbo Aslan",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "2–3",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "navajo-stirling",
+    "name": "Navajo Stirling",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "5–0",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "billy-elekana",
+    "name": "Billy Elekana",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "3–1",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "ufc-fight-night-280",
+    "name": "UFC Fight Night 280",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "1–3",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "iwo-baraniewski",
+    "name": "Iwo Baraniewski",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "3–0",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "ufc-326",
+    "name": "UFC 326",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "0–1",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "ufc-330",
+    "name": "UFC 330",
+    "sport": "mma",
+    "division": "Light heavyweight",
+    "era": "Active",
+    "record": "0–1",
+    "blurb": "Active UFC light heavyweight."
+  },
+  {
+    "slug": "brad-tavares",
+    "name": "Brad Tavares",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "16–12",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "kelvin-gastelum",
+    "name": "Kelvin Gastelum",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "14–11",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "jared-cannonier",
+    "name": "Jared Cannonier",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "11–10",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "vicente-luque",
+    "name": "Vicente Luque",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "17–8",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "marvin-vettori",
+    "name": "Marvin Vettori",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "9–8–1",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "gerald-meerschaert",
+    "name": "Gerald Meerschaert",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "12–14",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "micha-oleksiejczuk",
+    "name": "Michał Oleksiejczuk",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "10–8",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "edmen-shahbazyan",
+    "name": "Edmen Shahbazyan",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "9–6",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "anthony-hernandez",
+    "name": "Anthony Hernandez",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "9–3",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "ismail-naurdiev",
+    "name": "Ismail Naurdiev",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "4–3",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "marc-andre-barriault",
+    "name": "Marc-André Barriault",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "6–10",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "rodolfo-vieira",
+    "name": "Rodolfo Vieira",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "6–5",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "park-jun-yong",
+    "name": "Park Jun-yong",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "8–5",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "brendan-allen",
+    "name": "Brendan Allen",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "15–4",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "roman-kopylov",
+    "name": "Roman Kopylov",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "7–5",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "kyle-daukaus",
+    "name": "Kyle Daukaus",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "4–5",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "roman-dolidze",
+    "name": "Roman Dolidze",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "9–4",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "nassourdine-imavov",
+    "name": "Nassourdine Imavov",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "9–2",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "dusko-todorovic",
+    "name": "Duško Todorović",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "4–6",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "cody-brundage",
+    "name": "Cody Brundage",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "6–8–1",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "jacob-malkoun",
+    "name": "Jacob Malkoun",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "6–3",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "dustin-stoltzfus",
+    "name": "Dustin Stoltzfus",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "3–7",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "gregory-rodrigues",
+    "name": "Gregory Rodrigues",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "10–3",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "andre-petroski",
+    "name": "Andre Petroski",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "8–5",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "caio-borralho",
+    "name": "Caio Borralho",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "8–1",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "abusupiyan-magomedov",
+    "name": "Abusupiyan Magomedov",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "5–3",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "joe-pyfer",
+    "name": "Joe Pyfer",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "7–1",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "bo-nickal",
+    "name": "Bo Nickal",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "6–1",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "christian-leroy-duncan",
+    "name": "Christian Leroy Duncan",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "8–2",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "ikram-aliskerov",
+    "name": "Ikram Aliskerov",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "5–1",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "nursulton-ruziboev",
+    "name": "Nursulton Ruziboev",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "5–1",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "sharabutdin-magomedov",
+    "name": "Sharabutdin Magomedov",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "6–1",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "zachary-reese",
+    "name": "Zachary Reese",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "4–4",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "robert-bryczek",
+    "name": "Robert Bryczek",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "1–2",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "cesar-almeida",
+    "name": "César Almeida",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "3–3",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "reinier-de-ridder",
+    "name": "Reinier de Ridder",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "4–2",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "ufc-331",
+    "name": "UFC 331",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "1–2",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "ufc-328",
+    "name": "UFC 328",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "2–2",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "azamat-bekoev",
+    "name": "Azamat Bekoev",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "2–2",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "ateba-gautier",
+    "name": "Ateba Gautier",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "5–0",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "ufc-325",
+    "name": "UFC 325",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "1–1",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "ufc-fight-night-285",
+    "name": "UFC Fight Night 285",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "1–2",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "ufc-fight-night-286",
+    "name": "UFC Fight Night 286",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "0–1",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "yousri-belgaroui",
+    "name": "Yousri Belgaroui",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "2–0",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "ufc-fight-night-270",
+    "name": "UFC Fight Night 270",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "1–0",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "ufc-fight-night-273",
+    "name": "UFC Fight Night 273",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "0–1",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "ufc-fight-night-277",
+    "name": "UFC Fight Night 277",
+    "sport": "mma",
+    "division": "Middleweight",
+    "era": "Active",
+    "record": "0–1",
+    "blurb": "Active UFC middleweight."
+  },
+  {
+    "slug": "rafael-dos-anjos",
+    "name": "Rafael dos Anjos",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "21–15",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "court-mcgee",
+    "name": "Court McGee",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "11–13",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "stephen-thompson",
+    "name": "Stephen Thompson",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "12–9–1",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "tim-means",
+    "name": "Tim Means",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "15–14",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "gunnar-nelson",
+    "name": "Gunnar Nelson",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "10–6",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "neil-magny",
+    "name": "Neil Magny",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "24–13",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "santiago-ponzinibbio",
+    "name": "Santiago Ponzinibbio",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "12–8",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "li-jingliang",
+    "name": "Li Jingliang",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "11–7",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "jake-matthews",
+    "name": "Jake Matthews",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "16–8",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "nicolas-dalby",
+    "name": "Nicolas Dalby",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "8–5–1",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "randy-brown",
+    "name": "Randy Brown",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "14–8",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "mickey-gall",
+    "name": "Mickey Gall",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "6–7",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "jack-hermansson",
+    "name": "Jack Hermansson",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "11–8",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "song-kenan",
+    "name": "Song Kenan",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "6–5",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "muslim-salikhov",
+    "name": "Muslim Salikhov",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "9–5",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "geoff-neal",
+    "name": "Geoff Neal",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "8–6",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "kevin-holland",
+    "name": "Kevin Holland",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "16–12",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "joel-alvarez",
+    "name": "Joel Álvarez",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "8–3",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "sean-brady",
+    "name": "Sean Brady",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "9–2",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "punahele-soriano",
+    "name": "Punahele Soriano",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "7–4",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "khaos-williams",
+    "name": "Khaos Williams",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "7–4",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "joaquin-buckley",
+    "name": "Joaquin Buckley",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "11–6",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "daniel-rodriguez",
+    "name": "Daniel Rodriguez",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "10–4",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "ramiz-brahimaj",
+    "name": "Ramiz Brahimaj",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "5–4",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "uros-medic",
+    "name": "Uroš Medić",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "7–3",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "jeremiah-wells",
+    "name": "Jeremiah Wells",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "5–2",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "chris-curtis",
+    "name": "Chris Curtis",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "6–5",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "ian-machado-garry",
+    "name": "Ian Machado Garry",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "10–1",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "jack-della-maddalena",
+    "name": "Jack Della Maddalena",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "8–2",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "michael-morales",
+    "name": "Michael Morales",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "7–0",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "chidi-njokuani",
+    "name": "Chidi Njokuani",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "5–5",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "mike-malott",
+    "name": "Mike Malott",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "7–1",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "gabriel-bonfim",
+    "name": "Gabriel Bonfim",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "6–1",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "ufc-327",
+    "name": "UFC 327",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "1–5",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "myktybek-orolbai",
+    "name": "Myktybek Orolbai",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "5–1",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "carlos-prates",
+    "name": "Carlos Prates",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "7–1",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "michael-page",
+    "name": "Michael Page",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "4–1",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "ufc-fight-night-267",
+    "name": "UFC Fight Night 267",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "2–2",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "austin-vanderford",
+    "name": "Austin Vanderford",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "1–1",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "islam-dulatov",
+    "name": "Islam Dulatov",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "1–0",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "yaroslav-amosov",
+    "name": "Yaroslav Amosov",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "2–0",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "ufc-fight-night-274",
+    "name": "UFC Fight Night 274",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "1–0",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "ufc-fight-night-279",
+    "name": "UFC Fight Night 279",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "0–1",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "jeremy-stephens",
+    "name": "Jeremy Stephens",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "15–20",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "jim-miller",
+    "name": "Jim Miller",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "28–18",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "edson-barboza",
+    "name": "Edson Barboza",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "18–14",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "michael-johnson",
+    "name": "Michael Johnson",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "16–16",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "king-green",
+    "name": "King Green",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "21–13–1",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "drew-dober",
+    "name": "Drew Dober",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "15–9",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "beneil-dariush",
+    "name": "Beneil Dariush",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "17–8–1",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "dan-hooker",
+    "name": "Dan Hooker",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "14–10",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "carlos-diego-ferreira",
+    "name": "Carlos Diego Ferreira",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "10–7",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "renato-moicano",
+    "name": "Renato Moicano",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "13–7",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "joaquim-silva",
+    "name": "Joaquim Silva",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "7–5",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "damir-hadzovic",
+    "name": "Damir Hadžović",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "4–6",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "claudio-puelles",
+    "name": "Claudio Puelles",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "5–4",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "drakkar-klose",
+    "name": "Drakkar Klose",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "10–3",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "jared-gordon",
+    "name": "Jared Gordon",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "9–8",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "nasrat-haqparast",
+    "name": "Nasrat Haqparast",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "10–5",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "matt-frevola",
+    "name": "Matt Frevola",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "5–6–1",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "alexander-hernandez",
+    "name": "Alexander Hernandez",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "10–8",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "jalin-turner",
+    "name": "Jalin Turner",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "8–6",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "sodiq-yusuff",
+    "name": "Sodiq Yusuff",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "6–4",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "kyle-nelson",
+    "name": "Kyle Nelson",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "5–7–1",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "grant-dawson",
+    "name": "Grant Dawson",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "12–2–1",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "rafael-fiziev",
+    "name": "Rafael Fiziev",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "9–5",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "arman-tsarukyan",
+    "name": "Arman Tsarukyan",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "10–2",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "mike-davis",
+    "name": "Mike Davis",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "5–2",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "kyle-prepolec",
+    "name": "Kyle Prepolec",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "0–3",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "fares-ziam",
+    "name": "Farès Ziam",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "8–3",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "ottman-azaitar",
+    "name": "Ottman Azaitar",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "2–3",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "chase-hooper",
+    "name": "Chase Hooper",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "9–5",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "gabriel-green",
+    "name": "Gabriel Green",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "3–3",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "jai-herbert",
+    "name": "Jai Herbert",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "4–5–1",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "ludovit-klein",
+    "name": "Ľudovít Klein",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "8–3–1",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "mateusz-gamrot",
+    "name": "Mateusz Gamrot",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "9–4",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "mason-jones",
+    "name": "Mason Jones",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "4–2",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "michael-chandler",
+    "name": "Michael Chandler",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "2–6",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "rafa-garcia",
+    "name": "Rafa García",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "7–4",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "ignacio-bahamondes",
+    "name": "Ignacio Bahamondes",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "6–4",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "rong-zhu",
+    "name": "Rong Zhu",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "4–3",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "terrance-mckinney",
+    "name": "Terrance McKinney",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "8–6",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "benoit-saint-denis",
+    "name": "Benoît Saint Denis",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "9–4",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "manuel-torres",
+    "name": "Manuel Torres",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "5–2",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "daniel-zellhuber",
+    "name": "Daniel Zellhuber",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "3–4",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "mateusz-rebecki",
+    "name": "Mateusz Rębecki",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "4–4",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "anshul-jubli",
+    "name": "Anshul Jubli",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "1–2",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "nazim-sadykhov",
+    "name": "Nazim Sadykhov",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "4–2–1",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "nurullo-aliev",
+    "name": "Nurullo Aliev",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "3–0",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "esteban-ribovics",
+    "name": "Esteban Ribovics",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "4–3",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "chris-duncan",
+    "name": "Chris Duncan",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "6–2",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "ufc-fight-night-272",
+    "name": "UFC Fight Night 272",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "1–3",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "ufc-fight-night-278",
+    "name": "UFC Fight Night 278",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "5–1",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "ufc-fight-night-269",
+    "name": "UFC Fight Night 269",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "2–3",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "mauricio-ruffy",
+    "name": "Maurício Ruffy",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "5–1",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "quillan-salkilld",
+    "name": "Quillan Salkilld",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "5–0",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "tofiq-musayev",
+    "name": "Tofiq Musayev",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "1–1",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "ufc-fight-night-271",
+    "name": "UFC Fight Night 271",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "1–1",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "lucas-brennan",
+    "name": "Lucas Brennan",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "0–1",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "darren-elkins",
+    "name": "Darren Elkins",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "19–11",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "andre-fili",
+    "name": "Andre Fili",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "13–13",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "douglas-silva-de-andrade",
+    "name": "Douglas Silva de Andrade",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "7–7",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "brian-ortega",
+    "name": "Brian Ortega",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "8–5",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "yair-rodriguez",
+    "name": "Yair Rodríguez",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "11–5",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "choi-doo-ho",
+    "name": "Choi Doo-ho",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "6–3–1",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "arnold-allen",
+    "name": "Arnold Allen",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "12–3",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "julian-erosa",
+    "name": "Julian Erosa",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "9–9",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "josh-emmett",
+    "name": "Josh Emmett",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "10–7",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "calvin-kattar",
+    "name": "Calvin Kattar",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "7–7",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "dan-ige",
+    "name": "Dan Ige",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "11–10",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "nathaniel-wood",
+    "name": "Nathaniel Wood",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "11–3",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "movsar-evloev",
+    "name": "Movsar Evloev",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "10–0",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "lerone-murphy",
+    "name": "Lerone Murphy",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "9–1–1",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "giga-chikadze",
+    "name": "Giga Chikadze",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "8–4",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "sean-woodson",
+    "name": "Sean Woodson",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "7–2–1",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "billy-quarantillo",
+    "name": "Billy Quarantillo",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "6–5",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "nate-landwehr",
+    "name": "Nate Landwehr",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "5–6",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "youssef-zalal",
+    "name": "Youssef Zalal",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "8–4–1",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "steve-garcia",
+    "name": "Steve Garcia",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "8–3",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "jamall-emmers",
+    "name": "Jamall Emmers",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "5–4",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "kai-kamaka-iii",
+    "name": "Kai Kamaka III",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "2–3–1",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "jordan-leavitt",
+    "name": "Jordan Leavitt",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "6–4",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "pat-sabatini",
+    "name": "Pat Sabatini",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "9–2",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "melsik-baghdasaryan",
+    "name": "Melsik Baghdasaryan",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "3–3",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "david-onama",
+    "name": "David Onama",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "6–3",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "joanderson-brito",
+    "name": "Joanderson Brito",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "7–3",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "daniel-santos",
+    "name": "Daniel Santos",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "4–2",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "melquizael-costa",
+    "name": "Melquizael Costa",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "7–3",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "fernando-padilla",
+    "name": "Fernando Padilla",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "2–2",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "diego-lopes",
+    "name": "Diego Lopes",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "7–3",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "muhammad-naimov",
+    "name": "Muhammad Naimov",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "5–2",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "jean-silva",
+    "name": "Jean Silva",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "6–1",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "hyder-amil",
+    "name": "Hyder Amil",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "3–3",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "vinicius-oliveira",
+    "name": "Vinicius Oliveira",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "5–1",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "kevin-vallejos",
+    "name": "Kevin Vallejos",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "4–0",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "patricio-pitbull",
+    "name": "Patrício Pitbull",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "1–2",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "aaron-pico",
+    "name": "Aaron Pico",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "1–1",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "robert-rucha-a",
+    "name": "Robert Ruchała",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "0–2",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "losene-keita",
+    "name": "Losene Keita",
+    "sport": "mma",
+    "division": "Featherweight",
+    "era": "Active",
+    "record": "0–1",
+    "blurb": "Active UFC featherweight."
+  },
+  {
+    "slug": "davey-grant",
+    "name": "Davey Grant",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "9–7",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "cody-gibson",
+    "name": "Cody Gibson",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "3–7",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "rob-font",
+    "name": "Rob Font",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "12–9",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "marlon-vera",
+    "name": "Marlon Vera",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "15–11",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "cody-garbrandt",
+    "name": "Cody Garbrandt",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "10–8",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "aiemann-zahabi",
+    "name": "Aiemann Zahabi",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "8–3",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "deiveson-figueiredo",
+    "name": "Deiveson Figueiredo",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "14–7–1",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "song-yadong",
+    "name": "Song Yadong",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "12–4–1",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "cory-sandhagen",
+    "name": "Cory Sandhagen",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "11–6",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "ricky-simon",
+    "name": "Ricky Simón",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "10–6–1",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "bryce-mitchell",
+    "name": "Bryce Mitchell",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "10–3",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "raoni-barcelos",
+    "name": "Raoni Barcelos",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "11–4",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "petr-yan",
+    "name": "Petr Yan",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "12–4",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "said-nurmagomedov",
+    "name": "Said Nurmagomedov",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "7–4",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "montel-jackson",
+    "name": "Montel Jackson",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "9–4",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "chris-gutierrez",
+    "name": "Chris Gutiérrez",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "10–4–1",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "jonathan-martinez",
+    "name": "Jonathan Martinez",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "10–5",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "mario-bautista",
+    "name": "Mario Bautista",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "12–3",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "charles-jourdain",
+    "name": "Charles Jourdain",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "9–7–1",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "alateng-heili",
+    "name": "Alateng Heili",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "5–3–1",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "miles-johns",
+    "name": "Miles Johns",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "6–5",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "kyler-phillips",
+    "name": "Kyler Phillips",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "6–4",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "john-castaneda",
+    "name": "John Castañeda",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "4–4–1",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "adrian-yanez",
+    "name": "Adrian Yañez",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "7–3–1",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "umar-nurmagomedov",
+    "name": "Umar Nurmagomedov",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "8–1",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "aori-qileng",
+    "name": "Aori Qileng",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "4–5",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "victor-henry",
+    "name": "Victor Henry",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "4–2",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "cristian-quinonez",
+    "name": "Cristian Quiñónez",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "2–2",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "cameron-saaiman",
+    "name": "Cameron Saaiman",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "3–3",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "raul-rosas-jr",
+    "name": "Raul Rosas Jr.",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "6–1",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "rinya-nakamura",
+    "name": "Rinya Nakamura",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "4–1",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "farid-basharat",
+    "name": "Farid Basharat",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "7–0",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "marcus-mcghee",
+    "name": "Marcus McGhee",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "5–1",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "payton-talbott",
+    "name": "Payton Talbott",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "5–1",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "bekzat-almakhan",
+    "name": "Bekzat Almakhan",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "1–3",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "ufc-fight-night-268",
+    "name": "UFC Fight Night 268",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "0–2",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "felipe-lima",
+    "name": "Felipe Lima",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "2–1",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "kai-asakura",
+    "name": "Kai Asakura",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "1–2",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "aleksandre-topuria",
+    "name": "Aleksandre Topuria",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "2–0",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "david-martinez",
+    "name": "David Martínez",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "3–0",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "santiago-luna",
+    "name": "Santiago Luna",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "2–1",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "jakub-wik-acz",
+    "name": "Jakub Wikłacz",
+    "sport": "mma",
+    "division": "Bantamweight",
+    "era": "Active",
+    "record": "2–0",
+    "blurb": "Active UFC bantamweight."
+  },
+  {
+    "slug": "tim-elliott",
+    "name": "Tim Elliott",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "10–12",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "kyoji-horiguchi",
+    "name": "Kyoji Horiguchi",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "9–2",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "brandon-moreno",
+    "name": "Brandon Moreno",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "12–7–2",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "joseph-morales",
+    "name": "Joseph Morales",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "3–2",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "alex-perez",
+    "name": "Alex Perez",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "8–6",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "su-mudaerji",
+    "name": "Su Mudaerji",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "6–4",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "kai-kara-france",
+    "name": "Kai Kara-France",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "8–5",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "bruno-gustavo-da-silva",
+    "name": "Bruno Gustavo da Silva",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "5–6",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "ode-osbourne",
+    "name": "Ode' Osbourne",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "5–7",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "brandon-royval",
+    "name": "Brandon Royval",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "8–5",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "amir-albazi",
+    "name": "Amir Albazi",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "5–2",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "cody-durden",
+    "name": "Cody Durden",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "7–9–1",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "tagir-ulanbekov",
+    "name": "Tagir Ulanbekov",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "6–2",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "manel-kape",
+    "name": "Manel Kape",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "8–3",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "tatsuro-taira",
+    "name": "Tatsuro Taira",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "8–2",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "charles-johnson",
+    "name": "Charles Johnson",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "8–7",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "park-hyun-sung",
+    "name": "Park Hyun-sung",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "3–2",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "steve-erceg",
+    "name": "Steve Erceg",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "5–3",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "joshua-van",
+    "name": "Joshua Van",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "10–1",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "edgar-chairez",
+    "name": "Édgar Cháirez",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "4–2",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "asu-almabayev",
+    "name": "Asu Almabayev",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "7–1",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "ronaldo-rodriguez",
+    "name": "Ronaldo Rodríguez",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "2–1",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "andre-lima",
+    "name": "André Lima",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "4–1",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "lone-er-kavanagh",
+    "name": "Lone'er Kavanagh",
+    "sport": "mma",
+    "division": "Flyweight",
+    "era": "Active",
+    "record": "3–2",
+    "blurb": "Active UFC flyweight."
+  },
+  {
+    "slug": "miesha-tate",
+    "name": "Miesha Tate",
+    "sport": "mma",
+    "division": "Women's bantamweight",
+    "era": "Active",
+    "record": "7–7",
+    "blurb": "Active UFC women's bantamweight."
+  },
+  {
+    "slug": "julianna-pena",
+    "name": "Julianna Peña",
+    "sport": "mma",
+    "division": "Women's bantamweight",
+    "era": "Active",
+    "record": "8–4",
+    "blurb": "Active UFC women's bantamweight."
+  },
+  {
+    "slug": "raquel-pennington",
+    "name": "Raquel Pennington",
+    "sport": "mma",
+    "division": "Women's bantamweight",
+    "era": "Active",
+    "record": "13–8",
+    "blurb": "Active UFC women's bantamweight."
+  },
+  {
+    "slug": "priscila-cachoeira",
+    "name": "Priscila Cachoeira",
+    "sport": "mma",
+    "division": "Women's bantamweight",
+    "era": "Active",
+    "record": "5–9",
+    "blurb": "Active UFC women's bantamweight."
+  },
+  {
+    "slug": "yana-santos",
+    "name": "Yana Santos",
+    "sport": "mma",
+    "division": "Women's bantamweight",
+    "era": "Active",
+    "record": "7–5",
+    "blurb": "Active UFC women's bantamweight."
+  },
+  {
+    "slug": "macy-chiasson",
+    "name": "Macy Chiasson",
+    "sport": "mma",
+    "division": "Women's bantamweight",
+    "era": "Active",
+    "record": "8–6",
+    "blurb": "Active UFC women's bantamweight."
+  },
+  {
+    "slug": "karol-rosa",
+    "name": "Karol Rosa",
+    "sport": "mma",
+    "division": "Women's bantamweight",
+    "era": "Active",
+    "record": "8–5",
+    "blurb": "Active UFC women's bantamweight."
+  },
+  {
+    "slug": "norma-dumont",
+    "name": "Norma Dumont",
+    "sport": "mma",
+    "division": "Women's bantamweight",
+    "era": "Active",
+    "record": "9–3",
+    "blurb": "Active UFC women's bantamweight."
+  },
+  {
+    "slug": "joselyne-edwards",
+    "name": "Joselyne Edwards",
+    "sport": "mma",
+    "division": "Women's bantamweight",
+    "era": "Active",
+    "record": "9–4",
+    "blurb": "Active UFC women's bantamweight."
+  },
+  {
+    "slug": "josiane-nunes",
+    "name": "Josiane Nunes",
+    "sport": "mma",
+    "division": "Women's bantamweight",
+    "era": "Active",
+    "record": "3–3",
+    "blurb": "Active UFC women's bantamweight."
+  },
+  {
+    "slug": "ailin-perez",
+    "name": "Ailín Pérez",
+    "sport": "mma",
+    "division": "Women's bantamweight",
+    "era": "Active",
+    "record": "6–1",
+    "blurb": "Active UFC women's bantamweight."
+  },
+  {
+    "slug": "chelsea-chandler",
+    "name": "Chelsea Chandler",
+    "sport": "mma",
+    "division": "Women's bantamweight",
+    "era": "Active",
+    "record": "3–3",
+    "blurb": "Active UFC women's bantamweight."
+  },
+  {
+    "slug": "jacqueline-cavalcanti",
+    "name": "Jacqueline Cavalcanti",
+    "sport": "mma",
+    "division": "Women's bantamweight",
+    "era": "Active",
+    "record": "5–1",
+    "blurb": "Active UFC women's bantamweight."
+  },
+  {
+    "slug": "nora-cornolle",
+    "name": "Nora Cornolle",
+    "sport": "mma",
+    "division": "Women's bantamweight",
+    "era": "Active",
+    "record": "3–3",
+    "blurb": "Active UFC women's bantamweight."
+  },
+  {
+    "slug": "kayla-harrison",
+    "name": "Kayla Harrison",
+    "sport": "mma",
+    "division": "Women's bantamweight",
+    "era": "Active",
+    "record": "3–0",
+    "blurb": "Active UFC women's bantamweight."
+  },
+  {
+    "slug": "beatriz-mesquita",
+    "name": "Beatriz Mesquita",
+    "sport": "mma",
+    "division": "Women's bantamweight",
+    "era": "Active",
+    "record": "3–0",
+    "blurb": "Active UFC women's bantamweight."
+  },
+  {
+    "slug": "rose-namajunas",
+    "name": "Rose Namajunas",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "12–7",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "veronica-hardy",
+    "name": "Veronica Hardy",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "5–5",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "alexa-grasso",
+    "name": "Alexa Grasso",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "9–5–1",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "jj-aldrich",
+    "name": "JJ Aldrich",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "11–6",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "maycee-barber",
+    "name": "Maycee Barber",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "10–3",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "tracy-cortez",
+    "name": "Tracy Cortez",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "6–3",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "miranda-maverick",
+    "name": "Miranda Maverick",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "8–4",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "manon-fiorot",
+    "name": "Manon Fiorot",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "8–1",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "casey-o-neill",
+    "name": "Casey O'Neill",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "6–2",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "melissa-gatto",
+    "name": "Melissa Gatto",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "3–3",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "vanessa-demopoulos",
+    "name": "Vanessa Demopoulos",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "5–5",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "erin-blanchfield",
+    "name": "Erin Blanchfield",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "8–1",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "jasmine-jasudavicius",
+    "name": "Jasmine Jasudavicius",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "9–3",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "karine-silva",
+    "name": "Karine Silva",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "5–3",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "natalia-silva",
+    "name": "Natália Silva",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "8–0",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "ufc-fight-night-266",
+    "name": "UFC Fight Night 266",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "3–2",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "wang-cong",
+    "name": "Wang Cong",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "5–1",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "ufc-fight-night-288",
+    "name": "UFC Fight Night 288",
+    "sport": "mma",
+    "division": "Women's flyweight",
+    "era": "Active",
+    "record": "1–0",
+    "blurb": "Active UFC women's flyweight."
+  },
+  {
+    "slug": "jessica-andrade",
+    "name": "Jéssica Andrade",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "17–13",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "angela-hill",
+    "name": "Angela Hill",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "14–16",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "karolina-kowalkiewicz",
+    "name": "Karolina Kowalkiewicz",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "10–9",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "tatiana-suarez",
+    "name": "Tatiana Suarez",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "9–1",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "amanda-lemos",
+    "name": "Amanda Lemos",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "9–6",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "yan-xiaonan",
+    "name": "Yan Xiaonan",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "9–4",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "gillian-robertson",
+    "name": "Gillian Robertson",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "14–6",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "polyana-viana",
+    "name": "Polyana Viana",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "4–8",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "mackenzie-dern",
+    "name": "Mackenzie Dern",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "11–5",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "virna-jandiroba",
+    "name": "Virna Jandiroba",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "9–4",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "amanda-ribas",
+    "name": "Amanda Ribas",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "7–6",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "mizuki-inoue",
+    "name": "Mizuki Inoue",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "3–1",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "loma-lookboonmee",
+    "name": "Loma Lookboonmee",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "7–4",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "sam-hughes",
+    "name": "Sam Hughes",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "6–6",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "montserrat-ruiz",
+    "name": "Montserrat Ruiz",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "1–4",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "loopy-godinez",
+    "name": "Loopy Godinez",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "9–6",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "luana-pinheiro",
+    "name": "Luana Pinheiro",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "3–4",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "tabatha-ricci",
+    "name": "Tabatha Ricci",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "7–5",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "elise-reed",
+    "name": "Elise Reed",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "4–5",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "yazmin-jauregui",
+    "name": "Yazmin Jauregui",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "3–2",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "iasmin-lucindo",
+    "name": "Iasmin Lucindo",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "5–2",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "denise-gomes",
+    "name": "Denise Gomes",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "6–2",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "ketlen-souza",
+    "name": "Ketlen Souza",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "4–3",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "talita-alencar",
+    "name": "Talita Alencar",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "4–1",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "rayanne-dos-santos",
+    "name": "Rayanne dos Santos",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "0–3",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "puja-tomar",
+    "name": "Puja Tomar",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "1–2",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "fatima-kline",
+    "name": "Fatima Kline",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "4–1",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "road-to-ufc-season-5",
+    "name": "Road to UFC Season 5",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "2–1",
+    "blurb": "Active UFC women's strawweight."
+  },
+  {
+    "slug": "xiong-jingnan",
+    "name": "Xiong Jingnan",
+    "sport": "mma",
+    "division": "Women's strawweight",
+    "era": "Active",
+    "record": "0–1",
+    "blurb": "Active UFC women's strawweight."
+  }
+]

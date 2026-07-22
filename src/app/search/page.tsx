@@ -26,6 +26,7 @@ type Fighter = {
   division: string;
   era: string;
   champion?: boolean;
+  photo?: string | null;
 };
 
 export default function SearchPage() {
@@ -177,9 +178,14 @@ export default function SearchPage() {
                   href={`/fighter/${f.slug}`}
                   className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-emerald-400"
                 >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-800">
-                    {f.sport === "boxing" ? "🥊" : "🥋"}
-                  </div>
+                  {f.photo ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={f.photo} alt="" className="h-10 w-10 rounded-lg object-cover object-top" />
+                  ) : (
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-800">
+                      {f.sport === "boxing" ? "🥊" : "🥋"}
+                    </div>
+                  )}
                   <div>
                     <div className="font-medium">
                       {f.name}

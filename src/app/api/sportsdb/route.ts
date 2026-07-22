@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import teamsData from "@/lib/teams.json";
 import playersData from "@/lib/players.json";
-import { FIGHTERS } from "@/lib/fighters";
+import { ALL_FIGHTERS } from "@/lib/all-fighters";
 import { ALIASES } from "@/lib/fighter-extras";
+import fighterMedia from "@/lib/fighter-media.json";
 
 const BASE = `https://www.thesportsdb.com/api/v1/json/${process.env.SPORTSDB_KEY ?? "3"}`;
 
@@ -70,12 +71,15 @@ export async function GET(req: NextRequest) {
         const aliasHits = Object.entries(ALIASES)
         .filter(([alias]) => alias.includes(q) || q.includes(alias))
         .map(([, s]) => s);
-      const fighterMatches = FIGHTERS.filter(
+      const FM = fighterMedia as Record<string, { photo: string | null }>;
+      const fighterMatches = ALL_FIGHTERS.filter(
         (f) =>
           f.name.toLowerCase().includes(q) ||
           f.division.toLowerCase().includes(q) ||
           aliasHits.includes(f.slug)
-      ).slice(0, 15);
+      )
+        .slice(0, 15)
+        .map((f) => ({ ...f, photo: FM[f.slug]?.photo ?? null }));
       return NextResponse.json({ teams: matches, players: playerMatches, fighters: fighterMatches });
       
     }
