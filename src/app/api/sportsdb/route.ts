@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import teamsData from "@/lib/teams.json";
+import playersData from "@/lib/players.json";
 
 const BASE = `https://www.thesportsdb.com/api/v1/json/${process.env.SPORTSDB_KEY ?? "3"}`;
 
@@ -13,6 +14,18 @@ type SlimTeam = {
 };
 
 const TEAMS = teamsData as SlimTeam[];
+type SlimPlayer = {
+  idPlayer: string;
+  strPlayer: string;
+  idTeam: string;
+  strTeam: string;
+  strLeague: string | null;
+  strSport: string | null;
+  strPosition: string | null;
+  strThumb: string | null;
+};
+
+const PLAYERS = playersData as SlimPlayer[];
 
 
 export async function GET(req: NextRequest) {
@@ -40,7 +53,18 @@ export async function GET(req: NextRequest) {
         )
         .sort((a, b) => rank(b) - rank(a))
         .slice(0, 25);
-      return NextResponse.json({ teams: matches });
+        const prank = (p: SlimPlayer) => {
+        const name = p.strPlayer.toLowerCase();
+        if (name === q) return 3;
+        if (name.startsWith(q)) return 2;
+        if (name.split(/\s+/).some((w) => w.startsWith(q))) return 1;
+        return 0;
+      };
+      const playerMatches = PLAYERS.filter((p) => p.strPlayer.toLowerCase().includes(q))
+        .sort((a, b) => prank(b) - prank(a))
+        .slice(0, 25);
+      return NextResponse.json({ teams: matches, players: playerMatches });
+      
     }
 
     let url = "";
