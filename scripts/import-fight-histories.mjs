@@ -6,6 +6,7 @@ const WIKI_OVERRIDES = {
   "Ryan Garcia": "Ryan García",
   "David Benavídez": "David Benavidez",
   "Sean O'Malley": "Sean O'Malley (fighter)",
+  "Mauricio Shogun Rua": "Maurício Rua",
 };
 
 const src = readFileSync("src/lib/fighters.ts", "utf8");
@@ -24,21 +25,25 @@ let i = 0;
 for (const { slug, name } of pairs) {
   i++;
   if (hist[slug]?.length) { if (i % 50 === 0) console.log(`${i}/${pairs.length} …done through here`); continue; }
-  const title = WIKI_OVERRIDES[name] ?? name;
-  let html = null, note = "";
-  for (let a = 1; a <= 4 && html === null; a++) {
-    try {
-      const res = await fetch(
-        `https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=text&format=json&origin=*&redirects=1`,
-        { headers: { "User-Agent": "SPORTLOG/1.0 (student project)" } }
-      );
-      if (res.status === 429 || res.status === 503) { note = "rate limited"; await sleep(7000 * a); continue; }
-      const j = await res.json();
-      html = j?.parse?.text?.["*"] ?? null;
-      if (!html) { note = "no page"; break; }
-    } catch { note = "network"; await sleep(7000 * a); }
+const candidates = [WIKI_OVERRIDES[name] ?? name, `${name} (fighter)`, `${name} (boxer)`, `Boxing career of ${name}`];
+  let html = null;
+  for (const title of candidates) {
+    for (let a = 1; a <= 3 && html === null; a++) {
+      try {
+        const res = await fetch(
+          `https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=text&format=json&origin=*&redirects=1`,
+          { headers: { "User-Agent": "SPORTLOG/1.0 (student project)" } }
+        );
+        if (res.status === 429 || res.status === 503) { await sleep(7000 * a); continue; }
+        const j = await res.json();
+        html = j?.parse?.text?.["*"] ?? null;
+        if (!html) break;
+      } catch { await sleep(7000 * a); }
+    }
+    if (html && /<th[^>]*>\s*(Res\.|Result)/i.test(html)) break; // has a record table → keep
+    html = null; // wrong page → try next candidate
   }
-  if (!html) { console.log(`${i}/${pairs.length} ${name}: ✗ ${note}`); continue; }
+  if (!html) { console.log(`${i}/${pairs.length} ${name}: ✗ no fighter page/record found`); continue; }
 
   const tables = html.split(/<table/i).slice(1).map((t) => "<table" + t.split(/<\/table>/i)[0] + "</table>");
   let fights = [];

@@ -5,6 +5,12 @@ import { getGame } from "@/lib/data";
 import { supabase } from "@/lib/supabase";
 import BackLink from "@/components/BackLink";
 import { ALL_FIGHTERS } from "@/lib/all-fighters";
+import fightStats from "@/lib/fight-stats.json";
+
+type FStat = { kd: number; sig: string; sigPct: number; total: string; td: string; sub: number; ctrl: string; head: string; body: string; leg: string; dist: string; clinch: string; ground: string };
+type FightMeta = { event: string; weightclass: string; method: string; round: string; time: string; format: string; referee: string; details: string; fighters: { name: string; stats?: FStat }[] };
+const FSTATS = fightStats as Record<string, FightMeta>;
+
 
 type RatingRow = {
   id: string;
@@ -108,6 +114,62 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
             })}
           </div>
         )}
+        {(() => {
+          const fs = FSTATS[game.id];
+          if (!fs) return null;
+          const rows: [string, (s: FStat) => string | number][] = [
+            ["KD", (s) => s.kd], ["Sig. Strikes", (s) => s.sig], ["Sig. %", (s) => `${s.sigPct}%`],
+            ["Total Strikes", (s) => s.total], ["Takedowns", (s) => s.td], ["Sub. Attempts", (s) => s.sub], ["Control", (s) => s.ctrl],
+          ];
+          const brk: [string, (s: FStat) => string][] = [
+            ["Head", (s) => s.head], ["Body", (s) => s.body], ["Leg", (s) => s.leg],
+            ["Distance", (s) => s.dist], ["Clinch", (s) => s.clinch], ["Ground", (s) => s.ground],
+          ];
+          const [fa, fb] = fs.fighters;
+          return (
+            <div className="mt-8 space-y-4">
+              <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-5">
+                <div className="text-xs font-semibold uppercase tracking-widest text-amber-300">
+                  {fs.weightclass || "Bout details"}
+                </div>
+                <div className="mt-2 grid grid-cols-2 gap-x-6 gap-y-1 text-sm sm:grid-cols-3">
+                  <div><span className="text-zinc-500">Method:</span> {fs.method}</div>
+                  <div><span className="text-zinc-500">Round:</span> {fs.round}</div>
+                  <div><span className="text-zinc-500">Time:</span> {fs.time}</div>
+                  {fs.format && <div><span className="text-zinc-500">Format:</span> {fs.format}</div>}
+                  {fs.referee && <div><span className="text-zinc-500">Referee:</span> {fs.referee}</div>}
+                  {fs.details && <div className="col-span-2 sm:col-span-3"><span className="text-zinc-500">Details:</span> {fs.details}</div>}
+                </div>
+              </div>
+              {fa?.stats && fb?.stats && (
+                <div className="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900">
+                  <div className="grid grid-cols-3 border-b border-zinc-800 bg-zinc-950 px-4 py-2 text-center text-xs font-semibold uppercase tracking-widest text-zinc-500">
+                    <span className="truncate text-left text-emerald-400">{fa.name}</span><span>Totals</span><span className="truncate text-right text-emerald-400">{fb.name}</span>
+                  </div>
+                  {rows.map(([label, get]) => (
+                    <div key={label} className="grid grid-cols-3 px-4 py-1.5 text-center text-sm odd:bg-zinc-900 even:bg-zinc-950/50">
+                      <span className="text-left font-medium">{get(fa.stats!)}</span>
+                      <span className="text-xs uppercase tracking-wide text-zinc-500">{label}</span>
+                      <span className="text-right font-medium">{get(fb.stats!)}</span>
+                    </div>
+                  ))}
+                  <div className="grid grid-cols-3 border-t border-zinc-800 bg-zinc-950 px-4 py-2 text-center text-xs font-semibold uppercase tracking-widest text-zinc-500">
+                    <span /><span>Sig. Strike Breakdown</span><span />
+                  </div>
+                  {brk.map(([label, get]) => (
+                    <div key={label} className="grid grid-cols-3 px-4 py-1.5 text-center text-sm odd:bg-zinc-900 even:bg-zinc-950/50">
+                      <span className="text-left">{get(fa.stats!)}</span>
+                      <span className="text-xs uppercase tracking-wide text-zinc-500">{label}</span>
+                      <span className="text-right">{get(fb.stats!)}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+              <p className="text-xs text-zinc-600">Fight data via ufcstats.com (open community dataset).</p>
+            </div>
+          );
+        })()}
+        
         <p className="mt-1 text-sm text-zinc-500">
           {game.league} · {game.date} {game.score ? `· ${game.score}` : ""}
         </p>

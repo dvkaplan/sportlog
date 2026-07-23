@@ -38,6 +38,7 @@ for (const t of tokens) {
     .filter((x) => !/^(edit|citation|\[)/i.test(x));
   if (anchors.length === 0) continue;
   const name = anchors[0].replace(/ \(.*\)$/, "");
+  if (/^(UFC|Road to UFC|The Ultimate Fighter|Dana White|Contender Series)/i.test(name)) continue;
 
   const text = t.replace(/<[^>]+>/g, " ");
   const recM = text.match(/\b(\d{1,3})[–-](\d{1,3})(?:[–-](\d{1,3}))?(?:\s*\(\d+\s*NC\))?/);

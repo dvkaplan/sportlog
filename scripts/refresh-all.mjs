@@ -1,0 +1,9 @@
+import { execSync } from "child_process";
+const run = (cmd) => { console.log(`\n▶ ${cmd}`); execSync(cmd, { stdio: "inherit" }); };
+run("node scripts/import-ufc-roster.mjs");
+run("node scripts/enrich-bios.mjs");
+run("SPORTSDB_KEY=2611784188 node scripts/enrich-photos-tsdb.mjs");
+run("node scripts/import-fight-histories.mjs");
+run("node scripts/build-fight-games.mjs");
+run("node scripts/import-fight-stats.mjs");
+console.log("\n✅ Refresh complete. Restart dev server / commit+sync to ship.");

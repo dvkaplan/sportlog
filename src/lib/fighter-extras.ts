@@ -99,7 +99,7 @@ export const TITLES: Record<string, string> = {
   "merab-dvalishvili": "UFC Bantamweight Champion",
   "robert-whittaker": "UFC Middleweight Champion (2017–2019)",
   "jiri-prochazka": "UFC Light Heavyweight Champion (2022)",
-  "sean-strickland": "UFC Middleweight Champion (2023–2024)",
+  "sean-strickland": "2× UFC Middleweight Champion (2023–24, 2026–present)",
   "dricus-du-plessis": "UFC Middleweight Champion",
   "alexandre-pantoja": "UFC Flyweight Champion",
   "belal-muhammad": "UFC Welterweight Champion (2024–2025)",
@@ -112,30 +112,41 @@ export const TITLES: Record<string, string> = {
   "petr-yan": "2× UFC Bantamweight Champion",
   "joshua-van": "UFC Flyweight Champion",
   "kayla-harrison": "UFC Women's Bantamweight Champion · 2× Olympic gold",
-  "mackenzie-dern": "UFC Women's Strawweight Champion",
+  "mackenzie-dern": "UFC Women's Strawweight Champion (2025–26)",
   "jack-della-maddalena": "UFC Welterweight Champion (2025)",
-  "khamzat-chimaev": "UFC Middleweight Champion"
+  "khamzat-chimaev": "UFC Middleweight Champion (2025–2026)",
+  "carlos-ulberg": "UFC Light Heavyweight Champion",
+  "jamahal-hill": "UFC Light Heavyweight Champion (2023)",
+  "glover-teixeira": "UFC Light Heavyweight Champion (2021–2022)",
+  "francis-ngannou": "UFC Heavyweight Champion (2021–2023)",
+  "brock-lesnar": "UFC Heavyweight Champion (2008–2010)",
+  "alistair-overeem": "Strikeforce, DREAM & K-1 GP Champion",
+  "andrei-arlovski": "UFC Heavyweight Champion (2005–2006)",
+  "frank-mir": "2× UFC Heavyweight Champion",
+  "tim-sylvia": "2× UFC Heavyweight Champion",
+  "mark-hunt": "K-1 World Grand Prix Champion (2001)",
+  "ryan-bader": "Bellator Heavyweight & Light Heavyweight Champion",
+  "eddie-alvarez": "UFC & Bellator Lightweight Champion",
+  "tony-ferguson": "UFC Interim Lightweight Champion · 12-fight win streak",
+  "anthony-pettis": "UFC & WEC Lightweight Champion",
 };
 
 // Who currently holds a belt (early 2026 snapshot — EDIT as belts change)
 export const REIGNING = new Set<string>([
   // Boxing
-  "oleksandr-usyk",
-  "terence-crawford",
-  "naoya-inoue",
-  "david-benavidez",
+  "oleksandr-usyk", "terence-crawford", "naoya-inoue", "david-benavidez",
   // UFC — July 2026
-  "tom-aspinall",
-  "alex-pereira",
-  "khamzat-chimaev",
-  "islam-makhachev",
-  "justin-gaethje",
-  "alexander-volkanovski",
-  "petr-yan",
-  "joshua-van",
-  "kayla-harrison",
-  "valentina-shevchenko",
-  "mackenzie-dern",
+  "tom-aspinall",        // HW
+  "carlos-ulberg",       // LHW
+  "sean-strickland",     // MW
+  "islam-makhachev",     // WW
+  "justin-gaethje",      // LW
+  "alexander-volkanovski", // FW
+  "petr-yan",            // BW
+  "joshua-van",          // FLW
+  "kayla-harrison",      // W-BW
+  "valentina-shevchenko",// W-FLW
+  // W-SW vacant
 ]);
 
 // Records for actives missing one (editorial, may lag reality)
