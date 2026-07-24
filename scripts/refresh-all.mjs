@@ -7,3 +7,4 @@ run("node scripts/import-fight-histories.mjs");
 run("node scripts/build-fight-games.mjs");
 run("node scripts/import-fight-stats.mjs");
 console.log("\n✅ Refresh complete. Restart dev server / commit+sync to ship.");
+run("node scripts/build-events.mjs");
