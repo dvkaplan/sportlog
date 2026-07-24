@@ -101,6 +101,7 @@ export default function FighterPage({ params }: { params: Promise<{ slug: string
             <p className="mt-1 text-sm text-zinc-400">
               {fighter.division}
               {record ? ` · ${record}` : ""}
+              {REC[fighter.slug] && REC[fighter.slug] !== record ? ` · UFC: ${REC[fighter.slug]}` : ""}
               {reigning ? " · 🏆 Reigning Champion" : ""}
             </p>
             {titles && <p className="mt-2 text-sm font-medium text-amber-300">{titles}</p>}

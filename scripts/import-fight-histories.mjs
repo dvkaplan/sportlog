@@ -24,9 +24,9 @@ const clean = (s) => s.replace(/<[^>]+>/g, " ").replace(/\[\d+\]/g, "").replace(
 let i = 0;
 for (const { slug, name } of pairs) {
   i++;
-  const FORCE = new Set(["don-frye", "jared-cannonier", "kelvin-gastelum", "vicente-luque"]);
+  const FORCE = new Set(["don-frye", "jared-cannonier", "kelvin-gastelum", "vicente-luque","manny-pacquiao", "santiago-luna"]);
   if (!FORCE.has(slug) && hist[slug]?.length) { if (i % 50 === 0) console.log(`${i}/${pairs.length} …done through here`); continue; }
-const candidates = [WIKI_OVERRIDES[name] ?? name, `${name} (fighter)`, `${name} (boxer)`, `Boxing career of ${name}`];
+const candidates = [WIKI_OVERRIDES[name] ?? name, `${name} (fighter)`, `${name} (boxer)`, `Boxing career of ${name}`, `Professional boxing record of ${name}`,];
   let html = null;
   for (const title of candidates) {
     for (let a = 1; a <= 3 && html === null; a++) {
@@ -49,15 +49,20 @@ const candidates = [WIKI_OVERRIDES[name] ?? name, `${name} (fighter)`, `${name} 
   const tables = html.split(/<table/i).slice(1).map((t) => "<table" + t.split(/<\/table>/i)[0] + "</table>");
 let fights = [];
   for (const table of tables) {
-    const headRow = (table.match(/<tr[\s\S]*?<\/tr>/i) ?? [""])[0];
-    const headers = [...headRow.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/gi)].map((m) => clean(m[1]).toLowerCase());
+   const firstRows = [...table.matchAll(/<tr[\s\S]*?<\/tr>/gi)].slice(0, 3).map((m) => m[0]);
+    let headers = [];
+    let headerIdx = 0;
+    for (let hr = 0; hr < firstRows.length; hr++) {
+      const hs = [...firstRows[hr].matchAll(/<th[^>]*>([\s\S]*?)<\/th>/gi)].map((m) => clean(m[1]).toLowerCase());
+      if (hs.some((h) => h.includes("opponent"))) { headers = hs; headerIdx = hr; break; }
+    }
     if (!headers.some((h) => h.includes("opponent")) || !headers.some((h) => h.startsWith("res"))) continue;
     const idx = (frag) => headers.findIndex((h) => h.includes(frag));
     const iRes = idx("res"), iRec = idx("record"), iOpp = idx("opponent"),
       iMeth = idx("method") !== -1 ? idx("method") : idx("type"),
       iEvt = idx("event"), iDate = idx("date");
     const cur = [];
-    const rows = [...table.matchAll(/<tr[\s\S]*?<\/tr>/gi)].slice(1);
+    const rows = [...table.matchAll(/<tr[\s\S]*?<\/tr>/gi)].slice(headerIdx + 1);
     for (const r of rows) {
       const cells = [...r[0].matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/gi)].map((m) => clean(m[1]));
       if (cells.length < 3) continue;
