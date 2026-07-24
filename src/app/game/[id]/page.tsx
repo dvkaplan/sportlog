@@ -6,6 +6,7 @@ import { supabase } from "@/lib/supabase";
 import BackLink from "@/components/BackLink";
 import { ALL_FIGHTERS } from "@/lib/all-fighters";
 import fightStats from "@/lib/fight-stats.json";
+import { OPPONENT_ALIASES } from "@/lib/fighter-extras";
 
 type FStat = { kd: number; sig: string; sigPct: number; total: string; td: string; sub: number; ctrl: string; head: string; body: string; leg: string; dist: string; clinch: string; ground: string };
 type FightMeta = { event: string; weightclass: string; method: string; round: string; time: string; format: string; referee: string; details: string; fighters: { name: string; stats?: FStat }[] };
@@ -103,7 +104,10 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
         {game.id.startsWith("fight-") && (
           <div className="mt-2 flex flex-wrap gap-2 text-sm">
             {game.title.split(" vs ").map((n) => {
-              const f = ALL_FIGHTERS.find((x) => x.name.toLowerCase() === n.trim().toLowerCase());
+             const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+              const key = norm(n);
+              const slug = OPPONENT_ALIASES[key] ?? ALL_FIGHTERS.find((x) => norm(x.name) === key)?.slug;
+              const f = slug ? { slug } : null;
               return f ? (
                 <Link key={n} href={`/fighter/${f.slug}`} className="rounded-full border border-zinc-700 px-3 py-1 text-emerald-400 transition hover:border-emerald-400">
                   {n.trim()}
@@ -115,6 +119,19 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
           </div>
         )}
         {(() => {
+            {game.id.startsWith("fight-") && !FSTATS[game.id] && (
+          <div className="mt-8 rounded-xl border border-zinc-800 bg-zinc-900 p-5">
+            <div className="text-xs font-semibold uppercase tracking-widest text-amber-300">Bout details</div>
+            <div className="mt-2 grid grid-cols-1 gap-1 text-sm sm:grid-cols-3">
+              <div><span className="text-zinc-500">Result:</span> {game.score || "—"}</div>
+              <div><span className="text-zinc-500">Event:</span> {game.blurb || "—"}</div>
+              <div><span className="text-zinc-500">Date:</span> {game.date || "—"}</div>
+            </div>
+            <p className="mt-3 text-xs text-zinc-600">
+              Round-by-round strike statistics were never recorded for this bout (pre-analytics era or non-UFC promotion).
+            </p>
+          </div>
+        )}
           const fs = FSTATS[game.id];
           if (!fs) return null;
           const rows: [string, (s: FStat) => string | number][] = [

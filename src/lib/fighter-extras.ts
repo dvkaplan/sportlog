@@ -129,6 +129,10 @@ export const TITLES: Record<string, string> = {
   "eddie-alvarez": "UFC & Bellator Lightweight Champion",
   "tony-ferguson": "UFC Interim Lightweight Champion · 12-fight win streak",
   "anthony-pettis": "UFC & WEC Lightweight Champion",
+  "luke-rockhold": "UFC & Strikeforce Middleweight Champion",
+  "forrest-griffin": "UFC Light Heavyweight Champion · TUF 1 winner",
+  "benson-henderson": "UFC & WEC Lightweight Champion",
+  "dan-severn": "UFC Superfight Champion · Hall of Famer",
 };
 
 // Who currently holds a belt (early 2026 snapshot — EDIT as belts change)
@@ -188,4 +192,17 @@ export const ALIASES: Record<string, string> = {
   "poatan": "alex-pereira",
   "suga": "sean-omalley",
   "tank davis": "gervonta-davis",
+};
+export const OPPONENT_ALIASES: Record<string, string> = {
+  "quinton jackson": "quinton-rampage-jackson",
+  "rampage jackson": "quinton-rampage-jackson",
+  "mauricio rua": "shogun-rua",
+  "maurício rua": "shogun-rua",
+  "shogun rua": "shogun-rua",
+  "antonio rodrigo nogueira": "antonio-rodrigo-nogueira",
+  "minotauro nogueira": "antonio-rodrigo-nogueira",
+  "antonio rogerio nogueira": "antonio-rogerio-nogueira",
+  "mirko filipovic": "mirko-cro-cop",
+  "mirko filipović": "mirko-cro-cop",
+  "b.j. penn": "bj-penn",
 };

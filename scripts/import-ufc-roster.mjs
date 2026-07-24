@@ -12,9 +12,12 @@ const html = (await res.json())?.parse?.text?.["*"] ?? "";
 if (!html) { console.log("Failed to fetch page"); process.exit(1); }
 
 const src = readFileSync("src/lib/fighters.ts", "utf8");
-const curated = new Map(
-  [...src.matchAll(/slug:\s*"([^"]+)",\s*name:\s*"([^"]+)"/g)].map((m) => [m[2].toLowerCase(), m[1]])
-);
+const curatedPairs = [...src.matchAll(/slug:\s*"([^"]+)",\s*name:\s*"([^"]+)"/g)].map((m) => ({ slug: m[1], name: m[2] }));
+const curatedByKey = new Map();
+for (const c of curatedPairs) {
+  curatedByKey.set(slugify(c.name), c.slug);
+  curatedByKey.set(c.slug, c.slug);
+}
 
 const roster = [];
 const records = {}; // slug -> record, INCLUDING curated fighters
@@ -47,7 +50,7 @@ for (const t of tokens) {
     ? `${recM[1]}–${recM[2]}–${recM[3]}`
     : `${recM[1]}–${recM[2]}`;
 
-  const curSlug = curated.get(name.toLowerCase());
+ const curSlug = curatedByKey.get(slugify(name));
   if (curSlug) { records[curSlug] = record; continue; } // record for curated, no duplicate entry
 
   const slug = slugify(name);

@@ -11,6 +11,7 @@ import FollowButton from "@/components/FollowButton";
 import BackLink from "@/components/BackLink";
 import { useRouter } from "next/navigation";
 import { ALL_FIGHTERS } from "@/lib/all-fighters";
+import { OPPONENT_ALIASES } from "@/lib/fighter-extras";
 
 type Media = Record<string, { idPlayer: string | null; photo: string | null; bio: string | null }>;
 type Fight = { result: string; record: string; opponent: string; method: string; event: string; date: string };
@@ -20,9 +21,11 @@ const HIST = histories as Record<string, Fight[]>;
 const slugifyName = (n: string) =>
   n.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const dateSlug = (d: string) => slugifyName(d).slice(0, 24) || "nd";
+const norm = (n: string) => n.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
 const NAME_TO_SLUG: Record<string, string> = Object.fromEntries(
-  ALL_FIGHTERS.map((f) => [f.name.toLowerCase(), f.slug])
+  ALL_FIGHTERS.map((f) => [norm(f.name), f.slug])
 );
+Object.assign(NAME_TO_SLUG, OPPONENT_ALIASES);
 
 export default function FighterPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
@@ -60,10 +63,14 @@ export default function FighterPage({ params }: { params: Promise<{ slug: string
 
   const m = MEDIA[fighter.slug] ?? { photo: null, bio: null, idPlayer: null };
   const titles = TITLES[fighter.slug];
-  const record = REC[fighter.slug] ?? fighter.record;
+
   const reigning = REIGNING.has(fighter.slug);
   const bio = m.bio ?? "";
   const fights = HIST[fighter.slug] ?? [];
+  const w = fights.filter((f) => f.result === "W").length;
+  const l = fights.filter((f) => f.result === "L").length;
+  const d = fights.filter((f) => f.result === "D").length;
+  const record = fights.length >= 5 ? `${w}–${l}${d ? `–${d}` : ""}` : REC[fighter.slug] ?? fighter.record;
   const shownFights = showAllFights ? fights : fights.slice(0, 10);
   const lastName = fighter.name.split(" ").slice(-1)[0].toLowerCase();
   const iconicFights = GAMES.filter(
@@ -135,9 +142,9 @@ export default function FighterPage({ params }: { params: Promise<{ slug: string
                 >
                   <span className={`w-8 shrink-0 text-center font-bold ${f.result === "W" ? "text-emerald-400" : f.result === "L" ? "text-red-400" : "text-zinc-400"}`}>{f.result}</span>
                   <span className="w-14 shrink-0 text-xs text-zinc-500">{f.record}</span>
-                  {NAME_TO_SLUG[f.opponent.toLowerCase()] ? (
+                  {NAME_TO_SLUG[norm(f.opponent)] ? (
                     <Link
-                      href={`/fighter/${NAME_TO_SLUG[f.opponent.toLowerCase()]}`}
+                      href={`/fighter/${NAME_TO_SLUG[norm(f.opponent)]}`}
                       onClick={(e) => e.stopPropagation()}
                       className="min-w-0 flex-1 truncate font-medium text-zinc-100 underline-offset-4 hover:text-emerald-400 hover:underline"
                     >

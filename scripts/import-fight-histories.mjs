@@ -24,7 +24,8 @@ const clean = (s) => s.replace(/<[^>]+>/g, " ").replace(/\[\d+\]/g, "").replace(
 let i = 0;
 for (const { slug, name } of pairs) {
   i++;
-  if (hist[slug]?.length) { if (i % 50 === 0) console.log(`${i}/${pairs.length} …done through here`); continue; }
+  const FORCE = new Set(["don-frye", "jared-cannonier", "kelvin-gastelum", "vicente-luque"]);
+  if (!FORCE.has(slug) && hist[slug]?.length) { if (i % 50 === 0) console.log(`${i}/${pairs.length} …done through here`); continue; }
 const candidates = [WIKI_OVERRIDES[name] ?? name, `${name} (fighter)`, `${name} (boxer)`, `Boxing career of ${name}`];
   let html = null;
   for (const title of candidates) {
@@ -46,7 +47,7 @@ const candidates = [WIKI_OVERRIDES[name] ?? name, `${name} (fighter)`, `${name} 
   if (!html) { console.log(`${i}/${pairs.length} ${name}: ✗ no fighter page/record found`); continue; }
 
   const tables = html.split(/<table/i).slice(1).map((t) => "<table" + t.split(/<\/table>/i)[0] + "</table>");
-  let fights = [];
+let fights = [];
   for (const table of tables) {
     const headRow = (table.match(/<tr[\s\S]*?<\/tr>/i) ?? [""])[0];
     const headers = [...headRow.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/gi)].map((m) => clean(m[1]).toLowerCase());
@@ -55,13 +56,14 @@ const candidates = [WIKI_OVERRIDES[name] ?? name, `${name} (fighter)`, `${name} 
     const iRes = idx("res"), iRec = idx("record"), iOpp = idx("opponent"),
       iMeth = idx("method") !== -1 ? idx("method") : idx("type"),
       iEvt = idx("event"), iDate = idx("date");
+    const cur = [];
     const rows = [...table.matchAll(/<tr[\s\S]*?<\/tr>/gi)].slice(1);
     for (const r of rows) {
       const cells = [...r[0].matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/gi)].map((m) => clean(m[1]));
       if (cells.length < 3) continue;
       const result = (cells[iRes] ?? "").toLowerCase();
       if (!/^(win|loss|draw|nc|no contest)/.test(result)) continue;
-      fights.push({
+      cur.push({
         result: result.startsWith("win") ? "W" : result.startsWith("loss") ? "L" : result.startsWith("draw") ? "D" : "NC",
         record: cells[iRec] ?? "",
         opponent: cells[iOpp] ?? "",
@@ -70,7 +72,7 @@ const candidates = [WIKI_OVERRIDES[name] ?? name, `${name} (fighter)`, `${name} 
         date: iDate >= 0 ? cells[iDate] ?? "" : "",
       });
     }
-    if (fights.length > 0) break; // first matching record table wins
+    if (cur.length > fights.length) fights = cur; // keep the LONGEST record table
   }
   if (fights.length > 0) {
     hist[slug] = fights;

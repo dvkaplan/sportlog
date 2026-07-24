@@ -31,7 +31,7 @@ export default function LeaguesPage() {
             <div key={name} className="rounded-xl border border-zinc-800 bg-zinc-900">
               <div className="flex items-center justify-between p-4">
                 <button onClick={() => setOpen(open === name ? null : name)} className="flex-1 text-left">
-                  <span className="font-semibold">{name === "UFC" ? "🥋 UFC" : "🥊 Boxing"}</span>
+                  <span className="font-semibold">{name === "UFC" ? "UFC" : "Boxing"}</span>
                   <span className="ml-2 text-xs text-zinc-500">{fs.length} fighters · {open === name ? "▲" : "▼"}</span>
                 </button>
                 <FollowButton entityType="league" entityId={name} entityName={name} />

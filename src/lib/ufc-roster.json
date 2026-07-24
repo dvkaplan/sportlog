@@ -288,15 +288,6 @@
     "blurb": "Active UFC light heavyweight."
   },
   {
-    "slug": "dominick-reyes",
-    "name": "Dominick Reyes",
-    "sport": "mma",
-    "division": "Light heavyweight",
-    "era": "Active",
-    "record": "10–5",
-    "blurb": "Active UFC light heavyweight."
-  },
-  {
     "slug": "aleksandar-rakic",
     "name": "Aleksandar Rakić",
     "sport": "mma",
@@ -348,15 +339,6 @@
     "division": "Light heavyweight",
     "era": "Active",
     "record": "7–3",
-    "blurb": "Active UFC light heavyweight."
-  },
-  {
-    "slug": "jiri-prochazka",
-    "name": "Jiří Procházka",
-    "sport": "mma",
-    "division": "Light heavyweight",
-    "era": "Active",
-    "record": "6–3",
     "blurb": "Active UFC light heavyweight."
   },
   {
@@ -960,6 +942,15 @@
     "division": "Welterweight",
     "era": "Active",
     "record": "8–3",
+    "blurb": "Active UFC welterweight."
+  },
+  {
+    "slug": "wellington-turman",
+    "name": "Wellington Turman",
+    "sport": "mma",
+    "division": "Welterweight",
+    "era": "Active",
+    "record": "3–6",
     "blurb": "Active UFC welterweight."
   },
   {
@@ -1617,6 +1608,24 @@
     "division": "Lightweight",
     "era": "Active",
     "record": "0–1",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "magomed-zaynukov",
+    "name": "Magomed Zaynukov",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "0–0",
+    "blurb": "Active UFC lightweight."
+  },
+  {
+    "slug": "damian-rzepecki",
+    "name": "Damian Rzepecki",
+    "sport": "mma",
+    "division": "Lightweight",
+    "era": "Active",
+    "record": "0–0",
     "blurb": "Active UFC lightweight."
   },
   {
