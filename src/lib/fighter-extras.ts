@@ -78,7 +78,7 @@ export const TITLES: Record<string, string> = {
   "ilia-topuria": "UFC Featherweight & Lightweight Champion",
   "tom-aspinall": "UFC Heavyweight Champion",
   "michael-bisping": "UFC Middleweight Champion (2016–2017)",
-  "chael-sonnen": "3× UFC title challenger - Undefeated, Undisputed, The Bad Guy",
+  "chael-sonnen": "Undefeated, Undisputed, The Bad Guy",
   "kazushi-sakuraba": "UFC Japan Heavyweight Tournament winner · PRIDE legend",
   "shogun-rua": "PRIDE 2005 Grand Prix Champion · UFC Light Heavyweight Champion",
   "quinton-rampage-jackson": "UFC Light Heavyweight Champion (2007)",
@@ -133,6 +133,15 @@ export const TITLES: Record<string, string> = {
   "forrest-griffin": "UFC Light Heavyweight Champion · TUF 1 winner",
   "benson-henderson": "UFC & WEC Lightweight Champion",
   "dan-severn": "UFC Superfight Champion · Hall of Famer",
+  "robbie-lawler": "UFC Welterweight Champion (2014–2016)",
+  "tyron-woodley": "UFC Welterweight Champion (2016–2019)",
+  "johny-hendricks": "UFC Welterweight Champion (2014)",
+  "rich-franklin": "UFC Middleweight Champion (2005–2006)",
+  "matt-serra": "UFC Welterweight Champion (2007)",
+  "carlos-condit": "WEC Welterweight & Interim UFC Champion",
+  "jorge-masvidal": "First BMF Champion",
+  "chris-weidman": "UFC Middleweight Champion (2013–2015)",
+  "ben-askren": "Bellator & ONE Welterweight Champion, retired undefeated in title runs",
 };
 
 // Who currently holds a belt (early 2026 snapshot — EDIT as belts change)

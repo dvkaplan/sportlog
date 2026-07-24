@@ -4,6 +4,8 @@ import playersData from "@/lib/players.json";
 import { ALL_FIGHTERS } from "@/lib/all-fighters";
 import { ALIASES } from "@/lib/fighter-extras";
 import fighterMedia from "@/lib/fighter-media.json";
+import eventsData from "@/lib/events.json";
+import fightGamesData from "@/lib/fight-games.json";
 
 const BASE = `https://www.thesportsdb.com/api/v1/json/${process.env.SPORTSDB_KEY ?? "3"}`;
 
@@ -29,6 +31,14 @@ type SlimPlayer = {
 };
 
 const PLAYERS = playersData as SlimPlayer[];
+type SlimEvent = { slug: string; name: string; date: string; fights: { gameId: string }[] };
+type SlimFight = { id: string; title: string; date: string; score: string; blurb: string; sportSlug: string };
+const EVENTS_IDX = (eventsData as SlimEvent[]).map((e) => ({
+  slug: e.slug, name: e.name, date: e.date, count: e.fights.length,
+}));
+const FIGHTS_IDX = (fightGamesData as SlimFight[]).map((f) => ({
+  id: f.id, title: f.title, date: f.date, score: f.score, event: f.blurb, sportSlug: f.sportSlug,
+}));
 
 
 export async function GET(req: NextRequest) {
@@ -80,7 +90,24 @@ export async function GET(req: NextRequest) {
       )
         .slice(0, 15)
         .map((f) => ({ ...f, photo: FM[f.slug]?.photo ?? null }));
-      return NextResponse.json({ teams: matches, players: playerMatches, fighters: fighterMatches });
+        let eventMatches: typeof EVENTS_IDX = [];
+      let fightMatches: typeof FIGHTS_IDX = [];
+      if (q.length >= 3) {
+        const words = q.split(/\s+/).filter(Boolean);
+        eventMatches = EVENTS_IDX.filter((e) => {
+          const n = e.name.toLowerCase();
+          return words.every((w) => n.includes(w));
+        })
+          .sort((a, b) => (a.name.toLowerCase().startsWith(q) ? -1 : 0) - (b.name.toLowerCase().startsWith(q) ? -1 : 0) || (b.date || "").localeCompare(a.date || ""))
+          .slice(0, 8);
+        fightMatches = FIGHTS_IDX.filter((f) => {
+          const t = f.title.toLowerCase();
+          return words.every((w) => t.includes(w));
+        })
+          .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
+          .slice(0, 10);
+      }
+      return NextResponse.json({ teams: matches, players: playerMatches, fighters: fighterMatches, events: eventMatches, fights: fightMatches });
       
     }
 
