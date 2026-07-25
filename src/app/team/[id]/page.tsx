@@ -4,6 +4,8 @@ import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 import FollowButton from "@/components/FollowButton";
 import BackLink from "@/components/BackLink";
+import staffData from "@/lib/team-staff.json";
+import { labelPosition, coachTitle } from "@/lib/labels";
 
 type Team = {
   idTeam: string;
@@ -15,6 +17,7 @@ type Team = {
   strDescriptionEN: string | null;
   strBadge?: string | null;
   strTeamBadge?: string | null;
+  strSport: string | null;
 };
 type Event = {
   idEvent: string;
@@ -198,27 +201,37 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
         </div>
 
         {(() => {
-          const STAFF_WORDS = ["coach", "manager", "president", "chairman", "owner", "director", "general", "scout", "trainer", "executive", "associate"];
+          type Staff = { fetched?: boolean; headCoach: string | null; owners: string[]; gm: string | null; president: string | null; oc: string | null; dc: string | null };
+          const STAFFMAP = staffData as Record<string, Staff>;
+          const overlay = STAFFMAP[team.idTeam];
+          const sport = team.strSport ?? "";
+
+          const STAFF_WORDS = ["coach", "manager", "president", "chairman", "owner", "director", "general", "scout", "trainer", "executive", "associate", "coordinator"];
           const isStaff = (pos: string | null) => {
             const p = (pos ?? "").toLowerCase();
             return STAFF_WORDS.some((w) => p.includes(w));
           };
-          const staff = players.filter((p) => isStaff(p.strPosition));
+          const staffPlayers = players.filter((p) => isStaff(p.strPosition));
           const roster = players.filter((p) => !isStaff(p.strPosition));
+
           const byPosition: Record<string, typeof roster> = {};
           for (const p of roster) {
             const key = p.strPosition ?? "Other";
             (byPosition[key] ??= []).push(p);
           }
-          const groups = Object.entries(byPosition).sort((a, b) => b[1].length - a[1].length);
-          const visibleGroups = showAll ? groups : groups.slice(0, 3);
+          const PRIORITY = sport === "American Football" ? ["quarterback", "running back", "wide receiver"] : [];
+          const pr = (pos: string) => {
+            const i = PRIORITY.findIndex((x) => pos.toLowerCase().includes(x));
+            return i === -1 ? 99 : i;
+          };
+          const groups = Object.entries(byPosition).sort(
+            (a, b) => pr(a[0]) - pr(b[0]) || b[1].length - a[1].length
+          );
+          const visibleGroups = showAll ? groups : groups.slice(0, 4);
 
           const card = (p: (typeof players)[number]) => (
-            <Link
-              key={p.idPlayer}
-              href={`/player/${p.idPlayer}`}
-              className="flex items-center gap-3 rounded-xl border border-zinc-800 bg-zinc-900 p-3 text-sm transition hover:border-emerald-400"
-            >
+            <Link key={p.idPlayer} href={`/player/${p.idPlayer}`}
+              className="flex items-center gap-3 rounded-xl border border-zinc-800 bg-zinc-900 p-3 text-sm transition hover:border-emerald-400">
               {p.strCutout || p.strThumb ? (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img src={(p.strCutout ?? p.strThumb) as string} alt="" className="h-10 w-10 rounded-lg object-cover object-top" />
@@ -227,9 +240,16 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
               )}
               <div>
                 <div className="font-medium">{p.strPlayer}</div>
-                <div className="mt-0.5 text-xs text-zinc-500">{p.strPosition ?? ""}</div>
+                <div className="mt-0.5 text-xs text-zinc-500">{labelPosition(p.strPosition, sport)}</div>
               </div>
             </Link>
+          );
+
+          const staffRow = (role: string, name: string) => (
+            <div key={role + name} className="flex items-center justify-between rounded-lg border border-zinc-800 bg-zinc-950 px-4 py-2.5 text-sm">
+              <span className="text-zinc-500">{role}</span>
+              <span className="font-medium">{name}</span>
+            </div>
           );
 
           return (
@@ -240,23 +260,34 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
               )}
               {visibleGroups.map(([pos, ps]) => (
                 <div key={pos}>
-                  <h3 className="mt-5 text-xs font-semibold uppercase tracking-widest text-zinc-500">{pos}</h3>
+                  <h3 className="mt-5 text-xs font-semibold uppercase tracking-widest text-zinc-500">{labelPosition(pos, sport)}</h3>
                   <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-3">{ps.map(card)}</div>
                 </div>
               ))}
-              {groups.length > 3 && (
-                <button
-                  onClick={() => setShowAll(!showAll)}
-                  className="mt-4 rounded-lg border border-zinc-700 px-4 py-2 text-sm transition hover:border-emerald-400"
-                >
+              {groups.length > 4 && (
+                <button onClick={() => setShowAll(!showAll)}
+                  className="mt-4 rounded-lg border border-zinc-700 px-4 py-2 text-sm transition hover:border-emerald-400">
                   {showAll ? "Show less" : `Show full roster (${roster.length} players)`}
                 </button>
               )}
-              {staff.length > 0 && (
-                <>
-                  <h2 className="mt-10 font-semibold">Coaching & Front Office</h2>
-                  <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3">{staff.map(card)}</div>
-                </>
+
+              <h2 className="mt-10 font-semibold">Coaching & Front Office</h2>
+              {overlay?.fetched ? (
+                <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
+                  {overlay.headCoach && staffRow(coachTitle(sport), overlay.headCoach)}
+                  {overlay.oc && staffRow("Offensive Coordinator", overlay.oc)}
+                  {overlay.dc && staffRow("Defensive Coordinator", overlay.dc)}
+                  {overlay.gm && staffRow("General Manager", overlay.gm)}
+                  {overlay.president && staffRow("President", overlay.president)}
+                  {overlay.owners.map((o) => staffRow("Owner", o))}
+                </div>
+              ) : staffPlayers.length > 0 ? (
+                <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3">{staffPlayers.map(card)}</div>
+              ) : (
+                <p className="mt-2 text-sm text-zinc-500">Staff data unavailable.</p>
+              )}
+              {overlay?.fetched && (
+                <p className="mt-2 text-xs text-zinc-600">Staff via Wikipedia, CC BY-SA — refreshed with the data pipeline.</p>
               )}
             </>
           );

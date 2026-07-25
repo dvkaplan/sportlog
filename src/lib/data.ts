@@ -1,4 +1,5 @@
 import fightGames from "./fight-games.json";
+import fightRedirects from "./fight-redirects.json";
 export type Sport = {
   slug: string;
   name: string;
@@ -62,7 +63,9 @@ export function getGamesBySport(slug: string) {
   return GAMES.filter((g) => g.sportSlug === slug);
 }
 export function getGame(id: string) {
-  return GAMES.find((g) => g.id === id) ?? (fightGames as Game[]).find((g) => g.id === id);
+  const REDIR = fightRedirects as Record<string, string>;
+  const finalId = REDIR[id] ?? id;
+  return GAMES.find((g) => g.id === finalId) ?? (fightGames as Game[]).find((g) => g.id === finalId);
 }
 export type Era = {
   slug: string;

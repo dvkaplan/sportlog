@@ -2,7 +2,7 @@
 import { use, useEffect, useState } from "react";
 import Link from "next/link";
 import FollowButton from "@/components/FollowButton";
-import { cleanTeamLabel } from "@/lib/labels";
+import { cleanTeamLabel, labelPosition } from "@/lib/labels";
 import BackLink from "@/components/BackLink";
 import { supabase } from "@/lib/supabase";
 
@@ -71,7 +71,7 @@ useEffect(() => {
               <FollowButton entityType="player" entityId={player.idPlayer} entityName={player.strPlayer} />
             </div>
             <p className="mt-1 text-sm text-zinc-400">
-              {[player.strPosition, cleanTeamLabel(player.strTeam), player.strNationality].filter(Boolean).join(" · ")}
+             {[labelPosition(player.strPosition, player.strSport), cleanTeamLabel(player.strTeam), player.strNationality].filter(Boolean).join(" · ")}
             </p>
             <p className="mt-1 text-xs text-zinc-500">
               {player.dateBorn ? `Born ${player.dateBorn}` : ""}

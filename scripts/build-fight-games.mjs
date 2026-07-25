@@ -3,6 +3,20 @@ import { writeFileSync, readFileSync } from "fs";
 const slugify = (n) =>
   n.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    const PAIR_ALIASES = {
+  "quinton-jackson": "quinton-rampage-jackson",
+  "rampage-jackson": "quinton-rampage-jackson",
+  "mauricio-rua": "shogun-rua",
+  "mauricio-shogun-rua": "shogun-rua",
+  "mirko-filipovic": "mirko-cro-cop",
+  "minotauro-nogueira": "antonio-rodrigo-nogueira",
+  "b-j-penn": "bj-penn",
+  "bj-penn": "bj-penn",
+};
+const canonName = (n) => {
+  const s = slugify(n);
+  return PAIR_ALIASES[s] ?? s;
+};
 const dateSlug = (d) => slugify(d).slice(0, 24) || "nd";
 
 const src = readFileSync("src/lib/fighters.ts", "utf8");
@@ -21,7 +35,7 @@ for (const [slug, fights] of Object.entries(hist)) {
   if (!me) continue;
   for (const f of fights) {
     if (!f.opponent) continue;
-    const pair = [slugify(me.name), slugify(f.opponent)].sort();
+    const pair = [canonName(me.name), canonName(f.opponent)].sort();
     const id = `fight-${pair[0]}-vs-${pair[1]}-${dateSlug(f.date)}`;
     if (games[id]) continue;
     const winner = f.result === "W" ? me.name : f.result === "L" ? f.opponent : null;
