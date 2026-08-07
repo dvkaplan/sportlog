@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
-import { cleanTeamLabel } from "@/lib/labels";
+import { cleanTeamLabel, labelPosition } from "@/lib/labels";
 
 type Team = {
   idTeam: string;
@@ -17,6 +17,7 @@ type Player = {
   strTeam: string;
   strLeague: string | null;
   strPosition: string | null;
+  strSport: string | null;
   strThumb: string | null;
 };
 type Fighter = {
@@ -30,6 +31,7 @@ type Fighter = {
 };
 type EventHit = { slug: string; name: string; date: string; count: number };
 type FightHit = { id: string; title: string; date: string; score: string; event: string; sportSlug: string };
+type CoachHit = { kind: "coach" | "tsdb"; slug: string | null; idPlayer: string | null; name: string; role: string | null; team: string | null; sport: string | null; photo: string | null };
 
 
 export default function SearchPage() {
@@ -39,8 +41,9 @@ export default function SearchPage() {
   const [fighters, setFighters] = useState<Fighter[]>([]);
   const [events, setEvents] = useState<EventHit[]>([]);
   const [fights, setFights] = useState<FightHit[]>([]);
+  const [coaches, setCoaches] = useState<CoachHit[]>([]);
   const [busy, setBusy] = useState(false);
- const [tab, setTab] = useState<"all" | "teams" | "players" | "fighters" | "events" | "fights">("all");
+ const [tab, setTab] = useState<"all" | "teams" | "players" | "fighters" | "coaches" | "events" | "fights">("all");
  
 
   useEffect(() => {
@@ -48,6 +51,9 @@ export default function SearchPage() {
       setTeams([]);
       setPlayers([]);
       setFighters([]);
+      setEvents([]);
+      setFights([]);
+      setCoaches([]);
       return;
     }
     const t = setTimeout(async () => {
@@ -59,6 +65,7 @@ export default function SearchPage() {
         setFighters(data?.fighters ?? []);
         setEvents(data?.events ?? []);
         setFights(data?.fights ?? []);
+        setCoaches(data?.coaches ?? []);
         const ids = (data?.players ?? []).map((p: Player) => p.idPlayer);
         if (ids.length > 0) {
           const { data: clicks } = await supabase
@@ -74,7 +81,8 @@ export default function SearchPage() {
         }
       } catch {
         setEvents([]);
-      setFights([]);
+        setFights([]);
+        setCoaches([]);
         setTeams([]);
         setPlayers([]);
         setFighters([]);
@@ -89,8 +97,9 @@ export default function SearchPage() {
   const showFighters = tab === "all" || tab === "fighters";
   const showEvents = tab === "all" || tab === "events";
   const showFights = tab === "all" || tab === "fights";
+  const showCoaches = tab === "all" || tab === "coaches";
   const nothing =
-    !busy && q.trim().length >= 2 && teams.length === 0 && players.length === 0 && fighters.length === 0&& events.length === 0 && fights.length === 0;
+    !busy && q.trim().length >= 2 && teams.length === 0 && players.length === 0 && fighters.length === 0 && events.length === 0 && fights.length === 0 && coaches.length === 0;
 
   return (
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
@@ -106,7 +115,7 @@ export default function SearchPage() {
           className="mt-6 w-full rounded-lg border border-zinc-700 bg-zinc-900 p-3 text-sm outline-none focus:border-emerald-400"
         />
         <div className="mt-4 flex gap-2 text-sm">
-          {(["all", "teams", "players", "fighters", "events", "fights"] as const).map((t) => (
+          {(["all", "teams", "players", "fighters", "coaches", "events", "fights"] as const).map((t) => (
             <button
               key={t}
               onClick={() => setTab(t)}
@@ -169,7 +178,7 @@ export default function SearchPage() {
                   <div>
                     <div className="font-medium">{p.strPlayer}</div>
                     <div className="text-xs text-zinc-500">
-                      {[cleanTeamLabel(p.strTeam), p.strPosition, cleanTeamLabel(p.strLeague ?? "")]
+                      {[cleanTeamLabel(p.strTeam), labelPosition(p.strPosition, p.strSport), cleanTeamLabel(p.strLeague ?? "")]
                         .filter(Boolean)
                         .join(" · ")}
                     </div>
@@ -204,6 +213,28 @@ export default function SearchPage() {
                       {f.champion ? " 🏆" : ""}
                     </div>
                     <div className="text-xs text-zinc-500">{f.division} · {f.era}</div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </>
+        )}
+        {showCoaches && coaches.length > 0 && (
+          <>
+            <h2 className="mt-6 text-xs font-semibold uppercase tracking-widest text-zinc-500">Coaches & Staff</h2>
+            <div className="mt-2 space-y-2">
+              {coaches.map((c, i) => (
+                <Link key={i} href={c.kind === "coach" && c.slug ? `/coach/${c.slug}` : `/player/${c.idPlayer}`}
+                  className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-emerald-400">
+                  {c.photo ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={c.photo} alt="" className="h-10 w-10 rounded-lg object-cover object-top" />
+                  ) : (
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-800">📋</div>
+                  )}
+                  <div>
+                    <div className="font-medium">{c.name}</div>
+                    <div className="text-xs text-zinc-500">{[labelPosition(c.role, c.sport), c.team].filter(Boolean).join(" · ")}</div>
                   </div>
                 </Link>
               ))}

@@ -538,5 +538,20 @@
     "name": "B. J. Callaghan",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/6/65/B._J._Callaghan_Revolution_Nashville_6.25.25-056.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "bio": "Brian Joseph Callaghan II is an American soccer coach and former player who is the head coach of Major League Soccer club Nashville SC. He was previously the interim head coach of the United States national team."
+  },
+  "pellegrino-matarazzo": {
+    "name": "Pellegrino Matarazzo",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/9/90/Pellegrino_Matarazzo.jpg",
+    "bio": "Pellegrino Matarazzo is an American professional soccer coach and former player who is the current head coach of La Liga club Real Sociedad."
+  },
+  "kevin-o-connell": {
+    "name": "Kevin O'Connell",
+    "photo": null,
+    "bio": "Kevin O'Connell may refer to:Kevin O'Connell, American football player and coach\nKevin O'Connell, Irish chess master\nKevin O'Connell (politician), member of the Maine House of Representatives\nKevin O'Connell, American stock car racing driver\nKevin O'Connell, , American sound re-recording mixer\nKevin O'Connell, , American weather anchor"
+  },
+  "todd-bowles": {
+    "name": "Todd Bowles",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Tampa_Bay_Buccaneers_HC_Todd_Bowles_with_Meredith_Marakovits_%2871Zy1MYJ2tk%29_shadows_lifted.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Todd Robert Bowles is an American professional football coach and former player who is the head coach of the Tampa Bay Buccaneers of the National Football League (NFL). He played college football at Temple and signed with the Washington Redskins as an undrafted free agent in 1986 and was a member of the team that won Super Bowl XXII. Bowles was also a member of the San Francisco 49ers."
   }
 }

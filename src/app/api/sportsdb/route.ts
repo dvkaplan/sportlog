@@ -6,6 +6,7 @@ import { ALIASES } from "@/lib/fighter-extras";
 import fighterMedia from "@/lib/fighter-media.json";
 import eventsData from "@/lib/events.json";
 import fightGamesData from "@/lib/fight-games.json";
+import coachMediaJson from "@/lib/coach-media.json";
 
 const BASE = `https://www.thesportsdb.com/api/v1/json/${process.env.SPORTSDB_KEY ?? "3"}`;
 
@@ -75,9 +76,23 @@ export async function GET(req: NextRequest) {
         if ((p.strTeam ?? "").startsWith("_")) score += 5;
         return score;
       };
-      const playerMatches = PLAYERS.filter((p) => p.strPlayer.toLowerCase().includes(q))
-        .sort((a, b) => prank(b) - prank(a))
-        .slice(0, 25);
+      const STAFF_WORDS = ["coach", "manager", "president", "chairman", "owner", "director", "general manager", "scout", "trainer", "executive", "associate", "coordinator"];
+      const isStaffPos = (pos: string | null) => {
+        const p = (pos ?? "").toLowerCase();
+        return STAFF_WORDS.some((w) => p.includes(w));
+      };
+      const allNameHits = PLAYERS.filter((p) => p.strPlayer.toLowerCase().includes(q));
+      const playerMatches = allNameHits.filter((p) => !isStaffPos(p.strPosition)).sort((a, b) => prank(b) - prank(a)).slice(0, 25);
+      const CM = coachMediaJson as Record<string, { name: string; photo: string | null }>;
+      const wikiCoaches = Object.entries(CM)
+        .filter(([, c]) => c.name.toLowerCase().includes(q))
+        .map(([slug, c]) => ({ kind: "coach" as const, slug, idPlayer: null as string | null, name: c.name, role: "Head Coach", team: null as string | null, sport: null as string | null, photo: c.photo }));
+      const seenCoach = new Set(wikiCoaches.map((c) => c.name.toLowerCase()));
+      const tsdbStaff = allNameHits
+        .filter((p) => isStaffPos(p.strPosition) && !seenCoach.has(p.strPlayer.toLowerCase()))
+        .slice(0, 10)
+        .map((p) => ({ kind: "tsdb" as const, slug: null as string | null, idPlayer: p.idPlayer, name: p.strPlayer, role: p.strPosition, team: p.strTeam, sport: p.strSport, photo: p.strThumb }));
+      const coachMatches = [...wikiCoaches, ...tsdbStaff].slice(0, 12);
         const aliasHits = Object.entries(ALIASES)
         .filter(([alias]) => alias.includes(q) || q.includes(alias))
         .map(([, s]) => s);
@@ -107,7 +122,7 @@ export async function GET(req: NextRequest) {
           .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
           .slice(0, 10);
       }
-      return NextResponse.json({ teams: matches, players: playerMatches, fighters: fighterMatches, events: eventMatches, fights: fightMatches });
+      return NextResponse.json({ teams: matches, players: playerMatches, fighters: fighterMatches, coaches: coachMatches, events: eventMatches, fights: fightMatches });
       
     }
 

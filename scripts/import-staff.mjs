@@ -42,20 +42,6 @@ const infobox = (html, label) => {
     .filter((x) => x && !x.includes("{") && !/mw-parser|plainlist/.test(x) && x.length < 90);
 };
 
-const coordinator = (html, which) => {
-  const re = new RegExp(`${which}\\s+coordinator`, "gi");
-  let m;
-  while ((m = re.exec(html))) {
-    const win = html.slice(m.index, m.index + 500);
-    const anchors = [...win.matchAll(/<a[^>]*>([^<]+)<\/a>/g)].map((a) => clean(a[1]));
-    const name = anchors.find(
-      (t) => t && / /.test(t) && !/^\d{4}/.test(t) && !/season|coordinator|coach|list|history/i.test(t)
-    );
-    if (name) return name;
-  }
-  return null;
-};
-
 async function wikiParse(title) {
   for (let a = 1; a <= 3; a++) {
     try {
@@ -86,13 +72,19 @@ async function wikiSummary(title) {
 let i = 0;
 for (const t of teams) {
   i++;
-  if (staff[t.idTeam]?.v === 2) { if (i % 25 === 0) console.log(`${i}/${teams.length} …done through here`); continue; }
+  const prev = staff[t.idTeam];
+  const isFootball = (t.strSport ?? "") === "American Football";
+  // v3 complete → skip. v2 non-football is still good → skip. v2 football needs the season-page fix → refetch.
+  if (prev?.v === 3 || (prev?.v === 2 && !isFootball)) {
+    if (i % 25 === 0) console.log(`${i}/${teams.length} …done through here`);
+    continue;
+  }
   const title = WIKI_OVERRIDES[t.strTeam] ?? t.strTeam;
   const html = await wikiParse(title);
   if (!html) { console.log(`${i}/${teams.length} ${t.strTeam}: ✗ no page`); continue; }
 
   const entry = {
-    v: 2,
+    v: 3,
     fetched: true,
     headCoach: infobox(html, "Head coach")[0] ?? infobox(html, "Manager")[0] ?? null,
     owners: [...new Set([...infobox(html, "Owner\\(s\\)"), ...infobox(html, "Principal owner"), ...infobox(html, "Owner")])].slice(0, 3),
@@ -100,13 +92,28 @@ for (const t of teams) {
     president: infobox(html, "President")[0] ?? null,
     oc: null, dc: null,
   };
-  if ((t.strSport ?? "") === "American Football") {
-    entry.oc = coordinator(html, "Offensive");
-    entry.dc = coordinator(html, "Defensive");
+
+  if (isFootball) {
+    // current coordinators live on the season page's infobox, not the team page
+    const y = new Date().getFullYear();
+    for (const season of [`${y} ${t.strTeam} season`, `${y - 1} ${t.strTeam} season`]) {
+      const sHtml = await wikiParse(season);
+      if (!sHtml) continue;
+      const oc = infobox(sHtml, "Offensive coordinator")[0] ?? null;
+      const dc = infobox(sHtml, "Defensive coordinator")[0] ?? null;
+      const hc = infobox(sHtml, "Head coach")[0] ?? null;
+      if (oc || dc || hc) {
+        entry.oc = oc;
+        entry.dc = dc;
+        if (hc) entry.headCoach = hc; // season page is the freshest source
+        break;
+      }
+      await sleep(600);
+    }
   }
+
   staff[t.idTeam] = entry;
 
-  // coach media
   if (entry.headCoach) {
     const cs = personSlug(entry.headCoach);
     if (!coachMedia[cs]?.bio) {
@@ -119,7 +126,7 @@ for (const t of teams) {
     }
   }
 
-  console.log(`${i}/${teams.length} ${t.strTeam}: HC=${entry.headCoach ?? "✗"}${entry.oc ? ` OC=${entry.oc}` : ""}${entry.dc ? ` DC=${entry.dc}` : ""}${entry.owners.length ? ` Own=${entry.owners[0]}` : ""}`);
+  console.log(`${i}/${teams.length} ${t.strTeam}: HC=${entry.headCoach ?? "✗"}${entry.oc ? ` OC=${entry.oc}` : ""}${entry.dc ? ` DC=${entry.dc}` : ""}`);
   if (i % 15 === 0) {
     writeFileSync("src/lib/team-staff.json", JSON.stringify(staff, null, 2));
     writeFileSync("src/lib/coach-media.json", JSON.stringify(coachMedia, null, 2));
