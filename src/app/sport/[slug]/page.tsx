@@ -50,7 +50,14 @@ export default async function SportPage({ params }: { params: Promise<{ slug: st
             </div>
           </>
         )}
-        
+
+        {(slug === "football" || slug === "basketball") && (
+          <Link href={`/seasons/${slug === "football" ? "nfl" : "nba"}/${slug === "football" ? "2025" : "2025-26"}`}
+            className="mt-8 block rounded-xl border border-emerald-400/40 bg-emerald-400/5 p-5 transition hover:border-emerald-400">
+            <div className="font-semibold text-emerald-400">Browse every {slug === "football" ? "NFL" : "NBA"} game →</div>
+            <div className="mt-1 text-sm text-zinc-400">Full season schedules, every game rateable — season by season.</div>
+          </Link>
+        )}
         <h2 className="mt-8 font-semibold">Iconic Games</h2>
         <div className="mt-3 space-y-3">
           {games.map((g) => (

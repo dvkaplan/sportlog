@@ -26,6 +26,26 @@ type RatingRow = {
 export default function GamePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
   const game = getGame(id);
+  const [histGame, setHistGame] = useState<ReturnType<typeof getGame>>(undefined);
+  const isHist = !game && /^(nfl|nba)-\d{4}/.test(id);
+  useEffect(() => {
+    if (!isHist) return;
+    (async () => {
+      const d = await fetch(`/api/sportsdb?mode=histgame&id=${encodeURIComponent(id)}`).then((r) => r.json());
+      const g = d?.game;
+      if (!g) return;
+      setHistGame({
+        id: g.id,
+        sportSlug: d.league === "nfl" ? "football" : "basketball",
+        league: d.league.toUpperCase(),
+        title: `${g.away} @ ${g.home}`,
+        date: g.date,
+        score: g.as != null && g.hs != null ? `${g.as}–${g.hs}${g.ot ? " (OT)" : ""}` : "",
+        blurb: g.type === "SB" ? "Super Bowl" : "",
+      });
+    })();
+  }, [id, isHist]);
+  const g = game ?? histGame;
 
   const [userId, setUserId] = useState<string | null>(null);
   const [rating, setRating] = useState(5);
@@ -91,7 +111,8 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
     load();
   }
 
-  if (!game) return <main className="p-10 text-zinc-100">Game not found.</main>;
+  if (!g && !isHist) return <main className="p-10 text-zinc-100">Game not found.</main>;
+  if (!g) return <main className="p-10 text-zinc-100">Loading…</main>;
 
   const avg =
     all.length > 0 ? all.reduce((s, r) => s + Number(r.rating), 0) / all.length : null;
@@ -101,10 +122,10 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
       <div className="mx-auto max-w-2xl px-6 py-12">
         <BackLink />
-        <h1 className="mt-4 text-2xl font-bold">{game.title}</h1>
-        {game.id.startsWith("fight-") && (
+        <h1 className="mt-4 text-2xl font-bold">{g.title}</h1>
+        {g.id.startsWith("fight-") && (
           <div className="mt-2 flex flex-wrap gap-2 text-sm">
-            {game.title.split(" vs ").map((n) => {
+            {g.title.split(" vs ").map((n) => {
              const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
               const key = norm(n);
               const slug = OPPONENT_ALIASES[key] ?? ALL_FIGHTERS.find((x) => norm(x.name) === key)?.slug;
@@ -119,8 +140,8 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
             })}
           </div>
         )}
-        {game.id.startsWith("fight-") && (() => {
-          const evName = FSTATS[game.id]?.event ?? game.blurb ?? "";
+        {g.id.startsWith("fight-") && (() => {
+          const evName = FSTATS[g.id]?.event ?? g.blurb ?? "";
           if (!evName) return null;
           const evSlug = eventSlugForName(evName);
           const inner = (
@@ -136,19 +157,19 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
           );
         })()}
         {(() => {
-            {game.id.startsWith("fight-") && !FSTATS[game.id] && (
+            {g.id.startsWith("fight-") && !FSTATS[g.id] && (
           <div className="mt-8 rounded-xl border border-zinc-800 bg-zinc-900 p-5">
             <div className="text-xs font-semibold uppercase tracking-widest text-amber-300">Bout details</div>
             <div className="mt-2 grid grid-cols-1 gap-1 text-sm sm:grid-cols-3">
-              <div><span className="text-zinc-500">Result:</span> {game.score || "—"}</div>
-              <div><span className="text-zinc-500">Date:</span> {game.date || "—"}</div>
+              <div><span className="text-zinc-500">Result:</span> {g.score || "—"}</div>
+              <div><span className="text-zinc-500">Date:</span> {g.date || "—"}</div>
             </div>
             <p className="mt-3 text-xs text-zinc-600">
               Round-by-round strike statistics were never recorded for this bout (pre-analytics era or non-UFC promotion).
             </p>
           </div>
         )}
-          const fs = FSTATS[game.id];
+          const fs = FSTATS[g.id];
           if (!fs) return null;
           const rows: [string, (s: FStat) => string | number][] = [
             ["KD", (s) => s.kd], ["Sig. Strikes", (s) => s.sig], ["Sig. %", (s) => `${s.sigPct}%`],
@@ -204,9 +225,9 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
         })()}
         
         <p className="mt-1 text-sm text-zinc-500">
-          {game.league} · {game.date} {game.score ? `· ${game.score}` : ""}
+          {g.league} · {g.date} {g.score ? `· ${g.score}` : ""}
         </p>
-       {!game.id.startsWith("fight-") && <p className="mt-4 text-zinc-300">{game.blurb}</p>}
+       {!g.id.startsWith("fight-") && <p className="mt-4 text-zinc-300">{g.blurb}</p>}
 
         <div className="mt-6 flex items-center gap-6 rounded-xl border border-zinc-800 bg-zinc-900 p-4">
           <div>

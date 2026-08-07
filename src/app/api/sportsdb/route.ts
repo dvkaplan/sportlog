@@ -125,6 +125,20 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ teams: matches, players: playerMatches, fighters: fighterMatches, coaches: coachMatches, events: eventMatches, fights: fightMatches });
       
     }
+    if (mode === "histgame") {
+      const id = p.get("id") ?? "";
+      const m = id.match(/^(nfl|nba)-(\d{4})/);
+      if (!m) return NextResponse.json({ error: "bad id" }, { status: 400 });
+      const league = m[1];
+      const season = league === "nba" ? `${m[2]}-${String((Number(m[2]) + 1) % 100).padStart(2, "0")}` : m[2];
+      try {
+        const games = (await import(`@/lib/seasons/${league}/${season}.json`)).default as { id: string }[];
+        const g = games.find((x) => x.id === id);
+        return g ? NextResponse.json({ game: g, league }) : NextResponse.json({ error: "not found" }, { status: 404 });
+      } catch {
+        return NextResponse.json({ error: "season not found" }, { status: 404 });
+      }
+    }
 
     let url = "";
     if (mode === "team") url = `${BASE}/lookupteam.php?id=${encodeURIComponent(p.get("id") ?? "")}`;
