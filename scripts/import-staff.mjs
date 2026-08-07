@@ -34,7 +34,16 @@ const clean = (s) =>
 
 const labelClean = (s) =>
   (s ?? "").replace(/<[^>]+>/g, " ").replace(/&#160;|&nbsp;/g, " ").replace(/\s+/g, " ").trim().toLowerCase();
-
+// Some team pages list ownership HISTORY ("Bud Adams (1959–2013)").
+// Keep only current owners: prefer "(…–present)" entries; drop closed date ranges.
+const currentOwners = (list) => {
+  if (!list || list.length === 0) return [];
+  const present = list.filter((x) => /present/i.test(x));
+  const noRange = list.filter((x) => !/\(\s*\d{4}\s*[–—-]/.test(x));
+  const keep = present.length > 0 ? present : noRange.length > 0 ? noRange : [list[list.length - 1]];
+  // strip the "(2013–present)" suffix for clean display
+  return keep.map((x) => x.replace(/\s*\(\s*\d{4}\s*[–—-]\s*(present|\d{4})\s*\)\s*/gi, "").trim()).filter(Boolean);
+};
 const infobox = (html, label) => {
   const want = label.replace(/\\/g, "").toLowerCase(); // tolerate the escaped "Owner\\(s\\)" callers
   const pairs = [...(html ?? "").matchAll(/<th[^>]*>([\s\S]*?)<\/th>[\s\S]{0,80}?<td[^>]*>([\s\S]*?)<\/td>/gi)];
@@ -81,7 +90,7 @@ for (const t of teams) {
   const prev = staff[t.idTeam];
   const isFootball = (t.strSport ?? "") === "American Football";
   // v3 complete → skip. v2 non-football is still good → skip. v2 football needs the season-page fix → refetch.
-  if (prev?.v === 7 || (prev?.v >= 2 && !isFootball)) {
+  if (prev?.v === 8) {
     if (i % 25 === 0) console.log(`${i}/${teams.length} …done through here`);
     continue;
   }
@@ -90,10 +99,10 @@ for (const t of teams) {
   if (!html) { console.log(`${i}/${teams.length} ${t.strTeam}: ✗ no page`); continue; }
 
   const entry = {
-    v: 7,
+    v: 8,
     fetched: true,
     headCoach: infobox(html, "Head coach")[0] ?? infobox(html, "Manager")[0] ?? null,
-    owners: [...new Set([...infobox(html, "Owner\\(s\\)"), ...infobox(html, "Principal owner"), ...infobox(html, "Owner")])].slice(0, 3),
+    owners: currentOwners([...new Set([...infobox(html, "Owner\\(s\\)"), ...infobox(html, "Principal owner"), ...infobox(html, "Owner")])]).slice(0, 3),
     gm: infobox(html, "General manager")[0] ?? null,
     president: infobox(html, "President")[0] ?? null,
     oc: null, dc: null,

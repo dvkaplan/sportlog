@@ -563,5 +563,270 @@
     "name": "Pete Carroll",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/b/be/Pete_Carroll%2C_Sept._2025.jpg",
     "bio": "Peter Clay Carroll is an American football coach. He served as a head coach in the National Football League (NFL) for 19 seasons, primarily with the Seattle Seahawks, and as the head coach of the USC Trojans for nine seasons. Carroll is the third head coach to win both a college football national championship and a Super Bowl, achieving the former with the Trojans and the latter with the Seahawks."
+  },
+  "torey-lovullo": {
+    "name": "Torey Lovullo",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Torylovullo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Salvatore Anthony \"Torey\" Lovullo is an American former professional baseball infielder and the current manager for the Arizona Diamondbacks of Major League Baseball (MLB)."
+  },
+  "walt-weiss": {
+    "name": "Walt Weiss",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/f/f6/WaltWeiss.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Walter William Weiss is an American former professional baseball shortstop and current manager for the Atlanta Braves of Major League Baseball (MLB). He played in MLB from 1987 through 2000 for the Oakland Athletics, Florida Marlins, Colorado Rockies, and Braves. He managed the Rockies from 2013 through 2016. Weiss won the 1988 Rookie of the Year award. He was also a member of the 1998 National League All-Star Team."
+  },
+  "craig-albernaz": {
+    "name": "Craig Albernaz",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/8/84/Manager_Craig_Albernaz_001_%28cropped%29.jpg",
+    "bio": "Craig Francis Albernaz is an American professional baseball manager for the Baltimore Orioles of Major League Baseball (MLB). He played college baseball for Eckerd College. Albernaz signed with the Tampa Bay Rays as a free agent in 2006. He was formerly a coach for the San Francisco Giants and Cleveland Guardians."
+  },
+  "will-venable": {
+    "name": "Will Venable",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Wil_Venable_01.jpg",
+    "bio": "William Dion Venable is an American professional baseball manager and former outfielder and coach who is the manager of the Chicago White Sox of Major League Baseball (MLB). He played in MLB for the San Diego Padres, Texas Rangers, and Los Angeles Dodgers. He also was a coach for the Chicago Cubs. He is the son of former MLB outfielder Max Venable and is the older brother of former National Football League player Winston Venable."
+  },
+  "terry-francona": {
+    "name": "Terry Francona",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Terry_Francona_2%2830064738153%29.jpg/3840px-Terry_Francona_2%2830064738153%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bio": "Terry Jon Francona, nicknamed \"Tito\", is an American professional baseball manager and former player who is the manager of the Cincinnati Reds of Major League Baseball (MLB). He previously managed the Cleveland Indians/Guardians, Boston Red Sox, and Philadelphia Phillies. Francona played in MLB from 1981 to 1988 for the Montreal Expos, Chicago Cubs, Cincinnati Reds, Cleveland Indians, and Milwaukee Brewers."
+  },
+  "stephen-vogt": {
+    "name": "Stephen Vogt",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Stephen_Vogt_%2853479720675%29_%28cropped%29.jpg/3840px-Stephen_Vogt_%2853479720675%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bio": "Stephen Guy Vogt is an American professional baseball manager and former catcher and coach who currently serves as the manager for the Cleveland Guardians of Major League Baseball (MLB). Vogt played in MLB for the Tampa Bay Rays, Oakland Athletics, Milwaukee Brewers, San Francisco Giants, Arizona Diamondbacks, and Atlanta Braves, and served as both the bullpen and quality control coach of the Seattle Mariners in 2023. He was an MLB All-Star with the Athletics in 2015 and 2016. Vogt was selected by Tampa Bay in the 12th round of the 2007 MLB draft."
+  },
+  "warren-schaeffer": {
+    "name": "Warren Schaeffer",
+    "photo": null,
+    "bio": "Warren James Schaeffer is an American professional baseball coach who is currently the manager for the Colorado Rockies of Major League Baseball (MLB), having previously served as the team's third base coach."
+  },
+  "joel-quenneville": {
+    "name": "Joel Quenneville",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Coach_Q_%286728537851%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Joel Norman Quenneville is a Canadian-American professional ice hockey coach and former player who is the head coach for the Anaheim Ducks of the National Hockey League (NHL). Nicknamed \"Coach Q\", he is second in NHL coaching wins at 1,000 behind Scotty Bowman. Quenneville achieved his greatest success as head coach of the Chicago Blackhawks, a team he coached from 2008 to 2018. He led the Blackhawks to three Stanley Cup titles in 2010, 2013 and 2015. The team's championship victory in 2010 was the Blackhawks' first since 1961, ending the then-longest Stanley Cup drought."
+  },
+  "lindy-ruff": {
+    "name": "Lindy Ruff",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Lindyruff_2006nhlawards.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Lindy Cameron Ruff is a Canadian professional ice hockey coach and former player who is the head coach for the Buffalo Sabres of the National Hockey League (NHL). Ruff was previously the head coach of the Sabres from 1997 to 2013, winning the Jack Adams Award in 2006, and has also served as head coach of the Dallas Stars and New Jersey Devils. Ruff has won over 600 games with the Sabres, making him one of three coaches to win that many games for one team in NHL history. During his playing career, Ruff played in the NHL for the Sabres and New York Rangers, the former of which he captained."
+  },
+  "ryan-huska": {
+    "name": "Ryan Huska",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Huska_Ryan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Ryan Huska is a Canadian professional ice hockey coach and former player who is the head coach for the Calgary Flames of the National Hockey League (NHL). Huska was drafted in the third round, 76th overall, in the 1993 NHL entry draft by the Chicago Blackhawks. In 1997–98, he played his only NHL game with the Blackhawks against the Calgary Flames. He played 5:51 in eight shifts. As a junior player with the Kamloops Blazers of the Western Hockey League (WHL), he won three Memorial Cups in 1992, 1994, and 1995."
+  },
+  "rod-brind-amour": {
+    "name": "Rod Brind'Amour",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/0/06/BrindAmour_2009-01-06_1562v1_wiki.jpg",
+    "bio": "Roderic Jean Brind'Amour is a Canadian professional ice hockey coach and former player who is the head coach for the Carolina Hurricanes of the National Hockey League (NHL). Nicknamed \"Rod the Bod\" and \"Mr. Hurricane\", Brind'Amour has played or coached for the Hurricanes in all but two of their 104 playoff wins as of the end of the 2025–26 season. He is one of four people to have won the Stanley Cup with the same team as captain and head coach, the first to do so in the league's expansion era, and is the 14th individual to win as a coach and player for any team."
+  },
+  "jeff-blashill": {
+    "name": "Jeff Blashill",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Talk0728_9002761858_l_%2840302900161%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Jeff Blashill is an American professional ice hockey coach who is the head coach for the Chicago Blackhawks of the National Hockey League (NHL). He was formerly the head coach for the Detroit Red Wings of the NHL."
+  },
+  "jared-bednar": {
+    "name": "Jared Bednar",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Jared_Bednar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Jared Garry Bednar is a Canadian professional ice hockey coach and former player who is the head coach for the Colorado Avalanche of the National Hockey League (NHL). He previously coached the Lake Erie Monsters of the American Hockey League, leading them to a Calder Cup championship in 2015–16. He also led the South Carolina Stingrays of the ECHL to a Kelly Cup championship in the 2008–09 season. Bednar won the Stanley Cup with Colorado in 2022, becoming the first coach to win the current ECHL, AHL, and NHL trophies."
+  },
+  "glen-gulutzan": {
+    "name": "Glen Gulutzan",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Glen_Gulutzan_%28448028251%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Glen Gulutzan is a Canadian professional ice hockey coach and former player who is the head coach for the Dallas Stars of the National Hockey League (NHL)."
+  },
+  "todd-mclellan": {
+    "name": "Todd McLellan",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Todd_McLellan.jpg/3840px-Todd_McLellan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bio": "Todd Andrew McLellan is a Canadian professional ice hockey coach and former player who is the head coach for the Detroit Red Wings of the National Hockey League (NHL). He previously served as head coach of the San Jose Sharks, Edmonton Oilers, and Los Angeles Kings, and as an assistant coach with the Red Wings, with whom he won the Stanley Cup in 2008. He was drafted in 1986 by the New York Islanders and played five games with the major league club in the 1987–88 season before retiring in the minors the following season due to recurring injury."
+  },
+  "alvaro-arbeloa": {
+    "name": "Álvaro Arbeloa",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/e/eb/%C3%81lvaro_Arbeloa_%2850121545757%29_%28cropped%29.jpg",
+    "bio": "Álvaro Arbeloa Coca is a Spanish professional football manager and former footballer who is the head coach of Premier League club Fulham. He predominantly played as a right-back, and occasionally on the left side."
+  },
+  "adi-hutter": {
+    "name": "Adi Hütter",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Hutter_asse_asm_2425.png",
+    "bio": "Adolf \"Adi\" Hütter is an Austrian professional football coach and former player, he is the head coach of Bundesliga club Eintracht Frankfurt."
+  },
+  "fabio-grosso": {
+    "name": "Fabio Grosso",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/6/64/Frosinone_Calcio_-_Benito_Stirpe_-_vs_Genoa_14_5_2023_-_Fabio_Grosso_pugno_1_LAZ_5590_%28cropped%29.jpg",
+    "bio": "Fabio Grosso is an Italian professional football manager and former player. He is currently the head coach of Serie A club Fiorentina."
+  },
+  "chris-finch": {
+    "name": "Chris Finch",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/2/28/Chris_Finch_interview%2C_Dec_28_2024_%2801%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Chris Finch is an American professional basketball coach and former player who is the head coach of the Minnesota Timberwolves of the National Basketball Association (NBA). He was previously an assistant coach for the Houston Rockets, Denver Nuggets, New Orleans Pelicans, and Toronto Raptors. Finch also worked as a coach overseas, winning a championship in the Belgian League and the League Cup in the British Basketball League."
+  },
+  "a-j-hinch": {
+    "name": "A. J. Hinch",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/9/90/AJ_Hinch_dugout_spring_2015.jpg",
+    "bio": "Andrew Jay Hinch is an American professional baseball coach and former catcher who is the manager of the Detroit Tigers of Major League Baseball (MLB). As a member of Team USA, Hinch won a bronze medal at the 1996 Summer Olympics before playing in MLB for the Oakland Athletics (1998–2000), Kansas City Royals (2001–2002), Detroit Tigers (2003), and Philadelphia Phillies (2004)."
+  },
+  "clayton-mccullough": {
+    "name": "Clayton McCullough",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/6/64/Clayton_McCullough_%28cropped%29.jpg",
+    "bio": "Clayton Anthony McCullough is an American professional baseball coach who currently serves as the manager for the Miami Marlins of Major League Baseball (MLB). He has previously served as a first base coach for the Los Angeles Dodgers."
+  },
+  "pat-murphy": {
+    "name": "Pat Murphy",
+    "photo": null,
+    "bio": "Pat Murphy may refer to:Pat Murphy (writer), American science and science-fiction writer\nPat Murphy, British sports writer and radio broadcaster\nPat Murphy (catcher) (1857–1927), American baseball player\nPat Murphy (1906–1973), Australian rules footballer with Hawthorn\nPat Murphy (1929–2025), American Roman Catholic sister and immigration activist\nPat Murphy, Australian rules footballer with St Kilda\nPat Murphy \nPat Murphy, American baseball coach\nPat Murphy, American politician\nPat Murphy (1962–2025), member of the Legislative Assembly of Prince Edward Island, from 2007 to 2019\nPat Murphy (director), Irish film director\nPat Murphy, Australian rugby union player\nPat Murphy (1896–?), Australian rugby player"
+  },
+  "derek-shelton": {
+    "name": "Derek Shelton",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Derek_Shelton_%28260415-A-KI380-1289%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Derek Lee Shelton is an American professional baseball manager who currently serves as the manager for the Minnesota Twins of Major League Baseball (MLB). After his playing career in the New York Yankees organization ended in 1993, he coached and managed within the Yankees minor league system between 1997 and 2002. He then served as a minor league hitting coordinator for the Cleveland Indians starting in 2003."
+  },
+  "craig-stammen": {
+    "name": "Craig Stammen",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/6/62/Craig_Stammen_%28260130-M-SF953-1214%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Craig Nicholas Stammen is an American professional baseball manager and former pitcher who is the manager of the San Diego Padres of Major League Baseball (MLB). He played in MLB for the Washington Nationals and the Padres."
+  },
+  "tony-vitello": {
+    "name": "Tony Vitello",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Tony_Vitello_2024_CWS.png",
+    "bio": "Anthony Gregory Vitello is an American professional baseball manager who is the manager for the San Francisco Giants of Major League Baseball (MLB). Vitello previously coached at the college level with the Tennessee Volunteers, who made five NCAA regionals, four NCAA super regionals (2021–2024), and three College World Series appearances, winning the College World Series in 2024 over Texas A&M for the Volunteers’ first-ever national title."
+  },
+  "kevin-cash": {
+    "name": "Kevin Cash",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/2015_-WinterMeetings-_Kevin_Cash_%2823586674746%29.jpg/3840px-2015_-WinterMeetings-_Kevin_Cash_%2823586674746%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bio": "Kevin Forrest Cash is an American professional baseball manager and former player who is the manager of the Tampa Bay Rays of Major League Baseball (MLB). Previously, Cash played catcher in MLB for the Toronto Blue Jays, Tampa Bay Devil Rays, Boston Red Sox, New York Yankees, and Houston Astros. As a player, Cash was listed at 6 feet 0 inches (1.83 m) and 200 pounds (91 kg); he batted and threw right-handed. He was the bullpen coach for the Cleveland Indians before being hired as the Rays' manager in December 2014. Cash was the American League Manager of the Year in 2020 and 2021, the first AL manager to win the award consecutively. He entered the 2024 season as the longest-tenured manager in MLB."
+  },
+  "blake-butera": {
+    "name": "Blake Butera",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Blake_Butera_%2855280041275%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Blake Matthew Butera is an American professional baseball manager who is the manager for the Washington Nationals of Major League Baseball (MLB)."
+  },
+  "paul-maurice": {
+    "name": "Paul Maurice",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/2/2f/PaulMaurice2024.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Paul Maurice is a Canadian professional ice hockey coach and former player who is the head coach for the Florida Panthers of the National Hockey League (NHL). At age 43, Maurice became the youngest coach in NHL history to coach 1,000 games, reaching the milestone on November 28, 2010. He and Scotty Bowman are the only head coaches to have coached in at least 2,000 NHL games."
+  },
+  "peter-laviolette": {
+    "name": "Peter Laviolette",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/1/12/Peter_Laviolette_by_2eight-1015_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Peter Philip Laviolette Jr. is an American professional ice hockey coach and former player who is the head coach for the Los Angeles Kings of the National Hockey League (NHL). Originally undrafted by teams in the NHL, he played a total of 12 games with the Rangers in the 1988–89 season. Following retirement from active play, Laviolette also served as head coach of the New York Islanders, Carolina Hurricanes, Philadelphia Flyers, Nashville Predators, and Washington Capitals. He led the Hurricanes to a Stanley Cup win in 2006, and later coached the Flyers to the Stanley Cup Final in 2010, as well as the Predators in 2017. Laviolette is the fourth coach in NHL history to lead three teams to the Stanley Cup Final."
+  },
+  "john-hynes": {
+    "name": "John Hynes",
+    "photo": null,
+    "bio": "John Hynes may refer to:John Hynes (footballer), former Australian rules football player\nJohn Hynes, ice hockey coach\nJohn Hynes (politician) (1897–1970), Massachusetts politician\nJohn Hynes (priest), professor of archaeology and president of University College\nJack Hynes (soccer) (1920–2013), Scottish-born American soccer forward\nJohn Hynes, Australian rugby league footballer\nJohn J. Hynes (1872–1938), Newfoundland-born American labor union leader"
+  },
+  "martin-st-louis": {
+    "name": "Martin St. Louis",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Martin_St._Louis_2011-04-15.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Martin St. Louis is a Canadian professional ice hockey coach and former player who is the head coach for the Montreal Canadiens of the National Hockey League (NHL). An undrafted player, St. Louis played a total of 1,134 games, scoring 391 goals and 1,033 points in an NHL career that began with the Calgary Flames in 1998 and ended with the New York Rangers in 2015. He is best remembered for having played with the Tampa Bay Lightning and was a member of the Lightning's 2004 Stanley Cup championship team. St. Louis also briefly played with HC Lausanne of the Swiss National League A. He was elected into the Hockey Hall of Fame in 2018, his first year of eligibility. St. Louis is widely considered one of the best undrafted players of all time. On January 17, 2017, St. Louis' number 26 jersey became the first to be retired in Lightning history."
+  },
+  "travis-green": {
+    "name": "Travis Green",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d1/TravisGreen.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Travis Vernon Green is a Canadian professional ice hockey coach and former player who is the head coach for the Ottawa Senators of the National Hockey League (NHL). Green formerly served as head coach for the Vancouver Canucks and New Jersey Devils of the NHL, as well as the American Hockey League's Utica Comets, Vancouver's former minor league affiliate. Drafted 23rd overall in 1989, Green played for five different NHL teams in his 14-year career."
+  },
+  "ryan-warsofsky": {
+    "name": "Ryan Warsofsky",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/3/31/2025-05-04_Deutschland_gegen_USA_%28Eishockey-L%C3%A4nderspiel%29_by_Sandro_Halank%E2%80%93165.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Ryan Warsofsky is an American professional ice hockey coach and former player who is the head coach for the San Jose Sharks of the National Hockey League (NHL). Following a brief playing career, he entered coaching in 2012. He has previously served as a coach with the Curry Colonels, South Carolina Stingrays, Charlotte Checkers and Chicago Wolves."
+  },
+  "lane-lambert": {
+    "name": "Lane Lambert",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/a/a9/LaneLambert.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Lane Douglas Lambert is a Canadian professional ice hockey coach and former player who is the head coach for the Seattle Kraken of the National Hockey League (NHL). Drafted 25th overall in the second round of the 1983 NHL entry draft, Lambert played 283 games in the NHL for the Quebec Nordiques, New York Rangers, and Detroit Red Wings between 1983 and 1989."
+  },
+  "jim-montgomery": {
+    "name": "Jim Montgomery",
+    "photo": null,
+    "bio": "Jim Montgomery may refer to:Jim Montgomery (basketball) (1915–1982), American basketball player\nJim Montgomery, Canadian ice hockey player and coach\nJim Montgomery (swimmer), American Olympic swimmer and gold medalist\nJim Montgomery (1922–1992), American football player\nJimmy Montgomery, English retired football (soccer) goalkeeper"
+  },
+  "manny-malhotra": {
+    "name": "Manny Malhotra",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Manny_Malhotra_-_Montreal_Canadiens.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Emmanuel \"Manny\" Noveen Malhotra is a Canadian professional ice hockey coach and former player who is the head coach for the Vancouver Canucks of the National Hockey League (NHL)."
+  },
+  "scott-arniel": {
+    "name": "Scott Arniel",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Scott_Arniel.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Scott William Arniel is a Canadian professional ice hockey coach and former player who is the head coach for the Winnipeg Jets of the National Hockey League (NHL). Previously, he was the head coach of the Columbus Blue Jackets and associate coach of the New York Rangers, Washington Capitals and Winnipeg Jets. As a player, he played as left winger for the original Jets franchise, as well as the Buffalo Sabres and Boston Bruins."
+  },
+  "enrique-duran": {
+    "name": "Enrique Duran",
+    "photo": null,
+    "bio": "Enrique Duran Diaz is a Spanish professional football manager. Duran is currently an assistant coach for Major League Soccer club Los Angeles FC."
+  },
+  "brian-schmetzer": {
+    "name": "Brian Schmetzer",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Brian_Schmetzer_NYCFC.Seattle.18.Oct.2025-155.jpg",
+    "bio": "Brian Thomas Schmetzer is an American soccer coach and former professional player. He is the head coach of Seattle Sounders FC of Major League Soccer (MLS), having been assistant coach for the team until Sigi Schmid's departure in 2016. Prior to that, he coached the Seattle Sounders in the USL First Division for seven seasons, winning two championships, and played in the North American Soccer League, Major Indoor Soccer League and Western Soccer League for various Seattle teams."
+  },
+  "jamahl-mosley": {
+    "name": "Jamahl Mosley",
+    "photo": null,
+    "bio": "Jamahl Malcolm Mosley is an American professional basketball coach and former player who is the head coach of the New Orleans Pelicans of the National Basketball Association (NBA). He played college basketball for the Colorado Buffaloes and professionally for four seasons overseas."
+  },
+  "joe-espada": {
+    "name": "Joe Espada",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/2/21/Joe_Espada_%2853473920042%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Josue Espada is a Puerto Rican professional baseball coach, who is the current manager of the Houston Astros of Major League Baseball (MLB). He previously coached in MLB for the Miami Marlins, New York Yankees, and the Astros. In international competition, Espada has coached for Puerto Rico, winning two silver medals in the World Baseball Classic (WBC)."
+  },
+  "matt-quatraro": {
+    "name": "Matt Quatraro",
+    "photo": null,
+    "bio": "Matthew John Quatraro is an American professional coach, who is the current manager of the Kansas City Royals of Major League Baseball (MLB). He was previously a coach for the Cleveland Indians from 2014 to 2017 and the Tampa Bay Rays from 2018 to 2022."
+  },
+  "don-kelly": {
+    "name": "Don Kelly",
+    "photo": null,
+    "bio": "Donald or Don Kelly may refer to:Donald G. Kelly, American politician, attorney and horse breeder\nDonald P. Kelly (1922–2010), Chicago businessman\nDon Kelly (footballer) (1922–2009), English footballer\nDon Kelly (baseball), American Major League Baseball manager and former player\nDon O'Kelly (1924–1966), also Don Kelly, American actor"
+  },
+  "mike-babcock": {
+    "name": "Mike Babcock",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/1/14/Mike_Babcock_in_2013.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Michael Babcock Jr.  is a Canadian professional ice hockey coach and former player who is the head coach for the Edmonton Oilers of the National Hockey League (NHL). He spent parts of 18 seasons as a head coach in the NHL, beginning when he was named head coach of the Mighty Ducks of Anaheim, whom he led to the 2003 Stanley Cup Final. In 2005, Babcock signed with the Detroit Red Wings, winning the Stanley Cup with them in 2008, and helping them to the Stanley Cup playoffs every year during his tenure and setting a record for most wins in Red Wings history. In 2015, he left Detroit to coach the Toronto Maple Leafs, a position he held until he was fired in 2019. During his coaching tenure from 1991 to 2019, Babcock's teams missed the postseason only four times."
+  },
+  "andrew-brunette": {
+    "name": "Andrew Brunette",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/f/fe/BLHN_-_Andrew_Brunette_45.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Andrew D. Brunette is a Canadian professional ice hockey coach and former player who is the head coach for the Nashville Predators of the National Hockey League (NHL). As a player, Brunette played over 1,100 career games in the NHL with the Washington Capitals, Nashville Predators, Atlanta Thrashers, Minnesota Wild, Colorado Avalanche, and Chicago Blackhawks between 1996 and 2012. He previously served as interim head coach for the Florida Panthers, as an assistant coach for the Minnesota Wild and New Jersey Devils, and as the Wild's assistant general manager."
+  },
+  "peter-deboer": {
+    "name": "Peter DeBoer",
+    "photo": null,
+    "bio": "George Peter DeBoer is a Canadian professional ice hockey coach and former player who is the head coach for the New York Islanders of the National Hockey League (NHL). He was selected in the 12th round, 237th overall, by the Toronto Maple Leafs in the 1988 NHL entry draft but never played in the NHL, instead playing for the Milwaukee Admirals of the International Hockey League (IHL)."
+  },
+  "rick-tocchet": {
+    "name": "Rick Tocchet",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/c/c0/RickTocchet2024Feb16.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Richard Tocchet is a Canadian professional ice hockey coach and former player who is the head coach for the Philadelphia Flyers of the National Hockey League (NHL). He was selected in the sixth round, 121st overall, by the Flyers in the 1983 NHL entry draft and also played for the Pittsburgh Penguins, Los Angeles Kings, Boston Bruins, Washington Capitals, and Phoenix Coyotes. He formerly served as the head coach for the Tampa Bay Lightning, Arizona Coyotes, and Vancouver Canucks. Tocchet won the Jack Adams Award for coach of the year in 2024."
+  },
+  "dan-muse": {
+    "name": "Dan Muse",
+    "photo": null,
+    "bio": "Dan Muse is an American professional ice hockey coach who is the head coach of the Pittsburgh Penguins of the National Hockey League (NHL)."
+  },
+  "andre-tourigny": {
+    "name": "Andre Tourigny",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Andr%C3%A9_Tourigny.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "André Tourigny is a Canadian professional ice hockey coach who is the head coach for the Utah Mammoth of the National Hockey League (NHL). He previously served as head coach of the Arizona Coyotes and an assistant coach for the Ottawa Senators and Colorado Avalanche."
+  },
+  "ryan-craig": {
+    "name": "Ryan Craig",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ryan_Craig_%2832477651591%29_%28cropped%29.jpg/1920px-Ryan_Craig_%2832477651591%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "bio": "Ryan F. Craig is a Canadian professional ice hockey coach and former player who is the head coach for the Vegas Golden Knights of the National Hockey League (NHL). Prior to retirement, he played in the NHL for the Tampa Bay Lightning, Pittsburgh Penguins, and Columbus Blue Jackets, and served as the captain of the Cleveland Monsters in the American Hockey League (AHL). Craig was drafted 255th overall in the 2002 NHL entry draft by the Lightning."
+  },
+  "spencer-carbery": {
+    "name": "Spencer Carbery",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/5/53/Carbery%2CSpencer_SCStingrays.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Spencer Carbery is a Canadian professional ice hockey coach and former player who is the head coach for the Washington Capitals of the National Hockey League (NHL)."
+  },
+  "oliver-marmol": {
+    "name": "Oliver Marmol",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/6/60/Maral2023a.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Oliver Jose Marmol is an American professional baseball manager who is the manager of the St. Louis Cardinals of Major League Baseball (MLB)."
+  },
+  "nuno-espirito-santo": {
+    "name": "Nuno Espírito Santo",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Nuno_Esp%C3%ADrito_Santo_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Nuno Herlander Simões Espírito Santo, known as Nuno Espírito Santo or simply Nuno, is a Portuguese football manager and former player who played as a goalkeeper and is currently head coach of EFL Championship club West Ham United."
   }
 }
