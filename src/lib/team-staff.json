@@ -1960,364 +1960,413 @@
     "dc": null
   },
   "134918": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Joe Brady",
     "owners": [
-      "Terry Pegula"
+      "Ralph Wilson (1959–2014)",
+      "Terry & Kim Pegula (2014–present)"
     ],
-    "gm": null,
+    "gm": "Brandon Beane",
     "president": null,
-    "oc": null,
-    "dc": null
+    "oc": "Pete Carmichael",
+    "dc": "Jim Leonhard"
   },
   "134919": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Jeff Hafley",
     "owners": [
-      "Stephen Ross"
+      "Joe Robbie (1966–1990)",
+      "Wayne Huizenga (1990–2009)",
+      "Stephen M. Ross (2009–present)"
     ],
-    "gm": null,
+    "gm": "Jon-Eric Sullivan",
     "president": "Tom Garfinkel",
-    "oc": null,
-    "dc": null
+    "oc": "Bobby Slowik",
+    "dc": "Sean Duggan"
   },
   "134920": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Mike Vrabel",
     "owners": [
-      "Robert Kraft"
+      "Billy Sullivan (1959–1988)",
+      "Victor Kiam (1988–1992)",
+      "James Orthwein (1992–1994)"
     ],
-    "gm": null,
+    "gm": "Eliot Wolf",
     "president": "Jonathan Kraft",
-    "oc": null,
-    "dc": null
+    "oc": "Josh McDaniels",
+    "dc": "Zak Kuhr"
   },
   "134921": {
-    "v": 3,
+    "v": 5,
     "fetched": true,
     "headCoach": "Aaron Glenn",
     "owners": [
-      "Woody Johnson"
+      "Harry Wismer (1959–1963)",
+      "Sonny Werblin (1963–1968)",
+      "Leon Hess (1968–1999)"
     ],
-    "gm": null,
+    "gm": "Darren Mougey",
     "president": "Hymie Elhai",
     "oc": null,
     "dc": null
   },
   "134922": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
-    "headCoach": "Jesse Minter",
+    "headCoach": "Christina Deruyter",
     "owners": [
-      "Steve Bisciotti"
+      "Art Modell (1996–2004)",
+      "Steve Bisciotti (2004–present)"
     ],
-    "gm": null,
+    "gm": "Eric DeCosta",
     "president": "Sashi Brown",
-    "oc": null,
-    "dc": null
+    "oc": "Declan Doyle",
+    "dc": "Anthony Weaver"
   },
   "134923": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Zac Taylor",
     "owners": [
-      "Mike Brown"
+      "Paul Brown (1967–1991)",
+      "Mike Brown (1991–present)"
     ],
-    "gm": null,
+    "gm": "Trey Brown",
     "president": null,
-    "oc": null,
-    "dc": null
+    "oc": "Dan Pitcher",
+    "dc": "Al Golden"
   },
   "134924": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Todd Monken",
     "owners": [
-      "Jimmy Haslam"
+      "Arthur B. McBride (1944–1953)",
+      "Dave Jones (1953–1961)",
+      "Art Modell (1961–1996)"
     ],
-    "gm": null,
+    "gm": "Andrew Berry",
     "president": "David Jenkins",
-    "oc": null,
-    "dc": null
+    "oc": "Travis Switzer",
+    "dc": "Mike Rutenberg"
   },
   "134925": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Mike McCarthy",
     "owners": [
-      "Art Rooney II"
+      "Rooney family (1933–present)"
     ],
-    "gm": null,
+    "gm": "Omar Khan",
     "president": "Art Rooney II",
-    "oc": null,
-    "dc": null
+    "oc": "Brian Angelichio",
+    "dc": "Patrick Graham"
   },
   "134926": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "DeMeco Ryans",
     "owners": [
-      "Cal McNair"
+      "Bob McNair (1999–2018)",
+      "Janice McNair (2018–2024)",
+      "Cal McNair (2024–present)"
     ],
-    "gm": null,
+    "gm": "Nick Caserio",
     "president": "Mike Tomon",
-    "oc": null,
-    "dc": null
+    "oc": "Nick Caley",
+    "dc": "Matt Burke"
   },
   "134927": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Shane Steichen",
     "owners": [
-      "Carlie Irsay-Gordon"
+      "Carroll Rosenbloom (1953–1972)",
+      "Robert Irsay (1972–1997)",
+      "Jim Irsay (1997–2025)"
     ],
-    "gm": null,
+    "gm": "Chris Ballard",
     "president": null,
-    "oc": null,
-    "dc": null
+    "oc": "Jim Bob Cooter",
+    "dc": "Lou Anarumo"
   },
   "134928": {
-    "v": 2,
+    "v": 7,
     "fetched": true,
     "headCoach": "Liam Coen",
     "owners": [
-      "Shahid Khan"
+      "Wayne Weaver (1993–2012)",
+      "Shahid Khan (2012–present)"
     ],
-    "gm": null,
+    "gm": "James Gladstone",
     "president": "Mark Lamping",
-    "oc": "Liam Coen",
+    "oc": "Grant Udinski",
     "dc": "Anthony Campanile"
   },
   "134929": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Robert Saleh",
     "owners": [
-      "Amy Adams Strunk"
+      "Bud Adams (1959–2013)",
+      "Amy Adams Strunk (2013–present)"
     ],
-    "gm": null,
+    "gm": "Mike Borgonzi",
     "president": "Burke Nihill",
-    "oc": null,
-    "dc": null
+    "oc": "Brian Daboll",
+    "dc": "Gus Bradley"
   },
   "134930": {
-    "v": 3,
+    "v": 6,
     "fetched": true,
     "headCoach": "Sean Payton",
     "owners": [
-      "Rob Walton"
+      "Bob Howsam (1959–1961)",
+      "Gerald Phipps (1961–1981)",
+      "Edgar Kaiser Jr. (1981–1984)"
     ],
-    "gm": null,
+    "gm": "George Paton",
     "president": "Damani Leech",
-    "oc": null,
-    "dc": null
+    "oc": "Davis Webb",
+    "dc": "Vance Joseph"
   },
   "134931": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Andy Reid",
     "owners": [
-      "Clark Hunt"
+      "Lamar Hunt (1959–2006)",
+      "Clark Hunt (2006–present)"
     ],
-    "gm": null,
+    "gm": "Brett Veach",
     "president": "Mark Donovan",
-    "oc": null,
-    "dc": null
+    "oc": "Eric Bieniemy",
+    "dc": "Steve Spagnuolo"
   },
   "134932": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Klint Kubiak",
     "owners": [
-      "Mark Davis"
+      "Chet Soda (1960)",
+      "F. Wayne Valley (1960–1971)",
+      "Al Davis (1972–2011)"
     ],
-    "gm": null,
+    "gm": "John Spytek",
     "president": "Sandra Douglass Morgan",
-    "oc": null,
-    "dc": null
+    "oc": "Andrew Janocko",
+    "dc": "Rob Leonard"
   },
   "134934": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Brian Schottenheimer",
     "owners": [
-      "Jerry Jones"
+      "Clint Murchison Jr. (1960–1984)",
+      "Bum Bright (1984–1989)",
+      "Jerry Jones (1989–present)"
     ],
-    "gm": null,
+    "gm": "Jerry Jones",
     "president": null,
-    "oc": null,
-    "dc": null
+    "oc": "Klayton Adams",
+    "dc": "Christian Parker"
   },
   "134935": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "John Harbaugh",
     "owners": [
-      "John Mara"
+      "Tim Mara (1925–1959)",
+      "Jack Mara & Wellington Mara (1959–1965)",
+      "Wellington Mara & Timothy J. Mara (1965–1991)"
     ],
-    "gm": null,
+    "gm": "Joe Schoen",
     "president": null,
-    "oc": null,
-    "dc": null
+    "oc": "Matt Nagy",
+    "dc": "Dennard Wilson"
   },
   "134936": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Nick Sirianni",
     "owners": [
-      "Jeffrey Lurie"
+      "Bert Bell & Lud Wray (1933–1935)",
+      "Bert Bell (1936–1940)",
+      "Alexis Thompson (1940–1949)"
     ],
-    "gm": null,
+    "gm": "Adam Berry",
     "president": "Don Smolenski",
-    "oc": null,
-    "dc": null
+    "oc": "Sean Mannion",
+    "dc": "Vic Fangio"
   },
   "134937": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Dan Quinn",
     "owners": [
-      "Josh Harris"
+      "George Preston Marshall (1932–1965)",
+      "Edward Bennett Williams (1965–1979)",
+      "Jack Kent Cooke (1979–1997)"
     ],
-    "gm": null,
+    "gm": "Lance Newmark",
     "president": "Mark Clouse",
-    "oc": null,
-    "dc": null
+    "oc": "David Blough",
+    "dc": "Daronte Jones"
   },
   "134938": {
-    "v": 2,
+    "v": 7,
     "fetched": true,
     "headCoach": "Ben Johnson",
     "owners": [
-      "George McCaskey"
+      "A. E. Staley (1920–1921)",
+      "George Halas and Edward Sternaman (1921–1931)",
+      "George Halas (1931–1983)"
     ],
-    "gm": null,
+    "gm": "Ryan Poles",
     "president": "Kevin Warren",
-    "oc": "Ron Turner",
+    "oc": "Press Taylor",
     "dc": "Dennis Allen"
   },
   "134939": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Dan Campbell",
     "owners": [
-      "Sheila Ford Hamp"
+      "Harry N. Snyder (1930–1934)",
+      "George A. Richards (1934–1940)",
+      "Fred L. Mandel Jr. (1940–1948)"
     ],
-    "gm": null,
+    "gm": "Brad Holmes",
     "president": "Richard Haddad",
-    "oc": null,
-    "dc": null
+    "oc": "Drew Petzing",
+    "dc": "Kelvin Sheppard"
   },
   "134940": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Matt LaFleur",
     "owners": [
-      "Green Bay Packers, Inc."
+      "Green Bay Packers, Inc. (1923–present)"
     ],
-    "gm": null,
+    "gm": "Brian Gutekunst",
     "president": "Ed Policy",
-    "oc": null,
-    "dc": null
+    "oc": "Adam Stenavich",
+    "dc": "Jonathan Gannon"
   },
   "134941": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Kevin O'Connell",
     "owners": [
-      "Zygi Wilf"
+      "Bill Boyer , Max Winter , & H. P. Skoglund (1960–1986)",
+      "Irwin L. Jacobs & Carl Pohlad (1986–1987)",
+      "Wheelock Whitney Jr. , Jaye F. Dyer , Irwin L. Jacobs & Carl Pohlad (1987–1991)"
     ],
-    "gm": null,
+    "gm": "Nolan Teasley",
     "president": "Mark Wilf",
     "oc": null,
     "dc": null
   },
   "134942": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Kevin Stefanski",
     "owners": [
-      "Arthur Blank"
+      "Rankin M. Smith Sr. (1965–1989)",
+      "Taylor Smith (1989–2002)",
+      "Arthur Blank (2002–present)"
     ],
-    "gm": null,
+    "gm": "Ian Cunningham",
     "president": "Greg Beadles",
-    "oc": null,
-    "dc": null
+    "oc": "Tommy Rees",
+    "dc": "Jeff Ulbrich"
   },
   "134943": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Dave Canales",
     "owners": [
-      "David Tepper"
+      "Jerry Richardson (1993–2018)",
+      "David Tepper (2018–present)"
     ],
-    "gm": null,
+    "gm": "Dan Morgan",
     "president": "Kristi Coleman",
-    "oc": null,
-    "dc": null
+    "oc": "Brad Idzik",
+    "dc": "Ejiro Evero"
   },
   "134944": {
-    "v": 2,
+    "v": 7,
     "fetched": true,
     "headCoach": "Kellen Moore",
     "owners": [
-      "Gayle Benson"
+      "John W. Mecom Jr. (1966–1985)",
+      "Tom Benson (1985–2018)",
+      "Gayle Benson (2018–present)"
     ],
-    "gm": null,
+    "gm": "Mickey Loomis",
     "president": "Dennis Lauscha",
-    "oc": "Kellen Moore",
-    "dc": "Rob Ryan"
+    "oc": "Doug Nussmeier",
+    "dc": "Brandon Staley"
   },
   "134945": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Todd Bowles",
     "owners": [
-      "Bryan Glazer"
+      "Hugh Culverhouse (1974–1994)",
+      "Malcolm Glazer (1995–2014)",
+      "Glazer family (2014–present)"
     ],
-    "gm": null,
+    "gm": "Jason Licht",
     "president": "Darcie Glazer Kassewitz",
-    "oc": null,
+    "oc": "Zac Robinson",
     "dc": null
   },
   "134946": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Mike LaFleur",
     "owners": [
-      "Michael Bidwill"
+      "Chris O'Brien (1898–1929)",
+      "David Jones (1929–1933)",
+      "Charles Bidwill (1933–1947)"
     ],
-    "gm": null,
+    "gm": "Monti Ossenfort",
     "president": null,
-    "oc": null,
-    "dc": null
+    "oc": "Nathaniel Hackett",
+    "dc": "Nick Rallis"
   },
   "134948": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Kyle Shanahan",
     "owners": [
-      "Jed York"
+      "Tony Morabito (1944–1957)",
+      "Morabito estate (1957–1977)",
+      "Edward J. DeBartolo Jr. (1977–2000)"
     ],
-    "gm": null,
+    "gm": "John Lynch",
     "president": "Al Guido",
-    "oc": null,
-    "dc": null
+    "oc": "Klay Kubiak",
+    "dc": "Raheem Morris"
   },
   "134949": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Mike Macdonald",
     "owners": [
-      "The Paul Allen Estate"
+      "Nordstrom family & Herman Sarkowsky (1974–1988)",
+      "Ken Behring & Ken Hofmann (1988–1997)",
+      "Paul Allen (1997–2018)"
     ],
-    "gm": null,
+    "gm": "John Schneider",
     "president": "Chuck Arnold",
-    "oc": null,
-    "dc": null
+    "oc": "Brian Fleury",
+    "dc": "Aden Durde"
   },
   "135251": {
     "v": 2,
@@ -2762,28 +2811,32 @@
     "dc": null
   },
   "135907": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Sean McVay",
     "owners": [
-      "Stan Kroenke"
+      "Homer Marshman (1937–1941)",
+      "Dan Reeves (1941–1972)",
+      "Robert Irsay (1972)"
     ],
-    "gm": null,
+    "gm": "Les Snead",
     "president": "Kevin Demoff",
-    "oc": null,
-    "dc": null
+    "oc": "Nathan Scheelhaase",
+    "dc": "Chris Shula"
   },
   "135908": {
-    "v": 3,
+    "v": 7,
     "fetched": true,
     "headCoach": "Jim Harbaugh",
     "owners": [
-      "Dean Spanos"
+      "Barron Hilton (1959–1966)",
+      "Gene Klein (1966–1984)",
+      "Alex Spanos (1984–2018)"
     ],
-    "gm": null,
+    "gm": "Joe Hortiz",
     "president": "A. G. Spanos",
-    "oc": null,
-    "dc": null
+    "oc": "Mike McDaniel",
+    "dc": "Chris O'Leary"
   },
   "135913": {
     "v": 2,

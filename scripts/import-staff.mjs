@@ -32,14 +32,20 @@ const clean = (s) =>
     .replace(/\s*\(\s*/g, " (").replace(/\s*\)\s*/g, ") ")
     .trim();
 
+const labelClean = (s) =>
+  (s ?? "").replace(/<[^>]+>/g, " ").replace(/&#160;|&nbsp;/g, " ").replace(/\s+/g, " ").trim().toLowerCase();
+
 const infobox = (html, label) => {
-  const re = new RegExp(`<th[^>]*>\\s*${label}[\\s\\S]{0,40}?</th>\\s*<td[^>]*>([\\s\\S]*?)</td>`, "i");
-  const m = html.match(re);
-  if (!m) return [];
-  return clean(m[1])
-    .split("|")
-    .map((x) => x.trim().replace(/[,;]$/, ""))
-    .filter((x) => x && !x.includes("{") && !/mw-parser|plainlist/.test(x) && x.length < 90);
+  const want = label.replace(/\\/g, "").toLowerCase(); // tolerate the escaped "Owner\\(s\\)" callers
+  const pairs = [...(html ?? "").matchAll(/<th[^>]*>([\s\S]*?)<\/th>[\s\S]{0,80}?<td[^>]*>([\s\S]*?)<\/td>/gi)];
+  for (const [, th, td] of pairs) {
+    if (!labelClean(th).startsWith(want.replace(/\(s\)/, "").trim()) && labelClean(th) !== want) continue;
+    return clean(td)
+      .split("|")
+      .map((x) => x.trim().replace(/[,;]$/, ""))
+      .filter((x) => x && !x.includes("{") && !/mw-parser|plainlist/.test(x) && x.length < 90);
+  }
+  return [];
 };
 
 async function wikiParse(title) {
@@ -75,7 +81,7 @@ for (const t of teams) {
   const prev = staff[t.idTeam];
   const isFootball = (t.strSport ?? "") === "American Football";
   // v3 complete → skip. v2 non-football is still good → skip. v2 football needs the season-page fix → refetch.
-  if (prev?.v === 3 || (prev?.v === 2 && !isFootball)) {
+  if (prev?.v === 7 || (prev?.v >= 2 && !isFootball)) {
     if (i % 25 === 0) console.log(`${i}/${teams.length} …done through here`);
     continue;
   }
@@ -84,7 +90,7 @@ for (const t of teams) {
   if (!html) { console.log(`${i}/${teams.length} ${t.strTeam}: ✗ no page`); continue; }
 
   const entry = {
-    v: 3,
+    v: 7,
     fetched: true,
     headCoach: infobox(html, "Head coach")[0] ?? infobox(html, "Manager")[0] ?? null,
     owners: [...new Set([...infobox(html, "Owner\\(s\\)"), ...infobox(html, "Principal owner"), ...infobox(html, "Owner")])].slice(0, 3),
@@ -94,22 +100,32 @@ for (const t of teams) {
   };
 
   if (isFootball) {
-    // current coordinators live on the season page's infobox, not the team page
-    const y = new Date().getFullYear();
-    for (const season of [`${y} ${t.strTeam} season`, `${y - 1} ${t.strTeam} season`]) {
-      const sHtml = await wikiParse(season);
-      if (!sHtml) continue;
-      const oc = infobox(sHtml, "Offensive coordinator")[0] ?? null;
-      const dc = infobox(sHtml, "Defensive coordinator")[0] ?? null;
-      const hc = infobox(sHtml, "Head coach")[0] ?? null;
-      if (oc || dc || hc) {
-        entry.oc = oc;
-        entry.dc = dc;
-        if (hc) entry.headCoach = hc; // season page is the freshest source
-        break;
+    // 1) The team's current-staff template — maintained on hire, no season ambiguity
+    const tpl = await wikiParse(`Template:${t.strTeam} staff`);
+    const grab = (html, role) => {
+      if (!html) return null;
+      const re = new RegExp(`${role}\\s*(?:–|—|-|&#8211;)\\s*(?:<a[^>]*>)?([^<|]{2,60})`, "i");
+      const m = html.match(re);
+      return m ? clean(m[1]).split("|")[0].trim() : null;
+    };
+    const tplHC = grab(tpl, "Head Coach");
+    if (tplHC) entry.headCoach = tplHC;
+    entry.oc = grab(tpl, "Offensive Coordinator");
+    entry.dc = grab(tpl, "Defensive Coordinator");
+    const tplGM = grab(tpl, "General Manager");
+    if (tplGM) entry.gm = tplGM;
+
+    // 2) CURRENT-year season page fills remaining gaps only — never prior years
+    if (!entry.oc || !entry.dc || !entry.headCoach) {
+      const y = new Date().getFullYear();
+      const sHtml = await wikiParse(`${y} ${t.strTeam} season`);
+      if (sHtml) {
+        entry.headCoach = infobox(sHtml, "Head coach")[0] ?? entry.headCoach;
+        entry.oc = entry.oc ?? (infobox(sHtml, "Offensive coordinator")[0] ?? null);
+        entry.dc = entry.dc ?? (infobox(sHtml, "Defensive coordinator")[0] ?? null);
       }
-      await sleep(600);
     }
+    await sleep(600);
   }
 
   staff[t.idTeam] = entry;

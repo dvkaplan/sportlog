@@ -553,5 +553,15 @@
     "name": "Todd Bowles",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Tampa_Bay_Buccaneers_HC_Todd_Bowles_with_Meredith_Marakovits_%2871Zy1MYJ2tk%29_shadows_lifted.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "bio": "Todd Robert Bowles is an American professional football coach and former player who is the head coach of the Tampa Bay Buccaneers of the National Football League (NFL). He played college football at Temple and signed with the Washington Redskins as an undrafted free agent in 1986 and was a member of the team that won Super Bowl XXII. Bowles was also a member of the San Francisco 49ers."
+  },
+  "raheem-morris": {
+    "name": "Raheem Morris",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/6/60/2024_Atlanta_Falcons_Raheem_Morris_OTA_Press_Conference_%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Dejohnold Raheem Morris is an American professional football coach who is the defensive coordinator for the San Francisco 49ers of the National Football League (NFL). He most recently was the head coach for the Atlanta Falcons from 2024 to 2025. Morris also previously served as the head coach of the Tampa Bay Buccaneers from 2009 to 2011 and interim head coach of the Falcons in 2020 and was an assistant coach for the Kansas State Wildcats, Washington Redskins, and Los Angeles Rams, winning Super Bowl LVI with the lattermost."
+  },
+  "pete-carroll": {
+    "name": "Pete Carroll",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/b/be/Pete_Carroll%2C_Sept._2025.jpg",
+    "bio": "Peter Clay Carroll is an American football coach. He served as a head coach in the National Football League (NFL) for 19 seasons, primarily with the Seattle Seahawks, and as the head coach of the USC Trojans for nine seasons. Carroll is the third head coach to win both a college football national championship and a Super Bowl, achieving the former with the Trojans and the latter with the Seahawks."
   }
 }
