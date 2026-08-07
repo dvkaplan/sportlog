@@ -7,7 +7,7 @@ export default function FollowButton({
   entityId,
   entityName,
 }: {
-  entityType: "team" | "player" | "league" | "fighter";
+  entityType: "team" | "player" | "league" | "fighter" | "coach";
   entityId: string;
   entityName: string;
 }) {

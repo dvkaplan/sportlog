@@ -28,7 +28,11 @@ const addFight = (rawName, fight, date) => {
   const e = events[slug];
   if ((rawName ?? "").length > (e.fullName ?? "").length) e.fullName = rawName; // keep richest title
   if (!e.date && date) e.date = date;
-  const pairKey = (fight.title ?? "").split(" vs ").map((s) => slugify(s.trim())).sort().join("|");
+  const pairKey = (fight.title ?? "")
+    .split(" vs ")
+    .map((s) => slugify(s.trim()).replace(/-(jr|sr|ii|iii|iv|v)$/i, ""))
+    .sort()
+    .join("|");
   if (e.seen.has(fight.gameId) || (pairKey && e.seen.has(pairKey))) return;
   e.seen.add(fight.gameId);
   if (pairKey) e.seen.add(pairKey);

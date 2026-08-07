@@ -75,8 +75,17 @@ export default function ProfilePage() {
           const favs = follows.filter((f) => f.is_favorite);
           const rest = follows.filter((f) => !f.is_favorite);
           const href = (f: FollowRow) =>
-            f.entity_type === "team" ? `/team/${f.entity_id}` : f.entity_type === "player" ? `/player/${f.entity_id}` : `/leagues`;
-          const icon = (t: string) => (t === "team" ? "🛡️" : t === "player" ? "👤" : "🏆");
+            f.entity_type === "team" ? `/team/${f.entity_id}`
+            : f.entity_type === "player" ? `/player/${f.entity_id}`
+            : f.entity_type === "fighter" ? `/fighter/${f.entity_id}`
+            : f.entity_type === "coach" ? `/coach/${f.entity_id}`
+            : `/leagues`;
+          const icon = (t: string) =>
+            t === "team" ? "🛡️"
+            : t === "player" ? "👤"
+            : t === "fighter" ? "🥊"
+            : t === "coach" ? "📋"
+            : "🏆";
           return (
             <>
               {favs.length > 0 && (

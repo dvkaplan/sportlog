@@ -245,10 +245,16 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
             </Link>
           );
 
-          const staffRow = (role: string, name: string) => (
-            <div key={role + name} className="flex items-center justify-between rounded-lg border border-zinc-800 bg-zinc-950 px-4 py-2.5 text-sm">
-              <span className="text-zinc-500">{role}</span>
-              <span className="font-medium">{name}</span>
+          const personSlug = (n: string) =>
+            n.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+          const staffRow = (role: string, name: string, href?: string) => (
+            <div key={role + name} className="flex items-start justify-between gap-4 rounded-lg border border-zinc-800 bg-zinc-950 px-4 py-2.5 text-sm">
+              <span className="shrink-0 text-zinc-500">{role}</span>
+              {href ? (
+                <Link href={href} className="min-w-0 text-right font-medium text-zinc-100 hover:text-emerald-400 hover:underline underline-offset-4">{name}</Link>
+              ) : (
+                <span className="min-w-0 text-right font-medium">{name}</span>
+              )}
             </div>
           );
 
@@ -274,7 +280,7 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
               <h2 className="mt-10 font-semibold">Coaching & Front Office</h2>
               {overlay?.fetched ? (
                 <div className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
-                  {overlay.headCoach && staffRow(coachTitle(sport), overlay.headCoach)}
+                  {overlay.headCoach && staffRow(coachTitle(sport), overlay.headCoach, `/coach/${personSlug(overlay.headCoach)}`)}
                   {overlay.oc && staffRow("Offensive Coordinator", overlay.oc)}
                   {overlay.dc && staffRow("Defensive Coordinator", overlay.dc)}
                   {overlay.gm && staffRow("General Manager", overlay.gm)}

@@ -1,5 +1,6 @@
 {
   "133599": {
+    "v": 2,
     "fetched": true,
     "headCoach": "César Peixoto",
     "owners": [
@@ -11,10 +12,11 @@
     "dc": null
   },
   "133600": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Álvaro Arbeloa",
     "owners": [
-      "Shahid Khan&#91;2&#93;"
+      "Shahid Khan"
     ],
     "gm": null,
     "president": null,
@@ -22,11 +24,11 @@
     "dc": null
   },
   "133601": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Unai Emery",
     "owners": [
-      "V Sports (Nassef Sawiris, Wes Edens & Atairos)",
-      "V Sports (Nassef Sawiris, Wes Edens & Atairos)"
+      "V Sports (Nassef Sawiris , Wes Edens & Atairos)"
     ],
     "gm": null,
     "president": null,
@@ -34,11 +36,12 @@
     "dc": null
   },
   "133602": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Andoni Iraola",
     "owners": [
-      "Fenway Sports Group",
-      "John W. Henry"
+      "John W. Henry",
+      "Fenway Sports Group"
     ],
     "gm": null,
     "president": "David Moores",
@@ -46,6 +49,7 @@
     "dc": null
   },
   "133603": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -55,6 +59,7 @@
     "dc": null
   },
   "133604": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Mikel Arteta",
     "owners": [
@@ -66,6 +71,7 @@
     "dc": null
   },
   "133610": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Xabi Alonso",
     "owners": [
@@ -77,13 +83,12 @@
     "dc": null
   },
   "133612": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Michael Carrick",
     "owners": [
       "Manchester United plc (71.06%)",
-      "Ineos (28.94%)&#91;5&#93;",
-      "Manchester United plc (71.06%)",
-      "Ineos (28.94%)&#91;5&#93;"
+      "Ineos (28.94%)"
     ],
     "gm": null,
     "president": null,
@@ -91,6 +96,7 @@
     "dc": null
   },
   "133613": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Enzo Maresca",
     "owners": [
@@ -102,6 +108,7 @@
     "dc": null
   },
   "133615": {
+    "v": 2,
     "fetched": true,
     "headCoach": "David Moyes",
     "owners": [
@@ -113,6 +120,7 @@
     "dc": null
   },
   "133616": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Roberto De Zerbi",
     "owners": [
@@ -124,6 +132,7 @@
     "dc": null
   },
   "133619": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Fabian Hürzeler",
     "owners": [
@@ -135,6 +144,7 @@
     "dc": null
   },
   "133623": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -144,6 +154,7 @@
     "dc": null
   },
   "133632": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -153,10 +164,11 @@
     "dc": null
   },
   "133635": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Daniel Farke",
     "owners": [
-      "49ers Enterprises&#91;3&#93;"
+      "49ers Enterprises"
     ],
     "gm": null,
     "president": null,
@@ -164,13 +176,13 @@
     "dc": null
   },
   "133636": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Nuno Espírito Santo",
     "owners": [
-      "Daniel Křetínský (43%)&#91;2&#93;",
+      "Daniel Křetínský (43%)",
       "David Sullivan (38.8%)",
-      "Vanessa Gold (9%)&#91;2&#93;",
-      "J. Albert \"Tripp\" Smith (8%)"
+      "Vanessa Gold (9%)"
     ],
     "gm": null,
     "president": null,
@@ -178,15 +190,17 @@
     "dc": null
   },
   "133650": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Niko Kovač",
     "owners": [],
     "gm": null,
-    "president": "Hans-Joachim Watzke&#91;4&#93;",
+    "president": "Hans-Joachim Watzke",
     "oc": null,
     "dc": null
   },
   "133651": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -196,6 +210,7 @@
     "dc": null
   },
   "133652": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -205,6 +220,7 @@
     "dc": null
   },
   "133653": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -214,6 +230,7 @@
     "dc": null
   },
   "133654": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -223,6 +240,7 @@
     "dc": null
   },
   "133655": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -232,6 +250,7 @@
     "dc": null
   },
   "133657": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -241,6 +260,7 @@
     "dc": null
   },
   "133660": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -250,15 +270,17 @@
     "dc": null
   },
   "133662": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Daniel Thioune",
     "owners": [],
     "gm": null,
-    "president": "Hubertus Hess-Grunewald&#160;&#91;de&#93;",
+    "president": "Hubertus Hess-Grunewald &#160",
     "oc": null,
     "dc": null
   },
   "133664": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Vincent Kompany",
     "owners": [],
@@ -268,6 +290,7 @@
     "dc": null
   },
   "133665": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -277,10 +300,11 @@
     "dc": null
   },
   "133666": {
+    "v": 2,
     "fetched": true,
-    "headCoach": "Carles Martínez&#91;7&#93;",
+    "headCoach": "Carles Martínez",
     "owners": [
-      "Bayer AG&#91;5&#93;"
+      "Bayer AG"
     ],
     "gm": null,
     "president": null,
@@ -288,13 +312,12 @@
     "dc": null
   },
   "133667": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Ruben Amorim",
     "owners": [
-      "RedBird Capital Partners (99.93%)&#91;3&#93;&#91;4&#93;",
-      "Private shareholders (0.07%)&#91;5&#93;",
-      "RedBird Capital Partners (99.93%)&#91;3&#93;&#91;4&#93;",
-      "Private shareholders (0.07%)&#91;5&#93;"
+      "RedBird Capital Partners (99.93%)",
+      "Private shareholders (0.07%)"
     ],
     "gm": null,
     "president": "Paolo Scaroni",
@@ -302,6 +325,7 @@
     "dc": null
   },
   "133668": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -311,6 +335,7 @@
     "dc": null
   },
   "133670": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -320,6 +345,7 @@
     "dc": null
   },
   "133674": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Fabio Grosso",
     "owners": [
@@ -331,6 +357,7 @@
     "dc": null
   },
   "133675": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -340,6 +367,7 @@
     "dc": null
   },
   "133676": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Luciano Spalletti",
     "owners": [
@@ -351,6 +379,7 @@
     "dc": null
   },
   "133678": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -360,6 +389,7 @@
     "dc": null
   },
   "133679": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Kosta Runjaić",
     "owners": [
@@ -371,17 +401,20 @@
     "dc": null
   },
   "133681": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Cristian Chivu",
     "owners": [
-      "Oaktree Capital Management (99.6%)Other shareholders (0.04%)&#91;3&#93;"
+      "Oaktree Capital Management (99.6%)",
+      "Other shareholders (0.04%)"
     ],
     "gm": null,
-    "president": "Giuseppe Marotta&#91;4&#93;",
+    "president": "Giuseppe Marotta",
     "oc": null,
     "dc": null
   },
   "133682": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -391,6 +424,7 @@
     "dc": null
   },
   "133687": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -400,6 +434,7 @@
     "dc": null
   },
   "133701": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -409,6 +444,7 @@
     "dc": null
   },
   "133703": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -418,6 +454,7 @@
     "dc": null
   },
   "133704": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -427,6 +464,7 @@
     "dc": null
   },
   "133707": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -436,6 +474,7 @@
     "dc": null
   },
   "133711": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -445,6 +484,7 @@
     "dc": null
   },
   "133712": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -454,6 +494,7 @@
     "dc": null
   },
   "133713": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -463,13 +504,13 @@
     "dc": null
   },
   "133714": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Luis Enrique",
     "owners": [
       "Qatar Sports Investments (85.9%)",
       "Arctos Partners (12.5%)",
-      "Boardroom (1.6%)",
-      "Qatar Sports Investments (85.9%)"
+      "Boardroom (1.6%)"
     ],
     "gm": null,
     "president": "Nasser Al-Khelaifi",
@@ -477,6 +518,7 @@
     "dc": null
   },
   "133715": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -486,6 +528,7 @@
     "dc": null
   },
   "133719": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -495,6 +538,7 @@
     "dc": null
   },
   "133720": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Oliver Glasner",
     "owners": [
@@ -506,6 +550,7 @@
     "dc": null
   },
   "133722": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Manuel Pellegrini",
     "owners": [],
@@ -524,6 +569,7 @@
     "dc": null
   },
   "133725": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -533,6 +579,7 @@
     "dc": null
   },
   "133727": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Edin Terzić",
     "owners": [],
@@ -542,6 +589,7 @@
     "dc": null
   },
   "133728": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Beñat San José",
     "owners": [
@@ -553,13 +601,13 @@
     "dc": null
   },
   "133729": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Diego Simeone",
     "owners": [
-      "Apollo Sports Capital (55%)&#91;4&#93;",
-      "Quantum Pacific Group (25%)&#91;5&#93;&#91;6&#93;",
-      "Others (20%)",
-      "Apollo Sports Capital (55%)&#91;4&#93;"
+      "Apollo Sports Capital (55%)",
+      "Quantum Pacific Group (25%)",
+      "Others (20%)"
     ],
     "gm": null,
     "president": "Enrique Cerezo",
@@ -567,6 +615,7 @@
     "dc": null
   },
   "133730": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Luis Miguel Ramis",
     "owners": [],
@@ -576,6 +625,7 @@
     "dc": null
   },
   "133731": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -585,6 +635,7 @@
     "dc": null
   },
   "133732": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -594,6 +645,7 @@
     "dc": null
   },
   "133733": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -603,10 +655,10 @@
     "dc": null
   },
   "133734": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Manolo González",
     "owners": [
-      "Velocity Sport Limited (Alan Pace and JJ Watt)",
       "Velocity Sport Limited (Alan Pace and JJ Watt)"
     ],
     "gm": null,
@@ -615,6 +667,7 @@
     "dc": null
   },
   "133735": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -624,6 +677,7 @@
     "dc": null
   },
   "133738": {
+    "v": 2,
     "fetched": true,
     "headCoach": "José Mourinho",
     "owners": [],
@@ -633,6 +687,7 @@
     "dc": null
   },
   "133739": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Hansi Flick",
     "owners": [],
@@ -642,6 +697,7 @@
     "dc": null
   },
   "133740": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -651,6 +707,7 @@
     "dc": null
   },
   "133813": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -660,6 +717,7 @@
     "dc": null
   },
   "133814": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Adi Hütter",
     "owners": [],
@@ -669,6 +727,7 @@
     "dc": null
   },
   "133822": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -678,6 +737,7 @@
     "dc": null
   },
   "133823": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -687,6 +747,7 @@
     "dc": null
   },
   "133859": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -696,6 +757,7 @@
     "dc": null
   },
   "133861": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -705,6 +767,7 @@
     "dc": null
   },
   "133862": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -714,6 +777,7 @@
     "dc": null
   },
   "133882": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -723,6 +787,7 @@
     "dc": null
   },
   "133883": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -732,6 +797,7 @@
     "dc": null
   },
   "133937": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Claudio Giráldez",
     "owners": [],
@@ -741,10 +807,11 @@
     "dc": null
   },
   "134142": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Ryan Richter (interim)",
     "owners": [
-      "Jay Sugarman&#91;2&#93;"
+      "Jay Sugarman"
     ],
     "gm": null,
     "president": null,
@@ -752,10 +819,11 @@
     "dc": null
   },
   "134143": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Raphaël Wicky",
     "owners": [
-      "Peter Mallouk"
+      "Sporting Club"
     ],
     "gm": null,
     "president": null,
@@ -763,6 +831,7 @@
     "dc": null
   },
   "134144": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Ben Olsen",
     "owners": [],
@@ -772,6 +841,7 @@
     "dc": null
   },
   "134145": {
+    "v": 2,
     "fetched": true,
     "headCoach": "René Weiler",
     "owners": [
@@ -783,6 +853,7 @@
     "dc": null
   },
   "134146": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Eric Quill",
     "owners": [
@@ -794,10 +865,13 @@
     "dc": null
   },
   "134147": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "Greg KerfootSteve LuczoJeff MallettSteve Nash"
+      "Greg Kerfoot",
+      "Steve Luczo",
+      "Jeff Mallett"
     ],
     "gm": null,
     "president": null,
@@ -805,6 +879,7 @@
     "dc": null
   },
   "134148": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -814,6 +889,7 @@
     "dc": null
   },
   "134149": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Brian Schmetzer",
     "owners": [
@@ -825,6 +901,7 @@
     "dc": null
   },
   "134150": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Philippe Eullaffroy (interim)",
     "owners": [
@@ -836,8 +913,9 @@
     "dc": null
   },
   "134152": {
+    "v": 2,
     "fetched": true,
-    "headCoach": null,
+    "headCoach": "Laurent Courtois (interim)",
     "owners": [
       "Dee and Jimmy Haslam",
       "JW and Whitney Johnson",
@@ -849,6 +927,7 @@
     "dc": null
   },
   "134153": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Greg Vanney",
     "owners": [
@@ -860,6 +939,7 @@
     "dc": null
   },
   "134154": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -869,6 +949,7 @@
     "dc": null
   },
   "134155": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Martí Cifuentes",
     "owners": [
@@ -880,6 +961,7 @@
     "dc": null
   },
   "134156": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Michael Bradley",
     "owners": [
@@ -891,6 +973,7 @@
     "dc": null
   },
   "134157": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Bruce Arena",
     "owners": [],
@@ -900,10 +983,12 @@
     "dc": null
   },
   "134158": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Pablo Mastroeni",
     "owners": [
-      "Miller Sports + Entertainment (Gail Miller)"
+      "Miller Sports + Entertainment",
+      "(Gail Miller)"
     ],
     "gm": null,
     "president": null,
@@ -911,6 +996,7 @@
     "dc": null
   },
   "134159": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Marko Mitrović",
     "owners": [
@@ -922,6 +1008,7 @@
     "dc": null
   },
   "134221": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Quique Sánchez Flores",
     "owners": [
@@ -933,6 +1020,7 @@
     "dc": null
   },
   "134224": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -942,6 +1030,7 @@
     "dc": null
   },
   "134243": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -951,6 +1040,7 @@
     "dc": null
   },
   "134301": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -960,6 +1050,7 @@
     "dc": null
   },
   "134355": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -969,6 +1060,7 @@
     "dc": null
   },
   "134384": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -978,12 +1070,13 @@
     "dc": null
   },
   "134630": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Pascal Jansen",
     "owners": [
       "City Football Group (80%)",
       "Marcelo Claure (10%)",
-      "Yankee Global Enterprises (10%)&#91;9&#93;"
+      "Yankee Global Enterprises (10%)"
     ],
     "gm": null,
     "president": null,
@@ -991,15 +1084,17 @@
     "dc": null
   },
   "134690": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Mauro Lustrinelli",
     "owners": [],
     "gm": null,
-    "president": "Dirk Zingler&#160;&#91;de&#93;",
+    "president": "Dirk Zingler &#160",
     "oc": null,
     "dc": null
   },
   "134695": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Martín Demichelis",
     "owners": [
@@ -1011,6 +1106,7 @@
     "dc": null
   },
   "134696": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -1020,6 +1116,7 @@
     "dc": null
   },
   "134700": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -1029,6 +1126,7 @@
     "dc": null
   },
   "134709": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -1038,11 +1136,13 @@
     "dc": null
   },
   "134777": {
+    "v": 2,
     "fetched": true,
-    "headCoach": "Eddie Howe",
+    "headCoach": "Matthias Jaissle",
     "owners": [
-      "Public Investment Fund (85%)RB Sports & Media",
-      "(15%)&#91;2&#93;"
+      "Public Investment Fund (85%)",
+      "RB Sports & Media",
+      "(15%)"
     ],
     "gm": null,
     "president": null,
@@ -1050,6 +1150,7 @@
     "dc": null
   },
   "134779": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Eugen Polański",
     "owners": [],
@@ -1059,6 +1160,7 @@
     "dc": null
   },
   "134781": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -1068,6 +1170,7 @@
     "dc": null
   },
   "134782": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -1077,6 +1180,7 @@
     "dc": null
   },
   "134783": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -1086,6 +1190,7 @@
     "dc": null
   },
   "134784": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Marco Baroni",
     "owners": [
@@ -1097,6 +1202,7 @@
     "dc": null
   },
   "134788": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -1106,6 +1212,7 @@
     "dc": null
   },
   "134794": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Matt Wells",
     "owners": [
@@ -1117,13 +1224,12 @@
     "dc": null
   },
   "134830": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
       "Delaware North",
-      "(Jeremy Jacobs, chairman; Charlie Jacobs, CEO)",
-      "Delaware North",
-      "(Jeremy Jacobs, chairman; Charlie Jacobs, CEO)"
+      "(Jeremy Jacobs , chairman; Charlie Jacobs , CEO)"
     ],
     "gm": "Don Sweeney",
     "president": null,
@@ -1131,6 +1237,7 @@
     "dc": null
   },
   "134831": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -1142,6 +1249,7 @@
     "dc": null
   },
   "134832": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -1153,13 +1261,12 @@
     "dc": null
   },
   "134833": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
       "Sunrise Sports & Entertainment",
-      "(Vincent Viola, chairman)&#91;5&#93;",
-      "Sunrise Sports & Entertainment",
-      "(Vincent Viola, chairman)&#91;5&#93;"
+      "(Vincent Viola , chairman)"
     ],
     "gm": "Bill Zito",
     "president": null,
@@ -1167,17 +1274,20 @@
     "dc": null
   },
   "134834": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "Molson family (majority owner)(Geoff Molson, chairman)&#91;3&#93;"
+      "Molson family (majority owner)",
+      "(Geoff Molson , chairman)"
     ],
-    "gm": "Kent Hughes&#91;4&#93;",
+    "gm": "Kent Hughes",
     "president": null,
     "oc": null,
     "dc": null
   },
   "134835": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -1189,13 +1299,12 @@
     "dc": null
   },
   "134836": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
       "Vinik Sports Group, LLC",
-      "(Jeffrey Vinik, chairman)&#91;3&#93;&#91;4&#93;",
-      "Vinik Sports Group, LLC",
-      "(Jeffrey Vinik, chairman)&#91;3&#93;&#91;4&#93;"
+      "(Jeffrey Vinik , chairman)"
     ],
     "gm": "Julien BriseBois",
     "president": null,
@@ -1203,13 +1312,12 @@
     "dc": null
   },
   "134837": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
       "Maple Leaf Sports & Entertainment",
-      "(Keith Pelley, president & CEO)",
-      "Maple Leaf Sports & Entertainment",
-      "(Keith Pelley, president & CEO)"
+      "(Keith Pelley , president & CEO)"
     ],
     "gm": "John Chayka",
     "president": null,
@@ -1217,21 +1325,23 @@
     "dc": null
   },
   "134838": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
       "Tom Dundon (majority)"
     ],
-    "gm": "Eric Tulsky&#91;4&#93;",
+    "gm": "Eric Tulsky",
     "president": null,
     "oc": null,
     "dc": null
   },
   "134839": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "John P. McConnell&#91;4&#93;"
+      "John P. McConnell"
     ],
     "gm": "Don Waddell",
     "president": null,
@@ -1239,10 +1349,12 @@
     "dc": null
   },
   "134840": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "Harris Blitzer Sports & Entertainment(David Blitzer and Josh Harris)&#91;note 1&#93;"
+      "Harris Blitzer Sports & Entertainment",
+      "(David Blitzer and Josh Harris)"
     ],
     "gm": "Sunny Mehta",
     "president": null,
@@ -1250,11 +1362,11 @@
     "dc": null
   },
   "134841": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "New York Islanders Hockey Club, L.P. (Scott D. Malkin, governor)&#91;3&#93;",
-      "New York Islanders Hockey Club, L.P. (Scott D. Malkin, governor)&#91;3&#93;"
+      "New York Islanders Hockey Club, L.P. (Scott D. Malkin , governor)"
     ],
     "gm": "Mathieu Darche",
     "president": null,
@@ -1262,13 +1374,12 @@
     "dc": null
   },
   "134842": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
       "Madison Square Garden Sports",
-      "(James L. Dolan, chairman)",
-      "Madison Square Garden Sports",
-      "(James L. Dolan, chairman)"
+      "(James L. Dolan , chairman)"
     ],
     "gm": "Chris Drury",
     "president": null,
@@ -1276,6 +1387,7 @@
     "dc": null
   },
   "134843": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -1287,13 +1399,12 @@
     "dc": null
   },
   "134844": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
       "Hoffmann Family of Companies",
-      "Mario Lemieux (minority)&#91;3&#93;",
-      "Hoffmann Family of Companies",
-      "Mario Lemieux (minority)&#91;3&#93;"
+      "Mario Lemieux (minority)"
     ],
     "gm": "Kyle Dubas",
     "president": null,
@@ -1301,6 +1412,7 @@
     "dc": null
   },
   "134845": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -1312,10 +1424,12 @@
     "dc": null
   },
   "134846": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "Henry & Susan Samueli"
+      "The Walt Disney Company (1993-2005)",
+      "Henry & Susan Samueli (2005-present)"
     ],
     "gm": "Pat Verbeek",
     "president": null,
@@ -1323,13 +1437,12 @@
     "dc": null
   },
   "134848": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
       "Calgary Sports and Entertainment",
-      "(N. Murray Edwards, chairman)",
-      "Calgary Sports and Entertainment",
-      "(N. Murray Edwards, chairman)"
+      "(N. Murray Edwards , chairman)"
     ],
     "gm": "Craig Conroy",
     "president": null,
@@ -1337,10 +1450,11 @@
     "dc": null
   },
   "134849": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "OEG Inc.&#91;4&#93;"
+      "OEG Inc."
     ],
     "gm": "Stan Bowman",
     "president": null,
@@ -1348,13 +1462,12 @@
     "dc": null
   },
   "134850": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
       "Canucks Sports & Entertainment",
-      "(Francesco Aquilini, chairman)",
-      "Canucks Sports & Entertainment",
-      "(Francesco Aquilini, chairman)"
+      "(Francesco Aquilini , chairman)"
     ],
     "gm": "Ryan Johnson",
     "president": null,
@@ -1362,13 +1475,12 @@
     "dc": null
   },
   "134851": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
       "True North Sports & Entertainment",
-      "(Mark Chipman, executive chairman & governor) &#91;3&#93;",
-      "True North Sports & Entertainment",
-      "(Mark Chipman, executive chairman & governor) &#91;3&#93;"
+      "(Mark Chipman , executive chairman & governor)"
     ],
     "gm": "Kevin Cheveldayoff",
     "president": null,
@@ -1376,6 +1488,7 @@
     "dc": null
   },
   "134852": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -1387,13 +1500,12 @@
     "dc": null
   },
   "134853": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
       "San Jose Sports & Entertainment Enterprises",
-      "(Hasso Plattner, governor)&#91;4&#93;",
-      "San Jose Sports & Entertainment Enterprises",
-      "(Hasso Plattner, governor)&#91;4&#93;"
+      "(Hasso Plattner , governor)"
     ],
     "gm": "Mike Grier",
     "president": null,
@@ -1401,13 +1513,12 @@
     "dc": null
   },
   "134854": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
       "Wirtz Corporation",
-      "Danny Wirtz, chairman&#91;3&#93;&#91;4&#93;",
-      "Wirtz Corporation",
-      "Danny Wirtz, chairman&#91;3&#93;&#91;4&#93;"
+      "Danny Wirtz , chairman"
     ],
     "gm": "Kyle Davidson",
     "president": null,
@@ -1415,10 +1526,11 @@
     "dc": null
   },
   "134855": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "Kroenke Sports & Entertainment&#91;3&#93;"
+      "Kroenke Sports & Entertainment"
     ],
     "gm": "Joe Sakic",
     "president": null,
@@ -1426,6 +1538,7 @@
     "dc": null
   },
   "134856": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -1437,6 +1550,7 @@
     "dc": null
   },
   "134857": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -1448,6 +1562,7 @@
     "dc": null
   },
   "134858": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -1459,11 +1574,10 @@
     "dc": null
   },
   "134859": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "SLB Acquisition Holdings LLC",
-      "(Tom Stillman, chairman and governor)",
       "SLB Acquisition Holdings LLC",
       "(Tom Stillman, chairman and governor)"
     ],
@@ -1473,22 +1587,24 @@
     "dc": null
   },
   "134860": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Joe Mazzulla",
     "owners": [
       "William Chisholm",
-      "Aditya Mittal&#91;11&#93;&#91;12&#93;"
+      "Aditya Mittal"
     ],
     "gm": null,
-    "president": "Rich Gotham&#91;10&#93;",
+    "president": "Rich Gotham",
     "oc": null,
     "dc": null
   },
   "134861": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Jordi Fernández",
     "owners": [
-      "Joseph Tsai&#91;9&#93;&#91;10&#93;"
+      "Joseph Tsai"
     ],
     "gm": null,
     "president": null,
@@ -1496,10 +1612,11 @@
     "dc": null
   },
   "134862": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Mike Brown",
     "owners": [
-      "Madison Square Garden Sports (James L. Dolan, Executive Chairman)&#91;8&#93;"
+      "Madison Square Garden Sports (James L. Dolan , Executive Chairman)"
     ],
     "gm": null,
     "president": "Leon Rose",
@@ -1507,10 +1624,12 @@
     "dc": null
   },
   "134863": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Nick Nurse",
     "owners": [
-      ".mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}Harris Blitzer Sports & Entertainment(Josh Harris and David Blitzer)&#91;a&#93;"
+      "Harris Blitzer Sports & Entertainment",
+      "(Josh Harris and David Blitzer)"
     ],
     "gm": null,
     "president": "Mike Gansey",
@@ -1518,10 +1637,11 @@
     "dc": null
   },
   "134864": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Darko Rajaković",
     "owners": [
-      "Maple Leaf Sports & Entertainment&#91;8&#93;"
+      "Maple Leaf Sports & Entertainment"
     ],
     "gm": null,
     "president": "Vacant",
@@ -1529,6 +1649,7 @@
     "dc": null
   },
   "134865": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Steve Kerr",
     "owners": [
@@ -1536,28 +1657,30 @@
       "Peter Guber"
     ],
     "gm": null,
-    "president": "Brandon Schneider&#91;9&#93;",
+    "president": "Brandon Schneider",
     "oc": null,
     "dc": null
   },
   "134866": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Tyronn Lue",
     "owners": [
-      "Steve Ballmer&#91;8&#93;"
+      "Steve Ballmer"
     ],
     "gm": null,
-    "president": "Lawrence Frank&#91;7&#93;",
+    "president": "Lawrence Frank",
     "oc": null,
     "dc": null
   },
   "134867": {
+    "v": 2,
     "fetched": true,
     "headCoach": "JJ Redick",
     "owners": [
       "Mark Walter (majority)",
       "Jeanie Buss (governor)",
-      "Buss Family Trusts, Todd Boehly, Edward P. Roski, and Patrick Soon-Shiong (minority)"
+      "Buss Family Trusts, Todd Boehly , Edward P. Roski , and Patrick Soon-Shiong (minority)"
     ],
     "gm": null,
     "president": "Rob Pelinka",
@@ -1565,6 +1688,7 @@
     "dc": null
   },
   "134868": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Jordan Ott",
     "owners": [
@@ -1576,17 +1700,19 @@
     "dc": null
   },
   "134869": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Doug Christie",
     "owners": [
-      "Vivek Ranadivé&#91;9&#93;"
+      "Vivek Ranadivé"
     ],
     "gm": null,
-    "president": "John Rinehart&#91;8&#93;",
+    "president": "John Rinehart",
     "oc": null,
     "dc": null
   },
   "134870": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Tiago Splitter",
     "owners": [
@@ -1598,10 +1724,13 @@
     "dc": null
   },
   "134871": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Kenny Atkinson",
     "owners": [
-      ".mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}Dan Gilbert (majority)&#91;8&#93;Gary Gilbert (minority)Usher Raymond (minority)Myles Garrett (minority)"
+      "Dan Gilbert (majority)",
+      "Gary Gilbert (minority)",
+      "Usher Raymond (minority)"
     ],
     "gm": null,
     "president": "Koby Altman",
@@ -1609,6 +1738,7 @@
     "dc": null
   },
   "134872": {
+    "v": 2,
     "fetched": true,
     "headCoach": "J. B. Bickerstaff",
     "owners": [
@@ -1620,6 +1750,7 @@
     "dc": null
   },
   "134873": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Rick Carlisle",
     "owners": [
@@ -1631,10 +1762,11 @@
     "dc": null
   },
   "134874": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Taylor Jenkins",
     "owners": [
-      "Wes Edens, Jimmy Haslam, Jamie Dinan, Mike Fascitelli&#91;8&#93;"
+      "Wes Edens , Jimmy Haslam , Jamie Dinan , Mike Fascitelli"
     ],
     "gm": null,
     "president": "Josh Glessing",
@@ -1642,12 +1774,13 @@
     "dc": null
   },
   "134875": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Dusty May",
     "owners": [
       "Miriam Adelson and Patrick Dumont (69%)",
       "Mark Cuban (27%)",
-      "Mary Stanton (4%)&#91;7&#93;&#91;8&#93;&#91;9&#93;"
+      "Mary Stanton (4%)"
     ],
     "gm": null,
     "president": "Masai Ujiri",
@@ -1655,32 +1788,35 @@
     "dc": null
   },
   "134876": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Ime Udoka",
     "owners": [
-      "Tilman Fertitta&#91;8&#93;"
+      "Tilman Fertitta"
     ],
     "gm": null,
-    "president": "Gretchen Sheirr&#91;7&#93;",
+    "president": "Gretchen Sheirr",
     "oc": null,
     "dc": null
   },
   "134877": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Tuomas Iisalo",
     "owners": [
-      "Memphis Basketball, LLC (Robert Pera, Chairman and Controlling Owner)&#91;7&#93;"
+      "Memphis Basketball, LLC (Robert Pera , Chairman and Controlling Owner)"
     ],
     "gm": null,
-    "president": "Jason Wexler&#91;6&#93;",
+    "president": "Jason Wexler",
     "oc": null,
     "dc": null
   },
   "134878": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Jamahl Mosley",
     "owners": [
-      "Gayle Benson&#91;8&#93;&#91;9&#93;"
+      "Gayle Benson"
     ],
     "gm": null,
     "president": "Dennis Lauscha",
@@ -1688,10 +1824,11 @@
     "dc": null
   },
   "134879": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Mitch Johnson",
     "owners": [
-      "Spurs Sports & Entertainment (Peter John Holt, Chairman and CEO)&#91;7&#93;"
+      "Spurs Sports & Entertainment (Peter John Holt, Chairman and CEO)"
     ],
     "gm": null,
     "president": "Gregg Popovich",
@@ -1699,10 +1836,11 @@
     "dc": null
   },
   "134880": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Quin Snyder",
     "owners": [
-      "Tony Ressler&#91;7&#93;"
+      "Tony Ressler"
     ],
     "gm": null,
     "president": null,
@@ -1710,11 +1848,12 @@
     "dc": null
   },
   "134881": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Charles Lee",
     "owners": [
       "Gabe Plotkin & Rick Schnall (majority)",
-      "Eric Church, J. Cole, and Michael Jordan (minority)&#91;8&#93;&#91;9&#93;"
+      "Eric Church , J. Cole , and Michael Jordan (minority)"
     ],
     "gm": null,
     "president": "Shelly Cayette-Weston",
@@ -1722,6 +1861,7 @@
     "dc": null
   },
   "134882": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Erik Spoelstra",
     "owners": [
@@ -1733,18 +1873,20 @@
     "dc": null
   },
   "134883": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Sean Sweeney",
     "owners": [
       "RDV Sports, Inc.",
-      "(Dan DeVos, chairman)"
+      "(Dan DeVos , chairman)"
     ],
     "gm": null,
-    "president": "Jeff Weltman&#91;8&#93;",
+    "president": "Jeff Weltman",
     "oc": null,
     "dc": null
   },
   "134884": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Brian Keefe",
     "owners": [
@@ -1756,21 +1898,23 @@
     "dc": null
   },
   "134885": {
+    "v": 2,
     "fetched": true,
     "headCoach": "David Adelman",
     "owners": [
-      "Kroenke Sports & Entertainment (Stan Kroenke, Owner/Governor)&#91;10&#93;&#91;11&#93;"
+      "Kroenke Sports & Entertainment (Stan Kroenke , Owner/Governor)"
     ],
     "gm": null,
-    "president": "Josh Kroenke&#91;9&#93;",
+    "president": "Josh Kroenke",
     "oc": null,
     "dc": null
   },
   "134886": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Chris Finch",
     "owners": [
-      "Alex Rodriguez, Marc Lore"
+      "Alex Rodriguez , Marc Lore"
     ],
     "gm": null,
     "president": "Tim Connelly",
@@ -1778,10 +1922,11 @@
     "dc": null
   },
   "134887": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Mark Daigneault",
     "owners": [
-      "Professional Basketball Club LLC (Clay Bennett, Chairman)&#91;7&#93;"
+      "Professional Basketball Club LLC (Clay Bennett , Chairman)"
     ],
     "gm": null,
     "president": null,
@@ -1789,17 +1934,19 @@
     "dc": null
   },
   "134888": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Micah Nori",
     "owners": [
       "Tom Dundon"
     ],
     "gm": null,
-    "president": "Dewayne Hankins&#91;7&#93;",
+    "president": "Dewayne Hankins",
     "oc": null,
     "dc": null
   },
   "134889": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Will Hardy",
     "owners": [
@@ -1812,96 +1959,103 @@
     "dc": null
   },
   "134918": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Joe Brady",
     "owners": [
-      "Terry Pegula Arctos Partners LP Estate of Kim Pegula Carter, McGrady, Altidore et al."
+      "Terry Pegula"
     ],
     "gm": null,
-    "president": "Terry Pegula",
-    "oc": null,
-    "dc": null
+    "president": null,
+    "oc": "Pete Carmichael",
+    "dc": "Jim Leonhard"
   },
   "134919": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Jeff Hafley",
     "owners": [
-      "Stephen M. Ross&#91;7&#93;"
+      "Stephen Ross"
     ],
     "gm": null,
     "president": "Tom Garfinkel",
-    "oc": null,
-    "dc": "Super Bowl VII"
+    "oc": "Bobby Slowik",
+    "dc": "merged with the NFL"
   },
   "134920": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Mike Vrabel",
     "owners": [
-      "Kraft Group",
-      "Robert Kraft, Chairman"
+      "Robert Kraft"
     ],
     "gm": null,
     "president": "Jonathan Kraft",
-    "oc": null,
-    "dc": null
+    "oc": "Josh McDaniels",
+    "dc": "Zak Kuhr"
   },
   "134921": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Aaron Glenn",
     "owners": [
-      "Woody Johnson and Christopher Johnson"
+      "Woody Johnson"
     ],
     "gm": null,
     "president": "Hymie Elhai",
-    "oc": null,
-    "dc": null
+    "oc": "Frank Reich",
+    "dc": "Robert Saleh"
   },
   "134922": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Jesse Minter",
     "owners": [
-      "Steve Bisciotti&#91;8&#93;"
+      "Steve Bisciotti"
     ],
     "gm": null,
     "president": "Sashi Brown",
-    "oc": null,
-    "dc": null
+    "oc": "Minnesota Vikings",
+    "dc": "Marvin Lewis"
   },
   "134923": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Zac Taylor",
     "owners": [
       "Mike Brown"
     ],
     "gm": null,
-    "president": "Mike Brown",
-    "oc": null,
-    "dc": "Dick LeBeau"
+    "president": null,
+    "oc": "Bruce Coslet",
+    "dc": "Teryl Austin"
   },
   "134924": {
+    "v": 2,
     "fetched": true,
-    "headCoach": "Todd Monken&#91;10&#93;",
+    "headCoach": "Todd Monken",
     "owners": [
-      "Jimmy Haslam",
-      "Dee Haslam&#91;6&#93;&#91;7&#93;"
+      "Jimmy Haslam"
     ],
     "gm": null,
-    "president": "David Jenkins&#91;a&#93;",
-    "oc": null,
-    "dc": null
+    "president": "David Jenkins",
+    "oc": "Travis Switzer",
+    "dc": "Mike Rutenberg"
   },
   "134925": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Mike McCarthy",
     "owners": [
-      "Rooney family"
+      "Art Rooney II"
     ],
     "gm": null,
-    "president": "Art Rooney II&#91;5&#93;",
-    "oc": null,
-    "dc": "1977"
+    "president": "Art Rooney II",
+    "oc": "Brian Angelichio",
+    "dc": "Bill Cowher"
   },
   "134926": {
+    "v": 2,
     "fetched": true,
     "headCoach": "DeMeco Ryans",
     "owners": [
@@ -1909,109 +2063,119 @@
     ],
     "gm": null,
     "president": "Mike Tomon",
-    "oc": null,
+    "oc": "Nick Caley",
     "dc": "AFC South"
   },
   "134927": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Shane Steichen",
     "owners": [
-      ".mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}Carlie Irsay-GordonCasey FoytKalen Jackson"
+      "Carlie Irsay-Gordon"
     ],
     "gm": null,
     "president": null,
-    "oc": null,
-    "dc": null
+    "oc": "New England Patriots",
+    "dc": "Lou Anarumo"
   },
   "134928": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Liam Coen",
     "owners": [
-      "Shahid Khan&#91;6&#93;"
+      "Shahid Khan"
     ],
     "gm": null,
     "president": "Mark Lamping",
-    "oc": null,
-    "dc": null
+    "oc": "Liam Coen",
+    "dc": "Anthony Campanile"
   },
   "134929": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Robert Saleh",
     "owners": [
-      "Adams family&#91;5&#93;"
+      "Amy Adams Strunk"
     ],
     "gm": null,
     "president": "Burke Nihill",
-    "oc": null,
-    "dc": null
+    "oc": "Brian Callahan",
+    "dc": "Robert Saleh"
   },
   "134930": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Sean Payton",
     "owners": [
-      "Rob Walton&#91;a&#93;"
+      "Rob Walton"
     ],
     "gm": null,
     "president": "Damani Leech",
-    "oc": null,
-    "dc": null
+    "oc": "Mike Shanahan",
+    "dc": "Wade Phillips"
   },
   "134931": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Andy Reid",
     "owners": [
-      "Hunt family&#91;6&#93;&#91;7&#93;"
+      "Clark Hunt"
     ],
     "gm": null,
     "president": "Mark Donovan",
-    "oc": "Archived",
-    "dc": "USA Today"
+    "oc": "Chan Gailey",
+    "dc": "Gunther Cunningham"
   },
   "134932": {
+    "v": 2,
     "fetched": true,
-    "headCoach": "Klint Kubiak&#91;8&#93;",
+    "headCoach": "Klint Kubiak",
     "owners": [
-      "Mark Davis&#91;6&#93;&#91;7&#93;"
+      "Mark Davis"
     ],
     "gm": null,
-    "president": "Sandra Douglass Morgan&#91;9&#93;",
-    "oc": null,
-    "dc": "NFL.com"
+    "president": "Sandra Douglass Morgan",
+    "oc": "Mike Shanahan",
+    "dc": "Jacksonville Jaguars"
   },
   "134934": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Brian Schottenheimer",
     "owners": [
       "Jerry Jones"
     ],
     "gm": null,
-    "president": "Jerry Jones",
-    "oc": null,
-    "dc": null
+    "president": null,
+    "oc": "Dave Shula",
+    "dc": "Tom Landry"
   },
   "134935": {
+    "v": 2,
     "fetched": true,
     "headCoach": "John Harbaugh",
     "owners": [
-      ".mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}John MaraSteve Tisch"
+      "John Mara"
     ],
     "gm": null,
-    "president": "John Mara",
+    "president": null,
     "oc": "Bob Gibson",
     "dc": "Bill Parcells"
   },
   "134936": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Nick Sirianni",
     "owners": [
-      "Jeffrey Lurie&#91;6&#93;"
+      "Jeffrey Lurie"
     ],
     "gm": null,
     "president": "Don Smolenski",
-    "oc": null,
-    "dc": "Leo Carlin"
+    "oc": "Rich Kotite",
+    "dc": "Marion Campbell"
   },
   "134937": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Dan Quinn",
     "owners": [
@@ -2019,10 +2183,11 @@
     ],
     "gm": null,
     "president": "Mark Clouse",
-    "oc": "Dallas Cowboys",
-    "dc": "Joe Barry"
+    "oc": "Joe Gibbs",
+    "dc": "Richie Petitbon"
   },
   "134938": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Ben Johnson",
     "owners": [
@@ -2030,43 +2195,47 @@
     ],
     "gm": null,
     "president": "Kevin Warren",
-    "oc": "the original",
-    "dc": null
+    "oc": "Ron Turner",
+    "dc": "Dennis Allen"
   },
   "134939": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Dan Campbell",
     "owners": [
-      "Sheila Ford Hamp&#91;6&#93;"
+      "Sheila Ford Hamp"
     ],
     "gm": null,
-    "president": "Rod Wood",
-    "oc": "Bill McPeak",
-    "dc": "Buster Ramsey"
+    "president": "Richard Haddad",
+    "oc": "Drew Petzing",
+    "dc": "Kelvin Sheppard"
   },
   "134940": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Matt LaFleur",
     "owners": [
-      "Green Bay Packers, Inc. (537,460 stockholders&#160;&#8211;&#32;governed by a Board of Directors)&#91;4&#93;&#91;5&#93;"
+      "Green Bay Packers, Inc."
     ],
     "gm": null,
     "president": "Ed Policy",
-    "oc": "San Francisco 49ers",
-    "dc": "Archived"
+    "oc": "Mike Holmgren",
+    "dc": "Philadelphia Eagles"
   },
   "134941": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Kevin O'Connell",
     "owners": [
-      "Zygi, Leonard and Mark Wilf&#91;6&#93;"
+      "Zygi Wilf"
     ],
     "gm": null,
     "president": "Mark Wilf",
-    "oc": "Darrell Bevell",
-    "dc": null
+    "oc": "NFL Comeback Player of the Year",
+    "dc": "Leslie Frazier"
   },
   "134942": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Kevin Stefanski",
     "owners": [
@@ -2074,54 +2243,59 @@
     ],
     "gm": null,
     "president": "Greg Beadles",
-    "oc": null,
-    "dc": null
+    "oc": "Mike Mularkey",
+    "dc": "Brian VanGorder"
   },
   "134943": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Dave Canales",
     "owners": [
-      "David Tepper&#91;6&#93;&#91;7&#93;"
+      "David Tepper"
     ],
     "gm": null,
-    "president": "Kristi Coleman&#91;8&#93;&#91;9&#93;",
-    "oc": null,
-    "dc": null
+    "president": "Kristi Coleman",
+    "oc": "Dave Canales",
+    "dc": "Dom Capers"
   },
   "134944": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Kellen Moore",
     "owners": [
-      "Gayle Benson&#91;6&#93;&#91;7&#93;"
+      "Gayle Benson"
     ],
     "gm": null,
     "president": "Dennis Lauscha",
-    "oc": null,
-    "dc": null
+    "oc": "Kellen Moore",
+    "dc": "Rob Ryan"
   },
   "134945": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Todd Bowles",
     "owners": [
-      "Glazer family&#91;a&#93;"
+      "Bryan Glazer"
     ],
     "gm": null,
     "president": "Darcie Glazer Kassewitz",
-    "oc": null,
-    "dc": "Monte Kiffin"
+    "oc": "Greg Olson",
+    "dc": "Tony Dungy"
   },
   "134946": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Mike LaFleur",
     "owners": [
-      "Michael Bidwill&#91;4&#93;"
+      "Michael Bidwill"
     ],
     "gm": null,
-    "president": "Michael Bidwill",
-    "oc": null,
-    "dc": null
+    "president": null,
+    "oc": "Mike LaFleur",
+    "dc": "Nick Rallis"
   },
   "134948": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Kyle Shanahan",
     "owners": [
@@ -2129,25 +2303,27 @@
     ],
     "gm": null,
     "president": "Al Guido",
-    "oc": null,
-    "dc": null
+    "oc": "Cincinnati Bengals",
+    "dc": "Dallas Cowboys"
   },
   "134949": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Mike Macdonald",
     "owners": [
-      "The Paul Allen Estate&#91;7&#93;"
+      "The Paul Allen Estate"
     ],
     "gm": null,
-    "president": "Chuck Arnold&#91;8&#93;",
-    "oc": null,
-    "dc": null
+    "president": "Chuck Arnold",
+    "oc": "Brian Fleury",
+    "dc": "Baltimore Ravens"
   },
   "135251": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "David Rubenstein, Mike Arougheti, Mitch Goldstein, Michael Smith"
+      "David Rubenstein , Mike Arougheti, Mitch Goldstein, Michael Smith"
     ],
     "gm": null,
     "president": "David Rubenstein (CEO)",
@@ -2155,11 +2331,13 @@
     "dc": null
   },
   "135252": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "John W. Henry Tom Werner",
-      "Fenway Sports Group (John Henry)&#91;4&#93;"
+      "Fenway Sports Group (John Henry)",
+      "John W. Henry",
+      "Tom Werner"
     ],
     "gm": null,
     "president": "Sam Kennedy (President and CEO)",
@@ -2167,6 +2345,7 @@
     "dc": null
   },
   "135253": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -2178,6 +2357,7 @@
     "dc": null
   },
   "135254": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -2189,6 +2369,7 @@
     "dc": null
   },
   "135255": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -2200,10 +2381,11 @@
     "dc": null
   },
   "135256": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "Jim Crane&#91;4&#93;&#91;5&#93;"
+      "Jim Crane"
     ],
     "gm": null,
     "president": null,
@@ -2211,10 +2393,11 @@
     "dc": null
   },
   "135257": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "John Sherman&#91;3&#93;"
+      "John Sherman"
     ],
     "gm": null,
     "president": "R. Brooks Sherman Jr. (President of Business Operations)",
@@ -2222,6 +2405,7 @@
     "dc": null
   },
   "135258": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -2232,12 +2416,25 @@
     "oc": null,
     "dc": null
   },
+  "135259": {
+    "v": 2,
+    "fetched": true,
+    "headCoach": null,
+    "owners": [
+      "Pohlad family (Tom Pohlad, chairman)"
+    ],
+    "gm": null,
+    "president": "Dave St. Peter",
+    "oc": null,
+    "dc": null
+  },
   "135260": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
       "Yankee Global Enterprises",
-      "(Hal Steinbrenner, chairman)&#91;4&#93;&#91;5&#93;"
+      "(Hal Steinbrenner , chairman)"
     ],
     "gm": null,
     "president": "Randy Levine",
@@ -2245,6 +2442,7 @@
     "dc": null
   },
   "135261": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -2254,6 +2452,7 @@
     "dc": null
   },
   "135262": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -2265,10 +2464,11 @@
     "dc": null
   },
   "135263": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "Patrick Zalupski&#91;4&#93;&#91;5&#93;"
+      "Patrick Zalupski"
     ],
     "gm": null,
     "president": "Ken Babby (CEO of Business Operations)",
@@ -2276,6 +2476,7 @@
     "dc": null
   },
   "135264": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -2285,10 +2486,11 @@
     "dc": null
   },
   "135265": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "Rogers Communications&#91;4&#93;"
+      "Rogers Communications"
     ],
     "gm": null,
     "president": "Mark Shapiro",
@@ -2296,10 +2498,11 @@
     "dc": null
   },
   "135267": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "Ken Kendrick&#91;7&#93;"
+      "Ken Kendrick"
     ],
     "gm": null,
     "president": "Derrick Hall",
@@ -2307,13 +2510,13 @@
     "dc": null
   },
   "135268": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
       "Atlanta Braves Holdings, Inc.",
-      "Traded as:",
-      "Nasdaq:&#160;BATRA (Series A)",
-      "OTCQB:&#160;BATRB (Series B)"
+      "Traded as :",
+      "Nasdaq :&#160; BATRA (Series A)"
     ],
     "gm": null,
     "president": "Derek Schiller",
@@ -2321,13 +2524,13 @@
     "dc": null
   },
   "135269": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
       "Thomas S. Ricketts",
       "Laura Ricketts",
-      "Pete Ricketts",
-      "Todd Ricketts"
+      "Pete Ricketts"
     ],
     "gm": null,
     "president": "Jed Hoyer",
@@ -2335,6 +2538,7 @@
     "dc": null
   },
   "135270": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -2346,10 +2550,11 @@
     "dc": null
   },
   "135271": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "Richard & Charles Monfort&#91;4&#93;"
+      "Richard & Charles Monfort"
     ],
     "gm": null,
     "president": "Walker Monfort",
@@ -2357,11 +2562,12 @@
     "dc": null
   },
   "135272": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
       "Guggenheim Baseball Management",
-      "Mark Walter (chairman)&#91;4&#93;&#91;5&#93;"
+      "Mark Walter (chairman)"
     ],
     "gm": null,
     "president": "Stan Kasten",
@@ -2369,6 +2575,7 @@
     "dc": null
   },
   "135273": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -2380,6 +2587,7 @@
     "dc": null
   },
   "135274": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -2391,6 +2599,7 @@
     "dc": null
   },
   "135275": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -2403,11 +2612,13 @@
     "dc": null
   },
   "135276": {
+    "v": 2,
     "fetched": true,
-    "headCoach": "Dave Berry Connie Mack Bill Shettsline",
+    "headCoach": "Dave Berry",
     "owners": [
-      "Barney Dreyfuss William Chase Temple John Rogers Ben Shibe",
-      "John Middleton&#91;6&#93;"
+      "John Middleton",
+      "Barney Dreyfuss",
+      "William Chase Temple"
     ],
     "gm": null,
     "president": "John Middleton (CEO)",
@@ -2415,11 +2626,13 @@
     "dc": null
   },
   "135277": {
+    "v": 2,
     "fetched": true,
-    "headCoach": "Dave Berry Connie Mack Bill Shettsline",
+    "headCoach": "Dave Berry",
     "owners": [
-      "Barney Dreyfuss William Chase Temple John Rogers Ben Shibe",
-      "Bob Nutting&#91;4&#93;"
+      "Bob Nutting",
+      "Barney Dreyfuss",
+      "William Chase Temple"
     ],
     "gm": null,
     "president": "Travis Williams",
@@ -2427,10 +2640,11 @@
     "dc": null
   },
   "135278": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "José E. Feliciano"
+      "John Seidler"
     ],
     "gm": null,
     "president": "A. J. Preller",
@@ -2438,11 +2652,12 @@
     "dc": null
   },
   "135279": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
       "Charles B. Johnson",
-      "Greg E. Johnson (Chairman)&#91;4&#93;&#91;5&#93;"
+      "Greg E. Johnson (Chairman)"
     ],
     "gm": null,
     "president": "Larry Baer",
@@ -2450,10 +2665,11 @@
     "dc": null
   },
   "135280": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "William DeWitt Jr.&#91;4&#93;"
+      "William DeWitt Jr."
     ],
     "gm": null,
     "president": "Chaim Bloom",
@@ -2461,10 +2677,11 @@
     "dc": null
   },
   "135281": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "Mark Lerner&#91;3&#93;&#91;4&#93;"
+      "Mark Lerner"
     ],
     "gm": null,
     "president": "Paul Toboni",
@@ -2472,6 +2689,7 @@
     "dc": null
   },
   "135292": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -2481,13 +2699,13 @@
     "dc": null
   },
   "135455": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Julián Calero",
     "owners": [
-      "Grupo Pachuca (51%)&#91;3&#93;",
+      "Grupo Pachuca (51%)",
       "Grupo Carso (20%)",
-      "Others (29%)",
-      "Grupo Pachuca (51%)&#91;3&#93;"
+      "Others (29%)"
     ],
     "gm": null,
     "president": "Martín Peláez",
@@ -2495,10 +2713,13 @@
     "dc": null
   },
   "135465": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Liam Rosenior",
     "owners": [
-      "Agache Sport (52.4%) Alter Paris (29.8%) Red Bull GmbH (10.6%) BRI Sports Holdings (7.2%)"
+      "Agache Sport (52.4%)",
+      "Alter Paris (29.8%)",
+      "Red Bull GmbH (10.6%)"
     ],
     "gm": null,
     "president": "Pierre Ferracci",
@@ -2506,6 +2727,7 @@
     "dc": null
   },
   "135728": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -2515,6 +2737,7 @@
     "dc": null
   },
   "135851": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Gerardo Martino",
     "owners": [
@@ -2526,6 +2749,7 @@
     "dc": null
   },
   "135852": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Cameron Knowles",
     "owners": [
@@ -2537,36 +2761,36 @@
     "dc": null
   },
   "135907": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Sean McVay",
     "owners": [
-      "Stan Kroenke&#91;6&#93;&#91;7&#93;"
+      "Stan Kroenke"
     ],
     "gm": null,
     "president": "Kevin Demoff",
-    "oc": null,
-    "dc": null
+    "oc": "Mike Martz",
+    "dc": "Billy Devaney"
   },
   "135908": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Jim Harbaugh",
     "owners": [
-      "Dean Spanos&#91;6&#93;",
-      "Tom Gores&#91;7&#93;"
+      "Dean Spanos"
     ],
     "gm": null,
     "president": "A. G. Spanos",
-    "oc": "NFL.com",
-    "dc": "NFL.com"
+    "oc": "Renaldo Hill",
+    "dc": "John Pagano"
   },
   "135913": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "Black Knight Sports and Entertainment (Bill Foley) (majority)&#91;3&#93;&#91;4&#93;&#91;5&#93;",
-      "Adrienne Maloof (minority)&#91;6&#93;",
-      "Black Knight Sports and Entertainment (Bill Foley) (majority)&#91;3&#93;&#91;4&#93;&#91;5&#93;",
-      "Adrienne Maloof (minority)&#91;6&#93;"
+      "Black Knight Sports and Entertainment (Bill Foley) (majority)",
+      "Adrienne Maloof (minority)"
     ],
     "gm": "Kelly McCrimmon",
     "president": null,
@@ -2574,17 +2798,17 @@
     "dc": null
   },
   "136050": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
-    "owners": [
-      "Peter Guber Tom Penn Henry Nguyen Ruben Gnanalingam Vincent Tan Will Ferrell Mia Hamm Nomar Garciaparra Magic Johnson"
-    ],
+    "owners": [],
     "gm": null,
-    "president": "Larry FreedmanJohn Thorrington",
+    "president": "Larry Freedman",
     "oc": null,
     "dc": null
   },
   "136688": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Pat Noonan",
     "owners": [
@@ -2596,10 +2820,13 @@
     "dc": null
   },
   "137699": {
+    "v": 2,
     "fetched": true,
-    "headCoach": "Guillermo Hoyos",
+    "headCoach": "Guillermo Hoyos (interim)",
     "owners": [
-      ".mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0}David BeckhamJorge MasJose Mas"
+      "David Beckham",
+      "Jorge Mas",
+      "Jose Mas"
     ],
     "gm": null,
     "president": "David Beckham",
@@ -2607,13 +2834,13 @@
     "dc": null
   },
   "137700": {
+    "v": 2,
     "fetched": true,
     "headCoach": "B. J. Callaghan",
     "owners": [
       "List John Ingram",
       "Jim Toth",
-      "Derrick Henry",
-      "Reese Witherspoon"
+      "Derrick Henry"
     ],
     "gm": null,
     "president": null,
@@ -2621,6 +2848,7 @@
     "dc": null
   },
   "138411": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -2630,6 +2858,7 @@
     "dc": null
   },
   "140078": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Dean Smith",
     "owners": [
@@ -2641,6 +2870,7 @@
     "dc": null
   },
   "140079": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Davy Arnaud (interim)",
     "owners": [
@@ -2652,10 +2882,10 @@
     "dc": null
   },
   "140082": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
-      "One Roof Sports & Entertainment",
       "One Roof Sports & Entertainment"
     ],
     "gm": "Jason Botterill",
@@ -2664,6 +2894,7 @@
     "dc": null
   },
   "147062": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -2677,6 +2908,7 @@
     "dc": null
   },
   "148494": {
+    "v": 2,
     "fetched": true,
     "headCoach": null,
     "owners": [
@@ -2688,10 +2920,12 @@
     "dc": null
   },
   "150261": {
+    "v": 2,
     "fetched": true,
     "headCoach": "Mikey Varas",
     "owners": [
-      ".mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0} Mohamed Mansour Sycuan Band of the Kumeyaay Nation"
+      "Mohamed Mansour",
+      "Sycuan Band of the Kumeyaay Nation"
     ],
     "gm": null,
     "president": null,

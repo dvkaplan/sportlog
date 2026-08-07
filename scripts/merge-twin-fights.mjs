@@ -15,7 +15,11 @@ const PAIR_ALIASES = {
   "minotauro-nogueira": "antonio-rodrigo-nogueira",
   "b-j-penn": "bj-penn",
 };
-const canonName = (n) => { const s = slugify(n); return PAIR_ALIASES[s] ?? s; };
+const canonName = (n) => {
+  let s = slugify(n);
+  s = s.replace(/-(jr|sr|ii|iii|iv|v)$/i, "");
+  return PAIR_ALIASES[s] ?? s;
+};
 const toTime = (d) => { const t = Date.parse(d); return isNaN(t) ? null : t; };
 
 const games = JSON.parse(readFileSync("src/lib/fight-games.json", "utf8"));

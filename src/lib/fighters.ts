@@ -213,6 +213,19 @@ export const FIGHTERS: Fighter[] = [
   { slug: "tank-abbott", name: "Tank Abbott", sport: "mma", division: "Heavyweight", era: "1995–2013", blurb: "The original brawler. Beer gut, pit-fighting, folk hero." },
   { slug: "kimbo-slice", name: "Kimbo Slice", sport: "mma", division: "Heavyweight", era: "2007–2015", blurb: "The backyard legend who broke television ratings." },
   { slug: "brian-johnston", name: "Brian Johnston", sport: "mma", division: "Heavyweight", era: "1996–1998", blurb: "Early UFC pioneer of the no-weight-class era." },
+  { slug: "urijah-faber", name: "Urijah Faber", sport: "mma", division: "Bantam/Featherweight", era: "2003–2019", blurb: "The California Kid. The face of the lighter weight classes before they existed in the UFC." },
+  { slug: "tj-dillashaw", name: "TJ Dillashaw", sport: "mma", division: "Bantamweight", era: "2010–2022", blurb: "Two-time bantamweight king. The Barão upset was a masterclass." },
+  { slug: "joseph-benavidez", name: "Joseph Benavidez", sport: "mma", division: "Flyweight", era: "2006–2021", blurb: "The best flyweight to never win the belt. Four title shots of heartbreak." },
+  { slug: "john-dodson", name: "John Dodson", sport: "mma", division: "Fly/Bantamweight", era: "2004–present", blurb: "The Magician. Speed that gave Mighty Mouse his hardest nights." },
+  { slug: "adriano-moraes", name: "Adriano Moraes", sport: "mma", division: "Flyweight", era: "2011–present", blurb: "Mikinho. First man to finish Demetrious Johnson." },
+  { slug: "ray-borg", name: "Ray Borg", sport: "mma", division: "Flyweight", era: "2012–2020s", blurb: "The Tazmexican Devil. The Mighty Mouse suplex-armbar victim at UFC 216." },
+  { slug: "ian-mccall", name: "Ian McCall", sport: "mma", division: "Flyweight", era: "2002–2018", blurb: "Uncle Creepy. The first man to give Mighty Mouse a draw." },
+  { slug: "pedro-munhoz", name: "Pedro Munhoz", sport: "mma", division: "Bantamweight", era: "2009–present", blurb: "The Young Punisher. Iron-chinned bantamweight gatekeeper of greatness." },
+  { slug: "marlon-moraes", name: "Marlon Moraes", sport: "mma", division: "Bantamweight", era: "2007–2022", blurb: "Magic. WSOF champion, UFC title challenger." },
+  { slug: "thiago-tavares", name: "Thiago Tavares", sport: "mma", division: "Lightweight", era: "2005–2010s", blurb: "Brazilian jiu-jitsu stalwart of the lightweight golden era." },
+  { slug: "gilbert-melendez", name: "Gilbert Melendez", sport: "mma", division: "Lightweight", era: "2002–2016", blurb: "El Niño. Strikeforce champion, wars with Sanchez and Alvarez." },
+  { slug: "mike-perry", name: "Mike Perry", sport: "mma", division: "Welterweight", era: "2014–present", blurb: "Platinum. UFC brawler turned BKFC king." },
+  { slug: "diego-sanchez", name: "Diego Sanchez", sport: "mma", division: "Light/Welterweight", era: "2002–2021", blurb: "The Nightmare. TUF 1 winner, the Melendez war, YES cartwheels." },
 ];
 
 export function getFighter(slug: string) {

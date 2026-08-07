@@ -141,7 +141,11 @@ export const TITLES: Record<string, string> = {
   "carlos-condit": "WEC Welterweight & Interim UFC Champion",
   "jorge-masvidal": "First BMF Champion",
   "chris-weidman": "UFC Middleweight Champion (2013–2015)",
-  "ben-askren": "Bellator & ONE Welterweight Champion, retired undefeated in title runs",
+  "ben-askren": "Bellator & ONE Welterweight Champion",
+  "urijah-faber": "WEC Featherweight Champion · Hall of Famer",
+  "tj-dillashaw": "2× UFC Bantamweight Champion",
+  "gilbert-melendez": "Strikeforce Lightweight Champion",
+  "adriano-moraes": "ONE Flyweight Champion",
 };
 
 // Who currently holds a belt (early 2026 snapshot — EDIT as belts change)
@@ -201,6 +205,7 @@ export const ALIASES: Record<string, string> = {
   "poatan": "alex-pereira",
   "suga": "sean-omalley",
   "tank davis": "gervonta-davis",
+  "bobby green": "king-green",
 };
 export const OPPONENT_ALIASES: Record<string, string> = {
   "quinton jackson": "quinton-rampage-jackson",
