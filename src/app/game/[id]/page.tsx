@@ -1,51 +1,39 @@
 "use client";
 import { use, useCallback, useEffect, useState } from "react";
 import Link from "next/link";
-import { getGame } from "@/lib/data";
 import { supabase } from "@/lib/supabase";
 import BackLink from "@/components/BackLink";
-import { ALL_FIGHTERS } from "@/lib/all-fighters";
-import fightStats from "@/lib/fight-stats.json";
-import { OPPONENT_ALIASES } from "@/lib/fighter-extras";
-import { eventSlugForName } from "@/lib/events";
 
 type FStat = { kd: number; sig: string; sigPct: number; total: string; td: string; sub: number; ctrl: string; head: string; body: string; leg: string; dist: string; clinch: string; ground: string };
 type FightMeta = { event: string; weightclass: string; method: string; round: string; time: string; format: string; referee: string; details: string; fighters: { name: string; stats?: FStat }[] };
-const FSTATS = fightStats as Record<string, FightMeta>;
-
-
-type RatingRow = {
-  id: string;
-  user_id: string;
-  game_id: string;
-  rating: number;
-  review: string | null;
-  updated_at: string;
-};
+type Game = { id: string; sportSlug: string; league: string; title: string; date: string; score?: string; blurb?: string };
+type GameResponse = { game: Game; stats: FightMeta | null; eventName: string | null; eventSlug: string | null; chips: { name: string; slug: string | null }[] };
+type RatingRow = { id: string; user_id: string; game_id: string; rating: number; review: string | null; updated_at: string };
 
 export default function GamePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
-  const game = getGame(id);
-  const [histGame, setHistGame] = useState<ReturnType<typeof getGame>>(undefined);
-  const isHist = !game && /^(nfl|nba)-\d{4}/.test(id);
+  const [data, setData] = useState<GameResponse | null>(null);
+  const [notFound, setNotFound] = useState(false);
+
   useEffect(() => {
-    if (!isHist) return;
+    let alive = true;
+    setData(null);
+    setNotFound(false);
     (async () => {
-      const d = await fetch(`/api/sportsdb?mode=histgame&id=${encodeURIComponent(id)}`).then((r) => r.json());
-      const g = d?.game;
-      if (!g) return;
-      setHistGame({
-        id: g.id,
-        sportSlug: d.league === "nfl" ? "football" : "basketball",
-        league: d.league.toUpperCase(),
-        title: `${g.away} @ ${g.home}`,
-        date: g.date,
-        score: g.as != null && g.hs != null ? `${g.as}–${g.hs}${g.ot ? " (OT)" : ""}` : "",
-        blurb: g.type === "SB" ? "Super Bowl" : "",
-      });
+      try {
+        const res = await fetch(`/api/sportsdb?mode=game&id=${encodeURIComponent(id)}`);
+        if (!res.ok) { if (alive) setNotFound(true); return; }
+        const d = (await res.json()) as GameResponse;
+        if (!d?.game) { if (alive) setNotFound(true); return; }
+        if (alive) setData(d);
+      } catch {
+        if (alive) setNotFound(true);
+      }
     })();
-  }, [id, isHist]);
-  const g = game ?? histGame;
+    return () => { alive = false; };
+  }, [id]);
+
+  const gameId = data?.game?.id ?? null;
 
   const [userId, setUserId] = useState<string | null>(null);
   const [rating, setRating] = useState(5);
@@ -57,110 +45,100 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
   const [names, setNames] = useState<Record<string, string>>({});
 
   const load = useCallback(async () => {
+    if (!gameId) return;
     const { data: userData } = await supabase.auth.getUser();
     const uid = userData.user?.id ?? null;
     setUserId(uid);
-
     const { data: rows, error } = await supabase
-      .from("ratings")
-      .select("*")
-      .eq("game_id", id)
-      .order("updated_at", { ascending: false });
-
-    if (error) {
-      setErr(error.message);
-      return;
-    }
+      .from("ratings").select("*").eq("game_id", gameId).order("updated_at", { ascending: false });
+    if (error) { setErr(error.message); return; }
     setAll(rows ?? []);
     const ids = Array.from(new Set((rows ?? []).map((r) => r.user_id)));
     if (ids.length > 0) {
-      const { data: profs } = await supabase
-        .from("profiles")
-        .select("id, username")
-        .in("id", ids);
+      const { data: profs } = await supabase.from("profiles").select("id, username").in("id", ids);
       const map: Record<string, string> = {};
       (profs ?? []).forEach((p) => (map[p.id] = p.username));
       setNames(map);
     }
     const mine = uid ? rows?.find((r) => r.user_id === uid) : null;
-    if (mine) {
-      setRating(Number(mine.rating));
-      setReview(mine.review ?? "");
-      setSaved(true);
-    }
-  }, [id]);
+    if (mine) { setRating(Number(mine.rating)); setReview(mine.review ?? ""); setSaved(true); }
+  }, [gameId]);
 
-  useEffect(() => {
-    load();
-  }, [load]);
+  useEffect(() => { load(); }, [load]);
 
   async function save() {
-    if (!userId) return;
+    if (!userId || !gameId) return;
     setBusy(true);
     setErr(null);
     const { error } = await supabase.from("ratings").upsert(
-      { user_id: userId, game_id: id, rating, review, updated_at: new Date().toISOString() },
+      { user_id: userId, game_id: gameId, rating, review, updated_at: new Date().toISOString() },
       { onConflict: "user_id,game_id" }
     );
     setBusy(false);
-    if (error) {
-      setErr(error.message);
-      return;
-    }
+    if (error) { setErr(error.message); return; }
     setSaved(true);
     load();
   }
 
-  if (!g && !isHist) return <main className="p-10 text-zinc-100">Game not found.</main>;
-  if (!g) return <main className="p-10 text-zinc-100">Loading…</main>;
+  if (notFound) return <main className="p-10 text-zinc-100">Game not found.</main>;
+  if (!data) return <main className="p-10 text-zinc-100">Loading…</main>;
 
-  const avg =
-    all.length > 0 ? all.reduce((s, r) => s + Number(r.rating), 0) / all.length : null;
+  const g = data.game;
+  const fs = data.stats;
+  const isFight = g.id.startsWith("fight-");
+  const avg = all.length > 0 ? all.reduce((s, r) => s + Number(r.rating), 0) / all.length : null;
   const reviews = all.filter((r) => r.review && r.review.trim().length > 0);
+
+  const rows: [string, (s: FStat) => string | number][] = [
+    ["KD", (s) => s.kd], ["Sig. Strikes", (s) => s.sig], ["Sig. %", (s) => `${s.sigPct}%`],
+    ["Total Strikes", (s) => s.total], ["Takedowns", (s) => s.td], ["Sub. Attempts", (s) => s.sub], ["Control", (s) => s.ctrl],
+  ];
+  const brk: [string, (s: FStat) => string][] = [
+    ["Head", (s) => s.head], ["Body", (s) => s.body], ["Leg", (s) => s.leg],
+    ["Distance", (s) => s.dist], ["Clinch", (s) => s.clinch], ["Ground", (s) => s.ground],
+  ];
+  const [fa, fb] = fs?.fighters ?? [];
 
   return (
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
       <div className="mx-auto max-w-2xl px-6 py-12">
         <BackLink />
         <h1 className="mt-4 text-2xl font-bold">{g.title}</h1>
-        {g.id.startsWith("fight-") && (
+
+        {isFight && data.chips.length > 0 && (
           <div className="mt-2 flex flex-wrap gap-2 text-sm">
-            {g.title.split(" vs ").map((n) => {
-             const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
-              const key = norm(n);
-              const slug = OPPONENT_ALIASES[key] ?? ALL_FIGHTERS.find((x) => norm(x.name) === key)?.slug;
-              const f = slug ? { slug } : null;
-              return f ? (
-                <Link key={n} href={`/fighter/${f.slug}`} className="rounded-full border border-zinc-700 px-3 py-1 text-emerald-400 transition hover:border-emerald-400">
-                  {n.trim()}
+            {data.chips.map((c) =>
+              c.slug ? (
+                <Link key={c.name} href={`/fighter/${c.slug}`} className="rounded-full border border-zinc-700 px-3 py-1 text-emerald-400 transition hover:border-emerald-400">
+                  {c.name}
                 </Link>
               ) : (
-                <span key={n} className="rounded-full border border-zinc-800 px-3 py-1 text-zinc-500">{n.trim()}</span>
-              );
-            })}
+                <span key={c.name} className="rounded-full border border-zinc-800 px-3 py-1 text-zinc-500">{c.name}</span>
+              )
+            )}
           </div>
         )}
-        {g.id.startsWith("fight-") && (() => {
-          const evName = FSTATS[g.id]?.event ?? g.blurb ?? "";
-          if (!evName) return null;
-          const evSlug = eventSlugForName(evName);
-          const inner = (
+
+        {isFight && data.eventName && (
+          data.eventSlug ? (
+            <Link href={`/event/${data.eventSlug}`} className="transition hover:opacity-80">
+              <div className="mt-4 inline-block rounded-xl border border-zinc-800 bg-zinc-900 px-5 py-3">
+                <div className="text-[10px] font-semibold uppercase tracking-widest text-zinc-500">Event</div>
+                <div className="text-xl font-bold text-amber-300">{data.eventName}</div>
+              </div>
+            </Link>
+          ) : (
             <div className="mt-4 inline-block rounded-xl border border-zinc-800 bg-zinc-900 px-5 py-3">
               <div className="text-[10px] font-semibold uppercase tracking-widest text-zinc-500">Event</div>
-              <div className="text-xl font-bold text-amber-300">{evName}</div>
+              <div className="text-xl font-bold text-amber-300">{data.eventName}</div>
             </div>
-          );
-          return evSlug ? (
-            <Link href={`/event/${evSlug}`} className="transition hover:opacity-80">{inner}</Link>
-          ) : (
-            inner
-          );
-        })()}
-        {(() => {
-            {g.id.startsWith("fight-") && !FSTATS[g.id] && (
+          )
+        )}
+
+        {isFight && !fs && (
           <div className="mt-8 rounded-xl border border-zinc-800 bg-zinc-900 p-5">
             <div className="text-xs font-semibold uppercase tracking-widest text-amber-300">Bout details</div>
-            <div className="mt-2 grid grid-cols-1 gap-1 text-sm sm:grid-cols-3">
+            <div className="mt-2 grid grid-cols-1 gap-1 text-sm sm:grid-cols-2">
               <div><span className="text-zinc-500">Result:</span> {g.score || "—"}</div>
               <div><span className="text-zinc-500">Date:</span> {g.date || "—"}</div>
             </div>
@@ -169,76 +147,62 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
             </p>
           </div>
         )}
-          const fs = FSTATS[g.id];
-          if (!fs) return null;
-          const rows: [string, (s: FStat) => string | number][] = [
-            ["KD", (s) => s.kd], ["Sig. Strikes", (s) => s.sig], ["Sig. %", (s) => `${s.sigPct}%`],
-            ["Total Strikes", (s) => s.total], ["Takedowns", (s) => s.td], ["Sub. Attempts", (s) => s.sub], ["Control", (s) => s.ctrl],
-          ];
-          const brk: [string, (s: FStat) => string][] = [
-            ["Head", (s) => s.head], ["Body", (s) => s.body], ["Leg", (s) => s.leg],
-            ["Distance", (s) => s.dist], ["Clinch", (s) => s.clinch], ["Ground", (s) => s.ground],
-          ];
-          const [fa, fb] = fs.fighters;
-          return (
-            <div className="mt-8 space-y-4">
-              <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-5">
-                <div className="text-xs font-semibold uppercase tracking-widest text-amber-300">
-                  {fs.weightclass || "Bout details"}
-                </div>
-                <div className="mt-2 grid grid-cols-2 gap-x-6 gap-y-1 text-sm sm:grid-cols-3">
-                  <div><span className="text-zinc-500">Method:</span> {fs.method}</div>
-                  <div><span className="text-zinc-500">Round:</span> {fs.round}</div>
-                  <div><span className="text-zinc-500">Time:</span> {fs.time}</div>
-                  {fs.format && <div><span className="text-zinc-500">Format:</span> {fs.format}</div>}
-                  {fs.referee && <div><span className="text-zinc-500">Referee:</span> {fs.referee}</div>}
-                  {fs.details && <div className="col-span-2 sm:col-span-3"><span className="text-zinc-500">Details:</span> {fs.details}</div>}
-                </div>
+
+        {fs && (
+          <div className="mt-8 space-y-4">
+            <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-5">
+              <div className="text-xs font-semibold uppercase tracking-widest text-amber-300">
+                {fs.weightclass || "Bout details"}
               </div>
-              {fa?.stats && fb?.stats && (
-                <div className="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900">
-                  <div className="grid grid-cols-3 border-b border-zinc-800 bg-zinc-950 px-4 py-2 text-center text-xs font-semibold uppercase tracking-widest text-zinc-500">
-                    <span className="truncate text-left text-emerald-400">{fa.name}</span><span>Totals</span><span className="truncate text-right text-emerald-400">{fb.name}</span>
-                  </div>
-                  {rows.map(([label, get]) => (
-                    <div key={label} className="grid grid-cols-3 px-4 py-1.5 text-center text-sm odd:bg-zinc-900 even:bg-zinc-950/50">
-                      <span className="text-left font-medium">{get(fa.stats!)}</span>
-                      <span className="text-xs uppercase tracking-wide text-zinc-500">{label}</span>
-                      <span className="text-right font-medium">{get(fb.stats!)}</span>
-                    </div>
-                  ))}
-                  <div className="grid grid-cols-3 border-t border-zinc-800 bg-zinc-950 px-4 py-2 text-center text-xs font-semibold uppercase tracking-widest text-zinc-500">
-                    <span /><span>Sig. Strike Breakdown</span><span />
-                  </div>
-                  {brk.map(([label, get]) => (
-                    <div key={label} className="grid grid-cols-3 px-4 py-1.5 text-center text-sm odd:bg-zinc-900 even:bg-zinc-950/50">
-                      <span className="text-left">{get(fa.stats!)}</span>
-                      <span className="text-xs uppercase tracking-wide text-zinc-500">{label}</span>
-                      <span className="text-right">{get(fb.stats!)}</span>
-                    </div>
-                  ))}
-                </div>
-              )}
-              <p className="text-xs text-zinc-600">Fight data via ufcstats.com (open community dataset).</p>
+              <div className="mt-2 grid grid-cols-2 gap-x-6 gap-y-1 text-sm sm:grid-cols-3">
+                <div><span className="text-zinc-500">Method:</span> {fs.method}</div>
+                <div><span className="text-zinc-500">Round:</span> {fs.round}</div>
+                <div><span className="text-zinc-500">Time:</span> {fs.time}</div>
+                {fs.format && <div><span className="text-zinc-500">Format:</span> {fs.format}</div>}
+                {fs.referee && <div><span className="text-zinc-500">Referee:</span> {fs.referee}</div>}
+                {fs.details && <div className="col-span-2 sm:col-span-3"><span className="text-zinc-500">Details:</span> {fs.details}</div>}
+              </div>
             </div>
-          );
-        })()}
-        
-        <p className="mt-1 text-sm text-zinc-500">
+            {fa?.stats && fb?.stats && (
+              <div className="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900">
+                <div className="grid grid-cols-3 border-b border-zinc-800 bg-zinc-950 px-4 py-2 text-center text-xs font-semibold uppercase tracking-widest text-zinc-500">
+                  <span className="truncate text-left text-emerald-400">{fa.name}</span><span>Totals</span><span className="truncate text-right text-emerald-400">{fb.name}</span>
+                </div>
+                {rows.map(([label, get]) => (
+                  <div key={label} className="grid grid-cols-3 px-4 py-1.5 text-center text-sm odd:bg-zinc-900 even:bg-zinc-950/50">
+                    <span className="text-left font-medium">{get(fa.stats!)}</span>
+                    <span className="text-xs uppercase tracking-wide text-zinc-500">{label}</span>
+                    <span className="text-right font-medium">{get(fb.stats!)}</span>
+                  </div>
+                ))}
+                <div className="grid grid-cols-3 border-t border-zinc-800 bg-zinc-950 px-4 py-2 text-center text-xs font-semibold uppercase tracking-widest text-zinc-500">
+                  <span /><span>Sig. Strike Breakdown</span><span />
+                </div>
+                {brk.map(([label, get]) => (
+                  <div key={label} className="grid grid-cols-3 px-4 py-1.5 text-center text-sm odd:bg-zinc-900 even:bg-zinc-950/50">
+                    <span className="text-left">{get(fa.stats!)}</span>
+                    <span className="text-xs uppercase tracking-wide text-zinc-500">{label}</span>
+                    <span className="text-right">{get(fb.stats!)}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+            <p className="text-xs text-zinc-600">Fight data via ufcstats.com (open community dataset).</p>
+          </div>
+        )}
+
+        <p className="mt-4 text-sm text-zinc-500">
           {g.league} · {g.date} {g.score ? `· ${g.score}` : ""}
         </p>
-       {!g.id.startsWith("fight-") && <p className="mt-4 text-zinc-300">{g.blurb}</p>}
+        {!isFight && g.blurb && <p className="mt-4 text-zinc-300">{g.blurb}</p>}
 
         <div className="mt-6 flex items-center gap-6 rounded-xl border border-zinc-800 bg-zinc-900 p-4">
           <div>
             <div className="text-xs uppercase tracking-wide text-zinc-500">Fan score</div>
-            <div className="text-3xl font-bold text-emerald-400">
-              {avg ? avg.toFixed(1) : "—"}
-            </div>
+            <div className="text-3xl font-bold text-emerald-400">{avg ? avg.toFixed(1) : "—"}</div>
           </div>
           <div className="text-sm text-zinc-400">
-            {all.length} rating{all.length === 1 ? "" : "s"} · {reviews.length} review
-            {reviews.length === 1 ? "" : "s"}
+            {all.length} rating{all.length === 1 ? "" : "s"} · {reviews.length} review{reviews.length === 1 ? "" : "s"}
           </div>
         </div>
 
@@ -249,37 +213,15 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
                 <h2 className="font-semibold">Your rating</h2>
                 <span className="text-3xl font-bold text-emerald-400">{rating.toFixed(1)}</span>
               </div>
-              <input
-                type="range"
-                min="0.5"
-                max="10"
-                step="0.5"
-                value={rating}
-                onChange={(e) => {
-                  setRating(parseFloat(e.target.value));
-                  setSaved(false);
-                }}
-                className="mt-4 w-full accent-emerald-400"
-              />
-              <div className="flex justify-between text-xs text-zinc-600">
-                <span>0.5</span>
-                <span>10.0</span>
-              </div>
-              <textarea
-                value={review}
-                onChange={(e) => {
-                  setReview(e.target.value);
-                  setSaved(false);
-                }}
-                placeholder="Write your review…"
-                rows={5}
-                className="mt-5 w-full rounded-lg border border-zinc-700 bg-zinc-950 p-3 text-sm outline-none focus:border-emerald-400"
-              />
-              <button
-                onClick={save}
-                disabled={busy}
-                className="mt-4 w-full rounded-lg bg-emerald-400 py-2.5 font-semibold text-zinc-950 transition hover:bg-emerald-300 disabled:opacity-50"
-              >
+              <input type="range" min="0.5" max="10" step="0.5" value={rating}
+                onChange={(e) => { setRating(parseFloat(e.target.value)); setSaved(false); }}
+                className="mt-4 w-full accent-emerald-400" />
+              <div className="flex justify-between text-xs text-zinc-600"><span>0.5</span><span>10.0</span></div>
+              <textarea value={review} onChange={(e) => { setReview(e.target.value); setSaved(false); }}
+                placeholder="Write your review…" rows={5}
+                className="mt-5 w-full rounded-lg border border-zinc-700 bg-zinc-950 p-3 text-sm outline-none focus:border-emerald-400" />
+              <button onClick={save} disabled={busy}
+                className="mt-4 w-full rounded-lg bg-emerald-400 py-2.5 font-semibold text-zinc-950 transition hover:bg-emerald-300 disabled:opacity-50">
                 {busy ? "Saving…" : saved ? "✓ Saved" : "Save rating & review"}
               </button>
               {err && <p className="mt-3 text-sm text-red-400">{err}</p>}
@@ -287,12 +229,7 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
           ) : (
             <div className="text-center">
               <p className="text-zinc-300">Sign in to rate and review this one.</p>
-              <Link
-                href="/auth"
-                className="mt-4 inline-block rounded-lg bg-emerald-400 px-6 py-2.5 font-semibold text-zinc-950 transition hover:bg-emerald-300"
-              >
-                Sign in
-              </Link>
+              <Link href="/auth" className="mt-4 inline-block rounded-lg bg-emerald-400 px-6 py-2.5 font-semibold text-zinc-950 transition hover:bg-emerald-300">Sign in</Link>
             </div>
           )}
         </div>

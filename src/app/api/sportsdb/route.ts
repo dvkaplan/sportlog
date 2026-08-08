@@ -7,6 +7,13 @@ import fighterMedia from "@/lib/fighter-media.json";
 import eventsData from "@/lib/events.json";
 import fightGamesData from "@/lib/fight-games.json";
 import coachMediaJson from "@/lib/coach-media.json";
+import { readFile } from "fs/promises";
+import path from "path";
+import fightStatsData from "@/lib/fight-stats.json";
+import fightRedirectsData from "@/lib/fight-redirects.json";
+import { GAMES } from "@/lib/data";
+import { eventSlugForName } from "@/lib/events";
+import { OPPONENT_ALIASES } from "@/lib/fighter-extras";
 
 const BASE = `https://www.thesportsdb.com/api/v1/json/${process.env.SPORTSDB_KEY ?? "3"}`;
 
@@ -125,19 +132,61 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ teams: matches, players: playerMatches, fighters: fighterMatches, coaches: coachMatches, events: eventMatches, fights: fightMatches });
       
     }
-    if (mode === "histgame") {
+    if (mode === "game") {
       const id = p.get("id") ?? "";
-      const m = id.match(/^(nfl|nba)-(\d{4})/);
-      if (!m) return NextResponse.json({ error: "bad id" }, { status: 400 });
-      const league = m[1];
-      const season = league === "nba" ? `${m[2]}-${String((Number(m[2]) + 1) % 100).padStart(2, "0")}` : m[2];
-      try {
-        const games = (await import(`@/lib/seasons/${league}/${season}.json`)).default as { id: string }[];
-        const g = games.find((x) => x.id === id);
-        return g ? NextResponse.json({ game: g, league }) : NextResponse.json({ error: "not found" }, { status: 404 });
-      } catch {
-        return NextResponse.json({ error: "season not found" }, { status: 404 });
+      const hm = id.match(/^(nfl|nba)-(\d{4})/);
+      if (hm) {
+        const league = hm[1];
+        const yr = Number(hm[2]);
+      const candidates =
+        league === "nba"
+          ? [
+              `${yr - 1}-${String(yr % 100).padStart(2, "0")}`, // Jan–Jun game → prior-fall season
+              `${yr}-${String((yr + 1) % 100).padStart(2, "0")}`, // Oct–Dec game → this-fall season
+            ]
+          : [String(yr)];
+      for (const season of candidates) {
+        try {
+          const file = path.join(process.cwd(), "src", "lib", "seasons", league, `${season}.json`);
+          const all = JSON.parse(await readFile(file, "utf8")) as { id: string; away: string; home: string; date: string; as: number | null; hs: number | null; ot?: boolean; type?: string }[];
+          const hg = all.find((x) => x.id === id);
+          if (!hg) continue;
+          return NextResponse.json({
+            game: {
+              id: hg.id,
+              sportSlug: league === "nfl" ? "football" : "basketball",
+              league: league.toUpperCase(),
+              title: `${hg.away} @ ${hg.home}`,
+              date: hg.date,
+              score: hg.as != null && hg.hs != null ? `${hg.as}–${hg.hs}${hg.ot ? " (OT)" : ""}` : "",
+              blurb: hg.type === "SB" ? "Super Bowl" : "",
+            },
+            stats: null, eventSlug: null, eventName: null, chips: [],
+          });
+        } catch { /* season file may not exist for edge years — try next */ }
       }
+      return NextResponse.json({ error: "not found" }, { status: 404 });
+      }
+      const REDIR = fightRedirectsData as Record<string, string>;
+      const finalId = REDIR[id] ?? id;
+      const game =
+        GAMES.find((x) => x.id === finalId) ??
+        (fightGamesData as { id: string; title: string; blurb: string }[]).find((x) => x.id === finalId) ??
+        null;
+      if (!game) return NextResponse.json({ error: "not found" }, { status: 404 });
+      const FS = fightStatsData as Record<string, unknown>;
+      const stats = (FS[game.id] as object | undefined) ?? null;
+      const evName = ((stats as { event?: string } | null)?.event ?? game.blurb ?? "") || null;
+      const eventSlug = game.id.startsWith("fight-") && evName ? eventSlugForName(evName) : null;
+      const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+      const chips = game.id.startsWith("fight-")
+        ? game.title.split(" vs ").map((n: string) => {
+            const key = norm(n);
+            const slug = OPPONENT_ALIASES[key] ?? ALL_FIGHTERS.find((x) => norm(x.name) === key)?.slug ?? null;
+            return { name: n.trim(), slug };
+          })
+        : [];
+      return NextResponse.json({ game, stats, eventName: evName, eventSlug, chips });
     }
 
     let url = "";
