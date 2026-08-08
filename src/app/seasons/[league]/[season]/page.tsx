@@ -1,5 +1,7 @@
 import Link from "next/link";
 import SeasonPicker from "@/components/SeasonPicker";
+import SeasonRating from "@/components/SeasonRating";
+import SeasonFanLists from "@/components/SeasonFanLists";
 
 type HistGame = { id: string; week?: string; type?: string; date: string; away: string; home: string; as: number | null; hs: number | null; ot?: boolean; gameNo?: number };
 
@@ -84,6 +86,8 @@ export default async function SeasonPage({ params }: { params: Promise<{ league:
           <SeasonPicker league={league} seasons={seasons} current={season} />
         </div>
         <p className="mt-1 text-sm text-zinc-500">{games.length} games — every one rateable.</p>
+        <SeasonRating league={league} season={season} label={`${leagueName} ${season} season`} />
+        <SeasonFanLists label={`${leagueName} ${season} season`} altLabel={`${season} ${leagueName} season`} />
         <div className="mt-8 space-y-3">
           {groups.map(([label, gs]) => (
             <details key={label} className="rounded-xl border border-zinc-800 bg-zinc-900" open={label.includes("Super Bowl") || label.includes("NBA Finals")}>
