@@ -35,7 +35,7 @@ const head = rows[0];
 const col = (name) => head.indexOf(name);
 const iId = col("game_id"), iSeason = col("season"), iType = col("game_type"), iWeek = col("week"),
   iDay = col("gameday"), iAway = col("away_team"), iHome = col("home_team"),
-  iAS = col("away_score"), iHS = col("home_score"), iOT = col("overtime");
+  iAS = col("away_score"), iHS = col("home_score"), iOT = col("overtime"), iEspn = col("espn");
 
 const bySeason = {};
 let total = 0;
@@ -52,6 +52,7 @@ for (const r of rows.slice(1)) {
     as: r[iAS] === "" ? null : Number(r[iAS]),
     hs: r[iHS] === "" ? null : Number(r[iHS]),
     ot: r[iOT] === "1",
+    espn: r[iEspn] || null,
   };
   (bySeason[season] ??= []).push(g);
   total++;

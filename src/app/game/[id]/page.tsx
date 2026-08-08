@@ -3,11 +3,14 @@ import { use, useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 import BackLink from "@/components/BackLink";
+import BoxScore from "@/components/BoxScore";
 
 type FStat = { kd: number; sig: string; sigPct: number; total: string; td: string; sub: number; ctrl: string; head: string; body: string; leg: string; dist: string; clinch: string; ground: string };
 type FightMeta = { event: string; weightclass: string; method: string; round: string; time: string; format: string; referee: string; details: string; fighters: { name: string; stats?: FStat }[] };
 type Game = { id: string; sportSlug: string; league: string; title: string; date: string; score?: string; blurb?: string };
-type GameResponse = { game: Game; stats: FightMeta | null; eventName: string | null; eventSlug: string | null; chips: { name: string; slug: string | null }[] };
+type HistSide = { name: string; id: string | null; record: string };
+type HistInfo = { leagueKey: string; season: string; away: HistSide; home: HistSide; espn: string | null; soccerStats: Record<string, [string, string]> | null };
+type GameResponse = { game: Game; hist?: HistInfo | null; stats: FightMeta | null; eventName: string | null; eventSlug: string | null; chips: { name: string; slug: string | null }[] };
 type RatingRow = { id: string; user_id: string; game_id: string; rating: number; review: string | null; updated_at: string };
 
 export default function GamePage({ params }: { params: Promise<{ id: string }> }) {
@@ -86,6 +89,7 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
   const g = data.game;
   const fs = data.stats;
   const isFight = g.id.startsWith("fight-");
+  const hist = data.hist ?? null;
   const avg = all.length > 0 ? all.reduce((s, r) => s + Number(r.rating), 0) / all.length : null;
   const reviews = all.filter((r) => r.review && r.review.trim().length > 0);
 
@@ -103,7 +107,23 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
       <div className="mx-auto max-w-2xl px-6 py-12">
         <BackLink />
-        <h1 className="mt-4 text-2xl font-bold">{g.title}</h1>
+        {hist ? (
+          <>
+            <Link href={`/seasons/${hist.leagueKey}/${hist.season}`} className="mt-4 inline-block rounded-full border border-amber-400/40 bg-amber-400/5 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-amber-300 transition hover:border-amber-400">
+              {g.league} · {hist.season} season
+            </Link>
+            <h1 className="mt-3 text-2xl font-bold">
+              {hist.away.id ? <Link href={`/team/${hist.away.id}`} className="hover:text-emerald-400">{hist.away.name}</Link> : hist.away.name}
+              <span className="text-zinc-500"> @ </span>
+              {hist.home.id ? <Link href={`/team/${hist.home.id}`} className="hover:text-emerald-400">{hist.home.name}</Link> : hist.home.name}
+            </h1>
+            <p className="mt-1 text-sm text-zinc-500">
+              {hist.away.name} ({hist.away.record}) at {hist.home.name} ({hist.home.record}) entering this game
+            </p>
+          </>
+        ) : (
+          <h1 className="mt-4 text-2xl font-bold">{g.title}</h1>
+        )}
 
         {isFight && data.chips.length > 0 && (
           <div className="mt-2 flex flex-wrap gap-2 text-sm">
@@ -195,6 +215,25 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
           {g.league} · {g.date} {g.score ? `· ${g.score}` : ""}
         </p>
         {!isFight && g.blurb && <p className="mt-4 text-zinc-300">{g.blurb}</p>}
+        {hist?.soccerStats && (
+          <div className="mt-6 overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900">
+            <div className="grid grid-cols-3 border-b border-zinc-800 bg-zinc-950 px-4 py-2 text-center text-xs font-semibold uppercase tracking-widest text-zinc-500">
+              <span className="truncate text-left text-emerald-400">{hist.away.name}</span><span>Match Stats</span><span className="truncate text-right text-emerald-400">{hist.home.name}</span>
+            </div>
+            {Object.entries({ shots: "Shots", sot: "On Target", corners: "Corners", fouls: "Fouls", yellow: "Yellow Cards", red: "Red Cards" }).map(([k, label]) =>
+              hist.soccerStats?.[k] ? (
+                <div key={k} className="grid grid-cols-3 px-4 py-1.5 text-center text-sm odd:bg-zinc-900 even:bg-zinc-950/50">
+                  <span className="text-left font-medium">{hist.soccerStats[k][0]}</span>
+                  <span className="text-xs uppercase tracking-wide text-zinc-500">{label}</span>
+                  <span className="text-right font-medium">{hist.soccerStats[k][1]}</span>
+                </div>
+              ) : null
+            )}
+          </div>
+        )}
+        {hist && !hist.soccerStats && (
+          <BoxScore id={g.id} espn={hist.espn} awayName={hist.away.name} homeName={hist.home.name} />
+        )}
 
         <div className="mt-6 flex items-center gap-6 rounded-xl border border-zinc-800 bg-zinc-900 p-4">
           <div>

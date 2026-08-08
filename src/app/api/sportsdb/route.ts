@@ -144,25 +144,40 @@ export async function GET(req: NextRequest) {
           : [String(yr)];
         const SPORT: Record<string, string> = { nfl: "football", nba: "basketball", nhl: "hockey", mlb: "baseball", epl: "soccer", laliga: "soccer", seriea: "soccer", bundesliga: "soccer", ligue1: "soccer" };
         const LG: Record<string, string> = { nfl: "NFL", nba: "NBA", nhl: "NHL", mlb: "MLB", epl: "Premier League", laliga: "La Liga", seriea: "Serie A", bundesliga: "Bundesliga", ligue1: "Ligue 1" };
+        const teamId = (name: string) => TEAMS.find((t) => t.strTeam.toLowerCase() === name.toLowerCase())?.idTeam ?? null;
         for (const season of candidates) {
           try {
             const file = path.join(process.cwd(), "src", "lib", "seasons", league, `${season}.json`);
-            const all = JSON.parse(await readFile(file, "utf8")) as { id: string; away: string; home: string; date: string; as: number | null; hs: number | null; ot?: boolean; type?: string }[];
+            type HG = { id: string; away: string; home: string; date: string; as: number | null; hs: number | null; ot?: boolean; type?: string; espn?: string | null; st?: Record<string, [string, string]> | null };
+            const all = JSON.parse(await readFile(file, "utf8")) as HG[];
             const hg = all.find((x) => x.id === id);
             if (!hg) continue;
+            const rec = (team: string) => {
+              let w = 0, l = 0, t = 0;
+              for (const g of all) {
+                if (g.date >= hg.date || g.as == null || g.hs == null) continue;
+                if (g.home !== team && g.away !== team) continue;
+                const mine = g.home === team ? g.hs : g.as, theirs = g.home === team ? g.as : g.hs;
+                if (mine > theirs) w++; else if (mine < theirs) l++; else t++;
+              }
+              return t > 0 ? `${w}-${l}-${t}` : `${w}-${l}`;
+            };
             return NextResponse.json({
               game: {
-                id: hg.id,
-                sportSlug: SPORT[league],
-                league: LG[league],
-                title: `${hg.away} @ ${hg.home}`,
-                date: hg.date,
+                id: hg.id, sportSlug: SPORT[league], league: LG[league],
+                title: `${hg.away} @ ${hg.home}`, date: hg.date,
                 score: hg.as != null && hg.hs != null ? `${hg.as}–${hg.hs}${hg.ot ? " (OT)" : ""}` : "",
                 blurb: hg.type === "SB" ? "Super Bowl" : hg.type === "WS" ? "World Series" : "",
               },
+              hist: {
+                leagueKey: league, season,
+                away: { name: hg.away, id: teamId(hg.away), record: rec(hg.away) },
+                home: { name: hg.home, id: teamId(hg.home), record: rec(hg.home) },
+                espn: hg.espn ?? null, soccerStats: hg.st ?? null,
+              },
               stats: null, eventSlug: null, eventName: null, chips: [],
             });
-          } catch { /* try next candidate season */ }
+          } catch { /* next candidate */ }
         }
         return NextResponse.json({ error: "not found" }, { status: 404 });
       }
@@ -186,6 +201,86 @@ export async function GET(req: NextRequest) {
           })
         : [];
       return NextResponse.json({ game, stats, eventName: evName, eventSlug, chips });
+    }
+    if (mode === "boxscore") {
+      const id = p.get("id") ?? "";
+      const espn = p.get("espn") ?? "";
+      const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+      const pid = (name: string) => PLAYERS.find((x) => norm(x.strPlayer) === norm(name))?.idPlayer ?? null;
+      type Row = { name: string; playerId: string | null; cells: (string | number)[] };
+      type Group = { title: string; columns: string[]; rows: Row[] };
+      const out = { teamStats: [] as { label: string; away: string | number; home: string | number }[], groups: [] as Group[] };
+      try {
+        if (id.startsWith("mlb-")) {
+          const pk = id.split("-")[2];
+          const j = await fetch(`https://statsapi.mlb.com/api/v1/game/${pk}/boxscore`, { next: { revalidate: 86400 } }).then((r) => r.json());
+          for (const side of ["away", "home"] as const) {
+            const t = j?.teams?.[side];
+            const bat: Row[] = [], pit: Row[] = [];
+            for (const key of t?.batters ?? []) {
+              const pl = t?.players?.[`ID${key}`]; const s = pl?.stats?.batting;
+              if (!s || s.atBats == null) continue;
+              bat.push({ name: pl.person?.fullName ?? "", playerId: pid(pl.person?.fullName ?? ""), cells: [s.atBats, s.runs, s.hits, s.rbi, s.baseOnBalls, s.strikeOuts] });
+            }
+            for (const key of t?.pitchers ?? []) {
+              const pl = t?.players?.[`ID${key}`]; const s = pl?.stats?.pitching;
+              if (!s) continue;
+              pit.push({ name: pl.person?.fullName ?? "", playerId: pid(pl.person?.fullName ?? ""), cells: [s.inningsPitched ?? "", s.hits ?? 0, s.runs ?? 0, s.earnedRuns ?? 0, s.baseOnBalls ?? 0, s.strikeOuts ?? 0] });
+            }
+            out.groups.push({ title: `${t?.team?.name ?? side} — Batting`, columns: ["AB", "R", "H", "RBI", "BB", "SO"], rows: bat });
+            out.groups.push({ title: `${t?.team?.name ?? side} — Pitching`, columns: ["IP", "H", "R", "ER", "BB", "SO"], rows: pit });
+          }
+        } else if (id.startsWith("nhl-")) {
+          const gid = id.split("-").slice(2).join("-");
+          const j = await fetch(`https://api-web.nhle.com/v1/gamecenter/${gid}/boxscore`, { next: { revalidate: 86400 } }).then((r) => r.json());
+          for (const side of ["awayTeam", "homeTeam"] as const) {
+            const label = j?.[side]?.commonName?.default ?? side;
+            const st = j?.playerByGameStats?.[side];
+            const sk: Row[] = [];
+            for (const p2 of [...(st?.forwards ?? []), ...(st?.defense ?? [])]) {
+              const nm = p2?.name?.default ?? "";
+              sk.push({ name: nm, playerId: pid(nm), cells: [p2.goals ?? 0, p2.assists ?? 0, p2.points ?? 0, p2.sog ?? 0, p2.hits ?? 0, p2.toi ?? ""] });
+            }
+            const gl: Row[] = (st?.goalies ?? []).map((p2: { name?: { default?: string }; saveShotsAgainst?: string; savePctg?: string; toi?: string }) => ({ name: p2?.name?.default ?? "", playerId: pid(p2?.name?.default ?? ""), cells: [p2.saveShotsAgainst ?? "", p2.savePctg ?? "", p2.toi ?? ""] }));
+            out.groups.push({ title: `${label} — Skaters`, columns: ["G", "A", "P", "SOG", "HIT", "TOI"], rows: sk });
+            out.groups.push({ title: `${label} — Goalies`, columns: ["SV-SA", "SV%", "TOI"], rows: gl });
+          }
+        } else if (id.startsWith("nba-")) {
+          const gid = id.split("-").slice(2).join("-");
+          const j = await fetch(`https://stats.nba.com/stats/boxscoretraditionalv3?GameID=${gid}&StartPeriod=0&EndPeriod=0`, { headers: { "User-Agent": "Mozilla/5.0", Referer: "https://www.nba.com/", "x-nba-stats-origin": "stats" }, next: { revalidate: 86400 } }).then((r) => r.json());
+          for (const side of ["awayTeam", "homeTeam"] as const) {
+            const t = j?.boxScoreTraditional?.[side];
+            const rows: Row[] = (t?.players ?? []).filter((p2: { statistics?: { minutes?: string } }) => p2?.statistics?.minutes).map((p2: { firstName?: string; familyName?: string; statistics?: Record<string, number | string> }) => {
+              const nm = `${p2.firstName ?? ""} ${p2.familyName ?? ""}`.trim();
+              const s = p2.statistics ?? {};
+              return { name: nm, playerId: pid(nm), cells: [s.minutes ?? "", s.points ?? 0, s.reboundsTotal ?? 0, s.assists ?? 0, s.steals ?? 0, s.blocks ?? 0] };
+            });
+            out.groups.push({ title: `${t?.teamCity ?? ""} ${t?.teamName ?? side}`.trim(), columns: ["MIN", "PTS", "REB", "AST", "STL", "BLK"], rows });
+          }
+        } else if (espn) {
+          const j = await fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=${espn}`, { next: { revalidate: 86400 } }).then((r) => r.json());
+          const [ta, tb] = j?.boxscore?.teams ?? [];
+          for (const s of ta?.statistics ?? []) {
+            const twin = (tb?.statistics ?? []).find((x: { label: string }) => x.label === s.label);
+            if (!out.teamStats.some((x) => x.label === s.label)) {
+              out.teamStats.push({ label: s.label, away: s.displayValue, home: twin?.displayValue ?? "" });
+            }
+          }
+          for (const teamBlock of j?.boxscore?.players ?? []) {
+            const tname = teamBlock?.team?.displayName ?? "";
+            for (const cat of teamBlock?.statistics ?? []) {
+              const rows: Row[] = (cat?.athletes ?? []).map((a: { athlete?: { displayName?: string }; stats?: string[] }) => {
+                const nm = a?.athlete?.displayName ?? "";
+                return { name: nm, playerId: pid(nm), cells: a?.stats ?? [] };
+              });
+              if (rows.length) out.groups.push({ title: `${tname} — ${cat?.text ?? cat?.name ?? ""}`, columns: cat?.labels ?? [], rows });
+            }
+          }
+        }
+        return NextResponse.json(out);
+      } catch {
+        return NextResponse.json({ error: "unavailable" }, { status: 502 });
+      }
     }
 
     let url = "";

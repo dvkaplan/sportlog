@@ -37,7 +37,9 @@ for (const [lg, code] of Object.entries(LEAGUES)) {
       const rows = parseCSV(await res.text());
       const head = rows[0].map((h) => h.trim());
       const c = (n) => head.indexOf(n);
-      const iDate = c("Date"), iH = c("HomeTeam"), iA = c("AwayTeam"), iHG = c("FTHG"), iAG = c("FTAG");
+      const iDate = c("Date"), iH = c("HomeTeam"), iA = c("AwayTeam"), iHG = c("FTHG"), iAG = c("FTAG"),
+        iHS_ = c("HS"), iAS_ = c("AS"), iHST = c("HST"), iAST = c("AST"), iHC = c("HC"), iAC = c("AC"),
+        iHF = c("HF"), iAF = c("AF"), iHY = c("HY"), iAY = c("AY"), iHR = c("HR"), iAR = c("AR");
       const games = [];
       rows.slice(1).forEach((r, n) => {
         if (!r[iH] || !r[iA]) return;
@@ -48,6 +50,7 @@ for (const [lg, code] of Object.entries(LEAGUES)) {
           home: r[iH], away: r[iA],
           hs: r[iHG] === "" ? null : Number(r[iHG]),
           as: r[iAG] === "" ? null : Number(r[iAG]),
+          st: iHS_ >= 0 ? { shots: [r[iAS_], r[iHS_]], sot: [r[iAST], r[iHST]], corners: [r[iAC], r[iHC]], fouls: [r[iAF], r[iHF]], yellow: [r[iAY], r[iHY]], red: [r[iAR], r[iHR]] } : null,
         });
       });
       writeFileSync(`src/lib/seasons/${lg}/${season}.json`, JSON.stringify(games));
