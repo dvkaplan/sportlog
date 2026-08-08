@@ -13,13 +13,13 @@ for (let y = new Date().getFullYear(); y >= 1901; y--) {
     const res = await fetch(`https://statsapi.mlb.com/api/v1/schedule?sportId=1&season=${y}`);
     if (!res.ok) { console.log(`${y}: HTTP ${res.status} — stopping; paste this`); break; }
     const j = await res.json();
-    const games = [];
+    const games = {};
     let n = 0;
     for (const d of j?.dates ?? []) {
       for (const g of d?.games ?? []) {
         if (!KEEP.has(g.gameType)) continue;
         n++;
-        games.push({
+        const entry = {
           id: `mlb-${y}-${g.gamePk}`,
           date: (g.gameDate ?? d.date ?? "").slice(0, 10),
           type: g.gameType === "R" ? "REG" : g.gameType === "W" ? "WS" : "PO",
@@ -27,10 +27,13 @@ for (let y = new Date().getFullYear(); y >= 1901; y--) {
           home: g.teams?.home?.team?.name ?? "Home",
           as: g.teams?.away?.score ?? null,
           hs: g.teams?.home?.score ?? null,
-        });
+        };
+        const prev = games[entry.id];
+        // duplicate listings = postponements; keep the one that actually has a final score
+        if (!prev || (prev.as == null && entry.as != null)) games[entry.id] = entry;
       }
     }
-    writeFileSync(`src/lib/seasons/mlb/${season}.json`, JSON.stringify(games));
+    writeFileSync(`src/lib/seasons/mlb/${season}.json`, JSON.stringify(Object.values(games)));
     index = [...new Set([...index, season])].sort();
     writeFileSync("src/lib/seasons/mlb/index.json", JSON.stringify(index));
     console.log(`${season}: ${n} games ✓`);
