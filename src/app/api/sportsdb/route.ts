@@ -14,6 +14,15 @@ import fightRedirectsData from "@/lib/fight-redirects.json";
 import { GAMES } from "@/lib/data";
 import { eventSlugForName } from "@/lib/events";
 import { OPPONENT_ALIASES } from "@/lib/fighter-extras";
+import nflSeasons from "@/lib/seasons/nfl/index.json";
+import nbaSeasons from "@/lib/seasons/nba/index.json";
+import nhlSeasons from "@/lib/seasons/nhl/index.json";
+import mlbSeasons from "@/lib/seasons/mlb/index.json";
+import eplSeasons from "@/lib/seasons/epl/index.json";
+import laligaSeasons from "@/lib/seasons/laliga/index.json";
+import serieaSeasons from "@/lib/seasons/seriea/index.json";
+import bundesligaSeasons from "@/lib/seasons/bundesliga/index.json";
+import ligue1Seasons from "@/lib/seasons/ligue1/index.json";
 
 const BASE = `https://www.thesportsdb.com/api/v1/json/${process.env.SPORTSDB_KEY ?? "3"}`;
 
@@ -47,6 +56,15 @@ const EVENTS_IDX = (eventsData as SlimEvent[]).map((e) => ({
 const FIGHTS_IDX = (fightGamesData as SlimFight[]).map((f) => ({
   id: f.id, title: f.title, date: f.date, score: f.score, event: f.blurb, sportSlug: f.sportSlug,
 }));
+const SEASONS_IDX = (
+  [
+    ["nfl", "NFL", nflSeasons], ["nba", "NBA", nbaSeasons], ["nhl", "NHL", nhlSeasons], ["mlb", "MLB", mlbSeasons],
+    ["epl", "Premier League", eplSeasons], ["laliga", "La Liga", laligaSeasons], ["seriea", "Serie A", serieaSeasons],
+    ["bundesliga", "Bundesliga", bundesligaSeasons], ["ligue1", "Ligue 1", ligue1Seasons],
+  ] as [string, string, string[]][]
+).flatMap(([key, name, arr]) =>
+  arr.map((s) => ({ league: key, leagueName: name, season: s, label: `${name} ${s} season` }))
+);
 
 
 export async function GET(req: NextRequest) {
@@ -129,7 +147,15 @@ export async function GET(req: NextRequest) {
           .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
           .slice(0, 10);
       }
-      return NextResponse.json({ teams: matches, players: playerMatches, fighters: fighterMatches, coaches: coachMatches, events: eventMatches, fights: fightMatches });
+      let seasonMatches: typeof SEASONS_IDX = [];
+      if (q.length >= 3) {
+        const words = q.split(/\s+/).filter(Boolean);
+        seasonMatches = SEASONS_IDX.filter((s) => {
+          const l = s.label.toLowerCase();
+          return words.every((w) => l.includes(w));
+        }).slice(0, 8);
+      }
+      return NextResponse.json({ teams: matches, players: playerMatches, fighters: fighterMatches, coaches: coachMatches, events: eventMatches, fights: fightMatches, seasons: seasonMatches });
       
     }
     if (mode === "game") {

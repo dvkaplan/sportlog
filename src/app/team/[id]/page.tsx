@@ -69,7 +69,8 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
           .from("list_items")
           .select("list_id, position, lists!inner(id, title, is_public)")
           .eq("lists.is_public", true)
-          .eq("entity_id", id);
+          .eq("entity_id", id)
+          .or("entity_type.eq.team,entity_type.is.null");
         setFanLists(
           (hits ?? []).map((r) => {
             const l = r.lists as unknown as { id: string; title: string };

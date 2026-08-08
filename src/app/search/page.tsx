@@ -32,6 +32,7 @@ type Fighter = {
 type EventHit = { slug: string; name: string; date: string; count: number };
 type FightHit = { id: string; title: string; date: string; score: string; event: string; sportSlug: string };
 type CoachHit = { kind: "coach" | "tsdb"; slug: string | null; idPlayer: string | null; name: string; role: string | null; team: string | null; sport: string | null; photo: string | null };
+type SeasonHit = { league: string; leagueName: string; season: string; label: string };
 
 
 export default function SearchPage() {
@@ -42,8 +43,9 @@ export default function SearchPage() {
   const [events, setEvents] = useState<EventHit[]>([]);
   const [fights, setFights] = useState<FightHit[]>([]);
   const [coaches, setCoaches] = useState<CoachHit[]>([]);
+  const [seasons, setSeasons] = useState<SeasonHit[]>([]);
   const [busy, setBusy] = useState(false);
- const [tab, setTab] = useState<"all" | "teams" | "players" | "fighters" | "coaches" | "events" | "fights">("all");
+ const [tab, setTab] = useState<"all" | "teams" | "players" | "fighters" | "coaches" | "events" | "fights" | "seasons">("all");
  
 
   useEffect(() => {
@@ -54,6 +56,7 @@ export default function SearchPage() {
       setEvents([]);
       setFights([]);
       setCoaches([]);
+      setSeasons([]);
       return;
     }
     const t = setTimeout(async () => {
@@ -66,6 +69,7 @@ export default function SearchPage() {
         setEvents(data?.events ?? []);
         setFights(data?.fights ?? []);
         setCoaches(data?.coaches ?? []);
+        setSeasons(data?.seasons ?? []);
         const ids = (data?.players ?? []).map((p: Player) => p.idPlayer);
         if (ids.length > 0) {
           const { data: clicks } = await supabase
@@ -83,6 +87,7 @@ export default function SearchPage() {
         setEvents([]);
         setFights([]);
         setCoaches([]);
+        setSeasons([]);
         setTeams([]);
         setPlayers([]);
         setFighters([]);
@@ -98,8 +103,9 @@ export default function SearchPage() {
   const showEvents = tab === "all" || tab === "events";
   const showFights = tab === "all" || tab === "fights";
   const showCoaches = tab === "all" || tab === "coaches";
+  const showSeasons = tab === "all" || tab === "seasons";
   const nothing =
-    !busy && q.trim().length >= 2 && teams.length === 0 && players.length === 0 && fighters.length === 0 && events.length === 0 && fights.length === 0 && coaches.length === 0;
+    !busy && q.trim().length >= 2 && teams.length === 0 && players.length === 0 && fighters.length === 0 && events.length === 0 && fights.length === 0 && coaches.length === 0 && seasons.length === 0;
 
   return (
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
@@ -115,7 +121,7 @@ export default function SearchPage() {
           className="mt-6 w-full rounded-lg border border-zinc-700 bg-zinc-900 p-3 text-sm outline-none focus:border-emerald-400"
         />
         <div className="mt-4 flex gap-2 text-sm">
-          {(["all", "teams", "players", "fighters", "coaches", "events", "fights"] as const).map((t) => (
+          {(["all", "teams", "players", "fighters", "coaches", "events", "fights", "seasons"] as const).map((t) => (
             <button
               key={t}
               onClick={() => setTab(t)}
@@ -275,6 +281,19 @@ export default function SearchPage() {
           </>
         )}
 
+        {showSeasons && seasons.length > 0 && (
+          <>
+            <h2 className="mt-6 text-xs font-semibold uppercase tracking-widest text-zinc-500">Seasons</h2>
+            <div className="mt-2 space-y-2">
+              {seasons.map((s) => (
+                <Link key={`${s.league}-${s.season}`} href={`/seasons/${s.league}/${s.season}`} className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-emerald-400">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-800 text-amber-300">📅</div>
+                  <div className="font-medium">{s.label}</div>
+                </Link>
+              ))}
+            </div>
+          </>
+        )}
         {nothing && <p className="mt-6 text-sm text-zinc-500">No results found.</p>}
       </div>
     </main>

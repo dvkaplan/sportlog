@@ -4,13 +4,14 @@ import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase";
 import { SPORTS } from "@/lib/data";
 
-type Entry = { label: string; entityId?: string; image?: string };
-type Team = {
-  idTeam: string;
-  strTeam: string;
-  strLeague: string | null;
-  strBadge?: string | null;
-  strTeamBadge?: string | null;
+type Entry = { label: string; entityType?: string; entityId?: string; image?: string };
+type SugResults = {
+  teams?: { idTeam: string; strTeam: string; strLeague: string | null; strBadge?: string | null; strAlternate?: string | null }[];
+  players?: { idPlayer: string; strPlayer: string; strTeam: string; strThumb: string | null }[];
+  fighters?: { slug: string; name: string; division: string; photo?: string | null }[];
+  coaches?: { kind: string; slug: string | null; idPlayer: string | null; name: string; team: string | null; photo: string | null }[];
+  events?: { slug: string; name: string; date: string }[];
+  seasons?: { league: string; season: string; label: string }[];
 };
 
 export default function NewListPage() {
@@ -21,7 +22,7 @@ export default function NewListPage() {
   const [isPublic, setIsPublic] = useState(true);
   const [items, setItems] = useState<Entry[]>([{ label: "" }, { label: "" }, { label: "" }]);
   const [active, setActive] = useState<number | null>(null);
-  const [sugs, setSugs] = useState<Team[]>([]);
+  const [sugs, setSugs] = useState<SugResults>({});
   const [msg, setMsg] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
@@ -29,7 +30,7 @@ export default function NewListPage() {
 
   useEffect(() => {
     if (active === null || activeText.trim().length < 2) {
-      setSugs([]);
+      setSugs({});
       return;
     }
     const t = setTimeout(async () => {
@@ -37,9 +38,9 @@ export default function NewListPage() {
         const data = await fetch(
           `/api/sportsdb?mode=findteams&q=${encodeURIComponent(activeText)}`
         ).then((r) => r.json());
-        setSugs((data?.teams ?? []).slice(0, 10));
+        setSugs(data ?? {});
       } catch {
-        setSugs([]);
+        setSugs({});
       }
     }, 350);
     return () => clearTimeout(t);
@@ -48,21 +49,13 @@ export default function NewListPage() {
   function setItem(i: number, patch: Partial<Entry>) {
     setItems((prev) => prev.map((x, idx) => (idx === i ? { ...x, ...patch } : x)));
   }
-  function pick(i: number, t: Team) {
-    setItem(i, {
-      label: t.strTeam,
-      entityId: t.idTeam,
-      image: t.strBadge ?? t.strTeamBadge ?? undefined,
-    });
-    setSugs([]);
+  function pick(i: number, e: Entry) {
+    setItem(i, e);
+    setSugs({});
     setActive(null);
   }
-  function addItem() {
-    setItems((p) => [...p, { label: "" }]);
-  }
-  function removeItem(i: number) {
-    setItems((p) => p.filter((_, idx) => idx !== i));
-  }
+  function addItem() { setItems((p) => [...p, { label: "" }]); }
+  function removeItem(i: number) { setItems((p) => p.filter((_, idx) => idx !== i)); }
   function move(i: number, dir: -1 | 1) {
     setItems((prev) => {
       const j = i + dir;
@@ -105,7 +98,7 @@ export default function NewListPage() {
       list_id: list.id,
       position: idx + 1,
       label: e.label,
-      entity_type: e.entityId ? "team" : null,
+      entity_type: e.entityType ?? null,
       entity_id: e.entityId ?? null,
       image_url: e.image ?? null,
     }));
@@ -115,12 +108,31 @@ export default function NewListPage() {
     router.push(`/lists/${list.id}`);
   }
 
+  const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
+    <>
+      <div className="px-3 pb-1 pt-2 text-[10px] font-semibold uppercase tracking-widest text-zinc-500">{title}</div>
+      {children}
+    </>
+  );
+  const Row = ({ img, label, sub, fallback, onClick }: { img?: string | null; label: string; sub?: string | null; fallback: string; onClick: () => void }) => (
+    <button type="button" onClick={onClick} className="flex w-full items-center gap-3 p-2 text-left text-sm hover:bg-zinc-800">
+      {img ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={img} alt="" className="h-6 w-6 rounded object-cover object-top" />
+      ) : (
+        <div className="flex h-6 w-6 items-center justify-center rounded bg-zinc-800 text-xs">{fallback}</div>
+      )}
+      <span className="truncate">{label}</span>
+      {sub ? <span className="ml-auto shrink-0 text-xs text-zinc-500">{sub}</span> : null}
+    </button>
+  );
+
   return (
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
       <div className="mx-auto max-w-2xl px-6 py-12">
         <h1 className="text-2xl font-bold">New ranked list</h1>
         <p className="mt-1 text-sm text-zinc-400">
-          Type a team name and pick from the dropdown to attach its badge — or free-type anything (eras, players, moments).
+          Rank anything: teams, players, fighters, coaches, events, seasons — pick from the dropdown to link them, or free-type anything else.
         </p>
         <div className="mt-8 space-y-4">
           <input
@@ -146,7 +158,6 @@ export default function NewListPage() {
               <option key={s.slug} value={s.slug}>{s.name}</option>
             ))}
           </select>
-
           <div className="space-y-2">
             {items.map((val, i) => (
               <div key={i} className="relative">
@@ -154,43 +165,74 @@ export default function NewListPage() {
                   <span className="w-8 shrink-0 text-right font-bold text-emerald-400">{i + 1}.</span>
                   {val.image ? (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img src={val.image} alt="" className="h-8 w-8 shrink-0 object-contain" />
+                    <img src={val.image} alt="" className="h-8 w-8 shrink-0 rounded object-cover object-top" />
                   ) : (
                     <div className="h-8 w-8 shrink-0" />
                   )}
                   <input
                     value={val.label}
-                    onChange={(e) => setItem(i, { label: e.target.value, entityId: undefined, image: undefined })}
+                    onChange={(e) => setItem(i, { label: e.target.value, entityType: undefined, entityId: undefined, image: undefined })}
                     onFocus={() => setActive(i)}
-                    placeholder={i === 0 ? "1995–96 Bulls" : "Add an entry…"}
+                    placeholder={i === 0 ? "Khabib, 1995-96 Bulls, UFC 229, Redick…" : "Add an entry…"}
                     className="w-full rounded-lg border border-zinc-700 bg-zinc-900 p-2.5 text-sm outline-none focus:border-emerald-400"
                   />
                   <button onClick={() => move(i, -1)} className="rounded border border-zinc-700 px-2 py-1 text-xs hover:border-emerald-400">↑</button>
-                  <button onClick={() => move(i, 1)} className="rounded border border-zinc-700 px-2 py-1 text-xs hover:border-emerald-400">↓</button>
+                  <button onClick={() => move(i, 1)} className="rounded border border-zinc-700 px-2 py-1 text-xs hover:border-red-400">↓</button>
                   <button onClick={() => removeItem(i)} className="rounded border border-zinc-700 px-2 py-1 text-xs hover:border-red-400">✕</button>
                 </div>
-                {active === i && sugs.length > 0 && (
-                  <div className="absolute left-10 right-24 z-10 mt-1 overflow-hidden rounded-lg border border-zinc-700 bg-zinc-900 shadow-xl">
-                    {sugs.map((t) => {
-                      const badge = t.strBadge ?? t.strTeamBadge ?? null;
-                      return (
-                        <button
-                          key={t.idTeam}
-                          onClick={() => pick(i, t)}
-                          className="flex w-full items-center gap-3 p-2 text-left text-sm hover:bg-zinc-800"
-                        >
-                          {badge ? (
-                            // eslint-disable-next-line @next/next/no-img-element
-                            <img src={badge} alt="" className="h-6 w-6 object-contain" />
-                          ) : (
-                            <div className="h-6 w-6 rounded bg-zinc-800" />
-                          )}
-                          <span>{t.strTeam}</span>
-                          <span className="ml-auto text-xs text-zinc-500">{t.strLeague}</span>
-                        </button>
-                      );
-                    })}
-                  </div>
+                {active === i && (
+                  (sugs.teams?.length || sugs.players?.length || sugs.fighters?.length || sugs.coaches?.length || sugs.events?.length || sugs.seasons?.length) ? (
+                    <div className="absolute left-10 right-24 z-10 mt-1 max-h-80 overflow-y-auto rounded-lg border border-zinc-700 bg-zinc-900 shadow-xl">
+                      {(sugs.teams ?? []).length > 0 && (
+                        <Section title="Teams">
+                          {sugs.teams!.slice(0, 4).map((t) => (
+                            <Row key={t.idTeam} img={t.strBadge} fallback="🛡️" label={t.strTeam} sub={t.strLeague}
+                              onClick={() => pick(i, { label: t.strTeam, entityType: "team", entityId: t.idTeam, image: t.strBadge ?? undefined })} />
+                          ))}
+                        </Section>
+                      )}
+                      {(sugs.players ?? []).length > 0 && (
+                        <Section title="Players">
+                          {sugs.players!.slice(0, 4).map((p) => (
+                            <Row key={p.idPlayer} img={p.strThumb} fallback="👤" label={p.strPlayer} sub={p.strTeam?.replace(/^_/, "")}
+                              onClick={() => pick(i, { label: p.strPlayer, entityType: "player", entityId: p.idPlayer, image: p.strThumb ?? undefined })} />
+                          ))}
+                        </Section>
+                      )}
+                      {(sugs.fighters ?? []).length > 0 && (
+                        <Section title="Fighters">
+                          {sugs.fighters!.slice(0, 4).map((f) => (
+                            <Row key={f.slug} img={f.photo} fallback="🥊" label={f.name} sub={f.division}
+                              onClick={() => pick(i, { label: f.name, entityType: "fighter", entityId: f.slug, image: f.photo ?? undefined })} />
+                          ))}
+                        </Section>
+                      )}
+                      {(sugs.coaches ?? []).length > 0 && (
+                        <Section title="Coaches">
+                          {sugs.coaches!.slice(0, 3).map((c, ci) => (
+                            <Row key={ci} img={c.photo} fallback="📋" label={c.name} sub={c.team ?? "Head Coach"}
+                              onClick={() => pick(i, { label: c.name, entityType: "coach", entityId: c.slug ?? c.idPlayer ?? c.name, image: c.photo ?? undefined })} />
+                          ))}
+                        </Section>
+                      )}
+                      {(sugs.events ?? []).length > 0 && (
+                        <Section title="Events">
+                          {sugs.events!.slice(0, 3).map((e) => (
+                            <Row key={e.slug} fallback="🎟️" label={e.name} sub={e.date}
+                              onClick={() => pick(i, { label: e.name, entityType: "event", entityId: e.slug })} />
+                          ))}
+                        </Section>
+                      )}
+                      {(sugs.seasons ?? []).length > 0 && (
+                        <Section title="Seasons">
+                          {sugs.seasons!.slice(0, 3).map((s) => (
+                            <Row key={`${s.league}-${s.season}`} fallback="📅" label={s.label}
+                              onClick={() => pick(i, { label: s.label, entityType: "season", entityId: `${s.league}-${s.season}` })} />
+                          ))}
+                        </Section>
+                      )}
+                    </div>
+                  ) : null
                 )}
               </div>
             ))}
@@ -198,7 +240,6 @@ export default function NewListPage() {
           <button onClick={addItem} className="rounded-lg border border-zinc-700 px-4 py-2 text-sm hover:border-emerald-400">
             + Add entry
           </button>
-
           <label className="flex cursor-pointer items-center gap-3 rounded-lg border border-zinc-800 bg-zinc-900 p-3 text-sm">
             <input
               type="checkbox"
@@ -208,7 +249,6 @@ export default function NewListPage() {
             />
             <span>{isPublic ? "Public — anyone can see this list" : "Private — only you can see this list"}</span>
           </label>
-
           <button
             onClick={save}
             disabled={busy}
