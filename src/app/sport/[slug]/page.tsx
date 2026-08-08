@@ -51,13 +51,28 @@ export default async function SportPage({ params }: { params: Promise<{ slug: st
           </>
         )}
 
-        {(slug === "football" || slug === "basketball") && (
-          <Link href={`/seasons/${slug === "football" ? "nfl" : "nba"}/${slug === "football" ? "2025" : "2025-26"}`}
-            className="mt-8 block rounded-xl border border-emerald-400/40 bg-emerald-400/5 p-5 transition hover:border-emerald-400">
-            <div className="font-semibold text-emerald-400">Browse every {slug === "football" ? "NFL" : "NBA"} game →</div>
-            <div className="mt-1 text-sm text-zinc-400">Full season schedules, every game rateable — season by season.</div>
-          </Link>
-        )}
+        {(() => {
+          const BROWSE: Record<string, [string, string, string][]> = {
+            football: [["nfl", "NFL", "2025"]],
+            basketball: [["nba", "NBA", "2025-26"]],
+            hockey: [["nhl", "NHL", "2025-26"]],
+            baseball: [["mlb", "MLB", "2025"]],
+            soccer: [["epl", "Premier League", "2025-26"], ["laliga", "La Liga", "2025-26"], ["seriea", "Serie A", "2025-26"], ["bundesliga", "Bundesliga", "2025-26"], ["ligue1", "Ligue 1", "2025-26"]],
+          };
+          const links = BROWSE[slug] ?? [];
+          if (links.length === 0) return null;
+          return (
+            <div className="mt-8 space-y-2">
+              {links.map(([lg, name, cur]) => (
+                <Link key={lg} href={`/seasons/${lg}/${cur}`}
+                  className="block rounded-xl border border-emerald-400/40 bg-emerald-400/5 p-5 transition hover:border-emerald-400">
+                  <div className="font-semibold text-emerald-400">Browse every {name} game →</div>
+                  <div className="mt-1 text-sm text-zinc-400">Full season schedules, every game rateable — season by season.</div>
+                </Link>
+              ))}
+            </div>
+          );
+        })()}
         <h2 className="mt-8 font-semibold">Iconic Games</h2>
         <div className="mt-3 space-y-3">
           {games.map((g) => (

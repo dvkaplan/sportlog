@@ -134,38 +134,37 @@ export async function GET(req: NextRequest) {
     }
     if (mode === "game") {
       const id = p.get("id") ?? "";
-      const hm = id.match(/^(nfl|nba)-(\d{4})/);
+     const hm = id.match(/^(nfl|nba|nhl|mlb|epl|laliga|seriea|bundesliga|ligue1)-(\d{4})/);
       if (hm) {
         const league = hm[1];
         const yr = Number(hm[2]);
-      const candidates =
-        league === "nba"
-          ? [
-              `${yr - 1}-${String(yr % 100).padStart(2, "0")}`, // Jan–Jun game → prior-fall season
-              `${yr}-${String((yr + 1) % 100).padStart(2, "0")}`, // Oct–Dec game → this-fall season
-            ]
+        const cross = ["nba", "nhl", "epl", "laliga", "seriea", "bundesliga", "ligue1"];
+        const candidates = cross.includes(league)
+          ? [`${yr - 1}-${String(yr % 100).padStart(2, "0")}`, `${yr}-${String((yr + 1) % 100).padStart(2, "0")}`]
           : [String(yr)];
-      for (const season of candidates) {
-        try {
-          const file = path.join(process.cwd(), "src", "lib", "seasons", league, `${season}.json`);
-          const all = JSON.parse(await readFile(file, "utf8")) as { id: string; away: string; home: string; date: string; as: number | null; hs: number | null; ot?: boolean; type?: string }[];
-          const hg = all.find((x) => x.id === id);
-          if (!hg) continue;
-          return NextResponse.json({
-            game: {
-              id: hg.id,
-              sportSlug: league === "nfl" ? "football" : "basketball",
-              league: league.toUpperCase(),
-              title: `${hg.away} @ ${hg.home}`,
-              date: hg.date,
-              score: hg.as != null && hg.hs != null ? `${hg.as}–${hg.hs}${hg.ot ? " (OT)" : ""}` : "",
-              blurb: hg.type === "SB" ? "Super Bowl" : "",
-            },
-            stats: null, eventSlug: null, eventName: null, chips: [],
-          });
-        } catch { /* season file may not exist for edge years — try next */ }
-      }
-      return NextResponse.json({ error: "not found" }, { status: 404 });
+        const SPORT: Record<string, string> = { nfl: "football", nba: "basketball", nhl: "hockey", mlb: "baseball", epl: "soccer", laliga: "soccer", seriea: "soccer", bundesliga: "soccer", ligue1: "soccer" };
+        const LG: Record<string, string> = { nfl: "NFL", nba: "NBA", nhl: "NHL", mlb: "MLB", epl: "Premier League", laliga: "La Liga", seriea: "Serie A", bundesliga: "Bundesliga", ligue1: "Ligue 1" };
+        for (const season of candidates) {
+          try {
+            const file = path.join(process.cwd(), "src", "lib", "seasons", league, `${season}.json`);
+            const all = JSON.parse(await readFile(file, "utf8")) as { id: string; away: string; home: string; date: string; as: number | null; hs: number | null; ot?: boolean; type?: string }[];
+            const hg = all.find((x) => x.id === id);
+            if (!hg) continue;
+            return NextResponse.json({
+              game: {
+                id: hg.id,
+                sportSlug: SPORT[league],
+                league: LG[league],
+                title: `${hg.away} @ ${hg.home}`,
+                date: hg.date,
+                score: hg.as != null && hg.hs != null ? `${hg.as}–${hg.hs}${hg.ot ? " (OT)" : ""}` : "",
+                blurb: hg.type === "SB" ? "Super Bowl" : hg.type === "WS" ? "World Series" : "",
+              },
+              stats: null, eventSlug: null, eventName: null, chips: [],
+            });
+          } catch { /* try next candidate season */ }
+        }
+        return NextResponse.json({ error: "not found" }, { status: 404 });
       }
       const REDIR = fightRedirectsData as Record<string, string>;
       const finalId = REDIR[id] ?? id;

@@ -67,12 +67,14 @@ export default async function SeasonPage({ params }: { params: Promise<{ league:
       };
     });
     if (built.length > 0) {
-      finalsGroup = { ...built[built.length - 1], label: `NBA Finals: ${built[built.length - 1].label}` };
+    const FINALS: Record<string, string> = { nba: "NBA Finals", nhl: "Stanley Cup Final", mlb: "World Series" };
+      finalsGroup = { ...built[built.length - 1], label: `${FINALS[league] ?? "Finals"}: ${built[built.length - 1].label}` };
       playoffSeries = built.slice(0, -1);
     }
   }
 
-  const leagueName = league === "nfl" ? "NFL" : league === "nba" ? "NBA" : league.toUpperCase();
+  const LEAGUE_NAMES: Record<string, string> = { nfl: "NFL", nba: "NBA", nhl: "NHL", mlb: "MLB", epl: "Premier League", laliga: "La Liga", seriea: "Serie A", bundesliga: "Bundesliga", ligue1: "Ligue 1" };
+  const leagueName = LEAGUE_NAMES[league] ?? league.toUpperCase();
 
   return (
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
