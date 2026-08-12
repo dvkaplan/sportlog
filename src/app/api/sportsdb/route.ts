@@ -272,16 +272,30 @@ export async function GET(req: NextRequest) {
             out.groups.push({ title: `${label} — Goalies`, columns: ["SV-SA", "SV%", "TOI"], rows: gl });
           }
         } else if (id.startsWith("nba-")) {
-          const gid = id.split("-").slice(2).join("-");
-          const j = await fetch(`https://stats.nba.com/stats/boxscoretraditionalv3?GameID=${gid}&StartPeriod=0&EndPeriod=0`, { headers: { "User-Agent": "Mozilla/5.0", Referer: "https://www.nba.com/", "x-nba-stats-origin": "stats" }, next: { revalidate: 86400 } }).then((r) => r.json());
-          for (const side of ["awayTeam", "homeTeam"] as const) {
-            const t = j?.boxScoreTraditional?.[side];
-            const rows: Row[] = (t?.players ?? []).filter((p2: { statistics?: { minutes?: string } }) => p2?.statistics?.minutes).map((p2: { firstName?: string; familyName?: string; statistics?: Record<string, number | string> }) => {
-              const nm = `${p2.firstName ?? ""} ${p2.familyName ?? ""}`.trim();
-              const s = p2.statistics ?? {};
-              return { name: nm, playerId: pid(nm), cells: [s.minutes ?? "", s.points ?? 0, s.reboundsTotal ?? 0, s.assists ?? 0, s.steals ?? 0, s.blocks ?? 0] };
-            });
-            out.groups.push({ title: `${t?.teamCity ?? ""} ${t?.teamName ?? side}`.trim(), columns: ["MIN", "PTS", "REB", "AST", "STL", "BLK"], rows });
+          let espnId: string | null = null;
+          try {
+            const mapFile = path.join(process.cwd(), "src", "lib", "nba-espn-map.json");
+            const st = JSON.parse(await readFile(mapFile, "utf8")) as { map: Record<string, string> };
+            espnId = st.map[id] ?? null;
+          } catch { /* map not built yet */ }
+          if (!espnId) return NextResponse.json({ error: "pre-espn" }, { status: 404 });
+          const j = await fetch(`https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=${espnId}`, { next: { revalidate: 86400 } }).then((r) => r.json());
+          const [ta, tb] = j?.boxscore?.teams ?? [];
+          for (const s of ta?.statistics ?? []) {
+            const twin = (tb?.statistics ?? []).find((x: { label: string }) => x.label === s.label);
+            if (!out.teamStats.some((x) => x.label === s.label)) {
+              out.teamStats.push({ label: s.label, away: s.displayValue, home: twin?.displayValue ?? "" });
+            }
+          }
+          for (const teamBlock of j?.boxscore?.players ?? []) {
+            const tname = teamBlock?.team?.displayName ?? "";
+            for (const cat of teamBlock?.statistics ?? []) {
+              const rows: Row[] = (cat?.athletes ?? []).map((a: { athlete?: { displayName?: string }; stats?: string[] }) => {
+                const nm = a?.athlete?.displayName ?? "";
+                return { name: nm, playerId: pid(nm), cells: a?.stats ?? [] };
+              }).filter((r: Row) => r.cells.length > 0);
+              if (rows.length) out.groups.push({ title: tname, columns: cat?.labels ?? [], rows });
+            }
           }
         } else if (espn) {
           const j = await fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=${espn}`, { next: { revalidate: 86400 } }).then((r) => r.json());
