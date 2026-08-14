@@ -272,7 +272,24 @@ export async function GET(req: NextRequest) {
             out.groups.push({ title: `${label} — Goalies`, columns: ["SV-SA", "SV%", "TOI"], rows: gl });
           }
         } else if (id.startsWith("nba-")) {
-          let espnId: string | null = null;
+         // Pre-2002 era: pre-imported box scores from disk
+          {
+            const byr = Number(id.split("-")[1]);
+            const cands = [`${byr - 1}-${String(byr % 100).padStart(2, "0")}`, `${byr}-${String((byr + 1) % 100).padStart(2, "0")}`];
+            for (const ssn of cands) {
+              try {
+                const bfile = path.join(process.cwd(), "src", "lib", "boxscores", "nba", `${ssn}.json`);
+                const store = JSON.parse(await readFile(bfile, "utf8")) as Record<string, { unavailable?: boolean; teamStats?: { label: string; away: string | number; home: string | number }[]; groups?: { title: string; columns: string[]; rows: { name: string; cells: (string | number)[] }[] }[] }>;
+                const hit = store[id];
+                if (!hit) continue;
+                if (hit.unavailable) return NextResponse.json({ error: "unrecorded" }, { status: 404 });
+                out.teamStats = hit.teamStats ?? [];
+                out.groups = (hit.groups ?? []).map((grp) => ({ ...grp, rows: grp.rows.map((r) => ({ ...r, playerId: pid(r.name) })) }));
+                return NextResponse.json(out);
+              } catch { /* season file not imported yet — fall through to ESPN */ }
+            }
+          }
+            let espnId: string | null = null;
           try {
             const mapFile = path.join(process.cwd(), "src", "lib", "nba-espn-map.json");
             const st = JSON.parse(await readFile(mapFile, "utf8")) as { map: Record<string, string> };
