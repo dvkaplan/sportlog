@@ -8,12 +8,30 @@ const HEADERS = {
   "x-nba-stats-token": "true",
   Accept: "application/json",
 };
-const STAT_COLS = [["MIN", "MIN"], ["PTS", "PTS"], ["REB", "REB"], ["AST", "AST"], ["STL", "STL"], ["BLK", "BLK"]];
 const nick = (n) => (n ?? "").trim().split(/\s+/).pop().toLowerCase();
+const dash = (m, a) => (a == null ? null : `${m ?? 0}-${a}`);
+
+// Full modern column set; each defines how to build its cell and whether the era recorded it
+const COLS = [
+  { label: "MIN", cell: (r, c) => r[c("MIN")], has: (r, c) => r[c("MIN")] != null },
+  { label: "PTS", cell: (r, c) => r[c("PTS")], has: (r, c) => r[c("PTS")] != null },
+  { label: "FG", cell: (r, c) => dash(r[c("FGM")], r[c("FGA")]), has: (r, c) => r[c("FGA")] != null },
+  { label: "3PT", cell: (r, c) => dash(r[c("FG3M")], r[c("FG3A")]), has: (r, c) => r[c("FG3A")] != null },
+  { label: "FT", cell: (r, c) => dash(r[c("FTM")], r[c("FTA")]), has: (r, c) => r[c("FTA")] != null },
+  { label: "REB", cell: (r, c) => r[c("REB")], has: (r, c) => r[c("REB")] != null },
+  { label: "AST", cell: (r, c) => r[c("AST")], has: (r, c) => r[c("AST")] != null },
+  { label: "TO", cell: (r, c) => r[c("TO")], has: (r, c) => r[c("TO")] != null },
+  { label: "STL", cell: (r, c) => r[c("STL")], has: (r, c) => r[c("STL")] != null },
+  { label: "BLK", cell: (r, c) => r[c("BLK")], has: (r, c) => r[c("BLK")] != null },
+  { label: "OREB", cell: (r, c) => r[c("OREB")], has: (r, c) => r[c("OREB")] != null },
+  { label: "DREB", cell: (r, c) => r[c("DREB")], has: (r, c) => r[c("DREB")] != null },
+  { label: "PF", cell: (r, c) => r[c("PF")], has: (r, c) => r[c("PF")] != null },
+  { label: "+/-", cell: (r, c) => r[c("PLUS_MINUS")], has: (r, c) => r[c("PLUS_MINUS")] != null },
+];
 
 mkdirSync("src/lib/boxscores/nba", { recursive: true });
 const index = JSON.parse(readFileSync("src/lib/seasons/nba/index.json", "utf8"));
-const seasons = index.filter((s) => Number(s.slice(0, 4)) <= 2001).sort().reverse(); // 2001-02 → 1946-47
+const seasons = index.filter((s) => Number(s.slice(0, 4)) <= 2001).sort().reverse();
 
 let consecutiveFails = 0;
 
@@ -41,7 +59,7 @@ for (const season of seasons) {
       consecutiveFails++;
       if (consecutiveFails >= 5) {
         writeFileSync(`src/lib/boxscores/nba/${season}.json`, JSON.stringify(out));
-        console.log(`\n⛔ 5 straight failures — NBA's rate limiter is likely cooling you off. Progress saved. Wait ~an hour and rerun; it resumes exactly here.`);
+        console.log(`\n⛔ 5 straight failures — rate limiter cooling you off. Progress saved; rerun in ~an hour to resume.`);
         process.exit(0);
       }
       await sleep(20000);
@@ -53,32 +71,29 @@ for (const season of seasons) {
     const ps = rs["PlayerStats"];
     const ts = rs["TeamStats"];
     if (!ps || !ps.rowSet?.length) {
-      out[g.id] = { unavailable: true }; // honestly recorded: nothing was kept for this game
+      out[g.id] = { unavailable: true };
     } else {
       const h = ps.headers;
       const c = (name) => h.indexOf(name);
+      const active = COLS.filter((col) => ps.rowSet.some((r) => col.has(r, c)));
       const byTeam = {};
       for (const r of ps.rowSet) {
         const team = `${r[c("TEAM_CITY")] ?? ""} ${r[c("TEAM_NICKNAME")] ?? r[c("TEAM_ABBREVIATION")] ?? ""}`.trim();
         (byTeam[team] ??= []).push(r);
       }
-      const activeCols = STAT_COLS.filter(([col]) =>
-        ps.rowSet.some((r) => r[c(col)] !== null && r[c(col)] !== undefined && r[c(col)] !== "")
-      );
       const groups = Object.entries(byTeam).map(([team, rows]) => ({
         title: team,
-        columns: activeCols.map(([, label]) => label),
+        columns: active.map((col) => col.label),
         rows: rows
           .filter((r) => r[c("COMMENT")] === "" || r[c("COMMENT")] == null)
           .map((r) => ({
             name: r[c("PLAYER_NAME")] ?? "",
-            cells: activeCols.map(([col]) => {
-              const v = r[c(col)];
+            cells: active.map((col) => {
+              const v = col.cell(r, c);
               return v === null || v === undefined || v === "" ? "—" : v;
             }),
           })),
       }));
-      // order groups away-first using the season file's own home/away
       groups.sort((a, b) => (nick(a.title) === nick(g.away) ? -1 : nick(b.title) === nick(g.away) ? 1 : 0));
 
       const teamStats = [];
@@ -87,19 +102,25 @@ for (const season of seasons) {
         const tc = (name) => th.indexOf(name);
         let [rA, rB] = ts.rowSet;
         if (nick(`${rB[tc("TEAM_CITY")]} ${rB[tc("TEAM_NAME")]}`) === nick(g.away)) [rA, rB] = [rB, rA];
-        const pct = (v) => (v == null ? "—" : `${Math.round(Number(v) * 1000) / 10}%`);
-        const num = (v) => (v == null ? "—" : v);
-        const pushRow = (label, key, fmt) => {
-          const va = fmt(rA[tc(key)]), vb = fmt(rB[tc(key)]);
-          if (va !== "—" || vb !== "—") teamStats.push({ label, away: va, home: vb });
-        };
-        pushRow("FG%", "FG_PCT", pct);
-        pushRow("3P%", "FG3_PCT", pct);
-        pushRow("FT%", "FT_PCT", pct);
-        pushRow("Rebounds", "REB", num);
-        pushRow("Assists", "AST", num);
-        pushRow("Turnovers", "TO", num);
-        pushRow("Points", "PTS", num);
+        const pct = (v) => (v == null ? null : `${Math.round(Number(v) * 1000) / 10}%`);
+        const num = (v) => (v == null ? null : v);
+        const both = (fa, fb) => fa != null || fb != null;
+        const push = (label, va, vb) => { if (both(va, vb)) teamStats.push({ label, away: va ?? "—", home: vb ?? "—" }); };
+        push("FG", dash(rA[tc("FGM")], rA[tc("FGA")]), dash(rB[tc("FGM")], rB[tc("FGA")]));
+        push("FG%", pct(rA[tc("FG_PCT")]), pct(rB[tc("FG_PCT")]));
+        push("3PT", dash(rA[tc("FG3M")], rA[tc("FG3A")]), dash(rB[tc("FG3M")], rB[tc("FG3A")]));
+        push("3P%", pct(rA[tc("FG3_PCT")]), pct(rB[tc("FG3_PCT")]));
+        push("FT", dash(rA[tc("FTM")], rA[tc("FTA")]), dash(rB[tc("FTM")], rB[tc("FTA")]));
+        push("FT%", pct(rA[tc("FT_PCT")]), pct(rB[tc("FT_PCT")]));
+        push("Rebounds", num(rA[tc("REB")]), num(rB[tc("REB")]));
+        push("Offensive Rebounds", num(rA[tc("OREB")]), num(rB[tc("OREB")]));
+        push("Defensive Rebounds", num(rA[tc("DREB")]), num(rB[tc("DREB")]));
+        push("Assists", num(rA[tc("AST")]), num(rB[tc("AST")]));
+        push("Steals", num(rA[tc("STL")]), num(rB[tc("STL")]));
+        push("Blocks", num(rA[tc("BLK")]), num(rB[tc("BLK")]));
+        push("Turnovers", num(rA[tc("TO")]), num(rB[tc("TO")]));
+        push("Fouls", num(rA[tc("PF")]), num(rB[tc("PF")]));
+        push("Points", num(rA[tc("PTS")]), num(rB[tc("PTS")]));
       }
       out[g.id] = { teamStats, groups };
     }
