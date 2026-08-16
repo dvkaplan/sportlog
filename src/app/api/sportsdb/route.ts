@@ -108,6 +108,14 @@ export async function GET(req: NextRequest) {
       };
       const allNameHits = PLAYERS.filter((p) => p.strPlayer.toLowerCase().includes(q));
       const playerMatches = allNameHits.filter((p) => !isStaffPos(p.strPosition)).sort((a, b) => prank(b) - prank(a)).slice(0, 25);
+      let genPlayers: { idPlayer: string; strPlayer: string; strTeam: string; strLeague: string | null; strPosition: string | null; strThumb: string | null; strSport: string | null }[] = [];
+      try {
+        const mp = JSON.parse(await readFile(path.join(process.cwd(), "src", "lib", "nba-missing-players.json"), "utf8")) as { nbaId: string | null; name: string; first: string; last: string }[];
+        genPlayers = mp
+          .filter((m) => m.nbaId && m.name.toLowerCase().includes(q))
+          .slice(0, 5)
+          .map((m) => ({ idPlayer: `nba-${m.nbaId}`, strPlayer: m.name, strTeam: `_NBA ${m.first}–${m.last}`, strLeague: "NBA", strPosition: null, strThumb: null, strSport: "Basketball" }));
+      } catch {}
       const CM = coachMediaJson as Record<string, { name: string; photo: string | null }>;
       const wikiCoaches = Object.entries(CM)
         .filter(([, c]) => c.name.toLowerCase().includes(q))
@@ -155,7 +163,7 @@ export async function GET(req: NextRequest) {
           return words.every((w) => l.includes(w));
         }).slice(0, 8);
       }
-      return NextResponse.json({ teams: matches, players: playerMatches, fighters: fighterMatches, coaches: coachMatches, events: eventMatches, fights: fightMatches, seasons: seasonMatches });
+      return NextResponse.json({ teams: matches, players: [...playerMatches, ...genPlayers], fighters: fighterMatches, coaches: coachMatches, events: eventMatches, fights: fightMatches, seasons: seasonMatches });
       
     }
     if (mode === "game") {
@@ -232,7 +240,12 @@ export async function GET(req: NextRequest) {
       const id = p.get("id") ?? "";
       const espn = p.get("espn") ?? "";
       const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
-      const pid = (name: string) => PLAYERS.find((x) => norm(x.strPlayer) === norm(name))?.idPlayer ?? null;
+      let GENP: Record<string, string> = {};
+      try {
+        const mp = JSON.parse(await readFile(path.join(process.cwd(), "src", "lib", "nba-missing-players.json"), "utf8")) as { nbaId: string | null; name: string }[];
+        GENP = Object.fromEntries(mp.filter((m) => m.nbaId).map((m) => [norm(m.name), `nba-${m.nbaId}`]));
+      } catch {}
+      const pid = (name: string) => PLAYERS.find((x) => norm(x.strPlayer) === norm(name))?.idPlayer ?? GENP[norm(name)] ?? null;
       type Row = { name: string; playerId: string | null; cells: (string | number)[] };
       type Group = { title: string; columns: string[]; rows: Row[] };
       const out = { teamStats: [] as { label: string; away: string | number; home: string | number }[], groups: [] as Group[] };

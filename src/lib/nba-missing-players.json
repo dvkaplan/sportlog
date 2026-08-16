@@ -1,0 +1,2361 @@
+[
+  {
+    "nbaId": "920",
+    "name": "A.C. Green",
+    "first": "1985-86",
+    "last": "2000-01",
+    "games": 1431,
+    "teams": [
+      "Los Angeles LAL",
+      "Phoenix PHX",
+      "Dallas DAL",
+      "Miami MIA"
+    ]
+  },
+  {
+    "nbaId": "76618",
+    "name": "T.R. Dunn",
+    "first": "1977-78",
+    "last": "1990-91",
+    "games": 1069,
+    "teams": [
+      "Portland POR",
+      "Denver DEN",
+      "Phoenix PHX"
+    ]
+  },
+  {
+    "nbaId": "77149",
+    "name": "George Johnson",
+    "first": "1972-73",
+    "last": "1985-86",
+    "games": 964,
+    "teams": [
+      "Golden State GOS",
+      "Houston HOU",
+      "Buffalo BUF",
+      "New Jersey NJN",
+      "Milwaukee MIL",
+      "Denver DEN",
+      "San Antonio SAN",
+      "Indiana IND",
+      "Atlanta ATL",
+      "Philadelphia PHL",
+      "Seattle SEA"
+    ]
+  },
+  {
+    "nbaId": "77152",
+    "name": "John Johnson",
+    "first": "1970-71",
+    "last": "1981-82",
+    "games": 946,
+    "teams": [
+      "Cleveland CLE",
+      "Portland POR",
+      "Houston HOU",
+      "Seattle SEA"
+    ]
+  },
+  {
+    "nbaId": "781",
+    "name": "Will Perdue",
+    "first": "1988-89",
+    "last": "2000-01",
+    "games": 900,
+    "teams": [
+      "Chicago CHI",
+      "San Antonio SAN",
+      "San Antonio SAS",
+      "Portland POR"
+    ]
+  },
+  {
+    "nbaId": "76985",
+    "name": "Garfield Heard",
+    "first": "1970-71",
+    "last": "1980-81",
+    "games": 846,
+    "teams": [
+      "Seattle SEA",
+      "Chicago CHI",
+      "Buffalo BUF",
+      "Phoenix PHX",
+      "San Diego SDC"
+    ]
+  },
+  {
+    "nbaId": "76403",
+    "name": "John Clemens",
+    "first": "1965-66",
+    "last": "1975-76",
+    "games": 798,
+    "teams": [
+      "New York NYK",
+      "Chicago CHI",
+      "Seattle SEA",
+      "Cleveland CLE",
+      "Portland POR"
+    ]
+  },
+  {
+    "nbaId": "77188",
+    "name": "K.C. Jones",
+    "first": "1958-59",
+    "last": "1966-67",
+    "games": 782,
+    "teams": [
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "76070",
+    "name": "Alvin Attles",
+    "first": "1960-61",
+    "last": "1970-71",
+    "games": 774,
+    "teams": [
+      "Philadelphia PHW",
+      "San Francisco SFW"
+    ]
+  },
+  {
+    "nbaId": "136",
+    "name": "P.J. Brown",
+    "first": "1993-94",
+    "last": "2001-02",
+    "games": 742,
+    "teams": [
+      "New Jersey NJN",
+      "Miami MIA",
+      "Charlotte CHH"
+    ]
+  },
+  {
+    "nbaId": "462",
+    "name": "J.R. Reid",
+    "first": "1989-90",
+    "last": "2000-01",
+    "games": 719,
+    "teams": [
+      "Charlotte CHH",
+      "San Antonio SAN",
+      "New York NYK",
+      "Los Angeles LAL",
+      "Milwaukee MIL",
+      "Cleveland CLE"
+    ]
+  },
+  {
+    "nbaId": "246",
+    "name": "Greg Anderson",
+    "first": "1987-88",
+    "last": "1997-98",
+    "games": 697,
+    "teams": [
+      "San Antonio SAN",
+      "Milwaukee MIL",
+      "Denver DEN",
+      "New Jersey NJN",
+      "Detroit DET",
+      "Atlanta ATL",
+      "San Antonio SAS"
+    ]
+  },
+  {
+    "nbaId": "76351",
+    "name": "M.L. Carr",
+    "first": "1976-77",
+    "last": "1984-85",
+    "games": 672,
+    "teams": [
+      "Detroit DET",
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "78125",
+    "name": "Charlie Share",
+    "first": "1951-52",
+    "last": "1959-60",
+    "games": 652,
+    "teams": [
+      "Ft. Wayne Zollner FTW",
+      "Milwaukee MIH",
+      "St. Louis STL",
+      "Minneapolis MNL"
+    ]
+  },
+  {
+    "nbaId": "77986",
+    "name": "Cliff T. Robinson",
+    "first": "1979-80",
+    "last": "1991-92",
+    "games": 645,
+    "teams": [
+      "New Jersey NJN",
+      "Cleveland CLE",
+      "Kansas City KCK",
+      "Washington WAS",
+      "Philadelphia PHL",
+      "Los Angeles LAL"
+    ]
+  },
+  {
+    "nbaId": "78561",
+    "name": "Nate Williams",
+    "first": "1971-72",
+    "last": "1978-79",
+    "games": 642,
+    "teams": [
+      "Cincinnati CIN",
+      "Kansas City-Omaha KCK",
+      "New Orleans NOJ",
+      "Golden State GOS"
+    ]
+  },
+  {
+    "nbaId": "77133",
+    "name": "Charlie Johnson",
+    "first": "1972-73",
+    "last": "1978-79",
+    "games": 610,
+    "teams": [
+      "Golden State GOS",
+      "Washington WAS"
+    ]
+  },
+  {
+    "nbaId": "76404",
+    "name": "Nat Clifton",
+    "first": "1950-51",
+    "last": "1957-58",
+    "games": 599,
+    "teams": [
+      "New York NYK",
+      "Detroit DET"
+    ]
+  },
+  {
+    "nbaId": "76289",
+    "name": "Emmette Bryant",
+    "first": "1964-65",
+    "last": "1971-72",
+    "games": 592,
+    "teams": [
+      "New York NYK",
+      "Boston BOS",
+      "Buffalo BUF"
+    ]
+  },
+  {
+    "nbaId": "78539",
+    "name": "Arthur Williams",
+    "first": "1967-68",
+    "last": "1973-74",
+    "games": 579,
+    "teams": [
+      "San Diego SDR",
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "78094",
+    "name": "Freddie Scolari",
+    "first": "1946-47",
+    "last": "1954-55",
+    "games": 576,
+    "teams": [
+      "Washington WAS",
+      "Syracuse SYR",
+      "Baltimore BAL",
+      "Ft. Wayne Zollner FTW",
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "76877",
+    "name": "Si Green",
+    "first": "1956-57",
+    "last": "1965-66",
+    "games": 544,
+    "teams": [
+      "Rochester ROC",
+      "St. Louis STL",
+      "Cincinnati CIN",
+      "Chicago CHP",
+      "Chicago CHZ",
+      "Baltimore BLT",
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "76191",
+    "name": "Arlen Bockhorn",
+    "first": "1958-59",
+    "last": "1964-65",
+    "games": 500,
+    "teams": [
+      "Cincinnati CIN"
+    ]
+  },
+  {
+    "nbaId": "77148",
+    "name": "George Johnson",
+    "first": "1978-79",
+    "last": "1985-86",
+    "games": 471,
+    "teams": [
+      "Milwaukee MIL",
+      "New Jersey NJN",
+      "Denver DEN",
+      "Indiana IND",
+      "San Antonio SAN",
+      "Atlanta ATL",
+      "Philadelphia PHL",
+      "Washington WAS"
+    ]
+  },
+  {
+    "nbaId": "77371",
+    "name": "Bob Leonard",
+    "first": "1956-57",
+    "last": "1962-63",
+    "games": 462,
+    "teams": [
+      "Minneapolis MNL",
+      "Los Angeles LAL",
+      "Chicago CHP",
+      "Chicago CHZ"
+    ]
+  },
+  {
+    "nbaId": "76305",
+    "name": "Tom Burleson",
+    "first": "1974-75",
+    "last": "1980-81",
+    "games": 461,
+    "teams": [
+      "Seattle SEA",
+      "Kansas City KCK",
+      "Atlanta ATL"
+    ]
+  },
+  {
+    "nbaId": "77658",
+    "name": "Erwin Mueller",
+    "first": "1966-67",
+    "last": "1972-73",
+    "games": 442,
+    "teams": [
+      "Chicago CHI",
+      "Los Angeles LAL",
+      "Seattle SEA",
+      "Detroit DET"
+    ]
+  },
+  {
+    "nbaId": "78610",
+    "name": "Al Wood",
+    "first": "1981-82",
+    "last": "1986-87",
+    "games": 422,
+    "teams": [
+      "San Diego SDC",
+      "Atlanta ATL",
+      "Seattle SEA",
+      "Dallas DAL"
+    ]
+  },
+  {
+    "nbaId": "77765",
+    "name": "Enoch Olsen",
+    "first": "1962-63",
+    "last": "1968-69",
+    "games": 384,
+    "teams": [
+      "Cincinnati CIN",
+      "San Francisco SFW",
+      "Seattle SEA",
+      "Detroit DET",
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "78169",
+    "name": "Whitey Skoog",
+    "first": "1951-52",
+    "last": "1956-57",
+    "games": 376,
+    "teams": [
+      "Minneapolis MNL"
+    ]
+  },
+  {
+    "nbaId": "78386",
+    "name": "Mel Turpin",
+    "first": "1984-85",
+    "last": "1989-90",
+    "games": 372,
+    "teams": [
+      "Cleveland CLE",
+      "Utah UTH",
+      "Washington WAS"
+    ]
+  },
+  {
+    "nbaId": "76788",
+    "name": "Eldo Garrett",
+    "first": "1969-70",
+    "last": "1973-74",
+    "games": 366,
+    "teams": [
+      "Los Angeles LAL",
+      "Buffalo BUF",
+      "Milwaukee MIL",
+      "New York NYK"
+    ]
+  },
+  {
+    "nbaId": "1134",
+    "name": "Ike Austin",
+    "first": "1996-97",
+    "last": "2001-02",
+    "games": 360,
+    "teams": [
+      "Miami MIA",
+      "Los Angeles LAC",
+      "Orlando ORL",
+      "Washington WAS",
+      "Vancouver VAN",
+      "Memphis MEM"
+    ]
+  },
+  {
+    "nbaId": "76413",
+    "name": "E.C. Coleman",
+    "first": "1973-74",
+    "last": "1978-79",
+    "games": 356,
+    "teams": [
+      "Houston HOU",
+      "New Orleans NOJ",
+      "Golden State GOS"
+    ]
+  },
+  {
+    "nbaId": "76521",
+    "name": "Double D Davis",
+    "first": "1972-73",
+    "last": "1976-77",
+    "games": 351,
+    "teams": [
+      "Cleveland CLE",
+      "Golden State GOS"
+    ]
+  },
+  {
+    "nbaId": "78409",
+    "name": "Charles Vaughn",
+    "first": "1962-63",
+    "last": "1966-67",
+    "games": 350,
+    "teams": [
+      "St. Louis STL",
+      "Detroit DET"
+    ]
+  },
+  {
+    "nbaId": "77799",
+    "name": "Medford Park",
+    "first": "1955-56",
+    "last": "1959-60",
+    "games": 343,
+    "teams": [
+      "St. Louis STL",
+      "Cincinnati CIN"
+    ]
+  },
+  {
+    "nbaId": "77546",
+    "name": "Horace McKinney",
+    "first": "1946-47",
+    "last": "1951-52",
+    "games": 342,
+    "teams": [
+      "Washington WAS",
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "78534",
+    "name": "Eddielee Wilkins",
+    "first": "1984-85",
+    "last": "1992-93",
+    "games": 338,
+    "teams": [
+      "New York NYK",
+      "Philadelphia PHL"
+    ]
+  },
+  {
+    "nbaId": "76918",
+    "name": "Chuck Halbert",
+    "first": "1946-47",
+    "last": "1950-51",
+    "games": 329,
+    "teams": [
+      "Chicago CHS",
+      "Philadelphia PHW",
+      "Providence PRO",
+      "Boston BOS",
+      "Washington WAS",
+      "Baltimore BAL"
+    ]
+  },
+  {
+    "nbaId": "77359",
+    "name": "George Lee",
+    "first": "1960-61",
+    "last": "1967-68",
+    "games": 320,
+    "teams": [
+      "Detroit DET",
+      "San Francisco SFW"
+    ]
+  },
+  {
+    "nbaId": "77007",
+    "name": "Clarence Hermsen",
+    "first": "1946-47",
+    "last": "1952-53",
+    "games": 315,
+    "teams": [
+      "Toronto HUS",
+      "Cleveland CLR",
+      "Baltimore BAL",
+      "Washington WAS",
+      "Chicago CHS",
+      "Boston BOS",
+      "Tri-Cities TCB",
+      "Indianapolis INO"
+    ]
+  },
+  {
+    "nbaId": "78461",
+    "name": "Johnny Warren",
+    "first": "1969-70",
+    "last": "1973-74",
+    "games": 314,
+    "teams": [
+      "New York NYK",
+      "Cleveland CLE"
+    ]
+  },
+  {
+    "nbaId": "76966",
+    "name": "Joey Hassett",
+    "first": "1977-78",
+    "last": "1982-83",
+    "games": 310,
+    "teams": [
+      "Seattle SEA",
+      "Indiana IND",
+      "Golden State GOS",
+      "Dallas DAL"
+    ]
+  },
+  {
+    "nbaId": "76522",
+    "name": "Edward Davis",
+    "first": "1972-73",
+    "last": "1976-77",
+    "games": 306,
+    "teams": [
+      "Milwaukee MIL"
+    ]
+  },
+  {
+    "nbaId": "78358",
+    "name": "Gene Tormohlen",
+    "first": "1962-63",
+    "last": "1969-70",
+    "games": 297,
+    "teams": [
+      "St. Louis STL",
+      "Atlanta ATL"
+    ]
+  },
+  {
+    "nbaId": "76636",
+    "name": "Thomas Eddleman",
+    "first": "1949-50",
+    "last": "1952-53",
+    "games": 279,
+    "teams": [
+      "Tri-Cities TCB",
+      "Ft. Wayne Zollner FTW",
+      "Milwaukee MIH"
+    ]
+  },
+  {
+    "nbaId": "78051",
+    "name": "Kenny Sailors",
+    "first": "1946-47",
+    "last": "1950-51",
+    "games": 276,
+    "teams": [
+      "Cleveland CLR",
+      "Providence PRO",
+      "Philadelphia PHW",
+      "Chicago CHS",
+      "Denver DN",
+      "Baltimore BAL",
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "77385",
+    "name": "Bobby Lewis",
+    "first": "1967-68",
+    "last": "1970-71",
+    "games": 267,
+    "teams": [
+      "San Francisco SFW",
+      "Cleveland CLE"
+    ]
+  },
+  {
+    "nbaId": "78569",
+    "name": "Samuel Williams",
+    "first": "1981-82",
+    "last": "1984-85",
+    "games": 266,
+    "teams": [
+      "Golden State GOS",
+      "Philadelphia PHL"
+    ]
+  },
+  {
+    "nbaId": "77350",
+    "name": "Dennis Layton",
+    "first": "1971-72",
+    "last": "1977-78",
+    "games": 264,
+    "teams": [
+      "Phoenix PHX",
+      "Portland POR",
+      "New York NYK",
+      "San Antonio SAN"
+    ]
+  },
+  {
+    "nbaId": "76298",
+    "name": "Walter Budko",
+    "first": "1948-49",
+    "last": "1951-52",
+    "games": 259,
+    "teams": [
+      "Baltimore BAL",
+      "Philadelphia PHW"
+    ]
+  },
+  {
+    "nbaId": "77864",
+    "name": "Charlie Pittman",
+    "first": "1982-83",
+    "last": "1985-86",
+    "games": 255,
+    "teams": [
+      "Phoenix PHX"
+    ]
+  },
+  {
+    "nbaId": "76499",
+    "name": "Lou Dampier",
+    "first": "1976-77",
+    "last": "1978-79",
+    "games": 247,
+    "teams": [
+      "San Antonio SAN"
+    ]
+  },
+  {
+    "nbaId": "76969",
+    "name": "Vern Hatton",
+    "first": "1958-59",
+    "last": "1961-62",
+    "games": 235,
+    "teams": [
+      "Philadelphia PHW",
+      "Cincinnati CIN",
+      "St. Louis STL",
+      "Chicago CHP"
+    ]
+  },
+  {
+    "nbaId": "77894",
+    "name": "Luke Rackley",
+    "first": "1969-70",
+    "last": "1973-74",
+    "games": 232,
+    "teams": [
+      "Cincinnati CIN",
+      "Cleveland CLE",
+      "New York NYK",
+      "Philadelphia PHL"
+    ]
+  },
+  {
+    "nbaId": "129",
+    "name": "Dino Radja",
+    "first": "1993-94",
+    "last": "1996-97",
+    "games": 228,
+    "teams": [
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "76561",
+    "name": "Walter Devlin",
+    "first": "1955-56",
+    "last": "1957-58",
+    "games": 222,
+    "teams": [
+      "Ft. Wayne Zollner FTW",
+      "Minneapolis MNL"
+    ]
+  },
+  {
+    "nbaId": "77510",
+    "name": "Ted, Hound Dog McClain",
+    "first": "1976-77",
+    "last": "1978-79",
+    "games": 203,
+    "teams": [
+      "Denver DEN",
+      "Philadelphia PHL",
+      "Buffalo BUF",
+      "Phoenix PHX"
+    ]
+  },
+  {
+    "nbaId": "76121",
+    "name": "Billyray Bates",
+    "first": "1979-80",
+    "last": "1982-83",
+    "games": 193,
+    "teams": [
+      "Portland POR",
+      "Los Angeles LAL",
+      "Washington WAS"
+    ]
+  },
+  {
+    "nbaId": "78216",
+    "name": "Ron Sobie",
+    "first": "1956-57",
+    "last": "1959-60",
+    "games": 192,
+    "teams": [
+      "New York NYK",
+      "Minneapolis MNL"
+    ]
+  },
+  {
+    "nbaId": "77938",
+    "name": "Joseph Reiser",
+    "first": "1947-48",
+    "last": "1949-50",
+    "games": 189,
+    "teams": [
+      "Baltimore BAL",
+      "Washington WAS"
+    ]
+  },
+  {
+    "nbaId": "77313",
+    "name": "Tom Kron",
+    "first": "1966-67",
+    "last": "1968-69",
+    "games": 185,
+    "teams": [
+      "St. Louis STL",
+      "Seattle SEA"
+    ]
+  },
+  {
+    "nbaId": "78639",
+    "name": "Robert Zawoluk",
+    "first": "1952-53",
+    "last": "1954-55",
+    "games": 179,
+    "teams": [
+      "Indianapolis INO",
+      "Philadelphia PHW"
+    ]
+  },
+  {
+    "nbaId": "78276",
+    "name": "Stan Stutz",
+    "first": "1946-47",
+    "last": "1948-49",
+    "games": 176,
+    "teams": [
+      "New York NYK",
+      "Baltimore BAL"
+    ]
+  },
+  {
+    "nbaId": "76946",
+    "name": "Charlie Hardnett",
+    "first": "1962-63",
+    "last": "1964-65",
+    "games": 166,
+    "teams": [
+      "Chicago CHZ",
+      "Baltimore BLT"
+    ]
+  },
+  {
+    "nbaId": "77648",
+    "name": "Dwight Morrison",
+    "first": "1954-55",
+    "last": "1957-58",
+    "games": 165,
+    "teams": [
+      "Boston BOS",
+      "St. Louis STL"
+    ]
+  },
+  {
+    "nbaId": "76901",
+    "name": "Petur Gudmundsson",
+    "first": "1981-82",
+    "last": "1988-89",
+    "games": 164,
+    "teams": [
+      "Portland POR",
+      "Los Angeles LAL",
+      "San Antonio SAN"
+    ]
+  },
+  {
+    "nbaId": "77793",
+    "name": "John Palmer",
+    "first": "1946-47",
+    "last": "1948-49",
+    "games": 162,
+    "teams": [
+      "New York NYK"
+    ]
+  },
+  {
+    "nbaId": "76043",
+    "name": "Mitchell Anderson",
+    "first": "1982-83",
+    "last": "1984-85",
+    "games": 161,
+    "teams": [
+      "Utah UTH",
+      "Philadelphia PHL"
+    ]
+  },
+  {
+    "nbaId": "2030",
+    "name": "Kenyon Martin",
+    "first": "2000-01",
+    "last": "2001-02",
+    "games": 161,
+    "teams": [
+      "New Jersey NJN"
+    ]
+  },
+  {
+    "nbaId": "76060",
+    "name": "Paul Armstrong",
+    "first": "1948-49",
+    "last": "1950-51",
+    "games": 160,
+    "teams": [
+      "Ft. Wayne Zollner FTW"
+    ]
+  },
+  {
+    "nbaId": "78168",
+    "name": "Talvin Skinner",
+    "first": "1974-75",
+    "last": "1975-76",
+    "games": 160,
+    "teams": [
+      "Seattle SEA"
+    ]
+  },
+  {
+    "nbaId": "77968",
+    "name": "Goebel Ritter",
+    "first": "1948-49",
+    "last": "1950-51",
+    "games": 159,
+    "teams": [
+      "New York NYK"
+    ]
+  },
+  {
+    "nbaId": "77750",
+    "name": "Francis O'Grady",
+    "first": "1946-47",
+    "last": "1948-49",
+    "games": 158,
+    "teams": [
+      "Washington WAS",
+      "St. Louis BOM",
+      "Providence PRO"
+    ]
+  },
+  {
+    "nbaId": "77325",
+    "name": "Charles Kupec",
+    "first": "1975-76",
+    "last": "1977-78",
+    "games": 158,
+    "teams": [
+      "Los Angeles LAL",
+      "Houston HOU"
+    ]
+  },
+  {
+    "nbaId": "76479",
+    "name": "Francis Crossin",
+    "first": "1947-48",
+    "last": "1949-50",
+    "games": 156,
+    "teams": [
+      "Philadelphia PHW"
+    ]
+  },
+  {
+    "nbaId": "77061",
+    "name": "Wilmer Hosket",
+    "first": "1968-69",
+    "last": "1971-72",
+    "games": 152,
+    "teams": [
+      "New York NYK",
+      "Buffalo BUF"
+    ]
+  },
+  {
+    "nbaId": "76919",
+    "name": "Harvey Halbrook",
+    "first": "1960-61",
+    "last": "1961-62",
+    "games": 151,
+    "teams": [
+      "Syracuse SYR"
+    ]
+  },
+  {
+    "nbaId": "76173",
+    "name": "Charlie Black",
+    "first": "1948-49",
+    "last": "1951-52",
+    "games": 144,
+    "teams": [
+      "Ft. Wayne Zollner FTW",
+      "Indianapolis JET",
+      "Anderson AND",
+      "Milwaukee MIH"
+    ]
+  },
+  {
+    "nbaId": "76989",
+    "name": "Dick Hemric",
+    "first": "1955-56",
+    "last": "1956-57",
+    "games": 143,
+    "teams": [
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "77351",
+    "name": "Emanuel Leaks",
+    "first": "1972-73",
+    "last": "1973-74",
+    "games": 137,
+    "teams": [
+      "Philadelphia PHL",
+      "Capital CAP"
+    ]
+  },
+  {
+    "nbaId": "77727",
+    "name": "Robert Nordmann",
+    "first": "1961-62",
+    "last": "1964-65",
+    "games": 136,
+    "teams": [
+      "Cincinnati CIN",
+      "New York NYK",
+      "St. Louis STL",
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "77758",
+    "name": "Johnny Oldham",
+    "first": "1949-50",
+    "last": "1950-51",
+    "games": 134,
+    "teams": [
+      "Ft. Wayne Zollner FTW"
+    ]
+  },
+  {
+    "nbaId": "78346",
+    "name": "Marko Todorovich",
+    "first": "1949-50",
+    "last": "1950-51",
+    "games": 134,
+    "teams": [
+      "Tri-Cities TCB",
+      "St. Louis BOM"
+    ]
+  },
+  {
+    "nbaId": "76658",
+    "name": "Alexander Ellis",
+    "first": "1958-59",
+    "last": "1959-60",
+    "games": 134,
+    "teams": [
+      "Minneapolis MNL"
+    ]
+  },
+  {
+    "nbaId": "77797",
+    "name": "Estes Parham",
+    "first": "1948-49",
+    "last": "1950-51",
+    "games": 132,
+    "teams": [
+      "St. Louis BOM",
+      "Philadelphia PHW"
+    ]
+  },
+  {
+    "nbaId": "76076",
+    "name": "William Averitt",
+    "first": "1976-77",
+    "last": "1977-78",
+    "games": 131,
+    "teams": [
+      "Buffalo BUF",
+      "New Jersey NJN"
+    ]
+  },
+  {
+    "nbaId": "78363",
+    "name": "William Towery",
+    "first": "1948-49",
+    "last": "1949-50",
+    "games": 128,
+    "teams": [
+      "Indianapolis JET",
+      "Ft. Wayne Zollner FTW",
+      "Baltimore BAL"
+    ]
+  },
+  {
+    "nbaId": "77432",
+    "name": "Ollie Mack",
+    "first": "1979-80",
+    "last": "1981-82",
+    "games": 128,
+    "teams": [
+      "Chicago CHI",
+      "Los Angeles LAL",
+      "Dallas DAL"
+    ]
+  },
+  {
+    "nbaId": "77743",
+    "name": "Buckshot O'Brien",
+    "first": "1951-52",
+    "last": "1952-53",
+    "games": 122,
+    "teams": [
+      "Indianapolis INO",
+      "Baltimore BAL",
+      "Ft. Wayne Zollner FTW"
+    ]
+  },
+  {
+    "nbaId": "77717",
+    "name": "John Niemiera",
+    "first": "1948-49",
+    "last": "1949-50",
+    "games": 120,
+    "teams": [
+      "Ft. Wayne Zollner FTW",
+      "Anderson AND"
+    ]
+  },
+  {
+    "nbaId": "710",
+    "name": "David Vaughn",
+    "first": "1995-96",
+    "last": "1998-99",
+    "games": 120,
+    "teams": [
+      "Orlando ORL",
+      "New Jersey NJN",
+      "Chicago CHI",
+      "Golden State GSW"
+    ]
+  },
+  {
+    "nbaId": "77556",
+    "name": "Mal McMullan",
+    "first": "1949-50",
+    "last": "1950-51",
+    "games": 112,
+    "teams": [
+      "Indianapolis INO"
+    ]
+  },
+  {
+    "nbaId": "77735",
+    "name": "Stan Noszka",
+    "first": "1946-47",
+    "last": "1948-49",
+    "games": 111,
+    "teams": [
+      "Pittsburgh PIT",
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "77365",
+    "name": "Russell Lee",
+    "first": "1972-73",
+    "last": "1974-75",
+    "games": 110,
+    "teams": [
+      "Milwaukee MIL",
+      "New Orleans NOJ"
+    ]
+  },
+  {
+    "nbaId": "76326",
+    "name": "Gerry Calabrese",
+    "first": "1950-51",
+    "last": "1951-52",
+    "games": 109,
+    "teams": [
+      "Syracuse SYR"
+    ]
+  },
+  {
+    "nbaId": "76316",
+    "name": "Steve Burtt",
+    "first": "1984-85",
+    "last": "1992-93",
+    "games": 109,
+    "teams": [
+      "Golden State GOS",
+      "Los Angeles LAC",
+      "Phoenix PHX",
+      "Washington WAS"
+    ]
+  },
+  {
+    "nbaId": "77920",
+    "name": "Jamesearl Ray",
+    "first": "1980-81",
+    "last": "1982-83",
+    "games": 107,
+    "teams": [
+      "Denver DEN"
+    ]
+  },
+  {
+    "nbaId": "76649",
+    "name": "Eddie Ehlers",
+    "first": "1947-48",
+    "last": "1948-49",
+    "games": 99,
+    "teams": [
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "76036",
+    "name": "Daniel Anderson",
+    "first": "1974-75",
+    "last": "1975-76",
+    "games": 95,
+    "teams": [
+      "Portland POR"
+    ]
+  },
+  {
+    "nbaId": "77783",
+    "name": "James Owens",
+    "first": "1949-50",
+    "last": "1951-52",
+    "games": 93,
+    "teams": [
+      "Anderson AND",
+      "Tri-Cities TCB",
+      "Milwaukee MIH",
+      "Baltimore BAL"
+    ]
+  },
+  {
+    "nbaId": "77471",
+    "name": "Donald Martin",
+    "first": "1946-47",
+    "last": "1947-48",
+    "games": 90,
+    "teams": [
+      "Providence PRO"
+    ]
+  },
+  {
+    "nbaId": "1869",
+    "name": "Charles R. Jones",
+    "first": "1998-99",
+    "last": "1999-00",
+    "games": 85,
+    "teams": [
+      "Chicago CHI",
+      "Los Angeles LAC"
+    ]
+  },
+  {
+    "nbaId": "77965",
+    "name": "Rich Rinaldi",
+    "first": "1971-72",
+    "last": "1973-74",
+    "games": 82,
+    "teams": [
+      "Baltimore BLT",
+      "Capital CAP"
+    ]
+  },
+  {
+    "nbaId": "76474",
+    "name": "Jeffrey Crompton",
+    "first": "1978-79",
+    "last": "1983-84",
+    "games": 82,
+    "teams": [
+      "Denver DEN",
+      "Portland POR",
+      "Milwaukee MIL",
+      "San Antonio SAN",
+      "Cleveland CLE"
+    ]
+  },
+  {
+    "nbaId": "77147",
+    "name": "George Johnson",
+    "first": "1970-71",
+    "last": "1973-74",
+    "games": 81,
+    "teams": [
+      "Baltimore BLT",
+      "Houston HOU",
+      "Golden State GOS"
+    ]
+  },
+  {
+    "nbaId": "76833",
+    "name": "Wilfred Goodwin",
+    "first": "1946-47",
+    "last": "1947-48",
+    "games": 78,
+    "teams": [
+      "Providence PRO"
+    ]
+  },
+  {
+    "nbaId": "390",
+    "name": "Sasha Danilovic",
+    "first": "1995-96",
+    "last": "1996-97",
+    "games": 78,
+    "teams": [
+      "Miami MIA",
+      "Dallas DAL"
+    ]
+  },
+  {
+    "nbaId": "2062",
+    "name": "A.J. Guyton",
+    "first": "2000-01",
+    "last": "2001-02",
+    "games": 78,
+    "teams": [
+      "Chicago CHI"
+    ]
+  },
+  {
+    "nbaId": "78545",
+    "name": "Don Williams",
+    "first": "1979-80",
+    "last": "1979-80",
+    "games": 77,
+    "teams": [
+      "Utah UTH"
+    ]
+  },
+  {
+    "nbaId": "78291",
+    "name": "Sid Tannenbaum",
+    "first": "1947-48",
+    "last": "1948-49",
+    "games": 76,
+    "teams": [
+      "New York NYK",
+      "Baltimore BAL"
+    ]
+  },
+  {
+    "nbaId": "77747",
+    "name": "Carlos Ogden",
+    "first": "1969-70",
+    "last": "1970-71",
+    "games": 76,
+    "teams": [
+      "Philadelphia PHL"
+    ]
+  },
+  {
+    "nbaId": "77476",
+    "name": "Mo Martin",
+    "first": "1986-87",
+    "last": "1987-88",
+    "games": 76,
+    "teams": [
+      "Denver DEN"
+    ]
+  },
+  {
+    "nbaId": "76928",
+    "name": "Roylee Hamilton",
+    "first": "1979-80",
+    "last": "1980-81",
+    "games": 73,
+    "teams": [
+      "Detroit DET",
+      "Portland POR"
+    ]
+  },
+  {
+    "nbaId": "78136",
+    "name": "Edmund Sherod",
+    "first": "1981-82",
+    "last": "1982-83",
+    "games": 70,
+    "teams": [
+      "New Jersey NJN",
+      "New York NYK"
+    ]
+  },
+  {
+    "nbaId": "77035",
+    "name": "Adolph Hoefer",
+    "first": "1946-47",
+    "last": "1947-48",
+    "games": 65,
+    "teams": [
+      "Boston BOS",
+      "Toronto HUS"
+    ]
+  },
+  {
+    "nbaId": "78341",
+    "name": "Howard Tidrick",
+    "first": "1948-49",
+    "last": "1948-49",
+    "games": 64,
+    "teams": [
+      "Baltimore BAL",
+      "Indianapolis JET"
+    ]
+  },
+  {
+    "nbaId": "77479",
+    "name": "Ronald Martin",
+    "first": "1961-62",
+    "last": "1961-62",
+    "games": 64,
+    "teams": [
+      "New York NYK"
+    ]
+  },
+  {
+    "nbaId": "77197",
+    "name": "Steve Jones",
+    "first": "1975-76",
+    "last": "1975-76",
+    "games": 64,
+    "teams": [
+      "Portland POR"
+    ]
+  },
+  {
+    "nbaId": "78214",
+    "name": "George Sobek",
+    "first": "1949-50",
+    "last": "1949-50",
+    "games": 63,
+    "teams": [
+      "Sheboygan SHE"
+    ]
+  },
+  {
+    "nbaId": "2226",
+    "name": "Will Solomon",
+    "first": "2001-02",
+    "last": "2001-02",
+    "games": 62,
+    "teams": [
+      "Memphis MEM"
+    ]
+  },
+  {
+    "nbaId": "78443",
+    "name": "Michael Wallace",
+    "first": "1946-47",
+    "last": "1946-47",
+    "games": 61,
+    "teams": [
+      "Toronto HUS",
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "77465",
+    "name": "Eric Marsh",
+    "first": "1977-78",
+    "last": "1977-78",
+    "games": 60,
+    "teams": [
+      "Golden State GOS"
+    ]
+  },
+  {
+    "nbaId": "76592",
+    "name": "Lloyd Dove",
+    "first": "1967-68",
+    "last": "1968-69",
+    "games": 59,
+    "teams": [
+      "Detroit DET"
+    ]
+  },
+  {
+    "nbaId": "78017",
+    "name": "Alexander Rosenberg",
+    "first": "1946-47",
+    "last": "1946-47",
+    "games": 58,
+    "teams": [
+      "Philadelphia PHW"
+    ]
+  },
+  {
+    "nbaId": "77217",
+    "name": "Edwin Kachan",
+    "first": "1948-49",
+    "last": "1948-49",
+    "games": 58,
+    "teams": [
+      "Minneapolis MNL",
+      "Chicago CHS"
+    ]
+  },
+  {
+    "nbaId": "76879",
+    "name": "Tommy Green",
+    "first": "1978-79",
+    "last": "1978-79",
+    "games": 58,
+    "teams": [
+      "New Orleans NOJ"
+    ]
+  },
+  {
+    "nbaId": "78429",
+    "name": "Milt Wagner",
+    "first": "1987-88",
+    "last": "1990-91",
+    "games": 58,
+    "teams": [
+      "Los Angeles LAL",
+      "Miami MIA"
+    ]
+  },
+  {
+    "nbaId": "316",
+    "name": "Richard Manning",
+    "first": "1995-96",
+    "last": "1996-97",
+    "games": 58,
+    "teams": [
+      "Vancouver VAN",
+      "Los Angeles LAC"
+    ]
+  },
+  {
+    "nbaId": "77228",
+    "name": "Wilbert Kautz",
+    "first": "1946-47",
+    "last": "1946-47",
+    "games": 57,
+    "teams": [
+      "Chicago CHS"
+    ]
+  },
+  {
+    "nbaId": "77828",
+    "name": "Jake Pelkington",
+    "first": "1948-49",
+    "last": "1948-49",
+    "games": 57,
+    "teams": [
+      "Baltimore BAL",
+      "Ft. Wayne Zollner FTW"
+    ]
+  },
+  {
+    "nbaId": "76676",
+    "name": "Jojo English",
+    "first": "1992-93",
+    "last": "1994-95",
+    "games": 57,
+    "teams": [
+      "Chicago CHI"
+    ]
+  },
+  {
+    "nbaId": "76408",
+    "name": "Marion Cluggish",
+    "first": "1946-47",
+    "last": "1946-47",
+    "games": 56,
+    "teams": [
+      "New York NYK"
+    ]
+  },
+  {
+    "nbaId": "189",
+    "name": "B.J. Tyler",
+    "first": "1994-95",
+    "last": "1994-95",
+    "games": 55,
+    "teams": [
+      "Philadelphia PHL"
+    ]
+  },
+  {
+    "nbaId": "78525",
+    "name": "D.C. Wilcutt",
+    "first": "1948-49",
+    "last": "1949-50",
+    "games": 54,
+    "teams": [
+      "St. Louis BOM"
+    ]
+  },
+  {
+    "nbaId": "77458",
+    "name": "Peter Maravich",
+    "first": "1946-47",
+    "last": "1946-47",
+    "games": 50,
+    "teams": [
+      "Pittsburgh PIT"
+    ]
+  },
+  {
+    "nbaId": "77684",
+    "name": "Fred Nagy",
+    "first": "1948-49",
+    "last": "1948-49",
+    "games": 50,
+    "teams": [
+      "Indianapolis JET"
+    ]
+  },
+  {
+    "nbaId": "77000",
+    "name": "Al Henry",
+    "first": "1970-71",
+    "last": "1971-72",
+    "games": 49,
+    "teams": [
+      "Philadelphia PHL"
+    ]
+  },
+  {
+    "nbaId": "78642",
+    "name": "Hank Zeller",
+    "first": "1946-47",
+    "last": "1946-47",
+    "games": 48,
+    "teams": [
+      "Pittsburgh PIT"
+    ]
+  },
+  {
+    "nbaId": "78479",
+    "name": "Forest Weber",
+    "first": "1946-47",
+    "last": "1946-47",
+    "games": 46,
+    "teams": [
+      "Providence PRO",
+      "New York NYK"
+    ]
+  },
+  {
+    "nbaId": "78205",
+    "name": "Sammy Smith",
+    "first": "1978-79",
+    "last": "1979-80",
+    "games": 46,
+    "teams": [
+      "Milwaukee MIL",
+      "Chicago CHI"
+    ]
+  },
+  {
+    "nbaId": "77237",
+    "name": "Gerard Kelly",
+    "first": "1946-47",
+    "last": "1947-48",
+    "games": 45,
+    "teams": [
+      "Boston BOS",
+      "Providence PRO"
+    ]
+  },
+  {
+    "nbaId": "76126",
+    "name": "Frankie Baumholtz",
+    "first": "1946-47",
+    "last": "1946-47",
+    "games": 45,
+    "teams": [
+      "Cleveland CLR"
+    ]
+  },
+  {
+    "nbaId": "77687",
+    "name": "Charles Nash",
+    "first": "1964-65",
+    "last": "1964-65",
+    "games": 45,
+    "teams": [
+      "San Francisco SFW",
+      "Los Angeles LAL"
+    ]
+  },
+  {
+    "nbaId": "76069",
+    "name": "Richard Atha",
+    "first": "1955-56",
+    "last": "1957-58",
+    "games": 41,
+    "teams": [
+      "New York NYK",
+      "Detroit DET"
+    ]
+  },
+  {
+    "nbaId": "77807",
+    "name": "George A. Pastushok",
+    "first": "1946-47",
+    "last": "1946-47",
+    "games": 39,
+    "teams": [
+      "Providence PRO"
+    ]
+  },
+  {
+    "nbaId": "77243",
+    "name": "Eugene Kennedy",
+    "first": "1976-77",
+    "last": "1976-77",
+    "games": 38,
+    "teams": [
+      "Houston HOU"
+    ]
+  },
+  {
+    "nbaId": "77272",
+    "name": "Maury King",
+    "first": "1959-60",
+    "last": "1962-63",
+    "games": 37,
+    "teams": [
+      "Boston BOS",
+      "Chicago CHZ"
+    ]
+  },
+  {
+    "nbaId": "76143",
+    "name": "William Bell",
+    "first": "1959-60",
+    "last": "1960-61",
+    "games": 36,
+    "teams": [
+      "New York NYK"
+    ]
+  },
+  {
+    "nbaId": "76097",
+    "name": "Stephen Bardo",
+    "first": "1991-92",
+    "last": "1995-96",
+    "games": 33,
+    "teams": [
+      "San Antonio SAN",
+      "Dallas DAL",
+      "Detroit DET"
+    ]
+  },
+  {
+    "nbaId": "76706",
+    "name": "Bill Fenley",
+    "first": "1946-47",
+    "last": "1946-47",
+    "games": 31,
+    "teams": [
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "76117",
+    "name": "Ed Bartels",
+    "first": "1949-50",
+    "last": "1950-51",
+    "games": 31,
+    "teams": [
+      "Denver DN",
+      "New York NYK",
+      "Washington WAS"
+    ]
+  },
+  {
+    "nbaId": "76811",
+    "name": "Ward Gibson",
+    "first": "1949-50",
+    "last": "1949-50",
+    "games": 31,
+    "teams": [
+      "Waterloo WAT",
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "76008",
+    "name": "Donald Ackerman",
+    "first": "1953-54",
+    "last": "1953-54",
+    "games": 31,
+    "teams": [
+      "New York NYK"
+    ]
+  },
+  {
+    "nbaId": "76113",
+    "name": "Thomas Barr",
+    "first": "1970-71",
+    "last": "1970-71",
+    "games": 31,
+    "teams": [
+      "Cincinnati CIN"
+    ]
+  },
+  {
+    "nbaId": "1764",
+    "name": "J.R. Henderson",
+    "first": "1998-99",
+    "last": "1998-99",
+    "games": 31,
+    "teams": [
+      "Vancouver VAN"
+    ]
+  },
+  {
+    "nbaId": "77642",
+    "name": "Elmo Morgenthaler",
+    "first": "1946-47",
+    "last": "1948-49",
+    "games": 30,
+    "teams": [
+      "Providence PRO",
+      "Philadelphia PHW"
+    ]
+  },
+  {
+    "nbaId": "77422",
+    "name": "Jim Luisi",
+    "first": "1953-54",
+    "last": "1953-54",
+    "games": 30,
+    "teams": [
+      "Baltimore BAL"
+    ]
+  },
+  {
+    "nbaId": "2143",
+    "name": "Pepe Sanchez",
+    "first": "2000-01",
+    "last": "2000-01",
+    "games": 29,
+    "teams": [
+      "Philadelphia PHI",
+      "Atlanta ATL"
+    ]
+  },
+  {
+    "nbaId": "77416",
+    "name": "Chuck Lowery",
+    "first": "1971-72",
+    "last": "1971-72",
+    "games": 27,
+    "teams": [
+      "Milwaukee MIL"
+    ]
+  },
+  {
+    "nbaId": "77813",
+    "name": "Tommy Patterson",
+    "first": "1972-73",
+    "last": "1973-74",
+    "games": 26,
+    "teams": [
+      "Baltimore BLT",
+      "Capital CAP"
+    ]
+  },
+  {
+    "nbaId": "78396",
+    "name": "Ron Valentine",
+    "first": "1980-81",
+    "last": "1980-81",
+    "games": 24,
+    "teams": [
+      "Denver DEN"
+    ]
+  },
+  {
+    "nbaId": "77095",
+    "name": "Joel Ingram",
+    "first": "1957-58",
+    "last": "1957-58",
+    "games": 23,
+    "teams": [
+      "Minneapolis MNL"
+    ]
+  },
+  {
+    "nbaId": "76010",
+    "name": "Charles Acton",
+    "first": "1967-68",
+    "last": "1967-68",
+    "games": 23,
+    "teams": [
+      "San Diego SDR"
+    ]
+  },
+  {
+    "nbaId": "78653",
+    "name": "Charlie Shipp",
+    "first": "1949-50",
+    "last": "1949-50",
+    "games": 22,
+    "teams": [
+      "Waterloo WAT"
+    ]
+  },
+  {
+    "nbaId": "76209",
+    "name": "Costic Borsavage",
+    "first": "1950-51",
+    "last": "1950-51",
+    "games": 22,
+    "teams": [
+      "Philadelphia PHW"
+    ]
+  },
+  {
+    "nbaId": "76991",
+    "name": "Dave Henderson",
+    "first": "1987-88",
+    "last": "1987-88",
+    "games": 22,
+    "teams": [
+      "Philadelphia PHL"
+    ]
+  },
+  {
+    "nbaId": "76571",
+    "name": "John Dillon",
+    "first": "1949-50",
+    "last": "1949-50",
+    "games": 21,
+    "teams": [
+      "Washington WAS"
+    ]
+  },
+  {
+    "nbaId": "76769",
+    "name": "Elmer R. Gainer",
+    "first": "1947-48",
+    "last": "1949-50",
+    "games": 20,
+    "teams": [
+      "Baltimore BAL",
+      "Waterloo WAT"
+    ]
+  },
+  {
+    "nbaId": "77398",
+    "name": "Robert Lock",
+    "first": "1988-89",
+    "last": "1988-89",
+    "games": 20,
+    "teams": [
+      "Los Angeles LAC"
+    ]
+  },
+  {
+    "nbaId": "77112",
+    "name": "Winfred Jacobs",
+    "first": "1946-47",
+    "last": "1946-47",
+    "games": 17,
+    "teams": [
+      "St. Louis BOM"
+    ]
+  },
+  {
+    "nbaId": "77284",
+    "name": "Herm Klotz",
+    "first": "1947-48",
+    "last": "1947-48",
+    "games": 16,
+    "teams": [
+      "Baltimore BAL"
+    ]
+  },
+  {
+    "nbaId": "78587",
+    "name": "Thomas Wilson",
+    "first": "1979-80",
+    "last": "1979-80",
+    "games": 16,
+    "teams": [
+      "Golden State GOS"
+    ]
+  },
+  {
+    "nbaId": "78287",
+    "name": "Wallace Sydnor",
+    "first": "1946-47",
+    "last": "1946-47",
+    "games": 15,
+    "teams": [
+      "Chicago CHS"
+    ]
+  },
+  {
+    "nbaId": "78403",
+    "name": "Log Vander Velden",
+    "first": "1995-96",
+    "last": "1995-96",
+    "games": 15,
+    "teams": [
+      "Los Angeles LAC"
+    ]
+  },
+  {
+    "nbaId": "77514",
+    "name": "Paul McConnell",
+    "first": "1952-53",
+    "last": "1952-53",
+    "games": 14,
+    "teams": [
+      "Milwaukee MIH"
+    ]
+  },
+  {
+    "nbaId": "78187",
+    "name": "Ed Smith",
+    "first": "1953-54",
+    "last": "1953-54",
+    "games": 14,
+    "teams": [
+      "New York NYK"
+    ]
+  },
+  {
+    "nbaId": "76255",
+    "name": "Audley Brindley",
+    "first": "1946-47",
+    "last": "1946-47",
+    "games": 12,
+    "teams": [
+      "New York NYK"
+    ]
+  },
+  {
+    "nbaId": "76506",
+    "name": "Henry Darcey",
+    "first": "1952-53",
+    "last": "1952-53",
+    "games": 12,
+    "teams": [
+      "Milwaukee MIH"
+    ]
+  },
+  {
+    "nbaId": "76637",
+    "name": "Kent Edelin",
+    "first": "1984-85",
+    "last": "1984-85",
+    "games": 10,
+    "teams": [
+      "Indiana IND"
+    ]
+  },
+  {
+    "nbaId": "77159",
+    "name": "Lynbert Johnson",
+    "first": "1979-80",
+    "last": "1979-80",
+    "games": 9,
+    "teams": [
+      "Golden State GOS"
+    ]
+  },
+  {
+    "nbaId": "76530",
+    "name": "Michael Davis",
+    "first": "1982-83",
+    "last": "1982-83",
+    "games": 9,
+    "teams": [
+      "New York NYK"
+    ]
+  },
+  {
+    "nbaId": "78185",
+    "name": "Donald Smith",
+    "first": "1948-49",
+    "last": "1948-49",
+    "games": 8,
+    "teams": [
+      "Minneapolis MNL"
+    ]
+  },
+  {
+    "nbaId": "78128",
+    "name": "Ron Shavlik",
+    "first": "1956-57",
+    "last": "1957-58",
+    "games": 8,
+    "teams": [
+      "New York NYK"
+    ]
+  },
+  {
+    "nbaId": "77245",
+    "name": "William Kennedy",
+    "first": "1960-61",
+    "last": "1960-61",
+    "games": 8,
+    "teams": [
+      "Philadelphia PHW"
+    ]
+  },
+  {
+    "nbaId": "1059",
+    "name": "Aleksandar Djordjevic",
+    "first": "1996-97",
+    "last": "1996-97",
+    "games": 8,
+    "teams": [
+      "Portland POR"
+    ]
+  },
+  {
+    "nbaId": "1920",
+    "name": "A.J. Bramlett",
+    "first": "1999-00",
+    "last": "1999-00",
+    "games": 8,
+    "teams": [
+      "Cleveland CLE"
+    ]
+  },
+  {
+    "nbaId": "76463",
+    "name": "John Cox",
+    "first": "1982-83",
+    "last": "1982-83",
+    "games": 7,
+    "teams": [
+      "Washington WAS"
+    ]
+  },
+  {
+    "nbaId": "76982",
+    "name": "John W. Hazen",
+    "first": "1948-49",
+    "last": "1948-49",
+    "games": 6,
+    "teams": [
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "77230",
+    "name": "Michael Kearns",
+    "first": "1954-55",
+    "last": "1954-55",
+    "games": 6,
+    "teams": [
+      "Philadelphia PHW"
+    ]
+  },
+  {
+    "nbaId": "77257",
+    "name": "Ernie Killum",
+    "first": "1970-71",
+    "last": "1970-71",
+    "games": 6,
+    "teams": [
+      "Los Angeles LAL"
+    ]
+  },
+  {
+    "nbaId": "77046",
+    "name": "Alvin Holt",
+    "first": "1970-71",
+    "last": "1970-71",
+    "games": 6,
+    "teams": [
+      "Chicago CHI"
+    ]
+  },
+  {
+    "nbaId": "76793",
+    "name": "Jim Garvin",
+    "first": "1973-74",
+    "last": "1973-74",
+    "games": 6,
+    "teams": [
+      "Buffalo BUF"
+    ]
+  },
+  {
+    "nbaId": "78627",
+    "name": "A.J. Wynder",
+    "first": "1990-91",
+    "last": "1990-91",
+    "games": 6,
+    "teams": [
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "1829",
+    "name": "Ike Fontaine",
+    "first": "2001-02",
+    "last": "2001-02",
+    "games": 6,
+    "teams": [
+      "Memphis MEM"
+    ]
+  },
+  {
+    "nbaId": "76470",
+    "name": "Hal Crisler",
+    "first": "1946-47",
+    "last": "1946-47",
+    "games": 5,
+    "teams": [
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "77589",
+    "name": "Zigmund Mihalik",
+    "first": "1946-47",
+    "last": "1946-47",
+    "games": 5,
+    "teams": [
+      "Pittsburgh PIT"
+    ]
+  },
+  {
+    "nbaId": "78448",
+    "name": "Rabbit Walthour",
+    "first": "1953-54",
+    "last": "1953-54",
+    "games": 4,
+    "teams": [
+      "Milwaukee MIH"
+    ]
+  },
+  {
+    "nbaId": "76524",
+    "name": "James Davis",
+    "first": "1955-56",
+    "last": "1955-56",
+    "games": 4,
+    "teams": [
+      "Rochester ROC"
+    ]
+  },
+  {
+    "nbaId": "76855",
+    "name": "Butch Graves",
+    "first": "1984-85",
+    "last": "1984-85",
+    "games": 4,
+    "teams": [
+      "Cleveland CLE"
+    ]
+  },
+  {
+    "nbaId": "77942",
+    "name": "Rob Rensberger",
+    "first": "1946-47",
+    "last": "1946-47",
+    "games": 3,
+    "teams": [
+      "Chicago CHS"
+    ]
+  },
+  {
+    "nbaId": "77613",
+    "name": "Wat Misaka",
+    "first": "1947-48",
+    "last": "1947-48",
+    "games": 3,
+    "teams": [
+      "New York NYK"
+    ]
+  },
+  {
+    "nbaId": "76270",
+    "name": "Darrell Brown",
+    "first": "1948-49",
+    "last": "1948-49",
+    "games": 3,
+    "teams": [
+      "Baltimore BAL"
+    ]
+  },
+  {
+    "nbaId": "78506",
+    "name": "Lucian Whitaker",
+    "first": "1954-55",
+    "last": "1954-55",
+    "games": 3,
+    "teams": [
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "76203",
+    "name": "George H. Bon Salle",
+    "first": "1961-62",
+    "last": "1961-62",
+    "games": 3,
+    "teams": [
+      "Chicago CHP"
+    ]
+  },
+  {
+    "nbaId": "77348",
+    "name": "Ed Lawrence",
+    "first": "1980-81",
+    "last": "1980-81",
+    "games": 3,
+    "teams": [
+      "Detroit DET"
+    ]
+  },
+  {
+    "nbaId": "77016",
+    "name": "Matthew Hickey",
+    "first": "1947-48",
+    "last": "1947-48",
+    "games": 2,
+    "teams": [
+      "Providence PRO"
+    ]
+  },
+  {
+    "nbaId": "77417",
+    "name": "Al Lucas",
+    "first": "1948-49",
+    "last": "1948-49",
+    "games": 2,
+    "teams": [
+      "Boston BOS"
+    ]
+  },
+  {
+    "nbaId": "76751",
+    "name": "Will Frazier",
+    "first": "1965-66",
+    "last": "1965-66",
+    "games": 2,
+    "teams": [
+      "San Francisco SFW"
+    ]
+  },
+  {
+    "nbaId": "77099",
+    "name": "Al Jackson",
+    "first": "1967-68",
+    "last": "1967-68",
+    "games": 2,
+    "teams": [
+      "Cincinnati CIN"
+    ]
+  },
+  {
+    "nbaId": "76823",
+    "name": "Norman Glick",
+    "first": "1949-50",
+    "last": "1949-50",
+    "games": 1,
+    "teams": [
+      "Minneapolis MNL"
+    ]
+  },
+  {
+    "nbaId": "76651",
+    "name": "Dick Eichhorst",
+    "first": "1961-62",
+    "last": "1961-62",
+    "games": 1,
+    "teams": [
+      "St. Louis STL"
+    ]
+  }
+]

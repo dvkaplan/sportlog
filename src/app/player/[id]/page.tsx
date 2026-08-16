@@ -5,6 +5,7 @@ import FollowButton from "@/components/FollowButton";
 import { cleanTeamLabel, labelPosition } from "@/lib/labels";
 import BackLink from "@/components/BackLink";
 import { supabase } from "@/lib/supabase";
+import missingPlayers from "@/lib/nba-missing-players.json";
 
 type Player = {
   idPlayer: string;
@@ -21,9 +22,33 @@ type Player = {
   strCutout: string | null;
   strThumb: string | null;
 };
+type MissingP = { nbaId: string | null; name: string; first: string; last: string; games: number; teams: string[] };
+const GENERATED: Record<string, MissingP> = Object.fromEntries(
+  (missingPlayers as MissingP[]).filter((m) => m.nbaId).map((m) => [`nba-${m.nbaId}`, m])
+);
 
 export default function PlayerPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
+  const gen = GENERATED[id];
+  if (gen) {
+    return (
+      <main className="min-h-screen bg-zinc-950 text-zinc-100">
+        <div className="mx-auto max-w-3xl px-6 py-12">
+          <BackLink />
+          <div className="mt-6 flex items-start gap-6">
+            <div className="flex h-28 w-28 shrink-0 items-center justify-center rounded-xl bg-zinc-900 text-3xl">🏀</div>
+            <div>
+              <h1 className="text-3xl font-bold">{gen.name}</h1>
+              <p className="mt-1 text-sm text-zinc-400">NBA · {gen.first} – {gen.last}</p>
+              <p className="mt-1 text-sm text-zinc-500">{gen.games} games in SPORTLOG records · {gen.teams.slice(0, 6).join(", ")}</p>
+              <p className="mt-4 text-xs text-zinc-600">Page generated from SPORTLOG box score records.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    );
+  }
+  
   const [player, setPlayer] = useState<Player | null>(null);
   const [expanded, setExpanded] = useState(false);
   const [failed, setFailed] = useState(false);
