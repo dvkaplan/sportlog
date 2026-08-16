@@ -245,7 +245,13 @@ export async function GET(req: NextRequest) {
         const mp = JSON.parse(await readFile(path.join(process.cwd(), "src", "lib", "nba-missing-players.json"), "utf8")) as { nbaId: string | null; name: string }[];
         GENP = Object.fromEntries(mp.filter((m) => m.nbaId).map((m) => [norm(m.name), `nba-${m.nbaId}`]));
       } catch {}
-      const pid = (name: string) => PLAYERS.find((x) => norm(x.strPlayer) === norm(name))?.idPlayer ?? GENP[norm(name)] ?? null;
+      const pid = (name: string) => {
+        const n = norm(name);
+        const bare = n.replace(/\s+(jr|sr|ii|iii|iv|v)$/, "");
+        return PLAYERS.find((x) => norm(x.strPlayer) === n)?.idPlayer
+          ?? PLAYERS.find((x) => norm(x.strPlayer) === bare)?.idPlayer
+          ?? GENP[n] ?? GENP[bare] ?? null;
+      };
       type Row = { name: string; playerId: string | null; cells: (string | number)[] };
       type Group = { title: string; columns: string[]; rows: Row[] };
       const out = { teamStats: [] as { label: string; away: string | number; home: string | number }[], groups: [] as Group[] };

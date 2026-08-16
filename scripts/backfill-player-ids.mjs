@@ -6,8 +6,8 @@ const HEADERS = {
 };
 const norm = (n) => (n ?? "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim();
 
-let state = { done: [], map: {}, names: {} };
-try { state = JSON.parse(readFileSync("src/lib/nba-player-ids.json", "utf8")); } catch {}
+let state = { done: [], map: {}, names: {}, meta: {} };
+try { state = JSON.parse(readFileSync("src/lib/nba-player-ids.json", "utf8")); state.meta ??= {}; } catch {}
 const done = new Set(state.done);
 
 const index = JSON.parse(readFileSync("src/lib/seasons/nba/index.json", "utf8"));
@@ -34,6 +34,10 @@ for (const season of index) {
       const gameId = String(r[c("GAME_ID")]);
       state.map[`${gameId}|${norm(r[c("PLAYER_NAME")])}`] = pidNba;
       state.names[pidNba] = r[c("PLAYER_NAME")];
+      const m = (state.meta[pidNba] ??= { first: season, last: season, games: 0 });
+      m.games++;
+      if (season < m.first) m.first = season;
+      if (season > m.last) m.last = season;
     }
     await sleep(1200);
   }
