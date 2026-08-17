@@ -1,0 +1,33 @@
+name: Daily data refresh
+on:
+  schedule:
+    - cron: "0 10 * * *"   # 10:00 UTC ≈ 6am ET, daily
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Roster sync (ESPN)
+        run: node scripts/import-rosters-espn.mjs
+      - name: Staff sync (Wikipedia)
+        run: node scripts/import-staff.mjs
+        continue-on-error: true
+      - name: Fight data chain
+        run: |
+          node scripts/import-fight-stats.mjs
+          node scripts/merge-twin-fights.mjs
+          node scripts/build-events.mjs
+        continue-on-error: true
+      - name: Commit & push if changed
+        run: |
+          git config user.name "sportlog-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "auto: daily data refresh"
+          git push
