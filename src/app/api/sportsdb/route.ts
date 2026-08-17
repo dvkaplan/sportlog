@@ -359,12 +359,42 @@ export async function GET(req: NextRequest) {
       }
     }
 
+    if (mode === "player") {
+      const pidReq = p.get("id") ?? "";
+      const res = await fetch(`${BASE}/lookupplayer.php?id=${encodeURIComponent(pidReq)}`, { next: { revalidate: 300 } });
+      const data = await res.json().catch(() => ({}));
+      const local = PLAYERS.find((x) => x.idPlayer === pidReq);
+      if (data?.players?.[0] && local) {
+        // Our roster sync (ESPN, daily) outranks TSDB's stale assignments
+        data.players[0].strTeam = local.strTeam ?? data.players[0].strTeam;
+        if (local.idTeam) data.players[0].idTeam = local.idTeam;
+        if (!data.players[0].strThumb && local.strThumb) data.players[0].strThumb = local.strThumb;
+      }
+      return NextResponse.json(data);
+    }
+
+    if (mode === "players") {
+      const teamIdReq = p.get("id") ?? "";
+      const res = await fetch(`${BASE}/lookup_all_players.php?id=${encodeURIComponent(teamIdReq)}`, { next: { revalidate: 300 } });
+      const data = await res.json().catch(() => ({}));
+      const remote = (data?.player ?? []) as SlimPlayer[];
+      const localById = new Map(PLAYERS.map((x) => [x.idPlayer, x]));
+      // Drop players our fresher data says have LEFT this team…
+      const stillHere = remote.filter((r) => {
+        const loc = localById.get(r.idPlayer);
+        return !loc || !loc.idTeam || loc.idTeam === teamIdReq;
+      });
+      // …and add players our data says have ARRIVED that TSDB doesn't list yet
+      const seen = new Set(stillHere.map((x) => x.idPlayer));
+      const arrivals = PLAYERS.filter((x) => x.idTeam === teamIdReq && !seen.has(x.idPlayer));
+      return NextResponse.json({ player: [...stillHere, ...arrivals] });
+    }
     let url = "";
     if (mode === "team") url = `${BASE}/lookupteam.php?id=${encodeURIComponent(p.get("id") ?? "")}`;
     else if (mode === "last") url = `${BASE}/eventslast.php?id=${encodeURIComponent(p.get("id") ?? "")}`;
     else if (mode === "next") url = `${BASE}/eventsnext.php?id=${encodeURIComponent(p.get("id") ?? "")}`;
-    else if (mode === "players") url = `${BASE}/lookup_all_players.php?id=${encodeURIComponent(p.get("id") ?? "")}`;
-    else if (mode === "player") url = `${BASE}/lookupplayer.php?id=${encodeURIComponent(p.get("id") ?? "")}`;
+  
+   
     else if (mode === "table")
       url = `${BASE}/lookuptable.php?l=${encodeURIComponent(p.get("league") ?? "")}&s=${encodeURIComponent(p.get("season") ?? "")}`;
     else return NextResponse.json({ error: "bad mode" }, { status: 400 });
