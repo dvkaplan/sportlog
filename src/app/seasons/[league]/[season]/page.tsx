@@ -5,7 +5,7 @@ import SeasonFanLists from "@/components/SeasonFanLists";
 
 type HistGame = { id: string; week?: string; type?: string; date: string; away: string; home: string; as: number | null; hs: number | null; ot?: boolean; gameNo?: number };
 
-const NFL_ROUNDS: Record<string, string> = { WC: "Wild Card", DIV: "Divisional Round", CON: "Conference Championships", SB: "Super Bowl" };
+const NFL_ROUNDS: Record<string, string> = { WC: "Wild Card", DIV: "Divisional Round", CON: "Conference Championships", SB: "Super Bowl", CHAMP: "Championship" };
 const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
 export default async function SeasonPage({ params }: { params: Promise<{ league: string; season: string }> }) {
