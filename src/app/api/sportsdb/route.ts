@@ -186,6 +186,13 @@ export async function GET(req: NextRequest) {
             const all = JSON.parse(await readFile(file, "utf8")) as HG[];
             const hg = all.find((x) => x.id === id);
             if (!hg) continue;
+            let legacyEspn: string | null = hg.espn ?? null;
+            if (league === "nfl" && !legacyEspn) {
+              try {
+                const m = JSON.parse(await readFile(path.join(process.cwd(), "src", "lib", "nfl-espn-map.json"), "utf8")) as { map: Record<string, string> };
+                legacyEspn = m.map[id] ?? null;
+              } catch { /* map not built yet */ }
+            }
             const rec = (team: string) => {
               let w = 0, l = 0, t = 0;
               for (const g of all) {
@@ -207,7 +214,7 @@ export async function GET(req: NextRequest) {
                 leagueKey: league, season,
                 away: { name: hg.away, id: teamId(hg.away), record: rec(hg.away) },
                 home: { name: hg.home, id: teamId(hg.home), record: rec(hg.home) },
-                espn: hg.espn ?? null, soccerStats: hg.st ?? null,
+                espn: legacyEspn, soccerStats: hg.st ?? null,
               },
               stats: null, eventSlug: null, eventName: null, chips: [],
             });
@@ -256,6 +263,18 @@ export async function GET(req: NextRequest) {
       type Group = { title: string; columns: string[]; rows: Row[] };
       const out = { teamStats: [] as { label: string; away: string | number; home: string | number }[], groups: [] as Group[] };
       try {
+        if (id.startsWith("nfl-")) {
+          try {
+            const lfile = path.join(process.cwd(), "src", "lib", "boxscores", "nfl-legacy.json");
+            const lstore = JSON.parse(await readFile(lfile, "utf8")) as Record<string, { teamStats?: { label: string; away: string | number; home: string | number }[]; groups?: { title: string; columns: string[]; rows: { name: string; cells: (string | number)[] }[] }[] }>;
+            const lhit = lstore[id];
+            if (lhit) {
+              out.teamStats = lhit.teamStats ?? [];
+              out.groups = (lhit.groups ?? []).map((grp) => ({ ...grp, rows: grp.rows.map((r) => ({ ...r, playerId: pid(r.name) })) }));
+              return NextResponse.json(out);
+            }
+          } catch { /* legacy store absent — modern NFL falls through to ESPN */ }
+        }
         if (id.startsWith("mlb-")) {
           const pk = id.split("-")[2];
           const j = await fetch(`https://statsapi.mlb.com/api/v1/game/${pk}/boxscore`, { next: { revalidate: 86400 } }).then((r) => r.json());
