@@ -828,5 +828,40 @@
     "name": "Nuno Espírito Santo",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Nuno_Esp%C3%ADrito_Santo_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "bio": "Nuno Herlander Simões Espírito Santo, known as Nuno Espírito Santo or simply Nuno, is a Portuguese football manager and former player who played as a goalkeeper and is currently head coach of EFL Championship club West Ham United."
+  },
+  "craig-counsell": {
+    "name": "Craig Counsell",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Craig_Counsell.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Craig John Counsell is an American former professional baseball infielder and the current manager for the Chicago Cubs of Major League Baseball (MLB). He was previously the manager for the Milwaukee Brewers and holds the franchise's record for managerial wins. He led the team to five post-season appearances, winning one playoff series. After joining the Cubs he led them to a playoff run in the 2025 season."
+  },
+  "marco-sturm": {
+    "name": "Marco Sturm",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/d/da/MarcoSturm2018_%281%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Marco Johann Sturm is a German professional ice hockey coach and former player who is the head coach for the Boston Bruins of the National Hockey League (NHL). As a forward, he played in the National Hockey League and Deutsche Eishockey Liga from 1995 to 2013."
+  },
+  "rick-bowness": {
+    "name": "Rick Bowness",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Rick_Bowness_2018-05-21_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Richard Gary Bowness is a Canadian professional ice hockey coach and former player who is the head coach for the Columbus Blue Jackets of the National Hockey League (NHL). He was selected in the second round, 26th overall, by the Atlanta Flames in the 1975 NHL amateur draft, and played in the NHL for the Flames, Detroit Red Wings, St. Louis Blues, and original Winnipeg Jets. As a coach, Bowness has also served as head coach for the original Winnipeg Jets, Boston Bruins, Ottawa Senators, New York Islanders, Phoenix Coyotes, Dallas Stars, and the current Winnipeg Jets. He likewise held the position of assistant coach roles with the original Jets, Coyotes, Vancouver Canucks, Tampa Bay Lightning, and Stars."
+  },
+  "matt-wells": {
+    "name": "Matt Wells",
+    "photo": null,
+    "bio": "Matthew or Matt Wells may refer to:Matthew Wells, Australian Olympic field hockey defender\nMatthew Wells (linebacker), American football player\nMatthew Wells (rower), British Olympic rower\nMatt Wells, Canadian television presenter and musician\nMatt Wells (boxer) (1886–1953), British boxer\nMatt Wells, Texas Tech head football coach\nMatt Wells, head coach of Colorado Rapids"
+  },
+  "sheldon-keefe": {
+    "name": "Sheldon Keefe",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/0/05/Sheldon_Keefe.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Sheldon Keefe is a Canadian professional ice hockey coach and former player who is the head coach for the New Jersey Devils of the National Hockey League (NHL). He was selected in the second round, 47th overall, by the Tampa Bay Lightning in the 1999 NHL entry draft. He has also served as head coach of the Toronto Maple Leafs, as well as for their American Hockey League (AHL) affiliate, the Toronto Marlies, guiding the latter to their first Calder Cup championship in 2018."
+  },
+  "jim-hiller": {
+    "name": "Jim Hiller",
+    "photo": null,
+    "bio": "James Andrew Hiller is a Canadian professional ice hockey coach and former player who is the head coach for the Toronto Maple Leafs of the National Hockey League (NHL). Hiller played 63 games in the NHL with the Los Angeles Kings, Detroit Red Wings, and New York Rangers, while spending time in the American Hockey League (AHL) and International Hockey League (IHL). He finished his career playing overseas in the Deutsche Eishockey Liga in Germany and Italian Serie A. Upon retiring, Hiller began a coaching career in the junior leagues, and later served as head coach of the Kings in the NHL."
+  },
+  "jon-cooper": {
+    "name": "Jon Cooper",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/2/27/Jonathan_D._Cooper_2022_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "bio": "Jonathan D. Cooper is a Canadian professional ice hockey coach who is the head coach for the Tampa Bay Lightning of the National Hockey League (NHL). Cooper's team won back-to-back Stanley Cup championships in 2020 and 2021 and he also reached the Stanley Cup Final in 2015 and 2022 as the Lightning head coach. He is the longest-tenured head coach in the NHL. Following the 2025–26 season, Cooper was awarded the Jack Adams Award, recognizing him as the NHL coach who contributed the most to his team's success during the regular season."
   }
 }

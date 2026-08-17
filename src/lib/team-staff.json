@@ -143,7 +143,7 @@
     "dc": null
   },
   "133623": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -153,7 +153,7 @@
     "dc": null
   },
   "133632": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -356,7 +356,7 @@
     "dc": null
   },
   "133675": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -413,7 +413,7 @@
     "dc": null
   },
   "133682": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -443,7 +443,7 @@
     "dc": null
   },
   "133703": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -463,7 +463,7 @@
     "dc": null
   },
   "133707": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -677,7 +677,7 @@
     "dc": null
   },
   "133738": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
     "headCoach": "José Mourinho",
     "owners": [],
@@ -757,7 +757,7 @@
     "dc": null
   },
   "133861": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -1060,7 +1060,7 @@
     "dc": null
   },
   "134384": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
     "headCoach": null,
     "owners": [],
@@ -1212,7 +1212,7 @@
     "dc": null
   },
   "134794": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
     "headCoach": "Matt Wells",
     "owners": [
@@ -1224,15 +1224,15 @@
     "dc": null
   },
   "134830": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
-    "headCoach": null,
+    "headCoach": "Marco Sturm",
     "owners": [
       "Delaware North",
       "(Jeremy Jacobs , chairman; Charlie Jacobs , CEO)"
     ],
     "gm": "Don Sweeney",
-    "president": null,
+    "president": "4 (1989–90 , 2013–14 , 2019–20 , 2022–23)",
     "oc": null,
     "dc": null
   },
@@ -1299,28 +1299,28 @@
     "dc": null
   },
   "134836": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
-    "headCoach": null,
+    "headCoach": "Jon Cooper",
     "owners": [
       "Vinik Sports Group, LLC",
       "(Jeffrey Vinik , chairman)"
     ],
     "gm": "Julien BriseBois",
-    "president": null,
+    "president": "1 (2018–19)",
     "oc": null,
     "dc": null
   },
   "134837": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
-    "headCoach": null,
+    "headCoach": "Jim Hiller",
     "owners": [
       "Maple Leaf Sports & Entertainment",
       "(Keith Pelley , president & CEO)"
     ],
     "gm": "John Chayka",
-    "president": null,
+    "president": "0",
     "oc": null,
     "dc": null
   },
@@ -1337,27 +1337,27 @@
     "dc": null
   },
   "134839": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
-    "headCoach": null,
+    "headCoach": "Rick Bowness",
     "owners": [
       "John P. McConnell"
     ],
     "gm": "Don Waddell",
-    "president": null,
+    "president": "0",
     "oc": null,
     "dc": null
   },
   "134840": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
-    "headCoach": null,
+    "headCoach": "Sheldon Keefe",
     "owners": [
       "Harris Blitzer Sports & Entertainment",
       "(David Blitzer and Josh Harris)"
     ],
     "gm": "Sunny Mehta",
-    "president": null,
+    "president": "0",
     "oc": null,
     "dc": null
   },
@@ -1699,13 +1699,13 @@
     "dc": null
   },
   "134869": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
     "headCoach": "Doug Christie",
     "owners": [
       "Vivek Ranadivé"
     ],
-    "gm": null,
+    "gm": "Scott Perry",
     "president": "John Rinehart",
     "oc": null,
     "dc": null
@@ -1970,18 +1970,16 @@
     "dc": "Jim Leonhard"
   },
   "134919": {
-    "v": 7,
+    "v": 8,
     "fetched": true,
     "headCoach": "Jeff Hafley",
     "owners": [
-      "Joe Robbie (1966–1990)",
-      "Wayne Huizenga (1990–2009)",
-      "Stephen M. Ross (2009–present)"
+      "Stephen M. Ross"
     ],
     "gm": "Jon-Eric Sullivan",
     "president": "Tom Garfinkel",
-    "oc": "Bobby Slowik",
-    "dc": "Sean Duggan"
+    "oc": null,
+    "dc": null
   },
   "134920": {
     "v": 8,
@@ -2212,11 +2210,11 @@
     "dc": "Kelvin Sheppard"
   },
   "134940": {
-    "v": 7,
+    "v": 8,
     "fetched": true,
     "headCoach": "Matt LaFleur",
     "owners": [
-      "Green Bay Packers, Inc. (1923–present)"
+      "Green Bay Packers, Inc."
     ],
     "gm": "Brian Gutekunst",
     "president": "Ed Policy",
@@ -2308,13 +2306,11 @@
     "dc": "Raheem Morris"
   },
   "134949": {
-    "v": 7,
+    "v": 8,
     "fetched": true,
     "headCoach": "Mike Macdonald",
     "owners": [
-      "Nordstrom family & Herman Sarkowsky (1974–1988)",
-      "Ken Behring & Ken Hofmann (1988–1997)",
-      "Paul Allen (1997–2018)"
+      "Paul Allen estate"
     ],
     "gm": "John Schneider",
     "president": "Chuck Arnold",
@@ -2497,15 +2493,11 @@
     "dc": null
   },
   "135269": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
-    "headCoach": null,
-    "owners": [
-      "Thomas S. Ricketts",
-      "Laura Ricketts",
-      "Pete Ricketts"
-    ],
-    "gm": null,
+    "headCoach": "Craig Counsell",
+    "owners": [],
+    "gm": "Carter Hawkins",
     "president": "Jed Hoyer",
     "oc": null,
     "dc": null
@@ -2784,7 +2776,7 @@
     "dc": null
   },
   "137700": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
     "headCoach": "B. J. Callaghan",
     "owners": [
@@ -2798,7 +2790,7 @@
     "dc": null
   },
   "138411": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
     "headCoach": null,
     "owners": [],
