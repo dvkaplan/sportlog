@@ -2391,13 +2391,11 @@
     "dc": null
   },
   "135258": {
-    "v": 2,
+    "v": 8,
     "fetched": true,
-    "headCoach": null,
-    "owners": [
-      "Arte Moreno"
-    ],
-    "gm": null,
+    "headCoach": "Kurt Suzuki",
+    "owners": [],
+    "gm": "John Mozeliak (Interim)",
     "president": "Molly Jolly",
     "oc": null,
     "dc": null
