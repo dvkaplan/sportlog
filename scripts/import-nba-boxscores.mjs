@@ -137,3 +137,4 @@ for (const season of seasons) {
   console.log(`${season}: ✓ ${Object.keys(out).length}/${games.length} (${empt} with no recorded sheet)`);
 }
 console.log("\nAll pre-2002 seasons complete.");
+//
