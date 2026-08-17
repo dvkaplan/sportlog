@@ -23,6 +23,8 @@ import laligaSeasons from "@/lib/seasons/laliga/index.json";
 import serieaSeasons from "@/lib/seasons/seriea/index.json";
 import bundesligaSeasons from "@/lib/seasons/bundesliga/index.json";
 import ligue1Seasons from "@/lib/seasons/ligue1/index.json";
+import nbaMissingData from "@/lib/nba-missing-players.json";
+import nflMissingData from "@/lib/nfl-missing-players.json";
 
 const BASE = `https://www.thesportsdb.com/api/v1/json/${process.env.SPORTSDB_KEY ?? "3"}`;
 
@@ -65,6 +67,12 @@ const SEASONS_IDX = (
 ).flatMap(([key, name, arr]) =>
   arr.map((s) => ({ league: key, leagueName: name, season: s, label: `${name} ${s} season` }))
 );
+type GenP = { nbaId?: string | null; nflId?: string | null; name: string; first: string; last: string; teams?: string[] };
+const normG = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim();
+const GEN_NBA = (nbaMissingData as GenP[]).filter((m) => m.nbaId);
+const GEN_NFL = (nflMissingData as GenP[]).filter((m) => m.nflId);
+const GEN_NBA_BYNAME: Record<string, string> = Object.fromEntries(GEN_NBA.map((m) => [normG(m.name), `nba-${m.nbaId}`]));
+const GEN_NFL_BYNAME: Record<string, string> = Object.fromEntries(GEN_NFL.map((m) => [normG(m.name), `nfl-${m.nflId}`]));
 
 
 export async function GET(req: NextRequest) {
@@ -108,14 +116,12 @@ export async function GET(req: NextRequest) {
       };
       const allNameHits = PLAYERS.filter((p) => p.strPlayer.toLowerCase().includes(q));
       const playerMatches = allNameHits.filter((p) => !isStaffPos(p.strPosition)).sort((a, b) => prank(b) - prank(a)).slice(0, 25);
-      let genPlayers: { idPlayer: string; strPlayer: string; strTeam: string; strLeague: string | null; strPosition: string | null; strThumb: string | null; strSport: string | null }[] = [];
-      try {
-        const mp = JSON.parse(await readFile(path.join(process.cwd(), "src", "lib", "nba-missing-players.json"), "utf8")) as { nbaId: string | null; name: string; first: string; last: string }[];
-        genPlayers = mp
-          .filter((m) => m.nbaId && m.name.toLowerCase().includes(q))
-          .slice(0, 5)
-          .map((m) => ({ idPlayer: `nba-${m.nbaId}`, strPlayer: m.name, strTeam: `_NBA ${m.first}–${m.last}`, strLeague: "NBA", strPosition: null, strThumb: null, strSport: "Basketball" }));
-      } catch {}
+      const genPlayers = [
+        ...GEN_NBA.filter((m) => m.name.toLowerCase().includes(q)).slice(0, 4)
+          .map((m) => ({ idPlayer: `nba-${m.nbaId}`, strPlayer: m.name, strTeam: `_NBA ${m.first}–${m.last}`, strLeague: "NBA", strPosition: null as string | null, strThumb: null as string | null, strSport: "Basketball" })),
+        ...GEN_NFL.filter((m) => m.name.toLowerCase().includes(q)).slice(0, 4)
+          .map((m) => ({ idPlayer: `nfl-${m.nflId}`, strPlayer: m.name, strTeam: `_NFL ${(m.teams ?? []).join(" ")}`.trim(), strLeague: "NFL", strPosition: null as string | null, strThumb: null as string | null, strSport: "American Football" })),
+      ];
       const CM = coachMediaJson as Record<string, { name: string; photo: string | null }>;
       const wikiCoaches = Object.entries(CM)
         .filter(([, c]) => c.name.toLowerCase().includes(q))
@@ -247,17 +253,13 @@ export async function GET(req: NextRequest) {
       const id = p.get("id") ?? "";
       const espn = p.get("espn") ?? "";
       const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
-      let GENP: Record<string, string> = {};
-      try {
-        const mp = JSON.parse(await readFile(path.join(process.cwd(), "src", "lib", "nba-missing-players.json"), "utf8")) as { nbaId: string | null; name: string }[];
-        GENP = Object.fromEntries(mp.filter((m) => m.nbaId).map((m) => [norm(m.name), `nba-${m.nbaId}`]));
-      } catch {}
+      const genMap = id.startsWith("nba-") ? GEN_NBA_BYNAME : (id.startsWith("nfl-") || espn) ? GEN_NFL_BYNAME : null;
       const pid = (name: string) => {
         const n = norm(name);
         const bare = n.replace(/\s+(jr|sr|ii|iii|iv|v)$/, "");
         return PLAYERS.find((x) => norm(x.strPlayer) === n)?.idPlayer
           ?? PLAYERS.find((x) => norm(x.strPlayer) === bare)?.idPlayer
-          ?? GENP[n] ?? GENP[bare] ?? null;
+          ?? genMap?.[n] ?? genMap?.[bare] ?? null;
       };
       type Row = { name: string; playerId: string | null; cells: (string | number)[] };
       type Group = { title: string; columns: string[]; rows: Row[] };

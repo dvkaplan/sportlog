@@ -6,6 +6,7 @@ import { cleanTeamLabel, labelPosition } from "@/lib/labels";
 import BackLink from "@/components/BackLink";
 import { supabase } from "@/lib/supabase";
 import missingPlayers from "@/lib/nba-missing-players.json";
+import nflMissingPlayers from "@/lib/nfl-missing-players.json";
 
 type Player = {
   idPlayer: string;
@@ -22,26 +23,27 @@ type Player = {
   strCutout: string | null;
   strThumb: string | null;
 };
-type MissingP = { nbaId: string | null; name: string; first: string; last: string; games: number; teams: string[] };
-const GENERATED: Record<string, MissingP> = Object.fromEntries(
-  (missingPlayers as MissingP[]).filter((m) => m.nbaId).map((m) => [`nba-${m.nbaId}`, m])
-);
+type MissingP = { nbaId?: string | null; nflId?: string | null; name: string; first: string; last: string; games: number; teams: string[]; league?: string };
+const GENERATED: Record<string, MissingP> = {
+  ...Object.fromEntries((missingPlayers as MissingP[]).filter((m) => m.nbaId).map((m) => [`nba-${m.nbaId}`, { ...m, league: "NBA" }])),
+  ...Object.fromEntries((nflMissingPlayers as MissingP[]).filter((m) => m.nflId).map((m) => [`nfl-${m.nflId}`, { ...m, league: "NFL" }])),
+};
 
 export default function PlayerPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
   const gen = GENERATED[id];
-  if (gen) {
+ if (gen) {
     return (
       <main className="min-h-screen bg-zinc-950 text-zinc-100">
         <div className="mx-auto max-w-3xl px-6 py-12">
           <BackLink />
           <div className="mt-6 flex items-start gap-6">
-            <div className="flex h-28 w-28 shrink-0 items-center justify-center rounded-xl bg-zinc-900 text-3xl">🏀</div>
+            <div className="flex h-28 w-28 shrink-0 items-center justify-center rounded-xl bg-zinc-900 text-3xl">{gen.league === "NFL" ? "🏈" : "🏀"}</div>
             <div>
               <h1 className="text-3xl font-bold">{gen.name}</h1>
-              <p className="mt-1 text-sm text-zinc-400">NBA · {gen.first} – {gen.last}</p>
-              <p className="mt-1 text-sm text-zinc-500">{gen.games} games in SPORTLOG records · {gen.teams.slice(0, 6).join(", ")}</p>
-              <p className="mt-4 text-xs text-zinc-600">Page generated from SPORTLOG box score records.</p>
+              <p className="mt-1 text-sm text-zinc-400">{gen.league ?? "NBA"}{gen.first && gen.last ? ` · ${gen.first} – ${gen.last}` : ""}</p>
+              <p className="mt-1 text-sm text-zinc-500">{[gen.games > 0 ? `${gen.games} games in SPORTLOG records` : null, gen.teams.slice(0, 6).join(", ")].filter(Boolean).join(" · ")}</p>
+              <p className="mt-4 text-xs text-zinc-600">Page generated from SPORTLOG records.</p>
             </div>
           </div>
         </div>
