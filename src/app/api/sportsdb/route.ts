@@ -391,7 +391,27 @@ export async function GET(req: NextRequest) {
         if (local.idTeam) data.players[0].idTeam = local.idTeam;
         if (!data.players[0].strThumb && local.strThumb) data.players[0].strThumb = local.strThumb;
       }
-      return NextResponse.json(data);
+            let nbaId: string | null = null;
+      const pName = data?.players?.[0]?.strPlayer;
+      if (pName && (data?.players?.[0]?.strSport ?? "") === "Basketball") {
+        try {
+          const pidsFile = path.join(process.cwd(), "src", "lib", "nba-player-ids.json");
+          const pids = JSON.parse(await readFile(pidsFile, "utf8")) as { names: Record<string, string> };
+          const nrm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]/g, "").trim();
+          const target = nrm(pName);
+          for (const [nid, nm] of Object.entries(pids.names)) {
+            if (nrm(nm) === target) { nbaId = nid; break; }
+          }
+        } catch { /* ids file missing */ }
+      }
+                 let espnId: string | null = data?.players?.[0]?.idESPN ?? null;
+      if (!espnId && (data?.players?.[0]?.strSport ?? "") === "American Football") {
+        try {
+          const emap = JSON.parse(await readFile(path.join(process.cwd(), "src", "lib", "nfl-espn-ids.json"), "utf8")) as Record<string, string | null>;
+          espnId = emap[pidReq] ?? null;
+        } catch { /* map not built yet */ }
+      }
+      return NextResponse.json({ ...data, nbaId, espnId });
     }
 
     if (mode === "players") {

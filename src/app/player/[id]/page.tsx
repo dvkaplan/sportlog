@@ -5,6 +5,8 @@ import FollowButton from "@/components/FollowButton";
 import { cleanTeamLabel, labelPosition } from "@/lib/labels";
 import BackLink from "@/components/BackLink";
 import EntityRatingBox from "@/components/EntityRatingBox";
+import PlayerStatsNBA from "@/components/PlayerStatsNBA";
+import PlayerStatsNFL from "@/components/PlayerStatsNFL";
 import { supabase } from "@/lib/supabase";
 import missingPlayers from "@/lib/nba-missing-players.json";
 import nflMissingPlayers from "@/lib/nfl-missing-players.json";
@@ -56,6 +58,8 @@ export default function PlayerPage({ params }: { params: Promise<{ id: string }>
   const [player, setPlayer] = useState<Player | null>(null);
   const [expanded, setExpanded] = useState(false);
   const [failed, setFailed] = useState(false);
+ const [nbaId, setNbaId] = useState<string | null>(null);
+     const [espnId, setEspnId] = useState<string | null>(null);
 useEffect(() => {
     supabase.rpc("bump_click", { t: "player", i: id }).then(({ error }) => {
       if (error) console.error("bump_click failed:", error.message);
@@ -71,6 +75,8 @@ useEffect(() => {
           return;
         }
         setPlayer(p);
+                setNbaId(data?.nbaId ?? null);
+                        setEspnId(data?.espnId ?? null);
       } catch {
         setFailed(true);
       }
@@ -121,6 +127,8 @@ useEffect(() => {
           </div>
         )}
                 <EntityRatingBox entityType="player" entityId={player.idPlayer} entityName={player.strPlayer} />
+                        {nbaId && <PlayerStatsNBA nbaId={nbaId} />}
+                                {!nbaId && espnId && player.strSport === "American Football" && <PlayerStatsNFL espnId={espnId} />}
       </div>
     </main>
   );
