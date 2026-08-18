@@ -4,6 +4,7 @@ import Link from "next/link";
 import FollowButton from "@/components/FollowButton";
 import { cleanTeamLabel, labelPosition } from "@/lib/labels";
 import BackLink from "@/components/BackLink";
+import EntityRatingBox from "@/components/EntityRatingBox";
 import { supabase } from "@/lib/supabase";
 import missingPlayers from "@/lib/nba-missing-players.json";
 import nflMissingPlayers from "@/lib/nfl-missing-players.json";
@@ -46,6 +47,7 @@ export default function PlayerPage({ params }: { params: Promise<{ id: string }>
               <p className="mt-4 text-xs text-zinc-600">Page generated from SPORTLOG records.</p>
             </div>
           </div>
+                    <EntityRatingBox entityType="player" entityId={id} entityName={gen.name} />
         </div>
       </main>
     );
@@ -118,6 +120,7 @@ useEffect(() => {
             )}
           </div>
         )}
+                <EntityRatingBox entityType="player" entityId={player.idPlayer} entityName={player.strPlayer} />
       </div>
     </main>
   );
