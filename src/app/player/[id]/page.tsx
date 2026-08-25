@@ -7,6 +7,7 @@ import BackLink from "@/components/BackLink";
 import EntityRatingBox from "@/components/EntityRatingBox";
 import PlayerStatsNBA from "@/components/PlayerStatsNBA";
 import PlayerStatsNFL from "@/components/PlayerStatsNFL";
+import PlayerStatsGeneric from "@/components/PlayerStatsGeneric";
 import { supabase } from "@/lib/supabase";
 import missingPlayers from "@/lib/nba-missing-players.json";
 import nflMissingPlayers from "@/lib/nfl-missing-players.json";
@@ -129,6 +130,8 @@ useEffect(() => {
                 <EntityRatingBox entityType="player" entityId={player.idPlayer} entityName={player.strPlayer} />
                         {nbaId && <PlayerStatsNBA nbaId={nbaId} />}
                                 {!nbaId && espnId && player.strSport === "American Football" && <PlayerStatsNFL espnId={espnId} />}
+                                        {player.strSport === "Baseball" && <PlayerStatsGeneric endpoint="/api/mlb-stats" query={`name=${encodeURIComponent(player.strPlayer)}`} />}
+        {player.strSport === "Ice Hockey" && <PlayerStatsGeneric endpoint="/api/nhl-stats" query={`name=${encodeURIComponent(player.strPlayer)}`} />}
       </div>
     </main>
   );
