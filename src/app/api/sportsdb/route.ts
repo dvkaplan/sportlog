@@ -408,7 +408,11 @@ export async function GET(req: NextRequest) {
       if (!espnId && (data?.players?.[0]?.strSport ?? "") === "American Football") {
         try {
           const emap = JSON.parse(await readFile(path.join(process.cwd(), "src", "lib", "nfl-espn-ids.json"), "utf8")) as Record<string, string | null>;
-          espnId = emap[pidReq] ?? null;
+                    espnId = emap[pidReq] ?? null;
+          try {
+            const om = JSON.parse(await readFile(path.join(process.cwd(), "src", "lib", "nfl-espn-overrides.json"), "utf8")) as Record<string, string>;
+            if (om[pidReq]) espnId = om[pidReq];
+          } catch { /* no overrides yet */ }
         } catch { /* map not built yet */ }
       }
       return NextResponse.json({ ...data, nbaId, espnId });
