@@ -25,6 +25,8 @@ import bundesligaSeasons from "@/lib/seasons/bundesliga/index.json";
 import ligue1Seasons from "@/lib/seasons/ligue1/index.json";
 import nbaMissingData from "@/lib/nba-missing-players.json";
 import nflMissingData from "@/lib/nfl-missing-players.json";
+import mlbMissingData from "@/lib/mlb-missing-players.json";
+import nhlMissingData from "@/lib/nhl-missing-players.json";
 
 const BASE = `https://www.thesportsdb.com/api/v1/json/${process.env.SPORTSDB_KEY ?? "3"}`;
 
@@ -73,6 +75,11 @@ const GEN_NBA = (nbaMissingData as GenP[]).filter((m) => m.nbaId);
 const GEN_NFL = (nflMissingData as GenP[]).filter((m) => m.nflId);
 const GEN_NBA_BYNAME: Record<string, string> = Object.fromEntries(GEN_NBA.map((m) => [normG(m.name), `nba-${m.nbaId}`]));
 const GEN_NFL_BYNAME: Record<string, string> = Object.fromEntries(GEN_NFL.map((m) => [normG(m.name), `nfl-${m.nflId}`]));
+const GEN_MLB = (mlbMissingData as GenP[] & { mlbId?: string }[]).filter((m: GenP & { mlbId?: string }) => m.mlbId);
+const GEN_NHL = (nhlMissingData as GenP[] & { nhlId?: string }[]).filter((m: GenP & { nhlId?: string }) => m.nhlId);
+const GEN_MLB_BYNAME: Record<string, string> = Object.fromEntries(GEN_MLB.map((m: GenP & { mlbId?: string }) => [normG(m.name), `mlb-${m.mlbId}`]));
+const GEN_NHL_BYNAME: Record<string, string> = Object.fromEntries(GEN_NHL.map((m: GenP & { nhlId?: string }) => [normG(m.name), `nhl-${m.nhlId}`]));
+
 
 
 export async function GET(req: NextRequest) {
@@ -253,13 +260,45 @@ export async function GET(req: NextRequest) {
       const id = p.get("id") ?? "";
       const espn = p.get("espn") ?? "";
       const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
-      const genMap = id.startsWith("nba-") ? GEN_NBA_BYNAME : (id.startsWith("nfl-") || espn) ? GEN_NFL_BYNAME : null;
+          const genMap = id.startsWith("nba-") ? GEN_NBA_BYNAME
+        : (id.startsWith("nfl-") || espn) ? GEN_NFL_BYNAME
+        : id.startsWith("mlb-") ? GEN_MLB_BYNAME
+        : id.startsWith("nhl-") ? GEN_NHL_BYNAME
+        : null;
+            const isNhl = id.startsWith("nhl-");
+      const initialKey = (full: string) => {
+        const parts = norm(full).split(" ").filter(Boolean);
+        return parts.length >= 2 ? `${parts[0][0]} ${parts.slice(1).join(" ")}` : norm(full);
+      };
+      let NHL_INITIALS: Record<string, string> | null = null;
+      if (isNhl) {
+        NHL_INITIALS = {};
+        for (const x of PLAYERS) {
+          if ((x.strSport ?? "") !== "Ice Hockey") continue;
+          const k = initialKey(x.strPlayer);
+          if (!(k in NHL_INITIALS)) NHL_INITIALS[k] = x.idPlayer;
+          else NHL_INITIALS[k] = ""; // ambiguous — two players share initial+surname; don't guess
+        }
+        for (const [nm, gid] of Object.entries(GEN_NHL_BYNAME)) {
+          const parts = nm.split(" ").filter(Boolean);
+          const k = parts.length >= 2 ? `${parts[0][0]} ${parts.slice(1).join(" ")}` : nm;
+          if (!(k in NHL_INITIALS)) NHL_INITIALS[k] = gid;
+          else if (NHL_INITIALS[k] !== gid) NHL_INITIALS[k] = "";
+        }
+      }
       const pid = (name: string) => {
         const n = norm(name);
         const bare = n.replace(/\s+(jr|sr|ii|iii|iv|v)$/, "");
-        return PLAYERS.find((x) => norm(x.strPlayer) === n)?.idPlayer
+        const direct = PLAYERS.find((x) => norm(x.strPlayer) === n)?.idPlayer
           ?? PLAYERS.find((x) => norm(x.strPlayer) === bare)?.idPlayer
           ?? genMap?.[n] ?? genMap?.[bare] ?? null;
+        if (direct) return direct;
+        if (NHL_INITIALS) {
+          const k = n.replace(/^([a-z])\s*\.?\s+/, "$1 "); // "s. crosby" -> "s crosby"
+          const hit = NHL_INITIALS[k];
+          if (hit) return hit;
+        }
+        return null;
       };
       type Row = { name: string; playerId: string | null; cells: (string | number)[] };
       type Group = { title: string; columns: string[]; rows: Row[] };

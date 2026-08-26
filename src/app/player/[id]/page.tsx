@@ -8,9 +8,12 @@ import EntityRatingBox from "@/components/EntityRatingBox";
 import PlayerStatsNBA from "@/components/PlayerStatsNBA";
 import PlayerStatsNFL from "@/components/PlayerStatsNFL";
 import PlayerStatsGeneric from "@/components/PlayerStatsGeneric";
+import PlayerPhoto from "@/components/PlayerPhoto";
 import { supabase } from "@/lib/supabase";
 import missingPlayers from "@/lib/nba-missing-players.json";
 import nflMissingPlayers from "@/lib/nfl-missing-players.json";
+import mlbMissingPlayers from "@/lib/mlb-missing-players.json";
+import nhlMissingPlayers from "@/lib/nhl-missing-players.json";
 
 type Player = {
   idPlayer: string;
@@ -27,10 +30,12 @@ type Player = {
   strCutout: string | null;
   strThumb: string | null;
 };
-type MissingP = { nbaId?: string | null; nflId?: string | null; name: string; first: string; last: string; games: number; teams: string[]; league?: string };
+type MissingP = { nbaId?: string | null; nflId?: string | null; mlbId?: string | null; nhlId?: string | null; name: string; first: string; last: string; games: number; teams: string[]; league?: string };
 const GENERATED: Record<string, MissingP> = {
   ...Object.fromEntries((missingPlayers as MissingP[]).filter((m) => m.nbaId).map((m) => [`nba-${m.nbaId}`, { ...m, league: "NBA" }])),
   ...Object.fromEntries((nflMissingPlayers as MissingP[]).filter((m) => m.nflId).map((m) => [`nfl-${m.nflId}`, { ...m, league: "NFL" }])),
+  ...Object.fromEntries((mlbMissingPlayers as MissingP[]).filter((m) => m.mlbId).map((m) => [`mlb-${m.mlbId}`, { ...m, league: "MLB" }])),
+  ...Object.fromEntries((nhlMissingPlayers as MissingP[]).filter((m) => m.nhlId).map((m) => [`nhl-${m.nhlId}`, { ...m, league: "NHL" }])),
 };
 
 export default function PlayerPage({ params }: { params: Promise<{ id: string }> }) {
@@ -42,7 +47,7 @@ export default function PlayerPage({ params }: { params: Promise<{ id: string }>
         <div className="mx-auto max-w-3xl px-6 py-12">
           <BackLink />
           <div className="mt-6 flex items-start gap-6">
-            <div className="flex h-28 w-28 shrink-0 items-center justify-center rounded-xl bg-zinc-900 text-3xl">{gen.league === "NFL" ? "🏈" : "🏀"}</div>
+                       <PlayerPhoto src={null} sport={gen.league === "NFL" ? "American Football" : gen.league === "MLB" ? "Baseball" : gen.league === "NHL" ? "Ice Hockey" : "Basketball"} name={gen.name} />
             <div>
               <h1 className="text-3xl font-bold">{gen.name}</h1>
               <p className="mt-1 text-sm text-zinc-400">{gen.league ?? "NBA"}{gen.first && gen.last ? ` · ${gen.first} – ${gen.last}` : ""}</p>
@@ -51,6 +56,8 @@ export default function PlayerPage({ params }: { params: Promise<{ id: string }>
             </div>
           </div>
                     <EntityRatingBox entityType="player" entityId={id} entityName={gen.name} />
+                              {gen.league === "MLB" && <PlayerStatsGeneric endpoint="/api/mlb-stats" query={`name=${encodeURIComponent(gen.name)}`} />}
+          {gen.league === "NHL" && <PlayerStatsGeneric endpoint="/api/nhl-stats" query={`name=${encodeURIComponent(gen.name)}`} />}
         </div>
       </main>
     );
@@ -95,12 +102,7 @@ useEffect(() => {
       <div className="mx-auto max-w-3xl px-6 py-12">
         <BackLink />
         <div className="mt-6 flex items-center gap-6">
-          {photo ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={photo} alt={player.strPlayer} className="h-28 w-28 rounded-xl object-cover object-top" />
-          ) : (
-            <div className="flex h-28 w-28 items-center justify-center rounded-xl bg-zinc-900 text-3xl">👤</div>
-          )}
+                    <PlayerPhoto src={photo} sport={player.strSport} name={player.strPlayer} />
           <div>
            <div className="flex items-center gap-4">
               <h1 className="text-3xl font-bold">{player.strPlayer}</h1>

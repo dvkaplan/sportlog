@@ -15,12 +15,16 @@ for (const season of seasons) {
   if (done.has(season)) continue;
   let seasonAdded = 0, hadData = false;
   for (const team of TEAMS) {
-    let j = null;
-    try {
-      const res = await fetch(`https://api-web.nhle.com/v1/roster/${team}/${season}`);
-      if (res.ok) j = await res.json();
-    } catch { /* team didn't exist that season — normal */ }
-    if (!j) { await sleep(120); continue; }
+       let j = null, gone = false;
+    for (let a = 1; a <= 4 && j === null && !gone; a++) {
+      try {
+        const res = await fetch(`https://api-web.nhle.com/v1/roster/${team}/${season}`);
+        if (res.status === 404) { gone = true; break; } // roster truly doesn't exist
+        if (!res.ok) { await sleep(5000 * a); continue; } // throttled/erroring — back off, retry
+        j = await res.json();
+      } catch { await sleep(5000 * a); }
+    }
+    if (!j) { await sleep(150); continue; }
     hadData = true;
     for (const grp of ["forwards", "defensemen", "goalies"]) {
       for (const p of j?.[grp] ?? []) {
