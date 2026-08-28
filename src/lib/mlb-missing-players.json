@@ -8,22 +8,6 @@
     "teams": []
   },
   {
-    "mlbId": "605156",
-    "name": "Aaron Brooks",
-    "first": "2014",
-    "last": "2026",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "621053",
-    "name": "Tyler Ferguson",
-    "first": "2024",
-    "last": "2026",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "641585",
     "name": "J.P. France",
     "first": "2023",
@@ -96,14 +80,6 @@
     "teams": []
   },
   {
-    "mlbId": "671155",
-    "name": "Ivan Johnson",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "671382",
     "name": "Cameron Foster",
     "first": "2026",
@@ -152,14 +128,6 @@
     "teams": []
   },
   {
-    "mlbId": "675659",
-    "name": "Greg Jones",
-    "first": "2024",
-    "last": "2026",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "675660",
     "name": "Shane Drohan",
     "first": "2026",
@@ -195,14 +163,6 @@
     "mlbId": "676910",
     "name": "Matt Seelinger",
     "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "677020",
-    "name": "Josh Walker",
-    "first": "2023",
     "last": "2026",
     "games": 0,
     "teams": []
@@ -288,14 +248,6 @@
     "teams": []
   },
   {
-    "mlbId": "681252",
-    "name": "Jack Anderson",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "682445",
     "name": "Domingo Gonzalez",
     "first": "2026",
@@ -314,14 +266,6 @@
   {
     "mlbId": "682818",
     "name": "Yohendrick Piñango",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "682987",
-    "name": "Spencer Jones",
     "first": "2026",
     "last": "2026",
     "games": 0,
@@ -976,14 +920,6 @@
     "teams": []
   },
   {
-    "mlbId": "805345",
-    "name": "Trent Harris",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "805672",
     "name": "Collin Price",
     "first": "2026",
@@ -1096,65 +1032,9 @@
     "teams": []
   },
   {
-    "mlbId": "592426",
-    "name": "Luke Jackson",
-    "first": "2015",
-    "last": "2025",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "605507",
-    "name": "Zach Thompson",
-    "first": "2021",
-    "last": "2025",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "621035",
-    "name": "Chris Taylor",
-    "first": "2014",
-    "last": "2025",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "622379",
     "name": "Luis F. Castillo",
     "first": "2022",
-    "last": "2025",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "623433",
-    "name": "Nick Anderson",
-    "first": "2019",
-    "last": "2025",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "641313",
-    "name": "Tim Anderson",
-    "first": "2016",
-    "last": "2025",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "641856",
-    "name": "Billy McKinney",
-    "first": "2018",
-    "last": "2025",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "656185",
-    "name": "Greg Allen",
-    "first": "2017",
     "last": "2025",
     "games": 0,
     "teams": []
@@ -1187,14 +1067,6 @@
     "mlbId": "669449",
     "name": "Jake Palisch",
     "first": "2025",
-    "last": "2025",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "669459",
-    "name": "Kyle Nelson",
-    "first": "2020",
     "last": "2025",
     "games": 0,
     "teams": []
@@ -1280,70 +1152,6 @@
     "teams": []
   },
   {
-    "mlbId": "700187",
-    "name": "Troy Taylor",
-    "first": "2024",
-    "last": "2025",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "519043",
-    "name": "Matt Moore",
-    "first": "2011",
-    "last": "2024",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "523260",
-    "name": "Joe Kelly",
-    "first": "2012",
-    "last": "2024",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "598264",
-    "name": "Matt Barnes",
-    "first": "2014",
-    "last": "2024",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "605121",
-    "name": "Justin Anderson",
-    "first": "2018",
-    "last": "2024",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "645801",
-    "name": "Mike Ford",
-    "first": "2019",
-    "last": "2024",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "656354",
-    "name": "Austin Davis",
-    "first": "2018",
-    "last": "2024",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "656793",
-    "name": "Nick Nelson",
-    "first": "2020",
-    "last": "2024",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "664079",
     "name": "Tyler Jay",
     "first": "2024",
@@ -1384,22 +1192,6 @@
     "teams": []
   },
   {
-    "mlbId": "675656",
-    "name": "Kevin Smith",
-    "first": "2021",
-    "last": "2024",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "676714",
-    "name": "Brandon Hughes",
-    "first": "2022",
-    "last": "2024",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "679881",
     "name": "J.P. Martínez",
     "first": "2023",
@@ -1424,81 +1216,9 @@
     "teams": []
   },
   {
-    "mlbId": "542914",
-    "name": "Anthony Bass",
-    "first": "2011",
-    "last": "2023",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "543543",
-    "name": "Brad Miller",
-    "first": "2013",
-    "last": "2023",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "596082",
-    "name": "Jake Reed",
-    "first": "2021",
-    "last": "2023",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "596847",
     "name": "Ji Man Choi",
     "first": "2016",
-    "last": "2023",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "608703",
-    "name": "Matt Reynolds",
-    "first": "2016",
-    "last": "2023",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "621368",
-    "name": "Taylor Hearn",
-    "first": "2019",
-    "last": "2023",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "641525",
-    "name": "Brandon Dixon",
-    "first": "2018",
-    "last": "2023",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "656382",
-    "name": "Tommy Doyle",
-    "first": "2020",
-    "last": "2023",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "656578",
-    "name": "Andre Jackson",
-    "first": "2021",
-    "last": "2023",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "661309",
-    "name": "Adrián Martinez",
-    "first": "2022",
     "last": "2023",
     "games": 0,
     "teams": []
@@ -1560,48 +1280,8 @@
     "teams": []
   },
   {
-    "mlbId": "459429",
-    "name": "Jake McGee",
-    "first": "2010",
-    "last": "2022",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "501925",
-    "name": "Joe Smith",
-    "first": "2007",
-    "last": "2022",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "595939",
-    "name": "Chris Ellis",
-    "first": "2019",
-    "last": "2022",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "607609",
     "name": "A.J. Ladwig",
-    "first": "2022",
-    "last": "2022",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "608652",
-    "name": "Luke Farrell",
-    "first": "2017",
-    "last": "2022",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "657129",
-    "name": "Marcus Wilson",
     "first": "2022",
     "last": "2022",
     "games": 0,
@@ -1624,14 +1304,6 @@
     "teams": []
   },
   {
-    "mlbId": "676103",
-    "name": "Damon Jones",
-    "first": "2021",
-    "last": "2022",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "681464",
     "name": "Frank German",
     "first": "2022",
@@ -1640,41 +1312,9 @@
     "teams": []
   },
   {
-    "mlbId": "453192",
-    "name": "Andrew Miller",
-    "first": "2006",
-    "last": "2021",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "459964",
-    "name": "Matt Joyce",
-    "first": "2008",
-    "last": "2021",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "501789",
     "name": "Will Harris",
     "first": "2012",
-    "last": "2021",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "502273",
-    "name": "Mike Freeman",
-    "first": "2016",
-    "last": "2021",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "502522",
-    "name": "Justin Miller",
-    "first": "2014",
     "last": "2021",
     "games": 0,
     "teams": []
@@ -1688,38 +1328,6 @@
     "teams": []
   },
   {
-    "mlbId": "518858",
-    "name": "Nate Jones",
-    "first": "2012",
-    "last": "2021",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "543308",
-    "name": "John Hicks",
-    "first": "2015",
-    "last": "2021",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "571735",
-    "name": "David Hale",
-    "first": "2013",
-    "last": "2021",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "592444",
-    "name": "JaCoby Jones",
-    "first": "2016",
-    "last": "2021",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "592831",
     "name": "Konner Wade",
     "first": "2021",
@@ -1728,48 +1336,8 @@
     "teams": []
   },
   {
-    "mlbId": "593372",
-    "name": "Carlos Martinez",
-    "first": "2013",
-    "last": "2021",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "597113",
     "name": "DJ Johnson",
-    "first": "2018",
-    "last": "2021",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "605233",
-    "name": "Derek Fisher",
-    "first": "2017",
-    "last": "2021",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "605541",
-    "name": "Mike Wright Jr.",
-    "first": "2015",
-    "last": "2021",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "608384",
-    "name": "Nick Williams",
-    "first": "2017",
-    "last": "2021",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "642211",
-    "name": "Justin Williams",
     "first": "2018",
     "last": "2021",
     "games": 0,
@@ -1784,106 +1352,10 @@
     "teams": []
   },
   {
-    "mlbId": "657624",
-    "name": "Josh James",
-    "first": "2018",
-    "last": "2021",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "669735",
-    "name": "Chris Rodriguez",
-    "first": "2021",
-    "last": "2021",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "670057",
-    "name": "Ryan Hartman",
-    "first": "2021",
-    "last": "2021",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "680963",
-    "name": "Cody Wilson",
-    "first": "2021",
-    "last": "2021",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "448801",
-    "name": "Chris Davis",
-    "first": "2008",
-    "last": "2020",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "460086",
-    "name": "Alex Gordon",
-    "first": "2007",
-    "last": "2020",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "500874",
     "name": "José A. Martínez",
     "first": "2016",
     "last": "2020",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "543557",
-    "name": "Mike Montgomery",
-    "first": "2015",
-    "last": "2020",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "596105",
-    "name": "Dwight Smith Jr.",
-    "first": "2017",
-    "last": "2020",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "664180",
-    "name": "Matt Hall",
-    "first": "2018",
-    "last": "2020",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "429719",
-    "name": "Edwin Jackson",
-    "first": "2003",
-    "last": "2019",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "430945",
-    "name": "Adam Jones",
-    "first": "2006",
-    "last": "2019",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "435064",
-    "name": "Bobby Wilson",
-    "first": "2008",
-    "last": "2019",
     "games": 0,
     "teams": []
   },
@@ -1904,82 +1376,10 @@
     "teams": []
   },
   {
-    "mlbId": "598271",
-    "name": "Brian Johnson",
-    "first": "2015",
-    "last": "2019",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "605439",
-    "name": "Michael Reed",
-    "first": "2015",
-    "last": "2019",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "622226",
-    "name": "Dylan Cozens",
-    "first": "2018",
-    "last": "2019",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "622774",
     "name": "José Manuel Fernández",
     "first": "2018",
     "last": "2019",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "643275",
-    "name": "Johnny Davis",
-    "first": "2019",
-    "last": "2019",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "455759",
-    "name": "Chris Young",
-    "first": "2006",
-    "last": "2018",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "457706",
-    "name": "Austin Jackson",
-    "first": "2010",
-    "last": "2018",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "458913",
-    "name": "Eric Young Jr.",
-    "first": "2009",
-    "last": "2018",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "475857",
-    "name": "Ryan Cook",
-    "first": "2011",
-    "last": "2018",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "488681",
-    "name": "Brandon Barnes",
-    "first": "2012",
-    "last": "2018",
     "games": 0,
     "teams": []
   },
@@ -1995,14 +1395,6 @@
     "mlbId": "572308",
     "name": "José A. Váldez",
     "first": "2015",
-    "last": "2018",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "600965",
-    "name": "Ricardo Rodríguez",
-    "first": "2017",
     "last": "2018",
     "games": 0,
     "teams": []
@@ -2024,73 +1416,9 @@
     "teams": []
   },
   {
-    "mlbId": "664701",
-    "name": "Ben Taylor",
-    "first": "2017",
-    "last": "2018",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "432934",
-    "name": "Chris Young",
-    "first": "2004",
-    "last": "2017",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "434672",
-    "name": "Chris Smith",
-    "first": "2008",
-    "last": "2017",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "456167",
-    "name": "A.J. Griffin",
-    "first": "2012",
-    "last": "2017",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "474892",
-    "name": "Chris Carter",
-    "first": "2010",
-    "last": "2017",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "502046",
-    "name": "Jeff Locke",
-    "first": "2011",
-    "last": "2017",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "519025",
     "name": "Will Middlebrooks",
     "first": "2012",
-    "last": "2017",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "592533",
-    "name": "Cody Martin",
-    "first": "2015",
-    "last": "2017",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "592869",
-    "name": "Tyler Wilson",
-    "first": "2015",
     "last": "2017",
     "games": 0,
     "teams": []
@@ -2104,14 +1432,6 @@
     "teams": []
   },
   {
-    "mlbId": "608672",
-    "name": "Micah Johnson",
-    "first": "2015",
-    "last": "2017",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "622270",
     "name": "Alex D. Mejia",
     "first": "2017",
@@ -2120,73 +1440,9 @@
     "teams": []
   },
   {
-    "mlbId": "627262",
-    "name": "Chris Smith",
-    "first": "2017",
-    "last": "2017",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "642094",
-    "name": "Tyler Smith",
-    "first": "2017",
-    "last": "2017",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "425532",
-    "name": "Jerome Williams",
-    "first": "2003",
-    "last": "2016",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "453400",
-    "name": "Chris Johnson",
-    "first": "2009",
-    "last": "2016",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "477003",
     "name": "Jonathon Niese",
     "first": "2008",
-    "last": "2016",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "489002",
-    "name": "Steve Johnson",
-    "first": "2012",
-    "last": "2016",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "501986",
-    "name": "Cedric Hunter",
-    "first": "2011",
-    "last": "2016",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "518625",
-    "name": "Matt Dominguez",
-    "first": "2011",
-    "last": "2016",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "519186",
-    "name": "Matt Reynolds",
-    "first": "2010",
     "last": "2016",
     "games": 0,
     "teams": []
@@ -2216,73 +1472,9 @@
     "teams": []
   },
   {
-    "mlbId": "605304",
-    "name": "Erik Johnson",
-    "first": "2013",
-    "last": "2016",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "623166",
-    "name": "Mike Miller",
-    "first": "2016",
-    "last": "2016",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "643355",
-    "name": "Steve Hathaway",
-    "first": "2016",
-    "last": "2016",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "425543",
-    "name": "Josh Wilson",
-    "first": "2005",
-    "last": "2015",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "430681",
-    "name": "Dan Johnson",
-    "first": "2005",
-    "last": "2015",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "433585",
-    "name": "Jeff Francis",
-    "first": "2004",
-    "last": "2015",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "435045",
-    "name": "Sergio Santos",
-    "first": "2010",
-    "last": "2015",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "450351",
     "name": "C.J. Wilson",
     "first": "2005",
-    "last": "2015",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "457762",
-    "name": "Bryan Anderson",
-    "first": "2010",
     "last": "2015",
     "games": 0,
     "teams": []
@@ -2304,14 +1496,6 @@
     "teams": []
   },
   {
-    "mlbId": "502462",
-    "name": "Ryan Kelly",
-    "first": "2015",
-    "last": "2015",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "543633",
     "name": "Juan Carlos Perez",
     "first": "2013",
@@ -2328,14 +1512,6 @@
     "teams": []
   },
   {
-    "mlbId": "571825",
-    "name": "James Jones",
-    "first": "2014",
-    "last": "2015",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "592677",
     "name": "C.J. Riefenhauser",
     "first": "2014",
@@ -2344,57 +1520,9 @@
     "teams": []
   },
   {
-    "mlbId": "607068",
-    "name": "Chris Reed",
-    "first": "2015",
-    "last": "2015",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "621962",
-    "name": "Ian Thomas",
-    "first": "2014",
-    "last": "2015",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "648717",
-    "name": "Alex Guerrero",
-    "first": "2014",
-    "last": "2015",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "406878",
-    "name": "Brian Roberts",
-    "first": "2001",
-    "last": "2014",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "430606",
-    "name": "Mike Adams",
-    "first": "2004",
-    "last": "2014",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "430673",
     "name": "Ramon E Ramirez",
     "first": "2006",
-    "last": "2014",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "434633",
-    "name": "John Baker",
-    "first": "2008",
     "last": "2014",
     "games": 0,
     "teams": []
@@ -2416,22 +1544,6 @@
     "teams": []
   },
   {
-    "mlbId": "451075",
-    "name": "David Martinez",
-    "first": "2013",
-    "last": "2014",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "461848",
-    "name": "Jim Miller",
-    "first": "2008",
-    "last": "2014",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "469159",
     "name": "Henry Alberto Rodriguez",
     "first": "2009",
@@ -2448,30 +1560,6 @@
     "teams": []
   },
   {
-    "mlbId": "518500",
-    "name": "Andrew Brown",
-    "first": "2011",
-    "last": "2014",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "518502",
-    "name": "Gary Brown",
-    "first": "2014",
-    "last": "2014",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "518794",
-    "name": "Brandon Hicks",
-    "first": "2010",
-    "last": "2014",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "519003",
     "name": "Patrick McCoy",
     "first": "2014",
@@ -2480,65 +1568,9 @@
     "teams": []
   },
   {
-    "mlbId": "543853",
-    "name": "Taylor Thompson",
-    "first": "2014",
-    "last": "2014",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "572751",
-    "name": "Keith Butler",
-    "first": "2013",
-    "last": "2014",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "150021",
-    "name": "Darnell McDonald",
-    "first": "2004",
-    "last": "2013",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "276545",
-    "name": "Michael Young",
-    "first": "2000",
-    "last": "2013",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "435178",
-    "name": "Josh Johnson",
-    "first": "2005",
-    "last": "2013",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "448722",
     "name": "Juan Pablo Pérez",
     "first": "2006",
-    "last": "2013",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "453531",
-    "name": "Rob Johnson",
-    "first": "2007",
-    "last": "2013",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "457428",
-    "name": "James McDonald",
-    "first": "2008",
     "last": "2013",
     "games": 0,
     "teams": []
@@ -2552,46 +1584,6 @@
     "teams": []
   },
   {
-    "mlbId": "458691",
-    "name": "David Adams",
-    "first": "2013",
-    "last": "2013",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "460101",
-    "name": "Chris Robinson",
-    "first": "2013",
-    "last": "2013",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "469802",
-    "name": "Luis Pérez",
-    "first": "2011",
-    "last": "2013",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "474256",
-    "name": "Ryan Reid",
-    "first": "2013",
-    "last": "2013",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "488740",
-    "name": "Jordan Brown",
-    "first": "2010",
-    "last": "2013",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "514719",
     "name": "Henry Alejandro Rodriguez",
     "first": "2012",
@@ -2600,41 +1592,9 @@
     "teams": []
   },
   {
-    "mlbId": "276376",
-    "name": "Nick Johnson",
-    "first": "2001",
-    "last": "2012",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "333292",
-    "name": "Jack Wilson",
-    "first": "2001",
-    "last": "2012",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "349193",
     "name": "Will Ohman",
     "first": "2000",
-    "last": "2012",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "430930",
-    "name": "Fred Lewis",
-    "first": "2006",
-    "last": "2012",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "450315",
-    "name": "Brandon Allen",
-    "first": "2009",
     "last": "2012",
     "games": 0,
     "teams": []
@@ -2648,41 +1608,9 @@
     "teams": []
   },
   {
-    "mlbId": "453454",
-    "name": "Mike McCoy",
-    "first": "2009",
-    "last": "2012",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "456421",
     "name": "Stu Pomeranz",
     "first": "2012",
-    "last": "2012",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "471863",
-    "name": "Luke Hughes",
-    "first": "2010",
-    "last": "2012",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "476011",
-    "name": "Matt Maloney",
-    "first": "2009",
-    "last": "2012",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "476206",
-    "name": "Justin Thomas",
-    "first": "2008",
     "last": "2012",
     "games": 0,
     "teams": []
@@ -2696,58 +1624,10 @@
     "teams": []
   },
   {
-    "mlbId": "518799",
-    "name": "Steven Hill",
-    "first": "2010",
-    "last": "2012",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "599899",
     "name": "Yoshinori Tateyama",
     "first": "2011",
     "last": "2012",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "120903",
-    "name": "Manny Ramirez",
-    "first": "1993",
-    "last": "2011",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "150479",
-    "name": "Felipe López",
-    "first": "2001",
-    "last": "2011",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "407576",
-    "name": "Mike Rivera",
-    "first": "2001",
-    "last": "2011",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "424805",
-    "name": "Mark Hendrickson",
-    "first": "2002",
-    "last": "2011",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "425446",
-    "name": "Aaron Miles",
-    "first": "2003",
-    "last": "2011",
     "games": 0,
     "teams": []
   },
@@ -2776,30 +1656,6 @@
     "teams": []
   },
   {
-    "mlbId": "434958",
-    "name": "Sean Green",
-    "first": "2006",
-    "last": "2011",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "444125",
-    "name": "Mike Wilson",
-    "first": "2011",
-    "last": "2011",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "444351",
-    "name": "Kyle Phillips",
-    "first": "2009",
-    "last": "2011",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "446044",
     "name": "Joshua Rodriguez",
     "first": "2011",
@@ -2811,22 +1667,6 @@
     "mlbId": "452199",
     "name": "Russell Mitchell",
     "first": "2010",
-    "last": "2011",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "452221",
-    "name": "Eric Patterson",
-    "first": "2007",
-    "last": "2011",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "457761",
-    "name": "Ryan Tucker",
-    "first": "2008",
     "last": "2011",
     "games": 0,
     "teams": []
@@ -2848,73 +1688,9 @@
     "teams": []
   },
   {
-    "mlbId": "506673",
-    "name": "Juan Miranda",
-    "first": "2008",
-    "last": "2011",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "277405",
-    "name": "Justin Miller",
-    "first": "2002",
-    "last": "2010",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "448241",
-    "name": "Justin James",
-    "first": "2010",
-    "last": "2010",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "452080",
-    "name": "Chris Carter",
-    "first": "2008",
-    "last": "2010",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "452238",
-    "name": "Brad Davis",
-    "first": "2010",
-    "last": "2010",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "452259",
-    "name": "Steven Jackson",
-    "first": "2009",
-    "last": "2010",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "455605",
     "name": "J.D. Martin",
     "first": "2009",
-    "last": "2010",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "457468",
-    "name": "Josh Banks",
-    "first": "2007",
-    "last": "2010",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "460105",
-    "name": "Greg Smith",
-    "first": "2008",
     "last": "2010",
     "games": 0,
     "teams": []
@@ -2928,41 +1704,9 @@
     "teams": []
   },
   {
-    "mlbId": "118377",
-    "name": "Pedro Martínez",
-    "first": "1992",
-    "last": "2009",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "124805",
     "name": "B.J. Ryan",
     "first": "1999",
-    "last": "2009",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "136664",
-    "name": "Michael Barrett",
-    "first": "1998",
-    "last": "2009",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "276537",
-    "name": "Chris Richard",
-    "first": "2000",
-    "last": "2009",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "400136",
-    "name": "Jason Smith",
-    "first": "2001",
     "last": "2009",
     "games": 0,
     "teams": []
@@ -2976,49 +1720,9 @@
     "teams": []
   },
   {
-    "mlbId": "446916",
-    "name": "Mike Burns",
-    "first": "2005",
-    "last": "2009",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "447761",
-    "name": "Brandon Jones",
-    "first": "2007",
-    "last": "2009",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "449881",
     "name": "R.J. Swindle",
     "first": "2008",
-    "last": "2009",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "453332",
-    "name": "Josh Butler",
-    "first": "2009",
-    "last": "2009",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "461811",
-    "name": "Josh Anderson",
-    "first": "2007",
-    "last": "2009",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "465593",
-    "name": "Carlos Martinez",
-    "first": "2006",
     "last": "2009",
     "games": 0,
     "teams": []
@@ -3028,22 +1732,6 @@
     "name": "Masa Kobayashi",
     "first": "2008",
     "last": "2009",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116595",
-    "name": "Jason Johnson",
-    "first": "1997",
-    "last": "2008",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116734",
-    "name": "Todd Jones",
-    "first": "1993",
-    "last": "2008",
     "games": 0,
     "teams": []
   },
@@ -3064,57 +1752,9 @@
     "teams": []
   },
   {
-    "mlbId": "150230",
-    "name": "Mark Redman",
-    "first": "1999",
-    "last": "2008",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "150284",
-    "name": "Brandon Knight",
-    "first": "2001",
-    "last": "2008",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "150322",
-    "name": "Mark Johnson",
-    "first": "1998",
-    "last": "2008",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "408046",
-    "name": "Andrew Brown",
-    "first": "2006",
-    "last": "2008",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "425186",
-    "name": "Jason Davis",
-    "first": "2002",
-    "last": "2008",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "430657",
     "name": "Cha Seung Baek",
     "first": "2004",
-    "last": "2008",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "434634",
-    "name": "Jason Perry",
-    "first": "2008",
     "last": "2008",
     "games": 0,
     "teams": []
@@ -3128,42 +1768,10 @@
     "teams": []
   },
   {
-    "mlbId": "461377",
-    "name": "Neal Musser",
-    "first": "2007",
-    "last": "2008",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "472490",
     "name": "Jae Kuk Ryu",
     "first": "2006",
     "last": "2008",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124071",
-    "name": "David Wells",
-    "first": "1987",
-    "last": "2007",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124343",
-    "name": "Todd Williams",
-    "first": "1995",
-    "last": "2007",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "150202",
-    "name": "Dee Brown",
-    "first": "1998",
-    "last": "2007",
     "games": 0,
     "teams": []
   },
@@ -3179,38 +1787,6 @@
     "mlbId": "150285",
     "name": "Dan Kolb",
     "first": "1999",
-    "last": "2007",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "282993",
-    "name": "Jason Phillips",
-    "first": "2001",
-    "last": "2007",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "285080",
-    "name": "Matt Miller",
-    "first": "2003",
-    "last": "2007",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "400063",
-    "name": "Dave Williams",
-    "first": "2001",
-    "last": "2007",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "406773",
-    "name": "Joe Kennedy",
-    "first": "2001",
     "last": "2007",
     "games": 0,
     "teams": []
@@ -3232,38 +1808,6 @@
     "teams": []
   },
   {
-    "mlbId": "429983",
-    "name": "Greg Jones",
-    "first": "2003",
-    "last": "2007",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "430061",
-    "name": "Mike Wood",
-    "first": "2003",
-    "last": "2007",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "431164",
-    "name": "Tyler Johnson",
-    "first": "2005",
-    "last": "2007",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "434562",
-    "name": "Chris Roberson",
-    "first": "2006",
-    "last": "2007",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "434878",
     "name": "Andrew Sisco",
     "first": "2005",
@@ -3280,113 +1824,9 @@
     "teams": []
   },
   {
-    "mlbId": "435258",
-    "name": "Kevin Barry",
-    "first": "2006",
-    "last": "2007",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "445120",
-    "name": "Mike Thompson",
-    "first": "2006",
-    "last": "2007",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "445224",
-    "name": "Matt Smith",
-    "first": "2006",
-    "last": "2007",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "453911",
-    "name": "Kevin Thompson",
-    "first": "2006",
-    "last": "2007",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110816",
-    "name": "David Bell",
-    "first": "1995",
-    "last": "2006",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116496",
-    "name": "Kevin Jarvis",
-    "first": "1994",
-    "last": "2006",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116747",
-    "name": "Brian Jordan",
-    "first": "1992",
-    "last": "2006",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117566",
     "name": "Matt Lawton III",
     "first": "1995",
-    "last": "2006",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124288",
-    "name": "Bernie Williams",
-    "first": "1991",
-    "last": "2006",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124695",
-    "name": "Eric Young Sr.",
-    "first": "1992",
-    "last": "2006",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "150222",
-    "name": "Joe Mays",
-    "first": "1999",
-    "last": "2006",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "330892",
-    "name": "Kris Wilson",
-    "first": "2000",
-    "last": "2006",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "420944",
-    "name": "Mike Smith",
-    "first": "2002",
-    "last": "2006",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "425855",
-    "name": "Mike Edwards",
-    "first": "2003",
     "last": "2006",
     "games": 0,
     "teams": []
@@ -3400,98 +1840,10 @@
     "teams": []
   },
   {
-    "mlbId": "449448",
-    "name": "John Nelson",
-    "first": "2006",
-    "last": "2006",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "449776",
     "name": "Drew T. Anderson",
     "first": "2006",
     "last": "2006",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "456133",
-    "name": "Ryan O'Malley",
-    "first": "2006",
-    "last": "2006",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110209",
-    "name": "Wilson Alvarez",
-    "first": "1989",
-    "last": "2005",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111554",
-    "name": "Kevin Brown",
-    "first": "1986",
-    "last": "2005",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116569",
-    "name": "Charles Johnson",
-    "first": "1994",
-    "last": "2005",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119616",
-    "name": "Greg Myers",
-    "first": "1987",
-    "last": "2005",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124314",
-    "name": "Gerald Williams",
-    "first": "1992",
-    "last": "2005",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "150334",
-    "name": "Chris Singleton",
-    "first": "1999",
-    "last": "2005",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "150347",
-    "name": "Mike Matthews",
-    "first": "2000",
-    "last": "2005",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "276526",
-    "name": "Kevin Walker",
-    "first": "2000",
-    "last": "2005",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "276528",
-    "name": "Ryan Jensen",
-    "first": "2001",
-    "last": "2005",
     "games": 0,
     "teams": []
   },
@@ -3520,25 +1872,9 @@
     "teams": []
   },
   {
-    "mlbId": "400156",
-    "name": "Ricardo Rodriguez",
-    "first": "2002",
-    "last": "2005",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "400292",
     "name": "Hee-Seop Choi",
     "first": "2002",
-    "last": "2005",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "407396",
-    "name": "Ken Harvey",
-    "first": "2001",
     "last": "2005",
     "games": 0,
     "teams": []
@@ -3552,25 +1888,9 @@
     "teams": []
   },
   {
-    "mlbId": "425427",
-    "name": "Jason Anderson",
-    "first": "2003",
-    "last": "2005",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "425428",
     "name": "Jorge De Paula",
     "first": "2003",
-    "last": "2005",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "425488",
-    "name": "Walter Young",
-    "first": "2005",
     "last": "2005",
     "games": 0,
     "teams": []
@@ -3584,32 +1904,8 @@
     "teams": []
   },
   {
-    "mlbId": "430952",
-    "name": "Miguel Perez",
-    "first": "2005",
-    "last": "2005",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "433595",
-    "name": "Charles Thomas",
-    "first": "2004",
-    "last": "2005",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "435082",
     "name": "Dae-Sung Koo",
-    "first": "2005",
-    "last": "2005",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "435438",
-    "name": "Mike Esposito",
     "first": "2005",
     "last": "2005",
     "games": 0,
@@ -3619,62 +1915,6 @@
     "mlbId": "112940",
     "name": "Will Cunnane",
     "first": "1997",
-    "last": "2004",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116436",
-    "name": "Mike Jackson",
-    "first": "1986",
-    "last": "2004",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116718",
-    "name": "Bobby Jones",
-    "first": "1997",
-    "last": "2004",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "134263",
-    "name": "Tom Wilson",
-    "first": "2001",
-    "last": "2004",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "150049",
-    "name": "David Lee",
-    "first": "1999",
-    "last": "2004",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "150273",
-    "name": "Calvin Murray",
-    "first": "1999",
-    "last": "2004",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "150343",
-    "name": "Jamie Brown",
-    "first": "2004",
-    "last": "2004",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "150433",
-    "name": "Ben Davis",
-    "first": "1998",
     "last": "2004",
     "games": 0,
     "teams": []
@@ -3698,14 +1938,6 @@
   {
     "mlbId": "407794",
     "name": "Jung Keun Bong",
-    "first": "2002",
-    "last": "2004",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "407818",
-    "name": "Aaron Taylor",
     "first": "2002",
     "last": "2004",
     "games": 0,
@@ -3752,14 +1984,6 @@
     "teams": []
   },
   {
-    "mlbId": "425554",
-    "name": "Josh Stewart",
-    "first": "2003",
-    "last": "2004",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "429421",
     "name": "Colin Porter",
     "first": "2003",
@@ -3780,14 +2004,6 @@
     "name": "Eduardo Villacis",
     "first": "2004",
     "last": "2004",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110397",
-    "name": "Steve Avery",
-    "first": "1990",
-    "last": "2003",
     "games": 0,
     "teams": []
   },
@@ -3824,49 +2040,9 @@
     "teams": []
   },
   {
-    "mlbId": "122432",
-    "name": "Mark Smith",
-    "first": "1994",
-    "last": "2003",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124328",
-    "name": "Mike Williams",
-    "first": "1992",
-    "last": "2003",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124704",
-    "name": "Kevin Young",
-    "first": "1992",
-    "last": "2003",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "150164",
     "name": "Joe DePastino",
     "first": "2003",
-    "last": "2003",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "150204",
-    "name": "Jeremy Hill",
-    "first": "2002",
-    "last": "2003",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "150259",
-    "name": "Jason Phillips",
-    "first": "1999",
     "last": "2003",
     "games": 0,
     "teams": []
@@ -3880,49 +2056,9 @@
     "teams": []
   },
   {
-    "mlbId": "277397",
-    "name": "Larry Barnes",
-    "first": "2001",
-    "last": "2003",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "400082",
     "name": "J.B. Miadich",
     "first": "2001",
-    "last": "2003",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "408058",
-    "name": "Gary Johnson",
-    "first": "2003",
-    "last": "2003",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "408214",
-    "name": "Drew Henson",
-    "first": "2002",
-    "last": "2003",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "425406",
-    "name": "Josh Hall",
-    "first": "2003",
-    "last": "2003",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "429961",
-    "name": "Jason Jones",
-    "first": "2003",
     "last": "2003",
     "games": 0,
     "teams": []
@@ -3932,54 +2068,6 @@
     "name": "Peter Zoccolillo",
     "first": "2003",
     "last": "2003",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111567",
-    "name": "Kevin Brown",
-    "first": "1996",
-    "last": "2002",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116480",
-    "name": "Mike James",
-    "first": "1995",
-    "last": "2002",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116610",
-    "name": "Mark Johnson",
-    "first": "1995",
-    "last": "2002",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116717",
-    "name": "Bobby Jones",
-    "first": "1993",
-    "last": "2002",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "117731",
-    "name": "Darren Lewis",
-    "first": "1990",
-    "last": "2002",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119374",
-    "name": "Mike Morgan",
-    "first": "1978",
-    "last": "2002",
     "games": 0,
     "teams": []
   },
@@ -4000,48 +2088,8 @@
     "teams": []
   },
   {
-    "mlbId": "150132",
-    "name": "Steve Cox",
-    "first": "1999",
-    "last": "2002",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "237796",
-    "name": "Jeff Williams",
-    "first": "1999",
-    "last": "2002",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "275701",
     "name": "Jimmy Osting",
-    "first": "2001",
-    "last": "2002",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "276515",
-    "name": "Jose Ortiz",
-    "first": "2000",
-    "last": "2002",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "400071",
-    "name": "Jason Hart",
-    "first": "2002",
-    "last": "2002",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "400078",
-    "name": "Matt Miller",
     "first": "2001",
     "last": "2002",
     "games": 0,
@@ -4059,14 +2107,6 @@
     "mlbId": "400302",
     "name": "Nick Neugebauer",
     "first": "2001",
-    "last": "2002",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "407856",
-    "name": "John Stephens",
-    "first": "2002",
     "last": "2002",
     "games": 0,
     "teams": []
@@ -4120,65 +2160,9 @@
     "teams": []
   },
   {
-    "mlbId": "113102",
-    "name": "Eric Davis",
-    "first": "1984",
-    "last": "2001",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116566",
-    "name": "Brian Johnson",
-    "first": "1994",
-    "last": "2001",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116611",
-    "name": "Mike Johnson",
-    "first": "1997",
-    "last": "2001",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116730",
-    "name": "Terry Jones",
-    "first": "1996",
-    "last": "2001",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116752",
-    "name": "Kevin Jordan",
-    "first": "1995",
-    "last": "2001",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "117740",
-    "name": "Mark Lewis",
-    "first": "1991",
-    "last": "2001",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "120720",
     "name": "LeJon Powell",
     "first": "1997",
-    "last": "2001",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121668",
-    "name": "Deion Sanders",
-    "first": "1989",
     "last": "2001",
     "games": 0,
     "teams": []
@@ -4192,49 +2176,9 @@
     "teams": []
   },
   {
-    "mlbId": "123163",
-    "name": "Billy Taylor",
-    "first": "1994",
-    "last": "2001",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "124270",
     "name": "Marc Wilkins",
     "first": "1996",
-    "last": "2001",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "137000",
-    "name": "Brian Simmons",
-    "first": "1998",
-    "last": "2001",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "150293",
-    "name": "Jeff Zimmerman",
-    "first": "1999",
-    "last": "2001",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "150454",
-    "name": "Chad Hutchinson",
-    "first": "2001",
-    "last": "2001",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "150461",
-    "name": "Keith McDonald",
-    "first": "2000",
     "last": "2001",
     "games": 0,
     "teams": []
@@ -4256,41 +2200,9 @@
     "teams": []
   },
   {
-    "mlbId": "276540",
-    "name": "Chuck Smith",
-    "first": "2000",
-    "last": "2001",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "279561",
-    "name": "Steve Green",
-    "first": "2001",
-    "last": "2001",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "407580",
-    "name": "James Lofton",
-    "first": "2001",
-    "last": "2001",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "112345",
     "name": "Will Clark",
     "first": "1986",
-    "last": "2000",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116215",
-    "name": "Thomas Howard",
-    "first": "1990",
     "last": "2000",
     "games": 0,
     "teams": []
@@ -4304,38 +2216,6 @@
     "teams": []
   },
   {
-    "mlbId": "116671",
-    "name": "Chris Jones",
-    "first": "1991",
-    "last": "2000",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116682",
-    "name": "Doug Jones",
-    "first": "1982",
-    "last": "2000",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "120993",
-    "name": "Jeff Reed",
-    "first": "1984",
-    "last": "2000",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123296",
-    "name": "Mark Thompson",
-    "first": "1994",
-    "last": "2000",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "123794",
     "name": "David Wainhouse",
     "first": "1991",
@@ -4344,32 +2224,8 @@
     "teams": []
   },
   {
-    "mlbId": "124291",
-    "name": "Brian Williams",
-    "first": "1991",
-    "last": "2000",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124313",
-    "name": "George Williams",
-    "first": "1995",
-    "last": "2000",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "131701",
     "name": "Rick Croushore",
-    "first": "1998",
-    "last": "2000",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "136662",
-    "name": "Tim Young",
     "first": "1998",
     "last": "2000",
     "games": 0,
@@ -4392,40 +2248,8 @@
     "teams": []
   },
   {
-    "mlbId": "150240",
-    "name": "Dan Murray",
-    "first": "1999",
-    "last": "2000",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "275931",
     "name": "Sang-Hoon Lee",
-    "first": "2000",
-    "last": "2000",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "276342",
-    "name": "Mark Johnson",
-    "first": "2000",
-    "last": "2000",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "280062",
-    "name": "Mike Bell",
-    "first": "2000",
-    "last": "2000",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "289033",
-    "name": "Marcus Jones",
     "first": "2000",
     "last": "2000",
     "games": 0,
@@ -4440,50 +2264,10 @@
     "teams": []
   },
   {
-    "mlbId": "344793",
-    "name": "Brian Smith",
-    "first": "2000",
-    "last": "2000",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "344924",
     "name": "Thomas Jacquez",
     "first": "2000",
     "last": "2000",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116201",
-    "name": "David Howard",
-    "first": "1991",
-    "last": "1999",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116955",
-    "name": "Pat Kelly",
-    "first": "1991",
-    "last": "1999",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "117081",
-    "name": "Jeff King",
-    "first": "1989",
-    "last": "1999",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "118694",
-    "name": "Willie McGee",
-    "first": "1982",
-    "last": "1999",
     "games": 0,
     "teams": []
   },
@@ -4496,32 +2280,8 @@
     "teams": []
   },
   {
-    "mlbId": "123980",
-    "name": "Pat Watkins",
-    "first": "1997",
-    "last": "1999",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124332",
-    "name": "Reggie Williams",
-    "first": "1992",
-    "last": "1999",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "133981",
     "name": "Will Brunson",
-    "first": "1998",
-    "last": "1999",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "136763",
-    "name": "Derrick Gibson",
     "first": "1998",
     "last": "1999",
     "games": 0,
@@ -4544,14 +2304,6 @@
     "teams": []
   },
   {
-    "mlbId": "210656",
-    "name": "Tommy Davis",
-    "first": "1999",
-    "last": "1999",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "214294",
     "name": "Rick Greene",
     "first": "1999",
@@ -4560,81 +2312,9 @@
     "teams": []
   },
   {
-    "mlbId": "111225",
-    "name": "Josh Booty",
-    "first": "1996",
-    "last": "1998",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "112064",
-    "name": "Joe Carter",
-    "first": "1983",
-    "last": "1998",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "112633",
     "name": "Steve Cooke",
     "first": "1992",
-    "last": "1998",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115349",
-    "name": "Darren Hall",
-    "first": "1994",
-    "last": "1998",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119194",
-    "name": "Keith Mitchell",
-    "first": "1991",
-    "last": "1998",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119195",
-    "name": "Kevin Mitchell",
-    "first": "1984",
-    "last": "1998",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124105",
-    "name": "David West",
-    "first": "1988",
-    "last": "1998",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124163",
-    "name": "Derrick White",
-    "first": "1993",
-    "last": "1998",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124305",
-    "name": "Eddie Williams",
-    "first": "1986",
-    "last": "1998",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124427",
-    "name": "Trevor Wilson",
-    "first": "1988",
     "last": "1998",
     "games": 0,
     "teams": []
@@ -4664,14 +2344,6 @@
     "teams": []
   },
   {
-    "mlbId": "134264",
-    "name": "Adam Butler",
-    "first": "1998",
-    "last": "1998",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "136423",
     "name": "Sean Lawrence",
     "first": "1998",
@@ -4688,65 +2360,9 @@
     "teams": []
   },
   {
-    "mlbId": "111721",
-    "name": "John Burke",
-    "first": "1996",
-    "last": "1997",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "112395",
-    "name": "Chris Clemons",
-    "first": "1997",
-    "last": "1997",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "112803",
-    "name": "Joe Crawford",
-    "first": "1997",
-    "last": "1997",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113126",
-    "name": "Mark Davis",
-    "first": "1980",
-    "last": "1997",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "113217",
     "name": "Roland DeLaMaza",
     "first": "1997",
-    "last": "1997",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "118376",
-    "name": "Pedro Martinez",
-    "first": "1993",
-    "last": "1997",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "118648",
-    "name": "Ben McDonald",
-    "first": "1989",
-    "last": "1997",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119579",
-    "name": "Eddie Murray",
-    "first": "1977",
     "last": "1997",
     "games": 0,
     "teams": []
@@ -4760,33 +2376,9 @@
     "teams": []
   },
   {
-    "mlbId": "120412",
-    "name": "Mike Perez",
-    "first": "1990",
-    "last": "1997",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "121320",
     "name": "Ken Robinson",
     "first": "1995",
-    "last": "1997",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121947",
-    "name": "Tim Scott",
-    "first": "1991",
-    "last": "1997",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122426",
-    "name": "Lee Smith",
-    "first": "1980",
     "last": "1997",
     "games": 0,
     "teams": []
@@ -4796,22 +2388,6 @@
     "name": "William Van Landingham",
     "first": "1994",
     "last": "1997",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111789",
-    "name": "Mike Busch",
-    "first": "1995",
-    "last": "1996",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "114014",
-    "name": "Mike Farmer",
-    "first": "1996",
-    "last": "1996",
     "games": 0,
     "teams": []
   },
@@ -4872,90 +2448,10 @@
     "teams": []
   },
   {
-    "mlbId": "121678",
-    "name": "Scott Sanderson",
-    "first": "1978",
-    "last": "1996",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "121767",
     "name": "Gene Schall",
     "first": "1995",
     "last": "1996",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122416",
-    "name": "Dwight Smith",
-    "first": "1989",
-    "last": "1996",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123289",
-    "name": "Jason Thompson",
-    "first": "1996",
-    "last": "1996",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124298",
-    "name": "Keith Williams",
-    "first": "1996",
-    "last": "1996",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124685",
-    "name": "Anthony Young",
-    "first": "1991",
-    "last": "1996",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110254",
-    "name": "Scott Anderson",
-    "first": "1987",
-    "last": "1995",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111285",
-    "name": "Ryan Bowen",
-    "first": "1991",
-    "last": "1995",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "114533",
-    "name": "Dave Gallagher",
-    "first": "1987",
-    "last": "1995",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116198",
-    "name": "Chris Howard",
-    "first": "1993",
-    "last": "1995",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "117082",
-    "name": "Kevin King",
-    "first": "1993",
-    "last": "1995",
     "games": 0,
     "teams": []
   },
@@ -4968,81 +2464,9 @@
     "teams": []
   },
   {
-    "mlbId": "117609",
-    "name": "Mark Lee",
-    "first": "1988",
-    "last": "1995",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "118360",
-    "name": "Carlos Martinez",
-    "first": "1988",
-    "last": "1995",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119090",
-    "name": "Keith Miller",
-    "first": "1987",
-    "last": "1995",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119569",
-    "name": "Rob Murphy",
-    "first": "1985",
-    "last": "1995",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119591",
-    "name": "Matt Murray",
-    "first": "1995",
-    "last": "1995",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "120411",
     "name": "Melido Perez",
     "first": "1987",
-    "last": "1995",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "120439",
-    "name": "Gerald Perry",
-    "first": "1983",
-    "last": "1995",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121384",
-    "name": "Jimmy Rogers",
-    "first": "1995",
-    "last": "1995",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121441",
-    "name": "John Roper",
-    "first": "1993",
-    "last": "1995",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123258",
-    "name": "Mike Thomas",
-    "first": "1995",
     "last": "1995",
     "games": 0,
     "teams": []
@@ -5104,22 +2528,6 @@
     "teams": []
   },
   {
-    "mlbId": "116199",
-    "name": "Chris Howard",
-    "first": "1991",
-    "last": "1994",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116352",
-    "name": "James Hurst",
-    "first": "1994",
-    "last": "1994",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "116446",
     "name": "Bo Jackson",
     "first": "1986",
@@ -5136,25 +2544,9 @@
     "teams": []
   },
   {
-    "mlbId": "116586",
-    "name": "Erik Johnson",
-    "first": "1993",
-    "last": "1994",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117217",
     "name": "Kurt Knudsen",
     "first": "1992",
-    "last": "1994",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "118402",
-    "name": "Roger Mason",
-    "first": "1984",
     "last": "1994",
     "games": 0,
     "teams": []
@@ -5184,58 +2576,10 @@
     "teams": []
   },
   {
-    "mlbId": "122472",
-    "name": "Willie Smith",
-    "first": "1994",
-    "last": "1994",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "122790",
     "name": "Phil Stidham",
     "first": "1994",
     "last": "1994",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123019",
-    "name": "Russ Swan",
-    "first": "1989",
-    "last": "1994",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123147",
-    "name": "Kerry Taylor",
-    "first": "1993",
-    "last": "1994",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123521",
-    "name": "Matt Turner",
-    "first": "1993",
-    "last": "1994",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123899",
-    "name": "Bruce Walton",
-    "first": "1991",
-    "last": "1994",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110249",
-    "name": "Mike Anderson",
-    "first": "1993",
-    "last": "1993",
     "games": 0,
     "teams": []
   },
@@ -5259,30 +2603,6 @@
     "mlbId": "115606",
     "name": "Hilly Hathaway",
     "first": "1992",
-    "last": "1993",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116578",
-    "name": "Dave Johnson",
-    "first": "1987",
-    "last": "1993",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116694",
-    "name": "Jimmy Jones",
-    "first": "1986",
-    "last": "1993",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116740",
-    "name": "Tim Jones",
-    "first": "1988",
     "last": "1993",
     "games": 0,
     "teams": []
@@ -5344,14 +2664,6 @@
     "teams": []
   },
   {
-    "mlbId": "121571",
-    "name": "John Russell",
-    "first": "1984",
-    "last": "1993",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "124266",
     "name": "Curtis Wilkerson",
     "first": "1983",
@@ -5360,41 +2672,9 @@
     "teams": []
   },
   {
-    "mlbId": "124425",
-    "name": "Steve Wilson",
-    "first": "1988",
-    "last": "1993",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110126",
-    "name": "Gerald Alexander",
-    "first": "1990",
-    "last": "1992",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110447",
-    "name": "Mark Bailey",
-    "first": "1984",
-    "last": "1992",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "110618",
     "name": "Tom Barrett",
     "first": "1988",
-    "last": "1992",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111566",
-    "name": "Kevin Brown",
-    "first": "1990",
     "last": "1992",
     "games": 0,
     "teams": []
@@ -5416,106 +2696,10 @@
     "teams": []
   },
   {
-    "mlbId": "114216",
-    "name": "Mike Flanagan",
-    "first": "1975",
-    "last": "1992",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115086",
-    "name": "Gary Green",
-    "first": "1986",
-    "last": "1992",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116230",
-    "name": "Pat Howell",
-    "first": "1992",
-    "last": "1992",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116665",
-    "name": "Calvin Jones",
-    "first": "1991",
-    "last": "1992",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "117078",
-    "name": "Eric King",
-    "first": "1986",
-    "last": "1992",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117681",
     "name": "Danny Leon",
     "first": "1992",
     "last": "1992",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "118417",
-    "name": "Greg Mathews",
-    "first": "1986",
-    "last": "1992",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "118611",
-    "name": "Rodney McCray",
-    "first": "1990",
-    "last": "1992",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121308",
-    "name": "Don Robinson",
-    "first": "1978",
-    "last": "1992",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121315",
-    "name": "Jeff Robinson",
-    "first": "1984",
-    "last": "1992",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121316",
-    "name": "Jeff Robinson",
-    "first": "1987",
-    "last": "1992",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122371",
-    "name": "Dave Smith",
-    "first": "1980",
-    "last": "1992",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110832",
-    "name": "Mike Bell",
-    "first": "1990",
-    "last": "1991",
     "games": 0,
     "teams": []
   },
@@ -5528,33 +2712,9 @@
     "teams": []
   },
   {
-    "mlbId": "112062",
-    "name": "Jeff Carter",
-    "first": "1991",
-    "last": "1991",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113125",
-    "name": "Mark Davis",
-    "first": "1991",
-    "last": "1991",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "113762",
     "name": "Wayne Edwards",
     "first": "1989",
-    "last": "1991",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115630",
-    "name": "Andy Hawkins",
-    "first": "1982",
     "last": "1991",
     "games": 0,
     "teams": []
@@ -5600,25 +2760,9 @@
     "teams": []
   },
   {
-    "mlbId": "118478",
-    "name": "Scott May",
-    "first": "1988",
-    "last": "1991",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "118574",
     "name": "Paul McClellan",
     "first": "1990",
-    "last": "1991",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "118626",
-    "name": "Terry McDaniel",
-    "first": "1991",
     "last": "1991",
     "games": 0,
     "teams": []
@@ -5640,58 +2784,10 @@
     "teams": []
   },
   {
-    "mlbId": "121941",
-    "name": "Mike Scott",
-    "first": "1979",
-    "last": "1991",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122398",
-    "name": "Greg Smith",
-    "first": "1989",
-    "last": "1991",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124322",
-    "name": "Kenny Williams",
-    "first": "1986",
-    "last": "1991",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "124370",
     "name": "Frank Wills",
     "first": "1983",
     "last": "1991",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110808",
-    "name": "Kevin Belcher",
-    "first": "1990",
-    "last": "1990",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "112069",
-    "name": "Steve Carter",
-    "first": "1989",
-    "last": "1990",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "112318",
-    "name": "Bryan Clark",
-    "first": "1981",
-    "last": "1990",
     "games": 0,
     "teams": []
   },
@@ -5707,14 +2803,6 @@
     "mlbId": "112668",
     "name": "Sherman Corbett",
     "first": "1988",
-    "last": "1990",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113122",
-    "name": "John Davis",
-    "first": "1987",
     "last": "1990",
     "games": 0,
     "teams": []
@@ -5738,14 +2826,6 @@
   {
     "mlbId": "115873",
     "name": "Eric Hetzel",
-    "first": "1989",
-    "last": "1990",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "117103",
-    "name": "Matt Kinzer",
     "first": "1989",
     "last": "1990",
     "games": 0,
@@ -5800,32 +2880,8 @@
     "teams": []
   },
   {
-    "mlbId": "121869",
-    "name": "Bill Schroeder",
-    "first": "1983",
-    "last": "1990",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "121905",
     "name": "Mike Schwabe",
-    "first": "1989",
-    "last": "1990",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122369",
-    "name": "Daryl Smith",
-    "first": "1990",
-    "last": "1990",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122435",
-    "name": "Mike Smith",
     "first": "1989",
     "last": "1990",
     "games": 0,
@@ -5840,49 +2896,9 @@
     "teams": []
   },
   {
-    "mlbId": "123824",
-    "name": "Greg Walker",
-    "first": "1982",
-    "last": "1990",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124078",
-    "name": "Terry Wells",
-    "first": "1990",
-    "last": "1990",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111559",
-    "name": "Chris Brown",
-    "first": "1984",
-    "last": "1989",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "113089",
     "name": "Bob Davidson",
     "first": "1989",
-    "last": "1989",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113127",
-    "name": "Mike Davis",
-    "first": "1980",
-    "last": "1989",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113138",
-    "name": "Steve Davis",
-    "first": "1985",
     "last": "1989",
     "games": 0,
     "teams": []
@@ -5912,33 +2928,9 @@
     "teams": []
   },
   {
-    "mlbId": "118555",
-    "name": "Tom McCarthy",
-    "first": "1985",
-    "last": "1989",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119099",
-    "name": "Keith Miller",
-    "first": "1988",
-    "last": "1989",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "120193",
     "name": "David Palmer",
     "first": "1978",
-    "last": "1989",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121107",
-    "name": "Craig Reynolds",
-    "first": "1975",
     "last": "1989",
     "games": 0,
     "teams": []
@@ -5952,42 +2944,10 @@
     "teams": []
   },
   {
-    "mlbId": "122434",
-    "name": "Mike Smith",
-    "first": "1984",
-    "last": "1989",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "124295",
     "name": "Dana Williams",
     "first": "1989",
     "last": "1989",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124309",
-    "name": "Frank Williams",
-    "first": "1984",
-    "last": "1989",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124708",
-    "name": "Mike Young",
-    "first": "1982",
-    "last": "1989",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111575",
-    "name": "Mike Brown",
-    "first": "1983",
-    "last": "1988",
     "games": 0,
     "teams": []
   },
@@ -6003,14 +2963,6 @@
     "mlbId": "113119",
     "name": "Joel Davis",
     "first": "1985",
-    "last": "1988",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113135",
-    "name": "Ron Davis",
-    "first": "1978",
     "last": "1988",
     "games": 0,
     "teams": []
@@ -6032,25 +2984,9 @@
     "teams": []
   },
   {
-    "mlbId": "117522",
-    "name": "Bill Laskey",
-    "first": "1982",
-    "last": "1988",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117576",
     "name": "Jack Lazorko",
     "first": "1984",
-    "last": "1988",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121365",
-    "name": "Ruben Rodriguez",
-    "first": "1986",
     "last": "1988",
     "games": 0,
     "teams": []
@@ -6080,33 +3016,9 @@
     "teams": []
   },
   {
-    "mlbId": "123157",
-    "name": "Terry Taylor",
-    "first": "1988",
-    "last": "1988",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123345",
-    "name": "Rusty Tillman",
-    "first": "1982",
-    "last": "1988",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "123440",
     "name": "John Trautwein",
     "first": "1988",
-    "last": "1988",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124333",
-    "name": "Reggie Williams",
-    "first": "1985",
     "last": "1988",
     "games": 0,
     "teams": []
@@ -6120,14 +3032,6 @@
     "teams": []
   },
   {
-    "mlbId": "111576",
-    "name": "Mike Brown",
-    "first": "1982",
-    "last": "1987",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "113322",
     "name": "Jeffrey DeWillis",
     "first": "1987",
@@ -6136,41 +3040,9 @@
     "teams": []
   },
   {
-    "mlbId": "115081",
-    "name": "David Green",
-    "first": "1981",
-    "last": "1987",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115555",
-    "name": "Mike Hart",
-    "first": "1984",
-    "last": "1987",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116439",
-    "name": "Reggie Jackson",
-    "first": "1967",
-    "last": "1987",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "116484",
     "name": "Bob James",
     "first": "1978",
-    "last": "1987",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116602",
-    "name": "Joe Johnson",
-    "first": "1985",
     "last": "1987",
     "games": 0,
     "teams": []
@@ -6216,57 +3088,9 @@
     "teams": []
   },
   {
-    "mlbId": "114333",
-    "name": "George Foster",
-    "first": "1969",
-    "last": "1986",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116672",
-    "name": "Chris Jones",
-    "first": "1985",
-    "last": "1986",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "116707",
     "name": "Lynn Jones",
     "first": "1979",
-    "last": "1986",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116716",
-    "name": "Ricky Jones",
-    "first": "1986",
-    "last": "1986",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116719",
-    "name": "Bob Jones",
-    "first": "1974",
-    "last": "1986",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "118345",
-    "name": "Mike Martin",
-    "first": "1986",
-    "last": "1986",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121574",
-    "name": "Bill Russell",
-    "first": "1969",
     "last": "1986",
     "games": 0,
     "teams": []
@@ -6280,22 +3104,6 @@
     "teams": []
   },
   {
-    "mlbId": "123288",
-    "name": "Jason Thompson",
-    "first": "1976",
-    "last": "1986",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123812",
-    "name": "Tony Walker",
-    "first": "1986",
-    "last": "1986",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "124558",
     "name": "Al Woods",
     "first": "1977",
@@ -6304,41 +3112,9 @@
     "teams": []
   },
   {
-    "mlbId": "111427",
-    "name": "Tom Brennan",
-    "first": "1981",
-    "last": "1985",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111573",
-    "name": "Mark Brown",
-    "first": "1984",
-    "last": "1985",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111589",
-    "name": "Bobby Brown",
-    "first": "1979",
-    "last": "1985",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "113288",
     "name": "Joseph DeSa",
     "first": "1980",
-    "last": "1985",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "114781",
-    "name": "Mark Gilbert",
-    "first": "1985",
     "last": "1985",
     "games": 0,
     "teams": []
@@ -6355,14 +3131,6 @@
     "mlbId": "116661",
     "name": "Al Jones",
     "first": "1983",
-    "last": "1985",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116711",
-    "name": "Mike Jones",
-    "first": "1980",
     "last": "1985",
     "games": 0,
     "teams": []
@@ -6400,30 +3168,6 @@
     "teams": []
   },
   {
-    "mlbId": "121390",
-    "name": "Steve Rogers",
-    "first": "1973",
-    "last": "1985",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122372",
-    "name": "Dave Smith",
-    "first": "1984",
-    "last": "1985",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122440",
-    "name": "Keith Smith",
-    "first": "1984",
-    "last": "1985",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "122909",
     "name": "John Stuper",
     "first": "1982",
@@ -6440,32 +3184,8 @@
     "teams": []
   },
   {
-    "mlbId": "111592",
-    "name": "Steve Brown",
-    "first": "1983",
-    "last": "1984",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "111661",
     "name": "Kevin Buckley",
-    "first": "1984",
-    "last": "1984",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111875",
-    "name": "Mike Caldwell",
-    "first": "1971",
-    "last": "1984",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115080",
-    "name": "Chris Green",
     "first": "1984",
     "last": "1984",
     "games": 0,
@@ -6480,57 +3200,9 @@
     "teams": []
   },
   {
-    "mlbId": "116622",
-    "name": "Ron Johnson",
-    "first": "1982",
-    "last": "1984",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116636",
-    "name": "Bill Johnson",
-    "first": "1983",
-    "last": "1984",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116698",
-    "name": "Jeff Jones",
-    "first": "1980",
-    "last": "1984",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117968",
     "name": "Willie Lozado",
     "first": "1984",
-    "last": "1984",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119068",
-    "name": "Eddie Miller",
-    "first": "1977",
-    "last": "1984",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "120196",
-    "name": "Jim Palmer",
-    "first": "1965",
-    "last": "1984",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121001",
-    "name": "Ron Reed",
-    "first": "1966",
     "last": "1984",
     "games": 0,
     "teams": []
@@ -6544,14 +3216,6 @@
     "teams": []
   },
   {
-    "mlbId": "121926",
-    "name": "Tony Scott",
-    "first": "1973",
-    "last": "1984",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "123657",
     "name": "Eddie Vargas",
     "first": "1982",
@@ -6560,57 +3224,9 @@
     "teams": []
   },
   {
-    "mlbId": "124282",
-    "name": "Albert Williams",
-    "first": "1980",
-    "last": "1984",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110849",
-    "name": "Johnny Bench",
-    "first": "1967",
-    "last": "1983",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111348",
-    "name": "Mark Bradley",
-    "first": "1981",
-    "last": "1983",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "111883",
     "name": "Ben Callahan",
     "first": "1983",
-    "last": "1983",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "112908",
-    "name": "Víctor Cruz",
-    "first": "1978",
-    "last": "1983",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "114067",
-    "name": "Joe Ferguson",
-    "first": "1970",
-    "last": "1983",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116098",
-    "name": "Scott Holman",
-    "first": "1980",
     "last": "1983",
     "games": 0,
     "teams": []
@@ -6624,33 +3240,9 @@
     "teams": []
   },
   {
-    "mlbId": "116565",
-    "name": "Bob Johnson",
-    "first": "1981",
-    "last": "1983",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116699",
-    "name": "Jeff Jones",
-    "first": "1983",
-    "last": "1983",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117489",
     "name": "Joe Lansford",
     "first": "1982",
-    "last": "1983",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119308",
-    "name": "Kelvin Moore",
-    "first": "1981",
     "last": "1983",
     "games": 0,
     "teams": []
@@ -6672,113 +3264,9 @@
     "teams": []
   },
   {
-    "mlbId": "122365",
-    "name": "Chris Smith",
-    "first": "1981",
-    "last": "1983",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122423",
-    "name": "Ken Smith",
-    "first": "1981",
-    "last": "1983",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122431",
-    "name": "Mark Smith",
-    "first": "1983",
-    "last": "1983",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122445",
-    "name": "Ray Smith",
-    "first": "1981",
-    "last": "1983",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110830",
-    "name": "Kevin Bell",
-    "first": "1976",
-    "last": "1982",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113752",
-    "name": "Dave Edwards",
-    "first": "1978",
-    "last": "1982",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115062",
-    "name": "Gary Gray",
-    "first": "1977",
-    "last": "1982",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115392",
-    "name": "Steve Hammond",
-    "first": "1982",
-    "last": "1982",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "115829",
     "name": "Pete Hernández",
     "first": "1979",
-    "last": "1982",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116425",
-    "name": "Darrell Jackson",
-    "first": "1978",
-    "last": "1982",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116561",
-    "name": "Tony Johnson",
-    "first": "1981",
-    "last": "1982",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "120295",
-    "name": "Mike Patterson",
-    "first": "1981",
-    "last": "1982",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122360",
-    "name": "Reggie Smith",
-    "first": "1966",
-    "last": "1982",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122414",
-    "name": "Jim Smith",
-    "first": "1982",
     "last": "1982",
     "games": 0,
     "teams": []
@@ -6800,57 +3288,9 @@
     "teams": []
   },
   {
-    "mlbId": "110125",
-    "name": "Gary Alexander",
-    "first": "1975",
-    "last": "1981",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113133",
-    "name": "Bob Davis",
-    "first": "1973",
-    "last": "1981",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115194",
-    "name": "Jerry Grote",
-    "first": "1963",
-    "last": "1981",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115526",
-    "name": "John Harris",
-    "first": "1979",
-    "last": "1981",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "116374",
     "name": "Tom Hutton",
     "first": "1966",
-    "last": "1981",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116943",
-    "name": "Pat Kelly",
-    "first": "1967",
-    "last": "1981",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "117608",
-    "name": "Mark Lee",
-    "first": "1978",
     "last": "1981",
     "games": 0,
     "teams": []
@@ -6888,65 +3328,9 @@
     "teams": []
   },
   {
-    "mlbId": "123544",
-    "name": "Mike Tyson",
-    "first": "1972",
-    "last": "1981",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111058",
-    "name": "Paul Blair",
-    "first": "1964",
-    "last": "1980",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "112504",
-    "name": "Don Collins",
-    "first": "1977",
-    "last": "1980",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113759",
-    "name": "Mike Edwards",
-    "first": "1977",
-    "last": "1980",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115553",
-    "name": "Mike Hart",
-    "first": "1980",
-    "last": "1980",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116940",
-    "name": "Pat Kelly",
-    "first": "1980",
-    "last": "1980",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117393",
     "name": "Ralph LaCock",
     "first": "1972",
-    "last": "1980",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119855",
-    "name": "Willie Norwood",
-    "first": "1977",
     "last": "1980",
     "games": 0,
     "teams": []
@@ -6992,46 +3376,6 @@
     "teams": []
   },
   {
-    "mlbId": "122422",
-    "name": "Keith Smith",
-    "first": "1977",
-    "last": "1980",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110248",
-    "name": "Mike Anderson",
-    "first": "1971",
-    "last": "1979",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111495",
-    "name": "Lou Brock",
-    "first": "1961",
-    "last": "1979",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113139",
-    "name": "Steve Davis",
-    "first": "1979",
-    "last": "1979",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113146",
-    "name": "Willie Davis",
-    "first": "1960",
-    "last": "1979",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "113201",
     "name": "Arturo DeFreitas",
     "first": "1978",
@@ -7043,14 +3387,6 @@
     "mlbId": "116076",
     "name": "Gary Holle",
     "first": "1979",
-    "last": "1979",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116632",
-    "name": "Tim Johnson",
-    "first": "1973",
     "last": "1979",
     "games": 0,
     "teams": []
@@ -7072,14 +3408,6 @@
     "teams": []
   },
   {
-    "mlbId": "123126",
-    "name": "Bruce Taylor",
-    "first": "1977",
-    "last": "1979",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "124104",
     "name": "Jim Wessinger",
     "first": "1979",
@@ -7088,57 +3416,9 @@
     "teams": []
   },
   {
-    "mlbId": "110065",
-    "name": "Mike Adams",
-    "first": "1972",
-    "last": "1978",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111593",
-    "name": "Tom Brown",
-    "first": "1978",
-    "last": "1978",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "112041",
     "name": "Clay Carroll",
     "first": "1964",
-    "last": "1978",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "112182",
-    "name": "Mike Champion",
-    "first": "1976",
-    "last": "1978",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116577",
-    "name": "Dave Johnson",
-    "first": "1974",
-    "last": "1978",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116607",
-    "name": "Larry Johnson",
-    "first": "1972",
-    "last": "1978",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116631",
-    "name": "Tom Johnson",
-    "first": "1974",
     "last": "1978",
     "games": 0,
     "teams": []
@@ -7155,14 +3435,6 @@
     "mlbId": "117684",
     "name": "Max Leon",
     "first": "1973",
-    "last": "1978",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119888",
-    "name": "Jim Obradovich",
-    "first": "1978",
     "last": "1978",
     "games": 0,
     "teams": []
@@ -7200,50 +3472,10 @@
     "teams": []
   },
   {
-    "mlbId": "123275",
-    "name": "Bobby Thompson",
-    "first": "1978",
-    "last": "1978",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124292",
-    "name": "Charlie Williams",
-    "first": "1971",
-    "last": "1978",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "124366",
     "name": "Jim Willoughby",
     "first": "1971",
     "last": "1978",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110064",
-    "name": "Bob Adams",
-    "first": "1977",
-    "last": "1977",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110247",
-    "name": "Larry Anderson",
-    "first": "1974",
-    "last": "1977",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111823",
-    "name": "Bill Butler",
-    "first": "1969",
-    "last": "1977",
     "games": 0,
     "teams": []
   },
@@ -7266,38 +3498,6 @@
   {
     "mlbId": "113233",
     "name": "Luis Delgado",
-    "first": "1977",
-    "last": "1977",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "114219",
-    "name": "John Flannery",
-    "first": "1977",
-    "last": "1977",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116596",
-    "name": "Jerry Johnson",
-    "first": "1968",
-    "last": "1977",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116619",
-    "name": "Bob Johnson",
-    "first": "1969",
-    "last": "1977",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116733",
-    "name": "Tim Jones",
     "first": "1977",
     "last": "1977",
     "games": 0,
@@ -7344,50 +3544,10 @@
     "teams": []
   },
   {
-    "mlbId": "123264",
-    "name": "Stan Thomas",
-    "first": "1974",
-    "last": "1977",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "123393",
     "name": "Tommy Toms",
     "first": "1975",
     "last": "1977",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123863",
-    "name": "Mike Wallace",
-    "first": "1973",
-    "last": "1977",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124304",
-    "name": "Earl Williams",
-    "first": "1970",
-    "last": "1977",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124324",
-    "name": "Mark Williams",
-    "first": "1977",
-    "last": "1977",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111442",
-    "name": "Jim Brewer",
-    "first": "1960",
-    "last": "1976",
     "games": 0,
     "teams": []
   },
@@ -7400,41 +3560,9 @@
     "teams": []
   },
   {
-    "mlbId": "113112",
-    "name": "Tommy Davis",
-    "first": "1959",
-    "last": "1976",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115439",
-    "name": "Bob Hansen",
-    "first": "1974",
-    "last": "1976",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115464",
-    "name": "Larry Hardy",
-    "first": "1974",
-    "last": "1976",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "116504",
     "name": "Al Javier",
     "first": "1976",
-    "last": "1976",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116560",
-    "name": "Alex Johnson",
-    "first": "1964",
     "last": "1976",
     "games": 0,
     "teams": []
@@ -7456,41 +3584,9 @@
     "teams": []
   },
   {
-    "mlbId": "119059",
-    "name": "Bruce Miller",
-    "first": "1973",
-    "last": "1976",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "120466",
     "name": "Fritz Peterson",
     "first": "1966",
-    "last": "1976",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121670",
-    "name": "Ken Sanders",
-    "first": "1964",
-    "last": "1976",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123122",
-    "name": "Tony Taylor",
-    "first": "1958",
-    "last": "1976",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124290",
-    "name": "Billy Williams",
-    "first": "1959",
     "last": "1976",
     "games": 0,
     "teams": []
@@ -7520,25 +3616,9 @@
     "teams": []
   },
   {
-    "mlbId": "116946",
-    "name": "Tom Kelly",
-    "first": "1975",
-    "last": "1975",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "118610",
     "name": "Tom McCraw",
     "first": "1963",
-    "last": "1975",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "118755",
-    "name": "Joe McIntosh",
-    "first": "1974",
     "last": "1975",
     "games": 0,
     "teams": []
@@ -7576,41 +3656,9 @@
     "teams": []
   },
   {
-    "mlbId": "123297",
-    "name": "Mike Thompson",
-    "first": "1971",
-    "last": "1975",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124344",
-    "name": "Walt Williams",
-    "first": "1964",
-    "last": "1975",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110827",
-    "name": "Jerry Bell",
-    "first": "1971",
-    "last": "1974",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "111070",
     "name": "Damaso Blanco",
     "first": "1972",
-    "last": "1974",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111568",
-    "name": "Larry Brown",
-    "first": "1963",
     "last": "1974",
     "games": 0,
     "teams": []
@@ -7624,33 +3672,9 @@
     "teams": []
   },
   {
-    "mlbId": "116325",
-    "name": "Ron Hunt",
-    "first": "1963",
-    "last": "1974",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116612",
-    "name": "Mike Johnson",
-    "first": "1974",
-    "last": "1974",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117079",
     "name": "Hal King",
     "first": "1967",
-    "last": "1974",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119112",
-    "name": "Bob Miller",
-    "first": "1957",
     "last": "1974",
     "games": 0,
     "teams": []
@@ -7664,14 +3688,6 @@
     "teams": []
   },
   {
-    "mlbId": "120953",
-    "name": "Jim Ray",
-    "first": "1965",
-    "last": "1974",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "123349",
     "name": "Tom Timmermann",
     "first": "1969",
@@ -7680,65 +3696,9 @@
     "teams": []
   },
   {
-    "mlbId": "123912",
-    "name": "Chris Ward",
-    "first": "1972",
-    "last": "1974",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124289",
-    "name": "Bernie Williams",
-    "first": "1970",
-    "last": "1974",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124385",
-    "name": "Don Wilson",
-    "first": "1966",
-    "last": "1974",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110084",
-    "name": "Tommie Agee",
-    "first": "1962",
-    "last": "1973",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110269",
-    "name": "John Andrews",
-    "first": "1973",
-    "last": "1973",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "111386",
     "name": "Darrell Brandon",
     "first": "1966",
-    "last": "1973",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111514",
-    "name": "Bobby Brooks",
-    "first": "1969",
-    "last": "1973",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111539",
-    "name": "Curtis Brown",
-    "first": "1973",
     "last": "1973",
     "games": 0,
     "teams": []
@@ -7776,25 +3736,9 @@
     "teams": []
   },
   {
-    "mlbId": "116437",
-    "name": "Mike Jackson",
-    "first": "1970",
-    "last": "1973",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "116929",
     "name": "Tom Kelley",
     "first": "1964",
-    "last": "1973",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "118318",
-    "name": "Keith Marshall",
-    "first": "1973",
     "last": "1973",
     "games": 0,
     "teams": []
@@ -7816,42 +3760,10 @@
     "teams": []
   },
   {
-    "mlbId": "122779",
-    "name": "Jimmy Stewart",
-    "first": "1963",
-    "last": "1973",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "123692",
     "name": "Carlos Velazquez",
     "first": "1973",
     "last": "1973",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "114338",
-    "name": "Roy Foster",
-    "first": "1970",
-    "last": "1972",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115384",
-    "name": "Steve Hamilton",
-    "first": "1961",
-    "last": "1972",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "117564",
-    "name": "Steve Lawson",
-    "first": "1972",
-    "last": "1972",
     "games": 0,
     "teams": []
   },
@@ -7867,14 +3779,6 @@
     "mlbId": "118633",
     "name": "Terrance McDermott",
     "first": "1972",
-    "last": "1972",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119267",
-    "name": "Monty Montgomery",
-    "first": "1971",
     "last": "1972",
     "games": 0,
     "teams": []
@@ -7907,14 +3811,6 @@
     "mlbId": "122259",
     "name": "Steve Simpson",
     "first": "1972",
-    "last": "1972",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122826",
-    "name": "Ron Stone",
-    "first": "1966",
     "last": "1972",
     "games": 0,
     "teams": []
@@ -7960,14 +3856,6 @@
     "teams": []
   },
   {
-    "mlbId": "114925",
-    "name": "Tony Gonzalez",
-    "first": "1960",
-    "last": "1971",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "115373",
     "name": "Roger Hambright",
     "first": "1971",
@@ -7978,70 +3866,6 @@
   {
     "mlbId": "115636",
     "name": "Hal Haydel",
-    "first": "1970",
-    "last": "1971",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116589",
-    "name": "Frank Johnson",
-    "first": "1966",
-    "last": "1971",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116687",
-    "name": "Gary Jones",
-    "first": "1970",
-    "last": "1971",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119702",
-    "name": "Jim Nelson",
-    "first": "1970",
-    "last": "1971",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119905",
-    "name": "Bob O'Brien",
-    "first": "1971",
-    "last": "1971",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "120076",
-    "name": "Jose Ortiz",
-    "first": "1969",
-    "last": "1971",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "120758",
-    "name": "Jim Price",
-    "first": "1967",
-    "last": "1971",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "120765",
-    "name": "Bob Priddy",
-    "first": "1962",
-    "last": "1971",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121306",
-    "name": "Dave Robinson",
     "first": "1970",
     "last": "1971",
     "games": 0,
@@ -8072,25 +3896,9 @@
     "teams": []
   },
   {
-    "mlbId": "122471",
-    "name": "Willie Smith",
-    "first": "1963",
-    "last": "1971",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "123025",
     "name": "Stan Swanson",
     "first": "1971",
-    "last": "1971",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123248",
-    "name": "George Thomas",
-    "first": "1957",
     "last": "1971",
     "games": 0,
     "teams": []
@@ -8112,22 +3920,6 @@
     "teams": []
   },
   {
-    "mlbId": "111546",
-    "name": "Randy Brown",
-    "first": "1969",
-    "last": "1970",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "112268",
-    "name": "Bob Christian",
-    "first": "1968",
-    "last": "1970",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "112529",
     "name": "Loyd Colson",
     "first": "1970",
@@ -8136,48 +3928,8 @@
     "teams": []
   },
   {
-    "mlbId": "112544",
-    "name": "Mike Compton",
-    "first": "1970",
-    "last": "1970",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116498",
-    "name": "Ray Jarvis",
-    "first": "1969",
-    "last": "1970",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116604",
-    "name": "Ken Johnson",
-    "first": "1958",
-    "last": "1970",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116621",
-    "name": "Bob Johnson",
-    "first": "1960",
-    "last": "1970",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117027",
     "name": "Rick Kester",
-    "first": "1968",
-    "last": "1970",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "118669",
-    "name": "Leon McFadden",
     "first": "1968",
     "last": "1970",
     "games": 0,
@@ -8196,30 +3948,6 @@
     "name": "Bob Reed",
     "first": "1969",
     "last": "1970",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124317",
-    "name": "Jim Williams",
-    "first": "1969",
-    "last": "1970",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124420",
-    "name": "Earl Wilson",
-    "first": "1959",
-    "last": "1970",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110051",
-    "name": "Doug Adams",
-    "first": "1969",
-    "last": "1969",
     "games": 0,
     "teams": []
   },
@@ -8248,33 +3976,9 @@
     "teams": []
   },
   {
-    "mlbId": "113097",
-    "name": "Bill Davis",
-    "first": "1965",
-    "last": "1969",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113134",
-    "name": "Ron Davis",
-    "first": "1962",
-    "last": "1969",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "113223",
     "name": "Miguel de la Hoz",
     "first": "1960",
-    "last": "1969",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113817",
-    "name": "Jim Ellis",
-    "first": "1967",
     "last": "1969",
     "games": 0,
     "teams": []
@@ -8296,25 +4000,9 @@
     "teams": []
   },
   {
-    "mlbId": "115793",
-    "name": "Bill Henry",
-    "first": "1952",
-    "last": "1969",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "116419",
     "name": "Al Jackson",
     "first": "1959",
-    "last": "1969",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116729",
-    "name": "Steve Jones",
-    "first": "1967",
     "last": "1969",
     "games": 0,
     "teams": []
@@ -8339,14 +4027,6 @@
     "mlbId": "119051",
     "name": "Jim Miles",
     "first": "1968",
-    "last": "1969",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119083",
-    "name": "John Miller",
-    "first": "1966",
     "last": "1969",
     "games": 0,
     "teams": []
@@ -8384,14 +4064,6 @@
     "teams": []
   },
   {
-    "mlbId": "124347",
-    "name": "Billy Williams",
-    "first": "1969",
-    "last": "1969",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "124694",
     "name": "Don Young",
     "first": "1965",
@@ -8400,25 +4072,9 @@
     "teams": []
   },
   {
-    "mlbId": "111640",
-    "name": "Billy Bryan",
-    "first": "1961",
-    "last": "1968",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "112594",
     "name": "Bill Connors",
     "first": "1966",
-    "last": "1968",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116673",
-    "name": "Clarence Jones",
-    "first": "1967",
     "last": "1968",
     "games": 0,
     "teams": []
@@ -8440,66 +4096,10 @@
     "teams": []
   },
   {
-    "mlbId": "117611",
-    "name": "Bob Lee",
-    "first": "1964",
-    "last": "1968",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122956",
-    "name": "John Sullivan",
-    "first": "1963",
-    "last": "1968",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "123931",
     "name": "Jon Warden",
     "first": "1968",
     "last": "1968",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110161",
-    "name": "Bob Allen",
-    "first": "1961",
-    "last": "1967",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111931",
-    "name": "Joe Campbell",
-    "first": "1967",
-    "last": "1967",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115176",
-    "name": "Dick Groat",
-    "first": "1952",
-    "last": "1967",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115511",
-    "name": "Alonzo Harris",
-    "first": "1967",
-    "last": "1967",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "117080",
-    "name": "Jim King",
-    "first": "1955",
-    "last": "1967",
     "games": 0,
     "teams": []
   },
@@ -8512,25 +4112,9 @@
     "teams": []
   },
   {
-    "mlbId": "119086",
-    "name": "John Miller",
-    "first": "1962",
-    "last": "1967",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "119275",
     "name": "Joe Moock",
     "first": "1967",
-    "last": "1967",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "120143",
-    "name": "Jim Owens",
-    "first": "1955",
     "last": "1967",
     "games": 0,
     "teams": []
@@ -8600,14 +4184,6 @@
     "teams": []
   },
   {
-    "mlbId": "112783",
-    "name": "Roger Craig",
-    "first": "1955",
-    "last": "1966",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "113586",
     "name": "Jim Duckworth",
     "first": "1963",
@@ -8632,49 +4208,9 @@
     "teams": []
   },
   {
-    "mlbId": "115387",
-    "name": "Ken Hamlin",
-    "first": "1957",
-    "last": "1966",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115792",
-    "name": "Bill Henry",
-    "first": "1966",
-    "last": "1966",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116689",
-    "name": "Deacon Jones",
-    "first": "1962",
-    "last": "1966",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119094",
-    "name": "Larry Miller",
-    "first": "1964",
-    "last": "1966",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "119574",
     "name": "Billy Murphy",
     "first": "1966",
-    "last": "1966",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121161",
-    "name": "Bobby Richardson",
-    "first": "1955",
     "last": "1966",
     "games": 0,
     "teams": []
@@ -8728,14 +4264,6 @@
     "teams": []
   },
   {
-    "mlbId": "116688",
-    "name": "Gordon Jones",
-    "first": "1954",
-    "last": "1965",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "116794",
     "name": "Mike Jurewicz",
     "first": "1965",
@@ -8744,25 +4272,9 @@
     "teams": []
   },
   {
-    "mlbId": "118525",
-    "name": "Ken McBride",
-    "first": "1959",
-    "last": "1965",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "118529",
     "name": "Joe McCabe",
     "first": "1964",
-    "last": "1965",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119302",
-    "name": "Jackie Moore",
-    "first": "1965",
     "last": "1965",
     "games": 0,
     "teams": []
@@ -8808,22 +4320,6 @@
     "teams": []
   },
   {
-    "mlbId": "124180",
-    "name": "Mike White",
-    "first": "1963",
-    "last": "1965",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110250",
-    "name": "Craig Anderson",
-    "first": "1961",
-    "last": "1964",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "111113",
     "name": "Bud Bloomfield",
     "first": "1963",
@@ -8835,14 +4331,6 @@
     "mlbId": "114168",
     "name": "Fritz Fisher",
     "first": "1964",
-    "last": "1964",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116725",
-    "name": "Sam Jones",
-    "first": "1947",
     "last": "1964",
     "games": 0,
     "teams": []
@@ -8920,38 +4408,6 @@
     "teams": []
   },
   {
-    "mlbId": "124312",
-    "name": "George Williams",
-    "first": "1961",
-    "last": "1964",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111596",
-    "name": "Tom Brown",
-    "first": "1963",
-    "last": "1963",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "112562",
-    "name": "Gene Conley",
-    "first": "1952",
-    "last": "1963",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113181",
-    "name": "Dave DeBusschere",
-    "first": "1962",
-    "last": "1963",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "113670",
     "name": "Bob Dustal",
     "first": "1963",
@@ -8984,25 +4440,9 @@
     "teams": []
   },
   {
-    "mlbId": "117610",
-    "name": "Mike Lee",
-    "first": "1960",
-    "last": "1963",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117666",
     "name": "Richard LeMay",
     "first": "1961",
-    "last": "1963",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "117867",
-    "name": "Johnny Logan",
-    "first": "1951",
     "last": "1963",
     "games": 0,
     "teams": []
@@ -9064,14 +4504,6 @@
     "teams": []
   },
   {
-    "mlbId": "110242",
-    "name": "John Anderson",
-    "first": "1958",
-    "last": "1962",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "113202",
     "name": "Michael DeGerick",
     "first": "1961",
@@ -9083,14 +4515,6 @@
     "mlbId": "114711",
     "name": "George Gerberman",
     "first": "1962",
-    "last": "1962",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115160",
-    "name": "Bob Grim",
-    "first": "1954",
     "last": "1962",
     "games": 0,
     "teams": []
@@ -9128,25 +4552,9 @@
     "teams": []
   },
   {
-    "mlbId": "118323",
-    "name": "Jim Marshall",
-    "first": "1958",
-    "last": "1962",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "118785",
     "name": "Jim McKnight",
     "first": "1960",
-    "last": "1962",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119110",
-    "name": "Bob Miller",
-    "first": "1953",
     "last": "1962",
     "games": 0,
     "teams": []
@@ -9192,30 +4600,6 @@
     "teams": []
   },
   {
-    "mlbId": "122469",
-    "name": "Bill Smith",
-    "first": "1958",
-    "last": "1962",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124187",
-    "name": "Sammy White",
-    "first": "1951",
-    "last": "1962",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110697",
-    "name": "Hank Bauer",
-    "first": "1948",
-    "last": "1961",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "112296",
     "name": "Frank Cipriani",
     "first": "1961",
@@ -9251,22 +4635,6 @@
     "mlbId": "116451",
     "name": "Jake Jacobs",
     "first": "1960",
-    "last": "1961",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116629",
-    "name": "Stan Johnson",
-    "first": "1960",
-    "last": "1961",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116741",
-    "name": "Willie Jones",
-    "first": "1947",
     "last": "1961",
     "games": 0,
     "teams": []
@@ -9320,14 +4688,6 @@
     "teams": []
   },
   {
-    "mlbId": "113132",
-    "name": "Bob Davis",
-    "first": "1958",
-    "last": "1960",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "114495",
     "name": "Carl Furillo",
     "first": "1946",
@@ -9344,25 +4704,9 @@
     "teams": []
   },
   {
-    "mlbId": "121558",
-    "name": "Bob Rush",
-    "first": "1948",
-    "last": "1960",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "122058",
     "name": "Wally Shannon",
     "first": "1959",
-    "last": "1960",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123237",
-    "name": "Carl Thomas",
-    "first": "1960",
     "last": "1960",
     "games": 0,
     "teams": []
@@ -9372,14 +4716,6 @@
     "name": "Franklin Wieand",
     "first": "1958",
     "last": "1960",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110446",
-    "name": "Jim Bailey",
-    "first": "1959",
-    "last": "1959",
     "games": 0,
     "teams": []
   },
@@ -9403,14 +4739,6 @@
     "mlbId": "115212",
     "name": "Al Grunwald",
     "first": "1955",
-    "last": "1959",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116438",
-    "name": "Randy Jackson",
-    "first": "1950",
     "last": "1959",
     "games": 0,
     "teams": []
@@ -9448,34 +4776,10 @@
     "teams": []
   },
   {
-    "mlbId": "121180",
-    "name": "Dick Ricketts",
-    "first": "1959",
-    "last": "1959",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "122565",
     "name": "Bob Speake",
     "first": "1955",
     "last": "1959",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123144",
-    "name": "Joe Taylor",
-    "first": "1954",
-    "last": "1959",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "114190",
-    "name": "John Fitzgerald",
-    "first": "1958",
-    "last": "1958",
     "games": 0,
     "teams": []
   },
@@ -9512,14 +4816,6 @@
     "teams": []
   },
   {
-    "mlbId": "119111",
-    "name": "Bob Miller",
-    "first": "1949",
-    "last": "1958",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "122441",
     "name": "Paul Smith",
     "first": "1953",
@@ -9531,14 +4827,6 @@
     "mlbId": "123164",
     "name": "Bill Taylor",
     "first": "1954",
-    "last": "1958",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124419",
-    "name": "Bob Wilson",
-    "first": "1947",
     "last": "1958",
     "games": 0,
     "teams": []
@@ -9562,22 +4850,6 @@
   {
     "mlbId": "113032",
     "name": "Chuck Daniel",
-    "first": "1957",
-    "last": "1957",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113116",
-    "name": "Jim Davis",
-    "first": "1954",
-    "last": "1957",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115932",
-    "name": "Dave Hill",
     "first": "1957",
     "last": "1957",
     "games": 0,
@@ -9656,14 +4928,6 @@
     "teams": []
   },
   {
-    "mlbId": "121324",
-    "name": "Eddie Robinson",
-    "first": "1942",
-    "last": "1957",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "122233",
     "name": "Charles Silvera",
     "first": "1948",
@@ -9690,14 +4954,6 @@
   {
     "mlbId": "110495",
     "name": "Bobby Balcena",
-    "first": "1956",
-    "last": "1956",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110948",
-    "name": "Fred Besana",
     "first": "1956",
     "last": "1956",
     "games": 0,
@@ -9731,14 +4987,6 @@
     "mlbId": "118229",
     "name": "Jim Mangan",
     "first": "1952",
-    "last": "1956",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119197",
-    "name": "Dale Mitchell",
-    "first": "1946",
     "last": "1956",
     "games": 0,
     "teams": []
@@ -9779,14 +5027,6 @@
     "mlbId": "124095",
     "name": "George Werley",
     "first": "1956",
-    "last": "1956",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124397",
-    "name": "George Wilson",
-    "first": "1952",
     "last": "1956",
     "games": 0,
     "teams": []
@@ -9840,14 +5080,6 @@
     "teams": []
   },
   {
-    "mlbId": "119132",
-    "name": "Bill Miller",
-    "first": "1952",
-    "last": "1955",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "121918",
     "name": "Jerry Schypinski",
     "first": "1955",
@@ -9867,14 +5099,6 @@
     "mlbId": "122789",
     "name": "Bill Stewart",
     "first": "1955",
-    "last": "1955",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123124",
-    "name": "Ben Taylor",
-    "first": "1951",
     "last": "1955",
     "games": 0,
     "teams": []
@@ -9904,34 +5128,10 @@
     "teams": []
   },
   {
-    "mlbId": "124162",
-    "name": "Charlie White",
-    "first": "1954",
-    "last": "1955",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "124166",
     "name": "Ed White",
     "first": "1955",
     "last": "1955",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110739",
-    "name": "Ralph Beard",
-    "first": "1954",
-    "last": "1954",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111588",
-    "name": "Bobby Brown",
-    "first": "1946",
-    "last": "1954",
     "games": 0,
     "teams": []
   },
@@ -9976,14 +5176,6 @@
     "teams": []
   },
   {
-    "mlbId": "119568",
-    "name": "Dick Murphy",
-    "first": "1954",
-    "last": "1954",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "120828",
     "name": "Billy Queen",
     "first": "1954",
@@ -10016,14 +5208,6 @@
     "teams": []
   },
   {
-    "mlbId": "112334",
-    "name": "Mike Clark",
-    "first": "1952",
-    "last": "1953",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "113076",
     "name": "Pompeyo Davalillo",
     "first": "1953",
@@ -10032,25 +5216,9 @@
     "teams": []
   },
   {
-    "mlbId": "113813",
-    "name": "Bob Elliott",
-    "first": "1939",
-    "last": "1953",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "116063",
     "name": "Ken Holcombe",
     "first": "1945",
-    "last": "1953",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116640",
-    "name": "Billy Johnson",
-    "first": "1943",
     "last": "1953",
     "games": 0,
     "teams": []
@@ -10120,14 +5288,6 @@
     "teams": []
   },
   {
-    "mlbId": "120518",
-    "name": "Eddie Phillips",
-    "first": "1953",
-    "last": "1953",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "122964",
     "name": "Russ Sullivan",
     "first": "1951",
@@ -10155,14 +5315,6 @@
     "mlbId": "110311",
     "name": "Hank Arft",
     "first": "1948",
-    "last": "1952",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110364",
-    "name": "James Atkins",
-    "first": "1950",
     "last": "1952",
     "games": 0,
     "teams": []
@@ -10216,14 +5368,6 @@
     "teams": []
   },
   {
-    "mlbId": "116605",
-    "name": "Ken Johnson",
-    "first": "1947",
-    "last": "1952",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117348",
     "name": "Johnny Kucab",
     "first": "1950",
@@ -10264,26 +5408,10 @@
     "teams": []
   },
   {
-    "mlbId": "123136",
-    "name": "Fred Taylor",
-    "first": "1950",
-    "last": "1952",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "123578",
     "name": "Tom Upton",
     "first": "1950",
     "last": "1952",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "112592",
-    "name": "Chuck Connors",
-    "first": "1949",
-    "last": "1951",
     "games": 0,
     "teams": []
   },
@@ -10312,14 +5440,6 @@
     "teams": []
   },
   {
-    "mlbId": "116582",
-    "name": "Earl Johnson",
-    "first": "1940",
-    "last": "1951",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117269",
     "name": "Bill Koski",
     "first": "1951",
@@ -10336,14 +5456,6 @@
     "teams": []
   },
   {
-    "mlbId": "121299",
-    "name": "Aaron Robinson",
-    "first": "1943",
-    "last": "1951",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "121785",
     "name": "Bob Scheffing",
     "first": "1941",
@@ -10355,14 +5467,6 @@
     "mlbId": "118608",
     "name": "Les McCrabb",
     "first": "1939",
-    "last": "1950",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119069",
-    "name": "Eddie Miller",
-    "first": "1936",
     "last": "1950",
     "games": 0,
     "teams": []
@@ -10387,14 +5491,6 @@
     "mlbId": "120841",
     "name": "Frank Quinn",
     "first": "1949",
-    "last": "1950",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121418",
-    "name": "Jim Romano",
-    "first": "1950",
     "last": "1950",
     "games": 0,
     "teams": []
@@ -10432,14 +5528,6 @@
     "teams": []
   },
   {
-    "mlbId": "110972",
-    "name": "Hank Biasatti",
-    "first": "1949",
-    "last": "1949",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "111341",
     "name": "Fred Bradley",
     "first": "1948",
@@ -10459,14 +5547,6 @@
     "mlbId": "114387",
     "name": "Herman Franks",
     "first": "1939",
-    "last": "1949",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115674",
-    "name": "Jeff Heath",
-    "first": "1936",
     "last": "1949",
     "games": 0,
     "teams": []
@@ -10512,14 +5592,6 @@
     "teams": []
   },
   {
-    "mlbId": "122955",
-    "name": "John Sullivan",
-    "first": "1942",
-    "last": "1949",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "123278",
     "name": "Forrest Thompson",
     "first": "1948",
@@ -10552,14 +5624,6 @@
     "teams": []
   },
   {
-    "mlbId": "112866",
-    "name": "Jeff Cross",
-    "first": "1942",
-    "last": "1948",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "114700",
     "name": "Rufe Gentry",
     "first": "1943",
@@ -10570,14 +5634,6 @@
   {
     "mlbId": "114959",
     "name": "Jim Goodwin",
-    "first": "1948",
-    "last": "1948",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115345",
-    "name": "John Hall",
     "first": "1948",
     "last": "1948",
     "games": 0,
@@ -10608,25 +5664,9 @@
     "teams": []
   },
   {
-    "mlbId": "118552",
-    "name": "Johnny McCarthy",
-    "first": "1934",
-    "last": "1948",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "120189",
     "name": "Mike Palm",
     "first": "1948",
-    "last": "1948",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121887",
-    "name": "Howie Schultz",
-    "first": "1943",
     "last": "1948",
     "games": 0,
     "teams": []
@@ -11008,14 +6048,6 @@
     "teams": []
   },
   {
-    "mlbId": "817158",
-    "name": "Willie Smith",
-    "first": "1948",
-    "last": "1948",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "817163",
     "name": "Taylor Smith",
     "first": "1948",
@@ -11243,14 +6275,6 @@
     "mlbId": "817779",
     "name": "Bill Perkins",
     "first": "1928",
-    "last": "1948",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "817784",
-    "name": "Luis Perez",
-    "first": "1948",
     "last": "1948",
     "games": 0,
     "teams": []
@@ -11512,14 +6536,6 @@
     "teams": []
   },
   {
-    "mlbId": "818429",
-    "name": "Raul Lopez",
-    "first": "1948",
-    "last": "1948",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "818450",
     "name": "Earnest Long",
     "first": "1948",
@@ -11712,14 +6728,6 @@
     "teams": []
   },
   {
-    "mlbId": "819280",
-    "name": "Joe Greene",
-    "first": "1932",
-    "last": "1948",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "819398",
     "name": "Walter Gibbons",
     "first": "1948",
@@ -11792,14 +6800,6 @@
     "teams": []
   },
   {
-    "mlbId": "819844",
-    "name": "Johnny Davis",
-    "first": "1941",
-    "last": "1948",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "819875",
     "name": "Charley Davidson",
     "first": "1940",
@@ -11818,14 +6818,6 @@
   {
     "mlbId": "820118",
     "name": "Willie Cathey",
-    "first": "1948",
-    "last": "1948",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "820151",
-    "name": "Jim Carter",
     "first": "1948",
     "last": "1948",
     "games": 0,
@@ -11867,14 +6859,6 @@
     "mlbId": "820310",
     "name": "T. J. Brown",
     "first": "1939",
-    "last": "1948",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "820324",
-    "name": "John Brown",
-    "first": "1944",
     "last": "1948",
     "games": 0,
     "teams": []
@@ -11923,14 +6907,6 @@
     "mlbId": "820558",
     "name": "Henry Baylis",
     "first": "1948",
-    "last": "1948",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "820587",
-    "name": "Harry Barnes",
-    "first": "1937",
     "last": "1948",
     "games": 0,
     "teams": []
@@ -11987,14 +6963,6 @@
     "mlbId": "111026",
     "name": "Hi Bithorn",
     "first": "1942",
-    "last": "1947",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "112024",
-    "name": "Bob Carpenter",
-    "first": "1940",
     "last": "1947",
     "games": 0,
     "teams": []
@@ -12592,14 +7560,6 @@
     "teams": []
   },
   {
-    "mlbId": "819526",
-    "name": "John Fitzgerald",
-    "first": "1943",
-    "last": "1947",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "819528",
     "name": "Gerard Fitzgerald",
     "first": "1947",
@@ -12704,30 +7664,6 @@
     "teams": []
   },
   {
-    "mlbId": "820322",
-    "name": "Larry Brown",
-    "first": "1923",
-    "last": "1947",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "820329",
-    "name": "James Brown",
-    "first": "1939",
-    "last": "1947",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "820344",
-    "name": "Curtis Brown",
-    "first": "1947",
-    "last": "1947",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "820519",
     "name": "Berry",
     "first": "1947",
@@ -12784,14 +7720,6 @@
     "teams": []
   },
   {
-    "mlbId": "111443",
-    "name": "Jack Brewer",
-    "first": "1944",
-    "last": "1946",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "113302",
     "name": "Ducky Detweiler",
     "first": "1942",
@@ -12835,14 +7763,6 @@
     "mlbId": "114902",
     "name": "Lon Goldstein",
     "first": "1943",
-    "last": "1946",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115053",
-    "name": "Don Grate",
-    "first": "1945",
     "last": "1946",
     "games": 0,
     "teams": []
@@ -12899,14 +7819,6 @@
     "mlbId": "121269",
     "name": "Skippy Roberge",
     "first": "1941",
-    "last": "1946",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121958",
-    "name": "Ken Sears",
-    "first": "1943",
     "last": "1946",
     "games": 0,
     "teams": []
@@ -12971,22 +7883,6 @@
     "mlbId": "816543",
     "name": "Sidney Williams",
     "first": "1945",
-    "last": "1946",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "816577",
-    "name": "Harry Williams",
-    "first": "1932",
-    "last": "1946",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "816581",
-    "name": "Frank Williams",
-    "first": "1942",
     "last": "1946",
     "games": 0,
     "teams": []
@@ -13288,14 +8184,6 @@
     "teams": []
   },
   {
-    "mlbId": "818747",
-    "name": "Johnny Johnson",
-    "first": "1938",
-    "last": "1946",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "818826",
     "name": "Willie Jefferson",
     "first": "1937",
@@ -13432,14 +8320,6 @@
     "teams": []
   },
   {
-    "mlbId": "819862",
-    "name": "Austin Davis",
-    "first": "1943",
-    "last": "1946",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "819978",
     "name": "Willie Cornelius",
     "first": "1929",
@@ -13520,14 +8400,6 @@
     "teams": []
   },
   {
-    "mlbId": "111754",
-    "name": "Joe Burns",
-    "first": "1943",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "112286",
     "name": "Joe Cicero",
     "first": "1929",
@@ -13584,14 +8456,6 @@
     "teams": []
   },
   {
-    "mlbId": "113498",
-    "name": "John Douglas",
-    "first": "1945",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "114702",
     "name": "Charles George",
     "first": "1935",
@@ -13611,30 +8475,6 @@
     "mlbId": "114807",
     "name": "Paul Gillespie",
     "first": "1942",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116597",
-    "name": "Johnny Johnson",
-    "first": "1944",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116620",
-    "name": "Bob Johnson",
-    "first": "1933",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116683",
-    "name": "Earl Jones",
-    "first": "1945",
     "last": "1945",
     "games": 0,
     "teams": []
@@ -13672,14 +8512,6 @@
     "teams": []
   },
   {
-    "mlbId": "119306",
-    "name": "Johnny Moore",
-    "first": "1928",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "119518",
     "name": "Van Mungo",
     "first": "1931",
@@ -13706,14 +8538,6 @@
   {
     "mlbId": "121141",
     "name": "Len Rice",
-    "first": "1944",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121717",
-    "name": "Don Savage",
     "first": "1944",
     "last": "1945",
     "games": 0,
@@ -13747,14 +8571,6 @@
     "mlbId": "123367",
     "name": "Johnny Tobin",
     "first": "1945",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123513",
-    "name": "Jim Turner",
-    "first": "1937",
     "last": "1945",
     "games": 0,
     "teams": []
@@ -13802,14 +8618,6 @@
   {
     "mlbId": "124311",
     "name": "Fred Williams",
-    "first": "1945",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124428",
-    "name": "Walter Wilson",
     "first": "1945",
     "last": "1945",
     "games": 0,
@@ -13915,14 +8723,6 @@
     "mlbId": "816721",
     "name": "Fay Washington",
     "first": "1940",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "816758",
-    "name": "Tony Walker",
-    "first": "1944",
     "last": "1945",
     "games": 0,
     "teams": []
@@ -14448,22 +9248,6 @@
     "teams": []
   },
   {
-    "mlbId": "818761",
-    "name": "Fred Johnson",
-    "first": "1945",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "818773",
-    "name": "Bill Johnson",
-    "first": "1945",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "818864",
     "name": "Jelly Jackson",
     "first": "1934",
@@ -14528,14 +9312,6 @@
     "teams": []
   },
   {
-    "mlbId": "819174",
-    "name": "Dave Harper",
-    "first": "1943",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "819180",
     "name": "Harper",
     "first": "1945",
@@ -14584,22 +9360,6 @@
     "teams": []
   },
   {
-    "mlbId": "819685",
-    "name": "Frank Duncan III",
-    "first": "1941",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "819688",
-    "name": "Frank Duncan",
-    "first": "1920",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "819836",
     "name": "Roosevelt Davis",
     "first": "1924",
@@ -14610,14 +9370,6 @@
   {
     "mlbId": "819842",
     "name": "Lee Davis",
-    "first": "1945",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "819849",
-    "name": "Jim Davis",
     "first": "1945",
     "last": "1945",
     "games": 0,
@@ -14712,14 +9464,6 @@
     "teams": []
   },
   {
-    "mlbId": "820313",
-    "name": "Ray Brown",
-    "first": "1931",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "820351",
     "name": "B. L. Brown",
     "first": "1945",
@@ -14787,14 +9531,6 @@
     "mlbId": "836571",
     "name": "Red Wiggins",
     "first": "1945",
-    "last": "1945",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "844202",
-    "name": "Albert Williams",
-    "first": "1943",
     "last": "1945",
     "games": 0,
     "teams": []
@@ -14904,14 +9640,6 @@
     "teams": []
   },
   {
-    "mlbId": "122921",
-    "name": "Luis Suarez",
-    "first": "1944",
-    "last": "1944",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "123543",
     "name": "Cecil Tyson",
     "first": "1944",
@@ -14995,14 +9723,6 @@
     "mlbId": "816519",
     "name": "Emmett Wilson",
     "first": "1937",
-    "last": "1944",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "816568",
-    "name": "Jim Williams",
-    "first": "1931",
     "last": "1944",
     "games": 0,
     "teams": []
@@ -15115,14 +9835,6 @@
     "mlbId": "817359",
     "name": "Andy Sarvis",
     "first": "1939",
-    "last": "1944",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "817401",
-    "name": "Bill Russell",
-    "first": "1944",
     "last": "1944",
     "games": 0,
     "teams": []
@@ -15274,14 +9986,6 @@
   {
     "mlbId": "818456",
     "name": "Loggins",
-    "first": "1944",
-    "last": "1944",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "818770",
-    "name": "Bob Johnson",
     "first": "1944",
     "last": "1944",
     "games": 0,
@@ -15496,14 +10200,6 @@
     "teams": []
   },
   {
-    "mlbId": "113523",
-    "name": "Danny Doyle",
-    "first": "1943",
-    "last": "1943",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117352",
     "name": "Bert Kuczynski",
     "first": "1943",
@@ -15619,14 +10315,6 @@
     "mlbId": "817165",
     "name": "Theolic Smith",
     "first": "1936",
-    "last": "1943",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "817178",
-    "name": "Jim Smith",
-    "first": "1943",
     "last": "1943",
     "games": 0,
     "teams": []
@@ -15872,30 +10560,6 @@
     "teams": []
   },
   {
-    "mlbId": "818678",
-    "name": "Jimmy Jones",
-    "first": "1943",
-    "last": "1943",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "818742",
-    "name": "Johnny Johnson",
-    "first": "1943",
-    "last": "1943",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "818751",
-    "name": "Jimmy Johnson",
-    "first": "1932",
-    "last": "1943",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "818771",
     "name": "Buster Johnson",
     "first": "1943",
@@ -15992,14 +10656,6 @@
     "teams": []
   },
   {
-    "mlbId": "819613",
-    "name": "Bob Evans",
-    "first": "1932",
-    "last": "1943",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "819805",
     "name": "Deison",
     "first": "1943",
@@ -16088,14 +10744,6 @@
     "teams": []
   },
   {
-    "mlbId": "111922",
-    "name": "Bruce Campbell",
-    "first": "1930",
-    "last": "1942",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "112104",
     "name": "Jim Castiglia",
     "first": "1942",
@@ -16171,14 +10819,6 @@
     "mlbId": "124111",
     "name": "Sam West",
     "first": "1927",
-    "last": "1942",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124407",
-    "name": "Jack Wilson",
-    "first": "1934",
     "last": "1942",
     "games": 0,
     "teams": []
@@ -16528,22 +11168,6 @@
     "teams": []
   },
   {
-    "mlbId": "820323",
-    "name": "Joe Brown",
-    "first": "1937",
-    "last": "1942",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "820336",
-    "name": "George Brown",
-    "first": "1942",
-    "last": "1942",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "820368",
     "name": "Joe Brooks",
     "first": "1942",
@@ -16600,24 +11224,8 @@
     "teams": []
   },
   {
-    "mlbId": "110834",
-    "name": "Beau Bell",
-    "first": "1935",
-    "last": "1941",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "112000",
     "name": "Jim Carlin",
-    "first": "1941",
-    "last": "1941",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113121",
-    "name": "John Davis",
     "first": "1941",
     "last": "1941",
     "games": 0,
@@ -16634,14 +11242,6 @@
   {
     "mlbId": "114212",
     "name": "Al Flair",
-    "first": "1941",
-    "last": "1941",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116676",
-    "name": "Dale Jones",
     "first": "1941",
     "last": "1941",
     "games": 0,
@@ -16715,14 +11315,6 @@
     "mlbId": "816534",
     "name": "Willie Williams",
     "first": "1940",
-    "last": "1941",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "816576",
-    "name": "George Williams",
-    "first": "1941",
     "last": "1941",
     "games": 0,
     "teams": []
@@ -17048,14 +11640,6 @@
     "teams": []
   },
   {
-    "mlbId": "111889",
-    "name": "Joe Callahan",
-    "first": "1939",
-    "last": "1940",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "112443",
     "name": "George Coffman",
     "first": "1937",
@@ -17067,14 +11651,6 @@
     "mlbId": "113224",
     "name": "William DeLancey",
     "first": "1932",
-    "last": "1940",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "114463",
-    "name": "Charlie Frye",
-    "first": "1940",
     "last": "1940",
     "games": 0,
     "teams": []
@@ -17496,22 +12072,6 @@
     "teams": []
   },
   {
-    "mlbId": "818745",
-    "name": "Josh Johnson",
-    "first": "1937",
-    "last": "1940",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "818758",
-    "name": "Jimmy Johnson",
-    "first": "1939",
-    "last": "1940",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "818783",
     "name": "Johnson",
     "first": "1940",
@@ -17688,14 +12248,6 @@
     "teams": []
   },
   {
-    "mlbId": "827142",
-    "name": "Bill Davis",
-    "first": "1940",
-    "last": "1940",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "827164",
     "name": "Douglas Rhone",
     "first": "1940",
@@ -17736,14 +12288,6 @@
     "teams": []
   },
   {
-    "mlbId": "116590",
-    "name": "Fred Johnson",
-    "first": "1922",
-    "last": "1939",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "116762",
     "name": "Arndt Jorgens",
     "first": "1929",
@@ -17771,22 +12315,6 @@
     "mlbId": "121738",
     "name": "Skeeter Scalzi",
     "first": "1939",
-    "last": "1939",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122370",
-    "name": "Dave Smith",
-    "first": "1938",
-    "last": "1939",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123301",
-    "name": "Tommy Thompson",
-    "first": "1933",
     "last": "1939",
     "games": 0,
     "teams": []
@@ -18112,14 +12640,6 @@
     "teams": []
   },
   {
-    "mlbId": "820812",
-    "name": "Willie Davis",
-    "first": "1937",
-    "last": "1939",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "827115",
     "name": "H. Wilson",
     "first": "1939",
@@ -18148,14 +12668,6 @@
     "name": "Clifford Brown",
     "first": "1938",
     "last": "1939",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110463",
-    "name": "Al Baker",
-    "first": "1938",
-    "last": "1938",
     "games": 0,
     "teams": []
   },
@@ -18195,14 +12707,6 @@
     "mlbId": "120223",
     "name": "Ace Parker",
     "first": "1937",
-    "last": "1938",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122828",
-    "name": "John Stone",
-    "first": "1928",
     "last": "1938",
     "games": 0,
     "teams": []
@@ -18784,26 +13288,10 @@
     "teams": []
   },
   {
-    "mlbId": "844198",
-    "name": "John Nelson",
-    "first": "1938",
-    "last": "1938",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "844362",
     "name": "Thomas Brooks",
     "first": "1938",
     "last": "1938",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110159",
-    "name": "Bob Allen",
-    "first": "1937",
-    "last": "1937",
     "games": 0,
     "teams": []
   },
@@ -18827,14 +13315,6 @@
     "mlbId": "112405",
     "name": "Flea Clifton",
     "first": "1934",
-    "last": "1937",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113110",
-    "name": "Harry Davis",
-    "first": "1932",
     "last": "1937",
     "games": 0,
     "teams": []
@@ -18896,30 +13376,6 @@
     "teams": []
   },
   {
-    "mlbId": "119131",
-    "name": "Bill Miller",
-    "first": "1937",
-    "last": "1937",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119314",
-    "name": "Randy Moore",
-    "first": "1927",
-    "last": "1937",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "120468",
-    "name": "Jim Peterson",
-    "first": "1931",
-    "last": "1937",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "123504",
     "name": "George Turbeville",
     "first": "1935",
@@ -18976,14 +13432,6 @@
     "teams": []
   },
   {
-    "mlbId": "816771",
-    "name": "Casey Walker",
-    "first": "1937",
-    "last": "1937",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "816779",
     "name": "Walker",
     "first": "1937",
@@ -19010,14 +13458,6 @@
   {
     "mlbId": "816966",
     "name": "Marcellus Thomas",
-    "first": "1937",
-    "last": "1937",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "817015",
-    "name": "Joe Taylor",
     "first": "1937",
     "last": "1937",
     "games": 0,
@@ -19304,14 +13744,6 @@
     "teams": []
   },
   {
-    "mlbId": "818686",
-    "name": "Earl Jones",
-    "first": "1937",
-    "last": "1937",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "818707",
     "name": "Jones",
     "first": "1937",
@@ -19379,14 +13811,6 @@
     "mlbId": "818956",
     "name": "Bill Howard",
     "first": "1932",
-    "last": "1937",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "818957",
-    "name": "Carl Howard",
-    "first": "1935",
     "last": "1937",
     "games": 0,
     "teams": []
@@ -19528,14 +13952,6 @@
     "teams": []
   },
   {
-    "mlbId": "820325",
-    "name": "Jim Brown",
-    "first": "1920",
-    "last": "1937",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "820391",
     "name": "Brewster",
     "first": "1937",
@@ -19555,14 +13971,6 @@
     "mlbId": "820468",
     "name": "Bledsoe",
     "first": "1937",
-    "last": "1937",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "820541",
-    "name": "William Bell",
-    "first": "1923",
     "last": "1937",
     "games": 0,
     "teams": []
@@ -19616,14 +14024,6 @@
     "teams": []
   },
   {
-    "mlbId": "111587",
-    "name": "Bob Brown",
-    "first": "1930",
-    "last": "1936",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "111686",
     "name": "Red Bullock",
     "first": "1936",
@@ -19651,14 +14051,6 @@
     "mlbId": "116064",
     "name": "Joe Holden",
     "first": "1934",
-    "last": "1936",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "117745",
-    "name": "Bill Lewis",
-    "first": "1933",
     "last": "1936",
     "games": 0,
     "teams": []
@@ -19952,14 +14344,6 @@
     "teams": []
   },
   {
-    "mlbId": "120517",
-    "name": "Eddie Phillips",
-    "first": "1924",
-    "last": "1935",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "123354",
     "name": "Bud Tinning",
     "first": "1932",
@@ -20200,22 +14584,6 @@
     "teams": []
   },
   {
-    "mlbId": "112317",
-    "name": "Earl Clark",
-    "first": "1927",
-    "last": "1934",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113811",
-    "name": "Jumbo Elliott",
-    "first": "1923",
-    "last": "1934",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "114122",
     "name": "Marc Filley",
     "first": "1934",
@@ -20232,14 +14600,6 @@
     "teams": []
   },
   {
-    "mlbId": "117977",
-    "name": "Ray Lucas",
-    "first": "1929",
-    "last": "1934",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "118916",
     "name": "Heinie Meine",
     "first": "1922",
@@ -20251,22 +14611,6 @@
     "mlbId": "118968",
     "name": "Spike Merena",
     "first": "1934",
-    "last": "1934",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119280",
-    "name": "Jim Mooney",
-    "first": "1931",
-    "last": "1934",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119300",
-    "name": "Eddie Moore",
-    "first": "1923",
     "last": "1934",
     "games": 0,
     "teams": []
@@ -20480,14 +14824,6 @@
     "teams": []
   },
   {
-    "mlbId": "818679",
-    "name": "Johnny Jones",
-    "first": "1922",
-    "last": "1934",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "818683",
     "name": "Fox Jones",
     "first": "1932",
@@ -20624,22 +14960,6 @@
     "teams": []
   },
   {
-    "mlbId": "116328",
-    "name": "Eddie Hunter",
-    "first": "1933",
-    "last": "1933",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116431",
-    "name": "John Jackson",
-    "first": "1933",
-    "last": "1933",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "116483",
     "name": "Bernie James",
     "first": "1929",
@@ -20659,14 +14979,6 @@
     "mlbId": "118799",
     "name": "Jud McLaughlin",
     "first": "1931",
-    "last": "1933",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "120843",
-    "name": "Jack Quinn",
-    "first": "1909",
     "last": "1933",
     "games": 0,
     "teams": []
@@ -20992,25 +15304,9 @@
     "teams": []
   },
   {
-    "mlbId": "110061",
-    "name": "Bob Adams",
-    "first": "1931",
-    "last": "1932",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "111170",
     "name": "Stew Bolen",
     "first": "1926",
-    "last": "1932",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "112174",
-    "name": "Bill Chamberlain",
-    "first": "1932",
     "last": "1932",
     "games": 0,
     "teams": []
@@ -21043,14 +15339,6 @@
     "mlbId": "115184",
     "name": "Howard Groskloss",
     "first": "1930",
-    "last": "1932",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116703",
-    "name": "John Jones",
-    "first": "1923",
     "last": "1932",
     "games": 0,
     "teams": []
@@ -21115,14 +15403,6 @@
     "mlbId": "121750",
     "name": "Russ Scarritt",
     "first": "1929",
-    "last": "1932",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122353",
-    "name": "Art Smith",
-    "first": "1932",
     "last": "1932",
     "games": 0,
     "teams": []
@@ -21211,14 +15491,6 @@
     "mlbId": "816563",
     "name": "Joe Williams",
     "first": "1923",
-    "last": "1932",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "816603",
-    "name": "Bob Williams",
-    "first": "1932",
     "last": "1932",
     "games": 0,
     "teams": []
@@ -21504,14 +15776,6 @@
     "teams": []
   },
   {
-    "mlbId": "818154",
-    "name": "Bob Miller",
-    "first": "1924",
-    "last": "1932",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "818173",
     "name": "Meriwether",
     "first": "1932",
@@ -21627,14 +15891,6 @@
     "mlbId": "818753",
     "name": "Heavy Johnson",
     "first": "1920",
-    "last": "1932",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "818763",
-    "name": "Frank Johnson",
-    "first": "1932",
     "last": "1932",
     "games": 0,
     "teams": []
@@ -22104,25 +16360,9 @@
     "teams": []
   },
   {
-    "mlbId": "110872",
-    "name": "Fred Bennett",
-    "first": "1928",
-    "last": "1931",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "111055",
     "name": "Clarence Blair",
     "first": "1929",
-    "last": "1931",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119304",
-    "name": "Jimmy Moore",
-    "first": "1930",
     "last": "1931",
     "games": 0,
     "teams": []
@@ -22155,14 +16395,6 @@
     "mlbId": "122148",
     "name": "Ben Shields",
     "first": "1924",
-    "last": "1931",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122420",
-    "name": "John Smith",
-    "first": "1931",
     "last": "1931",
     "games": 0,
     "teams": []
@@ -22344,14 +16576,6 @@
     "teams": []
   },
   {
-    "mlbId": "819267",
-    "name": "Robert Griffin",
-    "first": "1931",
-    "last": "1931",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "819300",
     "name": "Abe Gray",
     "first": "1931",
@@ -22496,14 +16720,6 @@
     "teams": []
   },
   {
-    "mlbId": "116705",
-    "name": "Ken Jones",
-    "first": "1924",
-    "last": "1930",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "116846",
     "name": "Bill Karlon",
     "first": "1930",
@@ -22586,14 +16802,6 @@
   {
     "mlbId": "816870",
     "name": "Dan Tye",
-    "first": "1930",
-    "last": "1930",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "817180",
-    "name": "Jim Smith",
     "first": "1930",
     "last": "1930",
     "games": 0,
@@ -22728,14 +16936,6 @@
     "teams": []
   },
   {
-    "mlbId": "818147",
-    "name": "Eddie Miller",
-    "first": "1924",
-    "last": "1930",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "818177",
     "name": "Geechie Meredith",
     "first": "1924",
@@ -22811,14 +17011,6 @@
     "mlbId": "819657",
     "name": "Jesse Edwards",
     "first": "1924",
-    "last": "1930",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "819709",
-    "name": "Bill Drake",
-    "first": "1920",
     "last": "1930",
     "games": 0,
     "teams": []
@@ -22984,14 +17176,6 @@
     "teams": []
   },
   {
-    "mlbId": "817021",
-    "name": "Ben Taylor",
-    "first": "1920",
-    "last": "1929",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "817101",
     "name": "N. Stevens",
     "first": "1927",
@@ -23011,14 +17195,6 @@
     "mlbId": "817134",
     "name": "Charlie Spearman",
     "first": "1923",
-    "last": "1929",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "817207",
-    "name": "Charlie Smith",
-    "first": "1924",
     "last": "1929",
     "games": 0,
     "teams": []
@@ -23272,14 +17448,6 @@
     "teams": []
   },
   {
-    "mlbId": "818666",
-    "name": "Willie Jones",
-    "first": "1923",
-    "last": "1929",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "818785",
     "name": "Johnson",
     "first": "1929",
@@ -23368,24 +17536,8 @@
     "teams": []
   },
   {
-    "mlbId": "819988",
-    "name": "Sam Cooper",
-    "first": "1923",
-    "last": "1929",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "820117",
     "name": "Armando Celada",
-    "first": "1929",
-    "last": "1929",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "820123",
-    "name": "Luis Castro",
     "first": "1929",
     "last": "1929",
     "games": 0,
@@ -23456,14 +17608,6 @@
     "teams": []
   },
   {
-    "mlbId": "111545",
-    "name": "Eddie Brown",
-    "first": "1920",
-    "last": "1928",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "113044",
     "name": "Ike Danning",
     "first": "1928",
@@ -23512,33 +17656,9 @@
     "teams": []
   },
   {
-    "mlbId": "115527",
-    "name": "Joe Harris",
-    "first": "1914",
-    "last": "1928",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "115546",
     "name": "Slim Harriss",
     "first": "1920",
-    "last": "1928",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116455",
-    "name": "Ray Jacobs",
-    "first": "1928",
-    "last": "1928",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116951",
-    "name": "Joe Kelly",
-    "first": "1926",
     "last": "1928",
     "games": 0,
     "teams": []
@@ -23627,30 +17747,6 @@
     "mlbId": "123873",
     "name": "Augie Walsh",
     "first": "1927",
-    "last": "1928",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124177",
-    "name": "Jack White",
-    "first": "1927",
-    "last": "1928",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124303",
-    "name": "Earl Williams",
-    "first": "1928",
-    "last": "1928",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124390",
-    "name": "Frank Wilson",
-    "first": "1924",
     "last": "1928",
     "games": 0,
     "teams": []
@@ -23896,22 +17992,6 @@
     "teams": []
   },
   {
-    "mlbId": "818762",
-    "name": "George Johnson",
-    "first": "1923",
-    "last": "1928",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "818779",
-    "name": "Bill Johnson",
-    "first": "1920",
-    "last": "1928",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "818790",
     "name": "Johnson",
     "first": "1928",
@@ -23979,14 +18059,6 @@
     "mlbId": "819289",
     "name": "Curtis Green",
     "first": "1925",
-    "last": "1928",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "819686",
-    "name": "Frank Duncan",
-    "first": "1920",
     "last": "1928",
     "games": 0,
     "teams": []
@@ -24104,14 +18176,6 @@
     "teams": []
   },
   {
-    "mlbId": "111564",
-    "name": "Joe Brown",
-    "first": "1927",
-    "last": "1927",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "112265",
     "name": "Walter Christensen",
     "first": "1926",
@@ -24155,14 +18219,6 @@
     "mlbId": "114221",
     "name": "Ray Flaskamper",
     "first": "1927",
-    "last": "1927",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116635",
-    "name": "Walter Johnson",
-    "first": "1907",
     "last": "1927",
     "games": 0,
     "teams": []
@@ -24584,14 +18640,6 @@
     "teams": []
   },
   {
-    "mlbId": "820332",
-    "name": "George Brown",
-    "first": "1925",
-    "last": "1927",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "820348",
     "name": "B. Brown",
     "first": "1927",
@@ -24784,14 +18832,6 @@
     "teams": []
   },
   {
-    "mlbId": "122382",
-    "name": "Mike Smith",
-    "first": "1926",
-    "last": "1926",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "122893",
     "name": "Sterling Stryker",
     "first": "1924",
@@ -24810,14 +18850,6 @@
   {
     "mlbId": "123545",
     "name": "Jimmy Uchrinscko",
-    "first": "1926",
-    "last": "1926",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124323",
-    "name": "Leon Williams",
     "first": "1926",
     "last": "1926",
     "games": 0,
@@ -25424,14 +19456,6 @@
     "teams": []
   },
   {
-    "mlbId": "110062",
-    "name": "Bob Adams",
-    "first": "1925",
-    "last": "1925",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "113662",
     "name": "George Durning",
     "first": "1925",
@@ -25451,14 +19475,6 @@
     "mlbId": "115187",
     "name": "Turkey Gross",
     "first": "1925",
-    "last": "1925",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116720",
-    "name": "Bob Jones",
-    "first": "1917",
     "last": "1925",
     "games": 0,
     "teams": []
@@ -25504,14 +19520,6 @@
     "teams": []
   },
   {
-    "mlbId": "119192",
-    "name": "Johnny Mitchell",
-    "first": "1921",
-    "last": "1925",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "119618",
     "name": "Hi Myers",
     "first": "1909",
@@ -25536,25 +19544,9 @@
     "teams": []
   },
   {
-    "mlbId": "122968",
-    "name": "Tom Sullivan",
-    "first": "1925",
-    "last": "1925",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "123590",
     "name": "Ernest Vache",
     "first": "1925",
-    "last": "1925",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123813",
-    "name": "Frank Walker",
-    "first": "1917",
     "last": "1925",
     "games": 0,
     "teams": []
@@ -25824,22 +19816,6 @@
     "teams": []
   },
   {
-    "mlbId": "820337",
-    "name": "Dave Brown",
-    "first": "1920",
-    "last": "1925",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "820523",
-    "name": "Sam Bennett",
-    "first": "1920",
-    "last": "1925",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "820726",
     "name": "Moody Allison",
     "first": "1925",
@@ -25906,22 +19882,6 @@
   {
     "mlbId": "111115",
     "name": "Jack Blott",
-    "first": "1924",
-    "last": "1924",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111727",
-    "name": "Pat Burke",
-    "first": "1924",
-    "last": "1924",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111753",
-    "name": "Joe Burns",
     "first": "1924",
     "last": "1924",
     "games": 0,
@@ -26544,14 +20504,6 @@
     "teams": []
   },
   {
-    "mlbId": "114330",
-    "name": "Eddie Foster",
-    "first": "1910",
-    "last": "1923",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "114433",
     "name": "Grier Friday",
     "first": "1923",
@@ -26619,14 +20571,6 @@
     "mlbId": "123775",
     "name": "Rip Wade",
     "first": "1923",
-    "last": "1923",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124457",
-    "name": "George Winn",
-    "first": "1919",
     "last": "1923",
     "games": 0,
     "teams": []
@@ -27040,14 +20984,6 @@
     "teams": []
   },
   {
-    "mlbId": "116523",
-    "name": "John Jenkins",
-    "first": "1922",
-    "last": "1922",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "118180",
     "name": "George Maisel",
     "first": "1913",
@@ -27104,32 +21040,8 @@
     "teams": []
   },
   {
-    "mlbId": "121570",
-    "name": "John Russell",
-    "first": "1917",
-    "last": "1922",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "122271",
     "name": "John Singleton",
-    "first": "1922",
-    "last": "1922",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122413",
-    "name": "Jimmy Smith",
-    "first": "1914",
-    "last": "1922",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122967",
-    "name": "Tom Sullivan",
     "first": "1922",
     "last": "1922",
     "games": 0,
@@ -27288,14 +21200,6 @@
     "teams": []
   },
   {
-    "mlbId": "820428",
-    "name": "Fred Boyd",
-    "first": "1922",
-    "last": "1922",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "820799",
     "name": "Isaac Lane",
     "first": "1920",
@@ -27416,24 +21320,8 @@
     "teams": []
   },
   {
-    "mlbId": "120441",
-    "name": "Scott Perry",
-    "first": "1915",
-    "last": "1921",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "121173",
     "name": "Ray Richmond",
-    "first": "1920",
-    "last": "1921",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122954",
-    "name": "John Sullivan",
     "first": "1920",
     "last": "1921",
     "games": 0,
@@ -27472,25 +21360,9 @@
     "teams": []
   },
   {
-    "mlbId": "123881",
-    "name": "Jim Walsh",
-    "first": "1921",
-    "last": "1921",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "123940",
     "name": "Hooks Warner",
     "first": "1916",
-    "last": "1921",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124423",
-    "name": "Mike Wilson",
-    "first": "1921",
     "last": "1921",
     "games": 0,
     "teams": []
@@ -27587,14 +21459,6 @@
     "mlbId": "817022",
     "name": "C. I. Taylor",
     "first": "1920",
-    "last": "1921",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "817103",
-    "name": "John Stephens",
-    "first": "1921",
     "last": "1921",
     "games": 0,
     "teams": []
@@ -27712,25 +21576,9 @@
     "teams": []
   },
   {
-    "mlbId": "818728",
-    "name": "Tom Johnson",
-    "first": "1920",
-    "last": "1921",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "818729",
     "name": "Ray Johnson",
     "first": "1921",
-    "last": "1921",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "818814",
-    "name": "Horace Jenkins",
-    "first": "1920",
     "last": "1921",
     "games": 0,
     "teams": []
@@ -27778,14 +21626,6 @@
   {
     "mlbId": "820327",
     "name": "J. Brown",
-    "first": "1920",
-    "last": "1921",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "820335",
-    "name": "George Brown",
     "first": "1920",
     "last": "1921",
     "games": 0,
@@ -27872,14 +21712,6 @@
     "teams": []
   },
   {
-    "mlbId": "116702",
-    "name": "Johnny Jones",
-    "first": "1919",
-    "last": "1920",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117720",
     "name": "Horace Leverette",
     "first": "1920",
@@ -27931,14 +21763,6 @@
     "mlbId": "122588",
     "name": "Paul Speraw",
     "first": "1920",
-    "last": "1920",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123247",
-    "name": "Fred Thomas",
-    "first": "1918",
     "last": "1920",
     "games": 0,
     "teams": []
@@ -28248,14 +22072,6 @@
     "teams": []
   },
   {
-    "mlbId": "820710",
-    "name": "Bobby Anderson",
-    "first": "1920",
-    "last": "1920",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "820712",
     "name": "C. Anderson",
     "first": "1920",
@@ -28276,22 +22092,6 @@
     "name": "Alonzo Longware",
     "first": "1920",
     "last": "1920",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110158",
-    "name": "Bob Allen",
-    "first": "1919",
-    "last": "1919",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110478",
-    "name": "Jesse Baker",
-    "first": "1919",
-    "last": "1919",
     "games": 0,
     "teams": []
   },
@@ -28320,14 +22120,6 @@
     "teams": []
   },
   {
-    "mlbId": "114177",
-    "name": "Bob Fisher",
-    "first": "1912",
-    "last": "1919",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "114721",
     "name": "Ed Gerner",
     "first": "1919",
@@ -28339,14 +22131,6 @@
     "mlbId": "114794",
     "name": "Ed Gill",
     "first": "1919",
-    "last": "1919",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116950",
-    "name": "Joe Kelly",
-    "first": "1914",
     "last": "1919",
     "games": 0,
     "teams": []
@@ -28408,24 +22192,8 @@
     "teams": []
   },
   {
-    "mlbId": "121282",
-    "name": "Ray Roberts",
-    "first": "1919",
-    "last": "1919",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "122230",
     "name": "Danny Silva",
-    "first": "1919",
-    "last": "1919",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122953",
-    "name": "John Sullivan",
     "first": "1919",
     "last": "1919",
     "games": 0,
@@ -28436,14 +22204,6 @@
     "name": "Doc Wallace",
     "first": "1919",
     "last": "1919",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110243",
-    "name": "Fred Anderson",
-    "first": "1909",
-    "last": "1918",
     "games": 0,
     "teams": []
   },
@@ -28483,14 +22243,6 @@
     "mlbId": "111494",
     "name": "John Brock",
     "first": "1917",
-    "last": "1918",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111745",
-    "name": "Ed Burns",
-    "first": "1912",
     "last": "1918",
     "games": 0,
     "teams": []
@@ -28539,14 +22291,6 @@
     "mlbId": "116666",
     "name": "Carroll Jones",
     "first": "1916",
-    "last": "1918",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116945",
-    "name": "Jim Kelly",
-    "first": "1914",
     "last": "1918",
     "games": 0,
     "teams": []
@@ -28608,33 +22352,9 @@
     "teams": []
   },
   {
-    "mlbId": "122482",
-    "name": "Red Smyth",
-    "first": "1915",
-    "last": "1918",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122579",
-    "name": "Tubby Spencer",
-    "first": "1905",
-    "last": "1918",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "122675",
     "name": "Jack Stansbury",
     "first": "1918",
-    "last": "1918",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123487",
-    "name": "Frank Truesdale",
-    "first": "1910",
     "last": "1918",
     "games": 0,
     "teams": []
@@ -28688,14 +22408,6 @@
     "teams": []
   },
   {
-    "mlbId": "113111",
-    "name": "Harry Davis",
-    "first": "1901",
-    "last": "1917",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "113200",
     "name": "Clyde DeFate",
     "first": "1917",
@@ -28736,22 +22448,6 @@
     "teams": []
   },
   {
-    "mlbId": "116584",
-    "name": "Ellis Johnson",
-    "first": "1912",
-    "last": "1917",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116639",
-    "name": "Bill Johnson",
-    "first": "1916",
-    "last": "1917",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117002",
     "name": "Duke Kenworthy",
     "first": "1912",
@@ -28770,14 +22466,6 @@
   {
     "mlbId": "119580",
     "name": "Ed Murray",
-    "first": "1917",
-    "last": "1917",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119597",
-    "name": "Bill Murray",
     "first": "1917",
     "last": "1917",
     "games": 0,
@@ -28835,14 +22523,6 @@
     "mlbId": "111374",
     "name": "Frederick Brainard",
     "first": "1914",
-    "last": "1916",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111553",
-    "name": "Jim Brown",
-    "first": "1915",
     "last": "1916",
     "games": 0,
     "teams": []
@@ -28920,14 +22600,6 @@
     "teams": []
   },
   {
-    "mlbId": "119565",
-    "name": "Mike Murphy",
-    "first": "1912",
-    "last": "1916",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "122442",
     "name": "Paul Smith",
     "first": "1916",
@@ -28979,14 +22651,6 @@
     "mlbId": "111255",
     "name": "Henry Bostick",
     "first": "1915",
-    "last": "1915",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111353",
-    "name": "Bill Bradley",
-    "first": "1901",
     "last": "1915",
     "games": 0,
     "teams": []
@@ -29064,22 +22728,6 @@
     "teams": []
   },
   {
-    "mlbId": "116447",
-    "name": "Bill Jackson",
-    "first": "1914",
-    "last": "1915",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116591",
-    "name": "George Johnson",
-    "first": "1913",
-    "last": "1915",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117436",
     "name": "Frederick Lamlein",
     "first": "1912",
@@ -29136,14 +22784,6 @@
     "teams": []
   },
   {
-    "mlbId": "119061",
-    "name": "Charlie Miller",
-    "first": "1915",
-    "last": "1915",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "119564",
     "name": "Leo Murphy",
     "first": "1915",
@@ -29163,14 +22803,6 @@
     "mlbId": "121062",
     "name": "Alex Remneas",
     "first": "1912",
-    "last": "1915",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "121114",
-    "name": "Ross Reynolds",
-    "first": "1914",
     "last": "1915",
     "games": 0,
     "teams": []
@@ -29248,25 +22880,9 @@
     "teams": []
   },
   {
-    "mlbId": "124286",
-    "name": "Gus Williams",
-    "first": "1911",
-    "last": "1915",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "110863",
     "name": "Henry Benn",
     "first": "1914",
-    "last": "1914",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110902",
-    "name": "Joe Berger",
-    "first": "1913",
     "last": "1914",
     "games": 0,
     "teams": []
@@ -29384,14 +23000,6 @@
     "teams": []
   },
   {
-    "mlbId": "119198",
-    "name": "Mike Mitchell",
-    "first": "1907",
-    "last": "1914",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "119556",
     "name": "Dummy Murphy",
     "first": "1914",
@@ -29416,25 +23024,9 @@
     "teams": []
   },
   {
-    "mlbId": "122361",
-    "name": "Charlie Smith",
-    "first": "1902",
-    "last": "1914",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "122668",
     "name": "James Stanley",
     "first": "1914",
-    "last": "1914",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122821",
-    "name": "Dwight Stone",
-    "first": "1913",
     "last": "1914",
     "games": 0,
     "teams": []
@@ -29472,14 +23064,6 @@
     "teams": []
   },
   {
-    "mlbId": "124316",
-    "name": "Harry Williams",
-    "first": "1913",
-    "last": "1914",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "124395",
     "name": "Squanto Wilson",
     "first": "1911",
@@ -29488,24 +23072,8 @@
     "teams": []
   },
   {
-    "mlbId": "124426",
-    "name": "Tom Wilson",
-    "first": "1914",
-    "last": "1914",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "111453",
     "name": "George Brickley",
-    "first": "1913",
-    "last": "1913",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111879",
-    "name": "Bill Calhoun",
     "first": "1913",
     "last": "1913",
     "games": 0,
@@ -29696,14 +23264,6 @@
     "teams": []
   },
   {
-    "mlbId": "122457",
-    "name": "Joe Smith",
-    "first": "1913",
-    "last": "1913",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "122487",
     "name": "Wally Snell",
     "first": "1913",
@@ -29728,40 +23288,8 @@
     "teams": []
   },
   {
-    "mlbId": "122782",
-    "name": "Mark Stewart",
-    "first": "1913",
-    "last": "1913",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124337",
-    "name": "Bob Williams",
-    "first": "1911",
-    "last": "1913",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124360",
-    "name": "Joe Willis",
-    "first": "1911",
-    "last": "1913",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "111473",
     "name": "Bill Brinker",
-    "first": "1912",
-    "last": "1912",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111602",
-    "name": "Bill Brown",
     "first": "1912",
     "last": "1912",
     "games": 0,
@@ -29808,14 +23336,6 @@
     "teams": []
   },
   {
-    "mlbId": "116738",
-    "name": "Bill Jones",
-    "first": "1911",
-    "last": "1912",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117030",
     "name": "Phil Ketter",
     "first": "1912",
@@ -29835,22 +23355,6 @@
     "mlbId": "118830",
     "name": "Tommy McMillan",
     "first": "1908",
-    "last": "1912",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119060",
-    "name": "Charlie Miller",
-    "first": "1912",
-    "last": "1912",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119770",
-    "name": "Frank Nicholson",
-    "first": "1912",
     "last": "1912",
     "games": 0,
     "teams": []
@@ -29888,24 +23392,8 @@
     "teams": []
   },
   {
-    "mlbId": "122373",
-    "name": "Doug Smith",
-    "first": "1912",
-    "last": "1912",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "122580",
     "name": "Hack Spencer",
-    "first": "1912",
-    "last": "1912",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123125",
-    "name": "Ben Taylor",
     "first": "1912",
     "last": "1912",
     "games": 0,
@@ -29916,30 +23404,6 @@
     "name": "Homer Thompson",
     "first": "1912",
     "last": "1912",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "123304",
-    "name": "Tommy Thompson",
-    "first": "1912",
-    "last": "1912",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124189",
-    "name": "Steve White",
-    "first": "1912",
-    "last": "1912",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110479",
-    "name": "Jesse Baker",
-    "first": "1911",
-    "last": "1911",
     "games": 0,
     "teams": []
   },
@@ -30056,14 +23520,6 @@
     "teams": []
   },
   {
-    "mlbId": "119127",
-    "name": "Walt Miller",
-    "first": "1911",
-    "last": "1911",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "119639",
     "name": "Judge Nagle",
     "first": "1911",
@@ -30099,14 +23555,6 @@
     "mlbId": "121817",
     "name": "Admiral Schlei",
     "first": "1904",
-    "last": "1911",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "122351",
-    "name": "Tony Smith",
-    "first": "1907",
     "last": "1911",
     "games": 0,
     "teams": []
@@ -30272,25 +23720,9 @@
     "teams": []
   },
   {
-    "mlbId": "116761",
-    "name": "Tim Jordan",
-    "first": "1901",
-    "last": "1910",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "117662",
     "name": "Bill Lelivelt",
     "first": "1909",
-    "last": "1910",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "118119",
-    "name": "Nick Maddox",
-    "first": "1907",
     "last": "1910",
     "games": 0,
     "teams": []
@@ -30323,14 +23755,6 @@
     "mlbId": "118651",
     "name": "Ed McDonough",
     "first": "1909",
-    "last": "1910",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119075",
-    "name": "Fred Miller",
-    "first": "1910",
     "last": "1910",
     "games": 0,
     "teams": []
@@ -30400,14 +23824,6 @@
     "teams": []
   },
   {
-    "mlbId": "111584",
-    "name": "Ray Brown",
-    "first": "1909",
-    "last": "1909",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "111698",
     "name": "Fred Burchell",
     "first": "1903",
@@ -30464,22 +23880,6 @@
     "teams": []
   },
   {
-    "mlbId": "116213",
-    "name": "Paul Howard",
-    "first": "1909",
-    "last": "1909",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116684",
-    "name": "Elijah Jones",
-    "first": "1907",
-    "last": "1909",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "116811",
     "name": "Mike Kahoe",
     "first": "1901",
@@ -30499,14 +23899,6 @@
     "mlbId": "117371",
     "name": "Ed Kusel",
     "first": "1909",
-    "last": "1909",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "118556",
-    "name": "Tom McCarthy",
-    "first": "1908",
     "last": "1909",
     "games": 0,
     "teams": []
@@ -30576,22 +23968,6 @@
     "teams": []
   },
   {
-    "mlbId": "124319",
-    "name": "Jimmy Williams",
-    "first": "1901",
-    "last": "1909",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "110244",
-    "name": "John Anderson",
-    "first": "1901",
-    "last": "1908",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "110634",
     "name": "John Barry",
     "first": "1901",
@@ -30624,14 +24000,6 @@
     "teams": []
   },
   {
-    "mlbId": "112511",
-    "name": "Jimmy Collins",
-    "first": "1901",
-    "last": "1908",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "112738",
     "name": "Ernie Courtney",
     "first": "1902",
@@ -30650,14 +24018,6 @@
   {
     "mlbId": "114222",
     "name": "Jack Flater",
-    "first": "1908",
-    "last": "1908",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "114363",
-    "name": "Jack Fox",
     "first": "1908",
     "last": "1908",
     "games": 0,
@@ -30683,22 +24043,6 @@
     "mlbId": "116019",
     "name": "Jack Hoey",
     "first": "1906",
-    "last": "1908",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116568",
-    "name": "Charlie Johnson",
-    "first": "1908",
-    "last": "1908",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116667",
-    "name": "Charlie Jones",
-    "first": "1901",
     "last": "1908",
     "games": 0,
     "teams": []
@@ -30808,14 +24152,6 @@
     "teams": []
   },
   {
-    "mlbId": "122951",
-    "name": "John Sullivan",
-    "first": "1905",
-    "last": "1908",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "110322",
     "name": "Charlie Armbruster",
     "first": "1905",
@@ -30835,14 +24171,6 @@
     "mlbId": "111740",
     "name": "John Barnett",
     "first": "1907",
-    "last": "1907",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111818",
-    "name": "John Butler",
-    "first": "1901",
     "last": "1907",
     "games": 0,
     "teams": []
@@ -30880,14 +24208,6 @@
     "teams": []
   },
   {
-    "mlbId": "115528",
-    "name": "Joe Harris",
-    "first": "1905",
-    "last": "1907",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "116457",
     "name": "Beany Jacobson",
     "first": "1904",
@@ -30896,33 +24216,9 @@
     "teams": []
   },
   {
-    "mlbId": "116868",
-    "name": "Bill Kay",
-    "first": "1907",
-    "last": "1907",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116947",
-    "name": "John Kelly",
-    "first": "1907",
-    "last": "1907",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "118035",
     "name": "Mike Lynch",
     "first": "1904",
-    "last": "1907",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "118702",
-    "name": "Bill McGill",
-    "first": "1907",
     "last": "1907",
     "games": 0,
     "teams": []
@@ -30947,22 +24243,6 @@
     "mlbId": "119726",
     "name": "John Neuer",
     "first": "1907",
-    "last": "1907",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "120027",
-    "name": "Mike O'Neill",
-    "first": "1901",
-    "last": "1907",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "120470",
-    "name": "Bob Peterson",
-    "first": "1906",
     "last": "1907",
     "games": 0,
     "teams": []
@@ -31004,14 +24284,6 @@
     "name": "Oscar Westerberg",
     "first": "1907",
     "last": "1907",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111903",
-    "name": "Jack Cameron",
-    "first": "1906",
-    "last": "1906",
     "games": 0,
     "teams": []
   },
@@ -31066,22 +24338,6 @@
   {
     "mlbId": "116276",
     "name": "Ed Hughes",
-    "first": "1902",
-    "last": "1906",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116430",
-    "name": "Jim Jackson",
-    "first": "1901",
-    "last": "1906",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "116830",
-    "name": "Harry Kane",
     "first": "1902",
     "last": "1906",
     "games": 0,
@@ -31176,14 +24432,6 @@
     "teams": []
   },
   {
-    "mlbId": "110412",
-    "name": "Charlie Babb",
-    "first": "1903",
-    "last": "1905",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "111958",
     "name": "Wirt Cannell",
     "first": "1904",
@@ -31208,14 +24456,6 @@
     "teams": []
   },
   {
-    "mlbId": "113528",
-    "name": "Jack Doyle",
-    "first": "1901",
-    "last": "1905",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "113804",
     "name": "Claud Elliott",
     "first": "1904",
@@ -31235,14 +24475,6 @@
     "mlbId": "114954",
     "name": "Art Goodwin",
     "first": "1905",
-    "last": "1905",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "115082",
-    "name": "Danny Green",
-    "first": "1901",
     "last": "1905",
     "games": 0,
     "teams": []
@@ -31336,14 +24568,6 @@
     "teams": []
   },
   {
-    "mlbId": "124541",
-    "name": "Bob Wood",
-    "first": "1901",
-    "last": "1905",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "111334",
     "name": "John Brackenridge",
     "first": "1904",
@@ -31432,24 +24656,8 @@
     "teams": []
   },
   {
-    "mlbId": "122781",
-    "name": "Joe Stewart",
-    "first": "1904",
-    "last": "1904",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "123627",
     "name": "Deacon Vanburen",
-    "first": "1904",
-    "last": "1904",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124178",
-    "name": "Jack White",
     "first": "1904",
     "last": "1904",
     "games": 0,
@@ -31504,14 +24712,6 @@
     "teams": []
   },
   {
-    "mlbId": "117943",
-    "name": "John Lovett",
-    "first": "1903",
-    "last": "1903",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "118613",
     "name": "Judge McCredie",
     "first": "1903",
@@ -31539,14 +24739,6 @@
     "mlbId": "118948",
     "name": "John Menefee",
     "first": "1901",
-    "last": "1903",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119561",
-    "name": "John Murphy",
-    "first": "1902",
     "last": "1903",
     "games": 0,
     "teams": []
@@ -31608,25 +24800,9 @@
     "teams": []
   },
   {
-    "mlbId": "110056",
-    "name": "Joe Adams",
-    "first": "1902",
-    "last": "1902",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "111549",
     "name": "Fred Brown",
     "first": "1901",
-    "last": "1902",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "111722",
-    "name": "John Burke",
-    "first": "1902",
     "last": "1902",
     "games": 0,
     "teams": []
@@ -31704,14 +24880,6 @@
     "teams": []
   },
   {
-    "mlbId": "116697",
-    "name": "Jim Jones",
-    "first": "1901",
-    "last": "1902",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "116988",
     "name": "Sherman Kennedy",
     "first": "1902",
@@ -31752,22 +24920,6 @@
     "teams": []
   },
   {
-    "mlbId": "118818",
-    "name": "John McMakin",
-    "first": "1902",
-    "last": "1902",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119130",
-    "name": "Bill Miller",
-    "first": "1902",
-    "last": "1902",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "120697",
     "name": "Lew Post",
     "first": "1902",
@@ -31792,14 +24944,6 @@
     "teams": []
   },
   {
-    "mlbId": "123267",
-    "name": "Bill Thomas",
-    "first": "1902",
-    "last": "1902",
-    "games": 0,
-    "teams": []
-  },
-  {
     "mlbId": "123755",
     "name": "Cy Vorhees",
     "first": "1902",
@@ -31810,14 +24954,6 @@
   {
     "mlbId": "124285",
     "name": "Art Williams",
-    "first": "1902",
-    "last": "1902",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "124299",
-    "name": "Dave Williams",
     "first": "1902",
     "last": "1902",
     "games": 0,
@@ -31866,14 +25002,6 @@
   {
     "mlbId": "112949",
     "name": "Nig Cuppy",
-    "first": "1901",
-    "last": "1901",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "113463",
-    "name": "Tom Donovan",
     "first": "1901",
     "last": "1901",
     "games": 0,
@@ -31994,22 +25122,6 @@
   {
     "mlbId": "118850",
     "name": "Harley McNeal",
-    "first": "1901",
-    "last": "1901",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119082",
-    "name": "Jim Miller",
-    "first": "1901",
-    "last": "1901",
-    "games": 0,
-    "teams": []
-  },
-  {
-    "mlbId": "119555",
-    "name": "Frank Murphy",
     "first": "1901",
     "last": "1901",
     "games": 0,

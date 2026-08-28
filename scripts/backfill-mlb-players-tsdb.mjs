@@ -38,3 +38,5 @@ for (const m of missing) {
 }
 writeFileSync("src/lib/players.json", JSON.stringify(players));
 console.log(`\nMLB rescue done: added ${added} of ${missing.length}.`);
+const { execSync } = await import("child_process");
+execSync("node scripts/audit-mlb-players.mjs", { stdio: "inherit" });

@@ -38,3 +38,5 @@ for (const m of missing) {
 }
 writeFileSync("src/lib/players.json", JSON.stringify(players));
 console.log(`\nNHL rescue done: added ${added} of ${missing.length}.`);
+const { execSync } = await import("child_process");
+execSync("node scripts/audit-nhl-players.mjs", { stdio: "inherit" });
