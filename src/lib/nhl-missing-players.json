@@ -176,6 +176,22 @@
     "teams": []
   },
   {
+    "nhlId": "8474709",
+    "name": "Matt Martin",
+    "first": "2009-10",
+    "last": "2024-25",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8475225",
+    "name": "Craig Smith",
+    "first": "2011-12",
+    "last": "2024-25",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8477384",
     "name": "Joshua Brown",
     "first": "2018-19",
@@ -208,6 +224,14 @@
     "teams": []
   },
   {
+    "nhlId": "8480259",
+    "name": "Ben Jones",
+    "first": "2021-22",
+    "last": "2024-25",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8481544",
     "name": "Mads Sogaard",
     "first": "2021-22",
@@ -219,6 +243,14 @@
     "nhlId": "8481570",
     "name": "Cade Webber",
     "first": "2023-24",
+    "last": "2024-25",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8481582",
+    "name": "Nick Robertson",
+    "first": "2019-20",
     "last": "2024-25",
     "games": 0,
     "teams": []
@@ -264,6 +296,30 @@
     "teams": []
   },
   {
+    "nhlId": "8485469",
+    "name": "Jack Williams",
+    "first": "2024-25",
+    "last": "2024-25",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8475789",
+    "name": "Jack Campbell",
+    "first": "2013-14",
+    "last": "2023-24",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8477887",
+    "name": "Patrick Brown",
+    "first": "2014-15",
+    "last": "2023-24",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8481537",
     "name": "Nikita Okhotiuk",
     "first": "2021-22",
@@ -296,9 +352,41 @@
     "teams": []
   },
   {
+    "nhlId": "8474628",
+    "name": "Michael Stone",
+    "first": "2011-12",
+    "last": "2022-23",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8474870",
+    "name": "Tyler Johnson",
+    "first": "2012-13",
+    "last": "2022-23",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8477846",
+    "name": "Ryan Carpenter",
+    "first": "2015-16",
+    "last": "2022-23",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8478058",
     "name": "CJ Suess",
     "first": "2019-20",
+    "last": "2022-23",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8479366",
+    "name": "Logan Brown",
+    "first": "2017-18",
     "last": "2022-23",
     "games": 0,
     "teams": []
@@ -312,9 +400,33 @@
     "teams": []
   },
   {
+    "nhlId": "8480032",
+    "name": "Shane Bowers",
+    "first": "2022-23",
+    "last": "2022-23",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8480267",
+    "name": "Sammy Walker",
+    "first": "2022-23",
+    "last": "2022-23",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8480328",
     "name": "David Gust",
     "first": "2022-23",
+    "last": "2022-23",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8480913",
+    "name": "Jordan Gross",
+    "first": "2019-20",
     "last": "2022-23",
     "games": 0,
     "teams": []
@@ -336,10 +448,42 @@
     "teams": []
   },
   {
+    "nhlId": "8482081",
+    "name": "Sean Farrell",
+    "first": "2022-23",
+    "last": "2022-23",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8483158",
     "name": "Matthew Berlin",
     "first": "2022-23",
     "last": "2022-23",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8484256",
+    "name": "Jake Livingstone",
+    "first": "2022-23",
+    "last": "2022-23",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8469608",
+    "name": "Mike Smith",
+    "first": "2006-07",
+    "last": "2021-22",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8474589",
+    "name": "Tyler Ennis",
+    "first": "2009-10",
+    "last": "2021-22",
     "games": 0,
     "teams": []
   },
@@ -400,9 +544,33 @@
     "teams": []
   },
   {
+    "nhlId": "8468011",
+    "name": "Ryan Miller",
+    "first": "2002-03",
+    "last": "2020-21",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8478049",
+    "name": "Ben Thomas",
+    "first": "2020-21",
+    "last": "2020-21",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8479411",
     "name": "Vitaly Abramov",
     "first": "2018-19",
+    "last": "2020-21",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8480186",
+    "name": "Alexander Volkov",
+    "first": "2019-20",
     "last": "2020-21",
     "games": 0,
     "teams": []
@@ -412,6 +580,54 @@
     "name": "Maksim Sushko",
     "first": "2020-21",
     "last": "2020-21",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8468508",
+    "name": "Justin Williams",
+    "first": "2000-01",
+    "last": "2019-20",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8470645",
+    "name": "Corey Crawford",
+    "first": "2005-06",
+    "last": "2019-20",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8471242",
+    "name": "Mike Green",
+    "first": "2005-06",
+    "last": "2019-20",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8473412",
+    "name": "Bryan Little",
+    "first": "2007-08",
+    "last": "2019-20",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8473485",
+    "name": "Chris Stewart",
+    "first": "2008-09",
+    "last": "2019-20",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8474008",
+    "name": "Paul Carey",
+    "first": "2013-14",
+    "last": "2019-20",
     "games": 0,
     "teams": []
   },
@@ -432,6 +648,14 @@
     "teams": []
   },
   {
+    "nhlId": "8477972",
+    "name": "Josh Jacobs",
+    "first": "2018-19",
+    "last": "2019-20",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8479510",
     "name": "Egor Korshkov",
     "first": "2019-20",
@@ -440,9 +664,41 @@
     "teams": []
   },
   {
+    "nhlId": "8480341",
+    "name": "Adam Johnson",
+    "first": "2018-19",
+    "last": "2019-20",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8470320",
+    "name": "Cam Ward",
+    "first": "2005-06",
+    "last": "2018-19",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8473434",
+    "name": "Chad Johnson",
+    "first": "2009-10",
+    "last": "2018-19",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8475277",
     "name": "Edward Pasquale",
     "first": "2018-19",
+    "last": "2018-19",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8476465",
+    "name": "Ryan Murphy",
+    "first": "2012-13",
     "last": "2018-19",
     "games": 0,
     "teams": []
@@ -468,6 +724,22 @@
     "name": "Joseph Gambardella",
     "first": "2018-19",
     "last": "2018-19",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8467370",
+    "name": "Mike Fisher",
+    "first": "1999-00",
+    "last": "2017-18",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8468542",
+    "name": "Paul Martin",
+    "first": "2003-04",
+    "last": "2017-18",
     "games": 0,
     "teams": []
   },
@@ -520,6 +792,14 @@
     "teams": []
   },
   {
+    "nhlId": "8477929",
+    "name": "Dennis Rasmussen",
+    "first": "2015-16",
+    "last": "2017-18",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8478965",
     "name": "Kenneth Appleby",
     "first": "2017-18",
@@ -536,9 +816,65 @@
     "teams": []
   },
   {
+    "nhlId": "8470750",
+    "name": "John Mitchell",
+    "first": "2008-09",
+    "last": "2016-17",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8470778",
+    "name": "Drew Miller",
+    "first": "2006-07",
+    "last": "2016-17",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8471331",
+    "name": "Kevin Porter",
+    "first": "2008-09",
+    "last": "2016-17",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8474052",
+    "name": "Chris Terry",
+    "first": "2012-13",
+    "last": "2016-17",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8474727",
+    "name": "Ben Smith",
+    "first": "2010-11",
+    "last": "2016-17",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8475291",
+    "name": "Garrett Mitchell",
+    "first": "2016-17",
+    "last": "2016-17",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8476162",
     "name": "Steve Oleksy",
     "first": "2012-13",
+    "last": "2016-17",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8476200",
+    "name": "Paul Thompson",
+    "first": "2015-16",
     "last": "2016-17",
     "games": 0,
     "teams": []
@@ -560,6 +896,22 @@
     "teams": []
   },
   {
+    "nhlId": "8476808",
+    "name": "Brian Flynn",
+    "first": "2012-13",
+    "last": "2016-17",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8477466",
+    "name": "Nick Sorensen",
+    "first": "2016-17",
+    "last": "2016-17",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8477816",
     "name": "Michael Zalewski",
     "first": "2013-14",
@@ -576,9 +928,41 @@
     "teams": []
   },
   {
+    "nhlId": "8465185",
+    "name": "Willie Mitchell",
+    "first": "1999-00",
+    "last": "2015-16",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8470171",
     "name": "Max Talbot",
     "first": "2005-06",
+    "last": "2015-16",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8470871",
+    "name": "Chris Porter",
+    "first": "2008-09",
+    "last": "2015-16",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8470877",
+    "name": "David Jones",
+    "first": "2007-08",
+    "last": "2015-16",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8471371",
+    "name": "Mike Brown",
+    "first": "2007-08",
     "last": "2015-16",
     "games": 0,
     "teams": []
@@ -592,8 +976,48 @@
     "teams": []
   },
   {
+    "nhlId": "8473426",
+    "name": "Mike Weber",
+    "first": "2007-08",
+    "last": "2015-16",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8473562",
+    "name": "John McCarthy",
+    "first": "2009-10",
+    "last": "2015-16",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8473589",
+    "name": "Chris Summers",
+    "first": "2010-11",
+    "last": "2015-16",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8473722",
+    "name": "John Scott",
+    "first": "2008-09",
+    "last": "2015-16",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8474497",
     "name": "Michael Kostka",
+    "first": "2012-13",
+    "last": "2015-16",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8475161",
+    "name": "Chris Brown",
     "first": "2012-13",
     "last": "2015-16",
     "games": 0,
@@ -611,6 +1035,22 @@
     "nhlId": "8476435",
     "name": "Alex Khokhlachev",
     "first": "2013-14",
+    "last": "2015-16",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8476772",
+    "name": "Brian O'Neill",
+    "first": "2015-16",
+    "last": "2015-16",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8477249",
+    "name": "Andrew Miller",
+    "first": "2014-15",
     "last": "2015-16",
     "games": 0,
     "teams": []
@@ -648,10 +1088,26 @@
     "teams": []
   },
   {
+    "nhlId": "8474535",
+    "name": "Chris Mueller",
+    "first": "2010-11",
+    "last": "2014-15",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8476179",
     "name": "Will Acton",
     "first": "2013-14",
     "last": "2014-15",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8460703",
+    "name": "Tim Thomas",
+    "first": "2002-03",
+    "last": "2013-14",
     "games": 0,
     "teams": []
   },
@@ -672,9 +1128,57 @@
     "teams": []
   },
   {
+    "nhlId": "8471280",
+    "name": "Nick Johnson",
+    "first": "2009-10",
+    "last": "2013-14",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8471832",
     "name": "Nick Drazenovic",
     "first": "2010-11",
+    "last": "2013-14",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8473927",
+    "name": "Brad Mills",
+    "first": "2010-11",
+    "last": "2013-14",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8473953",
+    "name": "Derek Smith",
+    "first": "2009-10",
+    "last": "2013-14",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8474674",
+    "name": "James Wright",
+    "first": "2009-10",
+    "last": "2013-14",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8475637",
+    "name": "Bobby Butler",
+    "first": "2009-10",
+    "last": "2013-14",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8476086",
+    "name": "Justin Johnson",
+    "first": "2013-14",
     "last": "2013-14",
     "games": 0,
     "teams": []
@@ -720,6 +1224,14 @@
     "teams": []
   },
   {
+    "nhlId": "8467580",
+    "name": "Mark Eaton",
+    "first": "1999-00",
+    "last": "2012-13",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8471312",
     "name": "JT Wyman",
     "first": "2009-10",
@@ -728,8 +1240,24 @@
     "teams": []
   },
   {
+    "nhlId": "8471912",
+    "name": "Kevin Henderson",
+    "first": "2012-13",
+    "last": "2012-13",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8473616",
     "name": "Jonathan Rheault",
+    "first": "2012-13",
+    "last": "2012-13",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8473944",
+    "name": "Matt Anderson",
     "first": "2012-13",
     "last": "2012-13",
     "games": 0,
@@ -744,6 +1272,38 @@
     "teams": []
   },
   {
+    "nhlId": "8462161",
+    "name": "Brent Johnson",
+    "first": "1998-99",
+    "last": "2011-12",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8464984",
+    "name": "Josh Green",
+    "first": "1998-99",
+    "last": "2011-12",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8467335",
+    "name": "Mark Bell",
+    "first": "2000-01",
+    "last": "2011-12",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8468789",
+    "name": "Jason Williams",
+    "first": "2000-01",
+    "last": "2011-12",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8470294",
     "name": "DJ King",
     "first": "2006-07",
@@ -752,8 +1312,48 @@
     "teams": []
   },
   {
+    "nhlId": "8470905",
+    "name": "Randy Jones",
+    "first": "2003-04",
+    "last": "2011-12",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8471483",
+    "name": "Kyle Wilson",
+    "first": "2009-10",
+    "last": "2011-12",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8471868",
+    "name": "Ryan Russell",
+    "first": "2011-12",
+    "last": "2011-12",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8472361",
+    "name": "Bill Thomas",
+    "first": "2005-06",
+    "last": "2011-12",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8474607",
     "name": "Max Sauve",
+    "first": "2011-12",
+    "last": "2011-12",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8474729",
+    "name": "Mike Murphy",
     "first": "2011-12",
     "last": "2011-12",
     "games": 0,
@@ -771,6 +1371,14 @@
     "nhlId": "8460556",
     "name": "Freddy Modin",
     "first": "1996-97",
+    "last": "2010-11",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8460567",
+    "name": "Chris Clark",
+    "first": "1999-00",
     "last": "2010-11",
     "games": 0,
     "teams": []
@@ -808,6 +1416,22 @@
     "teams": []
   },
   {
+    "nhlId": "8468502",
+    "name": "David Hale",
+    "first": "2003-04",
+    "last": "2010-11",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8470086",
+    "name": "Joe Callahan",
+    "first": "2008-09",
+    "last": "2010-11",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8471413",
     "name": "Mike Vernace",
     "first": "2008-09",
@@ -840,6 +1464,14 @@
     "teams": []
   },
   {
+    "nhlId": "8474531",
+    "name": "Mike Moore",
+    "first": "2010-11",
+    "last": "2010-11",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8474730",
     "name": "Jonas Holos",
     "first": "2010-11",
@@ -856,9 +1488,33 @@
     "teams": []
   },
   {
+    "nhlId": "8458519",
+    "name": "Aaron Ward",
+    "first": "1993-94",
+    "last": "2009-10",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8470735",
+    "name": "Greg Moore",
+    "first": "2007-08",
+    "last": "2009-10",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8471457",
     "name": "Gregory Stewart",
     "first": "2007-08",
+    "last": "2009-10",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8471711",
+    "name": "Scott Jackson",
+    "first": "2009-10",
     "last": "2009-10",
     "games": 0,
     "teams": []
@@ -872,6 +1528,22 @@
     "teams": []
   },
   {
+    "nhlId": "8458954",
+    "name": "Jason Smith",
+    "first": "1993-94",
+    "last": "2008-09",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8458988",
+    "name": "Manny Fernandez",
+    "first": "1994-95",
+    "last": "2008-09",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8462209",
     "name": "P.J. Axelsson",
     "first": "1997-98",
@@ -880,9 +1552,41 @@
     "teams": []
   },
   {
+    "nhlId": "8466266",
+    "name": "Mike York",
+    "first": "1999-00",
+    "last": "2008-09",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8467905",
+    "name": "Michael Ryan",
+    "first": "2006-07",
+    "last": "2008-09",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8468884",
     "name": "Mitchell Fritz",
     "first": "2008-09",
+    "last": "2008-09",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8470373",
+    "name": "Jeff Hamilton",
+    "first": "2003-04",
+    "last": "2008-09",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8470772",
+    "name": "Chris Holt",
+    "first": "2005-06",
     "last": "2008-09",
     "games": 0,
     "teams": []
@@ -904,9 +1608,57 @@
     "teams": []
   },
   {
+    "nhlId": "8473916",
+    "name": "Steve Wagner",
+    "first": "2007-08",
+    "last": "2008-09",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447687",
+    "name": "Dominik Hasek",
+    "first": "1990-91",
+    "last": "2007-08",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8456595",
+    "name": "Sean Hill",
+    "first": "1990-91",
+    "last": "2007-08",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8458544",
     "name": "Sandis Ozolinsh",
     "first": "1992-93",
+    "last": "2007-08",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8460534",
+    "name": "Curtis Brown",
+    "first": "1994-95",
+    "last": "2007-08",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8466109",
+    "name": "Mike Johnson",
+    "first": "1996-97",
+    "last": "2007-08",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8466343",
+    "name": "Mark Smith",
+    "first": "2000-01",
     "last": "2007-08",
     "games": 0,
     "teams": []
@@ -924,6 +1676,38 @@
     "name": "Maxim Kondratiev",
     "first": "2003-04",
     "last": "2007-08",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8469656",
+    "name": "Jason King",
+    "first": "2002-03",
+    "last": "2007-08",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8470088",
+    "name": "Matt Jones",
+    "first": "2005-06",
+    "last": "2007-08",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445769",
+    "name": "Sean Burke",
+    "first": "1987-88",
+    "last": "2006-07",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8459484",
+    "name": "Jamie Rivers",
+    "first": "1995-96",
+    "last": "2006-07",
     "games": 0,
     "teams": []
   },
@@ -947,6 +1731,14 @@
     "nhlId": "8467444",
     "name": "Patrick Leahy",
     "first": "2003-04",
+    "last": "2006-07",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8467486",
+    "name": "Mike Morrison",
+    "first": "2005-06",
     "last": "2006-07",
     "games": 0,
     "teams": []
@@ -984,9 +1776,57 @@
     "teams": []
   },
   {
+    "nhlId": "8452569",
+    "name": "Scott Young",
+    "first": "1987-88",
+    "last": "2005-06",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8456734",
+    "name": "Greg Johnson",
+    "first": "1993-94",
+    "last": "2005-06",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8458540",
     "name": "Ziggy Palffy",
     "first": "1993-94",
+    "last": "2005-06",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8458542",
+    "name": "Jim Campbell",
+    "first": "1995-96",
+    "last": "2005-06",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8458615",
+    "name": "Steve Shields",
+    "first": "1995-96",
+    "last": "2005-06",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8462213",
+    "name": "Dan Smith",
+    "first": "1998-99",
+    "last": "2005-06",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8466155",
+    "name": "Mike Brown",
+    "first": "2000-01",
     "last": "2005-06",
     "games": 0,
     "teams": []
@@ -1008,10 +1848,66 @@
     "teams": []
   },
   {
+    "nhlId": "8467461",
+    "name": "Ryan Flinn",
+    "first": "2001-02",
+    "last": "2005-06",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8469750",
     "name": "Robert McVicar",
     "first": "2005-06",
     "last": "2005-06",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8471524",
+    "name": "Matt Ryan",
+    "first": "2005-06",
+    "last": "2005-06",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8446951",
+    "name": "Ron Francis",
+    "first": "1981-82",
+    "last": "2003-04",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449607",
+    "name": "Kevin Miller",
+    "first": "1988-89",
+    "last": "2003-04",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8450223",
+    "name": "James Patrick",
+    "first": "1983-84",
+    "last": "2003-04",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8458185",
+    "name": "Chris Taylor",
+    "first": "1994-95",
+    "last": "2003-04",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8458617",
+    "name": "Bill Lindsay",
+    "first": "1991-92",
+    "last": "2003-04",
     "games": 0,
     "teams": []
   },
@@ -1034,6 +1930,14 @@
   {
     "nhlId": "8460520",
     "name": "Stan Neckar",
+    "first": "1994-95",
+    "last": "2003-04",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8460524",
+    "name": "Matt Johnson",
     "first": "1994-95",
     "last": "2003-04",
     "games": 0,
@@ -1080,9 +1984,25 @@
     "teams": []
   },
   {
+    "nhlId": "8467379",
+    "name": "Steve Moore",
+    "first": "2001-02",
+    "last": "2003-04",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8467553",
     "name": "Michael Farrell",
     "first": "2001-02",
+    "last": "2003-04",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8468436",
+    "name": "Mike Green",
+    "first": "2003-04",
     "last": "2003-04",
     "games": 0,
     "teams": []
@@ -1112,6 +2032,22 @@
     "teams": []
   },
   {
+    "nhlId": "8459262",
+    "name": "Brandon Smith",
+    "first": "1998-99",
+    "last": "2002-03",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8459448",
+    "name": "Mike Wilson",
+    "first": "1995-96",
+    "last": "2002-03",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8460482",
     "name": "Stephen Guolla",
     "first": "1996-97",
@@ -1131,6 +2067,14 @@
     "nhlId": "8462069",
     "name": "Denis Smith",
     "first": "1996-97",
+    "last": "2002-03",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8462121",
+    "name": "Matt Davidson",
+    "first": "2000-01",
     "last": "2002-03",
     "games": 0,
     "teams": []
@@ -1176,9 +2120,25 @@
     "teams": []
   },
   {
+    "nhlId": "8465066",
+    "name": "Ryan Christie",
+    "first": "1999-00",
+    "last": "2001-02",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8465975",
     "name": "Herbert Vasiljevs",
     "first": "1998-99",
+    "last": "2001-02",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8466206",
+    "name": "Nick Smith",
+    "first": "2001-02",
     "last": "2001-02",
     "games": 0,
     "teams": []
@@ -1200,6 +2160,22 @@
     "teams": []
   },
   {
+    "nhlId": "8445493",
+    "name": "James Black",
+    "first": "1989-90",
+    "last": "2000-01",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445730",
+    "name": "Doug Brown",
+    "first": "1986-87",
+    "last": "2000-01",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8446286",
     "name": "J.J. Daigneault",
     "first": "1984-85",
@@ -1216,6 +2192,14 @@
     "teams": []
   },
   {
+    "nhlId": "8451558",
+    "name": "Steve Smith",
+    "first": "1984-85",
+    "last": "2000-01",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8455564",
     "name": "Jesse Belanger",
     "first": "1991-92",
@@ -1224,9 +2208,41 @@
     "teams": []
   },
   {
+    "nhlId": "8456024",
+    "name": "Kevin Dean",
+    "first": "1994-95",
+    "last": "2000-01",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8456745",
+    "name": "Keith Jones",
+    "first": "1992-93",
+    "last": "2000-01",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8458126",
     "name": "Cameron Stewart",
     "first": "1993-94",
+    "last": "2000-01",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8458208",
+    "name": "John Thomas",
+    "first": "1992-93",
+    "last": "2000-01",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8458948",
+    "name": "David Cooper",
+    "first": "1996-97",
     "last": "2000-01",
     "games": 0,
     "teams": []
@@ -1328,6 +2344,14 @@
     "teams": []
   },
   {
+    "nhlId": "8459023",
+    "name": "Kevin Brown",
+    "first": "1994-95",
+    "last": "1999-00",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8460004",
     "name": "Ruman Ndur",
     "first": "1996-97",
@@ -1376,6 +2400,14 @@
     "teams": []
   },
   {
+    "nhlId": "8445977",
+    "name": "Bobby Carpenter",
+    "first": "1981-82",
+    "last": "1998-99",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8448519",
     "name": "Joey Kocur",
     "first": "1984-85",
@@ -1400,9 +2432,25 @@
     "teams": []
   },
   {
+    "nhlId": "8458550",
+    "name": "Jeff Nelson",
+    "first": "1994-95",
+    "last": "1998-99",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8458569",
     "name": "Fredrik Lindquist",
     "first": "1998-99",
+    "last": "1998-99",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8458611",
+    "name": "Mike Kennedy",
+    "first": "1994-95",
     "last": "1998-99",
     "games": 0,
     "teams": []
@@ -1416,6 +2464,22 @@
     "teams": []
   },
   {
+    "nhlId": "8460753",
+    "name": "Brian White",
+    "first": "1998-99",
+    "last": "1998-99",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8462046",
+    "name": "Jeff Ware",
+    "first": "1996-97",
+    "last": "1998-99",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8462165",
     "name": "Dimitri Tertyshny",
     "first": "1998-99",
@@ -1424,9 +2488,25 @@
     "teams": []
   },
   {
+    "nhlId": "8448303",
+    "name": "Jim Johnson",
+    "first": "1985-86",
+    "last": "1997-98",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8455871",
     "name": "Jeffrey Christian",
     "first": "1991-92",
+    "last": "1997-98",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8456695",
+    "name": "Dane Jackson",
+    "first": "1993-94",
     "last": "1997-98",
     "games": 0,
     "teams": []
@@ -1448,9 +2528,25 @@
     "teams": []
   },
   {
+    "nhlId": "8448046",
+    "name": "Mike Hudson",
+    "first": "1988-89",
+    "last": "1996-97",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8450471",
     "name": "Adrian Plavsic",
     "first": "1989-90",
+    "last": "1996-97",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8450645",
+    "name": "Mike Ramsey",
+    "first": "1979-80",
     "last": "1996-97",
     "games": 0,
     "teams": []
@@ -1467,6 +2563,14 @@
     "nhlId": "8456080",
     "name": "Paul Di Pietro",
     "first": "1991-92",
+    "last": "1996-97",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8457232",
+    "name": "Matt Martin",
+    "first": "1993-94",
     "last": "1996-97",
     "games": 0,
     "teams": []
@@ -1528,6 +2632,14 @@
     "teams": []
   },
   {
+    "nhlId": "8445712",
+    "name": "Dave Brown",
+    "first": "1982-83",
+    "last": "1995-96",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8455818",
     "name": "Mike Casselman",
     "first": "1995-96",
@@ -1556,6 +2668,22 @@
     "name": "Ruslam Batyrshin",
     "first": "1995-96",
     "last": "1995-96",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8459663",
+    "name": "Jordan Willis",
+    "first": "1995-96",
+    "last": "1995-96",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445713",
+    "name": "Keith Brown",
+    "first": "1979-80",
+    "last": "1994-95",
     "games": 0,
     "teams": []
   },
@@ -1592,6 +2720,30 @@
     "teams": []
   },
   {
+    "nhlId": "8458504",
+    "name": "David Williams",
+    "first": "1991-92",
+    "last": "1994-95",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445273",
+    "name": "Dave Barr",
+    "first": "1981-82",
+    "last": "1993-94",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445655",
+    "name": "Greg Brown",
+    "first": "1990-91",
+    "last": "1993-94",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8446618",
     "name": "Pelle Eklund",
     "first": "1985-86",
@@ -1611,6 +2763,30 @@
     "nhlId": "8449399",
     "name": "William Mcdougall",
     "first": "1990-91",
+    "last": "1993-94",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449608",
+    "name": "Brad Miller",
+    "first": "1988-89",
+    "last": "1993-94",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449718",
+    "name": "Jon Morris",
+    "first": "1988-89",
+    "last": "1993-94",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449755",
+    "name": "Rob Murphy",
+    "first": "1987-88",
     "last": "1993-94",
     "games": 0,
     "teams": []
@@ -1712,6 +2888,14 @@
     "teams": []
   },
   {
+    "nhlId": "8445201",
+    "name": "Bob Babcock",
+    "first": "1990-91",
+    "last": "1992-93",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8445738",
     "name": "Francis Breault",
     "first": "1990-91",
@@ -1736,6 +2920,14 @@
     "teams": []
   },
   {
+    "nhlId": "8446735",
+    "name": "Doug Evans",
+    "first": "1985-86",
+    "last": "1992-93",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8447078",
     "name": "Stew Gavin",
     "first": "1980-81",
@@ -1752,9 +2944,25 @@
     "teams": []
   },
   {
+    "nhlId": "8449632",
+    "name": "Jason Miller",
+    "first": "1990-91",
+    "last": "1992-93",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8450197",
     "name": "Gregory Parks",
     "first": "1990-91",
+    "last": "1992-93",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8451476",
+    "name": "Bobby Smith",
+    "first": "1978-79",
     "last": "1992-93",
     "games": 0,
     "teams": []
@@ -1776,6 +2984,14 @@
     "teams": []
   },
   {
+    "nhlId": "8457399",
+    "name": "Roy Mitchell",
+    "first": "1992-93",
+    "last": "1992-93",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8457747",
     "name": "Jean-Francois Quintin",
     "first": "1991-92",
@@ -1786,6 +3002,14 @@
   {
     "nhlId": "8457984",
     "name": "Thomas Semchuk",
+    "first": "1992-93",
+    "last": "1992-93",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8458412",
+    "name": "Darryl Williams",
     "first": "1992-93",
     "last": "1992-93",
     "games": 0,
@@ -1832,6 +3056,30 @@
     "teams": []
   },
   {
+    "nhlId": "8448204",
+    "name": "Jeff Jackson",
+    "first": "1984-85",
+    "last": "1991-92",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448328",
+    "name": "Greg Johnston",
+    "first": "1983-84",
+    "last": "1991-92",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448366",
+    "name": "Brad Jones",
+    "first": "1990-91",
+    "last": "1991-92",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8449401",
     "name": "Michael Mcneil",
     "first": "1990-91",
@@ -1856,6 +3104,22 @@
     "teams": []
   },
   {
+    "nhlId": "8449624",
+    "name": "Jay Miller",
+    "first": "1985-86",
+    "last": "1991-92",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449776",
+    "name": "Patrick Murray",
+    "first": "1990-91",
+    "last": "1991-92",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8450518",
     "name": "Petr Prajzler",
     "first": "1987-88",
@@ -1864,9 +3128,25 @@
     "teams": []
   },
   {
+    "nhlId": "8450936",
+    "name": "Larry Robinson",
+    "first": "1972-73",
+    "last": "1991-92",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8451719",
     "name": "Allan Stewart",
     "first": "1985-86",
+    "last": "1991-92",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8451859",
+    "name": "John Tanner",
+    "first": "1989-90",
     "last": "1991-92",
     "games": 0,
     "teams": []
@@ -1904,9 +3184,33 @@
     "teams": []
   },
   {
+    "nhlId": "8458418",
+    "name": "Sean Williams",
+    "first": "1991-92",
+    "last": "1991-92",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445753",
+    "name": "Richard Brown",
+    "first": "1990-91",
+    "last": "1990-91",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8447005",
     "name": "David Gagnon",
     "first": "1990-91",
+    "last": "1990-91",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448374",
+    "name": "Bob Joyce",
+    "first": "1987-88",
     "last": "1990-91",
     "games": 0,
     "teams": []
@@ -1928,9 +3232,25 @@
     "teams": []
   },
   {
+    "nhlId": "8450199",
+    "name": "Jeff Parker",
+    "first": "1986-87",
+    "last": "1990-91",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8450547",
     "name": "Sergei Priakin",
     "first": "1988-89",
+    "last": "1990-91",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8451509",
+    "name": "Dennis Smith",
+    "first": "1989-90",
     "last": "1990-91",
     "games": 0,
     "teams": []
@@ -1952,8 +3272,32 @@
     "teams": []
   },
   {
+    "nhlId": "8446945",
+    "name": "Jim Fox",
+    "first": "1980-81",
+    "last": "1989-90",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448304",
+    "name": "Mark Johnson",
+    "first": "1979-80",
+    "last": "1989-90",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8448768",
     "name": "Tommy Lehman",
+    "first": "1987-88",
+    "last": "1989-90",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449280",
+    "name": "Tom Martin",
     "first": "1987-88",
     "last": "1989-90",
     "games": 0,
@@ -1992,6 +3336,14 @@
     "teams": []
   },
   {
+    "nhlId": "8451516",
+    "name": "Doug Smith",
+    "first": "1981-82",
+    "last": "1989-90",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8451983",
     "name": "Allan Tuer",
     "first": "1985-86",
@@ -2004,6 +3356,22 @@
     "name": "Gord Walker",
     "first": "1986-87",
     "last": "1989-90",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8444944",
+    "name": "John Anderson",
+    "first": "1977-78",
+    "last": "1988-89",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445455",
+    "name": "Ken Berry",
+    "first": "1981-82",
+    "last": "1988-89",
     "games": 0,
     "teams": []
   },
@@ -2032,9 +3400,33 @@
     "teams": []
   },
   {
+    "nhlId": "8450221",
+    "name": "Joe Paterson",
+    "first": "1980-81",
+    "last": "1988-89",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8450792",
     "name": "David Reierson",
     "first": "1988-89",
+    "last": "1988-89",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8451525",
+    "name": "Billy Smith",
+    "first": "1971-72",
+    "last": "1988-89",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8451559",
+    "name": "Steven Smith",
+    "first": "1981-82",
     "last": "1988-89",
     "games": 0,
     "teams": []
@@ -2072,9 +3464,41 @@
     "teams": []
   },
   {
+    "nhlId": "8448202",
+    "name": "Jim Jackson",
+    "first": "1982-83",
+    "last": "1987-88",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448811",
+    "name": "Dave Lewis",
+    "first": "1973-74",
+    "last": "1987-88",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8449312",
     "name": "Patrick Mayer",
     "first": "1987-88",
+    "last": "1987-88",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449313",
+    "name": "Darrell May",
+    "first": "1985-86",
+    "last": "1987-88",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449348",
+    "name": "Tom McCarthy",
+    "first": "1979-80",
     "last": "1987-88",
     "games": 0,
     "teams": []
@@ -2096,6 +3520,22 @@
     "teams": []
   },
   {
+    "nhlId": "8449587",
+    "name": "Rick Middleton",
+    "first": "1974-75",
+    "last": "1987-88",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8451531",
+    "name": "Greg Smith",
+    "first": "1975-76",
+    "last": "1987-88",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8451758",
     "name": "Michael Stothers",
     "first": "1984-85",
@@ -2107,6 +3547,14 @@
     "nhlId": "8451861",
     "name": "William Terry",
     "first": "1987-88",
+    "last": "1987-88",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8452457",
+    "name": "Dave Williams",
+    "first": "1974-75",
     "last": "1987-88",
     "games": 0,
     "teams": []
@@ -2128,9 +3576,33 @@
     "teams": []
   },
   {
+    "nhlId": "8448075",
+    "name": "Pat Hughes",
+    "first": "1977-78",
+    "last": "1986-87",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448201",
+    "name": "Don Jackson",
+    "first": "1977-78",
+    "last": "1986-87",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8448326",
     "name": "Eddie Johnstone",
     "first": "1975-76",
+    "last": "1986-87",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449346",
+    "name": "Kevin McCarthy",
+    "first": "1977-78",
     "last": "1986-87",
     "games": 0,
     "teams": []
@@ -2155,6 +3627,22 @@
     "nhlId": "8451121",
     "name": "Michael Sands",
     "first": "1984-85",
+    "last": "1986-87",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8451493",
+    "name": "Brad Smith",
+    "first": "1978-79",
+    "last": "1986-87",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8451535",
+    "name": "Randy Smith",
+    "first": "1985-86",
     "last": "1986-87",
     "games": 0,
     "teams": []
@@ -2208,6 +3696,38 @@
     "teams": []
   },
   {
+    "nhlId": "8452370",
+    "name": "Blake Wesley",
+    "first": "1979-80",
+    "last": "1985-86",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447066",
+    "name": "John Garrett",
+    "first": "1979-80",
+    "last": "1984-85",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448763",
+    "name": "Edward Lee",
+    "first": "1984-85",
+    "last": "1984-85",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449623",
+    "name": "Bob Miller",
+    "first": "1977-78",
+    "last": "1984-85",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8449700",
     "name": "David Morrison",
     "first": "1980-81",
@@ -2248,6 +3768,14 @@
     "teams": []
   },
   {
+    "nhlId": "8452574",
+    "name": "Tim Young",
+    "first": "1975-76",
+    "last": "1984-85",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8452581",
     "name": "Michael Zanier",
     "first": "1984-85",
@@ -2258,6 +3786,30 @@
   {
     "nhlId": "8445013",
     "name": "Darrel Anholt",
+    "first": "1983-84",
+    "last": "1983-84",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447658",
+    "name": "Billy Harris",
+    "first": "1972-73",
+    "last": "1983-84",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447990",
+    "name": "Ken Houston",
+    "first": "1980-81",
+    "last": "1983-84",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448289",
+    "name": "Brian Johnson",
     "first": "1983-84",
     "last": "1983-84",
     "games": 0,
@@ -2296,6 +3848,38 @@
     "teams": []
   },
   {
+    "nhlId": "8445212",
+    "name": "Bill Baker",
+    "first": "1980-81",
+    "last": "1982-83",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445218",
+    "name": "Steve Baker",
+    "first": "1979-80",
+    "last": "1982-83",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445711",
+    "name": "Jim Brown",
+    "first": "1982-83",
+    "last": "1982-83",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8446404",
+    "name": "Kevin Devine",
+    "first": "1982-83",
+    "last": "1982-83",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8446741",
     "name": "John Paul Evans",
     "first": "1978-79",
@@ -2328,9 +3912,41 @@
     "teams": []
   },
   {
+    "nhlId": "8449629",
+    "name": "Warren Miller",
+    "first": "1979-80",
+    "last": "1982-83",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449744",
+    "name": "Mike Murphy",
+    "first": "1971-72",
+    "last": "1982-83",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8450179",
     "name": "Robert Parent",
     "first": "1981-82",
+    "last": "1982-83",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8451076",
+    "name": "Jim Rutherford",
+    "first": "1970-71",
+    "last": "1982-83",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8451513",
+    "name": "Derek Smith",
+    "first": "1975-76",
     "last": "1982-83",
     "games": 0,
     "teams": []
@@ -2352,6 +3968,30 @@
     "teams": []
   },
   {
+    "nhlId": "8445808",
+    "name": "Jerry Butler",
+    "first": "1972-73",
+    "last": "1981-82",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445900",
+    "name": "Scott Campbell",
+    "first": "1981-82",
+    "last": "1981-82",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8446539",
+    "name": "Mike Dwyer",
+    "first": "1978-79",
+    "last": "1981-82",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8447508",
     "name": "Al Hangsleben",
     "first": "1979-80",
@@ -2368,6 +4008,14 @@
     "teams": []
   },
   {
+    "nhlId": "8448444",
+    "name": "Bob Kelly",
+    "first": "1970-71",
+    "last": "1981-82",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8448614",
     "name": "Richard Laferriere",
     "first": "1981-82",
@@ -2379,6 +4027,14 @@
     "nhlId": "8449507",
     "name": "James McTaggart",
     "first": "1980-81",
+    "last": "1981-82",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449611",
+    "name": "Paul Miller",
+    "first": "1981-82",
     "last": "1981-82",
     "games": 0,
     "teams": []
@@ -2424,6 +4080,30 @@
     "teams": []
   },
   {
+    "nhlId": "8447568",
+    "name": "Terry Harper",
+    "first": "1962-63",
+    "last": "1980-81",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448070",
+    "name": "John Hughes",
+    "first": "1979-80",
+    "last": "1980-81",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448871",
+    "name": "David Logan",
+    "first": "1975-76",
+    "last": "1980-81",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8449407",
     "name": "William McCreary",
     "first": "1980-81",
@@ -2435,6 +4115,14 @@
     "nhlId": "8451474",
     "name": "Al Smith",
     "first": "1965-66",
+    "last": "1980-81",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8451475",
+    "name": "Barry Smith",
+    "first": "1975-76",
     "last": "1980-81",
     "games": 0,
     "teams": []
@@ -2464,9 +4152,33 @@
     "teams": []
   },
   {
+    "nhlId": "8452551",
+    "name": "Brian Young",
+    "first": "1980-81",
+    "last": "1980-81",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8445600",
     "name": "J.P. Bordeleau",
     "first": "1969-70",
+    "last": "1979-80",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445987",
+    "name": "Ron Carter",
+    "first": "1979-80",
+    "last": "1979-80",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8446166",
+    "name": "Jim Corsi",
+    "first": "1979-80",
     "last": "1979-80",
     "games": 0,
     "teams": []
@@ -2491,6 +4203,30 @@
     "nhlId": "8447115",
     "name": "Danny Geoffrion",
     "first": "1979-80",
+    "last": "1979-80",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447664",
+    "name": "Jim Harrison",
+    "first": "1968-69",
+    "last": "1979-80",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447821",
+    "name": "Brian Hill",
+    "first": "1979-80",
+    "last": "1979-80",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448367",
+    "name": "Jimmy Jones",
+    "first": "1977-78",
     "last": "1979-80",
     "games": 0,
     "teams": []
@@ -2528,6 +4264,14 @@
     "teams": []
   },
   {
+    "nhlId": "8450338",
+    "name": "Steve Peters",
+    "first": "1979-80",
+    "last": "1979-80",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8450478",
     "name": "Ronald Plumb",
     "first": "1979-80",
@@ -2546,6 +4290,22 @@
   {
     "nhlId": "8451244",
     "name": "Maynard Schurman",
+    "first": "1979-80",
+    "last": "1979-80",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8451696",
+    "name": "Robert Stephenson",
+    "first": "1979-80",
+    "last": "1979-80",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8451721",
+    "name": "James Stewart Jr",
     "first": "1979-80",
     "last": "1979-80",
     "games": 0,
@@ -2584,6 +4344,14 @@
     "teams": []
   },
   {
+    "nhlId": "8452427",
+    "name": "Tony White",
+    "first": "1974-75",
+    "last": "1979-80",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8445877",
     "name": "Al Cameron",
     "first": "1975-76",
@@ -2595,6 +4363,14 @@
     "nhlId": "8447220",
     "name": "Larry Gloekner",
     "first": "1978-79",
+    "last": "1978-79",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448434",
+    "name": "Bob Kelly",
+    "first": "1973-74",
     "last": "1978-79",
     "games": 0,
     "teams": []
@@ -2619,6 +4395,14 @@
     "nhlId": "8449285",
     "name": "James Masters",
     "first": "1975-76",
+    "last": "1978-79",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449483",
+    "name": "Tom Williams",
+    "first": "1971-72",
     "last": "1978-79",
     "games": 0,
     "teams": []
@@ -2672,6 +4456,14 @@
     "teams": []
   },
   {
+    "nhlId": "8450917",
+    "name": "Jim Roberts",
+    "first": "1976-77",
+    "last": "1978-79",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8451355",
     "name": "Steven Short",
     "first": "1977-78",
@@ -2688,6 +4480,22 @@
     "teams": []
   },
   {
+    "nhlId": "8445505",
+    "name": "Bill Collins",
+    "first": "1967-68",
+    "last": "1977-78",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445710",
+    "name": "Larry Brown",
+    "first": "1969-70",
+    "last": "1977-78",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8448356",
     "name": "Jimmy Roberts",
     "first": "1963-64",
@@ -2696,8 +4504,24 @@
     "teams": []
   },
   {
+    "nhlId": "8449635",
+    "name": "Larry Wright",
+    "first": "1971-72",
+    "last": "1977-78",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8449979",
     "name": "Ed Giacomin",
+    "first": "1965-66",
+    "last": "1977-78",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8451528",
+    "name": "Gary Smith",
     "first": "1965-66",
     "last": "1977-78",
     "games": 0,
@@ -2720,8 +4544,32 @@
     "teams": []
   },
   {
+    "nhlId": "8445072",
+    "name": "Bob Berry",
+    "first": "1968-69",
+    "last": "1976-77",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445101",
+    "name": "Mike Bloom",
+    "first": "1974-75",
+    "last": "1976-77",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8446105",
     "name": "Stephen Coates",
+    "first": "1976-77",
+    "last": "1976-77",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8446921",
+    "name": "Alex Forsyth",
     "first": "1976-77",
     "last": "1976-77",
     "games": 0,
@@ -2776,9 +4624,57 @@
     "teams": []
   },
   {
+    "nhlId": "8452456",
+    "name": "Fred Williams",
+    "first": "1976-77",
+    "last": "1976-77",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8452477",
+    "name": "Rick Wilson",
+    "first": "1973-74",
+    "last": "1976-77",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447038",
+    "name": "Tim Jacobs",
+    "first": "1975-76",
+    "last": "1975-76",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8447464",
     "name": "Rich Lemieux",
     "first": "1971-72",
+    "last": "1975-76",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447968",
+    "name": "Ken Murray",
+    "first": "1969-70",
+    "last": "1975-76",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449040",
+    "name": "Al Simmons",
+    "first": "1971-72",
+    "last": "1975-76",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449389",
+    "name": "Bill White",
+    "first": "1967-68",
     "last": "1975-76",
     "games": 0,
     "teams": []
@@ -2800,6 +4696,22 @@
     "teams": []
   },
   {
+    "nhlId": "8450123",
+    "name": "Bobby Taylor",
+    "first": "1971-72",
+    "last": "1975-76",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8444929",
+    "name": "Ron Anderson",
+    "first": "1974-75",
+    "last": "1974-75",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8445530",
     "name": "Bob Cook",
     "first": "1970-71",
@@ -2816,6 +4728,14 @@
     "teams": []
   },
   {
+    "nhlId": "8446736",
+    "name": "Chris Evans",
+    "first": "1969-70",
+    "last": "1974-75",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8447376",
     "name": "Henry Lehvonen",
     "first": "1974-75",
@@ -2824,8 +4744,32 @@
     "teams": []
   },
   {
+    "nhlId": "8447872",
+    "name": "Tom Miller",
+    "first": "1970-71",
+    "last": "1974-75",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449212",
+    "name": "Bob Sykes",
+    "first": "1974-75",
+    "last": "1974-75",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8449650",
     "name": "Lyle Moffatt",
+    "first": "1972-73",
+    "last": "1974-75",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8450004",
+    "name": "Bob Johnson",
     "first": "1972-73",
     "last": "1974-75",
     "games": 0,
@@ -2848,9 +4792,33 @@
     "teams": []
   },
   {
+    "nhlId": "8449194",
+    "name": "Steve Stone",
+    "first": "1973-74",
+    "last": "1973-74",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8445036",
     "name": "Bob Baun",
     "first": "1956-57",
+    "last": "1972-73",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8446926",
+    "name": "Harry Howell",
+    "first": "1952-53",
+    "last": "1972-73",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448069",
+    "name": "Kevin O'Shea",
+    "first": "1970-71",
     "last": "1972-73",
     "games": 0,
     "teams": []
@@ -2860,6 +4828,62 @@
     "name": "Dave Pulkkinen",
     "first": "1972-73",
     "last": "1972-73",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449083",
+    "name": "Ron Smith",
+    "first": "1972-73",
+    "last": "1972-73",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8450051",
+    "name": "Cam Newton",
+    "first": "1970-71",
+    "last": "1972-73",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8444928",
+    "name": "Ron Anderson",
+    "first": "1967-68",
+    "last": "1971-72",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8446752",
+    "name": "Chris Hayes",
+    "first": "1971-72",
+    "last": "1971-72",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447094",
+    "name": "Danny Johnson",
+    "first": "1969-70",
+    "last": "1971-72",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447099",
+    "name": "Jim Johnson",
+    "first": "1964-65",
+    "last": "1971-72",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447114",
+    "name": "Jim Jones",
+    "first": "1971-72",
+    "last": "1971-72",
     "games": 0,
     "teams": []
   },
@@ -2888,6 +4912,22 @@
     "teams": []
   },
   {
+    "nhlId": "8447807",
+    "name": "Mike McMahon Jr.",
+    "first": "1963-64",
+    "last": "1971-72",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8450038",
+    "name": "Jim McLeod",
+    "first": "1971-72",
+    "last": "1971-72",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8450472",
     "name": "Lawrence Pleau",
     "first": "1969-70",
@@ -2904,9 +4944,33 @@
     "teams": []
   },
   {
+    "nhlId": "8444971",
+    "name": "George Armstrong",
+    "first": "1949-50",
+    "last": "1970-71",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8446697",
     "name": "Joe Hardy",
     "first": "1969-70",
+    "last": "1970-71",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447895",
+    "name": "Jim Morrison",
+    "first": "1951-52",
+    "last": "1970-71",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447971",
+    "name": "Hap Myers",
+    "first": "1970-71",
     "last": "1970-71",
     "games": 0,
     "teams": []
@@ -2920,10 +4984,42 @@
     "teams": []
   },
   {
+    "nhlId": "8449845",
+    "name": "Ken Brown",
+    "first": "1970-71",
+    "last": "1970-71",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8447997",
     "name": "Gordie Nelson",
     "first": "1969-70",
     "last": "1969-70",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8446707",
+    "name": "Billy Harris",
+    "first": "1955-56",
+    "last": "1968-69",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447112",
+    "name": "Bob Jones",
+    "first": "1968-69",
+    "last": "1968-69",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449061",
+    "name": "Brian Smith",
+    "first": "1967-68",
+    "last": "1968-69",
     "games": 0,
     "teams": []
   },
@@ -2944,8 +5040,32 @@
     "teams": []
   },
   {
+    "nhlId": "8444924",
+    "name": "Jim Anderson",
+    "first": "1967-68",
+    "last": "1967-68",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8445572",
     "name": "Mike Corbett",
+    "first": "1967-68",
+    "last": "1967-68",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447629",
+    "name": "Tom Martin",
+    "first": "1967-68",
+    "last": "1967-68",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447967",
+    "name": "Jim Murray",
     "first": "1967-68",
     "last": "1967-68",
     "games": 0,
@@ -2956,6 +5076,46 @@
     "name": "Bob Rivard",
     "first": "1967-68",
     "last": "1967-68",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449605",
+    "name": "Keith Wright",
+    "first": "1967-68",
+    "last": "1967-68",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447149",
+    "name": "Red Kelly",
+    "first": "1947-48",
+    "last": "1966-67",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449088",
+    "name": "Wayne Smith",
+    "first": "1966-67",
+    "last": "1966-67",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447101",
+    "name": "Tom Johnson",
+    "first": "1947-48",
+    "last": "1964-65",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449217",
+    "name": "Billy Taylor Jr.",
+    "first": "1964-65",
+    "last": "1964-65",
     "games": 0,
     "teams": []
   },
@@ -2984,6 +5144,22 @@
     "teams": []
   },
   {
+    "nhlId": "8448131",
+    "name": "Cliff Pennington",
+    "first": "1960-61",
+    "last": "1962-63",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8444970",
+    "name": "Bob Armstrong",
+    "first": "1950-51",
+    "last": "1961-62",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8446783",
     "name": "John Hendrickson",
     "first": "1957-58",
@@ -2995,6 +5171,14 @@
     "nhlId": "8447253",
     "name": "Merv Kuryluk",
     "first": "1961-62",
+    "last": "1961-62",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449556",
+    "name": "Johnny Wilson",
+    "first": "1949-50",
     "last": "1961-62",
     "games": 0,
     "teams": []
@@ -3032,10 +5216,50 @@
     "teams": []
   },
   {
+    "nhlId": "8447626",
+    "name": "Jack Martin",
+    "first": "1960-61",
+    "last": "1960-61",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447676",
+    "name": "Tom McCarthy",
+    "first": "1956-57",
+    "last": "1960-61",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449052",
+    "name": "Tod Sloan",
+    "first": "1947-48",
+    "last": "1960-61",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449063",
+    "name": "Brian Smith",
+    "first": "1957-58",
+    "last": "1960-61",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8449203",
     "name": "Red Sullivan",
     "first": "1949-50",
     "last": "1960-61",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8444853",
+    "name": "Norm Johnson",
+    "first": "1957-58",
+    "last": "1959-60",
     "games": 0,
     "teams": []
   },
@@ -3064,9 +5288,25 @@
     "teams": []
   },
   {
+    "nhlId": "8449211",
+    "name": "Bill Sweeney",
+    "first": "1959-60",
+    "last": "1959-60",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8449269",
     "name": "Gord Turlick",
     "first": "1959-60",
+    "last": "1959-60",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8450019",
+    "name": "Harry Lumley",
+    "first": "1943-44",
     "last": "1959-60",
     "games": 0,
     "teams": []
@@ -3076,6 +5316,14 @@
     "name": "Dutch Reibel",
     "first": "1953-54",
     "last": "1958-59",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445001",
+    "name": "Bob Bailey",
+    "first": "1953-54",
+    "last": "1957-58",
     "games": 0,
     "teams": []
   },
@@ -3091,6 +5339,14 @@
     "nhlId": "8447128",
     "name": "Ed Kachur",
     "first": "1956-57",
+    "last": "1957-58",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449084",
+    "name": "Sid Smith",
+    "first": "1946-47",
     "last": "1957-58",
     "games": 0,
     "teams": []
@@ -3120,6 +5376,14 @@
     "teams": []
   },
   {
+    "nhlId": "8449554",
+    "name": "Jerry Wilson",
+    "first": "1956-57",
+    "last": "1956-57",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8445132",
     "name": "Butch Bouchard",
     "first": "1941-42",
@@ -3128,9 +5392,49 @@
     "teams": []
   },
   {
+    "nhlId": "8449202",
+    "name": "Frank Sullivan",
+    "first": "1949-50",
+    "last": "1955-56",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449991",
+    "name": "John Henderson",
+    "first": "1954-55",
+    "last": "1955-56",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445369",
+    "name": "Don Cherry",
+    "first": "1954-55",
+    "last": "1954-55",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8447308",
     "name": "Jean-Paul Lamirande",
     "first": "1946-47",
+    "last": "1954-55",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447651",
+    "name": "George McAvoy",
+    "first": "1954-55",
+    "last": "1954-55",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449993",
+    "name": "Jim Henry",
+    "first": "1941-42",
     "last": "1954-55",
     "games": 0,
     "teams": []
@@ -3152,9 +5456,25 @@
     "teams": []
   },
   {
+    "nhlId": "8447097",
+    "name": "Earl Johnson",
+    "first": "1953-54",
+    "last": "1953-54",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8447249",
     "name": "Eddie Kullman",
     "first": "1947-48",
+    "last": "1953-54",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449544",
+    "name": "Bob Wilson",
+    "first": "1953-54",
     "last": "1953-54",
     "games": 0,
     "teams": []
@@ -3208,6 +5528,14 @@
     "teams": []
   },
   {
+    "nhlId": "8449219",
+    "name": "Harry Taylor",
+    "first": "1946-47",
+    "last": "1951-52",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8450104",
     "name": "Moe Roberts",
     "first": "1925-26",
@@ -3248,6 +5576,38 @@
     "teams": []
   },
   {
+    "nhlId": "8447894",
+    "name": "Don Morrison",
+    "first": "1947-48",
+    "last": "1950-51",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448181",
+    "name": "Ray Powell",
+    "first": "1950-51",
+    "last": "1950-51",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449081",
+    "name": "Ken Smith",
+    "first": "1944-45",
+    "last": "1950-51",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449601",
+    "name": "Bob Wood",
+    "first": "1950-51",
+    "last": "1950-51",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8445078",
     "name": "Sam Bettio",
     "first": "1949-50",
@@ -3267,6 +5627,14 @@
     "nhlId": "8445301",
     "name": "Gord Byers",
     "first": "1949-50",
+    "last": "1949-50",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445767",
+    "name": "Jack Crawford",
+    "first": "1937-38",
     "last": "1949-50",
     "games": 0,
     "teams": []
@@ -3299,6 +5667,22 @@
     "nhlId": "8448333",
     "name": "Rip Riopelle",
     "first": "1947-48",
+    "last": "1949-50",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449073",
+    "name": "Don Smith",
+    "first": "1949-50",
+    "last": "1949-50",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449391",
+    "name": "Sherman White",
+    "first": "1946-47",
     "last": "1949-50",
     "games": 0,
     "teams": []
@@ -3360,6 +5744,14 @@
     "teams": []
   },
   {
+    "nhlId": "8445003",
+    "name": "Doug Baldwin",
+    "first": "1945-46",
+    "last": "1947-48",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8445849",
     "name": "Buck Davies",
     "first": "1947-48",
@@ -3376,10 +5768,50 @@
     "teams": []
   },
   {
+    "nhlId": "8449216",
+    "name": "Billy Taylor",
+    "first": "1939-40",
+    "last": "1947-48",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8449228",
     "name": "Cy Thomas",
     "first": "1947-48",
     "last": "1947-48",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445025",
+    "name": "Ed Barry",
+    "first": "1946-47",
+    "last": "1946-47",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445046",
+    "name": "Joe Bell",
+    "first": "1942-43",
+    "last": "1946-47",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445543",
+    "name": "Joe Cooper",
+    "first": "1935-36",
+    "last": "1946-47",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447024",
+    "name": "Harold Jackson",
+    "first": "1936-37",
+    "last": "1946-47",
     "games": 0,
     "teams": []
   },
@@ -3416,6 +5848,22 @@
     "teams": []
   },
   {
+    "nhlId": "8445186",
+    "name": "Hal Brown",
+    "first": "1945-46",
+    "last": "1945-46",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8446688",
+    "name": "Jack Hamilton",
+    "first": "1942-43",
+    "last": "1945-46",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8446766",
     "name": "Ott Heller",
     "first": "1931-32",
@@ -3448,6 +5896,14 @@
     "teams": []
   },
   {
+    "nhlId": "8447804",
+    "name": "Mike McMahon",
+    "first": "1942-43",
+    "last": "1945-46",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8448459",
     "name": "Roly Rossignol",
     "first": "1943-44",
@@ -3460,6 +5916,14 @@
     "name": "Lorrain Thibeault",
     "first": "1944-45",
     "last": "1945-46",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445159",
+    "name": "Tom Brennan",
+    "first": "1943-44",
+    "last": "1944-45",
     "games": 0,
     "teams": []
   },
@@ -3499,6 +5963,14 @@
     "nhlId": "8444986",
     "name": "Ozzie Aubuchon",
     "first": "1942-43",
+    "last": "1943-44",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445055",
+    "name": "Frank Bennett",
+    "first": "1943-44",
     "last": "1943-44",
     "games": 0,
     "teams": []
@@ -3584,6 +6056,14 @@
     "teams": []
   },
   {
+    "nhlId": "8448784",
+    "name": "Charlie Sands",
+    "first": "1932-33",
+    "last": "1943-44",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8448930",
     "name": "Otto Schmidt",
     "first": "1943-44",
@@ -3612,6 +6092,14 @@
     "name": "Jim Franks",
     "first": "1936-37",
     "last": "1943-44",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8444877",
+    "name": "Bill Anderson",
+    "first": "1942-43",
+    "last": "1942-43",
     "games": 0,
     "teams": []
   },
@@ -3656,9 +6144,25 @@
     "teams": []
   },
   {
+    "nhlId": "8447598",
+    "name": "Gus Mancuso",
+    "first": "1937-38",
+    "last": "1942-43",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8447847",
     "name": "Bill Meronek",
     "first": "1939-40",
+    "last": "1942-43",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448145",
+    "name": "Charlie Phillips",
+    "first": "1942-43",
     "last": "1942-43",
     "games": 0,
     "teams": []
@@ -3792,6 +6296,14 @@
     "teams": []
   },
   {
+    "nhlId": "8448372",
+    "name": "Earl Robinson",
+    "first": "1928-29",
+    "last": "1939-40",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8448440",
     "name": "Doc Romnes",
     "first": "1930-31",
@@ -3824,9 +6336,41 @@
     "teams": []
   },
   {
+    "nhlId": "8445184",
+    "name": "George Brown",
+    "first": "1936-37",
+    "last": "1938-39",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8446559",
+    "name": "John Gallagher",
+    "first": "1930-31",
+    "last": "1938-39",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447633",
+    "name": "Charlie Mason",
+    "first": "1934-35",
+    "last": "1938-39",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8448034",
     "name": "Baldy Northcott",
     "first": "1928-29",
+    "last": "1938-39",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449232",
+    "name": "Paul Thompson",
+    "first": "1926-27",
     "last": "1938-39",
     "games": 0,
     "teams": []
@@ -3856,6 +6400,14 @@
     "teams": []
   },
   {
+    "nhlId": "8447098",
+    "name": "Ivan Johnson",
+    "first": "1926-27",
+    "last": "1937-38",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8447110",
     "name": "Aurel Joliat",
     "first": "1922-23",
@@ -3875,6 +6427,14 @@
     "nhlId": "8447575",
     "name": "Howie Mackie",
     "first": "1936-37",
+    "last": "1937-38",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448605",
+    "name": "Paul Runge",
+    "first": "1930-31",
     "last": "1937-38",
     "games": 0,
     "teams": []
@@ -3904,6 +6464,14 @@
     "teams": []
   },
   {
+    "nhlId": "8445535",
+    "name": "Fred Cook",
+    "first": "1926-27",
+    "last": "1936-37",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8445648",
     "name": "Baldy Cotton",
     "first": "1925-26",
@@ -3928,8 +6496,24 @@
     "teams": []
   },
   {
+    "nhlId": "8447864",
+    "name": "Bill Miller",
+    "first": "1934-35",
+    "last": "1936-37",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8448791",
     "name": "Butch Schaeffer",
+    "first": "1936-37",
+    "last": "1936-37",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8450151",
+    "name": "Alex Wood",
     "first": "1936-37",
     "last": "1936-37",
     "games": 0,
@@ -4008,8 +6592,56 @@
     "teams": []
   },
   {
+    "nhlId": "8448098",
+    "name": "George Patterson",
+    "first": "1926-27",
+    "last": "1934-35",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448251",
+    "name": "Paul Raymond",
+    "first": "1932-33",
+    "last": "1934-35",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8448790",
+    "name": "Tony Savage",
+    "first": "1934-35",
+    "last": "1934-35",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449059",
+    "name": "Alex Smith",
+    "first": "1931-32",
+    "last": "1934-35",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8444855",
     "name": "Clarence Abel",
+    "first": "1926-27",
+    "last": "1933-34",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8444998",
+    "name": "Ace Bailey",
+    "first": "1926-27",
+    "last": "1933-34",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445762",
+    "name": "Danny Cox",
     "first": "1926-27",
     "last": "1933-34",
     "games": 0,
@@ -4051,6 +6683,14 @@
     "nhlId": "8444863",
     "name": "Stew Adams",
     "first": "1929-30",
+    "last": "1932-33",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445850",
+    "name": "Bob Davis",
+    "first": "1932-33",
     "last": "1932-33",
     "games": 0,
     "teams": []
@@ -4144,6 +6784,14 @@
     "teams": []
   },
   {
+    "nhlId": "8449045",
+    "name": "Joe Simpson",
+    "first": "1925-26",
+    "last": "1930-31",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8449309",
     "name": "Deacon Waite",
     "first": "1930-31",
@@ -4176,6 +6824,30 @@
     "teams": []
   },
   {
+    "nhlId": "8448140",
+    "name": "Bill Phillips",
+    "first": "1929-30",
+    "last": "1929-30",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449060",
+    "name": "Art Smith",
+    "first": "1927-28",
+    "last": "1929-30",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449218",
+    "name": "Bob Taylor",
+    "first": "1929-30",
+    "last": "1929-30",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8449292",
     "name": "Sparky Vail",
     "first": "1928-29",
@@ -4192,10 +6864,34 @@
     "teams": []
   },
   {
+    "nhlId": "8446641",
+    "name": "Alex Gray",
+    "first": "1927-28",
+    "last": "1928-29",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8446891",
     "name": "Val Hoffinger",
     "first": "1927-28",
     "last": "1928-29",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445183",
+    "name": "Fred Brown",
+    "first": "1927-28",
+    "last": "1927-28",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445187",
+    "name": "Stan Brown",
+    "first": "1926-27",
+    "last": "1927-28",
     "games": 0,
     "teams": []
   },
@@ -4227,6 +6923,14 @@
     "nhlId": "8447337",
     "name": "Martin Lauder",
     "first": "1927-28",
+    "last": "1927-28",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8447779",
+    "name": "Mickey McGuire",
+    "first": "1926-27",
     "last": "1927-28",
     "games": 0,
     "teams": []
@@ -4280,6 +6984,14 @@
     "teams": []
   },
   {
+    "nhlId": "8448332",
+    "name": "Jim Riley",
+    "first": "1926-27",
+    "last": "1926-27",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8449199",
     "name": "Billy Stuart",
     "first": "1920-21",
@@ -4315,6 +7027,22 @@
     "nhlId": "8445308",
     "name": "Francis Cain",
     "first": "1924-25",
+    "last": "1925-26",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8445319",
+    "name": "Earl Campbell",
+    "first": "1925-26",
+    "last": "1925-26",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8446665",
+    "name": "Bob Hall",
+    "first": "1925-26",
     "last": "1925-26",
     "games": 0,
     "teams": []
@@ -4408,6 +7136,14 @@
     "teams": []
   },
   {
+    "nhlId": "8445044",
+    "name": "Billy Bell",
+    "first": "1917-18",
+    "last": "1923-24",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8445136",
     "name": "Bobby Boucher",
     "first": "1923-24",
@@ -4432,6 +7168,14 @@
     "teams": []
   },
   {
+    "nhlId": "8445317",
+    "name": "Dave Campbell",
+    "first": "1920-21",
+    "last": "1920-21",
+    "games": 0,
+    "teams": []
+  },
+  {
     "nhlId": "8445330",
     "name": "Ed Carpenter",
     "first": "1919-20",
@@ -4444,6 +7188,38 @@
     "name": "Thomas McCarthy",
     "first": "1919-20",
     "last": "1920-21",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449072",
+    "name": "Don Smith",
+    "first": "1919-20",
+    "last": "1919-20",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449087",
+    "name": "Tommy Smith",
+    "first": "1919-20",
+    "last": "1919-20",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8446669",
+    "name": "Joe Hall",
+    "first": "1917-18",
+    "last": "1918-19",
+    "games": 0,
+    "teams": []
+  },
+  {
+    "nhlId": "8449231",
+    "name": "Ken Thompson",
+    "first": "1917-18",
+    "last": "1917-18",
     "games": 0,
     "teams": []
   }

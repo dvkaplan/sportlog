@@ -5,7 +5,7 @@ const norm = (n) => (n ?? "").toLowerCase().normalize("NFD").replace(/[\u0300-\u
 const bare = (n) => norm(n).replace(/\s+(jr|sr|ii|iii|iv|v)$/, "");
 const missing = JSON.parse(readFileSync("src/lib/mlb-missing-players.json", "utf8"));
 const players = JSON.parse(readFileSync("src/lib/players.json", "utf8"));
-const have = new Set(players.flatMap((p) => [norm(p.strPlayer), bare(p.strPlayer)]));
+const have = new Set(players.filter((p) => (p.strSport ?? "") === "Baseball").flatMap((p) => [norm(p.strPlayer), bare(p.strPlayer)]));
 let added = 0, i = 0;
 for (const m of missing) {
   i++;

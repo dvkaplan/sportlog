@@ -265,38 +265,56 @@ export async function GET(req: NextRequest) {
         : id.startsWith("mlb-") ? GEN_MLB_BYNAME
         : id.startsWith("nhl-") ? GEN_NHL_BYNAME
         : null;
-            const isNhl = id.startsWith("nhl-");
+                  const isNhl = id.startsWith("nhl-");
+      const gameYear = Number((id.match(/-(\d{4})/) ?? [])[1] ?? 0);
       const initialKey = (full: string) => {
         const parts = norm(full).split(" ").filter(Boolean);
         return parts.length >= 2 ? `${parts[0][0]} ${parts.slice(1).join(" ")}` : norm(full);
       };
-      let NHL_INITIALS: Record<string, string> | null = null;
+      let NHL_ERA: Record<string, { id: string; first: number; last: number }[]> | null = null;
       if (isNhl) {
-        NHL_INITIALS = {};
-        for (const x of PLAYERS) {
-          if ((x.strSport ?? "") !== "Ice Hockey") continue;
-          const k = initialKey(x.strPlayer);
-          if (!(k in NHL_INITIALS)) NHL_INITIALS[k] = x.idPlayer;
-          else NHL_INITIALS[k] = ""; // ambiguous — two players share initial+surname; don't guess
-        }
+        NHL_ERA = {};
+        let UNIV: { names: Record<string, string>; meta: Record<string, { first: string; last: string }> } | null = null;
+        try {
+          UNIV = JSON.parse(await readFile(path.join(process.cwd(), "src", "lib", "nhl-player-ids.json"), "utf8"));
+        } catch { /* universe absent */ }
+        const spanOf = (nhlId: string) => {
+          const m = UNIV?.meta?.[nhlId];
+          return m ? { first: Number(String(m.first).slice(0, 4)), last: Number(String(m.last).slice(0, 4)) + 1 } : null;
+        };
+        // index generated players (id carries the nhl universe id)
         for (const [nm, gid] of Object.entries(GEN_NHL_BYNAME)) {
           const parts = nm.split(" ").filter(Boolean);
           const k = parts.length >= 2 ? `${parts[0][0]} ${parts.slice(1).join(" ")}` : nm;
-          if (!(k in NHL_INITIALS)) NHL_INITIALS[k] = gid;
-          else if (NHL_INITIALS[k] !== gid) NHL_INITIALS[k] = "";
+          const span = spanOf(gid.replace(/^nhl-/, "")) ?? { first: 0, last: 9999 };
+          (NHL_ERA[k] ??= []).push({ id: gid, ...span });
+        }
+        // index real TSDB hockey players; find their span via universe name match
+        const univByName: Record<string, string> = {};
+        for (const [uid, un] of Object.entries(UNIV?.names ?? {})) univByName[norm(un)] = uid;
+        for (const x of PLAYERS) {
+          if ((x.strSport ?? "") !== "Ice Hockey") continue;
+          const k = initialKey(x.strPlayer);
+          const uid = univByName[norm(x.strPlayer)];
+          const span = uid ? spanOf(uid) ?? { first: 0, last: 9999 } : { first: 0, last: 9999 };
+          (NHL_ERA[k] ??= []).push({ id: x.idPlayer, ...span });
         }
       }
       const pid = (name: string) => {
         const n = norm(name);
         const bare = n.replace(/\s+(jr|sr|ii|iii|iv|v)$/, "");
-        const direct = PLAYERS.find((x) => norm(x.strPlayer) === n)?.idPlayer
-          ?? PLAYERS.find((x) => norm(x.strPlayer) === bare)?.idPlayer
+        const direct = PLAYERS.find((x) => norm(x.strPlayer) === n && (!isNhl || (x.strSport ?? "") === "Ice Hockey"))?.idPlayer
+          ?? PLAYERS.find((x) => norm(x.strPlayer) === bare && (!isNhl || (x.strSport ?? "") === "Ice Hockey"))?.idPlayer
           ?? genMap?.[n] ?? genMap?.[bare] ?? null;
         if (direct) return direct;
-        if (NHL_INITIALS) {
-          const k = n.replace(/^([a-z])\s*\.?\s+/, "$1 "); // "s. crosby" -> "s crosby"
-          const hit = NHL_INITIALS[k];
-          if (hit) return hit;
+        if (NHL_ERA) {
+          const k = n.replace(/^([a-z])\s*\.?\s+/, "$1 ");
+          const cands = NHL_ERA[k] ?? [];
+          if (cands.length === 1) return cands[0].id;
+          if (cands.length > 1 && gameYear > 0) {
+            const active = cands.filter((c) => gameYear >= c.first - 1 && gameYear <= c.last + 1);
+            if (active.length === 1) return active[0].id;
+          }
         }
         return null;
       };

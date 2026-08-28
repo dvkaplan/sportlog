@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync } from "fs";
 const norm = (n) => (n ?? "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim();
 const bare = (n) => norm(n).replace(/\s+(jr|sr|ii|iii|iv|v)$/, "");
 const players = JSON.parse(readFileSync("src/lib/players.json", "utf8"));
-const have = new Set(players.flatMap((p) => [norm(p.strPlayer), bare(p.strPlayer)]));
+const have = new Set(players.filter((p) => (p.strSport ?? "") === "Baseball").flatMap((p) => [norm(p.strPlayer), bare(p.strPlayer)]));
 const PID = JSON.parse(readFileSync("src/lib/mlb-player-ids.json", "utf8"));
 const universe = Object.entries(PID.names);
 const missing = universe

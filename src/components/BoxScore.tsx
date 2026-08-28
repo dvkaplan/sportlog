@@ -56,7 +56,7 @@ export default function BoxScore({ id, espn, awayName, homeName }: { id: string;
                   <td className="max-w-[160px] truncate px-4 py-1.5">
                     {r.playerId ? (
                       <Link href={`/player/${r.playerId}`} className="hover:text-emerald-400 hover:underline underline-offset-4">{r.name}</Link>
-                    ) : r.name}
+                                       ) : <span className="text-zinc-600" title="No player page available">{r.name}</span>}
                   </td>
                   {r.cells.map((c, j) => <td key={j} className="px-2 py-1.5 text-right">{c}</td>)}
                 </tr>
