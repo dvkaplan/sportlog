@@ -5,7 +5,7 @@ const bare = (n) => norm(n).replace(/\s+(jr|sr|ii|iii|iv|v)$/, "");
 const slug = (n) => bare(n).replace(/\s+/g, "-");
 
 const players = JSON.parse(readFileSync("src/lib/players.json", "utf8"));
-const have = new Set(players.flatMap((p) => [norm(p.strPlayer), bare(p.strPlayer)]));
+const have = new Set(players.filter((p) => (p.strSport ?? "") === "American Football").flatMap((p) => [norm(p.strPlayer), bare(p.strPlayer)]));
 
 const PID = JSON.parse(readFileSync("src/lib/nfl-player-ids.json", "utf8"));
 

@@ -1,0 +1,167 @@
+{
+  "pile1_autofixable": [],
+  "pile2_needs_decision": [],
+  "pile3_no_data": [
+    {
+      "name": "Mike Evans",
+      "lg": "nba",
+      "count": 649,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Danny Young",
+      "lg": "nba",
+      "count": 627,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "John Williams",
+      "lg": "nba",
+      "count": 448,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Kenny McIntosh",
+      "lg": "nba",
+      "count": 177,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Brooks Thompson",
+      "lg": "nba",
+      "count": 176,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Tom King",
+      "lg": "nba",
+      "count": 53,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Michael Bradley",
+      "lg": "nba",
+      "count": 27,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Jackie Robinson",
+      "lg": "nba",
+      "count": 23,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Terry Bradshaw",
+      "lg": "nfl",
+      "count": 8,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Travis Williams",
+      "lg": "nfl",
+      "count": 4,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Mike Wilson",
+      "lg": "nfl",
+      "count": 4,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Kevin Williams",
+      "lg": "nfl",
+      "count": 4,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Mark Jackson",
+      "lg": "nfl",
+      "count": 3,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Gary Clark",
+      "lg": "nfl",
+      "count": 3,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Jerry Smith",
+      "lg": "nfl",
+      "count": 2,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Charlie Brown",
+      "lg": "nfl",
+      "count": 2,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Willie Green",
+      "lg": "nfl",
+      "count": 2,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Robert Smith",
+      "lg": "nfl",
+      "count": 2,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Bill Miller",
+      "lg": "nfl",
+      "count": 1,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Jim Smith",
+      "lg": "nfl",
+      "count": 1,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Johnny Davis",
+      "lg": "nfl",
+      "count": 1,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Thomas Sanders",
+      "lg": "nfl",
+      "count": 1,
+      "kind": "unknown",
+      "candidates": []
+    },
+    {
+      "name": "Don Smith",
+      "lg": "nfl",
+      "count": 1,
+      "kind": "unknown",
+      "candidates": []
+    }
+  ]
+}

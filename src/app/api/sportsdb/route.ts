@@ -27,6 +27,7 @@ import nbaMissingData from "@/lib/nba-missing-players.json";
 import nflMissingData from "@/lib/nfl-missing-players.json";
 import mlbMissingData from "@/lib/mlb-missing-players.json";
 import nhlMissingData from "@/lib/nhl-missing-players.json";
+import linkOverrides from "@/lib/link-overrides.json";
 
 const BASE = `https://www.thesportsdb.com/api/v1/json/${process.env.SPORTSDB_KEY ?? "3"}`;
 
@@ -302,6 +303,9 @@ export async function GET(req: NextRequest) {
       }
       const pid = (name: string) => {
         const n = norm(name);
+                const OV = linkOverrides as Record<string, string>;
+        const ovHit = OV[`${id.split("-")[0]}|${n}`];
+        if (ovHit) return ovHit;
         const bare = n.replace(/\s+(jr|sr|ii|iii|iv|v)$/, "");
         const direct = PLAYERS.find((x) => norm(x.strPlayer) === n && (!isNhl || (x.strSport ?? "") === "Ice Hockey"))?.idPlayer
           ?? PLAYERS.find((x) => norm(x.strPlayer) === bare && (!isNhl || (x.strSport ?? "") === "Ice Hockey"))?.idPlayer

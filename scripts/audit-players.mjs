@@ -3,7 +3,7 @@ import { readFileSync, readdirSync, writeFileSync } from "fs";
 const norm = (n) => (n ?? "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim();
 
 const players = JSON.parse(readFileSync("src/lib/players.json", "utf8"));
-const have = new Set(players.map((p) => norm(p.strPlayer)));
+const have = new Set(players.filter((p) => (p.strSport ?? "") === "Basketball").map((p) => norm(p.strPlayer)));
 const PID = JSON.parse(readFileSync("src/lib/nba-player-ids.json", "utf8"));
 
 // teams per player, from whatever box scores we've harvested (enriches generated pages)
