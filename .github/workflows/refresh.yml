@@ -24,9 +24,9 @@ jobs:
           node scripts/merge-twin-fights.mjs
           node scripts/build-events.mjs
         continue-on-error: true
-       - name: Supabase keep-alive
-           run: curl -s -o /dev/null -H "apikey:${{ secrets.SUPABASE_ANON_KEY }}" "${{ secrets.SUPABASE_URL }}/rest/v1/profiles?select=id&limit=1" || true
-           continue-on-error: true
+      - name: Supabase keep-alive
+        run: curl -s -o /dev/null -H "apikey:${{ secrets.SUPABASE_ANON_KEY }}" "${{ secrets.SUPABASE_URL }}/rest/v1/profiles?select=id&limit=1" || true
+        continue-on-error: true
       - name: Commit & push if changed
         run: |
           git config user.name "sportlog-bot"
