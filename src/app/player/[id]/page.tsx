@@ -47,7 +47,7 @@ export default function PlayerPage({ params }: { params: Promise<{ id: string }>
         <div className="mx-auto max-w-3xl px-6 py-12">
           <BackLink />
           <div className="mt-6 flex items-start gap-6">
-                       <PlayerPhoto src={null} sport={gen.league === "NFL" ? "American Football" : gen.league === "MLB" ? "Baseball" : gen.league === "NHL" ? "Ice Hockey" : "Basketball"} name={gen.name} />
+                       <PlayerPhoto src={gen.league === "NBA" ? `https://cdn.nba.com/headshots/nba/latest/1040x760/${gen.nbaId}.png` : gen.league === "MLB" ? `https://img.mlbstatic.com/mlb-photos/image/upload/w_426,q_auto:best/v1/people/${gen.mlbId}/headshot/67/current` : gen.league === "NHL" ? `https://assets.nhle.com/mugs/nhl/latest/${gen.nhlId}.png` : null} sport={gen.league === "NFL" ? "American Football" : gen.league === "MLB" ? "Baseball" : gen.league === "NHL" ? "Ice Hockey" : "Basketball"} name={gen.name} />
             <div>
               <h1 className="text-3xl font-bold">{gen.name}</h1>
               <p className="mt-1 text-sm text-zinc-400">{gen.league ?? "NBA"}{gen.first && gen.last ? ` · ${gen.first} – ${gen.last}` : ""}</p>
@@ -58,6 +58,7 @@ export default function PlayerPage({ params }: { params: Promise<{ id: string }>
                     <EntityRatingBox entityType="player" entityId={id} entityName={gen.name} />
                               {gen.league === "MLB" && <PlayerStatsGeneric endpoint="/api/mlb-stats" query={`name=${encodeURIComponent(gen.name)}`} />}
           {gen.league === "NHL" && <PlayerStatsGeneric endpoint="/api/nhl-stats" query={`name=${encodeURIComponent(gen.name)}`} />}
+                    {gen.league === "NFL" && <PlayerStatsGeneric endpoint="/api/nfl-stats" query={`name=${encodeURIComponent(gen.name)}`} />}
         </div>
       </main>
     );

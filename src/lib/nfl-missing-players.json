@@ -44,17 +44,6 @@
     ]
   },
   {
-    "nflId": "00-0041203",
-    "name": "Joey Aguilar",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "QB",
-      "JAX"
-    ]
-  },
-  {
     "nflId": "00-0039178",
     "name": "Austin Ajiake",
     "first": "2023",
@@ -107,39 +96,6 @@
     "teams": [
       "LB",
       "IND"
-    ]
-  },
-  {
-    "nflId": "00-0040890",
-    "name": "Cyrus Allen",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "KC"
-    ]
-  },
-  {
-    "nflId": "00-0041096",
-    "name": "Kaytron Allen",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "WAS"
-    ]
-  },
-  {
-    "nflId": "00-0041453",
-    "name": "Luke Altmyer",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "QB",
-      "DET"
     ]
   },
   {
@@ -209,17 +165,6 @@
     ]
   },
   {
-    "nflId": "00-0041185",
-    "name": "Vinny Anthony II",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "ATL"
-    ]
-  },
-  {
     "nflId": "00-0039676",
     "name": "Chigozie Anusiem",
     "first": "2024",
@@ -228,17 +173,6 @@
     "teams": [
       "DB",
       "LV"
-    ]
-  },
-  {
-    "nflId": "00-0041314",
-    "name": "Tanner Arkin",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "NE"
     ]
   },
   {
@@ -429,17 +363,6 @@
     ]
   },
   {
-    "nflId": "00-0041139",
-    "name": "Damon Bankston",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "NYG"
-    ]
-  },
-  {
     "nflId": "00-0040314",
     "name": "Ricky Barber",
     "first": "2025",
@@ -484,17 +407,6 @@
     ]
   },
   {
-    "nflId": "00-0041164",
-    "name": "Caden Barnett",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "CHI"
-    ]
-  },
-  {
     "nflId": "00-0040196",
     "name": "Tyler Baron",
     "first": "2025",
@@ -503,17 +415,6 @@
     "teams": [
       "DE",
       "NYJ"
-    ]
-  },
-  {
-    "nflId": "00-0040941",
-    "name": "Dylan Barrett",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "GB"
     ]
   },
   {
@@ -671,50 +572,6 @@
     ]
   },
   {
-    "nflId": "00-0040912",
-    "name": "Hank Beatty",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "TEN"
-    ]
-  },
-  {
-    "nflId": "00-0040909",
-    "name": "Evan Beerntsen",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "BAL"
-    ]
-  },
-  {
-    "nflId": "00-0041342",
-    "name": "Dillon Bell",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "MIN"
-    ]
-  },
-  {
-    "nflId": "00-0041443",
-    "name": "Skyler Bell",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "BUF"
-    ]
-  },
-  {
     "nflId": "00-0038405",
     "name": "Travis Bell",
     "first": "2023",
@@ -745,39 +602,6 @@
     "teams": [
       "DT",
       "BAL"
-    ]
-  },
-  {
-    "nflId": "00-0041019",
-    "name": "Kahlil Benson",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "KC"
-    ]
-  },
-  {
-    "nflId": "00-0040894",
-    "name": "Malik Benson",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "LV"
-    ]
-  },
-  {
-    "nflId": "00-0041133",
-    "name": "Dallen Bentley",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "DEN"
     ]
   },
   {
@@ -836,28 +660,6 @@
     ]
   },
   {
-    "nflId": "00-0038565",
-    "name": "Mekhi Blackmon",
-    "first": "2023",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "DB",
-      "IND"
-    ]
-  },
-  {
-    "nflId": "00-0041425",
-    "name": "Austin Blaske",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "LA"
-    ]
-  },
-  {
     "nflId": "00-0041315",
     "name": "David Blay Jr.",
     "first": "2026",
@@ -899,39 +701,6 @@
     "teams": [
       "DT",
       "JAX"
-    ]
-  },
-  {
-    "nflId": "00-0041467",
-    "name": "Lewis Bond",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "HOU"
-    ]
-  },
-  {
-    "nflId": "00-0041155",
-    "name": "Jim Bonifas",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
-      "MIA"
-    ]
-  },
-  {
-    "nflId": "00-0041277",
-    "name": "Davon Booth",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "CLE"
     ]
   },
   {
@@ -979,28 +748,6 @@
     ]
   },
   {
-    "nflId": "00-0041548",
-    "name": "Jude Bowry",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "BUF"
-    ]
-  },
-  {
-    "nflId": "00-0041205",
-    "name": "Brady Boyd",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "JAX"
-    ]
-  },
-  {
     "nflId": "00-0038956",
     "name": "Ekow Boye-Doe",
     "first": "2023",
@@ -1042,61 +789,6 @@
     "teams": [
       "SAF",
       "NYG"
-    ]
-  },
-  {
-    "nflId": "00-0041176",
-    "name": "Jaden Bradley",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "WAS"
-    ]
-  },
-  {
-    "nflId": "00-0041373",
-    "name": "Jerand Bradley",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "LAC"
-    ]
-  },
-  {
-    "nflId": "00-0040977",
-    "name": "Cortez Braham",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "BAL"
-    ]
-  },
-  {
-    "nflId": "00-0041073",
-    "name": "Parker Brailsford",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
-      "CLE"
-    ]
-  },
-  {
-    "nflId": "00-0041081",
-    "name": "Max Bredeson",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "MIN"
     ]
   },
   {
@@ -1155,28 +847,6 @@
     ]
   },
   {
-    "nflId": "00-0040970",
-    "name": "Michael Briscoe",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "MIN"
-    ]
-  },
-  {
-    "nflId": "00-0041186",
-    "name": "James Brockermeyer",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
-      "ATL"
-    ]
-  },
-  {
     "nflId": "00-0041187",
     "name": "Le'Meke Brockington",
     "first": "2026",
@@ -1232,28 +902,6 @@
     ]
   },
   {
-    "nflId": "00-0041099",
-    "name": "Barion Brown",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "NO"
-    ]
-  },
-  {
-    "nflId": "00-0040930",
-    "name": "Camden Brown",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "DAL"
-    ]
-  },
-  {
     "nflId": "00-0036220",
     "name": "Derrick Brown",
     "first": "2020",
@@ -1276,17 +924,6 @@
     ]
   },
   {
-    "nflId": "00-0041240",
-    "name": "Liam Brown",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "CIN"
-    ]
-  },
-  {
     "nflId": "00-0040913",
     "name": "Sean Brown",
     "first": "2026",
@@ -1295,17 +932,6 @@
     "teams": [
       "LB",
       "TEN"
-    ]
-  },
-  {
-    "nflId": "00-0041374",
-    "name": "Sincere Brown",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "LAC"
     ]
   },
   {
@@ -1364,17 +990,6 @@
     ]
   },
   {
-    "nflId": "00-0041241",
-    "name": "Kentrel Bullock",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "CIN"
-    ]
-  },
-  {
     "nflId": "00-0040195",
     "name": "Denzel Burke",
     "first": "2025",
@@ -1397,28 +1012,6 @@
     ]
   },
   {
-    "nflId": "00-0041058",
-    "name": "Travis Burke",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "LAC"
-    ]
-  },
-  {
-    "nflId": "00-0041132",
-    "name": "Deion Burks",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "IND"
-    ]
-  },
-  {
     "nflId": "00-0040268",
     "name": "Major Burns",
     "first": "2026",
@@ -1427,17 +1020,6 @@
     "teams": [
       "SAF",
       "MIA"
-    ]
-  },
-  {
-    "nflId": "00-0040884",
-    "name": "Jager Burton",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
-      "GB"
     ]
   },
   {
@@ -1463,28 +1045,6 @@
     ]
   },
   {
-    "nflId": "00-0040953",
-    "name": "Jeff Caldwell",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "KC"
-    ]
-  },
-  {
-    "nflId": "00-0041414",
-    "name": "Matthew Caldwell",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "QB",
-      "LA"
-    ]
-  },
-  {
     "nflId": "00-0040674",
     "name": "Keydrain Calligan",
     "first": "2025",
@@ -1504,17 +1064,6 @@
     "teams": [
       "RB",
       "TB"
-    ]
-  },
-  {
-    "nflId": "00-0041100",
-    "name": "Josh Cameron",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "JAX"
     ]
   },
   {
@@ -1548,17 +1097,6 @@
     "teams": [
       "LB",
       "PHI"
-    ]
-  },
-  {
-    "nflId": "00-0040324",
-    "name": "Cam Camper",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "NYJ"
     ]
   },
   {
@@ -1606,17 +1144,6 @@
     ]
   },
   {
-    "nflId": "00-0040881",
-    "name": "Fernando Carmona",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "TEN"
-    ]
-  },
-  {
     "nflId": "00-0041375",
     "name": "Jahmeer Carter",
     "first": "2026",
@@ -1646,28 +1173,6 @@
     "games": 0,
     "teams": [
       "CB",
-      "IND"
-    ]
-  },
-  {
-    "nflId": "00-0041498",
-    "name": "Kage Casey",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "DEN"
-    ]
-  },
-  {
-    "nflId": "00-0041486",
-    "name": "Anderson Castle",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
       "IND"
     ]
   },
@@ -1760,17 +1265,6 @@
     ]
   },
   {
-    "nflId": "00-0041104",
-    "name": "Demond Claiborne",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "MIN"
-    ]
-  },
-  {
     "nflId": "00-0040045",
     "name": "Alijah Clark",
     "first": "2025",
@@ -1804,17 +1298,6 @@
     ]
   },
   {
-    "nflId": "00-0040996",
-    "name": "Jacob Clark",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "QB",
-      "LV"
-    ]
-  },
-  {
     "nflId": "00-0040397",
     "name": "Jordan Clark",
     "first": "2025",
@@ -1837,17 +1320,6 @@
     ]
   },
   {
-    "nflId": "00-0041137",
-    "name": "Kevin Cline",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "MIA"
-    ]
-  },
-  {
     "nflId": "00-0041411",
     "name": "Michael Coats Jr.",
     "first": "2026",
@@ -1867,28 +1339,6 @@
     "teams": [
       "P",
       "LV"
-    ]
-  },
-  {
-    "nflId": "00-0041496",
-    "name": "Jonah Coleman",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "DEN"
-    ]
-  },
-  {
-    "nflId": "00-0041529",
-    "name": "Kevin Coleman Jr.",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "MIA"
     ]
   },
   {
@@ -1925,17 +1375,6 @@
     ]
   },
   {
-    "nflId": "00-0041415",
-    "name": "Dean Connors",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "LA"
-    ]
-  },
-  {
     "nflId": "00-0039567",
     "name": "Nik Constantinou",
     "first": "2026",
@@ -1947,17 +1386,6 @@
     ]
   },
   {
-    "nflId": "00-0040893",
-    "name": "Pat Coogan",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
-      "TEN"
-    ]
-  },
-  {
     "nflId": "00-0038475",
     "name": "Alex Cook",
     "first": "2023",
@@ -1966,17 +1394,6 @@
     "teams": [
       "SAF",
       "LA"
-    ]
-  },
-  {
-    "nflId": "00-0041097",
-    "name": "Anez Cooper",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "NYJ"
     ]
   },
   {
@@ -2035,28 +1452,6 @@
     ]
   },
   {
-    "nflId": "00-0040223",
-    "name": "Jeremy Crawshaw",
-    "first": "2025",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "P",
-      "DEN"
-    ]
-  },
-  {
-    "nflId": "00-0041430",
-    "name": "Greg Crippen",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
-      "PIT"
-    ]
-  },
-  {
     "nflId": "00-0040565",
     "name": "Brandon Crossley",
     "first": "2025",
@@ -2064,17 +1459,6 @@
     "games": 0,
     "teams": [
       "CB",
-      "NE"
-    ]
-  },
-  {
-    "nflId": "00-0041103",
-    "name": "Dametrious Crownover",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
       "NE"
     ]
   },
@@ -2101,17 +1485,6 @@
     ]
   },
   {
-    "nflId": "00-0040887",
-    "name": "Josh Cuevas",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "BAL"
-    ]
-  },
-  {
     "nflId": "00-0041364",
     "name": "Elijah Culp",
     "first": "2026",
@@ -2119,17 +1492,6 @@
     "games": 0,
     "teams": [
       "CB",
-      "ARI"
-    ]
-  },
-  {
-    "nflId": "00-0039316",
-    "name": "Baylor Cupp",
-    "first": "2024",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
       "ARI"
     ]
   },
@@ -2142,39 +1504,6 @@
     "teams": [
       "DE",
       "IND"
-    ]
-  },
-  {
-    "nflId": "00-0041237",
-    "name": "Chase Curtis",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "NYJ"
-    ]
-  },
-  {
-    "nflId": "00-0041399",
-    "name": "CJ Daniels",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "LA"
-    ]
-  },
-  {
-    "nflId": "00-0041251",
-    "name": "Jalon Daniels",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "QB",
-      "TB"
     ]
   },
   {
@@ -2211,17 +1540,6 @@
     ]
   },
   {
-    "nflId": "00-0041485",
-    "name": "Miles Davis",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "CAR"
-    ]
-  },
-  {
     "nflId": "00-0041464",
     "name": "Tacario Davis",
     "first": "2026",
@@ -2230,17 +1548,6 @@
     "teams": [
       "CB",
       "CIN"
-    ]
-  },
-  {
-    "nflId": "00-0041481",
-    "name": "Terrill Davis",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "MIN"
     ]
   },
   {
@@ -2263,39 +1570,6 @@
     "teams": [
       "SAF",
       "NO"
-    ]
-  },
-  {
-    "nflId": "00-0040979",
-    "name": "Nick Dawkins",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
-      "BAL"
-    ]
-  },
-  {
-    "nflId": "00-0040967",
-    "name": "Jacob De Jesus",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "KC"
-    ]
-  },
-  {
-    "nflId": "00-0041317",
-    "name": "Nick DeGennaro",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "NE"
     ]
   },
   {
@@ -2420,17 +1694,6 @@
     ]
   },
   {
-    "nflId": "00-0041276",
-    "name": "Kam Dewberry",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "ATL"
-    ]
-  },
-  {
     "nflId": "00-0041208",
     "name": "Garrett DiGiorgio",
     "first": "2026",
@@ -2439,17 +1702,6 @@
     "teams": [
       "OT",
       "JAX"
-    ]
-  },
-  {
-    "nflId": "00-0037224",
-    "name": "Cameron Dicker",
-    "first": "2022",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "K",
-      "LAC"
     ]
   },
   {
@@ -2472,17 +1724,6 @@
     "teams": [
       "LB",
       "CIN"
-    ]
-  },
-  {
-    "nflId": "00-0041318",
-    "name": "Kyle Dixon",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "NE"
     ]
   },
   {
@@ -2516,28 +1757,6 @@
     "teams": [
       "P",
       "BUF"
-    ]
-  },
-  {
-    "nflId": "00-0041326",
-    "name": "CJ Donaldson",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "NO"
-    ]
-  },
-  {
-    "nflId": "00-0041319",
-    "name": "Cameron Dorner",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "NE"
     ]
   },
   {
@@ -2615,17 +1834,6 @@
     "teams": [
       "DE",
       "JAX"
-    ]
-  },
-  {
-    "nflId": "00-0041536",
-    "name": "Kyre Duplessis",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "DEN"
     ]
   },
   {
@@ -2772,39 +1980,6 @@
     ]
   },
   {
-    "nflId": "00-0041116",
-    "name": "Jack Endries",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "CIN"
-    ]
-  },
-  {
-    "nflId": "00-0039059",
-    "name": "Ethan Evans",
-    "first": "2023",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "P",
-      "LA"
-    ]
-  },
-  {
-    "nflId": "00-0040954",
-    "name": "Omari Evans",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "KC"
-    ]
-  },
-  {
     "nflId": "00-0041393",
     "name": "Daylen Everette",
     "first": "2026",
@@ -2838,17 +2013,6 @@
     ]
   },
   {
-    "nflId": "00-0040981",
-    "name": "Joe Fagnano",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "QB",
-      "BAL"
-    ]
-  },
-  {
     "nflId": "00-0041279",
     "name": "Logan Fano",
     "first": "2026",
@@ -2868,17 +2032,6 @@
     "teams": [
       "LB",
       "SF"
-    ]
-  },
-  {
-    "nflId": "00-0041517",
-    "name": "Jalen Farmer",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "IND"
     ]
   },
   {
@@ -2912,17 +2065,6 @@
     "teams": [
       "LB",
       "CHI"
-    ]
-  },
-  {
-    "nflId": "00-0041270",
-    "name": "Bruno Fina",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "BUF"
     ]
   },
   {
@@ -2981,17 +2123,6 @@
     ]
   },
   {
-    "nflId": "00-0041252",
-    "name": "Kenny Fletcher Jr.",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "TB"
-    ]
-  },
-  {
     "nflId": "00-0039959",
     "name": "Tra Fluellen",
     "first": "2024",
@@ -3000,17 +2131,6 @@
     "teams": [
       "SAF",
       "GB"
-    ]
-  },
-  {
-    "nflId": "00-0041507",
-    "name": "Courtland Ford",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OL",
-      "NYJ"
     ]
   },
   {
@@ -3099,17 +2219,6 @@
     "teams": [
       "LS",
       "DEN"
-    ]
-  },
-  {
-    "nflId": "00-0041566",
-    "name": "Jeremiah Franklin",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "MIA"
     ]
   },
   {
@@ -3245,28 +2354,6 @@
     ]
   },
   {
-    "nflId": "00-0041124",
-    "name": "Gavin Gerhardt",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
-      "MIN"
-    ]
-  },
-  {
-    "nflId": "00-0040943",
-    "name": "Josh Gesky",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "GB"
-    ]
-  },
-  {
     "nflId": "00-0041447",
     "name": "Skyler Gill-Howard",
     "first": "2026",
@@ -3286,17 +2373,6 @@
     "teams": [
       "DT",
       "DAL"
-    ]
-  },
-  {
-    "nflId": "00-0041146",
-    "name": "Isaia Glass",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "CAR"
     ]
   },
   {
@@ -3432,17 +2508,6 @@
     ]
   },
   {
-    "nflId": "00-0041092",
-    "name": "Taylen Green",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "QB",
-      "CLE"
-    ]
-  },
-  {
     "nflId": "00-0040371",
     "name": "Eric Gregory",
     "first": "2025",
@@ -3451,28 +2516,6 @@
     "teams": [
       "DT",
       "NE"
-    ]
-  },
-  {
-    "nflId": "00-0041359",
-    "name": "Wesley Grimes",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "SF"
-    ]
-  },
-  {
-    "nflId": "00-0041156",
-    "name": "Mark Gronowski",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "QB",
-      "MIA"
     ]
   },
   {
@@ -3498,17 +2541,6 @@
     ]
   },
   {
-    "nflId": "00-0041108",
-    "name": "Matt Gulbin",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
-      "WAS"
-    ]
-  },
-  {
     "nflId": "00-0041080",
     "name": "George Gumbs Jr.",
     "first": "2026",
@@ -3517,17 +2549,6 @@
     "teams": [
       "DE",
       "IND"
-    ]
-  },
-  {
-    "nflId": "00-0041016",
-    "name": "Patrick Gurd",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "LV"
     ]
   },
   {
@@ -3561,28 +2582,6 @@
     "teams": [
       "P",
       "WAS"
-    ]
-  },
-  {
-    "nflId": "00-0041228",
-    "name": "Sahmir Hagans",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "IND"
-    ]
-  },
-  {
-    "nflId": "00-0041303",
-    "name": "Sam Hagen",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "HOU"
     ]
   },
   {
@@ -3740,17 +2739,6 @@
     ]
   },
   {
-    "nflId": "00-0041535",
-    "name": "Louis Hansen",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "HOU"
-    ]
-  },
-  {
     "nflId": "00-0039417",
     "name": "Myles Harden",
     "first": "2024",
@@ -3773,17 +2761,6 @@
     ]
   },
   {
-    "nflId": "00-0041327",
-    "name": "Cody Hardy",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "NO"
-    ]
-  },
-  {
     "nflId": "00-0039883",
     "name": "Daequan Hardy",
     "first": "2024",
@@ -3792,17 +2769,6 @@
     "teams": [
       "CB",
       "PIT"
-    ]
-  },
-  {
-    "nflId": "00-0041107",
-    "name": "Alex Harkey",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "LAC"
     ]
   },
   {
@@ -3927,50 +2893,6 @@
     ]
   },
   {
-    "nflId": "00-0039611",
-    "name": "Matthew Hayball",
-    "first": "2024",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "P",
-      "ATL"
-    ]
-  },
-  {
-    "nflId": "00-0041244",
-    "name": "Jamal Haynes",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "CIN"
-    ]
-  },
-  {
-    "nflId": "00-0041071",
-    "name": "Sam Hecht",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
-      "CAR"
-    ]
-  },
-  {
-    "nflId": "00-0041490",
-    "name": "Eli Heidenreich",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "PIT"
-    ]
-  },
-  {
     "nflId": "00-0041556",
     "name": "Romello Height",
     "first": "2026",
@@ -4015,28 +2937,6 @@
     ]
   },
   {
-    "nflId": "00-0040998",
-    "name": "Roman Hemby",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "LV"
-    ]
-  },
-  {
-    "nflId": "00-0041418",
-    "name": "Bryce Henderson",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "LA"
-    ]
-  },
-  {
     "nflId": "00-0036281",
     "name": "C.J. Henderson",
     "first": "2020",
@@ -4048,17 +2948,6 @@
     ]
   },
   {
-    "nflId": "00-0040895",
-    "name": "Emmanuel Henderson Jr.",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "SEA"
-    ]
-  },
-  {
     "nflId": "00-0040284",
     "name": "Jack Henderson",
     "first": "2025",
@@ -4067,17 +2956,6 @@
     "teams": [
       "SAF",
       "PIT"
-    ]
-  },
-  {
-    "nflId": "00-0041014",
-    "name": "Niklas Henning",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "LV"
     ]
   },
   {
@@ -4103,28 +2981,6 @@
     ]
   },
   {
-    "nflId": "00-0041178",
-    "name": "Robert Henry Jr.",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "WAS"
-    ]
-  },
-  {
-    "nflId": "00-0041436",
-    "name": "DJ Herman",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "MIA"
-    ]
-  },
-  {
     "nflId": "00-0040038",
     "name": "Tyron Herring",
     "first": "2025",
@@ -4133,17 +2989,6 @@
     "teams": [
       "SAF",
       "CLE"
-    ]
-  },
-  {
-    "nflId": "00-0041330",
-    "name": "Alan Herron",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "NO"
     ]
   },
   {
@@ -4158,17 +3003,6 @@
     ]
   },
   {
-    "nflId": "00-0040879",
-    "name": "Matthew Hibner",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "BAL"
-    ]
-  },
-  {
     "nflId": "00-0040100",
     "name": "Jay Higgins",
     "first": "2025",
@@ -4180,17 +3014,6 @@
     ]
   },
   {
-    "nflId": "00-0041238",
-    "name": "Xavier Hill",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "NYJ"
-    ]
-  },
-  {
     "nflId": "00-0041419",
     "name": "Nikhai Hill-Green",
     "first": "2026",
@@ -4199,17 +3022,6 @@
     "teams": [
       "ILB",
       "LA"
-    ]
-  },
-  {
-    "nflId": "00-0041179",
-    "name": "Chris Hilton Jr.",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "GB"
     ]
   },
   {
@@ -4309,17 +3121,6 @@
     "teams": [
       "LB",
       "SEA"
-    ]
-  },
-  {
-    "nflId": "00-0040934",
-    "name": "Jordan Hudson",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "DAL"
     ]
   },
   {
@@ -4730,17 +3531,6 @@
     ]
   },
   {
-    "nflId": "00-0040999",
-    "name": "Isaiah Jatta",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "LV"
-    ]
-  },
-  {
     "nflId": "00-0036645",
     "name": "Shemar Jean-Charles",
     "first": "2021",
@@ -4829,17 +3619,6 @@
     ]
   },
   {
-    "nflId": "00-0041013",
-    "name": "Emmett Johnson",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "KC"
-    ]
-  },
-  {
     "nflId": "00-0037269",
     "name": "Eric Johnson",
     "first": "2022",
@@ -4862,17 +3641,6 @@
     ]
   },
   {
-    "nflId": "00-0040616",
-    "name": "Kisean Johnson",
-    "first": "2025",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "GB"
-    ]
-  },
-  {
     "nflId": "00-0040751",
     "name": "Will Johnson",
     "first": "2025",
@@ -4881,17 +3649,6 @@
     "teams": [
       "CB",
       "ARI"
-    ]
-  },
-  {
-    "nflId": "00-0041077",
-    "name": "Justin Joly",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "DEN"
     ]
   },
   {
@@ -4914,17 +3671,6 @@
     "teams": [
       "LB",
       "BAL"
-    ]
-  },
-  {
-    "nflId": "00-0041191",
-    "name": "Cash Jones",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "ATL"
     ]
   },
   {
@@ -4958,17 +3704,6 @@
     "teams": [
       "G",
       "SF"
-    ]
-  },
-  {
-    "nflId": "00-0041403",
-    "name": "Rohan Jones",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "LA"
     ]
   },
   {
@@ -5023,17 +3758,6 @@
     "games": 0,
     "teams": [
       "LB",
-      "WAS"
-    ]
-  },
-  {
-    "nflId": "00-0041117",
-    "name": "Athan Kaliakmanis",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "QB",
       "WAS"
     ]
   },
@@ -5093,28 +3817,6 @@
     ]
   },
   {
-    "nflId": "00-0041292",
-    "name": "Kolbe Katsis",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "DEN"
-    ]
-  },
-  {
-    "nflId": "00-0041246",
-    "name": "Josh Kattus",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "CIN"
-    ]
-  },
-  {
     "nflId": "00-0041456",
     "name": "Aidan Keanaaina",
     "first": "2026",
@@ -5170,17 +3872,6 @@
     ]
   },
   {
-    "nflId": "00-0041168",
-    "name": "Omari Kelly",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "CHI"
-    ]
-  },
-  {
     "nflId": "00-0038848",
     "name": "Anthony Kendall",
     "first": "2023",
@@ -5211,17 +3902,6 @@
     "teams": [
       "CB",
       "PIT"
-    ]
-  },
-  {
-    "nflId": "00-0041293",
-    "name": "Dane Key",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "DEN"
     ]
   },
   {
@@ -5269,17 +3949,6 @@
     ]
   },
   {
-    "nflId": "00-0041149",
-    "name": "Haynes King",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "QB",
-      "CAR"
-    ]
-  },
-  {
     "nflId": "00-0039239",
     "name": "Kalen King",
     "first": "2024",
@@ -5310,28 +3979,6 @@
     "teams": [
       "LB",
       "JAX"
-    ]
-  },
-  {
-    "nflId": "00-0041056",
-    "name": "Cade Klubnik",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "QB",
-      "NYJ"
-    ]
-  },
-  {
-    "nflId": "00-0040738",
-    "name": "Demetrius Knight Jr.",
-    "first": "2025",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "LB",
-      "CIN"
     ]
   },
   {
@@ -5368,39 +4015,6 @@
     ]
   },
   {
-    "nflId": "00-0041084",
-    "name": "Tanner Koziol",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "JAX"
-    ]
-  },
-  {
-    "nflId": "00-0041513",
-    "name": "Josh Kreutz",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
-      "IND"
-    ]
-  },
-  {
-    "nflId": "00-0040654",
-    "name": "Kai Kroeger",
-    "first": "2025",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "P",
-      "HOU"
-    ]
-  },
-  {
     "nflId": "00-0039461",
     "name": "Jamree Kromah",
     "first": "2024",
@@ -5408,17 +4022,6 @@
     "games": 0,
     "teams": [
       "DE",
-      "CHI"
-    ]
-  },
-  {
-    "nflId": "00-0041169",
-    "name": "Jaren Kump",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
       "CHI"
     ]
   },
@@ -5456,17 +4059,6 @@
     ]
   },
   {
-    "nflId": "00-0041067",
-    "name": "Bryce Lance",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "NO"
-    ]
-  },
-  {
     "nflId": "00-0038737",
     "name": "Isaiah Land",
     "first": "2023",
@@ -5486,17 +4078,6 @@
     "teams": [
       "SAF",
       "JAX"
-    ]
-  },
-  {
-    "nflId": "00-0041170",
-    "name": "Hayden Large",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "CHI"
     ]
   },
   {
@@ -5577,28 +4158,6 @@
     ]
   },
   {
-    "nflId": "00-0041348",
-    "name": "Tristan Leigh",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "MIN"
-    ]
-  },
-  {
-    "nflId": "00-0041349",
-    "name": "Delby Lemieux",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
-      "MIN"
-    ]
-  },
-  {
     "nflId": "00-0038404",
     "name": "Titus Leo",
     "first": "2023",
@@ -5607,17 +4166,6 @@
     "teams": [
       "DE",
       "SF"
-    ]
-  },
-  {
-    "nflId": "00-0041062",
-    "name": "Connor Lew",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
-      "CIN"
     ]
   },
   {
@@ -5643,17 +4191,6 @@
     ]
   },
   {
-    "nflId": "00-0040074",
-    "name": "Tyler Loop",
-    "first": "2025",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "K",
-      "BAL"
-    ]
-  },
-  {
     "nflId": "00-0041527",
     "name": "Kyle Louis",
     "first": "2026",
@@ -5673,17 +4210,6 @@
     "teams": [
       "DT",
       "CHI"
-    ]
-  },
-  {
-    "nflId": "00-0041020",
-    "name": "Xavier Loyd",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "KC"
     ]
   },
   {
@@ -5717,17 +4243,6 @@
     "teams": [
       "CB",
       "CLE"
-    ]
-  },
-  {
-    "nflId": "00-0041255",
-    "name": "Henry Lutovsky",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "TB"
     ]
   },
   {
@@ -5775,17 +4290,6 @@
     ]
   },
   {
-    "nflId": "00-0041272",
-    "name": "Ja'Mori Maclin",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "BUF"
-    ]
-  },
-  {
     "nflId": "00-0040004",
     "name": "T.J. Maguranyanga",
     "first": "2025",
@@ -5797,17 +4301,6 @@
     ]
   },
   {
-    "nflId": "00-0041192",
-    "name": "Riley Mahlman",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "ATL"
-    ]
-  },
-  {
     "nflId": "00-0041487",
     "name": "Tywone Malone",
     "first": "2026",
@@ -5816,17 +4309,6 @@
     "teams": [
       "DT",
       "CAR"
-    ]
-  },
-  {
-    "nflId": "00-0041294",
-    "name": "Joseph Manjack",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "DEN"
     ]
   },
   {
@@ -5860,17 +4342,6 @@
     "teams": [
       "SAF",
       "NE"
-    ]
-  },
-  {
-    "nflId": "00-0041266",
-    "name": "Keelan Marion",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "ATL"
     ]
   },
   {
@@ -5973,17 +4444,6 @@
     ]
   },
   {
-    "nflId": "00-0040974",
-    "name": "Lance Mason",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "PIT"
-    ]
-  },
-  {
     "nflId": "00-0040889",
     "name": "Hezekiah Masses",
     "first": "2026",
@@ -6061,17 +4521,6 @@
     ]
   },
   {
-    "nflId": "00-0041267",
-    "name": "Malik McClain",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "NYJ"
-    ]
-  },
-  {
     "nflId": "00-0040869",
     "name": "Chris McClellan",
     "first": "2026",
@@ -6113,17 +4562,6 @@
     "teams": [
       "LB",
       "NYJ"
-    ]
-  },
-  {
-    "nflId": "00-0041158",
-    "name": "Donaven McCulley",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "MIA"
     ]
   },
   {
@@ -6182,17 +4620,6 @@
     ]
   },
   {
-    "nflId": "00-0041125",
-    "name": "Seth McGowan",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "IND"
-    ]
-  },
-  {
     "nflId": "00-0041159",
     "name": "Rodney McGraw",
     "first": "2026",
@@ -6223,17 +4650,6 @@
     "teams": [
       "LB",
       "JAX"
-    ]
-  },
-  {
-    "nflId": "00-0040984",
-    "name": "Dontae McMillan",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "BAL"
     ]
   },
   {
@@ -6270,17 +4686,6 @@
     ]
   },
   {
-    "nflId": "00-0039634",
-    "name": "Austin McNamara",
-    "first": "2025",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "P",
-      "NYJ"
-    ]
-  },
-  {
     "nflId": "00-0041471",
     "name": "Emmanuel McNeil-Warren",
     "first": "2026",
@@ -6311,17 +4716,6 @@
     "teams": [
       "K",
       "CIN"
-    ]
-  },
-  {
-    "nflId": "00-0041263",
-    "name": "Lake McRee",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "PIT"
     ]
   },
   {
@@ -6402,17 +4796,6 @@
     ]
   },
   {
-    "nflId": "00-0040785",
-    "name": "Dohnte Meyers",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "CIN"
-    ]
-  },
-  {
     "nflId": "00-0040446",
     "name": "Joseph Michalski",
     "first": "2025",
@@ -6457,28 +4840,6 @@
     ]
   },
   {
-    "nflId": "00-0041282",
-    "name": "Izavion Miller",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "CLE"
-    ]
-  },
-  {
-    "nflId": "00-0041129",
-    "name": "Jam Miller",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "NE"
-    ]
-  },
-  {
     "nflId": "00-0039570",
     "name": "Jordan Miller",
     "first": "2024",
@@ -6486,28 +4847,6 @@
     "games": 0,
     "teams": [
       "DT",
-      "DEN"
-    ]
-  },
-  {
-    "nflId": "00-0040918",
-    "name": "Rasheed Miller",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "TEN"
-    ]
-  },
-  {
-    "nflId": "00-0041296",
-    "name": "Tyler Miller",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
       "DEN"
     ]
   },
@@ -6531,17 +4870,6 @@
     "teams": [
       "DB",
       "NE"
-    ]
-  },
-  {
-    "nflId": "00-0041017",
-    "name": "Kamar Missouri",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "LV"
     ]
   },
   {
@@ -6589,17 +4917,6 @@
     ]
   },
   {
-    "nflId": "00-0040919",
-    "name": "Tyren Montgomery",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "TEN"
-    ]
-  },
-  {
     "nflId": "00-0041160",
     "name": "Louis Moore",
     "first": "2026",
@@ -6608,28 +4925,6 @@
     "teams": [
       "SAF",
       "MIA"
-    ]
-  },
-  {
-    "nflId": "00-0040165",
-    "name": "Malachi Moore",
-    "first": "2025",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "SAF",
-      "NYJ"
-    ]
-  },
-  {
-    "nflId": "00-0041180",
-    "name": "Quentin Moore",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "WAS"
     ]
   },
   {
@@ -6644,28 +4939,6 @@
     ]
   },
   {
-    "nflId": "00-0041324",
-    "name": "JonDarius Morgan",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "NE"
-    ]
-  },
-  {
-    "nflId": "00-0040897",
-    "name": "Micah Morris",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "PHI"
-    ]
-  },
-  {
     "nflId": "00-0040747",
     "name": "Benjamin Morrison",
     "first": "2025",
@@ -6677,17 +4950,6 @@
     ]
   },
   {
-    "nflId": "00-0041123",
-    "name": "Behren Morton",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "QB",
-      "NE"
-    ]
-  },
-  {
     "nflId": "00-0037364",
     "name": "Arron Mosby",
     "first": "2022",
@@ -6696,17 +4958,6 @@
     "teams": [
       "DE",
       "GB"
-    ]
-  },
-  {
-    "nflId": "00-0041172",
-    "name": "Miller Moss",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "QB",
-      "CHI"
     ]
   },
   {
@@ -6751,17 +5002,6 @@
     "teams": [
       "LB",
       "DEN"
-    ]
-  },
-  {
-    "nflId": "00-0041173",
-    "name": "Mason Murphy",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
-      "CHI"
     ]
   },
   {
@@ -6886,17 +5126,6 @@
     ]
   },
   {
-    "nflId": "00-0040946",
-    "name": "Jaden Nixon",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "GB"
-    ]
-  },
-  {
     "nflId": "00-0039637",
     "name": "Maema Njongmeta",
     "first": "2024",
@@ -6941,39 +5170,6 @@
     ]
   },
   {
-    "nflId": "00-0041398",
-    "name": "Riley Nowakowski",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "FB",
-      "PIT"
-    ]
-  },
-  {
-    "nflId": "00-0040906",
-    "name": "Garrett Nussmeier",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "QB",
-      "KC"
-    ]
-  },
-  {
-    "nflId": "00-0041559",
-    "name": "Febechi Nwaiwu",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "HOU"
-    ]
-  },
-  {
     "nflId": "00-0040957",
     "name": "Xavier Nwankpa",
     "first": "2026",
@@ -6981,17 +5177,6 @@
     "games": 0,
     "teams": [
       "SAF",
-      "KC"
-    ]
-  },
-  {
-    "nflId": "00-0040958",
-    "name": "Pete Nygra",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
       "KC"
     ]
   },
@@ -7026,17 +5211,6 @@
     "teams": [
       "LB",
       "NE"
-    ]
-  },
-  {
-    "nflId": "00-0041214",
-    "name": "Jimto Obidegwu",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "JAX"
     ]
   },
   {
@@ -7081,17 +5255,6 @@
     "teams": [
       "LB",
       "ARI"
-    ]
-  },
-  {
-    "nflId": "00-0038765",
-    "name": "Ty Okada",
-    "first": "2023",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "SAF",
-      "SEA"
     ]
   },
   {
@@ -7161,17 +5324,6 @@
     ]
   },
   {
-    "nflId": "00-0041121",
-    "name": "Ethan Onianwa",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "ATL"
-    ]
-  },
-  {
     "nflId": "00-0041552",
     "name": "Tyler Onyedim",
     "first": "2026",
@@ -7216,17 +5368,6 @@
     ]
   },
   {
-    "nflId": "00-0041297",
-    "name": "Gavin Ortega",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "DEN"
-    ]
-  },
-  {
     "nflId": "00-0035118",
     "name": "Matthew Orzech",
     "first": "2019",
@@ -7246,17 +5387,6 @@
     "teams": [
       "LB",
       "HOU"
-    ]
-  },
-  {
-    "nflId": "00-0040959",
-    "name": "Jaydn Ott",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "KC"
     ]
   },
   {
@@ -7359,28 +5489,6 @@
     ]
   },
   {
-    "nflId": "00-0041452",
-    "name": "Johnny Pascuzzi",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "LAC"
-    ]
-  },
-  {
-    "nflId": "00-0041435",
-    "name": "Dean Patterson IV",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "TB"
-    ]
-  },
-  {
     "nflId": "00-0040935",
     "name": "Langston Patterson",
     "first": "2026",
@@ -7436,17 +5544,6 @@
     ]
   },
   {
-    "nflId": "00-0040891",
-    "name": "Cole Payton",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "QB",
-      "PHI"
-    ]
-  },
-  {
     "nflId": "00-0039620",
     "name": "Rico Payton",
     "first": "2024",
@@ -7466,17 +5563,6 @@
     "teams": [
       "DT",
       "BAL"
-    ]
-  },
-  {
-    "nflId": "00-0041216",
-    "name": "Trebor Pena",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "JAX"
     ]
   },
   {
@@ -7524,17 +5610,6 @@
     ]
   },
   {
-    "nflId": "00-0040936",
-    "name": "Shiyazh Pete",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "DAL"
-    ]
-  },
-  {
     "nflId": "00-0041151",
     "name": "Parker Petersen",
     "first": "2026",
@@ -7554,17 +5629,6 @@
     "teams": [
       "OLB",
       "LA"
-    ]
-  },
-  {
-    "nflId": "00-0040986",
-    "name": "Ty Pezza",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "BAL"
     ]
   },
   {
@@ -7623,17 +5687,6 @@
     ]
   },
   {
-    "nflId": "00-0040987",
-    "name": "Diego Pounds",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "BAL"
-    ]
-  },
-  {
     "nflId": "00-0040920",
     "name": "Mani Powell",
     "first": "2026",
@@ -7653,17 +5706,6 @@
     "teams": [
       "LB",
       "CIN"
-    ]
-  },
-  {
-    "nflId": "00-0041152",
-    "name": "Kobe Prentice",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "NE"
     ]
   },
   {
@@ -7689,17 +5731,6 @@
     ]
   },
   {
-    "nflId": "00-0041460",
-    "name": "Melvin Priestly",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OL",
-      "DET"
-    ]
-  },
-  {
     "nflId": "00-0041555",
     "name": "Kaleb Proctor",
     "first": "2026",
@@ -7719,17 +5750,6 @@
     "teams": [
       "CB",
       "NE"
-    ]
-  },
-  {
-    "nflId": "00-0040792",
-    "name": "Layne Pryor",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "HOU"
     ]
   },
   {
@@ -7799,17 +5819,6 @@
     ]
   },
   {
-    "nflId": "00-0040888",
-    "name": "Adam Randall",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "BAL"
-    ]
-  },
-  {
     "nflId": "00-0040472",
     "name": "Garmon Randolph",
     "first": "2025",
@@ -7854,17 +5863,6 @@
     ]
   },
   {
-    "nflId": "00-0041451",
-    "name": "Brock Rechsteiner",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "NO"
-    ]
-  },
-  {
     "nflId": "00-0040204",
     "name": "Jaylen Reed",
     "first": "2025",
@@ -7895,17 +5893,6 @@
     "teams": [
       "DB",
       "LAC"
-    ]
-  },
-  {
-    "nflId": "00-0041128",
-    "name": "Ar'maj Reed-Adams",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "BUF"
     ]
   },
   {
@@ -7975,17 +5962,6 @@
     ]
   },
   {
-    "nflId": "00-0040937",
-    "name": "Dominic Richardson",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "TEN"
-    ]
-  },
-  {
     "nflId": "00-0039718",
     "name": "Bo Richter",
     "first": "2024",
@@ -8030,17 +6006,6 @@
     ]
   },
   {
-    "nflId": "00-0041351",
-    "name": "Tomas Rimac",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "MIN"
-    ]
-  },
-  {
     "nflId": "00-0040572",
     "name": "Jahvaree Ritzie",
     "first": "2026",
@@ -8060,39 +6025,6 @@
     "teams": [
       "CB",
       "BAL"
-    ]
-  },
-  {
-    "nflId": "00-0041257",
-    "name": "Eric Rivers Jr.",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "TB"
-    ]
-  },
-  {
-    "nflId": "00-0041325",
-    "name": "Jacob Rizy",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
-      "NE"
-    ]
-  },
-  {
-    "nflId": "00-0041004",
-    "name": "Chase Roberts",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "LV"
     ]
   },
   {
@@ -8126,17 +6058,6 @@
     "teams": [
       "LB",
       "MIN"
-    ]
-  },
-  {
-    "nflId": "00-0040924",
-    "name": "Jaeden Roberts",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "ATL"
     ]
   },
   {
@@ -8261,17 +6182,6 @@
     ]
   },
   {
-    "nflId": "00-0041476",
-    "name": "Rashad Rochelle",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "SEA"
-    ]
-  },
-  {
     "nflId": "00-0041574",
     "name": "Mekhi Rodgers",
     "first": "2026",
@@ -8305,17 +6215,6 @@
     ]
   },
   {
-    "nflId": "00-0040938",
-    "name": "DJ Rogers",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "DAL"
-    ]
-  },
-  {
     "nflId": "00-0041442",
     "name": "Jimmy Rolder",
     "first": "2026",
@@ -8338,61 +6237,6 @@
     ]
   },
   {
-    "nflId": "00-0041299",
-    "name": "Cameron Ross",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "DEN"
-    ]
-  },
-  {
-    "nflId": "00-0041380",
-    "name": "Devonte Ross",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "LAC"
-    ]
-  },
-  {
-    "nflId": "00-0040633",
-    "name": "Kyrese Rowan",
-    "first": "2025",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "DEN"
-    ]
-  },
-  {
-    "nflId": "00-0041087",
-    "name": "Joe Royer",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "CLE"
-    ]
-  },
-  {
-    "nflId": "00-0041583",
-    "name": "Paul Rubelt",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "TB"
-    ]
-  },
-  {
     "nflId": "00-0041400",
     "name": "Gabe Rubio",
     "first": "2026",
@@ -8401,17 +6245,6 @@
     "teams": [
       "DE",
       "PIT"
-    ]
-  },
-  {
-    "nflId": "00-0041232",
-    "name": "Nolan Rucci",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "IND"
     ]
   },
   {
@@ -8434,28 +6267,6 @@
     "teams": [
       "LB",
       "BAL"
-    ]
-  },
-  {
-    "nflId": "00-0041475",
-    "name": "Trayvon Rudolph",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "MIN"
-    ]
-  },
-  {
-    "nflId": "00-0041131",
-    "name": "Carsen Ryan",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "CLE"
     ]
   },
   {
@@ -8492,17 +6303,6 @@
     ]
   },
   {
-    "nflId": "00-0041352",
-    "name": "Marcus Sanders Jr.",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "MIN"
-    ]
-  },
-  {
     "nflId": "00-0040724",
     "name": "T.J. Sanders",
     "first": "2025",
@@ -8514,17 +6314,6 @@
     ]
   },
   {
-    "nflId": "00-0040643",
-    "name": "Jonas Sanker",
-    "first": "2025",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "SAF",
-      "NO"
-    ]
-  },
-  {
     "nflId": "00-0041288",
     "name": "Tyreak Sapp",
     "first": "2026",
@@ -8533,17 +6322,6 @@
     "teams": [
       "DE",
       "CLE"
-    ]
-  },
-  {
-    "nflId": "00-0040876",
-    "name": "Elijah Sarratt",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "BAL"
     ]
   },
   {
@@ -8588,28 +6366,6 @@
     "teams": [
       "LB",
       "PIT"
-    ]
-  },
-  {
-    "nflId": "00-0041144",
-    "name": "Ryan Schernecke",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "NYG"
-    ]
-  },
-  {
-    "nflId": "00-0041082",
-    "name": "Billy Schrauth",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "TB"
     ]
   },
   {
@@ -8723,28 +6479,6 @@
     ]
   },
   {
-    "nflId": "00-0041094",
-    "name": "Bauer Sharp",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "TB"
-    ]
-  },
-  {
-    "nflId": "00-0041233",
-    "name": "Raylen Sharpe",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "IND"
-    ]
-  },
-  {
     "nflId": "00-0041500",
     "name": "Travis Shaw",
     "first": "2026",
@@ -8775,17 +6509,6 @@
     "teams": [
       "DB",
       "LAC"
-    ]
-  },
-  {
-    "nflId": "00-0040874",
-    "name": "Drew Shelton",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "DAL"
     ]
   },
   {
@@ -8888,17 +6611,6 @@
     ]
   },
   {
-    "nflId": "00-0040886",
-    "name": "Nicholas Singleton",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "TEN"
-    ]
-  },
-  {
     "nflId": "00-0039288",
     "name": "Jackson Sirmon",
     "first": "2024",
@@ -8918,17 +6630,6 @@
     "teams": [
       "SAF",
       "DEN"
-    ]
-  },
-  {
-    "nflId": "00-0040553",
-    "name": "Quincy Skinner Jr.",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "NYJ"
     ]
   },
   {
@@ -9053,28 +6754,6 @@
     ]
   },
   {
-    "nflId": "00-0040989",
-    "name": "Octavian Smith",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "BAL"
-    ]
-  },
-  {
-    "nflId": "00-0041309",
-    "name": "Daniel Sobkowicz",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "HOU"
-    ]
-  },
-  {
     "nflId": "00-0041008",
     "name": "Xavian Sorey Jr.",
     "first": "2026",
@@ -9141,17 +6820,6 @@
     ]
   },
   {
-    "nflId": "00-0041383",
-    "name": "Jacob Spomer",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
-      "LAC"
-    ]
-  },
-  {
     "nflId": "00-0040041",
     "name": "Nazir Stackhouse",
     "first": "2025",
@@ -9171,28 +6839,6 @@
     "teams": [
       "LB",
       "NO"
-    ]
-  },
-  {
-    "nflId": "00-0040688",
-    "name": "Malaki Starks",
-    "first": "2025",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "SAF",
-      "BAL"
-    ]
-  },
-  {
-    "nflId": "00-0040882",
-    "name": "Beau Stephens",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "SEA"
     ]
   },
   {
@@ -9339,17 +6985,6 @@
     ]
   },
   {
-    "nflId": "00-0040948",
-    "name": "J. Michael Sturdivant",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "GB"
-    ]
-  },
-  {
     "nflId": "00-0040155",
     "name": "Danny Stutsman",
     "first": "2025",
@@ -9380,17 +7015,6 @@
     "teams": [
       "DT",
       "NO"
-    ]
-  },
-  {
-    "nflId": "00-0041384",
-    "name": "Evan Svoboda",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "LAC"
     ]
   },
   {
@@ -9460,17 +7084,6 @@
     ]
   },
   {
-    "nflId": "00-0040991",
-    "name": "Elijah Tau-Tolliver",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "BAL"
-    ]
-  },
-  {
     "nflId": "00-0041591",
     "name": "Brien Taylor",
     "first": "2026",
@@ -9482,28 +7095,6 @@
     ]
   },
   {
-    "nflId": "00-0041217",
-    "name": "J'Mari Taylor",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "JAX"
-    ]
-  },
-  {
-    "nflId": "00-0041105",
-    "name": "Logan Taylor",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "LAC"
-    ]
-  },
-  {
     "nflId": "00-0038521",
     "name": "Reese Taylor",
     "first": "2023",
@@ -9512,17 +7103,6 @@
     "teams": [
       "DB",
       "DEN"
-    ]
-  },
-  {
-    "nflId": "00-0040531",
-    "name": "Roc Taylor",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "CAR"
     ]
   },
   {
@@ -9592,17 +7172,6 @@
     ]
   },
   {
-    "nflId": "00-0041248",
-    "name": "Noah Thomas",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "CIN"
-    ]
-  },
-  {
     "nflId": "00-0041501",
     "name": "R Mason Thomas",
     "first": "2026",
@@ -9658,17 +7227,6 @@
     ]
   },
   {
-    "nflId": "00-0041550",
-    "name": "Brenen Thompson",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "LAC"
-    ]
-  },
-  {
     "nflId": "00-0040296",
     "name": "Corey Thornton",
     "first": "2025",
@@ -9691,17 +7249,6 @@
     ]
   },
   {
-    "nflId": "00-0041183",
-    "name": "Tanoa Togiai",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "WAS"
-    ]
-  },
-  {
     "nflId": "00-0040019",
     "name": "Jay Toia",
     "first": "2025",
@@ -9710,17 +7257,6 @@
     "teams": [
       "DT",
       "DAL"
-    ]
-  },
-  {
-    "nflId": "00-0041274",
-    "name": "Max Tomczak",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "BUF"
     ]
   },
   {
@@ -9743,39 +7279,6 @@
     "teams": [
       "SAF",
       "MIA"
-    ]
-  },
-  {
-    "nflId": "00-0041579",
-    "name": "Seydou Traore",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "MIA"
-    ]
-  },
-  {
-    "nflId": "00-0041239",
-    "name": "Chip Trayanum",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "NYJ"
-    ]
-  },
-  {
-    "nflId": "00-0040939",
-    "name": "Michael Trigg",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "DAL"
     ]
   },
   {
@@ -9900,17 +7403,6 @@
     ]
   },
   {
-    "nflId": "00-0041234",
-    "name": "Geno VanDeMark",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "C",
-      "IND"
-    ]
-  },
-  {
     "nflId": "00-0040489",
     "name": "Greedy Vance",
     "first": "2025",
@@ -9952,17 +7444,6 @@
     "teams": [
       "CB",
       "KC"
-    ]
-  },
-  {
-    "nflId": "00-0041195",
-    "name": "Jack Velling",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "ATL"
     ]
   },
   {
@@ -10010,28 +7491,6 @@
     ]
   },
   {
-    "nflId": "00-0041422",
-    "name": "Dan Villari",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "LA"
-    ]
-  },
-  {
-    "nflId": "00-0041070",
-    "name": "Reggie Virgil",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "ARI"
-    ]
-  },
-  {
     "nflId": "00-0041202",
     "name": "Nathan Voorhis",
     "first": "2026",
@@ -10040,28 +7499,6 @@
     "teams": [
       "DE",
       "NYJ"
-    ]
-  },
-  {
-    "nflId": "00-0040949",
-    "name": "Dillon Wade",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "GB"
-    ]
-  },
-  {
-    "nflId": "00-0040921",
-    "name": "Aamil Wagner",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "TEN"
     ]
   },
   {
@@ -10095,17 +7532,6 @@
     "teams": [
       "LB",
       "TB"
-    ]
-  },
-  {
-    "nflId": "00-0040710",
-    "name": "Deone Walker",
-    "first": "2025",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "DT",
-      "BUF"
     ]
   },
   {
@@ -10150,17 +7576,6 @@
     "teams": [
       "SAF",
       "MIA"
-    ]
-  },
-  {
-    "nflId": "00-0041368",
-    "name": "Harrison Wallace III",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "ARI"
     ]
   },
   {
@@ -10252,17 +7667,6 @@
     ]
   },
   {
-    "nflId": "00-0040148",
-    "name": "Xavier Watts",
-    "first": "2025",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "SAF",
-      "ATL"
-    ]
-  },
-  {
     "nflId": "00-0040460",
     "name": "Marlowe Wax",
     "first": "2025",
@@ -10282,17 +7686,6 @@
     "teams": [
       "DB",
       "LAC"
-    ]
-  },
-  {
-    "nflId": "00-0041224",
-    "name": "Da'Metrius Weatherspoon",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "BUF"
     ]
   },
   {
@@ -10362,17 +7755,6 @@
     ]
   },
   {
-    "nflId": "00-0040976",
-    "name": "Levi Wentz",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "PIT"
-    ]
-  },
-  {
     "nflId": "00-0040926",
     "name": "Joshua Weru",
     "first": "2026",
@@ -10403,17 +7785,6 @@
     "teams": [
       "DT",
       "DET"
-    ]
-  },
-  {
-    "nflId": "00-0041397",
-    "name": "Kaden Wetjen",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "PIT"
     ]
   },
   {
@@ -10461,17 +7832,6 @@
     ]
   },
   {
-    "nflId": "00-0041312",
-    "name": "Noah Whittington",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "RB",
-      "HOU"
-    ]
-  },
-  {
     "nflId": "00-0041106",
     "name": "C.J. Williams",
     "first": "2026",
@@ -10502,17 +7862,6 @@
     "teams": [
       "WR",
       "LV"
-    ]
-  },
-  {
-    "nflId": "00-0041113",
-    "name": "Jayden Williams",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "ARI"
     ]
   },
   {
@@ -10626,17 +7975,6 @@
     ]
   },
   {
-    "nflId": "00-0041061",
-    "name": "Carver Willis",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "SF"
-    ]
-  },
-  {
     "nflId": "00-0041515",
     "name": "Chase Wilson",
     "first": "2026",
@@ -10656,17 +7994,6 @@
     "teams": [
       "DT",
       "BAL"
-    ]
-  },
-  {
-    "nflId": "00-0041287",
-    "name": "Kole Wilson",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "CLE"
     ]
   },
   {
@@ -10699,28 +8026,6 @@
     "games": 0,
     "teams": [
       "LB",
-      "PIT"
-    ]
-  },
-  {
-    "nflId": "00-0041437",
-    "name": "DJ Wingfield",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "DAL"
-    ]
-  },
-  {
-    "nflId": "00-0038883",
-    "name": "Isaiah Winstead",
-    "first": "2023",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
       "PIT"
     ]
   },
@@ -10780,17 +8085,6 @@
     ]
   },
   {
-    "nflId": "00-0041336",
-    "name": "Alex Wollschlaeger",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "NO"
-    ]
-  },
-  {
     "nflId": "00-0040066",
     "name": "Jackson Woodard",
     "first": "2025",
@@ -10835,28 +8129,6 @@
     ]
   },
   {
-    "nflId": "00-0040716",
-    "name": "Craig Woodson",
-    "first": "2025",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "SAF",
-      "NE"
-    ]
-  },
-  {
-    "nflId": "00-0041387",
-    "name": "Isaiah World",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "OT",
-      "LAC"
-    ]
-  },
-  {
     "nflId": "00-0041406",
     "name": "Larry Worth",
     "first": "2026",
@@ -10865,17 +8137,6 @@
     "teams": [
       "LB",
       "SF"
-    ]
-  },
-  {
-    "nflId": "00-0041220",
-    "name": "Michael Wortham",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "JAX"
     ]
   },
   {
@@ -10912,17 +8173,6 @@
     ]
   },
   {
-    "nflId": "00-0040927",
-    "name": "Dae'Quan Wright",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "TE",
-      "CLE"
-    ]
-  },
-  {
     "nflId": "00-0041424",
     "name": "Javin Wright",
     "first": "2026",
@@ -10931,28 +8181,6 @@
     "teams": [
       "LB",
       "TB"
-    ]
-  },
-  {
-    "nflId": "00-0041065",
-    "name": "Jeremiah Wright",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "G",
-      "NO"
-    ]
-  },
-  {
-    "nflId": "00-0036986",
-    "name": "Nahshon Wright",
-    "first": "2021",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "CB",
-      "NYJ"
     ]
   },
   {
@@ -10986,17 +8214,6 @@
     "teams": [
       "LB",
       "DEN"
-    ]
-  },
-  {
-    "nflId": "00-0041069",
-    "name": "Colbie Young",
-    "first": "2026",
-    "last": "2026",
-    "games": 0,
-    "teams": [
-      "WR",
-      "CIN"
     ]
   },
   {
@@ -11198,17 +8415,6 @@
     ]
   },
   {
-    "nflId": "00-0040497",
-    "name": "Zeke Correll",
-    "first": "2025",
-    "last": "2025",
-    "games": 0,
-    "teams": [
-      "C",
-      "MIN"
-    ]
-  },
-  {
     "nflId": "00-0036148",
     "name": "Domenique Davis",
     "first": "2022",
@@ -11360,17 +8566,6 @@
     "teams": [
       "CB",
       "DET"
-    ]
-  },
-  {
-    "nflId": "00-0037097",
-    "name": "Trenton Gill",
-    "first": "2022",
-    "last": "2025",
-    "games": 0,
-    "teams": [
-      "P",
-      "ATL"
     ]
   },
   {
@@ -11803,17 +8998,6 @@
     ]
   },
   {
-    "nflId": "PRY456541",
-    "name": "Layne Pryor",
-    "first": "2025",
-    "last": "2025",
-    "games": 0,
-    "teams": [
-      "TE",
-      "HOU"
-    ]
-  },
-  {
     "nflId": "00-0040521",
     "name": "Isaiah Raikes",
     "first": "2025",
@@ -12020,17 +9204,6 @@
     "teams": [
       "LB",
       "TB"
-    ]
-  },
-  {
-    "nflId": "00-0040602",
-    "name": "Trey Wedig",
-    "first": "2025",
-    "last": "2025",
-    "games": 0,
-    "teams": [
-      "OT",
-      "ARI"
     ]
   },
   {
@@ -12364,28 +9537,6 @@
     ]
   },
   {
-    "nflId": "00-0039477",
-    "name": "Jack Browning",
-    "first": "2024",
-    "last": "2024",
-    "games": 0,
-    "teams": [
-      "P",
-      "TB"
-    ]
-  },
-  {
-    "nflId": "00-0038042",
-    "name": "Jake Camarda",
-    "first": "2022",
-    "last": "2024",
-    "games": 0,
-    "teams": [
-      "P",
-      "TB"
-    ]
-  },
-  {
     "nflId": "00-0039704",
     "name": "Matthew Cindric",
     "first": "2024",
@@ -12540,17 +9691,6 @@
     ]
   },
   {
-    "nflId": "00-0037349",
-    "name": "Kellen Diesch",
-    "first": "2022",
-    "last": "2024",
-    "games": 0,
-    "teams": [
-      "OT",
-      "TEN"
-    ]
-  },
-  {
     "nflId": "00-0037061",
     "name": "De'Shaan Dixon",
     "first": "2022",
@@ -12683,17 +9823,6 @@
     ]
   },
   {
-    "nflId": "00-0036692",
-    "name": "Miller Forristall",
-    "first": "2021",
-    "last": "2024",
-    "games": 0,
-    "teams": [
-      "TE",
-      "LA"
-    ]
-  },
-  {
     "nflId": "00-0035547",
     "name": "Joseph Fortson",
     "first": "2019",
@@ -12790,17 +9919,6 @@
     "teams": [
       "NT",
       "SEA"
-    ]
-  },
-  {
-    "nflId": "00-0038627",
-    "name": "Antoine Green",
-    "first": "2023",
-    "last": "2024",
-    "games": 0,
-    "teams": [
-      "WR",
-      "DET"
     ]
   },
   {
@@ -13241,17 +10359,6 @@
     "teams": [
       "SAF",
       "CIN"
-    ]
-  },
-  {
-    "nflId": "00-0039617",
-    "name": "Jacob Kibodi",
-    "first": "2024",
-    "last": "2024",
-    "games": 0,
-    "teams": [
-      "RB",
-      "CLE"
     ]
   },
   {
@@ -13761,17 +10868,6 @@
     ]
   },
   {
-    "nflId": "00-0037355",
-    "name": "Braylon Sanders",
-    "first": "2022",
-    "last": "2024",
-    "games": 0,
-    "teams": [
-      "WR",
-      "NE"
-    ]
-  },
-  {
     "nflId": "00-0039545",
     "name": "Phalen Sanford",
     "first": "2024",
@@ -14102,17 +11198,6 @@
     ]
   },
   {
-    "nflId": "00-0038490",
-    "name": "Ty Zentner",
-    "first": "2023",
-    "last": "2024",
-    "games": 0,
-    "teams": [
-      "P",
-      "SEA"
-    ]
-  },
-  {
     "nflId": "00-0038749",
     "name": "Holton Ahlers",
     "first": "2023",
@@ -14132,17 +11217,6 @@
     "teams": [
       "OT",
       "WAS"
-    ]
-  },
-  {
-    "nflId": "00-0038149",
-    "name": "Josh Ali",
-    "first": "2022",
-    "last": "2023",
-    "games": 0,
-    "teams": [
-      "WR",
-      "ATL"
     ]
   },
   {
@@ -14187,17 +11261,6 @@
     "teams": [
       "RB",
       "WAS"
-    ]
-  },
-  {
-    "nflId": "00-0038147",
-    "name": "Daylen Baldwin",
-    "first": "2022",
-    "last": "2023",
-    "games": 0,
-    "teams": [
-      "WR",
-      "MIN"
     ]
   },
   {
@@ -14311,17 +11374,6 @@
     ]
   },
   {
-    "nflId": "00-0036858",
-    "name": "Jalen Camp",
-    "first": "2021",
-    "last": "2023",
-    "games": 0,
-    "teams": [
-      "WR",
-      "CAR"
-    ]
-  },
-  {
     "nflId": "00-0037090",
     "name": "Tariq Carpenter",
     "first": "2022",
@@ -14385,17 +11437,6 @@
     "teams": [
       "SAF",
       "GB"
-    ]
-  },
-  {
-    "nflId": "00-0036951",
-    "name": "Frank Darby",
-    "first": "2021",
-    "last": "2023",
-    "games": 0,
-    "teams": [
-      "WR",
-      "ATL"
     ]
   },
   {
@@ -14902,17 +11943,6 @@
     "teams": [
       "CB",
       "GB"
-    ]
-  },
-  {
-    "nflId": "00-0036810",
-    "name": "Cade Johnson",
-    "first": "2021",
-    "last": "2023",
-    "games": 0,
-    "teams": [
-      "WR",
-      "SEA"
     ]
   },
   {
@@ -40168,17 +37198,6 @@
     "games": 0,
     "teams": [
       "DB",
-      "PIT"
-    ]
-  },
-  {
-    "nflId": "BRA301078",
-    "name": "Terry Bradshaw",
-    "first": "1974",
-    "last": "1983",
-    "games": 0,
-    "teams": [
-      "QB",
       "PIT"
     ]
   },
