@@ -231,7 +231,7 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
             )}
           </div>
         )}
-        {hist && !hist.soccerStats && (
+                {hist && (
           <BoxScore id={g.id} espn={hist.espn} awayName={hist.away.name} homeName={hist.home.name} />
         )}
 

@@ -428,10 +428,7 @@ export async function GET(req: NextRequest) {
           type TS = { homeAway?: string; statistics?: { name: string; label?: string; displayValue: string }[] };
           const teams = (j?.boxscore?.teams ?? []) as TS[];
           const tAway = teams.find((t) => t.homeAway === "away") ?? teams[1], tHome = teams.find((t) => t.homeAway === "home") ?? teams[0];
-          for (const s of tAway?.statistics ?? []) {
-            const twin = (tHome?.statistics ?? []).find((x) => x.name === s.name);
-            out.teamStats.push({ label: s.label ?? s.name, away: s.displayValue, home: twin?.displayValue ?? "" });
-          }
+        
           const socPid = (name: string, athleteId: string) => {
             const n = norm(name);
             return PLAYERS.find((x) => norm(x.strPlayer) === n && (x.strSport ?? "") === "Soccer")?.idPlayer ?? `soc-${athleteId}`;

@@ -9,6 +9,7 @@ import PlayerStatsNBA from "@/components/PlayerStatsNBA";
 import PlayerStatsNFL from "@/components/PlayerStatsNFL";
 import PlayerStatsGeneric from "@/components/PlayerStatsGeneric";
 import PlayerPhoto from "@/components/PlayerPhoto";
+import SoccerPlayerPage from "@/components/SoccerPlayerPage";
 import { supabase } from "@/lib/supabase";
 import missingPlayers from "@/lib/nba-missing-players.json";
 import nflMissingPlayers from "@/lib/nfl-missing-players.json";
@@ -41,6 +42,7 @@ const GENERATED: Record<string, MissingP> = {
 export default function PlayerPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
   const gen = GENERATED[id];
+    if (id.startsWith("soc-")) return <SoccerPlayerPage espnId={id.slice(4)} id={id} />;
  if (gen) {
     return (
       <main className="min-h-screen bg-zinc-950 text-zinc-100">
@@ -135,6 +137,7 @@ useEffect(() => {
                                 {!nbaId && espnId && player.strSport === "American Football" && <PlayerStatsNFL espnId={espnId} />}
                                         {player.strSport === "Baseball" && <PlayerStatsGeneric endpoint="/api/mlb-stats" query={`name=${encodeURIComponent(player.strPlayer)}`} />}
         {player.strSport === "Ice Hockey" && <PlayerStatsGeneric endpoint="/api/nhl-stats" query={`name=${encodeURIComponent(player.strPlayer)}`} />}
+                        {player.strSport === "Soccer" && <PlayerStatsGeneric endpoint="/api/soccer-stats" query={`name=${encodeURIComponent(player.strPlayer)}`} />}
       </div>
     </main>
   );
