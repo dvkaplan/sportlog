@@ -415,6 +415,44 @@ export async function GET(req: NextRequest) {
               if (rows.length) out.groups.push({ title: tname, columns: cat?.labels ?? [], rows });
             }
           }
+               } else if (/^(epl|laliga|seriea|bundesliga|ligue1)-/.test(id)) {
+          const CODES: Record<string, string> = { epl: "eng.1", laliga: "esp.1", seriea: "ita.1", bundesliga: "ger.1", ligue1: "fra.1" };
+          const lg = id.split("-")[0];
+          let evId: string | null = null;
+          try {
+            const st = JSON.parse(await readFile(path.join(process.cwd(), "src", "lib", "soccer-espn-map.json"), "utf8")) as { map: Record<string, string> };
+            evId = st.map[id] ?? null;
+          } catch { /* map not built */ }
+          if (!evId) return NextResponse.json({ error: "pre-espn" }, { status: 404 });
+          const j = await fetch(`https://site.api.espn.com/apis/site/v2/sports/soccer/${CODES[lg]}/summary?event=${evId}`, { next: { revalidate: 86400 } }).then((r) => r.json());
+          type TS = { homeAway?: string; statistics?: { name: string; label?: string; displayValue: string }[] };
+          const teams = (j?.boxscore?.teams ?? []) as TS[];
+          const tAway = teams.find((t) => t.homeAway === "away") ?? teams[1], tHome = teams.find((t) => t.homeAway === "home") ?? teams[0];
+          for (const s of tAway?.statistics ?? []) {
+            const twin = (tHome?.statistics ?? []).find((x) => x.name === s.name);
+            out.teamStats.push({ label: s.label ?? s.name, away: s.displayValue, home: twin?.displayValue ?? "" });
+          }
+          const socPid = (name: string, athleteId: string) => {
+            const n = norm(name);
+            return PLAYERS.find((x) => norm(x.strPlayer) === n && (x.strSport ?? "") === "Soccer")?.idPlayer ?? `soc-${athleteId}`;
+          };
+          type RosterP = { starter?: boolean; subbedIn?: boolean; subbedOut?: boolean; jersey?: string; athlete?: { id?: string; displayName?: string }; stats?: { abbreviation?: string; displayValue?: string }[] };
+          type Roster = { homeAway?: string; team?: { displayName?: string }; roster?: RosterP[] };
+          const rosters = (j?.rosters ?? []) as Roster[];
+          const ordered = [rosters.find((r) => r.homeAway === "away") ?? rosters[1], rosters.find((r) => r.homeAway === "home") ?? rosters[0]].filter(Boolean) as Roster[];
+          for (const r of ordered) {
+            const tname = r.team?.displayName ?? "";
+            const players = (r.roster ?? []).filter((p) => p.starter || p.subbedIn);
+            const abbrs = [...new Set(players.flatMap((p) => (p.stats ?? []).map((s) => s.abbreviation ?? "")))].filter((a) => a && a !== "APP");
+            const mk = (list: RosterP[]): Row[] => list.map((p) => {
+              const nm = p.athlete?.displayName ?? "";
+              const cells: (string | number)[] = [p.jersey ?? "", ...abbrs.map((a) => (p.stats ?? []).find((s) => s.abbreviation === a)?.displayValue ?? "")];
+              return { name: nm + (p.subbedIn ? " (sub)" : ""), playerId: socPid(nm, p.athlete?.id ?? ""), cells };
+            });
+            out.groups.push({ title: `${tname} — Starting XI`, columns: ["#", ...abbrs], rows: mk(players.filter((p) => p.starter)) });
+            const subs = players.filter((p) => !p.starter && p.subbedIn);
+            if (subs.length) out.groups.push({ title: `${tname} — Substitutes`, columns: ["#", ...abbrs], rows: mk(subs) });
+          }
         } else if (espn) {
           const j = await fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=${espn}`, { next: { revalidate: 86400 } }).then((r) => r.json());
           const [ta, tb] = j?.boxscore?.teams ?? [];
