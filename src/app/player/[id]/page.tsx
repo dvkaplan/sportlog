@@ -10,6 +10,7 @@ import PlayerStatsNFL from "@/components/PlayerStatsNFL";
 import PlayerStatsGeneric from "@/components/PlayerStatsGeneric";
 import PlayerPhoto from "@/components/PlayerPhoto";
 import SoccerPlayerPage from "@/components/SoccerPlayerPage";
+import Accolades from "@/components/Accolades";
 import { supabase } from "@/lib/supabase";
 import missingPlayers from "@/lib/nba-missing-players.json";
 import nflMissingPlayers from "@/lib/nfl-missing-players.json";
@@ -57,6 +58,7 @@ export default function PlayerPage({ params }: { params: Promise<{ id: string }>
               <p className="mt-4 text-xs text-zinc-600">Page generated from SPORTLOG records.</p>
             </div>
           </div>
+                    <Accolades name={gen.name} sport={gen.league === "NBA" ? "basketball" : gen.league === "NFL" ? "football" : gen.league === "MLB" ? "baseball" : "hockey"} />
                     <EntityRatingBox entityType="player" entityId={id} entityName={gen.name} />
                               {gen.league === "MLB" && <PlayerStatsGeneric endpoint="/api/mlb-stats" query={`name=${encodeURIComponent(gen.name)}`} />}
           {gen.league === "NHL" && <PlayerStatsGeneric endpoint="/api/nhl-stats" query={`name=${encodeURIComponent(gen.name)}`} />}
@@ -138,6 +140,7 @@ useEffect(() => {
                                         {player.strSport === "Baseball" && <PlayerStatsGeneric endpoint="/api/mlb-stats" query={`name=${encodeURIComponent(player.strPlayer)}`} />}
         {player.strSport === "Ice Hockey" && <PlayerStatsGeneric endpoint="/api/nhl-stats" query={`name=${encodeURIComponent(player.strPlayer)}`} />}
                         {player.strSport === "Soccer" && <PlayerStatsGeneric endpoint="/api/soccer-stats" query={`name=${encodeURIComponent(player.strPlayer)}`} />}
+                                <Accolades name={player.strPlayer} sport={player.strSport === "Basketball" ? "basketball" : player.strSport === "American Football" ? "football" : player.strSport === "Baseball" ? "baseball" : player.strSport === "Ice Hockey" ? "hockey" : "soccer"} />
       </div>
     </main>
   );

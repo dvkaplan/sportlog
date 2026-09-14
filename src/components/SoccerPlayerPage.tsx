@@ -4,6 +4,7 @@ import BackLink from "@/components/BackLink";
 import PlayerPhoto from "@/components/PlayerPhoto";
 import EntityRatingBox from "@/components/EntityRatingBox";
 import PlayerStatsGeneric from "@/components/PlayerStatsGeneric";
+import Accolades from "@/components/Accolades";
 
 type Profile = { name: string; position: string | null; team: string | null; nationality: string | null; born: string | null; height: string | null; headshot: string | null };
 
@@ -34,6 +35,7 @@ export default function SoccerPlayerPage({ espnId, id }: { espnId: string; id: s
           </div>
         </div>
         <PlayerStatsGeneric endpoint="/api/soccer-stats" query={`id=${espnId}`} />
+                <Accolades name={profile.name} sport="soccer" />
         <EntityRatingBox entityType="player" entityId={id} entityName={profile.name} />
       </div>
     </main>

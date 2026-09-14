@@ -1,0 +1,13 @@
+const title = process.argv[2] ?? "Tom Brady";
+const j = await fetch(`https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=text&format=json&redirects=1`, { headers: { "User-Agent": "SPORTLOG/1.0 (student project)" } }).then((r) => r.json());
+const html = j?.parse?.text?.["*"] ?? "";
+console.log("page found:", !!html, "| length:", html.length);
+const i = html.indexOf("Career highlights");
+console.log("'Career highlights' at index:", i);
+if (i >= 0) console.log("\nNEXT 600 CHARS:\n", html.slice(i, i + 600));
+console.log("\nsport test (NFL words in first 20000):", /\bNFL\b|American football|quarterback/i.test(html.slice(0, 20000)));
+console.log("h2 ids:", [...html.matchAll(/<h2[^>]*id="([^"]+)"/g)].map((m) => m[1]).join(", "));
+console.log("h3 ids:", [...html.matchAll(/<h3[^>]*id="([^"]+)"/g)].map((m) => m[1]).join(", "));
+const a = html.search(/<h[23][^>]*id="[^"]*(Award|Honou?r|Achievement)[^"]*"/i);
+console.log("awards heading at:", a);
+if (a >= 0) console.log("\nAWARDS AREA (800 chars):\n", html.slice(a, a + 800).replace(/\s+/g, " "));
