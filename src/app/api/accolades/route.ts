@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { cachedResponse } from "@/lib/wiki-cache";
 
 const UA = { "User-Agent": "SPORTLOG/1.0 (student project)" };
 const clean = (s: string) => s.replace(/<sup[\s\S]*?<\/sup>/g, "").replace(/<[^>]+>/g, " ").replace(/\[\d+\]/g, "").replace(/&amp;/g, "&").replace(/&#160;|&nbsp;/g, " ").replace(/\s+/g, " ").trim();
@@ -41,7 +42,7 @@ function fromSection(html: string): string[] {
 const isChamp = (s: string) => /champion|super bowl|world series|stanley cup|nba finals|premier league|la liga|serie a|bundesliga|ligue 1|champions league|world cup|fa cup|copa del rey|coppa|league title|swiss super league|eredivisie|scudetto|efl cup|community shield|super cup/i.test(s) && !/all-star|mvp|player of|team of|golden|goal of|squad of|top scorer|leader/i.test(s);
 const isAward = (s: string) => /mvp|most valuable|player of the year|rookie of the year|defensive player|cy young|hart|norris|vezina|ballon|golden boot|golden glove|silver slugger|gold glove|hall of fame|all-nba|all-pro|first team|second team|scoring champion|leader|award|trophy/i.test(s);
 
-export async function GET(req: NextRequest) {
+async function handler(req: NextRequest) {
   const name = req.nextUrl.searchParams.get("name") ?? "";
   const sport = (req.nextUrl.searchParams.get("sport") ?? "").toLowerCase();
   if (name.length < 3 || !SPORT_TEST[sport]) return NextResponse.json({ error: "bad request" }, { status: 400 });
@@ -85,4 +86,10 @@ export async function GET(req: NextRequest) {
   } catch {
     return NextResponse.json({ error: "unavailable" }, { status: 502 });
   }
+}
+
+export async function GET(req: NextRequest) {
+  const name = (req.nextUrl.searchParams.get("name") ?? "").trim().toLowerCase();
+  const sport = (req.nextUrl.searchParams.get("sport") ?? "").toLowerCase();
+  return cachedResponse(`accolades|${sport}|${name}`, 60, () => handler(req));
 }

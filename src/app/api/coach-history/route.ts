@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
+import { cachedResponse } from "@/lib/wiki-cache";
 const UA = { "User-Agent": "SPORTLOG/1.0 (student project)" };
 const clean = (s: string) => s.replace(/<sup[\s\S]*?<\/sup>/g, "").replace(/<[^>]+>/g, " ").replace(/\[\d+\]/g, "").replace(/&amp;/g, "&").replace(/&#160;|&nbsp;/g, " ").replace(/\s+/g, " ").trim();
 
-export async function GET(req: NextRequest) {
+async function handler(req: NextRequest) {
   const name = req.nextUrl.searchParams.get("name") ?? "";
   if (name.length < 3) return NextResponse.json({ error: "bad request" }, { status: 400 });
   try {
@@ -88,3 +89,8 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "unavailable" }, { status: 502 });
   }
 }
+
+export async function GET(req: NextRequest) {
+     const name = (req.nextUrl.searchParams.get("name") ?? "").trim().toLowerCase();
+     return cachedResponse(`coach-history|${name}`, 60, () => handler(req));
+   }
