@@ -2,6 +2,16 @@ import Link from "next/link";
 import { getSport, getGamesBySport, getErasBySport } from "@/lib/data";
 import { getFightersBySport } from "@/lib/fighters";
 import BackLink from "@/components/BackLink";
+import nflIdx from "@/lib/seasons/nfl/index.json";
+import nbaIdx from "@/lib/seasons/nba/index.json";
+import nhlIdx from "@/lib/seasons/nhl/index.json";
+import mlbIdx from "@/lib/seasons/mlb/index.json";
+import eplIdx from "@/lib/seasons/epl/index.json";
+import laligaIdx from "@/lib/seasons/laliga/index.json";
+import serieaIdx from "@/lib/seasons/seriea/index.json";
+import bundesligaIdx from "@/lib/seasons/bundesliga/index.json";
+import ligue1Idx from "@/lib/seasons/ligue1/index.json";
+const latest = (idx: string[]) => idx[idx.length - 1] ?? "";
 
 export default async function SportPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -53,11 +63,11 @@ export default async function SportPage({ params }: { params: Promise<{ slug: st
 
         {(() => {
           const BROWSE: Record<string, [string, string, string][]> = {
-            football: [["nfl", "NFL", "2025"]],
-            basketball: [["nba", "NBA", "2025-26"]],
-            hockey: [["nhl", "NHL", "2025-26"]],
-            baseball: [["mlb", "MLB", "2025"]],
-            soccer: [["epl", "Premier League", "2025-26"], ["laliga", "La Liga", "2025-26"], ["seriea", "Serie A", "2025-26"], ["bundesliga", "Bundesliga", "2025-26"], ["ligue1", "Ligue 1", "2025-26"]],
+            football: [["nfl", "NFL", latest(nflIdx)]],
+            basketball: [["nba", "NBA", latest(nbaIdx)]],
+            hockey: [["nhl", "NHL", latest(nhlIdx)]],
+            baseball: [["mlb", "MLB", latest(mlbIdx)]],
+            soccer: [["epl", "Premier League", latest(eplIdx)], ["laliga", "La Liga", latest(laligaIdx)], ["seriea", "Serie A", latest(serieaIdx)], ["bundesliga", "Bundesliga", latest(bundesligaIdx)], ["ligue1", "Ligue 1", latest(ligue1Idx)]],
           };
           const links = BROWSE[slug] ?? [];
           if (links.length === 0) return null;

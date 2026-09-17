@@ -18,6 +18,10 @@ const score = (a, b) => { const A = new Set(a), B = new Set(b); let inter = 0; f
 
 let state = { map: {}, done: [], unmatched: {} };
 if (existsSync("src/lib/soccer-espn-map.json")) state = JSON.parse(readFileSync("src/lib/soccer-espn-map.json", "utf8"));
+const NOW = new Date(); const CY = NOW.getMonth() >= 6 ? NOW.getFullYear() : NOW.getFullYear() - 1;
+const CURRENT_S = `${CY}-${String((CY + 1) % 100).padStart(2, "0")}`;
+const ONLY_CURRENT = process.argv.includes("--current");
+if (ONLY_CURRENT) state.done = state.done.filter((k) => !k.endsWith(`|${CURRENT_S}`));
 const done = new Set(state.done);
 
 for (const [lg, code] of Object.entries(LEAGUES)) {
@@ -25,6 +29,7 @@ for (const [lg, code] of Object.entries(LEAGUES)) {
   const seasons = JSON.parse(readFileSync(`src/lib/seasons/${lg}/index.json`, "utf8"));
   for (const season of seasons) {
     if (ONLY_SEASON && season !== ONLY_SEASON) continue;
+        if (ONLY_CURRENT && season !== CURRENT_S) continue;
     const key = `${lg}|${season}`;
     if (done.has(key)) continue;
     const games = JSON.parse(readFileSync(`src/lib/seasons/${lg}/${season}.json`, "utf8"));

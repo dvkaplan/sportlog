@@ -29,7 +29,9 @@ for (const [lg, code] of Object.entries(LEAGUES)) {
   const done = new Set(index);
   for (let y = new Date().getFullYear(); y >= 1993; y--) {
     const season = `${y}-${String((y + 1) % 100).padStart(2, "0")}`;
-    if (done.has(season) && y !== new Date().getFullYear()) continue; // always refresh current season
+        const NOW = new Date(); const CY = NOW.getMonth() >= 6 ? NOW.getFullYear() : NOW.getFullYear() - 1;
+    const ONLY_CURRENT = process.argv.includes("--current");
+    if (ONLY_CURRENT ? y !== CY : (done.has(season) && y !== CY)) continue;
     const yy = String(y % 100).padStart(2, "0") + String((y + 1) % 100).padStart(2, "0");
     try {
       const res = await fetch(`https://www.football-data.co.uk/mmz4281/${yy}/${code}.csv`);

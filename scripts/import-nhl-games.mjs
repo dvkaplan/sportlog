@@ -6,6 +6,9 @@ try { index = JSON.parse(readFileSync("src/lib/seasons/nhl/index.json", "utf8"))
 const done = new Set(index);
 const label = (y) => `${y}-${String((y + 1) % 100).padStart(2, "0")}`;
 let logged = false;
+const NOW = new Date();
+const CURRENT = label(NOW.getMonth() >= 8 ? NOW.getFullYear() : NOW.getFullYear() - 1);
+const ONLY_CURRENT = process.argv.includes("--current");
 const teamName = (t) => {
   const place = t?.placeName?.default ?? "";
   const nick = t?.commonName?.default ?? t?.name?.default ?? "";
@@ -15,7 +18,7 @@ const teamName = (t) => {
 
 for (let y = new Date().getFullYear(); y >= 1917; y--) {
   const season = label(y);
-  if (done.has(season)) continue;
+    if (ONLY_CURRENT ? season !== CURRENT : (done.has(season) && season !== CURRENT)) continue;
   const games = {};
   let date = `${y}-09-01`;
   let ok = true;

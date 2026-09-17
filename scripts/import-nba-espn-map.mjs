@@ -6,11 +6,15 @@ const state = (() => {
   try { return JSON.parse(readFileSync("src/lib/nba-espn-map.json", "utf8")); }
   catch { return { done: [], map: {} }; }
 })();
-const doneSeasons = new Set(state.done);
+
 
 const index = JSON.parse(readFileSync("src/lib/seasons/nba/index.json", "utf8"));
-const seasons = index.filter((s) => Number(s.slice(0, 4)) >= 2002); // ESPN coverage floor
-
+const NOW = new Date(); const CY = NOW.getMonth() >= 8 ? NOW.getFullYear() : NOW.getFullYear() - 1;
+const CURRENT = `${CY}-${String((CY + 1) % 100).padStart(2, "0")}`;
+const ONLY_CURRENT = process.argv.includes("--current");
+if (ONLY_CURRENT) state.done = state.done.filter((s) => s !== CURRENT);
+const seasons = index.filter((s) => Number(s.slice(0, 4)) >= 2002 && (!ONLY_CURRENT || s === CURRENT));
+const doneSeasons = new Set(state.done);
 for (const season of seasons) {
   if (doneSeasons.has(season)) continue;
   const games = JSON.parse(readFileSync(`src/lib/seasons/nba/${season}.json`, "utf8"));

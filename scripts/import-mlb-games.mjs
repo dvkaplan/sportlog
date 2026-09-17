@@ -5,10 +5,12 @@ let index = [];
 try { index = JSON.parse(readFileSync("src/lib/seasons/mlb/index.json", "utf8")); } catch {}
 const done = new Set(index);
 const KEEP = new Set(["R", "F", "D", "L", "W"]); // regular, WC, LDS, LCS, World Series
+const CURRENT = String(new Date().getFullYear());
+const ONLY_CURRENT = process.argv.includes("--current");
 
 for (let y = new Date().getFullYear(); y >= 1901; y--) {
   const season = String(y);
-  if (done.has(season)) continue;
+    if (ONLY_CURRENT ? season !== CURRENT : (done.has(season) && season !== CURRENT)) continue;
   try {
     const res = await fetch(`https://statsapi.mlb.com/api/v1/schedule?sportId=1&season=${y}`);
     if (!res.ok) { console.log(`${y}: HTTP ${res.status} — stopping; paste this`); break; }

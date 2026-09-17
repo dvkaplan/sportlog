@@ -16,9 +16,12 @@ try { index = JSON.parse(readFileSync("src/lib/seasons/nba/index.json", "utf8"))
 const done = new Set(index);
 
 const START = 1946, END = new Date().getFullYear();
+const NOW = new Date();
+const CURRENT = seasonStr(NOW.getMonth() >= 8 ? NOW.getFullYear() : NOW.getFullYear() - 1); // NBA season turns over in September
+const ONLY_CURRENT = process.argv.includes("--current");
 for (let y = END; y >= START; y--) {
   const season = seasonStr(y);
-  if (done.has(season)) continue;
+    if (ONLY_CURRENT ? season !== CURRENT : (done.has(season) && season !== CURRENT)) continue;
   const games = {};
   let ok = true;
   for (const type of ["Regular Season", "Playoffs"]) {
