@@ -230,7 +230,7 @@ export default function SearchPage() {
             <h2 className="mt-6 text-xs font-semibold uppercase tracking-widest text-zinc-500">Coaches & Staff</h2>
             <div className="mt-2 space-y-2">
               {coaches.map((c, i) => (
-                <Link key={i} href={c.kind === "coach" && c.slug ? `/coach/${c.slug}` : `/player/${c.idPlayer}`}
+                <Link key={i} href={c.idPlayer ? `/player/${c.idPlayer}` : `/coach/${c.slug}`}
                   className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-emerald-400">
                   {c.photo ? (
                     // eslint-disable-next-line @next/next/no-img-element

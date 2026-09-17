@@ -27,7 +27,9 @@ import nbaMissingData from "@/lib/nba-missing-players.json";
 import nflMissingData from "@/lib/nfl-missing-players.json";
 import mlbMissingData from "@/lib/mlb-missing-players.json";
 import nhlMissingData from "@/lib/nhl-missing-players.json";
+import soccerUnivData from "@/lib/soccer-player-ids.json";
 import linkOverrides from "@/lib/link-overrides.json";
+import coachUniverseJson from "@/lib/coach-universe.json";
 
 const BASE = `https://www.thesportsdb.com/api/v1/json/${process.env.SPORTSDB_KEY ?? "3"}`;
 
@@ -80,6 +82,12 @@ const GEN_MLB = (mlbMissingData as GenP[] & { mlbId?: string }[]).filter((m: Gen
 const GEN_NHL = (nhlMissingData as GenP[] & { nhlId?: string }[]).filter((m: GenP & { nhlId?: string }) => m.nhlId);
 const GEN_MLB_BYNAME: Record<string, string> = Object.fromEntries(GEN_MLB.map((m: GenP & { mlbId?: string }) => [normG(m.name), `mlb-${m.mlbId}`]));
 const GEN_NHL_BYNAME: Record<string, string> = Object.fromEntries(GEN_NHL.map((m: GenP & { nhlId?: string }) => [normG(m.name), `nhl-${m.nhlId}`]));
+type SocUniv = { names: Record<string, string>; meta: Record<string, { first: string; last: string; games: number; teams: string[] }> };
+const SOC_U = soccerUnivData as SocUniv;
+const GEN_SOC = Object.entries(SOC_U.names).map(([id, name]) => {
+  const m = SOC_U.meta[id] ?? { first: "", last: "", games: 0, teams: [] };
+  return { id, name, nameLc: name.toLowerCase(), first: m.first, last: m.last, games: m.games, teams: m.teams };
+});
 
 
 
@@ -130,11 +138,27 @@ export async function GET(req: NextRequest) {
         ...GEN_NFL.filter((m) => m.name.toLowerCase().includes(q)).slice(0, 4)
           .map((m) => ({ idPlayer: `nfl-${m.nflId}`, strPlayer: m.name, strTeam: `_NFL ${(m.teams ?? []).join(" ")}`.trim(), strLeague: "NFL", strPosition: null as string | null, strThumb: null as string | null, strSport: "American Football" })),
       ];
+            const realNames = new Set(playerMatches.map((p) => p.strPlayer.toLowerCase()));
+      const genSoccer = GEN_SOC.filter((m) => m.nameLc.includes(q) && !realNames.has(m.nameLc))
+        .sort((a, b) => (a.nameLc.startsWith(q) ? -1 : 0) - (b.nameLc.startsWith(q) ? -1 : 0) || b.games - a.games)
+        .slice(0, 6)
+        .map((m) => ({
+          idPlayer: `soc-${m.id}`, strPlayer: m.name,
+          strTeam: `_Soccer ${m.first}–${m.last}${m.teams[0] ? ` · ${m.teams[0]}` : ""}`,
+          strLeague: "Soccer", strPosition: null as string | null, strThumb: null as string | null, strSport: "Soccer",
+        }));
       const CM = coachMediaJson as Record<string, { name: string; photo: string | null }>;
       const wikiCoaches = Object.entries(CM)
         .filter(([, c]) => c.name.toLowerCase().includes(q))
-        .map(([slug, c]) => ({ kind: "coach" as const, slug, idPlayer: null as string | null, name: c.name, role: "Head Coach", team: null as string | null, sport: null as string | null, photo: c.photo }));
-      const seenCoach = new Set(wikiCoaches.map((c) => c.name.toLowerCase()));
+                .map(([slug, c]) => ({ kind: "coach" as const, slug, idPlayer: (PLAYERS.find((p) => p.strPlayer.toLowerCase() === c.name.toLowerCase())?.idPlayer ?? null) as string | null, name: c.name, role: "Head Coach", team: null as string | null, sport: null as string | null, photo: c.photo }));
+            const CU = coachUniverseJson as Record<string, { name: string; wiki: string; leagues: string[] }>;
+      const cmSlugs = new Set(Object.keys(CM));
+      const univCoaches = Object.entries(CU)
+        .filter(([slug, c]) => !cmSlugs.has(slug) && c.name.toLowerCase().includes(q))
+        .slice(0, 8)
+        .map(([slug, c]) => ({ kind: "coach" as const, slug, idPlayer: (PLAYERS.find((p) => p.strPlayer.toLowerCase() === c.name.toLowerCase())?.idPlayer ?? null) as string | null, name: c.name, role: `${c.leagues.join("/")} coach`, team: null as string | null, sport: null as string | null, photo: null as string | null }));
+      wikiCoaches.push(...univCoaches);
+                const seenCoach = new Set(wikiCoaches.map((c) => c.name.toLowerCase()));
       const tsdbStaff = allNameHits
         .filter((p) => isStaffPos(p.strPosition) && !seenCoach.has(p.strPlayer.toLowerCase()))
         .slice(0, 10)
@@ -177,7 +201,7 @@ export async function GET(req: NextRequest) {
           return words.every((w) => l.includes(w));
         }).slice(0, 8);
       }
-      return NextResponse.json({ teams: matches, players: [...playerMatches, ...genPlayers], fighters: fighterMatches, coaches: coachMatches, events: eventMatches, fights: fightMatches, seasons: seasonMatches });
+      return NextResponse.json({ teams: matches, players: [...playerMatches, ...genPlayers, ...genSoccer], fighters: fighterMatches, coaches: coachMatches, events: eventMatches, fights: fightMatches, seasons: seasonMatches });
       
     }
     if (mode === "game") {

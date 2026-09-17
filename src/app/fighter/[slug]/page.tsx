@@ -9,6 +9,7 @@ import histories from "@/lib/fight-histories.json";
 import { supabase } from "@/lib/supabase";
 import FollowButton from "@/components/FollowButton";
 import BackLink from "@/components/BackLink";
+import EntityRatingBox from "@/components/EntityRatingBox";
 import { useRouter } from "next/navigation";
 import { ALL_FIGHTERS } from "@/lib/all-fighters";
 import { OPPONENT_ALIASES } from "@/lib/fighter-extras";
@@ -128,7 +129,7 @@ export default function FighterPage({ params }: { params: Promise<{ slug: string
         )}
 
         {fights.length > 0 && (
-          <>
+          <>        <EntityRatingBox entityType="fighter" entityId={fighter.slug} entityName={fighter.name} />
             <h2 className="mt-10 font-semibold">Fight record</h2>
             <div className="mt-3 space-y-1.5">
               {shownFights.map((f, i) => (

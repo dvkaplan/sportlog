@@ -16,6 +16,12 @@ import missingPlayers from "@/lib/nba-missing-players.json";
 import nflMissingPlayers from "@/lib/nfl-missing-players.json";
 import mlbMissingPlayers from "@/lib/mlb-missing-players.json";
 import nhlMissingPlayers from "@/lib/nhl-missing-players.json";
+import coachMediaData from "@/lib/coach-media.json";
+import CoachHistory from "@/components/CoachHistory";
+const coachSlugOf = (n: string) => (n ?? "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const COACH_SLUGS = new Set(Object.keys(coachMediaData as Record<string, unknown>));
+import coachUniverseData from "@/lib/coach-universe.json";
+const COACH_UNIV = new Set(Object.keys(coachUniverseData as Record<string, unknown>));
 
 type Player = {
   idPlayer: string;
@@ -112,6 +118,9 @@ useEffect(() => {
            <div className="flex items-center gap-4">
               <h1 className="text-3xl font-bold">{player.strPlayer}</h1>
               <FollowButton entityType="player" entityId={player.idPlayer} entityName={player.strPlayer} />
+                            {COACH_SLUGS.has(coachSlugOf(player.strPlayer)) && (
+                <Link href={`/coach/${coachSlugOf(player.strPlayer)}`} className="rounded-full border border-amber-400/40 bg-amber-400/5 px-3 py-1 text-xs text-amber-300 transition hover:border-amber-400">📋 Coach page →</Link>
+              )}
             </div>
             <p className="mt-1 text-sm text-zinc-400">
              {[labelPosition(player.strPosition, player.strSport), cleanTeamLabel(player.strTeam), player.strNationality].filter(Boolean).join(" · ")}
@@ -140,6 +149,7 @@ useEffect(() => {
                                         {player.strSport === "Baseball" && <PlayerStatsGeneric endpoint="/api/mlb-stats" query={`name=${encodeURIComponent(player.strPlayer)}`} />}
         {player.strSport === "Ice Hockey" && <PlayerStatsGeneric endpoint="/api/nhl-stats" query={`name=${encodeURIComponent(player.strPlayer)}`} />}
                         {player.strSport === "Soccer" && <PlayerStatsGeneric endpoint="/api/soccer-stats" query={`name=${encodeURIComponent(player.strPlayer)}`} />}
+                                        {(COACH_SLUGS.has(coachSlugOf(player.strPlayer)) || /coach|manager/i.test(player.strPosition ?? "") || COACH_UNIV.has(coachSlugOf(player.strPlayer))) && <CoachHistory name={player.strPlayer} />}
                                 <Accolades name={player.strPlayer} sport={player.strSport === "Basketball" ? "basketball" : player.strSport === "American Football" ? "football" : player.strSport === "Baseball" ? "baseball" : player.strSport === "Ice Hockey" ? "hockey" : "soccer"} />
       </div>
     </main>
