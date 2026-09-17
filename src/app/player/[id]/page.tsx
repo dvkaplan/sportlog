@@ -5,8 +5,6 @@ import FollowButton from "@/components/FollowButton";
 import { cleanTeamLabel, labelPosition } from "@/lib/labels";
 import BackLink from "@/components/BackLink";
 import EntityRatingBox from "@/components/EntityRatingBox";
-import PlayerStatsNBA from "@/components/PlayerStatsNBA";
-import PlayerStatsNFL from "@/components/PlayerStatsNFL";
 import PlayerStatsGeneric from "@/components/PlayerStatsGeneric";
 import PlayerPhoto from "@/components/PlayerPhoto";
 import SoccerPlayerPage from "@/components/SoccerPlayerPage";
@@ -66,7 +64,8 @@ export default function PlayerPage({ params }: { params: Promise<{ id: string }>
           </div>
                     <Accolades name={gen.name} sport={gen.league === "NBA" ? "basketball" : gen.league === "NFL" ? "football" : gen.league === "MLB" ? "baseball" : "hockey"} />
                     <EntityRatingBox entityType="player" entityId={id} entityName={gen.name} />
-                              {gen.league === "MLB" && <PlayerStatsGeneric endpoint="/api/mlb-stats" query={`name=${encodeURIComponent(gen.name)}`} />}
+                            {gen.league === "NBA" && <PlayerStatsGeneric endpoint="/api/nba-stats" query={`name=${encodeURIComponent(gen.name)}`} />}
+                             {gen.league === "MLB" && <PlayerStatsGeneric endpoint="/api/mlb-stats" query={`name=${encodeURIComponent(gen.name)}`} />}
           {gen.league === "NHL" && <PlayerStatsGeneric endpoint="/api/nhl-stats" query={`name=${encodeURIComponent(gen.name)}`} />}
                     {gen.league === "NFL" && <PlayerStatsGeneric endpoint="/api/nfl-stats" query={`name=${encodeURIComponent(gen.name)}`} />}
         </div>
@@ -77,7 +76,6 @@ export default function PlayerPage({ params }: { params: Promise<{ id: string }>
   const [player, setPlayer] = useState<Player | null>(null);
   const [expanded, setExpanded] = useState(false);
   const [failed, setFailed] = useState(false);
- const [nbaId, setNbaId] = useState<string | null>(null);
      const [espnId, setEspnId] = useState<string | null>(null);
 useEffect(() => {
     supabase.rpc("bump_click", { t: "player", i: id }).then(({ error }) => {
@@ -94,7 +92,6 @@ useEffect(() => {
           return;
         }
         setPlayer(p);
-                setNbaId(data?.nbaId ?? null);
                         setEspnId(data?.espnId ?? null);
       } catch {
         setFailed(true);
@@ -144,8 +141,8 @@ useEffect(() => {
           </div>
         )}
                 <EntityRatingBox entityType="player" entityId={player.idPlayer} entityName={player.strPlayer} />
-                        {nbaId && <PlayerStatsNBA nbaId={nbaId} />}
-                                {!nbaId && espnId && player.strSport === "American Football" && <PlayerStatsNFL espnId={espnId} />}
+                                {player.strSport === "Basketball" && <PlayerStatsGeneric endpoint="/api/nba-stats" query={`name=${encodeURIComponent(player.strPlayer)}${espnId ? `&espn=${espnId}` : ""}`} />}
+                                        {player.strSport === "American Football" && <PlayerStatsGeneric endpoint="/api/nfl-stats" query={`name=${encodeURIComponent(player.strPlayer)}${espnId ? `&id=${espnId}` : ""}`} />}
                                         {player.strSport === "Baseball" && <PlayerStatsGeneric endpoint="/api/mlb-stats" query={`name=${encodeURIComponent(player.strPlayer)}`} />}
         {player.strSport === "Ice Hockey" && <PlayerStatsGeneric endpoint="/api/nhl-stats" query={`name=${encodeURIComponent(player.strPlayer)}`} />}
                         {player.strSport === "Soccer" && <PlayerStatsGeneric endpoint="/api/soccer-stats" query={`name=${encodeURIComponent(player.strPlayer)}`} />}

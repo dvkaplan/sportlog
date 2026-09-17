@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
+import { cachedResponse } from "@/lib/wiki-cache";
 
-export async function GET(req: NextRequest) {
+async function handler(req: NextRequest) {
     let espnId = req.nextUrl.searchParams.get("id") ?? "";
   const name = req.nextUrl.searchParams.get("name") ?? "";
   if (!espnId && name.length >= 3) {
@@ -39,4 +40,9 @@ export async function GET(req: NextRequest) {
   } catch {
     return NextResponse.json({ error: "unavailable" }, { status: 502 });
   }
+}
+export async function GET(req: NextRequest) {
+  const p = req.nextUrl.searchParams;
+  const key = `nfl-stats|${(p.get("id") ?? "").trim()}|${(p.get("name") ?? "").trim().toLowerCase()}`;
+  return cachedResponse(key, 1, () => handler(req));
 }

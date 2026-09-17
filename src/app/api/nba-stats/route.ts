@@ -1,48 +1,46 @@
 import { NextRequest, NextResponse } from "next/server";
+import { cachedResponse } from "@/lib/wiki-cache";
 
-const HEADERS = {
-  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
-  Referer: "https://www.nba.com/",
-  "x-nba-stats-origin": "stats",
-  "x-nba-stats-token": "true",
-  Accept: "application/json",
-};
+const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim();
 
-export async function GET(req: NextRequest) {
-  const nbaId = req.nextUrl.searchParams.get("id") ?? "";
-  if (!/^\d+$/.test(nbaId)) return NextResponse.json({ error: "bad id" }, { status: 400 });
+async function handler(req: NextRequest) {
+  let espnId = req.nextUrl.searchParams.get("espn") ?? "";
+  const name = req.nextUrl.searchParams.get("name") ?? "";
   try {
-    const url = `https://stats.nba.com/stats/playercareerstats?PerMode=PerGame&PlayerID=${nbaId}`;
-    const res = await fetch(url, { headers: HEADERS, next: { revalidate: 86400 } });
+    if (!espnId && name.length >= 3) {
+      const sj = await fetch(`https://site.web.api.espn.com/apis/search/v2?query=${encodeURIComponent(name)}&limit=10&type=player`, { next: { revalidate: 86400 } }).then((r) => r.json());
+      const items = (sj?.results ?? []).flatMap((r: { contents?: unknown[] }) => r?.contents ?? []) as { sport?: string; displayName?: string; link?: { web?: string } }[];
+      for (const it of items) {
+        if ((it.sport ?? "").toLowerCase() !== "basketball" || norm(it.displayName ?? "") !== norm(name)) continue;
+        const m = String(it.link?.web ?? "").match(/\/id\/(\d+)/);
+        if (m) { espnId = m[1]; break; }
+      }
+    }
+    if (!/^\d+$/.test(espnId)) return NextResponse.json({ error: "not found" }, { status: 404 });
+    const res = await fetch(`https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/${espnId}/stats`, { next: { revalidate: 86400 } });
     if (!res.ok) return NextResponse.json({ error: "upstream" }, { status: 502 });
     const j = await res.json();
-    const take = (name: string) => {
-      const rs = j?.resultSets?.find((x: { name: string }) => x.name === name);
-      if (!rs) return [];
-      const h = rs.headers as string[];
-      const c = (n: string) => h.indexOf(n);
-      return (rs.rowSet as (string | number)[][]).map((r) => ({
-        season: String(r[c("SEASON_ID")] ?? ""),
-        team: String(r[c("TEAM_ABBREVIATION")] ?? ""),
-        gp: r[c("GP")] ?? 0,
-        min: r[c("MIN")] ?? 0,
-        pts: r[c("PTS")] ?? 0,
-        reb: r[c("REB")] ?? 0,
-        ast: r[c("AST")] ?? 0,
-        stl: r[c("STL")] ?? 0,
-        blk: r[c("BLK")] ?? 0,
-        fgPct: r[c("FG_PCT")] ?? 0,
-        fg3Pct: r[c("FG3_PCT")] ?? 0,
-        ftPct: r[c("FT_PCT")] ?? 0,
-      }));
-    };
-    return NextResponse.json({
-      regular: take("SeasonTotalsRegularSeason"),
-      playoffs: take("SeasonTotalsPostSeason"),
-      careerRegular: take("CareerTotalsRegularSeason"),
-      careerPlayoffs: take("CareerTotalsPostSeason"),
-    });
+    const categories = (j?.categories ?? []).map((cat: {
+      name?: string; displayName?: string; labels?: string[]; names?: string[];
+      statistics?: { season?: { year?: number; displayName?: string }; teamSlug?: string; stats?: string[] }[]; totals?: string[];
+    }) => ({
+      name: cat.displayName ?? cat.name ?? "",
+      labels: cat.labels ?? cat.names ?? [],
+      seasons: (cat.statistics ?? []).map((s) => ({
+        season: s.season?.displayName ?? String(s.season?.year ?? ""),
+        team: (s.teamSlug ?? "").toUpperCase().replace(/-/g, " "),
+        stats: s.stats ?? [],
+      })),
+      totals: cat.totals ?? [],
+    })).filter((c: { seasons: unknown[] }) => c.seasons.length > 0);
+    if (categories.length === 0) return NextResponse.json({ error: "no stats" }, { status: 404 });
+    return NextResponse.json({ categories, espnId });
   } catch {
     return NextResponse.json({ error: "unavailable" }, { status: 502 });
   }
+}
+
+export async function GET(req: NextRequest) {
+  const key = `nba-stats|${(req.nextUrl.searchParams.get("espn") ?? "").trim()}|${(req.nextUrl.searchParams.get("name") ?? "").trim().toLowerCase()}`;
+  return cachedResponse(key, 1, () => handler(req));
 }

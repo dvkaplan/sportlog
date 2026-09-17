@@ -1,10 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
+import { cachedResponse } from "@/lib/wiki-cache";
 
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim();
 const BASE = "https://site.web.api.espn.com/apis/common/v3/sports/soccer";
 type Opt = { value: string; displayValue: string };
 
-export async function GET(req: NextRequest) {
+async function handler(req: NextRequest) {
   let id = req.nextUrl.searchParams.get("id") ?? "";
   const name = req.nextUrl.searchParams.get("name") ?? "";
   try {
@@ -59,4 +60,10 @@ export async function GET(req: NextRequest) {
   } catch {
     return NextResponse.json({ error: "unavailable" }, { status: 502 });
   }
+}
+
+export async function GET(req: NextRequest) {
+  const p = req.nextUrl.searchParams;
+  const key = `soccer-stats|${(p.get("id") ?? "").trim()}|${(p.get("name") ?? "").trim().toLowerCase()}`;
+  return cachedResponse(key, 1, () => handler(req));
 }
