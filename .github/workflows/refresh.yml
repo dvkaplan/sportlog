@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-                  - name: Season schedules, scores & box score maps
+      - name: Season schedules, scores & box score maps
         run: |
           node scripts/import-nfl-games.mjs
           node scripts/import-nba-games.mjs --current
@@ -23,6 +23,7 @@ jobs:
           node scripts/import-nba-espn-map.mjs --current
           node scripts/import-soccer-espn-map.mjs --current
         continue-on-error: true
+      - name: Roster sync (ESPN)
         run: node scripts/import-rosters-espn.mjs
       - name: Staff sync (Wikipedia)
         run: node scripts/import-staff.mjs
