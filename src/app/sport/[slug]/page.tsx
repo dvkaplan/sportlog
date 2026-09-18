@@ -11,7 +11,19 @@ import laligaIdx from "@/lib/seasons/laliga/index.json";
 import serieaIdx from "@/lib/seasons/seriea/index.json";
 import bundesligaIdx from "@/lib/seasons/bundesliga/index.json";
 import ligue1Idx from "@/lib/seasons/ligue1/index.json";
-const latest = (idx: string[]) => idx[idx.length - 1] ?? "";
+import { readFile } from "fs/promises";
+import path from "path";
+type SeasonGame = { hs?: number | null; as?: number | null };
+async function latestStarted(lg: string, idx: string[]): Promise<string> {
+  for (let i = idx.length - 1; i >= Math.max(0, idx.length - 3); i--) {
+    try {
+      const file = path.join(process.cwd(), "src", "lib", "seasons", lg, `${idx[i]}.json`);
+      const games = JSON.parse(await readFile(file, "utf8")) as SeasonGame[];
+      if (games.some((g) => g.hs != null && g.as != null)) return idx[i];
+    } catch { /* missing file — try the previous season */ }
+  }
+  return idx[idx.length - 1] ?? "";
+}
 
 export default async function SportPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -61,13 +73,13 @@ export default async function SportPage({ params }: { params: Promise<{ slug: st
           </>
         )}
 
-        {(() => {
-          const BROWSE: Record<string, [string, string, string][]> = {
-            football: [["nfl", "NFL", latest(nflIdx)]],
-            basketball: [["nba", "NBA", latest(nbaIdx)]],
-            hockey: [["nhl", "NHL", latest(nhlIdx)]],
-            baseball: [["mlb", "MLB", latest(mlbIdx)]],
-            soccer: [["epl", "Premier League", latest(eplIdx)], ["laliga", "La Liga", latest(laligaIdx)], ["seriea", "Serie A", latest(serieaIdx)], ["bundesliga", "Bundesliga", latest(bundesligaIdx)], ["ligue1", "Ligue 1", latest(ligue1Idx)]],
+          {await (async () => {
+            const BROWSE: Record<string, [string, string, string][]> = {
+            football: [["nfl", "NFL", await latestStarted("nfl", nflIdx)]],
+            basketball: [["nba", "NBA", await latestStarted("nba", nbaIdx)]],
+            hockey: [["nhl", "NHL", await latestStarted("nhl", nhlIdx)]],
+            baseball: [["mlb", "MLB", await latestStarted("mlb", mlbIdx)]],
+            soccer: [["epl", "Premier League", await latestStarted("epl", eplIdx)], ["laliga", "La Liga", await latestStarted("laliga", laligaIdx)], ["seriea", "Serie A", await latestStarted("seriea", serieaIdx)], ["bundesliga", "Bundesliga", await latestStarted("bundesliga", bundesligaIdx)], ["ligue1", "Ligue 1", await latestStarted("ligue1", ligue1Idx)]],
           };
           const links = BROWSE[slug] ?? [];
           if (links.length === 0) return null;

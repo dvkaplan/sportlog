@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { cachedResponse } from "@/lib/wiki-cache";
 
 const UA = { "User-Agent": "SPORTLOG/1.0 (student project)" };
-const clean = (s: string) => s.replace(/<sup[\s\S]*?<\/sup>/g, "").replace(/<[^>]+>/g, " ").replace(/\[\d+\]/g, "").replace(/&amp;/g, "&").replace(/&#160;|&nbsp;/g, " ").replace(/\s+/g, " ").trim();
+const clean = (s: string) => s.replace(/<sup[\s\S]*?<\/sup>/g, "").replace(/<[^>]+>/g, " ").replace(/\[\d+\]/g, "").replace(/&amp;/g, "&").replace(/&#160;|&nbsp;/g, " ").replace(/&#8211;|&#8212;|&ndash;|&mdash;/g, "-").replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n))).replace(/\s+/g, " ").trim();
 const SPORT_TEST: Record<string, RegExp> = {
   basketball: /\bNBA\b|basketball/i, football: /\bNFL\b|American football|quarterback|linebacker|wide receiver/i,
   baseball: /\bMLB\b|Major League Baseball|baseball/i, hockey: /\bNHL\b|ice hockey/i,

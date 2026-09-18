@@ -1,13 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { cachedResponse } from "@/lib/wiki-cache";
-const UA = { "User-Agent": "SPORTLOG/1.0 (student project)" };
-const clean = (s: string) => s.replace(/<sup[\s\S]*?<\/sup>/g, "").replace(/<[^>]+>/g, " ").replace(/\[\d+\]/g, "").replace(/&amp;/g, "&").replace(/&#160;|&nbsp;/g, " ").replace(/\s+/g, " ").trim();
+const UA = { "User-Agent": "SportLog/1.0 (https://sportlog-tau.vercel.app; donvkap@gmail.com) node-fetch" };
+const clean = (s: string) => s.replace(/<sup[\s\S]*?<\/sup>/g, "").replace(/<[^>]+>/g, " ").replace(/\[\d+\]/g, "").replace(/&amp;/g, "&").replace(/&#160;|&nbsp;/g, " ").replace(/&#8211;|&#8212;|&ndash;|&mdash;/g, "-").replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n))).replace(/\s+/g, " ").trim();
 
 async function handler(req: NextRequest) {
   const name = req.nextUrl.searchParams.get("name") ?? "";
   if (name.length < 3) return NextResponse.json({ error: "bad request" }, { status: 400 });
   try {
-    for (const title of [name, `${name} (basketball)`, `${name} (American football)`, `${name} (coach)`, `${name} (ice hockey)`, `${name} (baseball)`]) {
+        const exact = req.nextUrl.searchParams.get("title") ?? "";
+    for (const title of exact ? [exact] : [name, `${name} (basketball)`, `${name} (American football)`, `${name} (coach)`, `${name} (ice hockey)`, `${name} (baseball)`]) {
       const res = await fetch(`https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=text&format=json&redirects=1`, { headers: UA, next: { revalidate: 604800 } });
       const html: string = (await res.json())?.parse?.text?.["*"] ?? "";
       if (!html || !/coach/i.test(html.slice(0, 30000))) continue;
@@ -92,5 +93,6 @@ async function handler(req: NextRequest) {
 
 export async function GET(req: NextRequest) {
      const name = (req.nextUrl.searchParams.get("name") ?? "").trim().toLowerCase();
-     return cachedResponse(`coach-history|${name}`, 60, () => handler(req));
+       const title = (req.nextUrl.searchParams.get("title") ?? "").trim().toLowerCase();
+  return cachedResponse(`coach-history|${name}|${title}`, 60, () => handler(req));
    }

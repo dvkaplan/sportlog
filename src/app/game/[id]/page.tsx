@@ -9,7 +9,7 @@ type FStat = { kd: number; sig: string; sigPct: number; total: string; td: strin
 type FightMeta = { event: string; weightclass: string; method: string; round: string; time: string; format: string; referee: string; details: string; fighters: { name: string; stats?: FStat }[] };
 type Game = { id: string; sportSlug: string; league: string; title: string; date: string; score?: string; blurb?: string };
 type HistSide = { name: string; id: string | null; record: string };
-type HistInfo = { leagueKey: string; season: string; away: HistSide; home: HistSide; espn: string | null; soccerStats: Record<string, [string, string]> | null };
+type HistInfo = { leagueKey: string; season: string; away: HistSide; home: HistSide; espn: string | null; soccerStats: Record<string, [string, string]> | null; coaches?: { away: { slug: string; name: string }[]; home: { slug: string; name: string }[] } };
 type GameResponse = { game: Game; hist?: HistInfo | null; stats: FightMeta | null; eventName: string | null; eventSlug: string | null; chips: { name: string; slug: string | null }[] };
 type RatingRow = { id: string; user_id: string; game_id: string; rating: number; review: string | null; updated_at: string };
 
@@ -120,6 +120,14 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
             <p className="mt-1 text-sm text-zinc-500">
               {hist.away.name} ({hist.away.record}) at {hist.home.name} ({hist.home.record}) entering this game
             </p>
+                        {hist.coaches && (hist.coaches.away.length > 0 || hist.coaches.home.length > 0) && (
+              <p className="mt-1 text-sm text-zinc-500">
+                Coaches:{" "}
+                {hist.coaches.away.length ? hist.coaches.away.map((c, i) => <span key={c.slug}>{i > 0 && " / "}<Link href={`/coach/${c.slug}`} className="text-zinc-300 hover:text-emerald-400">{c.name}</Link></span>) : "—"}
+                <span className="text-zinc-600"> vs </span>
+                {hist.coaches.home.length ? hist.coaches.home.map((c, i) => <span key={c.slug}>{i > 0 && " / "}<Link href={`/coach/${c.slug}`} className="text-zinc-300 hover:text-emerald-400">{c.name}</Link></span>) : "—"}
+              </p>
+            )}
           </>
         ) : (
           <h1 className="mt-4 text-2xl font-bold">{g.title}</h1>

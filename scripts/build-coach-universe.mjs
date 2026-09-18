@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from "fs";
-const UA = { "User-Agent": "SportLog/1.0 (https://sportlog-tau.vercel.app; dkaplan.sportlog@gmail.com) node-fetch" };
+const UA = { "User-Agent": "SportLog/1.0 (https://sportlog-tau.vercel.app; donvkap@gmail.com) node-fetch" };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const slug = (n) => n.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 

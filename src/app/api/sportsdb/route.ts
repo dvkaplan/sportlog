@@ -30,6 +30,8 @@ import nhlMissingData from "@/lib/nhl-missing-players.json";
 import soccerUnivData from "@/lib/soccer-player-ids.json";
 import linkOverrides from "@/lib/link-overrides.json";
 import coachUniverseJson from "@/lib/coach-universe.json";
+import teamSeasonCoaches from "@/lib/team-season-coaches.json";
+import teamStaffJson from "@/lib/team-staff.json";
 
 const BASE = `https://www.thesportsdb.com/api/v1/json/${process.env.SPORTSDB_KEY ?? "3"}`;
 
@@ -252,6 +254,22 @@ export async function GET(req: NextRequest) {
                 leagueKey: league, season,
                 away: { name: hg.away, id: teamId(hg.away), record: rec(hg.away) },
                 home: { name: hg.home, id: teamId(hg.home), record: rec(hg.home) },
+                                coaches: (() => {
+                  const TSC = teamSeasonCoaches as Record<string, { slug: string; name: string }[]>;
+                  const STAFF = teamStaffJson as Record<string, { headCoach: string | null }>;
+                  const pslug = (n: string) => n.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+                  const cur = new Date(); const thisSeason = league === "nfl" || league === "mlb" ? String(cur.getFullYear()) : `${cur.getFullYear()}-${String((cur.getFullYear() + 1) % 100).padStart(2, "0")}`;
+                  const forTeam = (name: string) => {
+                    const hist = TSC[`${league}|${name}|${season}`] ?? [];
+                    if (hist.length) return hist;
+                    if (season === thisSeason || Number(season.slice(0, 4)) >= cur.getFullYear() - 1) {
+                      const tid = teamId(name); const hc = tid ? STAFF[tid]?.headCoach : null;
+                      if (hc) return [{ slug: pslug(hc), name: hc }];
+                    }
+                    return [];
+                  };
+                  return { away: forTeam(hg.away), home: forTeam(hg.home) };
+                })(),
                 espn: legacyEspn, soccerStats: hg.st ?? null,
               },
               stats: null, eventSlug: null, eventName: null, chips: [],
