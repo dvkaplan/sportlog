@@ -10,8 +10,11 @@ async function handler(req: NextRequest) {
         const exact = req.nextUrl.searchParams.get("title") ?? "";
     for (const title of exact ? [exact] : [name, `${name} (basketball)`, `${name} (American football)`, `${name} (coach)`, `${name} (ice hockey)`, `${name} (baseball)`]) {
       const res = await fetch(`https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=text&format=json&redirects=1`, { headers: UA, next: { revalidate: 604800 } });
-      const html: string = (await res.json())?.parse?.text?.["*"] ?? "";
-      if (!html || !/coach/i.test(html.slice(0, 30000))) continue;
+            if (res.status === 429 || res.status >= 500) throw new Error("throttled");
+      const rawText = await res.text();
+      if (!rawText.startsWith("{")) throw new Error("throttled");
+      const html: string = JSON.parse(rawText)?.parse?.text?.["*"] ?? "";
+      if (!html || !/coach|manager/i.test(html.slice(0, 30000))) continue;
 
            // Infobox career list with "As a player / As a coach" sub-labels — keep only the coach rows
       const career: { years: string; team: string }[] = [];

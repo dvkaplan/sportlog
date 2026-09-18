@@ -11,3 +11,5 @@ console.log("h3 ids:", [...html.matchAll(/<h3[^>]*id="([^"]+)"/g)].map((m) => m[
 const a = html.search(/<h[23][^>]*id="[^"]*(Award|Honou?r|Achievement)[^"]*"/i);
 console.log("awards heading at:", a);
 if (a >= 0) console.log("\nAWARDS AREA (800 chars):\n", html.slice(a, a + 800).replace(/\s+/g, " "));
+const box = html.slice(0, 60000);
+console.log("\nINFOBOX LABELS:", [...box.matchAll(/<th[^>]*>([\s\S]*?)<\/th>/g)].map((m) => m[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()).filter(Boolean).slice(0, 40).join(" | "));

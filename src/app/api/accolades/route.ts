@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { cachedResponse } from "@/lib/wiki-cache";
 
 const UA = { "User-Agent": "SPORTLOG/1.0 (student project)" };
-const clean = (s: string) => s.replace(/<sup[\s\S]*?<\/sup>/g, "").replace(/<[^>]+>/g, " ").replace(/\[\d+\]/g, "").replace(/&amp;/g, "&").replace(/&#160;|&nbsp;/g, " ").replace(/&#8211;|&#8212;|&ndash;|&mdash;/g, "-").replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n))).replace(/\s+/g, " ").trim();
+const clean = (s: string) => s.replace(/<style[\s\S]*?<\/style>/g, "").replace(/<sup[\s\S]*?<\/sup>/g, "").replace(/<[^>]+>/g, " ").replace(/\[\d+\]/g, "").replace(/&amp;/g, "&").replace(/&#160;|&nbsp;/g, " ").replace(/&#8211;|&#8212;|&ndash;|&mdash;/g, "-").replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n))).replace(/\s+/g, " ").trim();
 const SPORT_TEST: Record<string, RegExp> = {
   basketball: /\bNBA\b|basketball/i, football: /\bNFL\b|American football|quarterback|linebacker|wide receiver/i,
   baseball: /\bMLB\b|Major League Baseball|baseball/i, hockey: /\bNHL\b|ice hockey/i,
@@ -15,12 +15,13 @@ const SUFFIX: Record<string, string[]> = {
 
 async function parse(title: string): Promise<string | null> {
   const res = await fetch(`https://en.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=text&format=json&redirects=1`, { headers: UA, next: { revalidate: 604800 } });
-  if (!res.ok) return null;
-  const j = await res.json();
-  return j?.parse?.text?.["*"] ?? null;
+  if (res.status === 429 || res.status >= 500) throw new Error("throttled");
+  const text = await res.text();
+  if (!text.startsWith("{")) throw new Error("throttled");
+  return JSON.parse(text)?.parse?.text?.["*"] ?? null;
 }
 function fromInfobox(html: string): string[] {
-  const m = html.match(/<th[^>]*>(?:(?!<\/th>)[\s\S]){0,200}?Career highlights[\s\S]{0,300}?<\/th>[\s\S]{0,300}?<td[^>]*>([\s\S]*?)<\/td>/i);
+  const m = html.match(/<th[^>]*>(?:(?!<\/th>)[\s\S]){0,200}?(?:Career highlights|Awards and highlights|Highlights and awards)[\s\S]{0,300}?<\/th>[\s\S]{0,300}?<td[^>]*>([\s\S]*?)<\/td>/i);
   if (!m) return [];
   return [...m[1].matchAll(/<li[^>]*>([\s\S]*?)<\/li>/g)].map((x) => clean(x[1])).filter(Boolean);
 }
