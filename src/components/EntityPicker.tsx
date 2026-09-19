@@ -45,7 +45,7 @@ export default function EntityPicker({ onPick }: { onPick: (e: PickedEntity) => 
     <div className="relative">
       <input value={q} onChange={(e) => setQ(e.target.value)}
         placeholder="Search teams, players, fighters, coaches, events, seasons…"
-        className="w-full rounded-lg border border-zinc-700 bg-zinc-950 p-3 text-sm outline-none focus:border-amber-400" />
+        className="w-full rounded-lg border border-zinc-700 bg-zinc-950 p-3 text-sm outline-none focus:border-accent" />
       {open && (
         <div className="absolute z-20 mt-1 max-h-80 w-full overflow-y-auto rounded-lg border border-zinc-700 bg-zinc-900 shadow-xl">
           {(res.teams ?? []).length > 0 && (

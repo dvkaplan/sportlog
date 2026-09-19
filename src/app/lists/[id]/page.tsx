@@ -71,7 +71,7 @@ export default function ListPage({ params }: { params: Promise<{ id: string }> }
   if (missing)
     return (
       <main className="p-10 text-zinc-100">
-        List not found. <Link href="/lists" className="text-amber-400">← All lists</Link>
+        List not found. <Link href="/lists" className="text-accent">← All lists</Link>
       </main>
     );
   if (!list) return <main className="p-10 text-zinc-100">Loading…</main>;
@@ -90,7 +90,7 @@ export default function ListPage({ params }: { params: Promise<{ id: string }> }
         <div className="mt-8 space-y-2">
           {items.map((it) => (
             <div key={it.id} className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-4">
-              <span className="w-8 shrink-0 text-right text-xl font-bold text-amber-400">
+              <span className="w-8 shrink-0 text-right text-xl font-bold text-accent">
                 {it.position}
               </span>
               {it.image_url ? (
@@ -98,7 +98,7 @@ export default function ListPage({ params }: { params: Promise<{ id: string }> }
                 <img src={it.image_url} alt="" className="h-10 w-10 shrink-0 object-contain" />
               ) : null}
               {it.entity_type === "team" && it.entity_id ? (
-                <Link href={`/team/${it.entity_id}`} className="font-medium hover:text-amber-400">
+                <Link href={`/team/${it.entity_id}`} className="font-medium hover:text-accent">
                   {it.label}
                 </Link>
               ) : (

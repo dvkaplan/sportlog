@@ -44,7 +44,7 @@ export default function UsernamePage() {
           This is how you&apos;ll appear on reviews and lists.
         </p>
         <div className="mt-8 space-y-3">
-          <div className="flex items-center rounded-lg border border-zinc-700 bg-zinc-900 focus-within:border-amber-400">
+          <div className="flex items-center rounded-lg border border-zinc-700 bg-zinc-900 focus-within:border-accent">
             <span className="pl-3 text-zinc-500">@</span>
             <input
               value={username}
@@ -56,7 +56,7 @@ export default function UsernamePage() {
           <button
             onClick={save}
             disabled={busy}
-            className="w-full rounded-lg bg-amber-400 py-2.5 font-semibold text-zinc-950 transition hover:bg-amber-300 disabled:opacity-50"
+            className="w-full rounded-lg bg-accent py-2.5 font-semibold text-zinc-950 transition hover:bg-accent disabled:opacity-50"
           >
             {busy ? "Saving…" : "Claim username"}
           </button>

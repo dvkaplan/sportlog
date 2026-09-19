@@ -109,13 +109,13 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
         <BackLink />
         {hist ? (
           <>
-            <Link href={`/seasons/${hist.leagueKey}/${hist.season}`} className="mt-4 inline-block rounded-full border border-amber-400/40 bg-amber-400/5 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-amber-300 transition hover:border-amber-400">
+            <Link href={`/seasons/${hist.leagueKey}/${hist.season}`} className="mt-4 inline-block rounded-full border border-accent/40 bg-accent/5 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-accent transition hover:border-accent">
               {g.league} · {hist.season} season
             </Link>
             <h1 className="mt-3 text-2xl font-bold">
-              {hist.away.id ? <Link href={`/team/${hist.away.id}`} className="hover:text-amber-400">{hist.away.name}</Link> : hist.away.name}
+              {hist.away.id ? <Link href={`/team/${hist.away.id}`} className="hover:text-accent">{hist.away.name}</Link> : hist.away.name}
               <span className="text-zinc-500"> @ </span>
-              {hist.home.id ? <Link href={`/team/${hist.home.id}`} className="hover:text-amber-400">{hist.home.name}</Link> : hist.home.name}
+              {hist.home.id ? <Link href={`/team/${hist.home.id}`} className="hover:text-accent">{hist.home.name}</Link> : hist.home.name}
             </h1>
             <p className="mt-1 text-sm text-zinc-500">
               {hist.away.name} ({hist.away.record}) at {hist.home.name} ({hist.home.record}) entering this game
@@ -123,9 +123,9 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
                         {hist.coaches && (hist.coaches.away.length > 0 || hist.coaches.home.length > 0) && (
               <p className="mt-1 text-sm text-zinc-500">
                 Coaches:{" "}
-                {hist.coaches.away.length ? hist.coaches.away.map((c, i) => <span key={c.slug}>{i > 0 && " / "}<Link href={`/coach/${c.slug}`} className="text-zinc-300 hover:text-amber-400">{c.name}</Link></span>) : "—"}
+                {hist.coaches.away.length ? hist.coaches.away.map((c, i) => <span key={c.slug}>{i > 0 && " / "}<Link href={`/coach/${c.slug}`} className="text-zinc-300 hover:text-accent">{c.name}</Link></span>) : "—"}
                 <span className="text-zinc-600"> vs </span>
-                {hist.coaches.home.length ? hist.coaches.home.map((c, i) => <span key={c.slug}>{i > 0 && " / "}<Link href={`/coach/${c.slug}`} className="text-zinc-300 hover:text-amber-400">{c.name}</Link></span>) : "—"}
+                {hist.coaches.home.length ? hist.coaches.home.map((c, i) => <span key={c.slug}>{i > 0 && " / "}<Link href={`/coach/${c.slug}`} className="text-zinc-300 hover:text-accent">{c.name}</Link></span>) : "—"}
               </p>
             )}
           </>
@@ -137,7 +137,7 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
           <div className="mt-2 flex flex-wrap gap-2 text-sm">
             {data.chips.map((c) =>
               c.slug ? (
-                <Link key={c.name} href={`/fighter/${c.slug}`} className="rounded-full border border-zinc-700 px-3 py-1 text-amber-400 transition hover:border-amber-400">
+                <Link key={c.name} href={`/fighter/${c.slug}`} className="rounded-full border border-zinc-700 px-3 py-1 text-accent transition hover:border-accent">
                   {c.name}
                 </Link>
               ) : (
@@ -152,20 +152,20 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
             <Link href={`/event/${data.eventSlug}`} className="transition hover:opacity-80">
               <div className="mt-4 inline-block rounded-xl border border-zinc-800 bg-zinc-900 px-5 py-3">
                 <div className="text-[10px] font-semibold uppercase tracking-widest text-zinc-500">Event</div>
-                <div className="text-xl font-bold text-amber-300">{data.eventName}</div>
+                <div className="text-xl font-bold text-accent">{data.eventName}</div>
               </div>
             </Link>
           ) : (
             <div className="mt-4 inline-block rounded-xl border border-zinc-800 bg-zinc-900 px-5 py-3">
               <div className="text-[10px] font-semibold uppercase tracking-widest text-zinc-500">Event</div>
-              <div className="text-xl font-bold text-amber-300">{data.eventName}</div>
+              <div className="text-xl font-bold text-accent">{data.eventName}</div>
             </div>
           )
         )}
 
         {isFight && !fs && (
           <div className="mt-8 rounded-xl border border-zinc-800 bg-zinc-900 p-5">
-            <div className="text-xs font-semibold uppercase tracking-widest text-amber-300">Bout details</div>
+            <div className="text-xs font-semibold uppercase tracking-widest text-accent">Bout details</div>
             <div className="mt-2 grid grid-cols-1 gap-1 text-sm sm:grid-cols-2">
               <div><span className="text-zinc-500">Result:</span> {g.score || "—"}</div>
               <div><span className="text-zinc-500">Date:</span> {g.date || "—"}</div>
@@ -179,7 +179,7 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
         {fs && (
           <div className="mt-8 space-y-4">
             <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-5">
-              <div className="text-xs font-semibold uppercase tracking-widest text-amber-300">
+              <div className="text-xs font-semibold uppercase tracking-widest text-accent">
                 {fs.weightclass || "Bout details"}
               </div>
               <div className="mt-2 grid grid-cols-2 gap-x-6 gap-y-1 text-sm sm:grid-cols-3">
@@ -194,7 +194,7 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
             {fa?.stats && fb?.stats && (
               <div className="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900">
                 <div className="grid grid-cols-3 border-b border-zinc-800 bg-zinc-950 px-4 py-2 text-center text-xs font-semibold uppercase tracking-widest text-zinc-500">
-                  <span className="truncate text-left text-amber-400">{fa.name}</span><span>Totals</span><span className="truncate text-right text-amber-400">{fb.name}</span>
+                  <span className="truncate text-left text-accent">{fa.name}</span><span>Totals</span><span className="truncate text-right text-accent">{fb.name}</span>
                 </div>
                 {rows.map(([label, get]) => (
                   <div key={label} className="grid grid-cols-3 px-4 py-1.5 text-center text-sm odd:bg-zinc-900 even:bg-zinc-950/50">
@@ -226,7 +226,7 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
         {hist?.soccerStats && (
           <div className="mt-6 overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900">
             <div className="grid grid-cols-3 border-b border-zinc-800 bg-zinc-950 px-4 py-2 text-center text-xs font-semibold uppercase tracking-widest text-zinc-500">
-              <span className="truncate text-left text-amber-400">{hist.away.name}</span><span>Match Stats</span><span className="truncate text-right text-amber-400">{hist.home.name}</span>
+              <span className="truncate text-left text-accent">{hist.away.name}</span><span>Match Stats</span><span className="truncate text-right text-accent">{hist.home.name}</span>
             </div>
             {Object.entries({ shots: "Shots", sot: "On Target", corners: "Corners", fouls: "Fouls", yellow: "Yellow Cards", red: "Red Cards" }).map(([k, label]) =>
               hist.soccerStats?.[k] ? (
@@ -246,7 +246,7 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
         <div className="mt-6 flex items-center gap-6 rounded-xl border border-zinc-800 bg-zinc-900 p-4">
           <div>
             <div className="text-xs uppercase tracking-wide text-zinc-500">Fan score</div>
-            <div className="text-3xl font-bold text-amber-400">{avg ? avg.toFixed(1) : "—"}</div>
+            <div className="text-3xl font-bold text-accent">{avg ? avg.toFixed(1) : "—"}</div>
           </div>
           <div className="text-sm text-zinc-400">
             {all.length} rating{all.length === 1 ? "" : "s"} · {reviews.length} review{reviews.length === 1 ? "" : "s"}
@@ -258,17 +258,17 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
             <>
               <div className="flex items-baseline justify-between">
                 <h2 className="font-semibold">Your rating</h2>
-                <span className="text-3xl font-bold text-amber-400">{rating.toFixed(1)}</span>
+                <span className="text-3xl font-bold text-accent">{rating.toFixed(1)}</span>
               </div>
               <input type="range" min="0.5" max="10" step="0.5" value={rating}
                 onChange={(e) => { setRating(parseFloat(e.target.value)); setSaved(false); }}
-                className="mt-4 w-full accent-amber-400" />
+                className="mt-4 w-full accent-accent" />
               <div className="flex justify-between text-xs text-zinc-600"><span>0.5</span><span>10.0</span></div>
               <textarea value={review} onChange={(e) => { setReview(e.target.value); setSaved(false); }}
                 placeholder="Write your review…" rows={5}
-                className="mt-5 w-full rounded-lg border border-zinc-700 bg-zinc-950 p-3 text-sm outline-none focus:border-amber-400" />
+                className="mt-5 w-full rounded-lg border border-zinc-700 bg-zinc-950 p-3 text-sm outline-none focus:border-accent" />
               <button onClick={save} disabled={busy}
-                className="mt-4 w-full rounded-lg bg-amber-400 py-2.5 font-semibold text-zinc-950 transition hover:bg-amber-300 disabled:opacity-50">
+                className="mt-4 w-full rounded-lg bg-accent py-2.5 font-semibold text-zinc-950 transition hover:bg-accent disabled:opacity-50">
                 {busy ? "Saving…" : saved ? "✓ Saved" : "Save rating & review"}
               </button>
               {err && <p className="mt-3 text-sm text-red-400">{err}</p>}
@@ -276,7 +276,7 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
           ) : (
             <div className="text-center">
               <p className="text-zinc-300">Sign in to rate and review this one.</p>
-              <Link href="/auth" className="mt-4 inline-block rounded-lg bg-amber-400 px-6 py-2.5 font-semibold text-zinc-950 transition hover:bg-amber-300">Sign in</Link>
+              <Link href="/auth" className="mt-4 inline-block rounded-lg bg-accent px-6 py-2.5 font-semibold text-zinc-950 transition hover:bg-accent">Sign in</Link>
             </div>
           )}
         </div>
@@ -289,7 +289,7 @@ export default function GamePage({ params }: { params: Promise<{ id: string }> }
                 <div key={r.id} className="rounded-xl border border-zinc-800 bg-zinc-900 p-4">
                   <div className="flex items-center justify-between text-sm">
                     <span className="text-zinc-400">@{names[r.user_id] ?? `Fan-${r.user_id.slice(0, 4)}`}</span>
-                    <span className="font-bold text-amber-400">{Number(r.rating).toFixed(1)}</span>
+                    <span className="font-bold text-accent">{Number(r.rating).toFixed(1)}</span>
                   </div>
                   <p className="mt-2 text-sm text-zinc-300">{r.review}</p>
                 </div>

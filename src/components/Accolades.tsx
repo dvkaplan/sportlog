@@ -28,8 +28,8 @@ export default function Accolades({ name, sport }: { name: string; sport: string
       </div>
     );
   return (
-    <div className="mt-10 rounded-xl border border-amber-400/30 bg-zinc-900 p-5">
-      <h2 className="font-semibold text-amber-300">Accolades</h2>
+    <div className="mt-10 rounded-xl border border-accent/30 bg-zinc-900 p-5">
+      <h2 className="font-semibold text-accent">Accolades</h2>
       <div className="mt-4 grid gap-5 sm:grid-cols-2">
         <Group title="Championships" icon="🏆" items={data.championships} />
         <Group title="Awards & honors" icon="🥇" items={data.awards} />

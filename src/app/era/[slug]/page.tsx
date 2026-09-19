@@ -38,7 +38,7 @@ export default function EraPage({ params }: { params: Promise<{ slug: string }> 
       <div className="mx-auto max-w-3xl px-6 py-12">
         <BackLink />
         <div className="mt-6">
-          <div className="text-xs font-semibold uppercase tracking-widest text-amber-400">
+          <div className="text-xs font-semibold uppercase tracking-widest text-accent">
             {sport?.emoji} {era.years}
           </div>
           <h1 className="mt-1 text-3xl font-bold">{era.name}</h1>
@@ -49,14 +49,14 @@ export default function EraPage({ params }: { params: Promise<{ slug: string }> 
           <h2 className="font-semibold">Fan verdict</h2>
           {hits.length > 0 ? (
             <p className="mt-2 text-sm text-zinc-400">
-              Ranked in <span className="font-bold text-amber-400">{hits.length}</span> fan list
+              Ranked in <span className="font-bold text-accent">{hits.length}</span> fan list
               {hits.length === 1 ? "" : "s"} · average position{" "}
-              <span className="font-bold text-amber-400">#{avg?.toFixed(1)}</span>
+              <span className="font-bold text-accent">#{avg?.toFixed(1)}</span>
             </p>
           ) : (
             <p className="mt-2 text-sm text-zinc-500">
               No fan lists rank this era yet. Be the first —{" "}
-              <Link href="/lists/new" className="text-amber-400 hover:underline">
+              <Link href="/lists/new" className="text-accent hover:underline">
                 make a list
               </Link>{" "}
               and include &quot;{era.name}&quot; as an entry.
@@ -68,10 +68,10 @@ export default function EraPage({ params }: { params: Promise<{ slug: string }> 
                 <Link
                   key={i}
                   href={`/lists/${h.list_id}`}
-                  className="flex items-center justify-between rounded-lg border border-zinc-800 bg-zinc-950 p-3 text-sm transition hover:border-amber-400"
+                  className="flex items-center justify-between rounded-lg border border-zinc-800 bg-zinc-950 p-3 text-sm transition hover:border-accent"
                 >
                   <span>{h.title}</span>
-                  <span className="text-amber-400">#{h.position}</span>
+                  <span className="text-accent">#{h.position}</span>
                 </Link>
               ))}
             </div>

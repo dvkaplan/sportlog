@@ -139,19 +139,19 @@ export default function NewListPage() {
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             placeholder="Greatest NBA teams of all time"
-            className="w-full rounded-lg border border-zinc-700 bg-zinc-900 p-3 text-sm outline-none focus:border-amber-400"
+            className="w-full rounded-lg border border-zinc-700 bg-zinc-900 p-3 text-sm outline-none focus:border-accent"
           />
           <textarea
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             placeholder="What's this ranking about? (optional)"
             rows={2}
-            className="w-full rounded-lg border border-zinc-700 bg-zinc-900 p-3 text-sm outline-none focus:border-amber-400"
+            className="w-full rounded-lg border border-zinc-700 bg-zinc-900 p-3 text-sm outline-none focus:border-accent"
           />
           <select
             value={sportSlug}
             onChange={(e) => setSportSlug(e.target.value)}
-            className="w-full rounded-lg border border-zinc-700 bg-zinc-900 p-3 text-sm outline-none focus:border-amber-400"
+            className="w-full rounded-lg border border-zinc-700 bg-zinc-900 p-3 text-sm outline-none focus:border-accent"
           >
             <option value="">All sports / general</option>
             {SPORTS.map((s) => (
@@ -162,7 +162,7 @@ export default function NewListPage() {
             {items.map((val, i) => (
               <div key={i} className="relative">
                 <div className="flex items-center gap-2">
-                  <span className="w-8 shrink-0 text-right font-bold text-amber-400">{i + 1}.</span>
+                  <span className="w-8 shrink-0 text-right font-bold text-accent">{i + 1}.</span>
                   {val.image ? (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img src={val.image} alt="" className="h-8 w-8 shrink-0 rounded object-cover object-top" />
@@ -174,9 +174,9 @@ export default function NewListPage() {
                     onChange={(e) => setItem(i, { label: e.target.value, entityType: undefined, entityId: undefined, image: undefined })}
                     onFocus={() => setActive(i)}
                     placeholder={i === 0 ? "Khabib, 1995-96 Bulls, UFC 229, Redick…" : "Add an entry…"}
-                    className="w-full rounded-lg border border-zinc-700 bg-zinc-900 p-2.5 text-sm outline-none focus:border-amber-400"
+                    className="w-full rounded-lg border border-zinc-700 bg-zinc-900 p-2.5 text-sm outline-none focus:border-accent"
                   />
-                  <button onClick={() => move(i, -1)} className="rounded border border-zinc-700 px-2 py-1 text-xs hover:border-amber-400">↑</button>
+                  <button onClick={() => move(i, -1)} className="rounded border border-zinc-700 px-2 py-1 text-xs hover:border-accent">↑</button>
                   <button onClick={() => move(i, 1)} className="rounded border border-zinc-700 px-2 py-1 text-xs hover:border-red-400">↓</button>
                   <button onClick={() => removeItem(i)} className="rounded border border-zinc-700 px-2 py-1 text-xs hover:border-red-400">✕</button>
                 </div>
@@ -237,7 +237,7 @@ export default function NewListPage() {
               </div>
             ))}
           </div>
-          <button onClick={addItem} className="rounded-lg border border-zinc-700 px-4 py-2 text-sm hover:border-amber-400">
+          <button onClick={addItem} className="rounded-lg border border-zinc-700 px-4 py-2 text-sm hover:border-accent">
             + Add entry
           </button>
           <label className="flex cursor-pointer items-center gap-3 rounded-lg border border-zinc-800 bg-zinc-900 p-3 text-sm">
@@ -245,14 +245,14 @@ export default function NewListPage() {
               type="checkbox"
               checked={isPublic}
               onChange={(e) => setIsPublic(e.target.checked)}
-              className="h-4 w-4 accent-amber-400"
+              className="h-4 w-4 accent-accent"
             />
             <span>{isPublic ? "Public — anyone can see this list" : "Private — only you can see this list"}</span>
           </label>
           <button
             onClick={save}
             disabled={busy}
-            className="w-full rounded-lg bg-amber-400 py-2.5 font-semibold text-zinc-950 transition hover:bg-amber-300 disabled:opacity-50"
+            className="w-full rounded-lg bg-accent py-2.5 font-semibold text-zinc-950 transition hover:bg-accent disabled:opacity-50"
           >
             {busy ? "Publishing…" : "Publish list"}
           </button>

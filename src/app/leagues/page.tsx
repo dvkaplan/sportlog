@@ -39,7 +39,7 @@ export default function LeaguesPage() {
               {open === name && (
                 <div className="flex flex-wrap gap-2 border-t border-zinc-800 p-4">
                   {fs.map((f) => (
-                    <Link key={f.slug} href={`/fighter/${f.slug}`} className="rounded-full border border-zinc-800 bg-zinc-950 px-3 py-1 text-sm transition hover:border-amber-400">
+                    <Link key={f.slug} href={`/fighter/${f.slug}`} className="rounded-full border border-zinc-800 bg-zinc-950 px-3 py-1 text-sm transition hover:border-accent">
                       {f.name}
                     </Link>
                   ))}
@@ -64,7 +64,7 @@ export default function LeaguesPage() {
                       <Link
                         key={t.idTeam}
                         href={`/team/${t.idTeam}`}
-                        className="flex items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-950 p-2 text-sm transition hover:border-amber-400"
+                        className="flex items-center gap-2 rounded-lg border border-zinc-800 bg-zinc-950 p-2 text-sm transition hover:border-accent"
                       >
                         {t.strBadge ? (
                           // eslint-disable-next-line @next/next/no-img-element

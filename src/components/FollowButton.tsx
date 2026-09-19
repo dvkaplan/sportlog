@@ -92,7 +92,7 @@ export default function FollowButton({
         className={`rounded-lg px-4 py-1.5 text-sm font-semibold transition ${
           following
             ? "border border-zinc-700 text-zinc-300 hover:border-red-400 hover:text-red-400"
-            : "bg-amber-400 text-zinc-950 hover:bg-amber-300"
+            : "bg-accent text-zinc-950 hover:bg-accent"
         }`}
       >
         {following ? "✓ Following" : "+ Follow"}
@@ -104,14 +104,14 @@ export default function FollowButton({
           title={favorite ? "Remove from favorites" : "Add to favorites (max 4)"}
           className={`rounded-lg border px-2.5 py-1.5 text-sm transition ${
             favorite
-              ? "border-amber-400 text-amber-400"
-              : "border-zinc-700 text-zinc-500 hover:border-amber-400 hover:text-amber-400"
+              ? "border-accent text-accent"
+              : "border-zinc-700 text-zinc-500 hover:border-accent hover:text-accent"
           }`}
         >
           {favorite ? "★" : "☆"}
         </button>
       )}
-      {msg && <span className="text-xs text-amber-400">{msg}</span>}
+      {msg && <span className="text-xs text-accent">{msg}</span>}
     </div>
   );
 }

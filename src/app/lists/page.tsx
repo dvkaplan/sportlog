@@ -53,7 +53,7 @@ export default function ListsPage() {
           <h1 className="text-2xl font-bold">Lists</h1>
           <Link
             href="/lists/new"
-            className="rounded-lg bg-amber-400 px-4 py-2 text-sm font-semibold text-zinc-950 transition hover:bg-amber-300"
+            className="rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-zinc-950 transition hover:bg-accent"
           >
             + New list
           </Link>
@@ -66,7 +66,7 @@ export default function ListsPage() {
             <Link
               key={l.id}
               href={`/lists/${l.id}`}
-              className="block rounded-xl border border-zinc-800 bg-zinc-900 p-5 transition hover:border-amber-400"
+              className="block rounded-xl border border-zinc-800 bg-zinc-900 p-5 transition hover:border-accent"
             >
               <div className="font-semibold">{l.title}</div>
               {l.description && (

@@ -29,7 +29,7 @@ export default function BoxScore({ id, espn, awayName, homeName }: { id: string;
       {box.teamStats.length > 0 && (
         <div className="overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900">
           <div className="grid grid-cols-3 border-b border-zinc-800 bg-zinc-950 px-4 py-2 text-center text-xs font-semibold uppercase tracking-widest text-zinc-500">
-            <span className="truncate text-left text-amber-400">{awayName}</span><span>Team Stats</span><span className="truncate text-right text-amber-400">{homeName}</span>
+            <span className="truncate text-left text-accent">{awayName}</span><span>Team Stats</span><span className="truncate text-right text-accent">{homeName}</span>
           </div>
           {box.teamStats.map((s, i) => (
             <div key={`${s.label}-${i}`} className="grid grid-cols-3 px-4 py-1.5 text-center text-sm odd:bg-zinc-900 even:bg-zinc-950/50">
@@ -42,7 +42,7 @@ export default function BoxScore({ id, espn, awayName, homeName }: { id: string;
       )}
       {box.groups.map((g) => (
         <div key={g.title} className="overflow-x-auto rounded-xl border border-zinc-800 bg-zinc-900">
-          <div className="border-b border-zinc-800 bg-zinc-950 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-amber-300">{g.title}</div>
+          <div className="border-b border-zinc-800 bg-zinc-950 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-accent">{g.title}</div>
           <table className="w-full text-sm">
             <thead>
               <tr className="text-xs uppercase tracking-wide text-zinc-500">
@@ -55,7 +55,7 @@ export default function BoxScore({ id, espn, awayName, homeName }: { id: string;
                 <tr key={i} className="odd:bg-zinc-900 even:bg-zinc-950/50">
                   <td className="max-w-[160px] truncate px-4 py-1.5">
                     {r.playerId ? (
-                      <Link href={`/player/${r.playerId}`} className="hover:text-amber-400 hover:underline underline-offset-4">{r.name}</Link>
+                      <Link href={`/player/${r.playerId}`} className="hover:text-accent hover:underline underline-offset-4">{r.name}</Link>
                                        ) : <span className="text-zinc-600" title="No player page available">{r.name}</span>}
                   </td>
                   {r.cells.map((c, j) => <td key={j} className="px-2 py-1.5 text-right">{c}</td>)}

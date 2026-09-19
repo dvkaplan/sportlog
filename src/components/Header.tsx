@@ -41,33 +41,33 @@ export default function Header() {
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <div className="flex items-center gap-6">
           <Link href="/" className="text-2xl leading-none tracking-tight" style={{ fontFamily: "var(--font-display), Georgia, serif" }}>
-            Sport<span className="text-amber-400">log</span>
+            Sport<span className="text-accent">log</span>
           </Link>
-          <Link href="/lists" className="text-sm text-zinc-400 hover:text-amber-400">
+          <Link href="/lists" className="text-sm text-zinc-400 hover:text-accent">
             Lists
           </Link>
-          <Link href="/search" className="text-sm text-zinc-400 hover:text-amber-400">
+          <Link href="/search" className="text-sm text-zinc-400 hover:text-accent">
             Search
           </Link>
-          <Link href="/leagues" className="text-sm text-zinc-400 hover:text-amber-400">
+          <Link href="/leagues" className="text-sm text-zinc-400 hover:text-accent">
             Leagues
           </Link>
         </div>
         {userId ? (
           <div className="flex items-center gap-3 text-sm">
             {username ? (
-              <Link href="/profile" className="text-zinc-300 hover:text-amber-400">@{username}</Link>
+              <Link href="/profile" className="text-zinc-300 hover:text-accent">@{username}</Link>
             ) : (
               <Link
                 href="/username"
-                className="rounded bg-amber-400/10 px-3 py-1 text-amber-400 transition hover:bg-amber-400/20"
+                className="rounded bg-accent/10 px-3 py-1 text-accent transition hover:bg-accent/20"
               >
                 Pick a username →
               </Link>
             )}
             <button
               onClick={() => supabase.auth.signOut()}
-              className="rounded border border-zinc-700 px-3 py-1 transition hover:border-amber-400"
+              className="rounded border border-zinc-700 px-3 py-1 transition hover:border-accent"
             >
               Sign out
             </button>
@@ -75,7 +75,7 @@ export default function Header() {
         ) : (
           <Link
             href="/auth"
-            className="rounded bg-amber-400 px-4 py-1.5 text-sm font-semibold text-zinc-950 transition hover:bg-amber-300"
+            className="rounded bg-accent px-4 py-1.5 text-sm font-semibold text-zinc-950 transition hover:bg-accent"
           >
             Sign in
           </Link>

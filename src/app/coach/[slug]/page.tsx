@@ -78,7 +78,7 @@ export default function CoachPage({ params }: { params: Promise<{ slug: string }
               <FollowButton entityType="coach" entityId={slug} entityName={name} />
             </div>
             {teams.map((t) => (
-              <Link key={t.idTeam} href={`/team/${t.idTeam}`} className="mt-2 inline-flex items-center gap-2 rounded-full border border-zinc-700 px-4 py-1.5 text-sm transition hover:border-amber-400">
+              <Link key={t.idTeam} href={`/team/${t.idTeam}`} className="mt-2 inline-flex items-center gap-2 rounded-full border border-zinc-700 px-4 py-1.5 text-sm transition hover:border-accent">
                 {t.strBadge && (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img src={t.strBadge} alt="" className="h-5 w-5 object-contain" />
@@ -92,7 +92,7 @@ export default function CoachPage({ params }: { params: Promise<{ slug: string }
           <div className="mt-6">
             <p className={`text-sm leading-relaxed text-zinc-300 ${expanded ? "" : "line-clamp-6"}`}>{bio}</p>
             {bio.length > 400 && (
-              <button onClick={() => setExpanded(!expanded)} className="mt-2 text-sm text-amber-400 hover:underline">
+              <button onClick={() => setExpanded(!expanded)} className="mt-2 text-sm text-accent hover:underline">
                 {expanded ? "Show less" : "Read more…"}
               </button>
             )}
@@ -100,7 +100,7 @@ export default function CoachPage({ params }: { params: Promise<{ slug: string }
           </div>
         )}
                 {playerLink && (
-          <Link href={playerLink} className="mt-4 inline-block rounded-full border border-amber-400/40 bg-amber-400/5 px-4 py-1.5 text-sm text-amber-400 transition hover:border-amber-400">
+          <Link href={playerLink} className="mt-4 inline-block rounded-full border border-accent/40 bg-accent/5 px-4 py-1.5 text-sm text-accent transition hover:border-accent">
             🏀 Playing career → player page
           </Link>
         )}

@@ -40,7 +40,7 @@ export default function PlayerStatsGeneric({ endpoint, query }: { endpoint: stri
                 key={c.name}
                 onClick={() => setActive(i)}
                 className={`rounded-full px-4 py-1 transition ${
-                  active === i ? "bg-amber-400 font-semibold text-zinc-950" : "border border-zinc-700 text-zinc-400 hover:border-amber-400"
+                  active === i ? "bg-accent font-semibold text-zinc-950" : "border border-zinc-700 text-zinc-400 hover:border-accent"
                 }`}
               >
                 {c.name}

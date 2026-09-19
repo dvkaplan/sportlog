@@ -47,7 +47,7 @@ export default async function SportPage({ params }: { params: Promise<{ slug: st
                 <Link
                   key={e.slug}
                   href={`/era/${e.slug}`}
-                  className="rounded-full border border-zinc-700 px-4 py-1.5 text-sm transition hover:border-amber-400 hover:text-amber-400"
+                  className="rounded-full border border-zinc-700 px-4 py-1.5 text-sm transition hover:border-accent hover:text-accent"
                 >
                   {e.name} <span className="text-zinc-500">· {e.years}</span>
                 </Link>
@@ -64,7 +64,7 @@ export default async function SportPage({ params }: { params: Promise<{ slug: st
                 <Link
                   key={f.slug}
                   href={`/fighter/${f.slug}`}
-                  className="rounded-full border border-zinc-700 px-4 py-1.5 text-sm transition hover:border-amber-400 hover:text-amber-400"
+                  className="rounded-full border border-zinc-700 px-4 py-1.5 text-sm transition hover:border-accent hover:text-accent"
                 >
                   {f.name}{f.champion ? " 🏆" : ""}
                 </Link>
@@ -87,8 +87,8 @@ export default async function SportPage({ params }: { params: Promise<{ slug: st
             <div className="mt-8 space-y-2">
               {links.map(([lg, name, cur]) => (
                 <Link key={lg} href={`/seasons/${lg}/${cur}`}
-                  className="block rounded-xl border border-amber-400/40 bg-amber-400/5 p-5 transition hover:border-amber-400">
-                  <div className="font-semibold text-amber-400">Browse every {name} game →</div>
+                  className="block rounded-xl border border-accent/40 bg-accent/5 p-5 transition hover:border-accent">
+                  <div className="font-semibold text-accent">Browse every {name} game →</div>
                   <div className="mt-1 text-sm text-zinc-400">Full season schedules, every game rateable — season by season.</div>
                 </Link>
               ))}
@@ -101,7 +101,7 @@ export default async function SportPage({ params }: { params: Promise<{ slug: st
             <Link
               key={g.id}
               href={`/game/${g.id}`}
-              className="block rounded-xl border border-zinc-800 bg-zinc-900 p-5 transition hover:border-amber-400"
+              className="block rounded-xl border border-zinc-800 bg-zinc-900 p-5 transition hover:border-accent"
             >
               <div className="flex items-center justify-between gap-4">
                 <div>
@@ -112,7 +112,7 @@ export default async function SportPage({ params }: { params: Promise<{ slug: st
                   </div>
                 </div>
                 {g.championship && (
-                  <span className="shrink-0 rounded bg-amber-400/10 px-2 py-1 text-xs text-amber-400">🏆 Title</span>
+                  <span className="shrink-0 rounded bg-accent/10 px-2 py-1 text-xs text-accent">🏆 Title</span>
                 )}
               </div>
             </Link>

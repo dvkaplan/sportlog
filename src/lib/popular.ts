@@ -2,6 +2,7 @@ import { readFile, readdir } from "fs/promises";
 import path from "path";
 import { supabaseAdmin } from "./supabase-server";
 import fightGamesData from "./fight-games.json";
+import eventsData from "./events.json";
 
 export type PopularGame = { id: string; title: string; league: string; date: string; score: string; ratings: number; reviews: number; avg: number };
 type SG = { id: string; away: string; home: string; date: string; as: number | null; hs: number | null; ot?: boolean; type?: string };
@@ -26,17 +27,25 @@ async function recentGames(days: number) {
       } catch { /* skip */ }
     }
   }
+    const iso = (d: string) => { const t = Date.parse(d ?? ""); return Number.isNaN(t) ? "" : new Date(t).toISOString().slice(0, 10); };
+    const marquee = new Map<string, number>(); // gameId → 4 (main event) or 3 (co-main)
+  for (const ev of eventsData as { fights: { gameId: string }[] }[]) {
+    if (ev.fights?.[0]) marquee.set(ev.fights[0].gameId, 4);
+    if (ev.fights?.[1]) marquee.set(ev.fights[1].gameId, 3);
+  }
   for (const f of fightGamesData as { id: string; title: string; league?: string; date: string; score: string }[]) {
-    if (f.date >= since && f.date <= today) out.push({ id: f.id, title: f.title, league: f.league ?? "UFC", date: f.date, score: f.score, notable: 1 });
+    const m = marquee.get(f.id);
+        const fd = iso(f.date);
+    if (m && fd && fd >= since && fd <= today) out.push({ id: f.id, title: f.title, league: f.league ?? "UFC", date: fd, score: f.score, notable: m });
   }
   return out;
 }
 
-export async function getPopularGames(limit = 10): Promise<PopularGame[]> {
-  const recent = await recentGames(14);
+export async function getPopularGames(limit = 10, days = 30): Promise<PopularGame[]> {
+  const recent = await recentGames(days);
   const agg: Record<string, { n: number; sum: number; reviews: number }> = {};
   try {
-    const since = new Date(Date.now() - 21 * 86400000).toISOString();
+    const since = new Date(Date.now() - (days + 7) * 86400000).toISOString();
     const { data } = await supabaseAdmin.from("ratings").select("game_id, rating, review").gte("updated_at", since).limit(5000);
     for (const r of data ?? []) {
       const a = (agg[r.game_id] ??= { n: 0, sum: 0, reviews: 0 });

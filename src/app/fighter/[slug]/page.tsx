@@ -92,7 +92,7 @@ export default function FighterPage({ params }: { params: Promise<{ slug: string
             </div>
           )}
           <div>
-            <div className="text-xs font-semibold uppercase tracking-widest text-amber-400">
+            <div className="text-xs font-semibold uppercase tracking-widest text-accent">
               {fighter.sport === "boxing" ? "🥊 Boxing" : "🥋 MMA"} · {fighter.era}
             </div>
             <div className="mt-1 flex flex-wrap items-center gap-4">
@@ -105,7 +105,7 @@ export default function FighterPage({ params }: { params: Promise<{ slug: string
               {REC[fighter.slug] && REC[fighter.slug] !== record ? ` · UFC: ${REC[fighter.slug]}` : ""}
               {reigning ? " · 🏆 Reigning Champion" : ""}
             </p>
-            {titles && <p className="mt-2 text-sm font-medium text-amber-300">{titles}</p>}
+            {titles && <p className="mt-2 text-sm font-medium text-accent">{titles}</p>}
           </div>
         </div>
 
@@ -115,7 +115,7 @@ export default function FighterPage({ params }: { params: Promise<{ slug: string
           <div className="mt-4">
             <p className={`text-sm leading-relaxed text-zinc-400 ${expanded ? "" : "line-clamp-5"}`}>{bio}</p>
             {bio.length > 350 && (
-              <button onClick={() => setExpanded(!expanded)} className="mt-2 text-sm text-amber-400 hover:underline">
+              <button onClick={() => setExpanded(!expanded)} className="mt-2 text-sm text-accent hover:underline">
                 {expanded ? "Show less" : "Read more…"}
               </button>
             )}
@@ -140,15 +140,15 @@ export default function FighterPage({ params }: { params: Promise<{ slug: string
                       `/game/fight-${[slugifyName(fighter.name), slugifyName(f.opponent)].sort().join("-vs-")}-${dateSlug(f.date)}`
                     )
                   }
-                  className="flex cursor-pointer items-center gap-3 rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2 text-sm transition hover:border-amber-400"
+                  className="flex cursor-pointer items-center gap-3 rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2 text-sm transition hover:border-accent"
                 >
-                  <span className={`w-8 shrink-0 text-center font-bold ${f.result === "W" ? "text-amber-400" : f.result === "L" ? "text-red-400" : "text-zinc-400"}`}>{f.result}</span>
+                  <span className={`w-8 shrink-0 text-center font-bold ${f.result === "W" ? "text-accent" : f.result === "L" ? "text-red-400" : "text-zinc-400"}`}>{f.result}</span>
                   <span className="w-14 shrink-0 text-xs text-zinc-500">{f.record}</span>
                   {NAME_TO_SLUG[norm(f.opponent)] ? (
                     <Link
                       href={`/fighter/${NAME_TO_SLUG[norm(f.opponent)]}`}
                       onClick={(e) => e.stopPropagation()}
-                      className="min-w-0 flex-1 truncate font-medium text-zinc-100 underline-offset-4 hover:text-amber-400 hover:underline"
+                      className="min-w-0 flex-1 truncate font-medium text-zinc-100 underline-offset-4 hover:text-accent hover:underline"
                     >
                       {f.opponent}
                     </Link>
@@ -163,7 +163,7 @@ export default function FighterPage({ params }: { params: Promise<{ slug: string
             {fights.length > 10 && (
               <button
                 onClick={() => setShowAllFights(!showAllFights)}
-                className="mt-3 rounded-lg border border-zinc-700 px-4 py-2 text-sm transition hover:border-amber-400"
+                className="mt-3 rounded-lg border border-zinc-700 px-4 py-2 text-sm transition hover:border-accent"
               >
                 {showAllFights ? "Show less" : `Show full record (${fights.length} fights)`}
               </button>
@@ -176,7 +176,7 @@ export default function FighterPage({ params }: { params: Promise<{ slug: string
             <h2 className="mt-10 font-semibold">Iconic fights on SPORTLOG</h2>
             <div className="mt-3 space-y-2">
               {iconicFights.map((g) => (
-                <Link key={g.id} href={`/game/${g.id}`} className="block rounded-xl border border-zinc-800 bg-zinc-900 p-4 transition hover:border-amber-400">
+                <Link key={g.id} href={`/game/${g.id}`} className="block rounded-xl border border-zinc-800 bg-zinc-900 p-4 transition hover:border-accent">
                   <div className="font-medium">{g.title}</div>
                   <div className="mt-1 text-xs text-zinc-500">{g.date} {g.score ? `· ${g.score}` : ""}</div>
                 </Link>
@@ -190,16 +190,16 @@ export default function FighterPage({ params }: { params: Promise<{ slug: string
           {fanLists.length > 0 ? (
             <div className="mt-3 space-y-2">
               {fanLists.map((h, i) => (
-                <Link key={i} href={`/lists/${h.list_id}`} className="flex items-center justify-between rounded-lg border border-zinc-800 bg-zinc-950 p-3 text-sm transition hover:border-amber-400">
+                <Link key={i} href={`/lists/${h.list_id}`} className="flex items-center justify-between rounded-lg border border-zinc-800 bg-zinc-950 p-3 text-sm transition hover:border-accent">
                   <span>{h.title}</span>
-                  <span className="text-amber-400">#{h.position}</span>
+                  <span className="text-accent">#{h.position}</span>
                 </Link>
               ))}
             </div>
           ) : (
             <p className="mt-2 text-sm text-zinc-500">
               Not ranked in any fan list yet.{" "}
-              <Link href="/lists/new" className="text-amber-400 hover:underline">Start one</Link> — type the full name so it links here.
+              <Link href="/lists/new" className="text-accent hover:underline">Start one</Link> — type the full name so it links here.
             </p>
           )}
         </div>

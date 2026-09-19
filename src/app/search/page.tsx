@@ -118,7 +118,7 @@ export default function SearchPage() {
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="Lebron James, Lakers, McGregor, UFC 229…"
-          className="mt-6 w-full rounded-lg border border-zinc-700 bg-zinc-900 p-3 text-sm outline-none focus:border-amber-400"
+          className="mt-6 w-full rounded-lg border border-zinc-700 bg-zinc-900 p-3 text-sm outline-none focus:border-accent"
         />
         <div className="mt-4 flex gap-2 text-sm">
           {(["all", "teams", "players", "fighters", "coaches", "events", "fights", "seasons"] as const).map((t) => (
@@ -127,8 +127,8 @@ export default function SearchPage() {
               onClick={() => setTab(t)}
               className={`rounded-full px-4 py-1.5 capitalize transition ${
                 tab === t
-                  ? "bg-amber-400 font-semibold text-zinc-950"
-                  : "border border-zinc-700 text-zinc-400 hover:border-amber-400"
+                  ? "bg-accent font-semibold text-zinc-950"
+                  : "border border-zinc-700 text-zinc-400 hover:border-accent"
               }`}
             >
               {t}
@@ -145,7 +145,7 @@ export default function SearchPage() {
                 <Link
                   key={t.idTeam}
                   href={`/team/${t.idTeam}`}
-                  className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-amber-400"
+                  className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-accent"
                 >
                   {t.strBadge ? (
                     // eslint-disable-next-line @next/next/no-img-element
@@ -173,7 +173,7 @@ export default function SearchPage() {
                 <Link
                   key={p.idPlayer}
                   href={`/player/${p.idPlayer}`}
-                  className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-amber-400"
+                  className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-accent"
                 >
                   {p.strThumb ? (
                     // eslint-disable-next-line @next/next/no-img-element
@@ -203,7 +203,7 @@ export default function SearchPage() {
                 <Link
                   key={f.slug}
                   href={`/fighter/${f.slug}`}
-                  className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-amber-400"
+                  className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-accent"
                 >
                   {f.photo ? (
                     // eslint-disable-next-line @next/next/no-img-element
@@ -231,7 +231,7 @@ export default function SearchPage() {
             <div className="mt-2 space-y-2">
               {coaches.map((c, i) => (
                 <Link key={i} href={c.idPlayer ? `/player/${c.idPlayer}` : `/coach/${c.slug}`}
-                  className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-amber-400">
+                  className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-accent">
                   {c.photo ? (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img src={c.photo} alt="" className="h-10 w-10 rounded-lg object-cover object-top" />
@@ -252,8 +252,8 @@ export default function SearchPage() {
             <h2 className="mt-6 text-xs font-semibold uppercase tracking-widest text-zinc-500">Events</h2>
             <div className="mt-2 space-y-2">
               {events.map((e) => (
-                <Link key={e.slug} href={`/event/${e.slug}`} className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-amber-400">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-800 text-amber-300">🎟️</div>
+                <Link key={e.slug} href={`/event/${e.slug}`} className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-accent">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-800 text-accent">🎟️</div>
                   <div>
                     <div className="font-medium">{e.name}</div>
                     <div className="text-xs text-zinc-500">{[e.date, `${e.count} fight${e.count === 1 ? "" : "s"}`].filter(Boolean).join(" · ")}</div>
@@ -269,7 +269,7 @@ export default function SearchPage() {
             <h2 className="mt-6 text-xs font-semibold uppercase tracking-widest text-zinc-500">Fights</h2>
             <div className="mt-2 space-y-2">
               {fights.map((f) => (
-                <Link key={f.id} href={`/game/${f.id}`} className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-amber-400">
+                <Link key={f.id} href={`/game/${f.id}`} className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-accent">
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-800">{f.sportSlug === "boxing" ? "🥊" : "🥋"}</div>
                   <div>
                     <div className="font-medium">{f.title}</div>
@@ -286,8 +286,8 @@ export default function SearchPage() {
             <h2 className="mt-6 text-xs font-semibold uppercase tracking-widest text-zinc-500">Seasons</h2>
             <div className="mt-2 space-y-2">
               {seasons.map((s) => (
-                <Link key={`${s.league}-${s.season}`} href={`/seasons/${s.league}/${s.season}`} className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-amber-400">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-800 text-amber-300">📅</div>
+                <Link key={`${s.league}-${s.season}`} href={`/seasons/${s.league}/${s.season}`} className="flex items-center gap-4 rounded-xl border border-zinc-800 bg-zinc-900 p-3 transition hover:border-accent">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-800 text-accent">📅</div>
                   <div className="font-medium">{s.label}</div>
                 </Link>
               ))}

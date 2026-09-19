@@ -116,7 +116,7 @@ useEffect(() => {
               <h1 className="text-3xl font-bold">{player.strPlayer}</h1>
               <FollowButton entityType="player" entityId={player.idPlayer} entityName={player.strPlayer} />
                             {COACH_SLUGS.has(coachSlugOf(player.strPlayer)) && (
-                <Link href={`/coach/${coachSlugOf(player.strPlayer)}`} className="rounded-full border border-amber-400/40 bg-amber-400/5 px-3 py-1 text-xs text-amber-300 transition hover:border-amber-400">📋 Coach page →</Link>
+                <Link href={`/coach/${coachSlugOf(player.strPlayer)}`} className="rounded-full border border-accent/40 bg-accent/5 px-3 py-1 text-xs text-accent transition hover:border-accent">📋 Coach page →</Link>
               )}
             </div>
             <p className="mt-1 text-sm text-zinc-400">
@@ -134,7 +134,7 @@ useEffect(() => {
           <div className="mt-6">
             <p className={`text-sm leading-relaxed text-zinc-300 ${expanded ? "" : "line-clamp-5"}`}>{desc}</p>
             {desc.length > 350 && (
-              <button onClick={() => setExpanded(!expanded)} className="mt-2 text-sm text-amber-400 hover:underline">
+              <button onClick={() => setExpanded(!expanded)} className="mt-2 text-sm text-accent hover:underline">
                 {expanded ? "Show less" : "Read more…"}
               </button>
             )}

@@ -91,13 +91,13 @@ export default async function SeasonPage({ params }: { params: Promise<{ league:
         <div className="mt-8 space-y-3">
           {groups.map(([label, gs]) => (
             <details key={label} className="rounded-xl border border-zinc-800 bg-zinc-900" open={label.includes("Super Bowl") || label.includes("NBA Finals")}>
-              <summary className="cursor-pointer select-none px-5 py-3 font-semibold hover:text-amber-400">
+              <summary className="cursor-pointer select-none px-5 py-3 font-semibold hover:text-accent">
                 {label} <span className="ml-2 text-xs font-normal text-zinc-500">{gs.length} games</span>
               </summary>
               <div className="space-y-2 border-t border-zinc-800 p-4">
                 {gs.map((g) => (
                   <Link key={g.id} href={`/game/${g.id}`}
-                    className="flex items-center justify-between rounded-lg border border-zinc-800 bg-zinc-950 px-4 py-2.5 text-sm transition hover:border-amber-400">
+                    className="flex items-center justify-between rounded-lg border border-zinc-800 bg-zinc-950 px-4 py-2.5 text-sm transition hover:border-accent">
                     <span className="min-w-0 truncate font-medium">{g.gameNo ? `Game ${g.gameNo}: ` : ""}{g.away} @ {g.home}</span>
                     <span className="ml-4 shrink-0 text-zinc-400">
                       {g.as != null && g.hs != null ? `${g.as}–${g.hs}${g.ot ? " (OT)" : ""}` : g.date}
@@ -108,20 +108,20 @@ export default async function SeasonPage({ params }: { params: Promise<{ league:
             </details>
           ))}
           {playoffSeries.length > 0 && (
-            <details className="rounded-xl border border-amber-400/30 bg-zinc-900">
-              <summary className="cursor-pointer select-none px-5 py-3 font-semibold text-amber-300 hover:text-amber-200">
+            <details className="rounded-xl border border-accent/30 bg-zinc-900">
+              <summary className="cursor-pointer select-none px-5 py-3 font-semibold text-accent hover:text-amber-200">
                 Playoffs <span className="ml-2 text-xs font-normal text-zinc-500">{playoffSeries.length} series</span>
               </summary>
               <div className="space-y-2 border-t border-zinc-800 p-4">
                 {playoffSeries.map((s) => (
                   <details key={s.label} className="rounded-lg border border-zinc-800 bg-zinc-950">
-                    <summary className="cursor-pointer select-none px-4 py-2.5 text-sm font-medium hover:text-amber-400">
+                    <summary className="cursor-pointer select-none px-4 py-2.5 text-sm font-medium hover:text-accent">
                       {s.label} <span className="ml-2 text-xs font-normal text-zinc-500">{s.games.length} games</span>
                     </summary>
                     <div className="space-y-2 border-t border-zinc-800 p-3">
                       {s.games.map((g) => (
                         <Link key={g.id} href={`/game/${g.id}`}
-                          className="flex items-center justify-between rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-2.5 text-sm transition hover:border-amber-400">
+                          className="flex items-center justify-between rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-2.5 text-sm transition hover:border-accent">
                           <span className="min-w-0 truncate font-medium">{g.gameNo ? `Game ${g.gameNo}: ` : ""}{g.away} @ {g.home}</span>
                           <span className="ml-4 shrink-0 text-zinc-400">
                             {g.as != null && g.hs != null ? `${g.as}–${g.hs}${g.ot ? " (OT)" : ""}` : g.date}
@@ -135,14 +135,14 @@ export default async function SeasonPage({ params }: { params: Promise<{ league:
             </details>
           )}
           {finalsGroup && (
-            <details open className="rounded-xl border border-amber-400/60 bg-zinc-900">
-              <summary className="cursor-pointer select-none px-5 py-3 font-semibold text-amber-300 hover:text-amber-200">
+            <details open className="rounded-xl border border-accent/60 bg-zinc-900">
+              <summary className="cursor-pointer select-none px-5 py-3 font-semibold text-accent hover:text-amber-200">
                 {finalsGroup.label}
               </summary>
               <div className="space-y-2 border-t border-zinc-800 p-4">
                 {finalsGroup.games.map((g) => (
                   <Link key={g.id} href={`/game/${g.id}`}
-                    className="flex items-center justify-between rounded-lg border border-zinc-800 bg-zinc-950 px-4 py-2.5 text-sm transition hover:border-amber-400">
+                    className="flex items-center justify-between rounded-lg border border-zinc-800 bg-zinc-950 px-4 py-2.5 text-sm transition hover:border-accent">
                     <span className="min-w-0 truncate font-medium">{g.gameNo ? `Game ${g.gameNo}: ` : ""}{g.away} @ {g.home}</span>
                     <span className="ml-4 shrink-0 text-zinc-400">
                       {g.as != null && g.hs != null ? `${g.as}–${g.hs}${g.ot ? " (OT)" : ""}` : g.date}
