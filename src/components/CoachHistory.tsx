@@ -22,7 +22,7 @@ export default function CoachHistory({ name }: { name: string }) {
      
             {(data.tables ?? (data.record ? [data.record] : [])).map((tbl, ti) => (
         <div key={ti}>
-          <h2 className={`${ti === 0 ? "" : "mt-8 "}font-semibold`}>Head coaching record{tbl.label ? ` — ${tbl.label}` : ""}</h2>
+          <h2 className={`${ti === 0 ? "" : "mt-8 "}font-semibold`}>Head coaching record{tbl.label && !/record/i.test(tbl.label) ? ` — ${tbl.label}` : ""}</h2>
           <div className="mt-3 overflow-x-auto rounded-xl border border-zinc-800">
             <table className="w-full min-w-[560px] text-sm">
               <thead className="bg-zinc-900 text-xs uppercase text-zinc-500">

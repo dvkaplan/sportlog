@@ -1,11 +1,25 @@
 import { NextRequest, NextResponse } from "next/server";
 import { cachedResponse } from "@/lib/wiki-cache";
+import { readFile } from "fs/promises";
+import path from "path";
+import nbaIds from "@/lib/nba-player-ids.json";
 
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim();
 
 async function handler(req: NextRequest) {
   let espnId = req.nextUrl.searchParams.get("espn") ?? "";
   const name = req.nextUrl.searchParams.get("name") ?? "";
+    // Pre-ESPN-era players: served from the local stats.nba.com harvest
+  if (name) {
+    const target = norm(name);
+    const hit = Object.entries((nbaIds as { names: Record<string, string> }).names).find(([, nm]) => norm(nm) === target);
+    if (hit) {
+      try {
+        const disk = JSON.parse(await readFile(path.join(process.cwd(), "src", "lib", "nba-career", `${hit[0]}.json`), "utf8"));
+        if (disk?.categories?.length) return NextResponse.json(disk);
+      } catch { /* not harvested — fall through to ESPN */ }
+    }
+  }
   try {
     if (!espnId && name.length >= 3) {
       const sj = await fetch(`https://site.web.api.espn.com/apis/search/v2?query=${encodeURIComponent(name)}&limit=10&type=player`, { next: { revalidate: 86400 } }).then((r) => r.json());
@@ -18,7 +32,7 @@ async function handler(req: NextRequest) {
     }
     if (!/^\d+$/.test(espnId)) return NextResponse.json({ error: "not found" }, { status: 404 });
     const res = await fetch(`https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/athletes/${espnId}/stats`, { next: { revalidate: 86400 } });
-    if (!res.ok) return NextResponse.json({ error: "upstream" }, { status: 502 });
+        if (!res.ok) return NextResponse.json({ error: "upstream", espnId, status: res.status }, { status: 502 });
     const j = await res.json();
     const categories = (j?.categories ?? []).map((cat: {
       name?: string; displayName?: string; labels?: string[]; names?: string[];

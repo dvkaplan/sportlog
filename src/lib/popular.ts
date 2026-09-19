@@ -8,11 +8,11 @@ export type PopularGame = { id: string; title: string; league: string; date: str
 type SG = { id: string; away: string; home: string; date: string; as: number | null; hs: number | null; ot?: boolean; type?: string };
 const LG: Record<string, string> = { nfl: "NFL", nba: "NBA", nhl: "NHL", mlb: "MLB", epl: "Premier League", laliga: "La Liga", seriea: "Serie A", bundesliga: "Bundesliga", ligue1: "Ligue 1" };
 
-async function recentGames(days: number) {
+async function recentGames(days: number, only?: string[]) {
   const today = new Date().toISOString().slice(0, 10);
   const since = new Date(Date.now() - days * 86400000).toISOString().slice(0, 10);
   const out: { id: string; title: string; league: string; date: string; score: string; notable: number }[] = [];
-  for (const lg of Object.keys(LG)) {
+    for (const lg of only ?? Object.keys(LG)) {
     let files: string[] = [];
     try { files = (await readdir(path.join(process.cwd(), "src", "lib", "seasons", lg))).filter((f) => /^\d{4}/.test(f)).sort().slice(-2); } catch { continue; }
     for (const f of files) {
@@ -28,6 +28,7 @@ async function recentGames(days: number) {
     }
   }
     const iso = (d: string) => { const t = Date.parse(d ?? ""); return Number.isNaN(t) ? "" : new Date(t).toISOString().slice(0, 10); };
+      if (only) return out;
     const marquee = new Map<string, number>(); // gameId → 4 (main event) or 3 (co-main)
   for (const ev of eventsData as { fights: { gameId: string }[] }[]) {
     if (ev.fights?.[0]) marquee.set(ev.fights[0].gameId, 4);
@@ -41,8 +42,8 @@ async function recentGames(days: number) {
   return out;
 }
 
-export async function getPopularGames(limit = 10, days = 30): Promise<PopularGame[]> {
-  const recent = await recentGames(days);
+export async function getPopularGames(limit = 10, days = 30, only?: string[]): Promise<PopularGame[]> {
+  const recent = await recentGames(days, only);
   const agg: Record<string, { n: number; sum: number; reviews: number }> = {};
   try {
     const since = new Date(Date.now() - (days + 7) * 86400000).toISOString();
@@ -75,7 +76,7 @@ const KIND_TYPE: Record<Exclude<Kind, "games">, string> = { players: "player", c
 function resolveEntity(kind: Exclude<Kind, "games">, id: string): { title: string; league: string; href: string } | null {
   if (kind === "players") {
     const p = (playersData as { idPlayer: string; strPlayer: string; strLeague: string | null; strTeam: string | null }[]).find((x) => x.idPlayer === id);
-    if (p) return { title: p.strPlayer, league: [p.strLeague, p.strTeam?.replace(/^_/, "")].filter(Boolean).join(" · "), href: `/player/${id}` };
+    if (p) return { title: p.strPlayer, league: [p.strLeague, /^_Retired/i.test(p.strTeam ?? "") ? "Retired" : p.strTeam?.replace(/^_/, "")].filter(Boolean).join(" · "), href: `/player/${id}` };
     const gen: Record<string, { key: string; list: { name: string }[]; league: string }> = {
       nba: { key: "nbaId", list: nbaMissing as { name: string }[], league: "NBA" }, nfl: { key: "nflId", list: nflMissing as { name: string }[], league: "NFL" },
       mlb: { key: "mlbId", list: mlbMissing as { name: string }[], league: "MLB" }, nhl: { key: "nhlId", list: nhlMissing as { name: string }[], league: "NHL" },
@@ -106,23 +107,70 @@ function resolveEntity(kind: Exclude<Kind, "games">, id: string): { title: strin
   return f ? { title: f.name, league: `${f.sport === "mma" ? "UFC" : "Boxing"} · ${f.division}`, href: `/fighter/${id}` } : null;
 }
 
-export async function getPopularEntities(kind: Exclude<Kind, "games">, limit = 10, days = 30): Promise<PopularGame[]> {
+import coachRecordsData from "./coach-records.json";
+import roleOverrides from "./role-overrides.json";
+
+const slugOf = (n: string) => n.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+function roleOf(slug: string): "player" | "coach" {
+  const ov = (roleOverrides as Record<string, "player" | "coach">)[slug];
+  if (ov) return ov;
+  if (slug in (coachMediaData as object)) return "coach";
+  if (!(slug in (coachUniverseData as object))) return "player";
+  const rows = (coachRecordsData as Record<string, { rows: unknown[] }>)[slug]?.rows?.length ?? 0;
+  return rows >= 8 ? "coach" : "player";
+}
+
+export async function getPopularEntities(kind: Exclude<Kind, "games">, limit = 10, days = 30, league?: string): Promise<PopularGame[]> {
   const since = new Date(Date.now() - days * 86400000).toISOString();
-  const agg: Record<string, { n: number; sum: number; reviews: number; follows: number }> = {};
-  try {
-    const { data } = await supabaseAdmin.from("entity_ratings").select("entity_id, rating, review").eq("entity_type", KIND_TYPE[kind]).gte("updated_at", since).limit(5000);
-    for (const r of data ?? []) {
-      const a = (agg[r.entity_id] ??= { n: 0, sum: 0, reviews: 0, follows: 0 });
-      a.n++; a.sum += Number(r.rating); if (r.review && String(r.review).trim()) a.reviews++;
-    }
-  } catch { /* table unavailable */ }
-  try {
-    const { data } = await supabaseAdmin.from("follows").select("entity_id").eq("entity_type", KIND_TYPE[kind]).gte("created_at", since).limit(5000);
-    for (const r of data ?? []) (agg[r.entity_id] ??= { n: 0, sum: 0, reviews: 0, follows: 0 }).follows++;
-  } catch { /* follows table may differ — ratings alone still work */ }
-  return Object.entries(agg)
+  const people = kind === "players" || kind === "coaches";
+  const types = people ? ["player", "coach"] : [KIND_TYPE[kind]];
+  type Agg = { n: number; sum: number; reviews: number; follows: number };
+  const raw: Record<string, Agg> = {}; // key: type|id
+  for (const t of types) {
+    try {
+      const { data } = await supabaseAdmin.from("entity_ratings").select("entity_id, rating, review").eq("entity_type", t).gte("updated_at", since).limit(5000);
+      for (const r of data ?? []) { const a = (raw[`${t}|${r.entity_id}`] ??= { n: 0, sum: 0, reviews: 0, follows: 0 }); a.n++; a.sum += Number(r.rating); if (r.review && String(r.review).trim()) a.reviews++; }
+    } catch { /* table unavailable */ }
+    try {
+      const { data } = await supabaseAdmin.from("follows").select("entity_id").eq("entity_type", t).gte("created_at", since).limit(5000);
+      for (const r of data ?? []) (raw[`${t}|${r.entity_id}`] ??= { n: 0, sum: 0, reviews: 0, follows: 0 }).follows++;
+    } catch { /* optional */ }
+  }
+  type Person = Agg & { title: string; league: string; hrefPlayer?: string; hrefCoach?: string; role: "player" | "coach" };
+  const merged: Record<string, Person> = {};
+  for (const [key, a] of Object.entries(raw)) {
+    const [t, id] = key.split("|");
+    const rk = (t === "player" ? "players" : t === "coach" ? "coaches" : kind) as Exclude<Kind, "games">;
+    const e = resolveEntity(rk, id);
+    if (!e) continue;
+    if (league && !e.league.toUpperCase().includes(league.toUpperCase())) continue;
+    const pk = people ? slugOf(e.title) : key;
+    const p = (merged[pk] ??= { n: 0, sum: 0, reviews: 0, follows: 0, title: e.title, league: e.league, role: people ? roleOf(slugOf(e.title)) : "player" });
+    p.n += a.n; p.sum += a.sum; p.reviews += a.reviews; p.follows += a.follows;
+    if (t === "player") p.hrefPlayer = e.href; else if (t === "coach") p.hrefCoach = e.href; else p.hrefPlayer = e.href;
+    if (t === "coach" && !p.league) p.league = e.league;
+  }
+  const want = kind === "coaches" ? "coach" : "player";
+  return Object.entries(merged)
+    .filter(([, p]) => !people || p.role === want)
     .sort((a, b) => (b[1].n * 10 + b[1].reviews * 5 + b[1].follows * 3) - (a[1].n * 10 + a[1].reviews * 5 + a[1].follows * 3))
-    .slice(0, limit * 2)
-    .flatMap(([id, a]) => { const e = resolveEntity(kind, id); return e ? [{ id, title: e.title, league: e.league, date: "", score: "", ratings: a.n, reviews: a.reviews, avg: a.n ? a.sum / a.n : 0, href: e.href }] : []; })
-    .slice(0, limit);
+    .slice(0, limit)
+    .map(([id, p]) => ({ id, title: p.title, league: p.league, date: "", score: "", ratings: p.n, reviews: p.reviews, avg: p.n ? p.sum / p.n : 0, href: p.role === "coach" ? (p.hrefCoach ?? `/coach/${slugOf(p.title)}`) : (p.hrefPlayer ?? p.hrefCoach ?? "#") }));
+}
+
+export async function getUpcomingGames(lg: string, days = 7): Promise<PopularGame[]> {
+  const today = new Date().toISOString().slice(0, 10);
+  const until = new Date(Date.now() + days * 86400000).toISOString().slice(0, 10);
+  const out: PopularGame[] = [];
+  try {
+    const files = (await readdir(path.join(process.cwd(), "src", "lib", "seasons", lg))).filter((f) => /^\d{4}/.test(f)).sort().slice(-2);
+    for (const f of files) {
+      const games = JSON.parse(await readFile(path.join(process.cwd(), "src", "lib", "seasons", lg, f), "utf8")) as SG[];
+      for (const g of games) {
+        if (!g.date || g.date <= today || g.date > until || g.as != null) continue;
+        out.push({ id: g.id, title: `${g.away} at ${g.home}`, league: LG[lg], date: g.date, score: "", ratings: 0, reviews: 0, avg: 0 });
+      }
+    }
+  } catch { /* no schedule */ }
+  return out.sort((a, b) => a.date.localeCompare(b.date)).slice(0, 12);
 }

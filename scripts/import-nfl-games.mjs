@@ -1,4 +1,4 @@
-import { writeFileSync, mkdirSync } from "fs";
+import { writeFileSync, mkdirSync, readdirSync } from "fs";
 
 const URL = "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv";
 const NAMES = {
@@ -61,5 +61,8 @@ for (const r of rows.slice(1)) {
 mkdirSync("src/lib/seasons/nfl", { recursive: true });
 const seasons = Object.keys(bySeason).sort();
 for (const s of seasons) writeFileSync(`src/lib/seasons/nfl/${s}.json`, JSON.stringify(bySeason[s]));
-writeFileSync("src/lib/seasons/nfl/index.json", JSON.stringify(seasons));
-console.log(`Wrote ${total} NFL games across ${seasons.length} seasons (${seasons[0]}–${seasons[seasons.length - 1]}).`);
+const onDisk = readdirSync("src/lib/seasons/nfl").filter((f) => /^\d{4}\.json$/.test(f)).map((f) => f.slice(0, 4));
+const merged = [...new Set([...onDisk, ...seasons])].sort();
+writeFileSync("src/lib/seasons/nfl/index.json", JSON.stringify(merged));
+console.log(`Wrote ${total} NFL games across ${seasons.length} seasons from nflverse (${seasons[0]}–${seasons[seasons.length - 1]}).`);
+console.log(`Index now lists ${merged.length} seasons (${merged[0]}–${merged[merged.length - 1]}).`);
