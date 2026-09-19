@@ -14,9 +14,10 @@ let i = 0, ok = 0, fails = 0;
 for (const [id, name] of targets) {
   i++;
   try {
-    const res = await fetch(`https://stats.nba.com/stats/playercareerstats?PlayerID=${id}&PerMode=PerGame&LeagueID=00`, { headers: HEADERS });
+    const res = await fetch(`https://stats.nba.com/stats/playercareerstats?PlayerID=${id}&PerMode=PerGame&LeagueID=00`, { headers: HEADERS, signal: AbortSignal.timeout(10000) });
     if (!res.ok) { console.log(`${i}/${targets.length} ${name}: HTTP ${res.status}`); fails++; if (++fails > 10) { console.log("Too many failures — stopping; rerun later."); break; } await sleep(5000); continue; }
     const j = await res.json();
+        if (!j?.resultSets) { writeFileSync(`src/lib/nba-career/${id}.json`, JSON.stringify({ categories: [], source: "stats.nba.com", nbaId: id, empty: true })); console.log(`${i}/${targets.length} ${name}: no record at NBA (marked)`); continue; }
     const rs = (n) => j.resultSets.find((x) => x.name === n);
     const cat = (seasonSet, careerSet, label) => {
       const s = rs(seasonSet), c = rs(careerSet);
