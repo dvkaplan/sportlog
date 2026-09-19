@@ -43,13 +43,13 @@ export default function Header() {
           <Link href="/" className="text-2xl leading-none tracking-tight" style={{ fontFamily: "var(--font-display), Georgia, serif" }}>
             Sport<span className="text-accent">log</span>
           </Link>
-          <Link href="/lists" className="text-sm text-zinc-400 hover:text-accent">
+          <Link href="/lists" className="text-sm text-zinc-300 hover:text-accent">
             Lists
           </Link>
-          <Link href="/search" className="text-sm text-zinc-400 hover:text-accent">
+          <Link href="/search" className="text-sm text-zinc-300 hover:text-accent">
             Search
           </Link>
-          <Link href="/leagues" className="text-sm text-zinc-400 hover:text-accent">
+          <Link href="/leagues" className="text-sm text-zinc-300 hover:text-accent">
             Leagues
           </Link>
         </div>
