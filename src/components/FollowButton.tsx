@@ -92,7 +92,7 @@ export default function FollowButton({
         className={`rounded-lg px-4 py-1.5 text-sm font-semibold transition ${
           following
             ? "border border-zinc-700 text-zinc-300 hover:border-red-400 hover:text-red-400"
-            : "bg-emerald-400 text-zinc-950 hover:bg-emerald-300"
+            : "bg-amber-400 text-zinc-950 hover:bg-amber-300"
         }`}
       >
         {following ? "✓ Following" : "+ Follow"}

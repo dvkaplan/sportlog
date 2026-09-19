@@ -134,7 +134,7 @@ useEffect(() => {
           <div className="mt-6">
             <p className={`text-sm leading-relaxed text-zinc-300 ${expanded ? "" : "line-clamp-5"}`}>{desc}</p>
             {desc.length > 350 && (
-              <button onClick={() => setExpanded(!expanded)} className="mt-2 text-sm text-emerald-400 hover:underline">
+              <button onClick={() => setExpanded(!expanded)} className="mt-2 text-sm text-amber-400 hover:underline">
                 {expanded ? "Show less" : "Read more…"}
               </button>
             )}

@@ -80,7 +80,7 @@ export default function EntityRatingBox({
       <div className="mt-8 flex items-center gap-6 rounded-xl border border-zinc-800 bg-zinc-900 p-4">
         <div>
           <div className="text-xs uppercase tracking-wide text-zinc-500">Fan score</div>
-          <div className="text-3xl font-bold text-emerald-400">{avg ? avg.toFixed(1) : "—"}</div>
+          <div className="text-3xl font-bold text-amber-400">{avg ? avg.toFixed(1) : "—"}</div>
         </div>
         <div className="text-sm text-zinc-400">
           {all.length} rating{all.length === 1 ? "" : "s"} · {reviews.length} review{reviews.length === 1 ? "" : "s"}
@@ -91,12 +91,12 @@ export default function EntityRatingBox({
           <>
             <div className="flex items-baseline justify-between">
               <h2 className="font-semibold">Your rating</h2>
-              <span className="text-3xl font-bold text-emerald-400">{rating.toFixed(1)}</span>
+              <span className="text-3xl font-bold text-amber-400">{rating.toFixed(1)}</span>
             </div>
             <input
               type="range" min="0.5" max="10" step="0.5" value={rating}
               onChange={(e) => { setRating(parseFloat(e.target.value)); setSaved(false); }}
-              className="mt-4 w-full accent-emerald-400"
+              className="mt-4 w-full accent-amber-400"
             />
             <div className="flex justify-between text-xs text-zinc-600"><span>0.5</span><span>10.0</span></div>
             <textarea
@@ -104,12 +104,12 @@ export default function EntityRatingBox({
               onChange={(e) => { setReview(e.target.value); setSaved(false); }}
               placeholder={`Your take on ${entityName}…`}
               rows={4}
-              className="mt-5 w-full rounded-lg border border-zinc-700 bg-zinc-950 p-3 text-sm outline-none focus:border-emerald-400"
+              className="mt-5 w-full rounded-lg border border-zinc-700 bg-zinc-950 p-3 text-sm outline-none focus:border-amber-400"
             />
             <button
               onClick={save}
               disabled={busy}
-              className="mt-4 w-full rounded-lg bg-emerald-400 py-2.5 font-semibold text-zinc-950 transition hover:bg-emerald-300 disabled:opacity-50"
+              className="mt-4 w-full rounded-lg bg-amber-400 py-2.5 font-semibold text-zinc-950 transition hover:bg-amber-300 disabled:opacity-50"
             >
               {busy ? "Saving…" : saved ? "✓ Saved" : "Save rating & review"}
             </button>
@@ -118,7 +118,7 @@ export default function EntityRatingBox({
         ) : (
           <div className="text-center">
             <p className="text-zinc-300">Sign in to rate {entityName}.</p>
-            <Link href="/auth" className="mt-4 inline-block rounded-lg bg-emerald-400 px-6 py-2.5 font-semibold text-zinc-950 transition hover:bg-emerald-300">
+            <Link href="/auth" className="mt-4 inline-block rounded-lg bg-amber-400 px-6 py-2.5 font-semibold text-zinc-950 transition hover:bg-amber-300">
               Sign in
             </Link>
           </div>
@@ -132,7 +132,7 @@ export default function EntityRatingBox({
               <div key={r.id} className="rounded-xl border border-zinc-800 bg-zinc-900 p-4">
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-zinc-400">@{names[r.user_id] ?? `Fan-${r.user_id.slice(0, 4)}`}</span>
-                  <span className="font-bold text-emerald-400">{Number(r.rating).toFixed(1)}</span>
+                  <span className="font-bold text-amber-400">{Number(r.rating).toFixed(1)}</span>
                 </div>
                 <p className="mt-2 text-sm text-zinc-300">{r.review}</p>
               </div>

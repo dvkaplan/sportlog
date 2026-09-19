@@ -12,7 +12,7 @@ export default function BackLink({ fallback = "/search" }: { fallback?: string }
   }
 
   return (
-    <button onClick={goBack} className="text-sm text-zinc-400 transition hover:text-emerald-400">
+    <button onClick={goBack} className="text-sm text-zinc-400 transition hover:text-amber-400">
       ← Back
     </button>
   );

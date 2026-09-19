@@ -52,7 +52,7 @@ export default function ProfilePage() {
   if (signedOut)
     return (
       <main className="p-10 text-zinc-100">
-        <Link href="/auth" className="text-emerald-400">Sign in</Link> to see your profile.
+        <Link href="/auth" className="text-amber-400">Sign in</Link> to see your profile.
       </main>
     );
 
@@ -66,9 +66,9 @@ export default function ProfilePage() {
       <div className="mx-auto max-w-3xl px-6 py-12">
         <h1 className="text-2xl font-bold">{username ? `@${username}` : "Your profile"}</h1>
         <div className="mt-4 flex gap-6 text-sm text-zinc-400">
-          <span><span className="font-bold text-emerald-400">{ratings.length}</span> rated</span>
-          <span><span className="font-bold text-emerald-400">{lists.length}</span> lists</span>
-          {avg && <span>avg score <span className="font-bold text-emerald-400">{avg.toFixed(1)}</span></span>}
+          <span><span className="font-bold text-amber-400">{ratings.length}</span> rated</span>
+          <span><span className="font-bold text-amber-400">{lists.length}</span> lists</span>
+          {avg && <span>avg score <span className="font-bold text-amber-400">{avg.toFixed(1)}</span></span>}
         </div>
 
         {(() => {
@@ -113,7 +113,7 @@ export default function ProfilePage() {
                       <Link
                         key={i}
                         href={href(f)}
-                        className="flex items-center gap-2 rounded-full border border-zinc-700 px-4 py-1.5 text-sm text-zinc-300 transition hover:border-emerald-400"
+                        className="flex items-center gap-2 rounded-full border border-zinc-700 px-4 py-1.5 text-sm text-zinc-300 transition hover:border-amber-400"
                       >
                         {f.entity_name}
                         <span className="text-xs text-zinc-500">{icon(f.entity_type)}</span>
@@ -134,13 +134,13 @@ export default function ProfilePage() {
               <Link
                 key={r.game_id}
                 href={`/game/${r.game_id}`}
-                className="flex items-center justify-between rounded-xl border border-zinc-800 bg-zinc-900 p-4 transition hover:border-emerald-400"
+                className="flex items-center justify-between rounded-xl border border-zinc-800 bg-zinc-900 p-4 transition hover:border-amber-400"
               >
                 <div>
                   <div className="font-medium">{g?.title ?? r.game_id}</div>
                   {r.review && <div className="mt-1 line-clamp-1 text-sm text-zinc-400">{r.review}</div>}
                 </div>
-                <span className="ml-4 shrink-0 text-xl font-bold text-emerald-400">
+                <span className="ml-4 shrink-0 text-xl font-bold text-amber-400">
                   {Number(r.rating).toFixed(1)}
                 </span>
               </Link>
@@ -155,7 +155,7 @@ export default function ProfilePage() {
             <Link
               key={l.id}
               href={`/lists/${l.id}`}
-              className="flex items-center justify-between rounded-xl border border-zinc-800 bg-zinc-900 p-4 transition hover:border-emerald-400"
+              className="flex items-center justify-between rounded-xl border border-zinc-800 bg-zinc-900 p-4 transition hover:border-amber-400"
             >
               <span className="font-medium">{l.title}</span>
               <span className="text-xs text-zinc-500">{l.is_public ? "Public" : "🔒 Private"}</span>

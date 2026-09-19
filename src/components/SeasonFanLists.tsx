@@ -27,9 +27,9 @@ export default function SeasonFanLists({ label, altLabel }: { label: string; alt
       <div className="mt-3 space-y-2">
         {hits.map((h, i) => (
           <Link key={i} href={`/lists/${h.list_id}`}
-            className="flex items-center justify-between rounded-lg border border-zinc-800 bg-zinc-950 p-3 text-sm transition hover:border-emerald-400">
+            className="flex items-center justify-between rounded-lg border border-zinc-800 bg-zinc-950 p-3 text-sm transition hover:border-amber-400">
             <span>{h.title}</span>
-            <span className="text-emerald-400">#{h.position}</span>
+            <span className="text-amber-400">#{h.position}</span>
           </Link>
         ))}
       </div>

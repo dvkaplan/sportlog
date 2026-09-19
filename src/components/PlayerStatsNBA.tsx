@@ -41,7 +41,7 @@ function StatTable({ title, rows, career }: { title: string; rows: SeasonRow[]; 
                 <td className="px-3 py-1.5">{r.season}</td>
                 <td className="px-3 py-1.5 font-medium">{r.team}</td>
                 <td className="px-3 py-1.5 text-right">{r.gp}</td>
-                <td className="px-3 py-1.5 text-right font-semibold text-emerald-400">{r.pts}</td>
+                <td className="px-3 py-1.5 text-right font-semibold text-amber-400">{r.pts}</td>
                 <td className="px-3 py-1.5 text-right">{r.reb}</td>
                 <td className="px-3 py-1.5 text-right">{r.ast}</td>
                 <td className="px-3 py-1.5 text-right">{r.stl}</td>
@@ -56,7 +56,7 @@ function StatTable({ title, rows, career }: { title: string; rows: SeasonRow[]; 
                 <td className="px-3 py-2">Career</td>
                 <td className="px-3 py-2" />
                 <td className="px-3 py-2 text-right">{career.gp}</td>
-                <td className="px-3 py-2 text-right text-emerald-400">{career.pts}</td>
+                <td className="px-3 py-2 text-right text-amber-400">{career.pts}</td>
                 <td className="px-3 py-2 text-right">{career.reb}</td>
                 <td className="px-3 py-2 text-right">{career.ast}</td>
                 <td className="px-3 py-2 text-right">{career.stl}</td>
@@ -103,7 +103,7 @@ export default function PlayerStatsNBA({ nbaId }: { nbaId: string }) {
               key={t}
               onClick={() => setTab(t)}
               className={`rounded-full px-4 py-1 capitalize transition ${
-                tab === t ? "bg-emerald-400 font-semibold text-zinc-950" : "border border-zinc-700 text-zinc-400 hover:border-emerald-400"
+                tab === t ? "bg-amber-400 font-semibold text-zinc-950" : "border border-zinc-700 text-zinc-400 hover:border-amber-400"
               }`}
             >
               {t === "regular" ? "Regular season" : "Playoffs"}

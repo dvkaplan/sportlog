@@ -1,0 +1,62 @@
+{
+  "nfl": {
+    "name": "NFL",
+    "badge": "https://r2.thesportsdb.com/images/media/league/badge/g85fqz1662057187.png",
+    "logo": "https://r2.thesportsdb.com/images/media/league/logo/kp1www1565195936.png",
+    "sport": "American Football"
+  },
+  "nba": {
+    "name": "NBA",
+    "badge": "https://r2.thesportsdb.com/images/media/league/badge/frdjqy1536585083.png",
+    "logo": "https://r2.thesportsdb.com/images/media/league/logo/ypuryw1421971236.png",
+    "sport": "Basketball"
+  },
+  "mlb": {
+    "name": "MLB",
+    "badge": "https://r2.thesportsdb.com/images/media/league/badge/c5r83j1521893739.png",
+    "logo": "https://r2.thesportsdb.com/images/media/league/logo/5g2id01554031836.png",
+    "sport": "Baseball"
+  },
+  "nhl": {
+    "name": "NHL",
+    "badge": "https://r2.thesportsdb.com/images/media/league/badge/4cem2k1619616539.png",
+    "logo": "https://r2.thesportsdb.com/images/media/league/logo/qguaew1557140752.png",
+    "sport": "Ice Hockey"
+  },
+  "epl": {
+    "name": "English Premier League",
+    "badge": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
+    "logo": "https://r2.thesportsdb.com/images/media/league/logo/4c377s1535214890.png",
+    "sport": "Soccer"
+  },
+  "laliga": {
+    "name": "Spanish La Liga",
+    "badge": "https://r2.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
+    "logo": "https://r2.thesportsdb.com/images/media/league/logo/gq4b1r1687707889.png",
+    "sport": "Soccer"
+  },
+  "seriea": {
+    "name": "Italian Serie A",
+    "badge": "https://r2.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
+    "logo": "https://r2.thesportsdb.com/images/media/league/logo/b0hv7o1719640507.png",
+    "sport": "Soccer"
+  },
+  "bundesliga": {
+    "name": "German Bundesliga",
+    "badge": "https://r2.thesportsdb.com/images/media/league/badge/teqh1b1679952008.png",
+    "logo": "https://r2.thesportsdb.com/images/media/league/logo/620ayu1534764709.png",
+    "sport": "Soccer"
+  },
+  "ligue1": {
+    "name": "French Ligue 1",
+    "badge": "https://r2.thesportsdb.com/images/media/league/badge/9f7z9d1742983155.png",
+    "logo": "https://r2.thesportsdb.com/images/media/league/logo/pp71fp1719637991.png",
+    "sport": "Soccer"
+  },
+  "ufc": {
+    "name": "UFC",
+    "badge": "https://r2.thesportsdb.com/images/media/league/badge/bewnz31717531281.png",
+    "logo": "https://r2.thesportsdb.com/images/media/league/logo/1gp4vo1722604906.png",
+    "sport": "Fighting"
+  }
+}

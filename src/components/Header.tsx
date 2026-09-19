@@ -40,23 +40,23 @@ export default function Header() {
     <header className="border-b border-zinc-800 bg-zinc-950">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <div className="flex items-center gap-6">
-          <Link href="/" className="font-bold tracking-tight">
-            SPORT<span className="text-emerald-400">LOG</span>
+          <Link href="/" className="text-2xl leading-none tracking-tight" style={{ fontFamily: "var(--font-display), Georgia, serif" }}>
+            Sport<span className="text-amber-400">log</span>
           </Link>
-          <Link href="/lists" className="text-sm text-zinc-400 hover:text-emerald-400">
+          <Link href="/lists" className="text-sm text-zinc-400 hover:text-amber-400">
             Lists
           </Link>
-          <Link href="/search" className="text-sm text-zinc-400 hover:text-emerald-400">
+          <Link href="/search" className="text-sm text-zinc-400 hover:text-amber-400">
             Search
           </Link>
-          <Link href="/leagues" className="text-sm text-zinc-400 hover:text-emerald-400">
+          <Link href="/leagues" className="text-sm text-zinc-400 hover:text-amber-400">
             Leagues
           </Link>
         </div>
         {userId ? (
           <div className="flex items-center gap-3 text-sm">
             {username ? (
-              <Link href="/profile" className="text-zinc-300 hover:text-emerald-400">@{username}</Link>
+              <Link href="/profile" className="text-zinc-300 hover:text-amber-400">@{username}</Link>
             ) : (
               <Link
                 href="/username"
@@ -67,7 +67,7 @@ export default function Header() {
             )}
             <button
               onClick={() => supabase.auth.signOut()}
-              className="rounded border border-zinc-700 px-3 py-1 transition hover:border-emerald-400"
+              className="rounded border border-zinc-700 px-3 py-1 transition hover:border-amber-400"
             >
               Sign out
             </button>
@@ -75,7 +75,7 @@ export default function Header() {
         ) : (
           <Link
             href="/auth"
-            className="rounded bg-emerald-400 px-4 py-1.5 text-sm font-semibold text-zinc-950 transition hover:bg-emerald-300"
+            className="rounded bg-amber-400 px-4 py-1.5 text-sm font-semibold text-zinc-950 transition hover:bg-amber-300"
           >
             Sign in
           </Link>

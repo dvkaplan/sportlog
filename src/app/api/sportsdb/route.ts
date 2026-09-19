@@ -270,6 +270,7 @@ export async function GET(req: NextRequest) {
                   };
                   return { away: forTeam(hg.away), home: forTeam(hg.home) };
                 })(),
+                
                 espn: legacyEspn, soccerStats: hg.st ?? null,
               },
               stats: null, eventSlug: null, eventName: null, chips: [],

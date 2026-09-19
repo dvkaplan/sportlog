@@ -44,19 +44,19 @@ export default function AuthPage() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="you@email.com"
-            className="w-full rounded-lg border border-zinc-700 bg-zinc-900 p-3 text-sm outline-none focus:border-emerald-400"
+            className="w-full rounded-lg border border-zinc-700 bg-zinc-900 p-3 text-sm outline-none focus:border-amber-400"
           />
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Password (6+ characters)"
-            className="w-full rounded-lg border border-zinc-700 bg-zinc-900 p-3 text-sm outline-none focus:border-emerald-400"
+            className="w-full rounded-lg border border-zinc-700 bg-zinc-900 p-3 text-sm outline-none focus:border-amber-400"
           />
           <button
             onClick={submit}
             disabled={busy}
-            className="w-full rounded-lg bg-emerald-400 py-2.5 font-semibold text-zinc-950 transition hover:bg-emerald-300 disabled:opacity-50"
+            className="w-full rounded-lg bg-amber-400 py-2.5 font-semibold text-zinc-950 transition hover:bg-amber-300 disabled:opacity-50"
           >
             {busy ? "One sec…" : mode === "signup" ? "Sign up" : "Sign in"}
           </button>
@@ -64,7 +64,7 @@ export default function AuthPage() {
         </div>
         <button
           onClick={() => setMode(mode === "signup" ? "signin" : "signup")}
-          className="mt-6 text-sm text-zinc-400 underline-offset-4 hover:text-emerald-400 hover:underline"
+          className="mt-6 text-sm text-zinc-400 underline-offset-4 hover:text-amber-400 hover:underline"
         >
           {mode === "signup"
             ? "Already have an account? Sign in"

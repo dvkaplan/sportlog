@@ -124,7 +124,7 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
             </p>
             {record && (
               <p className="mt-2 text-sm">
-                <span className="rounded bg-emerald-400/10 px-2 py-1 font-semibold text-emerald-400">
+                <span className="rounded bg-amber-400/10 px-2 py-1 font-semibold text-amber-400">
                   {record.intWin}–{record.intLoss}
                   {record.intDraw && record.intDraw !== "0" ? `–${record.intDraw}` : ""}
                 </span>{" "}
@@ -140,7 +140,7 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
             {desc.length > 300 && (
               <button
                 onClick={() => setExpanded(!expanded)}
-                className="mt-2 text-sm text-emerald-400 hover:underline"
+                className="mt-2 text-sm text-amber-400 hover:underline"
               >
                 {expanded ? "Show less" : "Read more…"}
               </button>
@@ -186,17 +186,17 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
                 <Link
                   key={i}
                   href={`/lists/${h.list_id}`}
-                  className="flex items-center justify-between rounded-lg border border-zinc-800 bg-zinc-950 p-3 text-sm transition hover:border-emerald-400"
+                  className="flex items-center justify-between rounded-lg border border-zinc-800 bg-zinc-950 p-3 text-sm transition hover:border-amber-400"
                 >
                   <span>{h.title}</span>
-                  <span className="text-emerald-400">#{h.position}</span>
+                  <span className="text-amber-400">#{h.position}</span>
                 </Link>
               ))}
             </div>
           ) : (
             <p className="mt-2 text-sm text-zinc-500">
               No fan lists rank this team yet.{" "}
-              <Link href="/lists/new" className="text-emerald-400 hover:underline">Start one</Link> — pick it from the dropdown so it links here.
+              <Link href="/lists/new" className="text-amber-400 hover:underline">Start one</Link> — pick it from the dropdown so it links here.
             </p>
           )}
         </div>
@@ -232,7 +232,7 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
 
           const card = (p: (typeof players)[number]) => (
             <Link key={p.idPlayer} href={`/player/${p.idPlayer}`}
-              className="flex items-center gap-3 rounded-xl border border-zinc-800 bg-zinc-900 p-3 text-sm transition hover:border-emerald-400">
+              className="flex items-center gap-3 rounded-xl border border-zinc-800 bg-zinc-900 p-3 text-sm transition hover:border-amber-400">
               {p.strCutout || p.strThumb ? (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img src={(p.strCutout ?? p.strThumb) as string} alt="" className="h-10 w-10 rounded-lg object-cover object-top" />
@@ -252,7 +252,7 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
             <div key={role + name} className="flex items-start justify-between gap-4 rounded-lg border border-zinc-800 bg-zinc-950 px-4 py-2.5 text-sm">
               <span className="shrink-0 text-zinc-500">{role}</span>
               {href ? (
-                <Link href={href} className="min-w-0 text-right font-medium text-zinc-100 hover:text-emerald-400 hover:underline underline-offset-4">{name}</Link>
+                <Link href={href} className="min-w-0 text-right font-medium text-zinc-100 hover:text-amber-400 hover:underline underline-offset-4">{name}</Link>
               ) : (
                 <span className="min-w-0 text-right font-medium">{name}</span>
               )}
@@ -273,7 +273,7 @@ export default function TeamPage({ params }: { params: Promise<{ id: string }> }
               ))}
               {groups.length > 4 && (
                 <button onClick={() => setShowAll(!showAll)}
-                  className="mt-4 rounded-lg border border-zinc-700 px-4 py-2 text-sm transition hover:border-emerald-400">
+                  className="mt-4 rounded-lg border border-zinc-700 px-4 py-2 text-sm transition hover:border-amber-400">
                   {showAll ? "Show less" : `Show full roster (${roster.length} players)`}
                 </button>
               )}
