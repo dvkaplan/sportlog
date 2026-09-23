@@ -174,3 +174,49 @@ export async function getUpcomingGames(lg: string, days = 7): Promise<PopularGam
   } catch { /* no schedule */ }
   return out.sort((a, b) => a.date.localeCompare(b.date)).slice(0, 12);
 }
+
+// ---------- MMA: events, fights ----------
+type EventRec = { slug: string; name: string; date: string; fights: { gameId: string }[] };
+const isoDate = (d: string) => { const t = Date.parse(d ?? ""); return Number.isNaN(t) ? "" : new Date(t).toISOString().slice(0, 10); };
+const PROMO_LABEL: Record<string, string> = { UFC: "UFC", BELLATOR: "Bellator", PRIDE: "PRIDE", STRIKEFORCE: "Strikeforce", WEC: "WEC", ONE: "ONE", PFL: "PFL", INVICTA: "Invicta", "CAGE WARRIORS": "Cage Warriors", KSW: "KSW", RIZIN: "RIZIN", AFFLICTION: "Affliction", ELITEXC: "EliteXC", DREAM: "DREAM" };
+export const promotionOf = (name: string) => { const k = (name.match(/^(UFC|Bellator|PRIDE|Strikeforce|WEC|ONE|PFL|Invicta|Cage Warriors|KSW|RIZIN|Affliction|EliteXC|DREAM)/i)?.[1] ?? "").toUpperCase(); return PROMO_LABEL[k] ?? "Other"; };
+
+export async function getRecentEvents(days = 60, limit = 10): Promise<PopularGame[]> {
+  const today = new Date().toISOString().slice(0, 10);
+  const since = new Date(Date.now() - days * 86400000).toISOString().slice(0, 10);
+  const all = (eventsData as EventRec[]).map((e) => ({ ...e, iso: isoDate(e.date) })).filter((e) => e.iso);
+  let recent = all.filter((e) => e.iso >= since && e.iso <= today);
+  if (recent.length < 3) recent = all.filter((e) => e.iso <= today).sort((a, b) => b.iso.localeCompare(a.iso)).slice(0, limit);
+  const agg: Record<string, { n: number; sum: number; reviews: number }> = {};
+  try {
+    const ids = recent.flatMap((e) => e.fights.map((f) => f.gameId));
+    if (ids.length) {
+      const { data } = await supabaseAdmin.from("ratings").select("game_id, rating, review").in("game_id", ids.slice(0, 1000));
+      for (const r of data ?? []) { const a = (agg[r.game_id] ??= { n: 0, sum: 0, reviews: 0 }); a.n++; a.sum += Number(r.rating); if (r.review && String(r.review).trim()) a.reviews++; }
+    }
+  } catch { /* ratings unavailable */ }
+  return recent
+    .map((e) => {
+      const rs = e.fights.map((f) => agg[f.gameId]).filter(Boolean);
+      const n = rs.reduce((s, a) => s + a.n, 0), sum = rs.reduce((s, a) => s + a.sum, 0), reviews = rs.reduce((s, a) => s + a.reviews, 0);
+      return { id: e.slug, title: e.name, league: promotionOf(e.name), date: e.iso, score: `${e.fights.length} fights`, ratings: n, reviews, avg: n ? sum / n : 0, href: `/event/${e.slug}`, _k: n * 10 + reviews * 5 + Math.min(e.fights.length, 14) };
+    })
+    .sort((a, b) => b._k - a._k || b.date.localeCompare(a.date))
+    .slice(0, limit)
+    .map(({ _k, ...g }) => g);
+}
+
+export async function getPopularFights(limit = 8, days = 365): Promise<PopularGame[]> {
+  const since = new Date(Date.now() - days * 86400000).toISOString();
+  const agg: Record<string, { n: number; sum: number; reviews: number }> = {};
+  try {
+    const { data } = await supabaseAdmin.from("ratings").select("game_id, rating, review").like("game_id", "fight-%").gte("updated_at", since).limit(5000);
+    for (const r of data ?? []) { const a = (agg[r.game_id] ??= { n: 0, sum: 0, reviews: 0 }); a.n++; a.sum += Number(r.rating); if (r.review && String(r.review).trim()) a.reviews++; }
+  } catch { /* unavailable */ }
+  const FG = fightGamesData as { id: string; title: string; league?: string; date: string; score: string; blurb?: string }[];
+  return Object.entries(agg)
+    .sort((a, b) => (b[1].n * 10 + b[1].reviews * 5) - (a[1].n * 10 + a[1].reviews * 5))
+    .slice(0, limit * 2)
+    .flatMap(([id, a]) => { const f = FG.find((x) => x.id === id); return f ? [{ id, title: f.title, league: f.blurb || f.league || "MMA", date: isoDate(f.date), score: f.score, ratings: a.n, reviews: a.reviews, avg: a.sum / a.n, href: `/game/${id}` }] : []; })
+    .slice(0, limit);
+}

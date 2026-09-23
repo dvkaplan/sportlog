@@ -5,7 +5,7 @@ import { getSport, getGamesBySport, getErasBySport } from "@/lib/data";
 import { getFightersBySport } from "@/lib/fighters";
 import BackLink from "@/components/BackLink";
 import leaguesData from "@/lib/leagues.json";
-import { getPopularGames, getUpcomingGames, getPopularEntities, type PopularGame } from "@/lib/popular";
+import { getPopularGames, getUpcomingGames, getPopularEntities, getRecentEvents, getPopularFights, type PopularGame } from "@/lib/popular";
 import nflIdx from "@/lib/seasons/nfl/index.json";
 import nbaIdx from "@/lib/seasons/nba/index.json";
 import nhlIdx from "@/lib/seasons/nhl/index.json";
@@ -129,6 +129,41 @@ export default async function SportPage({ params }: { params: Promise<{ slug: st
     );
   }
 
+    if (slug === "mma") {
+    const [events, fights, fighters] = await Promise.all([getRecentEvents(60, 10), getPopularFights(8, 365), getPopularEntities("fighters", 8, 365)]);
+    const badge = L["ufc"]?.badge ?? L["ufc"]?.logo ?? null;
+    return (
+      <main className="min-h-screen bg-zinc-950 text-zinc-100">
+        <div className="mx-auto max-w-6xl px-6 pb-24 pt-10">
+          <BackLink fallback="/" />
+          <header className="mt-6 flex items-end gap-5 border-b border-zinc-700 pb-6">
+            {badge && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={badge} alt="" className="h-16 w-16 object-contain" />
+            )}
+            <h1 className="text-6xl leading-none tracking-tight sm:text-7xl" style={display}>UFC</h1>
+          </header>
+
+          <Link href="/events" className="group block border-b border-zinc-800 py-5 transition hover:bg-zinc-900">
+            <div className="text-lg font-medium text-accent">Browse every event</div>
+            <div className="mt-1 text-xs uppercase tracking-[0.12em] text-zinc-300">UFC, PRIDE, Bellator &amp; more — by year</div>
+          </Link>
+
+          <div className="mt-10 grid gap-14 lg:grid-cols-[1fr_320px]">
+            <section>
+              <h2 className="border-b border-zinc-700 pb-2 text-xs font-semibold uppercase tracking-[0.2em] text-zinc-100">Recent</h2>
+              <ol>{events.map((e, i) => <Row key={e.id} g={e} i={i} href={e.href ?? `/event/${e.id}`} />)}</ol>
+              {events.length === 0 && <p className="py-6 text-sm text-zinc-400">No events on record yet.</p>}
+            </section>
+            <aside className="space-y-10">
+              <SideList title="Trending fights" items={fights} empty="No fight ratings yet — be the first." />
+              <SideList title="Trending fighters" items={fighters} empty="No fighter ratings yet." />
+            </aside>
+          </div>
+        </div>
+      </main>
+    );
+  }
   // Soccer / MMA / Boxing — unchanged for now
   const games = getGamesBySport(slug);
   const eras = getErasBySport(slug);
