@@ -111,16 +111,15 @@ export default async function SeasonPage({ params, searchParams }: { params: Pro
               <img src={badge} alt="" className="h-12 w-12 object-contain" />
             )}
             <div>
-              <h1 className="text-5xl leading-none tracking-tight sm:text-6xl" style={display}>{season} {leagueName}</h1>
+              <h1 className="text-5xl leading-none tracking-tight sm:text-6xl" style={display}>{season} {leagueName} Season</h1>
               <p className="mt-2 text-[11px] uppercase tracking-[0.2em] text-zinc-300">{games.length} games</p>
             </div>
           </div>
           <SeasonPicker league={league} seasons={seasons} current={season} />
         </header>
+                <SeasonRating league={league} season={season} label={`${leagueName} ${season} season`} mode="summary" />
 
-        <SeasonRating league={league} season={season} label={`${leagueName} ${season} season`} />
-        <SeasonFanLists label={`${leagueName} ${season} season`} altLabel={`${season} ${leagueName} season`} />
-
+       
         <nav className="mt-8 border-b border-zinc-800 py-2">
           <div className="flex flex-wrap gap-x-3 gap-y-1 text-sm">
             {jump.map((j) => <Link key={j.id} href={tab(j.id)} className={sel === j.id ? "text-accent" : "text-zinc-300 hover:text-accent"} style={display}>{j.label}</Link>)}
@@ -157,6 +156,8 @@ export default async function SeasonPage({ params, searchParams }: { params: Pro
             )}
           </div>
         )}
+         <SeasonRating league={league} season={season} label={`${leagueName} ${season} season`} />
+        <SeasonFanLists label={`${leagueName} ${season} season`} altLabel={`${season} ${leagueName} season`} />
       </div>
     </main>
   );
