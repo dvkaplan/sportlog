@@ -2,6 +2,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
+import ReviewList from "@/components/Reviews";
 
 type RatingRow = { id: string; user_id: string; rating: number; review: string | null; updated_at: string };
 const display = { fontFamily: "var(--font-display), Georgia, serif" } as const;
@@ -95,19 +96,7 @@ export default function SeasonRating({ league, season, label, mode = "full" }: {
         </div>
       )}
 
-      {reviews.length > 0 && (
-        <ol>
-          {reviews.map((r) => (
-            <li key={r.id} className="border-b border-zinc-800 py-4">
-              <div className="flex items-baseline justify-between">
-                <span className="text-xs uppercase tracking-[0.12em] text-zinc-300">@{names[r.user_id] ?? `Fan-${r.user_id.slice(0, 4)}`}</span>
-                <span className="text-xl leading-none text-accent" style={display}>{Number(r.rating).toFixed(1)}</span>
-              </div>
-              <p className="mt-2 text-sm leading-relaxed text-zinc-100">{r.review}</p>
-            </li>
-          ))}
-        </ol>
-      )}
+      <ReviewList kind="game" reviews={reviews} names={names} userId={userId} heading={false} />
     </section>
   );
 }

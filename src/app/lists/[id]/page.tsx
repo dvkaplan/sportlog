@@ -23,6 +23,20 @@ type ItemRow = {
   image_url: string | null;
 };
 
+// Where a list entry links to. Free-text entries (no id) stay plain text.
+function itemHref(it: ItemRow): string | null {
+  const id = it.entity_id;
+  if (!id) return null;
+  if (it.entity_type === "team") return `/team/${id}`;
+  if (it.entity_type === "player") return `/player/${id}`;
+  if (it.entity_type === "fighter") return `/fighter/${id}`;
+  if (it.entity_type === "coach") return /^\d+$/.test(id) ? `/player/${id}` : /^[a-z0-9-]+$/.test(id) ? `/coach/${id}` : null;
+  if (it.entity_type === "event") return `/event/${id}`;
+  if (it.entity_type === "game") return `/game/${id}`;
+  if (it.entity_type === "season") { const cut = id.indexOf("-"); return cut > 0 ? `/seasons/${id.slice(0, cut)}/${id.slice(cut + 1)}` : null; }
+  return null;
+}
+
 export default function ListPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
   const router = useRouter();
@@ -97,8 +111,8 @@ export default function ListPage({ params }: { params: Promise<{ id: string }> }
                 // eslint-disable-next-line @next/next/no-img-element
                 <img src={it.image_url} alt="" className="h-10 w-10 shrink-0 object-contain" />
               ) : null}
-              {it.entity_type === "team" && it.entity_id ? (
-                <Link href={`/team/${it.entity_id}`} className="font-medium hover:text-accent">
+              {itemHref(it) ? (
+                <Link href={itemHref(it)!} className="font-medium hover:text-accent">
                   {it.label}
                 </Link>
               ) : (

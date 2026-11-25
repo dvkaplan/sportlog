@@ -2,6 +2,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
+import ReviewList from "@/components/Reviews";
 
 type Row = {
   id: string;
@@ -124,22 +125,7 @@ export default function EntityRatingBox({
           </div>
         )}
       </div>
-      {reviews.length > 0 && (
-        <div className="mt-6">
-          <h2 className="font-semibold">Reviews</h2>
-          <div className="mt-3 space-y-3">
-            {reviews.map((r) => (
-              <div key={r.id} className="rounded-xl border border-zinc-800 bg-zinc-900 p-4">
-                <div className="flex items-center justify-between text-sm">
-                  <span className="text-zinc-400">@{names[r.user_id] ?? `Fan-${r.user_id.slice(0, 4)}`}</span>
-                  <span className="font-bold text-accent">{Number(r.rating).toFixed(1)}</span>
-                </div>
-                <p className="mt-2 text-sm text-zinc-300">{r.review}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
+      <ReviewList kind="entity" reviews={reviews} names={names} userId={userId} />
     </>
   );
 }

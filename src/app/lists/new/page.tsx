@@ -12,7 +12,10 @@ type SugResults = {
   coaches?: { kind: string; slug: string | null; idPlayer: string | null; name: string; team: string | null; photo: string | null }[];
   events?: { slug: string; name: string; date: string }[];
   seasons?: { league: string; season: string; label: string }[];
+  fights?: { id: string; title: string; date: string; event: string }[];
 };
+type GameSug = { id: string; title: string; league: string; date: string; score: string; round: string };
+const gameDay = (iso: string) => { const d = new Date(iso); return Number.isNaN(d.getTime()) ? iso : d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }); };
 
 export default function NewListPage() {
   const router = useRouter();
@@ -23,6 +26,7 @@ export default function NewListPage() {
   const [items, setItems] = useState<Entry[]>([{ label: "" }, { label: "" }, { label: "" }]);
   const [active, setActive] = useState<number | null>(null);
   const [sugs, setSugs] = useState<SugResults>({});
+  const [gameSugs, setGameSugs] = useState<GameSug[]>([]);
   const [msg, setMsg] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
@@ -31,19 +35,24 @@ export default function NewListPage() {
   useEffect(() => {
     if (active === null || activeText.trim().length < 2) {
       setSugs({});
+      setGameSugs([]);
       return;
     }
+    let alive = true;
     const t = setTimeout(async () => {
+      fetch(`/api/game-search?limit=4&q=${encodeURIComponent(activeText)}`).then((r) => r.json())
+        .then((d) => { if (alive) setGameSugs(d?.games ?? []); })
+        .catch(() => { if (alive) setGameSugs([]); });
       try {
         const data = await fetch(
           `/api/sportsdb?mode=findteams&q=${encodeURIComponent(activeText)}`
         ).then((r) => r.json());
-        setSugs(data ?? {});
+        if (alive) setSugs(data ?? {});
       } catch {
-        setSugs({});
+        if (alive) setSugs({});
       }
     }, 350);
-    return () => clearTimeout(t);
+    return () => { alive = false; clearTimeout(t); };
   }, [activeText, active]);
 
   function setItem(i: number, patch: Partial<Entry>) {
@@ -52,6 +61,7 @@ export default function NewListPage() {
   function pick(i: number, e: Entry) {
     setItem(i, e);
     setSugs({});
+    setGameSugs([]);
     setActive(null);
   }
   function addItem() { setItems((p) => [...p, { label: "" }]); }
@@ -119,9 +129,9 @@ export default function NewListPage() {
       {img ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img src={img} alt="" className="h-6 w-6 rounded object-cover object-top" />
-      ) : (
+      ) : fallback ? (
         <div className="flex h-6 w-6 items-center justify-center rounded bg-zinc-800 text-xs">{fallback}</div>
-      )}
+      ) : null}
       <span className="truncate">{label}</span>
       {sub ? <span className="ml-auto shrink-0 text-xs text-zinc-500">{sub}</span> : null}
     </button>
@@ -132,7 +142,7 @@ export default function NewListPage() {
       <div className="mx-auto max-w-2xl px-6 py-12">
         <h1 className="text-2xl font-bold">New ranked list</h1>
         <p className="mt-1 text-sm text-zinc-400">
-          Rank anything: teams, players, fighters, coaches, events, seasons — pick from the dropdown to link them, or free-type anything else.
+          Rank anything: games, fights, teams, players, fighters, coaches, events, seasons — pick from the dropdown to link them, or free-type anything else.
         </p>
         <div className="mt-8 space-y-4">
           <input
@@ -181,8 +191,16 @@ export default function NewListPage() {
                   <button onClick={() => removeItem(i)} className="rounded border border-zinc-700 px-2 py-1 text-xs hover:border-red-400">✕</button>
                 </div>
                 {active === i && (
-                  (sugs.teams?.length || sugs.players?.length || sugs.fighters?.length || sugs.coaches?.length || sugs.events?.length || sugs.seasons?.length) ? (
+                  (gameSugs.length || sugs.fights?.length || sugs.teams?.length || sugs.players?.length || sugs.fighters?.length || sugs.coaches?.length || sugs.events?.length || sugs.seasons?.length) ? (
                     <div className="absolute left-10 right-24 z-10 mt-1 max-h-80 overflow-y-auto rounded-lg border border-zinc-700 bg-zinc-900 shadow-xl">
+                      {gameSugs.length > 0 && (
+                        <Section title="Games">
+                          {gameSugs.map((g) => (
+                            <Row key={g.id} fallback="" label={g.title} sub={`${gameDay(g.date)}  ${g.score}`}
+                              onClick={() => pick(i, { label: `${g.title} (${gameDay(g.date)})`, entityType: "game", entityId: g.id })} />
+                          ))}
+                        </Section>
+                      )}
                       {(sugs.teams ?? []).length > 0 && (
                         <Section title="Teams">
                           {sugs.teams!.slice(0, 4).map((t) => (
@@ -204,6 +222,14 @@ export default function NewListPage() {
                           {sugs.fighters!.slice(0, 4).map((f) => (
                             <Row key={f.slug} img={f.photo} fallback="🥊" label={f.name} sub={f.division}
                               onClick={() => pick(i, { label: f.name, entityType: "fighter", entityId: f.slug, image: f.photo ?? undefined })} />
+                          ))}
+                        </Section>
+                      )}
+                      {(sugs.fights ?? []).length > 0 && (
+                        <Section title="Fights">
+                          {sugs.fights!.slice(0, 4).map((f) => (
+                            <Row key={f.id} fallback="" label={f.title} sub={f.event || f.date}
+                              onClick={() => pick(i, { label: f.title, entityType: "game", entityId: f.id })} />
                           ))}
                         </Section>
                       )}
